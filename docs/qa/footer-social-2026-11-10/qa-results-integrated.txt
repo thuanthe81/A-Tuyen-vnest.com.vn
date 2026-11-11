@@ -1,0 +1,11 @@
+- list "Mạng xã hội VNest":
+  - listitem:
+    - img "Instagram – sắp cập nhật": Sắp cập nhật
+  - listitem:
+    - img "LinkedIn – sắp cập nhật": Sắp cập nhật
+  - listitem:
+    - img "TikTok – sắp cập nhật": Sắp cập nhật
+  - listitem:
+    - link "Facebook VNest (mở trong tab mới)":
+      - /url: https://www.facebook.com/vnest.com.vn
+844 passed, 0 failed

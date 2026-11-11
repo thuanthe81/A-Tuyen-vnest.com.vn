@@ -1,0 +1,122 @@
+PASS @1440 homepage panel has no room stepper
+PASS @1440 homepage panel: adults and children steppers
+PASS @1440 children start at 0, cannot go below
+PASS @1440 3 adults, 1 child, kept apart — 3,1
+PASS @1440 child policy note shown once children are added
+PASS @1440 rooms-later note
+PASS @1440 field reads "Khách · 3 người lớn · 1 trẻ em", not truncated — KHÁCH 3 người lớn · 1 trẻ em
+PASS @1440 no dates: stays on the homepage
+PASS @1440 no dates: the calendar opens
+PASS @1440 calendar shows exactly one month — 1
+PASS @1440 previous month disabled on the current month
+PASS @1440 next month: still one month, December
+PASS @1440 calendar: no overflow
+PASS @1440 results address: cross-month dates, 3 adults, 1 child, fewest rooms — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @1440 results summary names the children — Tất cả nơi lưu trú · 28 thg 11 – 2 thg 12 (4 đêm) · 2 phòng · 3 người lớn · 1 trẻ em
+PASS @1440 GoHost bare-da-kao with children: not checked, says why — availability-needs-provider-check
+PASS @1440 GoHost pepper-house with children: not checked, says why — availability-needs-provider-check
+PASS @1440 ezCloud bare-chic: hand-off unchanged
+PASS @1440 ezCloud the-nang-suites: hand-off unchanged
+PASS @1440 results: no price
+PASS @1440 results: no overflow
+PASS @1440 results calendar shows one month
+PASS @1440 results editor has a children row
+PASS @1440 results editor shows the child policy
+PASS @1440 property address keeps the stay and the children — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @1440 property summary: 3 adults, 1 child, 2 rooms — Phòng & khách: 3 người lớn · 1 trẻ em · 2 phòng. Thay đổi
+PASS @1440 property calendar shows one month
+PASS @1440 review lists the child apart, with the policy note
+PASS @1440 review: no confirmation claim, no price
+PASS @1440 property: no overflow
+PASS @1440 booking step: children listed with the policy note
+PASS @1440 booking step: honest, no confirmation, no price
+PASS @1440 Back: property keeps children, rooms and room choices — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1&prefs=bare-da-kao-two%2Cbare-da-kao-three
+PASS @1440 refresh: summary still has the child — Phòng & khách: 3 người lớn · 1 trẻ em · 2 phòng. Thay đổi
+PASS @1440 refresh: room choices kept
+PASS @1440 property header panel keeps rooms and shows children
+PASS @1440 removing the child updates the address; rooms and adults unchanged
+PASS @1440 no setState-in-render warning
+PASS @1440 no console errors
+PASS @768 homepage panel has no room stepper
+PASS @768 homepage panel: adults and children steppers
+PASS @768 children start at 0, cannot go below
+PASS @768 3 adults, 1 child, kept apart — 3,1
+PASS @768 child policy note shown once children are added
+PASS @768 rooms-later note
+PASS @768 field reads "Khách · 3 người lớn · 1 trẻ em", not truncated — KHÁCH 3 người lớn · 1 trẻ em
+PASS @768 no dates: stays on the homepage
+PASS @768 no dates: the calendar opens
+PASS @768 calendar shows exactly one month — 1
+PASS @768 previous month disabled on the current month
+PASS @768 next month: still one month, December
+PASS @768 calendar: no overflow
+PASS @768 results address: cross-month dates, 3 adults, 1 child, fewest rooms — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @768 results summary names the children — Tất cả nơi lưu trú · 28 thg 11 – 2 thg 12 (4 đêm) · 2 phòng · 3 người lớn · 1 trẻ em
+PASS @768 GoHost bare-da-kao with children: not checked, says why — availability-needs-provider-check
+PASS @768 GoHost pepper-house with children: not checked, says why — availability-needs-provider-check
+PASS @768 ezCloud bare-chic: hand-off unchanged
+PASS @768 ezCloud the-nang-suites: hand-off unchanged
+PASS @768 results: no price
+PASS @768 results: no overflow
+PASS @768 results calendar shows one month
+PASS @768 results editor has a children row
+PASS @768 results editor shows the child policy
+PASS @768 property address keeps the stay and the children — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @768 property summary: 3 adults, 1 child, 2 rooms — Phòng & khách: 3 người lớn · 1 trẻ em · 2 phòng. Thay đổi
+PASS @768 property calendar shows one month
+PASS @768 review lists the child apart, with the policy note
+PASS @768 review: no confirmation claim, no price
+PASS @768 property: no overflow
+PASS @768 booking step: children listed with the policy note
+PASS @768 booking step: honest, no confirmation, no price
+PASS @768 Back: property keeps children, rooms and room choices — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1&prefs=bare-da-kao-two%2Cbare-da-kao-three
+PASS @768 refresh: summary still has the child — Phòng & khách: 3 người lớn · 1 trẻ em · 2 phòng. Thay đổi
+PASS @768 refresh: room choices kept
+PASS @768 property header panel keeps rooms and shows children
+PASS @768 removing the child updates the address; rooms and adults unchanged
+PASS @768 no setState-in-render warning
+PASS @768 no console errors
+PASS @390 homepage panel has no room stepper
+PASS @390 homepage panel: adults and children steppers
+PASS @390 children start at 0, cannot go below
+PASS @390 3 adults, 1 child, kept apart — 3,1
+PASS @390 child policy note shown once children are added
+PASS @390 rooms-later note
+PASS @390 no dates: stays on the homepage
+PASS @390 no dates: the calendar opens
+PASS @390 calendar shows exactly one month — 1
+PASS @390 previous month disabled on the current month
+PASS @390 next month: still one month, December
+PASS @390 calendar: no overflow
+PASS @390 results address: cross-month dates, 3 adults, 1 child, fewest rooms — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @390 results summary names the children — Tất cả nơi lưu trú · 28 thg 11 – 2 thg 12 (4 đêm) · 2 phòng · 3 người lớn · 1 trẻ em
+PASS @390 GoHost bare-da-kao with children: not checked, says why — availability-needs-provider-check
+PASS @390 GoHost pepper-house with children: not checked, says why — availability-needs-provider-check
+PASS @390 ezCloud bare-chic: hand-off unchanged
+PASS @390 ezCloud the-nang-suites: hand-off unchanged
+PASS @390 results: no price
+PASS @390 results: no overflow
+PASS @390 results calendar shows one month
+PASS @390 results editor has a children row
+PASS @390 results editor shows the child policy
+PASS @390 property address keeps the stay and the children — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @390 property summary: 3 adults, 1 child, 2 rooms — Phòng & khách: 3 người lớn · 1 trẻ em · 2 phòng. Thay đổi
+PASS @390 property calendar shows one month
+PASS @390 review lists the child apart, with the policy note
+PASS @390 review: no confirmation claim, no price
+PASS @390 property: no overflow
+PASS @390 booking step: children listed with the policy note
+PASS @390 booking step: honest, no confirmation, no price
+PASS @390 Back: property keeps children, rooms and room choices — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1&prefs=bare-da-kao-two%2Cbare-da-kao-three
+PASS @390 refresh: summary still has the child — Phòng & khách: 3 người lớn · 1 trẻ em · 2 phòng. Thay đổi
+PASS @390 refresh: room choices kept
+PASS @390 property header panel keeps rooms and shows children
+PASS @390 removing the child updates the address; rooms and adults unchanged
+PASS @390 no setState-in-render warning
+PASS @390 no console errors
+PASS @1440 ezCloud page: hand-off unconfigured, no price
+PASS @1440 ezCloud page: children kept in the header field
+PASS @1440 ezCloud page: no console errors
+PASS @1440 homepage adults stop at 12 (6 rooms × 2) with a reason — 12
+
+120/120 passed

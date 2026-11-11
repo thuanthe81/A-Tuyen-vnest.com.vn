@@ -1,0 +1,127 @@
+{
+  "viewport": "390x844 touch",
+  "steps": [
+    {
+      "step": 1,
+      "name": "homepage",
+      "url": "/dev/demo?intro=0",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/01-homepage.png"
+    },
+    {
+      "step": 2,
+      "name": "search-sheet-open",
+      "url": "/dev/demo?intro=0",
+      "scrollLock": "hidden",
+      "openDialogs": 1,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/02-search-sheet-open.png"
+    },
+    {
+      "step": 3,
+      "name": "dates-selected",
+      "url": "/dev/demo?intro=0",
+      "scrollLock": "hidden",
+      "openDialogs": 1,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/03-dates-selected.png"
+    },
+    {
+      "step": 4,
+      "name": "guests-3",
+      "url": "/dev/demo?intro=0",
+      "scrollLock": "hidden",
+      "openDialogs": 1,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/04-guests-3.png"
+    },
+    {
+      "step": 5,
+      "name": "results-all-properties",
+      "url": "/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=1&adults=3",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/05-results-all-properties.png"
+    },
+    {
+      "step": 6,
+      "name": "rooms-2-in-editor",
+      "url": "/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/06-rooms-2-in-editor.png"
+    },
+    {
+      "step": 7,
+      "name": "rooms-applied",
+      "url": "/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/07-rooms-applied.png"
+    },
+    {
+      "step": 8,
+      "name": "property-page",
+      "url": "/dev/stays/pepper-house?checkIn=2026-12-10&checkOut=2026-12-12&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/08-property-page.png"
+    },
+    {
+      "step": 9,
+      "name": "property-rooms",
+      "url": "/dev/stays/pepper-house?checkIn=2026-12-10&checkOut=2026-12-12&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/09-property-rooms.png"
+    },
+    {
+      "step": 10,
+      "name": "back-to-results",
+      "url": "/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/10-back-to-results.png"
+    },
+    {
+      "step": 11,
+      "name": "search-edited",
+      "url": "/dev/demo/tim-phong?property=all&checkIn=2026-12-15&checkOut=2026-12-17&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/11-search-edited.png"
+    },
+    {
+      "step": 12,
+      "name": "refresh-keeps-search",
+      "url": "/dev/demo/tim-phong?property=all&checkIn=2026-12-15&checkOut=2026-12-17&rooms=3%2C2&adults=5",
+      "scrollLock": "",
+      "openDialogs": 0,
+      "overflowX": 0,
+      "nextRouterState": true,
+      "screenshot": "screens/12-refresh-keeps-search.png"
+    }
+  ],
+  "consoleErrors": [],
+  "hydrationWarnings": []
+}

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+/*
+ * One styling system: Tailwind utilities, reading the tokens. Utilities such as bg-surface,
+ * text-ink or font-display resolve to the variables below, so a property theme that
+ * overrides a token restyles every utility inside its scope.
+ */
+@theme inline {
+  --color-surface: var(--vn-surface);
+  --color-surface-muted: var(--vn-surface-muted);
+  --color-surface-raised: var(--vn-surface-raised);
+  --color-ink: var(--vn-ink);
+  --color-ink-muted: var(--vn-ink-muted);
+  --color-line: var(--vn-line);
+  --color-action: var(--vn-action);
+  --color-action-hover: var(--vn-action-hover);
+  --color-on-action: var(--vn-on-action);
+  --color-capsule: var(--vn-capsule);
+  --color-capsule-field: var(--vn-capsule-field);
+  --shadow-pop: var(--vn-shadow-pop);
+  --shadow-field: var(--vn-shadow-field);
+  --color-positive: var(--vn-positive);
+  --color-caution: var(--vn-caution);
+  --color-critical: var(--vn-critical);
+  --font-body: var(--vn-font-body);
+  --font-display: var(--vn-font-display);
+  --radius-token: var(--vn-radius);
+  --container-site: var(--vn-container);
+}
+
+@layer base {
+  body {
+    background: var(--vn-surface);
+    color: var(--vn-ink);
+    font-family: var(--vn-font-body);
+    font-size: var(--vn-text-base);
+    line-height: var(--vn-leading-body);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--vn-focus);
+    outline-offset: 2px;
+  }
+}
+
+/* The mobile booking panel rises a short distance into place. Duration follows the motion tokens, so reduced motion removes it. */
+@keyframes vn-sheet-in {
+  from {
+    opacity: 0;
+    translate: 0 1.5rem;
+  }
+}
+
+.vn-sheet[open] {
+  animation: vn-sheet-in var(--vn-duration-base) var(--vn-ease-out);
+}
+
+.vn-sheet::backdrop {
+  background: rgb(24 20 14 / 0.4);
+}

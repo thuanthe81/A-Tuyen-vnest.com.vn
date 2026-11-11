@@ -1,0 +1,109 @@
+/* The prototype's frame: the property page's ground, and ghosts for the unchanged sections. */
+.page {
+  --section: clamp(4rem, 3rem + 4vw, 7rem);
+  background: #fbf9f5;
+  color: #37412f;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.625rem var(--vn-gutter);
+  background: #37412f;
+  color: #f1ece4;
+  font-size: 0.75rem;
+}
+
+.switches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+.switches a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.switches a[aria-current="true"] {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wrap {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding-inline: var(--vn-gutter);
+}
+
+.ghost {
+  margin-top: var(--section);
+  opacity: 0.38;
+}
+
+.ghostHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ab7444;
+  font-size: clamp(1.5rem, 1.2rem + 1.3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.ghostHead small {
+  align-self: end;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.bars {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.bars i {
+  display: block;
+  height: 0.9rem;
+  border-radius: 2px;
+  background: #ddd5c8;
+}
+
+.bars i:nth-child(1) {
+  width: min(26rem, 70%);
+  height: 1.6rem;
+}
+
+.bars i:nth-child(2) {
+  width: min(18rem, 50%);
+}
+
+.bars i:nth-child(3) {
+  width: min(12rem, 40%);
+}
+
+.slot {
+  margin-top: var(--section);
+}
+
+.ghostFoot {
+  margin-top: var(--section);
+  padding-block: 2.5rem 6rem;
+  border-top: 1px solid #ddd5c8;
+  opacity: 0.38;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

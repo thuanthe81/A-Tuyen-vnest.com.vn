@@ -1,0 +1,137 @@
+[
+  {
+    "w": 1440,
+    "name": "all",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 1440,
+    "name": "nang",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 1440,
+    "name": "bare",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 1440,
+    "name": "pepper",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 1440,
+    "name": "nang-page",
+    "overflow": false,
+    "broken": [],
+    "title": "The Nắng Suites",
+    "han": {
+      "src": "http://localhost:3400/dev-client-media/bare-han-ground-26/800.avif",
+      "loaded": true
+    }
+  },
+  {
+    "w": 1440,
+    "interaction": "gallery and drawer",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "w": 390,
+    "name": "all",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 390,
+    "name": "nang",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 390,
+    "name": "bare",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 390,
+    "name": "pepper",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 390,
+    "name": "nang-page",
+    "overflow": false,
+    "broken": [],
+    "title": "The Nắng Suites",
+    "han": {
+      "src": "http://localhost:3400/dev-client-media/bare-han-ground-26/480.avif",
+      "loaded": true
+    }
+  },
+  {
+    "w": 390,
+    "interaction": "gallery and drawer",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "w": 768,
+    "name": "all",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 768,
+    "name": "nang",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 768,
+    "name": "bare",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 768,
+    "name": "pepper",
+    "overflow": false,
+    "broken": [],
+    "title": "Sáu nơi ở, hai thành phố"
+  },
+  {
+    "w": 768,
+    "name": "nang-page",
+    "overflow": false,
+    "broken": [],
+    "title": "The Nắng Suites",
+    "han": {
+      "src": "http://localhost:3400/dev-client-media/bare-han-ground-26/480.avif",
+      "loaded": true
+    }
+  },
+  {
+    "w": 768,
+    "interaction": "gallery and drawer",
+    "passed": true,
+    "errors": []
+  }
+]

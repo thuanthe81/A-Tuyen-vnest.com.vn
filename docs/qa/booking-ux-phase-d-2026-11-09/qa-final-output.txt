@@ -1,0 +1,143 @@
+PASS @1440 A server HTML carries the intro overlay
+PASS @1440 A ?intro=0: no overlay in the server HTML
+PASS @1440 A first visit plays (~1.2 s) — {"first":42,"last":1116,"frames":66}
+PASS @1440 A refresh replays — {"first":45,"last":1117,"frames":66}
+PASS @1440 A hard reload (cache disabled) replays — {"first":22,"last":1096,"frames":66}
+PASS @1440 A client-side link back to the homepage: no intro, same document — 0 frames
+PASS @1440 A Back / Back to the homepage: no intro — 0 frames
+PASS @1440 A Forward then Back: no intro
+PASS @1440 A VI → EN switch: no intro, no reload — 0 frames
+PASS @1440 A homepage reached from another page by a link: no intro
+PASS @1440 A ?intro=0 skips — {"first":null,"last":null,"frames":0}
+PASS @1440 A ?intro=converge plays — {"first":38,"last":1114,"frames":66}
+PASS @1440 A converge variant
+PASS @1440 A no console or hydration errors
+PASS @1024 A server HTML carries the intro overlay
+PASS @1024 A ?intro=0: no overlay in the server HTML
+PASS @1024 A first visit plays (~1.2 s) — {"first":20,"last":1096,"frames":66}
+PASS @1024 A refresh replays — {"first":38,"last":1113,"frames":66}
+PASS @1024 A hard reload (cache disabled) replays — {"first":36,"last":1102,"frames":65}
+PASS @1024 A client-side link back to the homepage: no intro, same document — 0 frames
+PASS @1024 A Back / Back to the homepage: no intro — 0 frames
+PASS @1024 A Forward then Back: no intro
+PASS @1024 A VI → EN switch: no intro, no reload — 0 frames
+PASS @1024 A homepage reached from another page by a link: no intro
+PASS @1024 A ?intro=0 skips — {"first":null,"last":null,"frames":0}
+PASS @1024 A ?intro=converge plays — {"first":30,"last":1101,"frames":66}
+PASS @1024 A converge variant
+PASS @1024 A no console or hydration errors
+PASS @768 A server HTML carries the intro overlay
+PASS @768 A ?intro=0: no overlay in the server HTML
+PASS @768 A first visit plays (~1.2 s) — {"first":23,"last":1097,"frames":66}
+PASS @768 A refresh replays — {"first":39,"last":1111,"frames":66}
+PASS @768 A hard reload (cache disabled) replays — {"first":34,"last":1115,"frames":66}
+PASS @768 A client-side link back to the homepage: no intro, same document — 0 frames
+PASS @768 A Back / Back to the homepage: no intro — 0 frames
+PASS @768 A Forward then Back: no intro
+PASS @768 A VI → EN switch: no intro, no reload — 0 frames
+PASS @768 A homepage reached from another page by a link: no intro
+PASS @768 A ?intro=0 skips — {"first":null,"last":null,"frames":0}
+PASS @768 A ?intro=converge plays — {"first":38,"last":1114,"frames":66}
+PASS @768 A converge variant
+PASS @768 A no console or hydration errors
+PASS @390 A server HTML carries the intro overlay
+PASS @390 A ?intro=0: no overlay in the server HTML
+PASS @390 A first visit plays (~1.2 s) — {"first":19,"last":1095,"frames":66}
+PASS @390 A refresh replays — {"first":39,"last":1113,"frames":66}
+PASS @390 A hard reload (cache disabled) replays — {"first":29,"last":1101,"frames":66}
+PASS @390 A client-side link back to the homepage: no intro, same document — 0 frames
+PASS @390 A Back / Back to the homepage: no intro — 0 frames
+PASS @390 A Forward then Back: no intro
+PASS @390 A VI → EN switch (menu): no intro, no reload — 0 frames
+PASS @390 A homepage reached from another page by a link: no intro
+PASS @390 A ?intro=0 skips — {"first":null,"last":null,"frames":0}
+PASS @390 A ?intro=converge plays — {"first":36,"last":1115,"frames":66}
+PASS @390 A converge variant
+PASS @390 A no console or hydration errors
+PASS @1440 A reduced motion: short static version (≤ 0.6 s), no stroke animation — {"first":21,"last":333,"frames":20}
+PASS @1440 A reduced motion: also on refresh — {"first":40,"last":350,"frames":20}
+PASS @1440 A reduced motion: no errors
+PASS @1440 B English homepage reaches network idle — 577 ms
+PASS @1440 B no redirected prefetches
+PASS @1440 B English copy rendered
+PASS @1440 B no runaway prefetch after idle (6 s) — 1 → 1
+PASS @1440 B English card → property keeps lang=en, soft navigation — /dev/stays/bare-chic?view=demo&lang=en
+PASS @1440 B property page in English
+PASS @1440 B English logo → homepage keeps lang=en — /dev/demo?lang=en
+PASS @1440 B no redirect loops — 307 /dev/stays/bare-chic?view=demo&_rsc=YvcToYenBYLUeb8Q, 307 /dev/stays/bare-chic?view=demo&lang=en, 307 /dev/demo?_rsc=0WQOBqtjR9EugZ0T, 307 /dev/demo?lang=en
+PASS @1440 B English: no console or hydration errors
+PASS @1440 B Vietnamese navigation: no lang added — /dev/stays/bare-chic?view=demo
+PASS @1440 B Vietnamese: no errors
+PASS @390 B English homepage reaches network idle — 570 ms
+PASS @390 B no redirected prefetches
+PASS @390 B English copy rendered
+PASS @390 B no runaway prefetch after idle (6 s) — 1 → 1
+PASS @390 B English card → property keeps lang=en, soft navigation — /dev/stays/bare-chic?view=demo&lang=en&rooms=1&adults=2
+PASS @390 B property page in English
+PASS @390 B English logo → homepage keeps lang=en — /dev/demo?lang=en
+PASS @390 B no redirect loops — 307 /dev/stays/bare-chic?view=demo&_rsc=YvcToYenBYLUeb8Q, 307 /dev/stays/bare-chic?view=demo&lang=en, 307 /dev/demo?_rsc=0WQOBqtjR9EugZ0T, 307 /dev/demo?lang=en
+PASS @390 B English: no console or hydration errors
+PASS @390 B Vietnamese navigation: no lang added — /dev/stays/bare-chic?view=demo
+PASS @390 B Vietnamese: no errors
+PASS @1440 C card from an address: dates, adults, children, rooms — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2&children=1
+PASS @1440 C card before any search: no dates
+PASS @1440 C results: 3 adults, 1 child
+PASS @1440 C GoHost bare-da-kao unchanged (children: not asked) — availability-needs-provider-check
+PASS @1440 C GoHost pepper-house unchanged (children: not asked) — availability-needs-provider-check
+PASS @1440 C ezCloud bare-chic unchanged
+PASS @1440 C ezCloud bare-hyphen unchanged
+PASS @1440 C ezCloud bare-han unchanged
+PASS @1440 C ezCloud the-nang-suites unchanged
+PASS @1440 C Back: card carries dates, adults and the child, no rooms invented — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @1440 C Back: bar still restored
+PASS @1440 C one history entry for the search, none for the refresh after Back — 4 → 5
+PASS @1440 C card → property keeps the search — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @1440 C refresh: same search in bar and cards
+PASS @1440 C no console or hydration errors
+PASS @1024 C card from an address: dates, adults, children, rooms — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2&children=1
+PASS @1024 C card before any search: no dates
+PASS @1024 C results: 3 adults, 1 child
+PASS @1024 C GoHost bare-da-kao unchanged (children: not asked) — availability-needs-provider-check
+PASS @1024 C GoHost pepper-house unchanged (children: not asked) — availability-needs-provider-check
+PASS @1024 C ezCloud bare-chic unchanged
+PASS @1024 C ezCloud bare-hyphen unchanged
+PASS @1024 C ezCloud bare-han unchanged
+PASS @1024 C ezCloud the-nang-suites unchanged
+PASS @1024 C Back: card carries dates, adults and the child, no rooms invented — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @1024 C Back: bar still restored
+PASS @1024 C one history entry for the search, none for the refresh after Back — 4 → 5
+PASS @1024 C card → property keeps the search — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @1024 C refresh: same search in bar and cards
+PASS @1024 C no console or hydration errors
+PASS @768 C card from an address: dates, adults, children, rooms — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2&children=1
+PASS @768 C card before any search: no dates
+PASS @768 C results: 3 adults, 1 child
+PASS @768 C GoHost bare-da-kao unchanged (children: not asked) — availability-needs-provider-check
+PASS @768 C GoHost pepper-house unchanged (children: not asked) — availability-needs-provider-check
+PASS @768 C ezCloud bare-chic unchanged
+PASS @768 C ezCloud bare-hyphen unchanged
+PASS @768 C ezCloud bare-han unchanged
+PASS @768 C ezCloud the-nang-suites unchanged
+PASS @768 C Back: card carries dates, adults and the child, no rooms invented — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @768 C Back: bar still restored
+PASS @768 C one history entry for the search, none for the refresh after Back — 4 → 5
+PASS @768 C card → property keeps the search — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @768 C refresh: same search in bar and cards
+PASS @768 C no console or hydration errors
+PASS @390 C card from an address: dates, adults, children, rooms — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2&children=1
+PASS @390 C card before any search: no dates
+PASS @390 C results: 3 adults, 1 child
+PASS @390 C GoHost bare-da-kao unchanged (children: not asked) — availability-needs-provider-check
+PASS @390 C GoHost pepper-house unchanged (children: not asked) — availability-needs-provider-check
+PASS @390 C ezCloud bare-chic unchanged
+PASS @390 C ezCloud bare-hyphen unchanged
+PASS @390 C ezCloud bare-han unchanged
+PASS @390 C ezCloud the-nang-suites unchanged
+PASS @390 C Back: card carries dates, adults and the child, no rooms invented — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @390 C Back: bar still restored
+PASS @390 C one history entry for the search, none for the refresh after Back — 4 → 5
+PASS @390 C card → property keeps the search — /dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @390 C refresh: same search in bar and cards
+PASS @390 C no console or hydration errors
+
+141/141 passed

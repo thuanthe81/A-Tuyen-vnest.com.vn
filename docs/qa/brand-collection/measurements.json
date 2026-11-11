@@ -1,0 +1,400 @@
+{
+  "a-390-all": {
+    "viewport": [
+      390,
+      844
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 586,
+    "sectionTopToFirstCardImage": 667,
+    "firstCardImageVisibleWhenSectionAtTop": 177,
+    "cards": 6,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn",
+      "The Nắng Suites",
+      "Pepper House"
+    ],
+    "summary": "Tất cả 6 nơi ở",
+    "pressed": [
+      "Tất cả thương hiệu, 6 nơi ở",
+      "Mọi thành phố, 6 nơi ở"
+    ],
+    "controlsUnder44": [],
+    "address": "",
+    "errors": []
+  },
+  "a-390-bare": {
+    "viewport": [
+      390,
+      844
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 586,
+    "sectionTopToFirstCardImage": 667,
+    "firstCardImageVisibleWhenSectionAtTop": 177,
+    "cards": 4,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn"
+    ],
+    "summary": "4 nơi ở · Bare Boutique Stays",
+    "pressed": [
+      "Bare Boutique Stays, 4 nơi ở",
+      "Mọi thành phố, 4 nơi ở"
+    ],
+    "controlsUnder44": [],
+    "address": "?brand=bare",
+    "errors": []
+  },
+  "a-768-all": {
+    "viewport": [
+      768,
+      1024
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 677,
+    "sectionTopToFirstCardImage": 758,
+    "firstCardImageVisibleWhenSectionAtTop": 266,
+    "cards": 6,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn",
+      "The Nắng Suites",
+      "Pepper House"
+    ],
+    "summary": "Tất cả 6 nơi ở",
+    "pressed": [
+      "Tất cả thương hiệu, 6 nơi ở",
+      "Mọi thành phố, 6 nơi ở"
+    ],
+    "controlsUnder44": [],
+    "address": "",
+    "errors": []
+  },
+  "a-768-bare": {
+    "viewport": [
+      768,
+      1024
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 677,
+    "sectionTopToFirstCardImage": 758,
+    "firstCardImageVisibleWhenSectionAtTop": 266,
+    "cards": 4,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn"
+    ],
+    "summary": "4 nơi ở · Bare Boutique Stays",
+    "pressed": [
+      "Bare Boutique Stays, 4 nơi ở",
+      "Mọi thành phố, 4 nơi ở"
+    ],
+    "controlsUnder44": [],
+    "address": "?brand=bare",
+    "errors": []
+  },
+  "a-1440-all": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 529,
+    "sectionTopToFirstCardImage": 610,
+    "firstCardImageVisibleWhenSectionAtTop": 290,
+    "cards": 6,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn",
+      "The Nắng Suites",
+      "Pepper House"
+    ],
+    "summary": "Tất cả 6 nơi ở",
+    "pressed": [
+      "Tất cả thương hiệu, 6 nơi ở",
+      "Mọi thành phố, 6 nơi ở"
+    ],
+    "controlsUnder44": [],
+    "address": "",
+    "errors": []
+  },
+  "a-1440-bare": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 529,
+    "sectionTopToFirstCardImage": 610,
+    "firstCardImageVisibleWhenSectionAtTop": 290,
+    "cards": 4,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn"
+    ],
+    "summary": "4 nơi ở · Bare Boutique Stays",
+    "pressed": [
+      "Bare Boutique Stays, 4 nơi ở",
+      "Mọi thành phố, 4 nơi ở"
+    ],
+    "controlsUnder44": [],
+    "address": "?brand=bare",
+    "errors": []
+  },
+  "b-390-all": {
+    "viewport": [
+      390,
+      844
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 521,
+    "sectionTopToFirstCardImage": 533,
+    "firstCardImageVisibleWhenSectionAtTop": 311,
+    "cards": 6,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn",
+      "The Nắng Suites",
+      "Pepper House"
+    ],
+    "summary": "Tất cả 6 nơi ở",
+    "pressed": [
+      "Tất cả thương hiệu, 6 nơi ở",
+      "Mọi thành phố, 6 nơi ở"
+    ],
+    "controlsUnder44": [
+      {
+        "label": "Mọi thành phố, 6 nơi ở",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "TP. Hồ Chí Minh, 4 nơi ở",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Đà Nẵng, 2 nơi ở",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Chờ xác minh",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "address": "",
+    "errors": []
+  },
+  "b-390-bare": {
+    "viewport": [
+      390,
+      844
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 521,
+    "sectionTopToFirstCardImage": 533,
+    "firstCardImageVisibleWhenSectionAtTop": 311,
+    "cards": 4,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn"
+    ],
+    "summary": "4 nơi ở · Bare Boutique Stays",
+    "pressed": [
+      "Bare Boutique Stays, 4 nơi ở",
+      "Mọi thành phố, 4 nơi ở"
+    ],
+    "controlsUnder44": [
+      {
+        "label": "Mọi thành phố, 4 nơi ở",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "TP. Hồ Chí Minh, 3 nơi ở",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Đà Nẵng, 1 nơi ở",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Chờ xác minh",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "address": "?brand=bare",
+    "errors": []
+  },
+  "b-768-all": {
+    "viewport": [
+      768,
+      1024
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 670,
+    "sectionTopToFirstCardImage": 682,
+    "firstCardImageVisibleWhenSectionAtTop": 342,
+    "cards": 6,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn",
+      "The Nắng Suites",
+      "Pepper House"
+    ],
+    "summary": "Tất cả 6 nơi ở",
+    "pressed": [
+      "Tất cả thương hiệu, 6 nơi ở",
+      "Mọi thành phố, 6 nơi ở"
+    ],
+    "controlsUnder44": [
+      {
+        "label": "Tất cả (6)TP. Hồ Chí Minh (4)Đà Nẵng (2)",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Chờ xác minh",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "address": "",
+    "errors": []
+  },
+  "b-768-bare": {
+    "viewport": [
+      768,
+      1024
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 670,
+    "sectionTopToFirstCardImage": 682,
+    "firstCardImageVisibleWhenSectionAtTop": 342,
+    "cards": 4,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn"
+    ],
+    "summary": "4 nơi ở · Bare Boutique Stays",
+    "pressed": [
+      "Bare Boutique Stays, 4 nơi ở",
+      "Mọi thành phố, 4 nơi ở"
+    ],
+    "controlsUnder44": [
+      {
+        "label": "Tất cả (4)TP. Hồ Chí Minh (3)Đà Nẵng (1)",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Chờ xác minh",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "address": "?brand=bare",
+    "errors": []
+  },
+  "b-1440-all": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 555,
+    "sectionTopToFirstCardImage": 571,
+    "firstCardImageVisibleWhenSectionAtTop": 329,
+    "cards": 6,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn",
+      "The Nắng Suites",
+      "Pepper House"
+    ],
+    "summary": "Tất cả 6 nơi ở",
+    "pressed": [
+      "Tất cả thương hiệu, 6 nơi ở",
+      "Mọi thành phố, 6 nơi ở"
+    ],
+    "controlsUnder44": [
+      {
+        "label": "Tất cả (6)TP. Hồ Chí Minh (4)Đà Nẵng (2)",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Chờ xác minh",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "address": "",
+    "errors": []
+  },
+  "b-1440-bare": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "overflowPx": 0,
+    "sectionHeight": 555,
+    "sectionTopToFirstCardImage": 571,
+    "firstCardImageVisibleWhenSectionAtTop": 329,
+    "cards": 4,
+    "cardNames": [
+      "Bare Chic",
+      "Bare Hyphen",
+      "Bare Đa Kao",
+      "Bare Hàn"
+    ],
+    "summary": "4 nơi ở · Bare Boutique Stays",
+    "pressed": [
+      "Bare Boutique Stays, 4 nơi ở",
+      "Mọi thành phố, 4 nơi ở"
+    ],
+    "controlsUnder44": [
+      {
+        "label": "Tất cả (4)TP. Hồ Chí Minh (3)Đà Nẵng (1)",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "label": "Chờ xác minh",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "address": "?brand=bare",
+    "errors": []
+  }
+}

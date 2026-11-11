@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Collection board</title>
+<style>
+  :root { --olive: #37412f; --beige: #f1ece4; --paper: #fbf9f5; --muted: #5b6152; --line: #ddd5c8; --copper: #ab7444; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--olive); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header, section { max-width: 1440px; margin: 0 auto; padding: 32px 24px; }
+  h1 { font-size: 28px; font-weight: 500; letter-spacing: -0.02em; margin: 4px 0 8px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 0 0 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  p { max-width: 70ch; color: var(--muted); }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  .pair.phones { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  figure { margin: 0; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  figcaption b { color: var(--olive); }
+  img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+  @media (max-width: 760px) { .pair, .pair.phones { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">VNest V2 · Brand Collection · 15/10/2026 · chưa duyệt</p>
+  <h1>A, Curated Brand Gallery, and B, Connected Brand Index</h1>
+  <p>Same content, same filters, same property list; only the brand composition differs. Partner logos are labelled slots, pictures are drawn stand-ins, areas are unverified. Reasoning and recommendation: README.md. Measurements: ../../qa/brand-collection/RESULTS.md.</p>
+</header>
+
+<section>
+  <h2>Current direction: B, refinement 1 (before → now)</h2>
+  <div class="pair">
+    <figure><img src="../../qa/brand-collection/b-original/b-1440-bare.png" alt="Concept B as first reviewed, 1440 px, Bare"><figcaption><b>B before</b> · 1440 px, Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-1440-bare.png" alt="Concept B refined, 1440 px, Bare"><figcaption><b>B now</b> · 1440 px, Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-original/b-1440-all.png" alt="Concept B as first reviewed, 1440 px, all"><figcaption><b>B before</b> · 1440 px, all</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-1440-all.png" alt="Concept B refined, 1440 px, all"><figcaption><b>B now</b> · 1440 px, all</figcaption></figure>
+  </div>
+  <div class="pair phones" style="margin-top:16px">
+    <figure><img src="../../qa/brand-collection/b-original/b-390-bare.png" alt="Concept B as first reviewed, 390 px, Bare"><figcaption><b>B before</b> · 390 px, Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-all.png" alt="Concept B refined, 390 px, all"><figcaption><b>B now</b> · 390 px, all</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-bare.png" alt="Concept B refined, 390 px, Bare"><figcaption><b>B now</b> · 390 px, Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-recording.webp" alt="Recording of the refined concept B at 390 px"><figcaption><b>B now</b> · recording, 390 px</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Reference: A with B's copper thread (chosen first, then set aside for B)</h2>
+  <div class="pair phones">
+    <figure><img src="../../qa/brand-collection/a-original/a-390-bare.png" alt="Concept A before the thread, Bare chosen"><figcaption><b>A before</b> · tick and olive foot</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-390-bare.png" alt="Concept A with the thread, Bare chosen"><figcaption><b>A with thread</b> · Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-390-all.png" alt="Concept A with the thread, all brands"><figcaption><b>A with thread</b> · VNest tied to all six</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-390-recording.webp" alt="Recording of concept A with the thread at 390 px"><figcaption><b>A with thread</b> · recording, 390 px</figcaption></figure>
+  </div>
+  <div class="pair" style="margin-top:16px">
+    <figure><img src="../../qa/brand-collection/a-original/a-1440-bare.png" alt="Concept A before the thread at 1440 px"><figcaption><b>A before</b> · 1440 px</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-1440-bare.png" alt="Concept A with the thread at 1440 px"><figcaption><b>A with thread</b> · 1440 px</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Desktop, 1440 px (A shown with the thread)</h2>
+  <div class="pair">
+    <figure><img src="../../qa/brand-collection/a-1440-all.png" alt="Concept A at 1440 px, all brands"><figcaption><b>A</b> · all brands</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-1440-all.png" alt="Concept B at 1440 px, all brands"><figcaption><b>B</b> · all brands</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-1440-bare.png" alt="Concept A at 1440 px, Bare chosen"><figcaption><b>A</b> · Bare chosen: 4 properties</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-1440-bare.png" alt="Concept B at 1440 px, Bare chosen"><figcaption><b>B</b> · Bare chosen: 4 properties</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Tablet, 768 px</h2>
+  <div class="pair phones">
+    <figure><img src="../../qa/brand-collection/a-768-all.png" alt="Concept A at 768 px, all brands"><figcaption><b>A</b> · all</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-768-bare.png" alt="Concept A at 768 px, Bare chosen"><figcaption><b>A</b> · Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-768-all.png" alt="Concept B at 768 px, all brands"><figcaption><b>B</b> · all</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-768-bare.png" alt="Concept B at 768 px, Bare chosen"><figcaption><b>B</b> · Bare</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Phone, 390 px</h2>
+  <div class="pair phones">
+    <figure><img src="../../qa/brand-collection/a-390-all.png" alt="Concept A at 390 px, all brands"><figcaption><b>A</b> · all</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-390-bare.png" alt="Concept A at 390 px, Bare chosen"><figcaption><b>A</b> · Bare</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-all.png" alt="Concept B at 390 px, all brands"><figcaption><b>B</b> · all</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-bare.png" alt="Concept B at 390 px, Bare chosen"><figcaption><b>B</b> · Bare</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Recordings: Bare → Đà Nẵng → The Nắng Suites → Pepper House (city dropped, with a note) → Bỏ lọc</h2>
+  <div class="pair phones">
+    <figure><img src="../../qa/brand-collection/a-390-recording.webp" alt="Recording of concept A at 390 px"><figcaption><b>A</b> · 390 px</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-recording.webp" alt="Recording of concept B at 390 px"><figcaption><b>B</b> · 390 px</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/a-390-conflict-note.png" alt="Concept A, conflict note"><figcaption><b>A</b> · the conflict note</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-390-sample-area.png" alt="Concept B with sample areas"><figcaption><b>B</b> · <code>?areas=sample</code>, Khu vực mẫu 2</figcaption></figure>
+  </div>
+  <div class="pair" style="margin-top:16px">
+    <figure><img src="../../qa/brand-collection/a-1440-recording.webp" alt="Recording of concept A at 1440 px"><figcaption><b>A</b> · 1440 px</figcaption></figure>
+    <figure><img src="../../qa/brand-collection/b-1440-recording.webp" alt="Recording of concept B at 1440 px"><figcaption><b>B</b> · 1440 px</figcaption></figure>
+    <figure></figure>
+    <figure><img src="../../qa/brand-collection/b-1440-keyboard.webp" alt="Recording of concept B driven by keyboard"><figcaption><b>B</b> · keyboard only: arrows move and choose</figcaption></figure>
+  </div>
+</section>
+</body>
+</html>

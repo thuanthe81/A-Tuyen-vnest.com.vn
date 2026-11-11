@@ -1,0 +1,262 @@
+[
+  {
+    "w": 1440,
+    "h": 900,
+    "mode": "hero",
+    "opened": {
+      "rect": {
+        "x": 483.34375,
+        "y": 79,
+        "right": 1171.34375,
+        "bottom": 532
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 39,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 1440,
+    "h": 900,
+    "mode": "sticky",
+    "opened": {
+      "rect": {
+        "x": 600.671875,
+        "y": 68,
+        "right": 1288.671875,
+        "bottom": 597
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 39,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 768,
+    "h": 900,
+    "mode": "hero",
+    "opened": {
+      "rect": {
+        "x": 201.75,
+        "y": 123,
+        "right": 549.75,
+        "bottom": 532
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 9,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 768,
+    "h": 900,
+    "mode": "sticky",
+    "opened": {
+      "rect": {
+        "x": 342.796875,
+        "y": 68,
+        "right": 690.796875,
+        "bottom": 553
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 9,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 390,
+    "h": 844,
+    "mode": "hero",
+    "opened": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "right": 390,
+        "bottom": 844
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 9,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": true
+    },
+    "dates": [
+      "2026-11-27",
+      "2026-11-30"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": "not applicable: full-screen native mobile modal"
+  },
+  {
+    "w": 390,
+    "h": 844,
+    "mode": "sticky",
+    "opened": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "right": 390,
+        "bottom": 844
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 9,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": true
+    },
+    "dates": [
+      "2026-11-27",
+      "2026-11-30"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": "not applicable: full-screen native mobile modal"
+  },
+  {
+    "w": 1440,
+    "h": 1400,
+    "mode": "hero",
+    "opened": {
+      "rect": {
+        "x": 483.34375,
+        "y": 851,
+        "right": 1171.34375,
+        "bottom": 1304
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 39,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 1440,
+    "h": 1400,
+    "mode": "sticky",
+    "opened": {
+      "rect": {
+        "x": 600.671875,
+        "y": 68,
+        "right": 1288.671875,
+        "bottom": 597
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 39,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 1440,
+    "h": 500,
+    "mode": "hero",
+    "opened": {
+      "rect": {
+        "x": 483.34375,
+        "y": 31,
+        "right": 1171.34375,
+        "bottom": 484
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 39,
+      "hitTargets": true,
+      "scrollable": false,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  },
+  {
+    "w": 1440,
+    "h": 500,
+    "mode": "sticky",
+    "opened": {
+      "rect": {
+        "x": 600.671875,
+        "y": 16,
+        "right": 1303.671875,
+        "bottom": 484
+      },
+      "fits": true,
+      "overflow": false,
+      "visibleDates": 39,
+      "hitTargets": true,
+      "scrollable": true,
+      "mobile": false
+    },
+    "dates": [
+      "2026-11-06",
+      "2026-11-09"
+    ],
+    "selectionPersisted": true,
+    "escapeClosed": true,
+    "outside": true
+  }
+]

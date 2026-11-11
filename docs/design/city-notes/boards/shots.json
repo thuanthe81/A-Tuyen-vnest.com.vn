@@ -1,0 +1,93 @@
+[
+ {
+  "size": "desktop-1440",
+  "state": "hcm-eat",
+  "frameHeight": 900,
+  "overflowX": false,
+  "sectionHeight": 320,
+  "shown": 4,
+  "tabs": [
+   "Ăn & uống 7 địa điểm [selected]",
+   "Khám phá 8 địa điểm"
+  ],
+  "smallTargets": [],
+  "font": true
+ },
+ {
+  "size": "desktop-1440",
+  "state": "hcm-explore-open",
+  "frameHeight": 900,
+  "overflowX": false,
+  "sectionHeight": 455,
+  "shown": 8,
+  "tabs": [
+   "Ăn & uống 7 địa điểm",
+   "Khám phá 8 địa điểm [selected]"
+  ],
+  "smallTargets": [],
+  "font": true
+ },
+ {
+  "size": "desktop-1440",
+  "state": "dn-eat",
+  "frameHeight": 900,
+  "overflowX": false,
+  "sectionHeight": 299,
+  "shown": 4,
+  "tabs": [
+   "Ăn & uống 7 địa điểm [selected]",
+   "Khám phá 8 địa điểm"
+  ],
+  "smallTargets": [],
+  "font": true
+ },
+ {
+  "size": "mobile-390",
+  "state": "hcm-eat",
+  "frameHeight": 844,
+  "overflowX": false,
+  "sectionHeight": 630,
+  "shown": 4,
+  "tabs": [
+   "Ăn & uống 7 địa điểm [selected]",
+   "Khám phá 8 địa điểm"
+  ],
+  "smallTargets": [],
+  "font": true
+ },
+ {
+  "size": "mobile-390",
+  "state": "hcm-explore-open",
+  "frameHeight": 1109,
+  "overflowX": false,
+  "sectionHeight": 941,
+  "shown": 8,
+  "tabs": [
+   "Ăn & uống 7 địa điểm",
+   "Khám phá 8 địa điểm [selected]"
+  ],
+  "smallTargets": [],
+  "font": true
+ },
+ {
+  "size": "mobile-390",
+  "state": "dn-eat",
+  "frameHeight": 844,
+  "overflowX": false,
+  "sectionHeight": 609,
+  "shown": 4,
+  "tabs": [
+   "Ăn & uống 7 địa điểm [selected]",
+   "Khám phá 8 địa điểm"
+  ],
+  "smallTargets": [],
+  "font": true
+ },
+ {
+  "keyboard": {
+   "focused": "cn-tab-explore",
+   "selected": "cn-tab-explore",
+   "first": "Dinh Độc Lập"
+  }
+ }
+]

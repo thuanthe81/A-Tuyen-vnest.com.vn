@@ -1,0 +1,5 @@
+# Third-party stock media for a PRIVATE LOCAL test (see SOURCES.md). Not VNest property
+# photography, not for publication: keep the files out of version control.
+*
+!.gitignore
+!SOURCES.md

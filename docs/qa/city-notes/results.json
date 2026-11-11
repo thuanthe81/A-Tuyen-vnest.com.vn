@@ -1,0 +1,737 @@
+{
+ "base": "http://localhost:3400",
+ "runs": [
+  {
+   "view": "390",
+   "check": "hcm private: first, tab, expand, switch, collapse",
+   "first": {
+    "overflowX": false,
+    "sectionHeight": 825,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 7 địa điểm ăn uống",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0
+   },
+   "explore": {
+    "overflowX": false,
+    "sectionHeight": 826,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Dinh Độc Lập",
+     "Phố đi bộ Nguyễn Huệ",
+     "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+     "Chợ Bến Thành"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 8 địa điểm tham quan",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.00019684659130177117
+   },
+   "expanded": {
+    "overflowX": false,
+    "sectionHeight": 1105,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Dinh Độc Lập",
+     "Phố đi bộ Nguyễn Huệ",
+     "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+     "Chợ Bến Thành",
+     "Thảo Cầm Viên Sài Gòn",
+     "Bảo tàng Chứng tích chiến tranh",
+     "Bảo tàng Mỹ Thuật Thành phố Hồ Chí Minh",
+     "Nhà thờ Tân Định"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.14228364055024592
+   },
+   "eatExpanded": {
+    "overflowX": false,
+    "sectionHeight": 1083,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady",
+     "Bánh mì Huynh Hoa",
+     "Hủ tiếu nam vang Thành Đạt",
+     "Bánh mì chim chạy"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [
+     "Chờ VNest · C13: Chính tả “Huynh Hoa” cần VNest xác nhận (Q32)"
+    ],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.14228364055024592
+   },
+   "collapsed": {
+    "overflowX": false,
+    "sectionHeight": 825,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 7 địa điểm ăn uống",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.3117060490333645
+   },
+   "collapseButtonInView": true,
+   "consoleErrors": []
+  },
+  {
+   "view": "390",
+   "check": "keyboard, da-nang private",
+   "steps": [
+    {
+     "key": "ArrowRight",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "ArrowRight",
+     "focus": "tab:Ăn & uống7 địa điểm",
+     "selected": "Ăn & uống7 địa điểm",
+     "first": "Hải sản Năm Đảnh"
+    },
+    {
+     "key": "ArrowLeft",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "End",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "Home",
+     "focus": "tab:Ăn & uống7 địa điểm",
+     "selected": "Ăn & uống7 địa điểm",
+     "first": "Hải sản Năm Đảnh"
+    },
+    {
+     "key": "Tab",
+     "focus": "tabpanel:Khám pháBán đảo Sơn TràSơn TràNgũ Hành Sơn81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành SơnCầu RồngAn HảiNhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)156 Trần Phú, Hải ChâuChợ Hàn119 Trần phú, Hải ChâuChờ VNest · D30: Viết hoa “Trần phú” (D28 viết “Trần Phú”) (Q32)Chợ Cồn90 Hùng Vương, Hải ChâuBiển Mỹ KhêSơn TràBảo tàng Điêu khắc ChămSố 2 đường 2/9, Hải Châu",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "Tab",
+     "focus": "null:Xem tất cả 8 địa điểm tham quan",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    }
+   ],
+   "afterEnter": {
+    "overflowX": false,
+    "sectionHeight": 1133,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Bán đảo Sơn Trà",
+     "Ngũ Hành Sơn",
+     "Cầu Rồng",
+     "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+     "Chợ Hàn",
+     "Chợ Cồn",
+     "Biển Mỹ Khê",
+     "Bảo tàng Điêu khắc Chăm"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [
+     "Chờ VNest · D30: Viết hoa “Trần phú” (D28 viết “Trần Phú”) (Q32)"
+    ],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.18132260645581255
+   },
+   "afterSecondEnter": {
+    "overflowX": false,
+    "sectionHeight": 804,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Bán đảo Sơn Trà",
+     "Ngũ Hành Sơn",
+     "Cầu Rồng",
+     "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 8 địa điểm tham quan",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.30434808449297046
+   },
+   "consoleErrors": []
+  },
+  {
+   "view": "390",
+   "check": "public, da-nang",
+   "overflowX": false,
+   "sectionHeight": 839,
+   "hydrated": true,
+   "selected": "Khám phá8 địa điểm",
+   "visiblePlaces": [
+    "Bán đảo Sơn Trà",
+    "Ngũ Hành Sơn",
+    "Cầu Rồng",
+    "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+    "Chợ Hàn",
+    "Chợ Cồn",
+    "Biển Mỹ Khê",
+    "Bảo tàng Điêu khắc Chăm"
+   ],
+   "expanded": "true",
+   "more": "Thu gọn",
+   "flags": [],
+   "smallTargets": [],
+   "cls": 0,
+   "clsWithInput": 0.09048509161568957,
+   "reviewNotes": false,
+   "dataSource": 0,
+   "consoleErrors": []
+  },
+  {
+   "view": "390",
+   "check": "no script",
+   "places": 15,
+   "tabsVisible": false,
+   "buttonVisible": false,
+   "headings": [
+    "Ăn & uống",
+    "Khám phá"
+   ],
+   "overflowX": false
+  },
+  {
+   "view": "768",
+   "check": "hcm private: first, tab, expand, switch, collapse",
+   "first": {
+    "overflowX": false,
+    "sectionHeight": 617,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 7 địa điểm ăn uống",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0
+   },
+   "explore": {
+    "overflowX": false,
+    "sectionHeight": 619,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Dinh Độc Lập",
+     "Phố đi bộ Nguyễn Huệ",
+     "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+     "Chợ Bến Thành"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 8 địa điểm tham quan",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.0007492344011552632
+   },
+   "expanded": {
+    "overflowX": false,
+    "sectionHeight": 801,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Dinh Độc Lập",
+     "Phố đi bộ Nguyễn Huệ",
+     "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+     "Chợ Bến Thành",
+     "Thảo Cầm Viên Sài Gòn",
+     "Bảo tàng Chứng tích chiến tranh",
+     "Bảo tàng Mỹ Thuật Thành phố Hồ Chí Minh",
+     "Nhà thờ Tân Định"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.07524889100265379
+   },
+   "eatExpanded": {
+    "overflowX": false,
+    "sectionHeight": 850,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady",
+     "Bánh mì Huynh Hoa",
+     "Hủ tiếu nam vang Thành Đạt",
+     "Bánh mì chim chạy"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [
+     "Chờ VNest · C13: Chính tả “Huynh Hoa” cần VNest xác nhận (Q32)"
+    ],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.07922320589811231
+   },
+   "collapsed": {
+    "overflowX": false,
+    "sectionHeight": 617,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 7 địa điểm ăn uống",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.09050407883478329
+   },
+   "collapseButtonInView": true,
+   "consoleErrors": []
+  },
+  {
+   "view": "768",
+   "check": "keyboard, da-nang private",
+   "steps": [
+    {
+     "key": "ArrowRight",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "ArrowRight",
+     "focus": "tab:Ăn & uống7 địa điểm",
+     "selected": "Ăn & uống7 địa điểm",
+     "first": "Hải sản Năm Đảnh"
+    },
+    {
+     "key": "ArrowLeft",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "End",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "Home",
+     "focus": "tab:Ăn & uống7 địa điểm",
+     "selected": "Ăn & uống7 địa điểm",
+     "first": "Hải sản Năm Đảnh"
+    },
+    {
+     "key": "Tab",
+     "focus": "tabpanel:Khám pháBán đảo Sơn TràSơn TràNgũ Hành Sơn81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành SơnCầu RồngAn HảiNhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)156 Trần Phú, Hải ChâuChợ Hàn119 Trần phú, Hải ChâuChờ VNest · D30: Viết hoa “Trần phú” (D28 viết “Trần Phú”) (Q32)Chợ Cồn90 Hùng Vương, Hải ChâuBiển Mỹ KhêSơn TràBảo tàng Điêu khắc ChămSố 2 đường 2/9, Hải Châu",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "Tab",
+     "focus": "null:Xem tất cả 8 địa điểm tham quan",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    }
+   ],
+   "afterEnter": {
+    "overflowX": false,
+    "sectionHeight": 836,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Bán đảo Sơn Trà",
+     "Ngũ Hành Sơn",
+     "Cầu Rồng",
+     "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+     "Chợ Hàn",
+     "Chợ Cồn",
+     "Biển Mỹ Khê",
+     "Bảo tàng Điêu khắc Chăm"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [
+     "Chờ VNest · D30: Viết hoa “Trần phú” (D28 viết “Trần Phú”) (Q32)"
+    ],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.026324897383650143
+   },
+   "afterSecondEnter": {
+    "overflowX": false,
+    "sectionHeight": 603,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Bán đảo Sơn Trà",
+     "Ngũ Hành Sơn",
+     "Cầu Rồng",
+     "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 8 địa điểm tham quan",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.1229143316547076
+   },
+   "consoleErrors": []
+  },
+  {
+   "view": "768",
+   "check": "public, da-nang",
+   "overflowX": false,
+   "sectionHeight": 603,
+   "hydrated": true,
+   "selected": "Khám phá8 địa điểm",
+   "visiblePlaces": [
+    "Bán đảo Sơn Trà",
+    "Ngũ Hành Sơn",
+    "Cầu Rồng",
+    "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+    "Chợ Hàn",
+    "Chợ Cồn",
+    "Biển Mỹ Khê",
+    "Bảo tàng Điêu khắc Chăm"
+   ],
+   "expanded": "true",
+   "more": "Thu gọn",
+   "flags": [],
+   "smallTargets": [],
+   "cls": 0,
+   "clsWithInput": 0.045005025691352785,
+   "reviewNotes": false,
+   "dataSource": 0,
+   "consoleErrors": []
+  },
+  {
+   "view": "768",
+   "check": "no script",
+   "places": 15,
+   "tabsVisible": false,
+   "buttonVisible": false,
+   "headings": [
+    "Ăn & uống",
+    "Khám phá"
+   ],
+   "overflowX": false
+  },
+  {
+   "view": "1440",
+   "check": "hcm private: first, tab, expand, switch, collapse",
+   "first": {
+    "overflowX": false,
+    "sectionHeight": 501,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 7 địa điểm ăn uống",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0
+   },
+   "explore": {
+    "overflowX": false,
+    "sectionHeight": 523,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Dinh Độc Lập",
+     "Phố đi bộ Nguyễn Huệ",
+     "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+     "Chợ Bến Thành"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 8 địa điểm tham quan",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.005966676311728395
+   },
+   "expanded": {
+    "overflowX": false,
+    "sectionHeight": 636,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Dinh Độc Lập",
+     "Phố đi bộ Nguyễn Huệ",
+     "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+     "Chợ Bến Thành",
+     "Thảo Cầm Viên Sài Gòn",
+     "Bảo tàng Chứng tích chiến tranh",
+     "Bảo tàng Mỹ Thuật Thành phố Hồ Chí Minh",
+     "Nhà thờ Tân Định"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.05875066309799383
+   },
+   "eatExpanded": {
+    "overflowX": false,
+    "sectionHeight": 643,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady",
+     "Bánh mì Huynh Hoa",
+     "Hủ tiếu nam vang Thành Đạt",
+     "Bánh mì chim chạy"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [
+     "Chờ VNest · C13: Chính tả “Huynh Hoa” cần VNest xác nhận (Q32)"
+    ],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.05939087416409465
+   },
+   "collapsed": {
+    "overflowX": false,
+    "sectionHeight": 501,
+    "hydrated": true,
+    "selected": "Ăn & uống7 địa điểm",
+    "visiblePlaces": [
+     "ThaiYen Cafe",
+     "Cơm niêu Thiên Lý",
+     "Phở Phượng",
+     "Lunch Lady"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 7 địa điểm ăn uống",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.10774498724708505
+   },
+   "collapseButtonInView": true,
+   "consoleErrors": []
+  },
+  {
+   "view": "1440",
+   "check": "keyboard, da-nang private",
+   "steps": [
+    {
+     "key": "ArrowRight",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "ArrowRight",
+     "focus": "tab:Ăn & uống7 địa điểm",
+     "selected": "Ăn & uống7 địa điểm",
+     "first": "Hải sản Năm Đảnh"
+    },
+    {
+     "key": "ArrowLeft",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "End",
+     "focus": "tab:Khám phá8 địa điểm",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "Home",
+     "focus": "tab:Ăn & uống7 địa điểm",
+     "selected": "Ăn & uống7 địa điểm",
+     "first": "Hải sản Năm Đảnh"
+    },
+    {
+     "key": "Tab",
+     "focus": "tabpanel:Khám pháBán đảo Sơn TràSơn TràNgũ Hành Sơn81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành SơnCầu RồngAn HảiNhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)156 Trần Phú, Hải ChâuChợ Hàn119 Trần phú, Hải ChâuChờ VNest · D30: Viết hoa “Trần phú” (D28 viết “Trần Phú”) (Q32)Chợ Cồn90 Hùng Vương, Hải ChâuBiển Mỹ KhêSơn TràBảo tàng Điêu khắc ChămSố 2 đường 2/9, Hải Châu",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    },
+    {
+     "key": "Tab",
+     "focus": "null:Xem tất cả 8 địa điểm tham quan",
+     "selected": "Khám phá8 địa điểm",
+     "first": "Bán đảo Sơn Trà"
+    }
+   ],
+   "afterEnter": {
+    "overflowX": false,
+    "sectionHeight": 645,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Bán đảo Sơn Trà",
+     "Ngũ Hành Sơn",
+     "Cầu Rồng",
+     "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+     "Chợ Hàn",
+     "Chợ Cồn",
+     "Biển Mỹ Khê",
+     "Bảo tàng Điêu khắc Chăm"
+    ],
+    "expanded": "true",
+    "more": "Thu gọn",
+    "flags": [
+     "Chờ VNest · D30: Viết hoa “Trần phú” (D28 viết “Trần Phú”) (Q32)"
+    ],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.05341236758134002
+   },
+   "afterSecondEnter": {
+    "overflowX": false,
+    "sectionHeight": 503,
+    "hydrated": true,
+    "selected": "Khám phá8 địa điểm",
+    "visiblePlaces": [
+     "Bán đảo Sơn Trà",
+     "Ngũ Hành Sơn",
+     "Cầu Rồng",
+     "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)"
+    ],
+    "expanded": "false",
+    "more": "Xem tất cả 8 địa điểm tham quan",
+    "flags": [],
+    "smallTargets": [],
+    "cls": 0,
+    "clsWithInput": 0.10807136106556497
+   },
+   "consoleErrors": []
+  },
+  {
+   "view": "1440",
+   "check": "public, da-nang",
+   "overflowX": false,
+   "sectionHeight": 412,
+   "hydrated": true,
+   "selected": "Khám phá8 địa điểm",
+   "visiblePlaces": [
+    "Bán đảo Sơn Trà",
+    "Ngũ Hành Sơn",
+    "Cầu Rồng",
+    "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+    "Chợ Hàn",
+    "Chợ Cồn",
+    "Biển Mỹ Khê",
+    "Bảo tàng Điêu khắc Chăm"
+   ],
+   "expanded": "true",
+   "more": "Thu gọn",
+   "flags": [],
+   "smallTargets": [],
+   "cls": 0,
+   "clsWithInput": 0.03573859069573045,
+   "reviewNotes": false,
+   "dataSource": 0,
+   "consoleErrors": []
+  },
+  {
+   "view": "1440",
+   "check": "no script",
+   "places": 15,
+   "tabsVisible": false,
+   "buttonVisible": false,
+   "headings": [
+    "Ăn & uống",
+    "Khám phá"
+   ],
+   "overflowX": false
+  },
+  {
+   "view": "390",
+   "check": "three vs four on phones (public)",
+   "threeHeight": 490,
+   "threePlaces": 3,
+   "fourHeight": 580,
+   "fourPlaces": 4,
+   "consoleErrors": []
+  },
+  {
+   "view": "768",
+   "check": "three vs four on phones (public)",
+   "threeHeight": 435,
+   "threePlaces": 4,
+   "fourHeight": 435,
+   "fourPlaces": 4,
+   "consoleErrors": []
+  },
+  {
+   "view": "1440",
+   "check": "three vs four on phones (public)",
+   "threeHeight": 319,
+   "threePlaces": 4,
+   "fourHeight": 319,
+   "fourPlaces": 4,
+   "consoleErrors": []
+  }
+ ]
+}

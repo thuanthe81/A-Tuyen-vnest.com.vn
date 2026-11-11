@@ -1,0 +1,392 @@
+/* Concept A · Editorial Service Showcase (exploration, 8/11/2026). VNest palette: Dark Olive #37412F, Copper #A87444,
+   Warm Beige #F1ECE4. Small copper text uses the darker #8F6036 (AA on beige), as the approved section does. */
+
+.section {
+  --olive: #37412f;
+  --copper: #a87444;
+  --copper-text: #8f6036;
+  --cta-copper: #9a683c;
+  --sand: #f1ece4;
+  --line: #d9d0c2;
+  --muted: #6f675b;
+  --quiet: #7a7265;
+  --fade: 220ms;
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: clamp(3.5rem, 2.5rem + 4vw, 7rem) var(--vn-gutter) clamp(3.5rem, 2.5rem + 3.5vw, 6rem);
+  color: var(--olive);
+  scroll-margin-top: 5.75rem;
+}
+
+.section * {
+  margin: 0;
+}
+
+/* ── Heading: as the approved section (same overline and title) ── */
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--copper-text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.h2 {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+/* ── Service selector. Phones and tablets: three parts in a row under a hairline, the chosen one underlined in copper ── */
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: clamp(1.75rem, 1.25rem + 2vw, 2.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.tab {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 0.375rem;
+  min-height: 4.75rem;
+  padding: 0 0 0.875rem;
+  border: 0;
+  background: none;
+  color: var(--quiet);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: color var(--fade) ease;
+}
+
+/* The selection rule: drawn across the chosen part, on the hairline. */
+.tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--copper);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 280ms var(--vn-ease-out);
+}
+
+.tab[aria-selected="true"] {
+  color: var(--olive);
+}
+
+.tab[aria-selected="true"]::after {
+  transform: scaleX(1);
+}
+
+.tab:hover {
+  color: var(--olive);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+  border-radius: 0.25rem;
+}
+
+.tabNo {
+  color: var(--copper-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabText {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.tabTitle {
+  font-size: clamp(0.9375rem, 0.85rem + 0.4vw, 1.0625rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.tab[aria-selected="true"] .tabTitle {
+  font-weight: 600;
+}
+
+.tabSub,
+.tabMark {
+  display: none;
+}
+
+/* ── Story panel: the three are stacked in one cell, so the section keeps one height ── */
+
+.stage {
+  display: grid;
+  margin-top: 1.5rem;
+}
+
+.panel {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1.25rem;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity var(--fade) ease,
+    visibility 0s linear 0s;
+}
+
+.panel[data-active="false"] {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--fade) ease,
+    visibility 0s linear var(--fade);
+}
+
+.frame {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 0.875rem;
+  overflow: hidden;
+  box-shadow: 0 18px 36px -28px rgb(42 50 36 / 0.55);
+}
+
+.copy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.text {
+  max-width: 38rem;
+  font-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  line-height: 1.62;
+  letter-spacing: -0.005em;
+  text-wrap: pretty;
+}
+
+/* One CTA, pinned to the panel's foot so it sits in the same place for every service. */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 3.5rem;
+  margin-top: auto;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.625rem;
+  background: var(--cta-copper);
+  color: #fff;
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  text-wrap: balance;
+  box-shadow: 0 10px 22px -14px rgb(90 58 28 / 0.65);
+  transition: background-color 120ms ease;
+}
+
+.cta > span {
+  flex: none;
+  font-size: 1.125rem;
+  transition: translate 160ms ease;
+}
+
+.cta:hover {
+  background: #8f6036;
+}
+
+.cta:hover > span {
+  translate: 0.25rem 0;
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+/* ── Tablet ── */
+
+@media (min-width: 48rem) {
+  .kicker::before {
+    content: "";
+    flex: none;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--copper);
+  }
+
+  .tabs {
+    gap: 1.5rem;
+  }
+
+  .tabTitle {
+    font-size: 1.125rem;
+  }
+
+  .stage {
+    margin-top: 2rem;
+  }
+
+  .frame {
+    aspect-ratio: 2 / 1;
+  }
+
+  .copy {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+
+  .cta {
+    flex: none;
+    align-self: flex-end;
+    width: auto;
+    min-width: 17rem;
+    white-space: nowrap;
+  }
+}
+
+/* ── Desktop: heading and service rows left, the story panel right ── */
+
+@media (min-width: 64rem) {
+  .section {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    column-gap: clamp(3rem, 1rem + 5vw, 6.5rem);
+  }
+
+  .lead {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .tabs {
+    display: block;
+    margin-top: auto;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* A row: index, name (and 02's sub-line), and an arrow that appears on the chosen one. */
+  .tab {
+    grid-template-columns: 3rem minmax(0, 1fr) 1.5rem;
+    align-items: baseline;
+    gap: 0;
+    width: 100%;
+    min-height: 0;
+    padding: 1.375rem 0 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .tab::after {
+    top: -1px;
+    bottom: auto;
+  }
+
+  .tabNo {
+    font-size: 0.8125rem;
+  }
+
+  .tabTitle {
+    font-size: clamp(1.5rem, 0.95rem + 0.95vw, 1.875rem);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+
+  .tab[aria-selected="true"] .tabTitle {
+    font-weight: 500;
+  }
+
+  .tabSub {
+    display: block;
+    color: var(--muted);
+    font-size: 0.9375rem;
+    letter-spacing: 0;
+  }
+
+  .tabMark {
+    display: block;
+    justify-self: end;
+    color: var(--copper);
+    font-size: 1.25rem;
+    opacity: 0;
+    translate: -0.5rem 0;
+    transition:
+      opacity var(--fade) ease,
+      translate 280ms var(--vn-ease-out);
+  }
+
+  .tab:hover .tabMark {
+    opacity: 0.45;
+  }
+
+  .tab[aria-selected="true"] .tabMark {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .stage {
+    margin-top: 0;
+  }
+
+  .frame {
+    --reserve: 4.5rem;
+    aspect-ratio: 16 / 10;
+    box-shadow: none;
+  }
+
+  /* The description is set into the visual's lower edge, on the page's own beige: one composition, not two blocks. */
+  .copy {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.75rem;
+    margin-top: -4.5rem;
+    margin-right: 12%;
+    padding: 1.75rem 2.25rem 0 0;
+    border-top-right-radius: 0.875rem;
+    background: var(--sand);
+  }
+
+  .panel {
+    gap: 0;
+  }
+
+  .cta {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    --fade: 0ms;
+  }
+
+  .tab::after,
+  .tabMark,
+  .cta > span {
+    transition: none;
+  }
+}

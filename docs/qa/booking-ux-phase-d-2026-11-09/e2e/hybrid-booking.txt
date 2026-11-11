@@ -1,0 +1,165 @@
+▶ results: all properties
+  ✔ six cards in fixed order, truthful states, no overflow @375 (1138.494542ms)
+  ✔ six cards in fixed order, truthful states, no overflow @390 (1110.239208ms)
+  ✔ six cards in fixed order, truthful states, no overflow @430 (1107.053875ms)
+  ✔ six cards in fixed order, truthful states, no overflow @768 (1504.162583ms)
+  ✔ six cards in fixed order, truthful states, no overflow @1440 (1091.618416ms)
+  ✔ an unknown property falls back to all six, never an error (1040.3885ms)
+  ✔ dates, rooms and guests survive into the results and into a property's page (1047.289958ms)
+✔ results: all properties (8112.996958ms)
+▶ homepage search → results
+  ✔ all properties: dates and guests reach the six-property results @768 (1810.228959ms)
+  ✔ a GoHost property goes to its own room selection @768 (2309.9985ms)
+  ✔ an ezCloud property goes to the hand-off state, never to GoHost's flow @768 (2244.365667ms)
+  ✔ all properties: dates and guests reach the six-property results @1440 (1727.598959ms)
+  ✔ a GoHost property goes to its own room selection @1440 (2246.995875ms)
+  ✔ an ezCloud property goes to the hand-off state, never to GoHost's flow @1440 (2180.934834ms)
+✔ homepage search → results (12520.658125ms)
+▶ discovery: every card opens its property page
+  ✔ bare-chic @390: "Chọn phòng" → detail page with the stay; Back returns to the results (1271.172208ms)
+  ✔ bare-hyphen @390: "Chọn phòng" → detail page with the stay; Back returns to the results (1408.073541ms)
+  ✔ bare-da-kao @390: "Chọn phòng" → detail page with the stay; Back returns to the results (1337.907458ms)
+  ✔ bare-han @390: "Chọn phòng" → detail page with the stay; Back returns to the results (1238.91825ms)
+  ✔ the-nang-suites @390: "Chọn phòng" → detail page with the stay; Back returns to the results (1228.651083ms)
+  ✔ pepper-house @390: "Chọn phòng" → detail page with the stay; Back returns to the results (1300.725333ms)
+  ✔ bare-chic @1440: "Chọn phòng" → detail page with the stay; Back returns to the results (1305.460041ms)
+  ✔ bare-hyphen @1440: "Chọn phòng" → detail page with the stay; Back returns to the results (1409.989417ms)
+  ✔ bare-da-kao @1440: "Chọn phòng" → detail page with the stay; Back returns to the results (1349.317833ms)
+  ✔ bare-han @1440: "Chọn phòng" → detail page with the stay; Back returns to the results (1234.558417ms)
+  ✔ the-nang-suites @1440: "Chọn phòng" → detail page with the stay; Back returns to the results (1200.504417ms)
+  ✔ pepper-house @1440: "Chọn phòng" → detail page with the stay; Back returns to the results (1188.576917ms)
+  ✔ the property name and photo also open the detail page (1435.50825ms)
+✔ discovery: every card opens its property page (16910.246417ms)
+✔ an edited search (rooms added on the results page) survives property page → Back (2036.222709ms)
+▶ GoHost property: explicit availability search stays room-first
+  ✔ Kiểm tra phòng trống opens that property's rooms only; Back returns to the list with one press (1173.405ms)
+✔ GoHost property: explicit availability search stays room-first (1173.679042ms)
+▶ ezCloud properties: hand-off state
+  ✔ bare-chic: honest unconfigured hand-off, no first-party selection, Back works (1135.004708ms)
+  ✔ bare-hyphen: honest unconfigured hand-off, no first-party selection, Back works (1134.311125ms)
+  ✔ bare-han: honest unconfigured hand-off, no first-party selection, Back works (1134.666ms)
+  ✔ the-nang-suites: honest unconfigured hand-off, no first-party selection, Back works (1131.440875ms)
+✔ ezCloud properties: hand-off state (4535.753917ms)
+▶ simulation is fail-closed
+  ✔ a server without AVAILABILITY_SIMULATION ignores ?sim=: no simulated state, price or banner (1029.251541ms)
+✔ simulation is fail-closed (1029.511292ms)
+▶ provider states are never confused
+  ✖ a provider error is not sold out and can be retried; unavailable is only a verified answer (43.326625ms)
+  ✖ a verified available state shows its price and labels a simulation as not real (24.47175ms)
+  ✖ changing the stay hides verified answers until they are checked again, and keeps the review simulation (24.891667ms)
+✖ provider states are never confused (92.982125ms)
+▶ property pages
+  ✔ bare-chic page: one hand-off action, no first-party room selection (779.081334ms)
+  ✔ bare-hyphen page: one hand-off action, no first-party room selection (896.623292ms)
+  ✔ bare-han page: one hand-off action, no first-party room selection (731.055292ms)
+  ✔ the-nang-suites page: one hand-off action, no first-party room selection (724.831167ms)
+  ✔ header BOOK NOW on an ezCloud page leads to the hand-off state with the stay (1377.903834ms)
+  ✔ bare-da-kao page: slot-based selection preserved, BOOK NOW opens it, nothing is held (2472.765625ms)
+  ✔ pepper-house page: slot-based selection preserved, BOOK NOW opens it, nothing is held (2361.088584ms)
+✔ property pages (9343.911834ms)
+▶ room galleries use the authorised client photographs
+  ✔ bare-chic @390: every hero and room photo loads, the viewer opens (4463.426792ms)
+  ✔ bare-hyphen @390: every hero and room photo loads, the viewer opens (7704.472041ms)
+  ✔ bare-da-kao @390: every hero and room photo loads, the viewer opens (7300.064333ms)
+  ✔ bare-han @390: every hero and room photo loads, the viewer opens (3855.974459ms)
+  ✔ the-nang-suites @390: every hero and room photo loads, the viewer opens (3719.899583ms)
+  ✔ pepper-house @390: every hero and room photo loads, the viewer opens (2315.816916ms)
+  ✔ bare-chic @1440: every hero and room photo loads, the viewer opens (4997.390292ms)
+  ✔ bare-hyphen @1440: every hero and room photo loads, the viewer opens (8493.625083ms)
+  ✔ bare-da-kao @1440: every hero and room photo loads, the viewer opens (7981.026583ms)
+  ✔ bare-han @1440: every hero and room photo loads, the viewer opens (4861.476791ms)
+  ✔ the-nang-suites @1440: every hero and room photo loads, the viewer opens (4471.310792ms)
+  ✔ pepper-house @1440: every hero and room photo loads, the viewer opens (3128.949792ms)
+✔ room galleries use the authorised client photographs (63294.800834ms)
+▶ homepage property cards open the property pages
+  ✔ bare-da-kao @390: homepage card → detail page; Back returns home (1087.89975ms)
+  ✔ pepper-house @390: homepage card → detail page; Back returns home (893.8095ms)
+  ✔ bare-chic @390: homepage card → detail page; Back returns home (964.055958ms)
+  ✔ bare-da-kao @1440: homepage card → detail page; Back returns home (981.677584ms)
+  ✔ pepper-house @1440: homepage card → detail page; Back returns home (846.71925ms)
+  ✔ bare-chic @1440: homepage card → detail page; Back returns home (929.546292ms)
+✔ homepage property cards open the property pages (5704.167791ms)
+✔ @390: Menu → 'Khám phá nơi ở' → card → Back returns to the homepage, not a stale page (1107.740542ms)
+▶ Pepper House presentation
+  ✖ @375: two separate rooms in order, each with only its own floor's photographs (30044.870375ms)
+  ✔ @390: two separate rooms in order, each with only its own floor's photographs (1952.551166ms)
+  ✔ @430: two separate rooms in order, each with only its own floor's photographs (1966.895375ms)
+  ✔ @768: two separate rooms in order, each with only its own floor's photographs (2064.863542ms)
+  ✔ @1440: two separate rooms in order, each with only its own floor's photographs (2049.035333ms)
+  ✔ @390: swipe, room drawers, 'Xem tất cả ảnh', and GoHost room selection in demo mode (2061.639541ms)
+✖ Pepper House presentation (40140.983667ms)
+▶ rooms and guests are separate values
+  ✔ @390: 3 guests / 2 rooms → add a room keeps 3 → remove → Back and refresh keep it (2668.67925ms)
+  ✔ @1440: 3 guests / 2 rooms → add a room keeps 3 → remove → Back and refresh keep it (2717.102417ms)
+  ✔ property page (GoHost demo): adding and removing room slots keeps the guest total (1154.877416ms)
+  ✔ ezCloud pages are unchanged: hand-off, no room selection, stay carried (719.591208ms)
+✔ rooms and guests are separate values (7260.810917ms)
+▶ Pepper House 3rd-floor cover
+  ✔ room card leads with 02.jpg, 08.jpg stays in the room's photographs, the hero is unchanged (879.290667ms)
+✔ Pepper House 3rd-floor cover (879.485041ms)
+▶ combined 'Phòng & khách' field (Option B)
+  ✔ @768: desktop panel — guests and rooms, complete summary, search carries the rooms (3210.635ms)
+  ✔ @1440: desktop panel — guests and rooms, complete summary, search carries the rooms (3070.199833ms)
+  ✔ property page: the header field and the room slots stay one search, both ways (1500.781417ms)
+  ✔ @375: mobile pill shows the complete summary on at most two lines, no overflow (1246.560875ms)
+  ✔ @390: mobile pill shows the complete summary on at most two lines, no overflow (1251.044708ms)
+  ✔ @430: mobile pill shows the complete summary on at most two lines, no overflow (1124.011667ms)
+✔ combined 'Phòng & khách' field (Option B) (11403.774542ms)
+ℹ tests 79
+ℹ suites 14
+ℹ pass 75
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 185738.334042
+
+✖ failing tests:
+
+test at test/e2e/hybrid-booking.test.mjs:302:3
+✖ a provider error is not sold out and can be retried; unavailable is only a verified answer (43.326625ms)
+  page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:error,pepper-house:unavailable
+  Call log:
+    - navigating to "http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:error,pepper-house:unavailable", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:75:31)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:303:31) {
+    name: 'Error',
+    log: [ '  - navigating to "http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:error,pepper-house:unavailable", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/hybrid-booking.test.mjs:314:3
+✖ a verified available state shows its price and labels a simulation as not real (24.47175ms)
+  page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:available
+  Call log:
+    - navigating to "http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:available", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:75:31)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:315:31) {
+    name: 'Error',
+    log: [ '  - navigating to "http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:available", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/hybrid-booking.test.mjs:324:3
+✖ changing the stay hides verified answers until they are checked again, and keeps the review simulation (24.891667ms)
+  page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:available
+  Call log:
+    - navigating to "http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:available", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:75:31)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:325:31) {
+    name: 'Error',
+    log: [ '  - navigating to "http://localhost:3404/dev/demo/tim-phong?property=all&checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4&sim=bare-da-kao:available", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/hybrid-booking.test.mjs:501:5
+✖ @375: two separate rooms in order, each with only its own floor's photographs (30044.870375ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3401/dev/stays/pepper-house?checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:75:31)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/hybrid-booking.test.mjs:502:41) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3401/dev/stays/pepper-house?checkIn=2026-12-10&checkOut=2026-12-12&rooms=2,2&adults=4", waiting until "networkidle"' ]
+  }

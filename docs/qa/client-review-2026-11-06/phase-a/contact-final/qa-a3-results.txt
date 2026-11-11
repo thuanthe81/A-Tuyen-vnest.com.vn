@@ -1,0 +1,299 @@
+PASS @375 vi order FAQ → Contact → Form → footer
+PASS @375 vi Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @375 vi Contact: one h2, the section's label — Bắt đầu một cuộc trò chuyện.
+PASS @375 vi contact heading appears once on the page — 1
+PASS @375 vi card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @375 vi identity: logo, Hospitality Management, introduction
+PASS @375 vi layout stacked — share=0.91
+PASS @375 vi whitespace Contact → Form 32–48px — 40px
+PASS @375 vi form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @375 vi form: small own heading, not the contact heading — 22px vs 28px
+PASS @375 vi form: all fields and 4 service choices kept
+PASS @375 vi contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @375 vi minimal footer: no contact block
+PASS @375 vi contact CTA is a real link to #tu-van
+PASS @375 vi no horizontal overflow — 0
+PASS @375 vi CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Yêu cầu tư vấn
+PASS @375 vi CTA adds no history entry
+PASS @375 vi CTA with keyboard Enter — top=92
+PASS @375 vi form validates, says "not sent", never success
+PASS @375 vi typed values kept after "not sent"
+PASS @375 vi no console/hydration errors
+PASS @375 vi service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=van-hanh#tu-van
+PASS @375 vi service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=tu-van-mo-hinh#tu-van
+PASS @375 vi service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=nhuong-quyen#tu-van
+PASS @375 en order FAQ → Contact → Form → footer
+PASS @375 en Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @375 en Contact: one h2, the section's label — Start a conversation.
+PASS @375 en contact heading appears once on the page — 1
+PASS @375 en card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @375 en identity: logo, Hospitality Management, introduction
+PASS @375 en layout stacked — share=0.91
+PASS @375 en whitespace Contact → Form 32–48px — 40px
+PASS @375 en form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @375 en form: small own heading, not the contact heading — 22px vs 28px
+PASS @375 en form: all fields and 4 service choices kept
+PASS @375 en contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @375 en minimal footer: no contact block
+PASS @375 en contact CTA is a real link to #tu-van
+PASS @375 en no horizontal overflow — 0
+PASS @375 en CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Request a consultation
+PASS @375 en CTA adds no history entry
+PASS @375 en CTA with keyboard Enter — top=92
+PASS @375 en form validates, says "not sent", never success
+PASS @375 en typed values kept after "not sent"
+PASS @375 en no console/hydration errors
+PASS @375 en service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=van-hanh#tu-van
+PASS @375 en service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=tu-van-mo-hinh#tu-van
+PASS @375 en service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=nhuong-quyen#tu-van
+PASS @390 vi order FAQ → Contact → Form → footer
+PASS @390 vi Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @390 vi Contact: one h2, the section's label — Bắt đầu một cuộc trò chuyện.
+PASS @390 vi contact heading appears once on the page — 1
+PASS @390 vi card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @390 vi identity: logo, Hospitality Management, introduction
+PASS @390 vi layout stacked — share=0.91
+PASS @390 vi whitespace Contact → Form 32–48px — 40px
+PASS @390 vi form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @390 vi form: small own heading, not the contact heading — 22px vs 28px
+PASS @390 vi form: all fields and 4 service choices kept
+PASS @390 vi contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @390 vi minimal footer: no contact block
+PASS @390 vi contact CTA is a real link to #tu-van
+PASS @390 vi no horizontal overflow — 0
+PASS @390 vi CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Yêu cầu tư vấn
+PASS @390 vi CTA adds no history entry
+PASS @390 vi CTA with keyboard Enter — top=92
+PASS @390 vi form validates, says "not sent", never success
+PASS @390 vi typed values kept after "not sent"
+PASS @390 vi no console/hydration errors
+PASS @390 vi service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=van-hanh#tu-van
+PASS @390 vi service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=tu-van-mo-hinh#tu-van
+PASS @390 vi service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=nhuong-quyen#tu-van
+PASS @390 en order FAQ → Contact → Form → footer
+PASS @390 en Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @390 en Contact: one h2, the section's label — Start a conversation.
+PASS @390 en contact heading appears once on the page — 1
+PASS @390 en card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @390 en identity: logo, Hospitality Management, introduction
+PASS @390 en layout stacked — share=0.91
+PASS @390 en whitespace Contact → Form 32–48px — 40px
+PASS @390 en form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @390 en form: small own heading, not the contact heading — 22px vs 28px
+PASS @390 en form: all fields and 4 service choices kept
+PASS @390 en contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @390 en minimal footer: no contact block
+PASS @390 en contact CTA is a real link to #tu-van
+PASS @390 en no horizontal overflow — 0
+PASS @390 en CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Request a consultation
+PASS @390 en CTA adds no history entry
+PASS @390 en CTA with keyboard Enter — top=92
+PASS @390 en form validates, says "not sent", never success
+PASS @390 en typed values kept after "not sent"
+PASS @390 en no console/hydration errors
+PASS @390 en service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=van-hanh#tu-van
+PASS @390 en service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=tu-van-mo-hinh#tu-van
+PASS @390 en service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=nhuong-quyen#tu-van
+PASS @430 vi order FAQ → Contact → Form → footer
+PASS @430 vi Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @430 vi Contact: one h2, the section's label — Bắt đầu một cuộc trò chuyện.
+PASS @430 vi contact heading appears once on the page — 1
+PASS @430 vi card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @430 vi identity: logo, Hospitality Management, introduction
+PASS @430 vi layout stacked — share=0.92
+PASS @430 vi whitespace Contact → Form 32–48px — 40px
+PASS @430 vi form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @430 vi form: small own heading, not the contact heading — 22px vs 28px
+PASS @430 vi form: all fields and 4 service choices kept
+PASS @430 vi contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @430 vi minimal footer: no contact block
+PASS @430 vi contact CTA is a real link to #tu-van
+PASS @430 vi no horizontal overflow — 0
+PASS @430 vi CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Yêu cầu tư vấn
+PASS @430 vi CTA adds no history entry
+PASS @430 vi CTA with keyboard Enter — top=92
+PASS @430 vi form validates, says "not sent", never success
+PASS @430 vi typed values kept after "not sent"
+PASS @430 vi no console/hydration errors
+PASS @430 vi service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=van-hanh#tu-van
+PASS @430 vi service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=tu-van-mo-hinh#tu-van
+PASS @430 vi service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=nhuong-quyen#tu-van
+PASS @430 en order FAQ → Contact → Form → footer
+PASS @430 en Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @430 en Contact: one h2, the section's label — Start a conversation.
+PASS @430 en contact heading appears once on the page — 1
+PASS @430 en card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @430 en identity: logo, Hospitality Management, introduction
+PASS @430 en layout stacked — share=0.92
+PASS @430 en whitespace Contact → Form 32–48px — 40px
+PASS @430 en form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @430 en form: small own heading, not the contact heading — 22px vs 28px
+PASS @430 en form: all fields and 4 service choices kept
+PASS @430 en contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @430 en minimal footer: no contact block
+PASS @430 en contact CTA is a real link to #tu-van
+PASS @430 en no horizontal overflow — 0
+PASS @430 en CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Request a consultation
+PASS @430 en CTA adds no history entry
+PASS @430 en CTA with keyboard Enter — top=92
+PASS @430 en form validates, says "not sent", never success
+PASS @430 en typed values kept after "not sent"
+PASS @430 en no console/hydration errors
+PASS @430 en service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=van-hanh#tu-van
+PASS @430 en service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=tu-van-mo-hinh#tu-van
+PASS @430 en service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=nhuong-quyen#tu-van
+PASS @768 vi order FAQ → Contact → Form → footer
+PASS @768 vi Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @768 vi Contact: one h2, the section's label — Bắt đầu một cuộc trò chuyện.
+PASS @768 vi contact heading appears once on the page — 1
+PASS @768 vi card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @768 vi identity: logo, Hospitality Management, introduction
+PASS @768 vi layout stacked — share=0.94
+PASS @768 vi whitespace Contact → Form 32–96px — 56px
+PASS @768 vi form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @768 vi form: small own heading, not the contact heading — 23.808px vs 33.088px
+PASS @768 vi form: all fields and 4 service choices kept
+PASS @768 vi contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @768 vi minimal footer: no contact block
+PASS @768 vi contact CTA is a real link to #tu-van
+PASS @768 vi no horizontal overflow — 0
+PASS @768 vi CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Yêu cầu tư vấn
+PASS @768 vi CTA adds no history entry
+PASS @768 vi CTA with keyboard Enter — top=92
+PASS @768 vi form validates, says "not sent", never success
+PASS @768 vi typed values kept after "not sent"
+PASS @768 vi no console/hydration errors
+PASS @768 vi service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=van-hanh#tu-van
+PASS @768 vi service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=tu-van-mo-hinh#tu-van
+PASS @768 vi service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&dich-vu=nhuong-quyen#tu-van
+PASS @768 en order FAQ → Contact → Form → footer
+PASS @768 en Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @768 en Contact: one h2, the section's label — Start a conversation.
+PASS @768 en contact heading appears once on the page — 1
+PASS @768 en card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @768 en identity: logo, Hospitality Management, introduction
+PASS @768 en layout stacked — share=0.94
+PASS @768 en whitespace Contact → Form 32–96px — 56px
+PASS @768 en form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @768 en form: small own heading, not the contact heading — 23.808px vs 33.088px
+PASS @768 en form: all fields and 4 service choices kept
+PASS @768 en contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @768 en minimal footer: no contact block
+PASS @768 en contact CTA is a real link to #tu-van
+PASS @768 en no horizontal overflow — 0
+PASS @768 en CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Request a consultation
+PASS @768 en CTA adds no history entry
+PASS @768 en CTA with keyboard Enter — top=92
+PASS @768 en form validates, says "not sent", never success
+PASS @768 en typed values kept after "not sent"
+PASS @768 en no console/hydration errors
+PASS @768 en service van-hanh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=van-hanh#tu-van
+PASS @768 en service tu-van-mo-hinh → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=tu-van-mo-hinh#tu-van
+PASS @768 en service nhuong-quyen → form preselected, #tu-van in view, focus heading — top=92 H2: intro=0&lang=en&dich-vu=nhuong-quyen#tu-van
+PASS @1024 vi order FAQ → Contact → Form → footer
+PASS @1024 vi Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @1024 vi Contact: one h2, the section's label — Bắt đầu một cuộc trò chuyện.
+PASS @1024 vi contact heading appears once on the page — 1
+PASS @1024 vi card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @1024 vi identity: logo, Hospitality Management, introduction
+PASS @1024 vi layout two columns — share=0.44
+PASS @1024 vi whitespace Contact → Form 64–96px — 80px
+PASS @1024 vi form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @1024 vi form: small own heading, not the contact heading — 25.344px vs 37.184px
+PASS @1024 vi form: all fields and 4 service choices kept
+PASS @1024 vi contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @1024 vi minimal footer: no contact block
+PASS @1024 vi contact CTA is a real link to #tu-van
+PASS @1024 vi no horizontal overflow — 0
+PASS @1024 vi CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Yêu cầu tư vấn
+PASS @1024 vi CTA adds no history entry
+PASS @1024 vi CTA with keyboard Enter — top=92
+PASS @1024 vi form validates, says "not sent", never success
+PASS @1024 vi typed values kept after "not sent"
+PASS @1024 vi no console/hydration errors
+PASS @1024 vi service van-hanh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&dich-vu=van-hanh#tu-van
+PASS @1024 vi service tu-van-mo-hinh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&dich-vu=tu-van-mo-hinh#tu-van
+PASS @1024 vi service nhuong-quyen → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&dich-vu=nhuong-quyen#tu-van
+PASS @1024 en order FAQ → Contact → Form → footer
+PASS @1024 en Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @1024 en Contact: one h2, the section's label — Start a conversation.
+PASS @1024 en contact heading appears once on the page — 1
+PASS @1024 en card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @1024 en identity: logo, Hospitality Management, introduction
+PASS @1024 en layout two columns — share=0.44
+PASS @1024 en whitespace Contact → Form 64–96px — 80px
+PASS @1024 en form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @1024 en form: small own heading, not the contact heading — 25.344px vs 37.184px
+PASS @1024 en form: all fields and 4 service choices kept
+PASS @1024 en contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @1024 en minimal footer: no contact block
+PASS @1024 en contact CTA is a real link to #tu-van
+PASS @1024 en no horizontal overflow — 0
+PASS @1024 en CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Request a consultation
+PASS @1024 en CTA adds no history entry
+PASS @1024 en CTA with keyboard Enter — top=92
+PASS @1024 en form validates, says "not sent", never success
+PASS @1024 en typed values kept after "not sent"
+PASS @1024 en no console/hydration errors
+PASS @1024 en service van-hanh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&lang=en&dich-vu=van-hanh#tu-van
+PASS @1024 en service tu-van-mo-hinh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&lang=en&dich-vu=tu-van-mo-hinh#tu-van
+PASS @1024 en service nhuong-quyen → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&lang=en&dich-vu=nhuong-quyen#tu-van
+PASS @1440 vi order FAQ → Contact → Form → footer
+PASS @1440 vi Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @1440 vi Contact: one h2, the section's label — Bắt đầu một cuộc trò chuyện.
+PASS @1440 vi contact heading appears once on the page — 1
+PASS @1440 vi card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @1440 vi identity: logo, Hospitality Management, introduction
+PASS @1440 vi layout two columns — share=0.44
+PASS @1440 vi whitespace Contact → Form 64–96px — 80px
+PASS @1440 vi form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @1440 vi form: small own heading, not the contact heading — 27.84px vs 40px
+PASS @1440 vi form: all fields and 4 service choices kept
+PASS @1440 vi contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @1440 vi minimal footer: no contact block
+PASS @1440 vi contact CTA is a real link to #tu-van
+PASS @1440 vi no horizontal overflow — 0
+PASS @1440 vi CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Yêu cầu tư vấn
+PASS @1440 vi CTA adds no history entry
+PASS @1440 vi CTA with keyboard Enter — top=92
+PASS @1440 vi form validates, says "not sent", never success
+PASS @1440 vi typed values kept after "not sent"
+PASS @1440 vi no console/hydration errors
+PASS @1440 vi service van-hanh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&dich-vu=van-hanh#tu-van
+PASS @1440 vi service tu-van-mo-hinh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&dich-vu=tu-van-mo-hinh#tu-van
+PASS @1440 vi service nhuong-quyen → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&dich-vu=nhuong-quyen#tu-van
+PASS @1440 en order FAQ → Contact → Form → footer
+PASS @1440 en Contact and Form are separate sibling sections, no shared container — formFieldsInContact=0 parentPlain=true
+PASS @1440 en Contact: one h2, the section's label — Start a conversation.
+PASS @1440 en contact heading appears once on the page — 1
+PASS @1440 en card Dark Olive #37412F, rounded, cream title, copper CTA — rgb(55, 65, 47) r=16 rgb(241, 236, 228) rgb(154, 104, 60)
+PASS @1440 en identity: logo, Hospitality Management, introduction
+PASS @1440 en layout two columns — share=0.44
+PASS @1440 en whitespace Contact → Form 64–96px — 80px
+PASS @1440 en form: own cream card, rounded on all sides — rgb(248, 244, 238) r=16
+PASS @1440 en form: small own heading, not the contact heading — 27.84px vs 40px
+PASS @1440 en form: all fields and 4 service choices kept
+PASS @1440 en contact details once (tel, mail, address, Facebook) — 1/1/1/1
+PASS @1440 en minimal footer: no contact block
+PASS @1440 en contact CTA is a real link to #tu-van
+PASS @1440 en no horizontal overflow — 0
+PASS @1440 en CTA scrolls to #tu-van and focuses its heading — top=92 focus=H2:Request a consultation
+PASS @1440 en CTA adds no history entry
+PASS @1440 en CTA with keyboard Enter — top=92
+PASS @1440 en form validates, says "not sent", never success
+PASS @1440 en typed values kept after "not sent"
+PASS @1440 en no console/hydration errors
+PASS @1440 en service van-hanh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&lang=en&dich-vu=van-hanh#tu-van
+PASS @1440 en service tu-van-mo-hinh → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&lang=en&dich-vu=tu-van-mo-hinh#tu-van
+PASS @1440 en service nhuong-quyen → form preselected, #tu-van in view, focus first field — top=92 INPUT:name intro=0&lang=en&dich-vu=nhuong-quyen#tu-van
+PASS @1440 deep link ?dich-vu=nhuong-quyen#tu-van → form, service chosen — top=92
+PASS @390 property page: full footer = identity + Dark Olive card
+PASS @390 property footer CTA → /dev/demo#tu-van, form in view — top=92
+PASS @390 browser Back returns to the property page
+PASS @390 property page: no console/hydration errors
+PASS @1440 property page: full footer = identity + Dark Olive card
+PASS @1440 property footer CTA → /dev/demo#tu-van, form in view — top=92
+PASS @1440 browser Back returns to the property page
+PASS @1440 property page: no console/hydration errors
+
+297/297 passed

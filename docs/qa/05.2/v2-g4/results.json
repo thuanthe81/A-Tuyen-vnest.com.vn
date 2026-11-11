@@ -1,0 +1,1879 @@
+{
+  "base": "http://localhost:3400",
+  "route": "/dev/stays/bare-chic",
+  "date": "2026-10-20T02:01:23.674Z",
+  "390-private": {
+    "robots": "noindex, nofollow",
+    "jsonLd": 0,
+    "h1": [
+      "Bare Chic"
+    ],
+    "headings": [
+      "H1 Bare Chic",
+      "H2 Tiện nghi",
+      "H3 Tại Bare Chic",
+      "H3 Riêng từng phòng",
+      "H2 Các loại phòng",
+      "H3 Bare Chic One",
+      "H3 Bare Chic Two",
+      "H3 Bare Chic Three",
+      "H3 Bare Indochine",
+      "H2 Vị trí"
+    ],
+    "landmarks": {
+      "main": 1,
+      "nav": [
+        "Tất cả cơ sở",
+        "Các phòng của Bare Chic"
+      ],
+      "regions": [
+        "Giới thiệu",
+        "Ghi chú xem trước: nội dung chờ VNest",
+        "Ghi chú xem trước: nội dung chờ VNest"
+      ]
+    },
+    "overflowPx": 0,
+    "cta": {
+      "href": "#rooms",
+      "inFirstScreen": true,
+      "top": 715,
+      "bottom": 767
+    },
+    "h1Box": {
+      "top": 495,
+      "bottom": 538,
+      "inFirstScreen": true
+    },
+    "availabilityWording": false,
+    "galleryTiles": [
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic Two",
+      "Bare Indochine",
+      "Bare Chic Two"
+    ],
+    "allPhotosButton": "Xem tất cả 19 ảnh",
+    "roomButtons": [
+      "Xem ảnh phòng (4): Bare Chic One",
+      "Xem ảnh phòng (6): Bare Chic Two",
+      "Xem ảnh phòng (4): Bare Chic Three",
+      "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "rooms": "Các loại phòng | 4 phòng | Đặt phòng trực tuyến chưa sẵn sàng. Chưa có hệ thống đặt phòng nào được kết nối. | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic One | Bare Chic One | Giá tham khảo | Ngày thường | 1,100,000 | Ngày cuối tuần | 1,200,000 | 6 ảnh | Xem ảnh phòng (6) | : Bare Chic Two | Bare Chic Two | Giá đang cập nhật | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic Three | Bare Chic Three | Giá đang cập nhật | 5 ảnh | Xem ảnh phòng (5) | : Bare Indochine | Bare Indochine | Giá đang cập nhật | CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Diện tích, số khách tối đa và loại giường của từng phòng Q23 | Tiện nghi riêng của từng phòng Q11 | Giá của Bare Chic Two, Three và Bare Indochine; tiền tệ, đơn vị, thuế Q8, Q24 | Ảnh toàn cảnh: mặt tiền, lối vào, cầu thang, không gian chung Q16 | Ảnh không watermark, quyền sử dụng, đồng ý của người xuất hiện trong ảnh (1.11, 1.18, 2.32) Q15 | 1.56.png và 1.59.png có trong thư mục của cả Bare Chic One và Three: thuộc phòng nào Q6",
+    "amenitiesClosed": "Bếp nhỏ | Wifi | Điều hoà nhiệt độ",
+    "mapLink": [
+      "https://share.google/fskgZreXVjowaoQCO"
+    ],
+    "figuresOnPage": [
+      "1,100,000",
+      "1,200,000"
+    ],
+    "neverStated": [],
+    "pendingNotes": [
+      "CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Danh sách tiện nghi đầy đủ (bảng VNest kết thúc bằng “,..”) Q11 | Biểu tượng tiện nghi do BMP chọn, chờ VNest xác nhận Q31",
+      "CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Diện tích, số khách tối đa và loại giường của từng phòng Q23 | Tiện nghi riêng của từng phòng Q11 | Giá của Bare Chic Two, Three và Bare Indochine; tiền tệ, đơn vị, thuế Q8, Q24 | Ảnh toàn cảnh: mặt tiền, lối vào, cầu thang, không gian chung Q16 | Ảnh không watermark, quyền sử dụng, đồng ý của người xuất hiện trong ảnh (1.11, 1.18, 2.32) Q15 | 1.56.png và 1.59.png có trong thư mục của cả Bare Chic One và Three: thuộc phòng nào Q6"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bê",
+        "loaded": true,
+        "loading": null,
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=828&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 2/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 4/19: Bare Indochine: tường xanh lá, giường, TV và g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 5/19: Bare Chic One: giường và ghế ngồi dài bên cửa ",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-11%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 6/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-10%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 7/19: Bare Chic Three: một người nằm đọc sách trên g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-18%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 8/19: Bare Indochine: giường trước tấm ốp tường xám,",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-51%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 9/19: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-42%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 10/19: Bare Chic Two: từ bàn làm việc nhìn qua khung",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-4%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 11/19: Bare Chic Three: góc bếp nhỏ với bồn rửa và l",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-29%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 12/19: Bare Indochine: giường gỗ, kệ treo đồ, bàn là",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-52%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 13/19: Bare Chic One: phòng tắm lát gạch trắng, nhìn",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-47%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 14/19: Bare Chic Two: bàn làm việc, tranh treo tường",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-5%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 15/19: Bare Chic Three: phòng tắm lát gạch trắng với",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-27%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 16/19: Bare Indochine: tường xanh lá, bàn làm việc v",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-53%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 17/19: Bare Chic Two: góc bếp với kệ sắt, tủ quần áo",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-9%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 18/19: Bare Indochine: ghế ngồi bên cửa sổ, tường xa",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-54%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ tron",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-32%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=256&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      }
+    ],
+    "under44": [],
+    "cls": 0,
+    "errors": [],
+    "interactions": {
+      "afterCta": {
+        "hash": "#rooms",
+        "roomsTop": 96
+      },
+      "pillMidPage": "false",
+      "stripSwipe": {
+        "before": 0,
+        "after": 390,
+        "counter": "2/19"
+      },
+      "galleryGrid": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Ảnh các phòng của Bare Chic19 ảnh",
+        "groups": [
+          "Bare Chic One4 ảnh",
+          "Bare Chic Two6 ảnh",
+          "Bare Chic Three4 ảnh",
+          "Bare Indochine5 ảnh"
+        ],
+        "thumbs": 20,
+        "img": null,
+        "focusInside": true,
+        "focus": "Ảnh các phòng của Bare Chic",
+        "htmlOverflow": "hidden"
+      },
+      "galleryPhoto": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One2/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: giường và ghế ngồi dài bên cửa sổ, phản chiếu trong tấm gương lớn; một người ngồi uống cà phê bên cửa sổ",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "galleryNext": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One3/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và lò vi sóng, tủ quần áo mở, giường và tranh treo tường",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "gallerySwipe": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One4/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: phòng tắm lát gạch trắng, nhìn qua cửa vào phòng ngủ",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "galleryBack": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Ảnh các phòng của Bare Chic19 ảnh",
+        "groups": [
+          "Bare Chic One4 ảnh",
+          "Bare Chic Two6 ảnh",
+          "Bare Chic Three4 ảnh",
+          "Bare Indochine5 ảnh"
+        ],
+        "thumbs": 20,
+        "img": null,
+        "focusInside": true,
+        "focus": "Xem ảnh: Bare Chic One: phòng tắm lát gạch trắng, nhìn qua cửa vào phòng ngủ",
+        "htmlOverflow": "hidden"
+      },
+      "galleryClosed": {
+        "open": false,
+        "focus": "Xem tất cả 19 ảnh"
+      },
+      "roomGalleries": [
+        {
+          "button": "Xem ảnh phòng (4): Bare Chic One",
+          "label": "Ảnh Bare Chic One",
+          "captions": [
+            "Bare Chic One1/4",
+            "Bare Chic One2/4",
+            "Bare Chic One3/4",
+            "Bare Chic One4/4"
+          ],
+          "focusBack": "Xem ảnh phòng (4): Bare Chic One"
+        },
+        {
+          "button": "Xem ảnh phòng (6): Bare Chic Two",
+          "label": "Ảnh Bare Chic Two",
+          "captions": [
+            "Bare Chic Two1/6",
+            "Bare Chic Two2/6",
+            "Bare Chic Two3/6",
+            "Bare Chic Two4/6",
+            "Bare Chic Two5/6",
+            "Bare Chic Two6/6"
+          ],
+          "focusBack": "Xem ảnh phòng (6): Bare Chic Two"
+        },
+        {
+          "button": "Xem ảnh phòng (4): Bare Chic Three",
+          "label": "Ảnh Bare Chic Three",
+          "captions": [
+            "Bare Chic Three1/4",
+            "Bare Chic Three2/4",
+            "Bare Chic Three3/4",
+            "Bare Chic Three4/4"
+          ],
+          "focusBack": "Xem ảnh phòng (4): Bare Chic Three"
+        },
+        {
+          "button": "Xem ảnh phòng (5): Bare Indochine",
+          "label": "Ảnh Bare Indochine",
+          "captions": [
+            "Bare Indochine1/5",
+            "Bare Indochine2/5",
+            "Bare Indochine3/5",
+            "Bare Indochine4/5",
+            "Bare Indochine5/5"
+          ],
+          "focusBack": "Xem ảnh phòng (5): Bare Indochine"
+        }
+      ],
+      "amenitiesOpen": {
+        "open": true,
+        "summary": "Thu gọn",
+        "text": "Thu gọn | Tại Bare Chic | Bếp nhỏ | Phòng tắm riêng | Smart TV | Wifi | Điều hoà nhiệt độ | VNest đang hoàn thiện danh sách tiện nghi. | Riêng từng phòng | VNest chưa cung cấp tiện nghi riêng cho từng phòng."
+      },
+      "tabOrder": [
+        "Xem như bản công khai [ring]",
+        "VNest [ring]",
+        "Tìm chỗ ở: Bare ChicChọn ngày · 2  [ring]",
+        "Tất cả cơ sở [ring]",
+        "Xem ảnh 1/19: Bare Chic One: bàn l [ring]",
+        "Xem ảnh 2/19: Bare Chic Two: giườn [ring]",
+        "Xem ảnh 3/19: Bare Chic Three: giư [ring]",
+        "Xem ảnh 4/19: Bare Indochine: tườn [ring]",
+        "Xem ảnh 5/19: Bare Chic One: giườn [ring]",
+        "Xem ảnh 6/19: Bare Chic Two: giườn [ring]",
+        "Xem ảnh 7/19: Bare Chic Three: một [ring]",
+        "Xem ảnh 8/19: Bare Indochine: giườ [ring]",
+        "Xem ảnh 9/19: Bare Chic One: góc b [ring]",
+        "Xem ảnh 10/19: Bare Chic Two: từ b [ring]",
+        "Xem ảnh 11/19: Bare Chic Three: gó [ring]",
+        "Xem ảnh 12/19: Bare Indochine: giư [ring]",
+        "Xem ảnh 13/19: Bare Chic One: phòn [ring]",
+        "Xem ảnh 14/19: Bare Chic Two: bàn  [ring]"
+      ]
+    }
+  },
+  "390-public": {
+    "robots": "noindex, nofollow",
+    "jsonLd": 0,
+    "h1": [
+      "Bare Chic"
+    ],
+    "headings": [
+      "H1 Bare Chic",
+      "H2 Tiện nghi",
+      "H3 Tại Bare Chic",
+      "H3 Riêng từng phòng",
+      "H2 Các loại phòng",
+      "H3 Bare Chic One",
+      "H3 Bare Chic Two",
+      "H3 Bare Chic Three",
+      "H3 Bare Indochine",
+      "H2 Vị trí"
+    ],
+    "landmarks": {
+      "main": 1,
+      "nav": [
+        "Tất cả cơ sở",
+        "Các phòng của Bare Chic"
+      ],
+      "regions": [
+        "Giới thiệu"
+      ]
+    },
+    "overflowPx": 0,
+    "cta": {
+      "href": "#rooms",
+      "inFirstScreen": true,
+      "top": 715,
+      "bottom": 767
+    },
+    "h1Box": {
+      "top": 495,
+      "bottom": 538,
+      "inFirstScreen": true
+    },
+    "availabilityWording": false,
+    "galleryTiles": [
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic Two",
+      "Bare Indochine",
+      "Bare Chic Two"
+    ],
+    "allPhotosButton": "Xem tất cả 19 ảnh",
+    "roomButtons": [
+      "Xem ảnh phòng (4): Bare Chic One",
+      "Xem ảnh phòng (6): Bare Chic Two",
+      "Xem ảnh phòng (4): Bare Chic Three",
+      "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "rooms": "Các loại phòng | 4 phòng | Đặt phòng trực tuyến chưa sẵn sàng. Chưa có hệ thống đặt phòng nào được kết nối. | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic One | Bare Chic One | Giá đang cập nhật | 6 ảnh | Xem ảnh phòng (6) | : Bare Chic Two | Bare Chic Two | Giá đang cập nhật | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic Three | Bare Chic Three | Giá đang cập nhật | 5 ảnh | Xem ảnh phòng (5) | : Bare Indochine | Bare Indochine | Giá đang cập nhật",
+    "amenitiesClosed": "Bếp nhỏ | Wifi | Điều hoà nhiệt độ",
+    "mapLink": [
+      "https://share.google/fskgZreXVjowaoQCO"
+    ],
+    "figuresOnPage": [],
+    "neverStated": [],
+    "pendingNotes": [],
+    "images": [
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bê",
+        "loaded": true,
+        "loading": null,
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=828&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 2/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 4/19: Bare Indochine: tường xanh lá, giường, TV và g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 5/19: Bare Chic One: giường và ghế ngồi dài bên cửa ",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-11%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 6/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-10%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 7/19: Bare Chic Three: một người nằm đọc sách trên g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-18%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 8/19: Bare Indochine: giường trước tấm ốp tường xám,",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-51%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 9/19: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-42%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 10/19: Bare Chic Two: từ bàn làm việc nhìn qua khung",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-4%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 11/19: Bare Chic Three: góc bếp nhỏ với bồn rửa và l",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-29%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 12/19: Bare Indochine: giường gỗ, kệ treo đồ, bàn là",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-52%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 13/19: Bare Chic One: phòng tắm lát gạch trắng, nhìn",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-47%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 14/19: Bare Chic Two: bàn làm việc, tranh treo tường",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-5%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 15/19: Bare Chic Three: phòng tắm lát gạch trắng với",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-27%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 16/19: Bare Indochine: tường xanh lá, bàn làm việc v",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-53%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 17/19: Bare Chic Two: góc bếp với kệ sắt, tủ quần áo",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-9%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 18/19: Bare Indochine: ghế ngồi bên cửa sổ, tường xa",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-54%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ tron",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-32%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=256&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      }
+    ],
+    "under44": [],
+    "cls": 0,
+    "errors": []
+  },
+  "768-private": {
+    "robots": "noindex, nofollow",
+    "jsonLd": 0,
+    "h1": [
+      "Bare Chic"
+    ],
+    "headings": [
+      "H1 Bare Chic",
+      "H2 Tiện nghi",
+      "H3 Tại Bare Chic",
+      "H3 Riêng từng phòng",
+      "H2 Các loại phòng",
+      "H3 Bare Chic One",
+      "H3 Bare Chic Two",
+      "H3 Bare Chic Three",
+      "H3 Bare Indochine",
+      "H2 Vị trí"
+    ],
+    "landmarks": {
+      "main": 1,
+      "nav": [
+        "Tất cả cơ sở",
+        "Các phòng của Bare Chic"
+      ],
+      "regions": [
+        "Giới thiệu",
+        "Ghi chú xem trước: nội dung chờ VNest",
+        "Ghi chú xem trước: nội dung chờ VNest"
+      ]
+    },
+    "overflowPx": 0,
+    "cta": {
+      "href": "#rooms",
+      "inFirstScreen": true,
+      "top": 680,
+      "bottom": 732
+    },
+    "h1Box": {
+      "top": 576,
+      "bottom": 634,
+      "inFirstScreen": true
+    },
+    "availabilityWording": false,
+    "galleryTiles": [
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One"
+    ],
+    "allPhotosButton": "Xem tất cả 19 ảnh",
+    "roomButtons": [
+      "Xem ảnh phòng (4): Bare Chic One",
+      "Xem ảnh phòng (6): Bare Chic Two",
+      "Xem ảnh phòng (4): Bare Chic Three",
+      "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "rooms": "Các loại phòng | 4 phòng | Đặt phòng trực tuyến chưa sẵn sàng. Chưa có hệ thống đặt phòng nào được kết nối. | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic One | Bare Chic One | Giá tham khảo | Ngày thường | 1,100,000 | Ngày cuối tuần | 1,200,000 | 6 ảnh | Xem ảnh phòng (6) | : Bare Chic Two | Bare Chic Two | Giá đang cập nhật | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic Three | Bare Chic Three | Giá đang cập nhật | 5 ảnh | Xem ảnh phòng (5) | : Bare Indochine | Bare Indochine | Giá đang cập nhật | CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Diện tích, số khách tối đa và loại giường của từng phòng Q23 | Tiện nghi riêng của từng phòng Q11 | Giá của Bare Chic Two, Three và Bare Indochine; tiền tệ, đơn vị, thuế Q8, Q24 | Ảnh toàn cảnh: mặt tiền, lối vào, cầu thang, không gian chung Q16 | Ảnh không watermark, quyền sử dụng, đồng ý của người xuất hiện trong ảnh (1.11, 1.18, 2.32) Q15 | 1.56.png và 1.59.png có trong thư mục của cả Bare Chic One và Three: thuộc phòng nào Q6",
+    "amenitiesClosed": "Bếp nhỏ | Wifi | Điều hoà nhiệt độ",
+    "mapLink": [
+      "https://share.google/fskgZreXVjowaoQCO"
+    ],
+    "figuresOnPage": [
+      "1,100,000",
+      "1,200,000"
+    ],
+    "neverStated": [],
+    "pendingNotes": [
+      "CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Danh sách tiện nghi đầy đủ (bảng VNest kết thúc bằng “,..”) Q11 | Biểu tượng tiện nghi do BMP chọn, chờ VNest xác nhận Q31",
+      "CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Diện tích, số khách tối đa và loại giường của từng phòng Q23 | Tiện nghi riêng của từng phòng Q11 | Giá của Bare Chic Two, Three và Bare Indochine; tiền tệ, đơn vị, thuế Q8, Q24 | Ảnh toàn cảnh: mặt tiền, lối vào, cầu thang, không gian chung Q16 | Ảnh không watermark, quyền sử dụng, đồng ý của người xuất hiện trong ảnh (1.11, 1.18, 2.32) Q15 | 1.56.png và 1.59.png có trong thư mục của cả Bare Chic One và Three: thuộc phòng nào Q6"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bê",
+        "loaded": true,
+        "loading": null,
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=828&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 2/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 4/19: Bare Indochine: tường xanh lá, giường, TV và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 5/19: Bare Chic One: giường và ghế ngồi dài bên cửa ",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-11%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 6/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-10%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 7/19: Bare Chic Three: một người nằm đọc sách trên g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-18%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 8/19: Bare Indochine: giường trước tấm ốp tường xám,",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-51%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 9/19: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-42%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 10/19: Bare Chic Two: từ bàn làm việc nhìn qua khung",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-4%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 11/19: Bare Chic Three: góc bếp nhỏ với bồn rửa và l",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-29%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 12/19: Bare Indochine: giường gỗ, kệ treo đồ, bàn là",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-52%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 13/19: Bare Chic One: phòng tắm lát gạch trắng, nhìn",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-47%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 14/19: Bare Chic Two: bàn làm việc, tranh treo tường",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-5%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 15/19: Bare Chic Three: phòng tắm lát gạch trắng với",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-27%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 16/19: Bare Indochine: tường xanh lá, bàn làm việc v",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-53%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 17/19: Bare Chic Two: góc bếp với kệ sắt, tủ quần áo",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-9%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 18/19: Bare Indochine: ghế ngồi bên cửa sổ, tường xa",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-54%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ tron",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-32%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=828&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      }
+    ],
+    "under44": [],
+    "cls": 0,
+    "errors": [],
+    "interactions": {
+      "afterCta": {
+        "hash": "#rooms",
+        "roomsTop": 96
+      },
+      "galleryGrid": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Ảnh các phòng của Bare Chic19 ảnh",
+        "groups": [
+          "Bare Chic One4 ảnh",
+          "Bare Chic Two6 ảnh",
+          "Bare Chic Three4 ảnh",
+          "Bare Indochine5 ảnh"
+        ],
+        "thumbs": 20,
+        "img": null,
+        "focusInside": true,
+        "focus": "Ảnh các phòng của Bare Chic",
+        "htmlOverflow": "hidden"
+      },
+      "galleryPhoto": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One2/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: giường và ghế ngồi dài bên cửa sổ, phản chiếu trong tấm gương lớn; một người ngồi uống cà phê bên cửa sổ",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "galleryNext": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One3/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và lò vi sóng, tủ quần áo mở, giường và tranh treo tường",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "gallerySwipe": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One4/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: phòng tắm lát gạch trắng, nhìn qua cửa vào phòng ngủ",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "galleryBack": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Ảnh các phòng của Bare Chic19 ảnh",
+        "groups": [
+          "Bare Chic One4 ảnh",
+          "Bare Chic Two6 ảnh",
+          "Bare Chic Three4 ảnh",
+          "Bare Indochine5 ảnh"
+        ],
+        "thumbs": 20,
+        "img": null,
+        "focusInside": true,
+        "focus": "Xem ảnh: Bare Chic One: phòng tắm lát gạch trắng, nhìn qua cửa vào phòng ngủ",
+        "htmlOverflow": "hidden"
+      },
+      "galleryClosed": {
+        "open": false,
+        "focus": "Xem tất cả 19 ảnh"
+      },
+      "roomGalleries": [
+        {
+          "button": "Xem ảnh phòng (4): Bare Chic One",
+          "label": "Ảnh Bare Chic One",
+          "captions": [
+            "Bare Chic One1/4",
+            "Bare Chic One2/4",
+            "Bare Chic One3/4",
+            "Bare Chic One4/4"
+          ],
+          "focusBack": "Xem ảnh phòng (4): Bare Chic One"
+        },
+        {
+          "button": "Xem ảnh phòng (6): Bare Chic Two",
+          "label": "Ảnh Bare Chic Two",
+          "captions": [
+            "Bare Chic Two1/6",
+            "Bare Chic Two2/6",
+            "Bare Chic Two3/6",
+            "Bare Chic Two4/6",
+            "Bare Chic Two5/6",
+            "Bare Chic Two6/6"
+          ],
+          "focusBack": "Xem ảnh phòng (6): Bare Chic Two"
+        },
+        {
+          "button": "Xem ảnh phòng (4): Bare Chic Three",
+          "label": "Ảnh Bare Chic Three",
+          "captions": [
+            "Bare Chic Three1/4",
+            "Bare Chic Three2/4",
+            "Bare Chic Three3/4",
+            "Bare Chic Three4/4"
+          ],
+          "focusBack": "Xem ảnh phòng (4): Bare Chic Three"
+        },
+        {
+          "button": "Xem ảnh phòng (5): Bare Indochine",
+          "label": "Ảnh Bare Indochine",
+          "captions": [
+            "Bare Indochine1/5",
+            "Bare Indochine2/5",
+            "Bare Indochine3/5",
+            "Bare Indochine4/5",
+            "Bare Indochine5/5"
+          ],
+          "focusBack": "Xem ảnh phòng (5): Bare Indochine"
+        }
+      ],
+      "amenitiesOpen": {
+        "open": true,
+        "summary": "Thu gọn",
+        "text": "Thu gọn | Tại Bare Chic | Bếp nhỏ | Phòng tắm riêng | Smart TV | Wifi | Điều hoà nhiệt độ | VNest đang hoàn thiện danh sách tiện nghi. | Riêng từng phòng | VNest chưa cung cấp tiện nghi riêng cho từng phòng."
+      },
+      "tabOrder": [
+        "Xem như bản công khai [ring]",
+        "VNest [ring]",
+        "Cơ sởBare Chic [ring]",
+        "Ngày lưu trúChọn ngày [ring]",
+        "Khách2 khách [ring]",
+        "Tìm kiếm [ring]",
+        "Tất cả cơ sở [ring]",
+        "Xem ảnh 1/19: Bare Chic One: bàn l [ring]",
+        "Xem ảnh 2/19: Bare Chic Two: giườn [ring]",
+        "Xem ảnh 3/19: Bare Chic Three: giư [ring]",
+        "Xem ảnh 4/19: Bare Indochine: tườn [ring]",
+        "Xem ảnh 5/19: Bare Chic One: giườn [ring]",
+        "Xem tất cả 19 ảnh [ring]",
+        "01Bare Chic One [ring]",
+        "02Bare Chic Two [ring]",
+        "03Bare Chic Three [ring]",
+        "04Bare Indochine [ring]",
+        "Khám phá các loại phòng [ring]"
+      ]
+    }
+  },
+  "768-public": {
+    "robots": "noindex, nofollow",
+    "jsonLd": 0,
+    "h1": [
+      "Bare Chic"
+    ],
+    "headings": [
+      "H1 Bare Chic",
+      "H2 Tiện nghi",
+      "H3 Tại Bare Chic",
+      "H3 Riêng từng phòng",
+      "H2 Các loại phòng",
+      "H3 Bare Chic One",
+      "H3 Bare Chic Two",
+      "H3 Bare Chic Three",
+      "H3 Bare Indochine",
+      "H2 Vị trí"
+    ],
+    "landmarks": {
+      "main": 1,
+      "nav": [
+        "Tất cả cơ sở",
+        "Các phòng của Bare Chic"
+      ],
+      "regions": [
+        "Giới thiệu"
+      ]
+    },
+    "overflowPx": 0,
+    "cta": {
+      "href": "#rooms",
+      "inFirstScreen": true,
+      "top": 662,
+      "bottom": 714
+    },
+    "h1Box": {
+      "top": 558,
+      "bottom": 616,
+      "inFirstScreen": true
+    },
+    "availabilityWording": false,
+    "galleryTiles": [
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One"
+    ],
+    "allPhotosButton": "Xem tất cả 19 ảnh",
+    "roomButtons": [
+      "Xem ảnh phòng (4): Bare Chic One",
+      "Xem ảnh phòng (6): Bare Chic Two",
+      "Xem ảnh phòng (4): Bare Chic Three",
+      "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "rooms": "Các loại phòng | 4 phòng | Đặt phòng trực tuyến chưa sẵn sàng. Chưa có hệ thống đặt phòng nào được kết nối. | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic One | Bare Chic One | Giá đang cập nhật | 6 ảnh | Xem ảnh phòng (6) | : Bare Chic Two | Bare Chic Two | Giá đang cập nhật | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic Three | Bare Chic Three | Giá đang cập nhật | 5 ảnh | Xem ảnh phòng (5) | : Bare Indochine | Bare Indochine | Giá đang cập nhật",
+    "amenitiesClosed": "Bếp nhỏ | Wifi | Điều hoà nhiệt độ",
+    "mapLink": [
+      "https://share.google/fskgZreXVjowaoQCO"
+    ],
+    "figuresOnPage": [],
+    "neverStated": [],
+    "pendingNotes": [],
+    "images": [
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bê",
+        "loaded": true,
+        "loading": null,
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=828&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 2/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 4/19: Bare Indochine: tường xanh lá, giường, TV và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 5/19: Bare Chic One: giường và ghế ngồi dài bên cửa ",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-11%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 6/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-10%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 7/19: Bare Chic Three: một người nằm đọc sách trên g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-18%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 8/19: Bare Indochine: giường trước tấm ốp tường xám,",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-51%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 9/19: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-42%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 10/19: Bare Chic Two: từ bàn làm việc nhìn qua khung",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-4%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 11/19: Bare Chic Three: góc bếp nhỏ với bồn rửa và l",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-29%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 12/19: Bare Indochine: giường gỗ, kệ treo đồ, bàn là",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-52%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 13/19: Bare Chic One: phòng tắm lát gạch trắng, nhìn",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-47%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 14/19: Bare Chic Two: bàn làm việc, tranh treo tường",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-5%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 15/19: Bare Chic Three: phòng tắm lát gạch trắng với",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-27%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 16/19: Bare Indochine: tường xanh lá, bàn làm việc v",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-53%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 17/19: Bare Chic Two: góc bếp với kệ sắt, tủ quần áo",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-9%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 18/19: Bare Indochine: ghế ngồi bên cửa sổ, tường xa",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-54%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ tron",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-32%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=828&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      }
+    ],
+    "under44": [],
+    "cls": 0,
+    "errors": []
+  },
+  "1440-private": {
+    "robots": "noindex, nofollow",
+    "jsonLd": 0,
+    "h1": [
+      "Bare Chic"
+    ],
+    "headings": [
+      "H1 Bare Chic",
+      "H2 Tiện nghi",
+      "H3 Tại Bare Chic",
+      "H3 Riêng từng phòng",
+      "H2 Các loại phòng",
+      "H3 Bare Chic One",
+      "H3 Bare Chic Two",
+      "H3 Bare Chic Three",
+      "H3 Bare Indochine",
+      "H2 Vị trí"
+    ],
+    "landmarks": {
+      "main": 1,
+      "nav": [
+        "Tất cả cơ sở",
+        "Các phòng của Bare Chic"
+      ],
+      "regions": [
+        "Giới thiệu",
+        "Ghi chú xem trước: nội dung chờ VNest",
+        "Ghi chú xem trước: nội dung chờ VNest"
+      ]
+    },
+    "overflowPx": 0,
+    "cta": {
+      "href": "#rooms",
+      "inFirstScreen": true,
+      "top": 764,
+      "bottom": 816
+    },
+    "h1Box": {
+      "top": 679,
+      "bottom": 763,
+      "inFirstScreen": true
+    },
+    "availabilityWording": false,
+    "galleryTiles": [
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One"
+    ],
+    "allPhotosButton": "Xem tất cả 19 ảnh",
+    "roomButtons": [
+      "Xem ảnh phòng (4): Bare Chic One",
+      "Xem ảnh phòng (6): Bare Chic Two",
+      "Xem ảnh phòng (4): Bare Chic Three",
+      "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "rooms": "Các loại phòng | 4 phòng | Đặt phòng trực tuyến chưa sẵn sàng. Chưa có hệ thống đặt phòng nào được kết nối. | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic One | Bare Chic One | Giá tham khảo | Ngày thường | 1,100,000 | Ngày cuối tuần | 1,200,000 | 6 ảnh | Xem ảnh phòng (6) | : Bare Chic Two | Bare Chic Two | Giá đang cập nhật | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic Three | Bare Chic Three | Giá đang cập nhật | 5 ảnh | Xem ảnh phòng (5) | : Bare Indochine | Bare Indochine | Giá đang cập nhật | CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Diện tích, số khách tối đa và loại giường của từng phòng Q23 | Tiện nghi riêng của từng phòng Q11 | Giá của Bare Chic Two, Three và Bare Indochine; tiền tệ, đơn vị, thuế Q8, Q24 | Ảnh toàn cảnh: mặt tiền, lối vào, cầu thang, không gian chung Q16 | Ảnh không watermark, quyền sử dụng, đồng ý của người xuất hiện trong ảnh (1.11, 1.18, 2.32) Q15 | 1.56.png và 1.59.png có trong thư mục của cả Bare Chic One và Three: thuộc phòng nào Q6",
+    "amenitiesClosed": "Bếp nhỏ | Wifi | Điều hoà nhiệt độ",
+    "mapLink": [
+      "https://share.google/fskgZreXVjowaoQCO"
+    ],
+    "figuresOnPage": [
+      "1,100,000",
+      "1,200,000"
+    ],
+    "neverStated": [],
+    "pendingNotes": [
+      "CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Danh sách tiện nghi đầy đủ (bảng VNest kết thúc bằng “,..”) Q11 | Biểu tượng tiện nghi do BMP chọn, chờ VNest xác nhận Q31",
+      "CHỜ VNEST (CHỈ HIỆN TRONG BẢN XEM TRƯỚC) | Diện tích, số khách tối đa và loại giường của từng phòng Q23 | Tiện nghi riêng của từng phòng Q11 | Giá của Bare Chic Two, Three và Bare Indochine; tiền tệ, đơn vị, thuế Q8, Q24 | Ảnh toàn cảnh: mặt tiền, lối vào, cầu thang, không gian chung Q16 | Ảnh không watermark, quyền sử dụng, đồng ý của người xuất hiện trong ảnh (1.11, 1.18, 2.32) Q15 | 1.56.png và 1.59.png có trong thư mục của cả Bare Chic One và Three: thuộc phòng nào Q6"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bê",
+        "loaded": true,
+        "loading": null,
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=640&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 2/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 4/19: Bare Indochine: tường xanh lá, giường, TV và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 5/19: Bare Chic One: giường và ghế ngồi dài bên cửa ",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-11%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 6/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-10%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 7/19: Bare Chic Three: một người nằm đọc sách trên g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-18%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 8/19: Bare Indochine: giường trước tấm ốp tường xám,",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-51%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 9/19: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-42%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 10/19: Bare Chic Two: từ bàn làm việc nhìn qua khung",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-4%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 11/19: Bare Chic Three: góc bếp nhỏ với bồn rửa và l",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-29%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 12/19: Bare Indochine: giường gỗ, kệ treo đồ, bàn là",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-52%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 13/19: Bare Chic One: phòng tắm lát gạch trắng, nhìn",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-47%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 14/19: Bare Chic Two: bàn làm việc, tranh treo tường",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-5%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 15/19: Bare Chic Three: phòng tắm lát gạch trắng với",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-27%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 16/19: Bare Indochine: tường xanh lá, bàn làm việc v",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-53%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 17/19: Bare Chic Two: góc bếp với kệ sắt, tủ quần áo",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-9%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 18/19: Bare Indochine: ghế ngồi bên cửa sổ, tường xa",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-54%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ tron",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-32%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=640&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      }
+    ],
+    "under44": [],
+    "cls": 0,
+    "errors": [],
+    "interactions": {
+      "afterCta": {
+        "hash": "#rooms",
+        "roomsTop": 96
+      },
+      "galleryGrid": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Ảnh các phòng của Bare Chic19 ảnh",
+        "groups": [
+          "Bare Chic One4 ảnh",
+          "Bare Chic Two6 ảnh",
+          "Bare Chic Three4 ảnh",
+          "Bare Indochine5 ảnh"
+        ],
+        "thumbs": 20,
+        "img": null,
+        "focusInside": true,
+        "focus": "Ảnh các phòng của Bare Chic",
+        "htmlOverflow": "hidden"
+      },
+      "galleryPhoto": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One2/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: giường và ghế ngồi dài bên cửa sổ, phản chiếu trong tấm gương lớn; một người ngồi uống cà phê bên cửa sổ",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "galleryNext": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Bare Chic One3/4",
+        "groups": [],
+        "thumbs": 4,
+        "img": "Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và lò vi sóng, tủ quần áo mở, giường và tranh treo tường",
+        "focusInside": true,
+        "focus": "Tất cả ảnh",
+        "htmlOverflow": "hidden"
+      },
+      "galleryBack": {
+        "open": true,
+        "label": "Ảnh các phòng của Bare Chic",
+        "caption": "Ảnh các phòng của Bare Chic19 ảnh",
+        "groups": [
+          "Bare Chic One4 ảnh",
+          "Bare Chic Two6 ảnh",
+          "Bare Chic Three4 ảnh",
+          "Bare Indochine5 ảnh"
+        ],
+        "thumbs": 20,
+        "img": null,
+        "focusInside": true,
+        "focus": "Xem ảnh: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và lò vi sóng, tủ quần áo mở, giường và tranh treo tường",
+        "htmlOverflow": "hidden"
+      },
+      "galleryClosed": {
+        "open": false,
+        "focus": "Xem tất cả 19 ảnh"
+      },
+      "roomGalleries": [
+        {
+          "button": "Xem ảnh phòng (4): Bare Chic One",
+          "label": "Ảnh Bare Chic One",
+          "captions": [
+            "Bare Chic One1/4",
+            "Bare Chic One2/4",
+            "Bare Chic One3/4",
+            "Bare Chic One4/4"
+          ],
+          "focusBack": "Xem ảnh phòng (4): Bare Chic One"
+        },
+        {
+          "button": "Xem ảnh phòng (6): Bare Chic Two",
+          "label": "Ảnh Bare Chic Two",
+          "captions": [
+            "Bare Chic Two1/6",
+            "Bare Chic Two2/6",
+            "Bare Chic Two3/6",
+            "Bare Chic Two4/6",
+            "Bare Chic Two5/6",
+            "Bare Chic Two6/6"
+          ],
+          "focusBack": "Xem ảnh phòng (6): Bare Chic Two"
+        },
+        {
+          "button": "Xem ảnh phòng (4): Bare Chic Three",
+          "label": "Ảnh Bare Chic Three",
+          "captions": [
+            "Bare Chic Three1/4",
+            "Bare Chic Three2/4",
+            "Bare Chic Three3/4",
+            "Bare Chic Three4/4"
+          ],
+          "focusBack": "Xem ảnh phòng (4): Bare Chic Three"
+        },
+        {
+          "button": "Xem ảnh phòng (5): Bare Indochine",
+          "label": "Ảnh Bare Indochine",
+          "captions": [
+            "Bare Indochine1/5",
+            "Bare Indochine2/5",
+            "Bare Indochine3/5",
+            "Bare Indochine4/5",
+            "Bare Indochine5/5"
+          ],
+          "focusBack": "Xem ảnh phòng (5): Bare Indochine"
+        }
+      ],
+      "amenitiesOpen": {
+        "open": true,
+        "summary": "Thu gọn",
+        "text": "Thu gọn | Tại Bare Chic | Bếp nhỏ | Phòng tắm riêng | Smart TV | Wifi | Điều hoà nhiệt độ | VNest đang hoàn thiện danh sách tiện nghi. | Riêng từng phòng | VNest chưa cung cấp tiện nghi riêng cho từng phòng."
+      },
+      "tabOrder": [
+        "Xem như bản công khai [ring]",
+        "VNest [ring]",
+        "Cơ sởBare Chic [ring]",
+        "Ngày lưu trúChọn ngày [ring]",
+        "Khách2 khách [ring]",
+        "Tìm kiếm [ring]",
+        "Tất cả cơ sở [ring]",
+        "Xem ảnh 1/19: Bare Chic One: bàn l [ring]",
+        "Xem ảnh 2/19: Bare Chic Two: giườn [ring]",
+        "Xem ảnh 3/19: Bare Chic Three: giư [ring]",
+        "Xem ảnh 4/19: Bare Indochine: tườn [ring]",
+        "Xem ảnh 5/19: Bare Chic One: giườn [ring]",
+        "Xem tất cả 19 ảnh [ring]",
+        "01Bare Chic One [ring]",
+        "02Bare Chic Two [ring]",
+        "03Bare Chic Three [ring]",
+        "04Bare Indochine [ring]",
+        "Khám phá các loại phòng [ring]"
+      ]
+    }
+  },
+  "1440-public": {
+    "robots": "noindex, nofollow",
+    "jsonLd": 0,
+    "h1": [
+      "Bare Chic"
+    ],
+    "headings": [
+      "H1 Bare Chic",
+      "H2 Tiện nghi",
+      "H3 Tại Bare Chic",
+      "H3 Riêng từng phòng",
+      "H2 Các loại phòng",
+      "H3 Bare Chic One",
+      "H3 Bare Chic Two",
+      "H3 Bare Chic Three",
+      "H3 Bare Indochine",
+      "H2 Vị trí"
+    ],
+    "landmarks": {
+      "main": 1,
+      "nav": [
+        "Tất cả cơ sở",
+        "Các phòng của Bare Chic"
+      ],
+      "regions": [
+        "Giới thiệu"
+      ]
+    },
+    "overflowPx": 0,
+    "cta": {
+      "href": "#rooms",
+      "inFirstScreen": true,
+      "top": 764,
+      "bottom": 816
+    },
+    "h1Box": {
+      "top": 679,
+      "bottom": 763,
+      "inFirstScreen": true
+    },
+    "availabilityWording": false,
+    "galleryTiles": [
+      "Bare Chic One",
+      "Bare Chic Two",
+      "Bare Chic Three",
+      "Bare Indochine",
+      "Bare Chic One"
+    ],
+    "allPhotosButton": "Xem tất cả 19 ảnh",
+    "roomButtons": [
+      "Xem ảnh phòng (4): Bare Chic One",
+      "Xem ảnh phòng (6): Bare Chic Two",
+      "Xem ảnh phòng (4): Bare Chic Three",
+      "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "rooms": "Các loại phòng | 4 phòng | Đặt phòng trực tuyến chưa sẵn sàng. Chưa có hệ thống đặt phòng nào được kết nối. | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic One | Bare Chic One | Giá đang cập nhật | 6 ảnh | Xem ảnh phòng (6) | : Bare Chic Two | Bare Chic Two | Giá đang cập nhật | 4 ảnh | Xem ảnh phòng (4) | : Bare Chic Three | Bare Chic Three | Giá đang cập nhật | 5 ảnh | Xem ảnh phòng (5) | : Bare Indochine | Bare Indochine | Giá đang cập nhật",
+    "amenitiesClosed": "Bếp nhỏ | Wifi | Điều hoà nhiệt độ",
+    "mapLink": [
+      "https://share.google/fskgZreXVjowaoQCO"
+    ],
+    "figuresOnPage": [],
+    "neverStated": [],
+    "pendingNotes": [],
+    "images": [
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bê",
+        "loaded": true,
+        "loading": null,
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=640&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 2/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 4/19: Bare Indochine: tường xanh lá, giường, TV và g",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 5/19: Bare Chic One: giường và ghế ngồi dài bên cửa ",
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-11%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 6/19: Bare Chic Two: giường, TV treo tường và ghế ng",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-10%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 7/19: Bare Chic Three: một người nằm đọc sách trên g",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-18%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 8/19: Bare Indochine: giường trước tấm ốp tường xám,",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-51%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 9/19: Bare Chic One: góc bếp nhỏ với tủ xanh ngọc và",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-42%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 10/19: Bare Chic Two: từ bàn làm việc nhìn qua khung",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-4%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 11/19: Bare Chic Three: góc bếp nhỏ với bồn rửa và l",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-29%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 12/19: Bare Indochine: giường gỗ, kệ treo đồ, bàn là",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-52%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 13/19: Bare Chic One: phòng tắm lát gạch trắng, nhìn",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-one-1-47%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 14/19: Bare Chic Two: bàn làm việc, tranh treo tường",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-5%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 15/19: Bare Chic Three: phòng tắm lát gạch trắng với",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-27%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 16/19: Bare Indochine: tường xanh lá, bàn làm việc v",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-53%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 17/19: Bare Chic Two: góc bếp với kệ sắt, tủ quần áo",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-9%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 18/19: Bare Indochine: ghế ngồi bên cửa sổ, tường xa",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-54%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ tron",
+        "loaded": false,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-32%2F1600.jpg&w"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic%2F1600.jpg&w=384&q=75"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-two-2-3%2F1600.jpg&w="
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-chic-three-1-57%2F1600.jpg"
+      },
+      {
+        "alt": "",
+        "inButtonLabel": null,
+        "loaded": true,
+        "loading": "lazy",
+        "src": "/_next/image?url=%2Fdev-client-media%2Fbare-indochine-50%2F1600.jpg&w="
+      }
+    ],
+    "under44": [],
+    "cls": 0,
+    "errors": []
+  }
+}

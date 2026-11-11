@@ -1,0 +1,313 @@
+/* ==========================================================================
+   Hybrid booking V1: provider-aware property cards and the hand-off state.
+   Colours and type come from the results page (--vn-* are defined on .page there).
+   ========================================================================== */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card,
+.handoff {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--vn-white, #fff);
+  border: 1px solid var(--vn-line, rgba(55, 65, 47, 0.14));
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 44rem) {
+  .card,
+  .handoff {
+    grid-template-columns: 18rem minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .card,
+  .handoff {
+    grid-template-columns: 22rem minmax(0, 1fr);
+  }
+}
+
+.media,
+.handoffMedia {
+  background: var(--vn-beige, #f1ece4);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  min-width: 0;
+}
+
+@media (min-width: 44rem) {
+  .media,
+  .handoffMedia {
+    aspect-ratio: auto;
+    min-height: 15rem;
+  }
+}
+
+a.media {
+  text-decoration: none;
+}
+
+.nameLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nameLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.nameLink:focus-visible {
+  outline: 2px solid var(--vn-olive, #37412f);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.media picture,
+.handoffMedia picture {
+  display: flex;
+  width: 100%;
+}
+
+.media img,
+.handoffMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder {
+  width: 100%;
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.05rem;
+  color: var(--vn-taupe, #8a8173);
+}
+
+.body,
+.handoffBody {
+  padding: 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vn-copper, #a87444);
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--vn-olive, #37412f);
+}
+
+.excerpt {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--vn-olive, #37412f);
+}
+
+/* What is known about rooms. Neutral by default; only a verified answer is positive. */
+.availability {
+  align-self: stretch;
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.6rem;
+  background: var(--vn-paper, #f1ece4);
+  border-left: 3px solid var(--vn-taupe, #8a8173);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.availability[data-tone="positive"] {
+  border-left-color: var(--vn-olive, #37412f);
+}
+
+.availability[data-tone="caution"] {
+  border-left-color: var(--vn-copper-cta, #9a683c);
+}
+
+.availabilityHeadline {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vn-olive, #37412f);
+}
+
+.availabilityDetail {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #5d5547;
+}
+
+.price {
+  margin: 0.25rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.priceAmount {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.3rem;
+  color: var(--vn-olive, #37412f);
+}
+
+.priceContext {
+  font-size: 0.8rem;
+  color: #5d5547;
+}
+
+.simulatedTag {
+  align-self: flex-start;
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px dashed var(--vn-copper-cta, #9a683c);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--vn-copper-cta, #9a683c);
+}
+
+.retry {
+  align-self: flex-start;
+  min-height: 2.75rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.3);
+  background: var(--vn-white, #fff);
+  color: var(--vn-olive, #37412f);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.primary,
+.secondary {
+  min-height: 2.75rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+.primary {
+  border: 1px solid var(--vn-copper, #a87444);
+  background: var(--vn-copper-cta, #9a683c);
+  color: #fff;
+}
+
+.primary:hover {
+  background: var(--vn-copper-hover, #8f6036);
+  border-color: var(--vn-copper-hover, #8f6036);
+}
+
+.secondary {
+  border: 1px solid rgba(55, 65, 47, 0.25);
+  background: var(--vn-white, #fff);
+  color: var(--vn-olive, #37412f);
+  font-weight: 600;
+}
+
+.primary:focus-visible,
+.secondary:focus-visible,
+.retry:focus-visible {
+  outline: 2px solid var(--vn-olive, #37412f);
+  outline-offset: 2px;
+}
+
+/* The hand-off state of a property that books on the provider's page. */
+.handoffStay {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vn-olive, #37412f);
+}
+
+.handoffNotice {
+  align-self: stretch;
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.6rem;
+  background: var(--vn-paper, #f1ece4);
+  border-left: 3px solid var(--vn-copper-cta, #9a683c);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--vn-olive, #37412f);
+}
+
+/* The stay changed after the answers were checked. */
+.staleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--vn-line, rgba(55, 65, 47, 0.14));
+  background: var(--vn-white, #fff);
+  font-size: 0.88rem;
+  color: var(--vn-olive, #37412f);
+}
+
+.simulationBanner {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px dashed var(--vn-copper-cta, #9a683c);
+  background: var(--vn-white, #fff);
+  font-size: 0.84rem;
+  color: var(--vn-copper-cta, #9a683c);
+}
+
+.scopeNote {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  color: #5d5547;
+}

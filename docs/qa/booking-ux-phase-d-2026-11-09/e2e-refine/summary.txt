@@ -1,0 +1,6 @@
+occupancy exit 0 ℹ pass 10 ℹ fail 0 
+room-selection exit 0 ℹ pass 22 ℹ fail 0 
+hybrid-booking exit 0 ℹ pass 79 ℹ fail 0 
+mobile-interactions exit 0 ℹ pass 16 ℹ fail 0 
+about-vnest exit 1 ℹ pass 12 ℹ fail 4 
+homepage-content exit 1 ℹ pass 7 ℹ fail 4 

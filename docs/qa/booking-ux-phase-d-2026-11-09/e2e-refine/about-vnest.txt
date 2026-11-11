@@ -1,0 +1,74 @@
+▶ About VNest V2
+  ✔ @375: editorial banner, real text, no imagery, no overflow, not full-height (660.708292ms)
+  ✔ @390: editorial banner, real text, no imagery, no overflow, not full-height (640.196916ms)
+  ✔ @430: editorial banner, real text, no imagery, no overflow, not full-height (649.2195ms)
+  ✔ @768: editorial banner, real text, no imagery, no overflow, not full-height (655.359709ms)
+  ✔ @1440: editorial banner, real text, no imagery, no overflow, not full-height (648.334667ms)
+  ✔ CTA scrolls to the contact section without changing the address; it is a real link to #lien-he (1408.912209ms)
+  ✔ @390: the footer link 'Về VNest' still reaches the section (803.956667ms)
+  ✔ the homepage keeps one h1 and About sits between the stays and the services (632.809833ms)
+✔ About VNest V2 (6161.449792ms)
+▶ About VNest V2 — bilingual compositions
+  ✔ vi @375: composition, no clipping, no awkward wrap, no overflow, no layout shift (1051.766167ms)
+  ✔ vi @390: composition, no clipping, no awkward wrap, no overflow, no layout shift (1066.213791ms)
+  ✔ vi @768: composition, no clipping, no awkward wrap, no overflow, no layout shift (1042.097125ms)
+  ✔ vi @1440: composition, no clipping, no awkward wrap, no overflow, no layout shift (1056.359584ms)
+  ✖ en @375: composition, no clipping, no awkward wrap, no overflow, no layout shift (30036.750834ms)
+  ✖ en @390: composition, no clipping, no awkward wrap, no overflow, no layout shift (30066.047959ms)
+  ✖ en @768: composition, no clipping, no awkward wrap, no overflow, no layout shift (30062.618417ms)
+  ✖ en @1440: composition, no clipping, no awkward wrap, no overflow, no layout shift (30066.104125ms)
+✖ About VNest V2 — bilingual compositions (124449.324375ms)
+ℹ tests 16
+ℹ suites 2
+ℹ pass 12
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 130783.393625
+
+✖ failing tests:
+
+test at test/e2e/about-vnest.test.mjs:139:7
+✖ en @375: composition, no clipping, no awkward wrap, no overflow, no layout shift (30036.750834ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/about-vnest.test.mjs:164:20) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/about-vnest.test.mjs:139:7
+✖ en @390: composition, no clipping, no awkward wrap, no overflow, no layout shift (30066.047959ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/about-vnest.test.mjs:164:20) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/about-vnest.test.mjs:139:7
+✖ en @768: composition, no clipping, no awkward wrap, no overflow, no layout shift (30062.618417ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/about-vnest.test.mjs:164:20) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/about-vnest.test.mjs:139:7
+✖ en @1440: composition, no clipping, no awkward wrap, no overflow, no layout shift (30066.104125ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/about-vnest.test.mjs:164:20) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }

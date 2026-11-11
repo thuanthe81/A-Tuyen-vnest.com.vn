@@ -1,0 +1,104 @@
+[
+  {
+    "w": 1440,
+    "selected": "Bare Boutique Stays, 4 nơi ở",
+    "indexLogos": 3,
+    "stageLogos": 0,
+    "buttons": [
+      {
+        "w": 408.21875,
+        "h": 72
+      },
+      {
+        "w": 408.21875,
+        "h": 72
+      },
+      {
+        "w": 408.21875,
+        "h": 72
+      },
+      {
+        "w": 408.21875,
+        "h": 72
+      }
+    ],
+    "images": [
+      {
+        "loaded": true,
+        "fit": "fill",
+        "filter": "none"
+      },
+      {
+        "loaded": true,
+        "fit": "contain",
+        "filter": "none"
+      },
+      {
+        "loaded": true,
+        "fit": "contain",
+        "filter": "none"
+      },
+      {
+        "loaded": true,
+        "fit": "contain",
+        "filter": "none"
+      }
+    ],
+    "overflow": false,
+    "bareChic": {
+      "url": "/dev/stays/bare-chic?view=demo",
+      "title": "Bare Chic"
+    }
+  },
+  {
+    "w": 390,
+    "selected": "Bare Boutique Stays, 4 nơi ở",
+    "indexLogos": 3,
+    "stageLogos": 0,
+    "buttons": [
+      {
+        "w": 89.203125,
+        "h": 131.59375
+      },
+      {
+        "w": 89.21875,
+        "h": 131.59375
+      },
+      {
+        "w": 89.203125,
+        "h": 131.59375
+      },
+      {
+        "w": 89.21875,
+        "h": 131.59375
+      }
+    ],
+    "images": [
+      {
+        "loaded": true,
+        "fit": "fill",
+        "filter": "none"
+      },
+      {
+        "loaded": true,
+        "fit": "contain",
+        "filter": "none"
+      },
+      {
+        "loaded": true,
+        "fit": "contain",
+        "filter": "none"
+      },
+      {
+        "loaded": true,
+        "fit": "contain",
+        "filter": "none"
+      }
+    ],
+    "overflow": false,
+    "bareChic": {
+      "url": "/dev/stays/bare-chic?view=demo",
+      "title": "Bare Chic"
+    }
+  }
+]

@@ -1,0 +1,436 @@
+{
+  "base": "http://localhost:3400",
+  "date": "2026-10-24",
+  "views": [
+    {
+      "view": "1440",
+      "checks": {
+        "Scenario A (All Properties, 1 room, 2 adults): Heading 'Chọn phòng', concise summary, 'Chỉnh sửa', 6 photo-led property cards with 'Xem phòng', no expanded room lists": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Tất cả nơi lưu trú · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "hasEditBtn": true,
+          "propCount": 6,
+          "allHaveXemPhong": true,
+          "expandedRoomCards": 0,
+          "hasCompactNotice": true,
+          "hasOldProgressSteps": false
+        },
+        "One-room selection state: Bare Chic One selected ('1/1 phòng đã chọn')": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "btnText": [
+            "Xem ảnh và chi tiết (3 ảnh)",
+            "Đã chọn · Bỏ chọn"
+          ],
+          "selected1of1": true
+        },
+        "Scenario H (Browser Back): returns cleanly from property rooms to All Properties view": {
+          "pass": true,
+          "backToAll": 6
+        },
+        "Scenario B (Bare Chic, 2 rooms, 4 adults): sequential indicator 'Đang chọn phòng 1/2' and each card has only 'Xem ảnh và chi tiết' + one 'Chọn phòng này' action": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 2 phòng · 4 khách",
+          "indicator": "Đang chọn phòng 1/2",
+          "cards": [
+            {
+              "name": "Bare Chic One",
+              "buttons": [
+                "Xem ảnh và chi tiết (3 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic One | Studio · 28 m² · 2 người lớn | Xem ảnh và chi tiết (3 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Chic Two",
+              "buttons": [
+                "Xem ảnh và chi tiết (5 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic Two | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Chic Three",
+              "buttons": [
+                "Xem ảnh và chi tiết (3 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic Three | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (3 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Indochine",
+              "buttons": [
+                "Xem ảnh và chi tiết (5 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Indochine | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Chọn phòng này"
+            }
+          ]
+        },
+        "Selecting Room 1 automatically advances to 'Đang chọn phòng 2/2' and locks Bare Chic One ('Đã chọn cho Phòng 1')": {
+          "pass": true,
+          "indicator": "Đang chọn phòng 2/2",
+          "oneBtns": [
+            {
+              "text": "Xem ảnh và chi tiết (3 ảnh)",
+              "disabled": false
+            },
+            {
+              "text": "Đã chọn cho Phòng 1",
+              "disabled": true
+            }
+          ]
+        },
+        "Scenario E (Unknown capacity room): Bare Chic Two selected for Room 2 ('2/2 phòng đã chọn') and clearly distinguished as unverified capacity preference": {
+          "pass": true,
+          "twoCardText": "Bare Chic Two | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Đã chọn (Phòng 2) · Bỏ chọn",
+          "has2of2": true,
+          "distinguishesUnverified": true
+        },
+        "Scenario C (Changing a selected room): Room 2 switched from Bare Chic Two to Bare Chic Three in one click": {
+          "pass": true,
+          "threeSelected": true,
+          "twoFreed": true
+        },
+        "Simplified Review Sheet ('Kiểm tra lựa chọn'): shows property, dates, Room 1 & Room 2, edit actions, single honest notice, and no disabled contact chips": {
+          "pass": true,
+          "open": true,
+          "title": "Kiểm tra lựa chọn",
+          "hasPropertyAndDates": true,
+          "hasBothRooms": true,
+          "hasShortNotice": true,
+          "hasDisabledContactChips": false
+        },
+        "Scenario G (Editing dates): changing dates to Nov 6–9 (3 đêm) closes editor, updates summary, and preserves selected rooms": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-three",
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 2 phòng · 4 khách",
+          "editorClosed": true
+        },
+        "Scenario H (Refresh): reloading page preserves 3 nights, 2 rooms / 4 guests, and both selected rooms": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 2 phòng · 4 khách",
+          "has2of2": true
+        },
+        "Scenario D (Removing a room group): removing Room 2 updates state to 1 room · 2 guests and keeps Room 1 selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=1&adults=2&prefs=bare-chic-one",
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 1 phòng · 2 khách",
+          "has1of1": true
+        },
+        "Scenario F (Insufficient eligible unique physical rooms): selecting both Pepper House units for Rooms 1 & 2 locks them and shows clear notice for Room 3": {
+          "pass": true,
+          "indicator": "Đang chọn phòng 3/3",
+          "statusText": "Không còn phòng phù hợp tại Pepper House cho Phòng 3 (2 khách). Điều chỉnh số phòng hoặc số khách",
+          "lockedUnique": true
+        },
+        "No horizontal overflow and 0 broken images": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=pepper-house&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2%2C2&adults=6&prefs=pepper-house-3rd-floor%2Cpepper-house-4th-floor%2C",
+          "overflowX": false,
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "brokenImages": [],
+          "cls": 0
+        }
+      },
+      "facts": {
+        "url": "/dev/demo/tim-phong?property=pepper-house&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2%2C2&adults=6&prefs=pepper-house-3rd-floor%2Cpepper-house-4th-floor%2C",
+        "overflowX": false,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "brokenImages": [],
+        "cls": 0
+      }
+    },
+    {
+      "view": "768",
+      "checks": {
+        "Scenario A (All Properties, 1 room, 2 adults): Heading 'Chọn phòng', concise summary, 'Chỉnh sửa', 6 photo-led property cards with 'Xem phòng', no expanded room lists": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Tất cả nơi lưu trú · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "hasEditBtn": true,
+          "propCount": 6,
+          "allHaveXemPhong": true,
+          "expandedRoomCards": 0,
+          "hasCompactNotice": true,
+          "hasOldProgressSteps": false
+        },
+        "One-room selection state: Bare Chic One selected ('1/1 phòng đã chọn')": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "btnText": [
+            "Xem ảnh và chi tiết (3 ảnh)",
+            "Đã chọn · Bỏ chọn"
+          ],
+          "selected1of1": true
+        },
+        "Scenario H (Browser Back): returns cleanly from property rooms to All Properties view": {
+          "pass": true,
+          "backToAll": 6
+        },
+        "Scenario B (Bare Chic, 2 rooms, 4 adults): sequential indicator 'Đang chọn phòng 1/2' and each card has only 'Xem ảnh và chi tiết' + one 'Chọn phòng này' action": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 2 phòng · 4 khách",
+          "indicator": "Đang chọn phòng 1/2",
+          "cards": [
+            {
+              "name": "Bare Chic One",
+              "buttons": [
+                "Xem ảnh và chi tiết (3 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic One | Studio · 28 m² · 2 người lớn | Xem ảnh và chi tiết (3 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Chic Two",
+              "buttons": [
+                "Xem ảnh và chi tiết (5 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic Two | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Chic Three",
+              "buttons": [
+                "Xem ảnh và chi tiết (3 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic Three | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (3 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Indochine",
+              "buttons": [
+                "Xem ảnh và chi tiết (5 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Indochine | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Chọn phòng này"
+            }
+          ]
+        },
+        "Selecting Room 1 automatically advances to 'Đang chọn phòng 2/2' and locks Bare Chic One ('Đã chọn cho Phòng 1')": {
+          "pass": true,
+          "indicator": "Đang chọn phòng 2/2",
+          "oneBtns": [
+            {
+              "text": "Xem ảnh và chi tiết (3 ảnh)",
+              "disabled": false
+            },
+            {
+              "text": "Đã chọn cho Phòng 1",
+              "disabled": true
+            }
+          ]
+        },
+        "Scenario E (Unknown capacity room): Bare Chic Two selected for Room 2 ('2/2 phòng đã chọn') and clearly distinguished as unverified capacity preference": {
+          "pass": true,
+          "twoCardText": "Bare Chic Two | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Đã chọn (Phòng 2) · Bỏ chọn",
+          "has2of2": true,
+          "distinguishesUnverified": true
+        },
+        "Scenario C (Changing a selected room): Room 2 switched from Bare Chic Two to Bare Chic Three in one click": {
+          "pass": true,
+          "threeSelected": true,
+          "twoFreed": true
+        },
+        "Simplified Review Sheet ('Kiểm tra lựa chọn'): shows property, dates, Room 1 & Room 2, edit actions, single honest notice, and no disabled contact chips": {
+          "pass": true,
+          "open": true,
+          "title": "Kiểm tra lựa chọn",
+          "hasPropertyAndDates": true,
+          "hasBothRooms": true,
+          "hasShortNotice": true,
+          "hasDisabledContactChips": false
+        },
+        "Scenario G (Editing dates): changing dates to Nov 6–9 (3 đêm) closes editor, updates summary, and preserves selected rooms": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-three",
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 2 phòng · 4 khách",
+          "editorClosed": true
+        },
+        "Scenario H (Refresh): reloading page preserves 3 nights, 2 rooms / 4 guests, and both selected rooms": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 2 phòng · 4 khách",
+          "has2of2": true
+        },
+        "Scenario D (Removing a room group): removing Room 2 updates state to 1 room · 2 guests and keeps Room 1 selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=1&adults=2&prefs=bare-chic-one",
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 1 phòng · 2 khách",
+          "has1of1": true
+        },
+        "Scenario F (Insufficient eligible unique physical rooms): selecting both Pepper House units for Rooms 1 & 2 locks them and shows clear notice for Room 3": {
+          "pass": true,
+          "indicator": "Đang chọn phòng 3/3",
+          "statusText": "Không còn phòng phù hợp tại Pepper House cho Phòng 3 (2 khách). Điều chỉnh số phòng hoặc số khách",
+          "lockedUnique": true
+        },
+        "No horizontal overflow and 0 broken images": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=pepper-house&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2%2C2&adults=6&prefs=pepper-house-3rd-floor%2Cpepper-house-4th-floor%2C",
+          "overflowX": false,
+          "scrollWidth": 768,
+          "innerWidth": 768,
+          "brokenImages": [],
+          "cls": 0
+        }
+      },
+      "facts": {
+        "url": "/dev/demo/tim-phong?property=pepper-house&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2%2C2&adults=6&prefs=pepper-house-3rd-floor%2Cpepper-house-4th-floor%2C",
+        "overflowX": false,
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "brokenImages": [],
+        "cls": 0
+      }
+    },
+    {
+      "view": "390",
+      "checks": {
+        "Scenario A (All Properties, 1 room, 2 adults): Heading 'Chọn phòng', concise summary, 'Chỉnh sửa', 6 photo-led property cards with 'Xem phòng', no expanded room lists": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Tất cả nơi lưu trú · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "hasEditBtn": true,
+          "propCount": 6,
+          "allHaveXemPhong": true,
+          "expandedRoomCards": 0,
+          "hasCompactNotice": true,
+          "hasOldProgressSteps": false
+        },
+        "One-room selection state: Bare Chic One selected ('1/1 phòng đã chọn')": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "btnText": [
+            "Xem ảnh và chi tiết (3 ảnh)",
+            "Đã chọn · Bỏ chọn"
+          ],
+          "selected1of1": true
+        },
+        "Scenario H (Browser Back): returns cleanly from property rooms to All Properties view": {
+          "pass": true,
+          "backToAll": 6
+        },
+        "Scenario B (Bare Chic, 2 rooms, 4 adults): sequential indicator 'Đang chọn phòng 1/2' and each card has only 'Xem ảnh và chi tiết' + one 'Chọn phòng này' action": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 2 phòng · 4 khách",
+          "indicator": "Đang chọn phòng 1/2",
+          "cards": [
+            {
+              "name": "Bare Chic One",
+              "buttons": [
+                "Xem ảnh và chi tiết (3 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic One | Studio · 28 m² · 2 người lớn | Xem ảnh và chi tiết (3 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Chic Two",
+              "buttons": [
+                "Xem ảnh và chi tiết (5 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic Two | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Chic Three",
+              "buttons": [
+                "Xem ảnh và chi tiết (3 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Chic Three | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (3 ảnh) | Chọn phòng này"
+            },
+            {
+              "name": "Bare Indochine",
+              "buttons": [
+                "Xem ảnh và chi tiết (5 ảnh)",
+                "Chọn phòng này"
+              ],
+              "text": "Bare Indochine | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Chọn phòng này"
+            }
+          ]
+        },
+        "Selecting Room 1 automatically advances to 'Đang chọn phòng 2/2' and locks Bare Chic One ('Đã chọn cho Phòng 1')": {
+          "pass": true,
+          "indicator": "Đang chọn phòng 2/2",
+          "oneBtns": [
+            {
+              "text": "Xem ảnh và chi tiết (3 ảnh)",
+              "disabled": false
+            },
+            {
+              "text": "Đã chọn cho Phòng 1",
+              "disabled": true
+            }
+          ]
+        },
+        "Scenario E (Unknown capacity room): Bare Chic Two selected for Room 2 ('2/2 phòng đã chọn') and clearly distinguished as unverified capacity preference": {
+          "pass": true,
+          "twoCardText": "Bare Chic Two | Sức chứa chờ xác nhận · Lựa chọn nguyện vọng phòng | Xem ảnh và chi tiết (5 ảnh) | Đã chọn (Phòng 2) · Bỏ chọn",
+          "has2of2": true,
+          "distinguishesUnverified": true
+        },
+        "Scenario C (Changing a selected room): Room 2 switched from Bare Chic Two to Bare Chic Three in one click": {
+          "pass": true,
+          "threeSelected": true,
+          "twoFreed": true
+        },
+        "Simplified Review Sheet ('Kiểm tra lựa chọn'): shows property, dates, Room 1 & Room 2, edit actions, single honest notice, and no disabled contact chips": {
+          "pass": true,
+          "open": true,
+          "title": "Kiểm tra lựa chọn",
+          "hasPropertyAndDates": true,
+          "hasBothRooms": true,
+          "hasShortNotice": true,
+          "hasDisabledContactChips": false
+        },
+        "Scenario G (Editing dates): changing dates to Nov 6–9 (3 đêm) closes editor, updates summary, and preserves selected rooms": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-three",
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 2 phòng · 4 khách",
+          "editorClosed": true
+        },
+        "Scenario H (Refresh): reloading page preserves 3 nights, 2 rooms / 4 guests, and both selected rooms": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 2 phòng · 4 khách",
+          "has2of2": true
+        },
+        "Scenario D (Removing a room group): removing Room 2 updates state to 1 room · 2 guests and keeps Room 1 selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=1&adults=2&prefs=bare-chic-one",
+          "summary": "Bare Chic · 6 thg 11 – 9 thg 11 (3 đêm) · 1 phòng · 2 khách",
+          "has1of1": true
+        },
+        "Scenario F (Insufficient eligible unique physical rooms): selecting both Pepper House units for Rooms 1 & 2 locks them and shows clear notice for Room 3": {
+          "pass": true,
+          "indicator": "Đang chọn phòng 3/3",
+          "statusText": "Không còn phòng phù hợp tại Pepper House cho Phòng 3 (2 khách). Điều chỉnh số phòng hoặc số khách",
+          "lockedUnique": true
+        },
+        "No horizontal overflow and 0 broken images": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=pepper-house&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2%2C2&adults=6&prefs=pepper-house-3rd-floor%2Cpepper-house-4th-floor%2C",
+          "overflowX": false,
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "brokenImages": [],
+          "cls": 0
+        }
+      },
+      "facts": {
+        "url": "/dev/demo/tim-phong?property=pepper-house&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2%2C2&adults=6&prefs=pepper-house-3rd-floor%2Cpepper-house-4th-floor%2C",
+        "overflowX": false,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "brokenImages": [],
+        "cls": 0
+      }
+    }
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,717 @@
+/*
+ * LIVING FRAMES, "Motion Contact Sheet", second pass. Exploration only; scoped to this route.
+ * Colours and the display face are provisional, like the site's own tokens.
+ *
+ * One language: paper, frames that stand on one line, words never on a picture, and one
+ * filled colour, which means "act". Written phone first; the phone is its own composition,
+ * not the desktop sheet made smaller. The grid starts at 768px.
+ */
+
+/* ---------- The disclosure: one slim line, always there, never the loudest thing ---------- */
+
+.notice {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  padding-inline: var(--vn-gutter);
+  overflow: hidden;
+  background: #e2ded2;
+  color: #3d3f3a;
+  font-size: 0.6875rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.notice b {
+  padding: 0.1875rem 0.375rem;
+  border-radius: 2px;
+  background: #161614;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.noticeMore {
+  display: none;
+}
+
+.root {
+  --lf-paper: #efece3;
+  --lf-ink: #161614;
+  /* 5.6:1 on the paper. */
+  --lf-muted: #5b5d57;
+  --lf-line: #cdc9bd;
+  --lf-display: var(--font-lf), system-ui, sans-serif;
+  --vn-focus: var(--lf-ink);
+  background: var(--lf-paper);
+  color: var(--lf-ink);
+}
+
+/* ---------- Phone: the moving frame edge to edge, then who, then the action ---------- */
+
+.sheet {
+  display: grid;
+  grid-template-areas: "show" "id" "act" "sup";
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding-inline: var(--vn-gutter);
+}
+
+.showcase {
+  grid-area: show;
+  margin-inline: calc(-1 * var(--vn-gutter));
+}
+
+/*
+ * The dominant frame. Between 16:9 and 3:2, whichever the screen's height allows: a short
+ * phone gets the wider shape, so the name and the action stay in the first screen. Its size is
+ * fixed before anything loads, and it shows a small preview of the poster until the poster arrives.
+ */
+.screen {
+  position: relative;
+  height: clamp(56.25vw, 34svh, 66.67vw);
+  overflow: hidden;
+  background-color: #b9b7ad;
+  background-position: center;
+  background-size: cover;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--vn-duration-base);
+}
+
+.video[data-on] {
+  opacity: 1;
+}
+
+/* Small, on the picture's own corner: enough to be truthful, not enough to be the subject. */
+.chip {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  padding: 0.1875rem 0.375rem;
+  border-radius: 2px;
+  background: rgb(22 22 20 / 0.62);
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* The two controls on the frame share one look: 44px, on their own dark ground, so they read on any footage. */
+.all,
+.toggle {
+  position: absolute;
+  bottom: 0.625rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem;
+  border: 1.5px solid rgb(255 255 255 / 0.9);
+  background: rgb(22 22 20 / 0.6);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--vn-duration-fast);
+  --vn-focus: #fff;
+}
+
+.all:hover,
+.toggle:hover {
+  background: rgb(22 22 20 / 0.85);
+}
+
+.all {
+  left: 0.625rem;
+  gap: 0.5rem;
+  padding-inline: 0.75rem 0.875rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.toggle {
+  right: 0.625rem;
+  width: 2.75rem;
+  border-radius: 50%;
+}
+
+/* A frame's caption: its number and the side of the property it shows. No hour is printed. */
+.cap {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  height: 2.25rem;
+  color: var(--lf-muted);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cap b {
+  color: var(--lf-ink);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* On a phone the showcase needs no caption: it is the whole screen's subject. */
+.showcase .cap {
+  display: none;
+}
+
+.identity {
+  grid-area: id;
+  padding-top: 0.875rem;
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--lf-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* Line height stays above 1: Vietnamese stacks two marks on one vowel. */
+.name {
+  margin-top: 0.25rem;
+  font-family: var(--lf-display);
+  font-size: clamp(2.875rem, 14.2vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.statement {
+  max-width: 30rem;
+  margin-top: 0.5rem;
+  color: var(--lf-muted);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.action {
+  grid-area: act;
+  margin-top: 0.875rem;
+}
+
+/* The guest's own dates beside the action. From 768px only: on a phone the criteria bar says it a thumb's width above. */
+.stay {
+  display: none;
+}
+
+/* The only filled colour on the page. */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: 3.5rem;
+  padding-inline: 1.375rem 1.125rem;
+  border-radius: 2px;
+  background: var(--bk-cta);
+  color: var(--bk-on-cta);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color var(--vn-duration-fast);
+}
+
+.cta:hover {
+  background: var(--bk-cta-hover);
+}
+
+/* The two still frames stand on one line, an upright and a square, directly under the action. */
+.supports {
+  grid-area: sup;
+  display: grid;
+  grid-template-columns: minmax(0, 200fr) minmax(0, 142fr);
+  gap: 0.75rem;
+  align-items: end;
+  margin-top: 1.5rem;
+}
+
+.frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #d8d4c8;
+  cursor: zoom-in;
+}
+
+.upright .frame {
+  aspect-ratio: 4 / 5;
+}
+
+.square .frame {
+  aspect-ratio: 1;
+}
+
+.deferred {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+/* ---------- The sections that follow: each opens with its own frame ---------- */
+
+.chapter {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: 3.5rem var(--vn-gutter) 0;
+}
+
+.chapterFrame {
+  margin-inline: calc(-1 * var(--vn-gutter));
+}
+
+.chapterFrame .frame {
+  aspect-ratio: 3 / 2;
+}
+
+.chapterFrame .cap {
+  padding-inline: var(--vn-gutter);
+}
+
+.chapterBody {
+  padding-top: 0.5rem;
+}
+
+.title {
+  font-family: var(--lf-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.purpose {
+  margin-top: 0.375rem;
+  color: var(--lf-muted);
+  font-size: 0.9375rem;
+}
+
+.marks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--lf-line);
+}
+
+.marks li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+}
+
+/* Four short entries sit on one line on a phone. */
+.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Says, once per section and quietly, that the entries are stand-ins. */
+.sample {
+  margin-top: 1.25rem;
+  color: var(--lf-muted);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ---------- The bridge to booking: the page's one dark band ---------- */
+
+.bridge {
+  margin-top: 4rem;
+  background: var(--lf-ink);
+  color: #f3f0e8;
+  scroll-margin-top: 4.0625rem;
+  --vn-focus: #f3f0e8;
+}
+
+.bridgeInner {
+  display: grid;
+  gap: 1.75rem;
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: 3.5rem var(--vn-gutter) 4rem;
+}
+
+.bridgeTitle {
+  font-family: var(--lf-display);
+  font-size: clamp(2.5rem, 11vw, 4rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.bridgeStay {
+  margin-top: 0.5rem;
+  color: rgb(243 240 232 / 0.78);
+  font-size: 1.0625rem;
+}
+
+.proto {
+  max-width: 24rem;
+  margin-top: 0.875rem;
+  color: rgb(243 240 232 / 0.66);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+/* ---------- The booking action, once the first one has scrolled away ---------- */
+
+.pill {
+  position: fixed;
+  right: var(--vn-gutter);
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 3rem;
+  padding-inline: 1.25rem 1rem;
+  border-radius: 999px;
+  background: var(--bk-cta);
+  box-shadow: 0 10px 28px -10px rgb(22 22 20 / 0.55);
+  color: var(--bk-on-cta);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  translate: 0 0.75rem;
+  transition:
+    opacity var(--vn-duration-base),
+    translate var(--vn-duration-base) var(--vn-ease-out),
+    visibility var(--vn-duration-base),
+    background-color var(--vn-duration-fast);
+}
+
+.pill[data-show] {
+  visibility: visible;
+  opacity: 1;
+  translate: 0;
+}
+
+.pill:hover {
+  background: var(--bk-cta-hover);
+}
+
+/* ---------- From 768px ---------- */
+
+@media (min-width: 48rem) {
+  .noticeMore {
+    display: inline;
+  }
+
+  /* Square, upright, wide: 130, 174 and 864 of the 1200px sheet, standing on one line and rising to the right. */
+  .sheet {
+    grid-template-columns: minmax(0, 130fr) minmax(0, 174fr) minmax(0, 864fr);
+    grid-template-areas:
+      "id id show"
+      "square upright show"
+      "act act act";
+    column-gap: 1rem;
+    align-items: end;
+    padding-top: 1rem;
+  }
+
+  .showcase {
+    margin-inline: 0;
+  }
+
+  .screen {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .showcase .cap {
+    display: flex;
+  }
+
+  .chip {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+
+  .all {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .toggle {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  /* The identity is one quiet block at the top left: place, name, one sentence. It leads by position, not by mass. */
+  .identity {
+    align-self: start;
+    padding: 0.125rem 0 1.5rem;
+  }
+
+  .place {
+    font-size: 0.875rem;
+  }
+
+  .name {
+    margin-top: 0.5rem;
+    font-size: clamp(2.25rem, 3.75vw, 3.375rem);
+  }
+
+  .statement {
+    margin-top: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .supports {
+    display: contents;
+  }
+
+  .upright {
+    grid-area: upright;
+  }
+
+  .square {
+    grid-area: square;
+  }
+
+  .action {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--lf-line);
+  }
+
+  .stay {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 1.0625rem;
+    font-weight: 500;
+  }
+
+  .stay span {
+    color: var(--lf-muted);
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .cta {
+    min-width: 18rem;
+    height: 3.75rem;
+    font-size: 1.0625rem;
+  }
+
+  /* The frame takes seven columns and the words four, with one left empty between them; the next section mirrors it. */
+  .chapter {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 1rem;
+    align-items: end;
+    padding-top: clamp(4rem, 6.2vw, 5.5rem);
+  }
+
+  .chapterFrame {
+    grid-column: 1 / span 7;
+    margin-inline: 0;
+  }
+
+  .chapterFrame .cap {
+    padding-inline: 0;
+  }
+
+  .chapterBody {
+    grid-column: 9 / -1;
+    padding: 0 0 2.25rem;
+  }
+
+  .flip .chapterFrame {
+    grid-column: 6 / -1;
+    order: 2;
+  }
+
+  .flip .chapterBody {
+    grid-column: 1 / span 4;
+    order: 1;
+  }
+
+  .title {
+    font-size: clamp(2rem, 3.4vw, 3rem);
+  }
+
+  .purpose {
+    font-size: 1rem;
+  }
+
+  .marks,
+  .four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .marks li {
+    font-size: 0.875rem;
+  }
+
+  .bridge {
+    margin-top: clamp(5rem, 9vw, 8rem);
+  }
+
+  .bridgeInner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3rem;
+    align-items: end;
+    padding-block: clamp(4rem, 7vw, 6rem);
+  }
+
+  .pill {
+    bottom: 1.5rem;
+    height: 3.25rem;
+  }
+}
+
+/*
+ * A section's frame and words ease up into place as they are scrolled to. Driven by the
+ * scroll position itself, in CSS, where the browser supports it; elsewhere, and with reduced
+ * motion, they are simply there.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .chapterFrame,
+    .chapterBody,
+    .bridgeInner {
+      animation: lf-arrive linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+  }
+}
+
+@keyframes lf-arrive {
+  from {
+    opacity: 0;
+    translate: 0 1.5rem;
+  }
+}
+
+/*
+ * ---------- Media reality check (13/10/2026) ----------
+ * The same sheet with reference photographs. Nothing above this line was changed for it.
+ */
+
+/* The reference mark on a small frame: the showcase's chip, sized for a frame a third as wide. */
+.frame .chip {
+  top: 0.375rem;
+  left: 0.375rem;
+  padding: 0.125rem 0.3125rem;
+  font-size: 0.5625rem;
+  white-space: nowrap;
+}
+
+/* The reviewer's switch between the drawn page and the two variants. Not part of the design. */
+.noticeTest {
+  position: relative;
+}
+
+/* The longer wording waits for 1024px here: from 768px the switch has the right-hand end of the line. */
+.noticeTest .noticeMore {
+  display: none;
+}
+
+.switch {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .switch {
+    position: absolute;
+    top: 0;
+    right: var(--vn-gutter);
+    display: flex;
+    gap: 0.125rem;
+    align-items: center;
+    height: 100%;
+  }
+
+  .switch a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .switch a:hover {
+    text-decoration: underline;
+  }
+
+  .switch a[aria-current] {
+    background: #161614;
+    color: #fff;
+  }
+
+  /* Between 768 and 1024px A's square is under 100px wide: the mark is set smaller so it stays on one line inside it. */
+  .frame .chip {
+    top: 0.25rem;
+    left: 0.25rem;
+    padding: 0.125rem 0.25rem;
+    font-size: 0.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  /*
+   * Variant B. The sheet, its three frames on one line and the order of everything are the
+   * same; only the shares change: 160, 212 and 796 of 1200px where A has 130, 174 and 864.
+   * The upright goes from 174 by 217 to 212 by 265 and the square from 130 to 160, each
+   * about half as large again; the showcase gives up 68px of width.
+   *
+   * This is close to as far as the sheet goes. The identity stands above the upright, and
+   * the two together must not be taller than the showcase or its top drops below the
+   * name's: at 1440px that allows an upright of about 218px.
+   */
+  .sheet[data-geometry="b"] {
+    grid-template-columns: minmax(0, 160fr) minmax(0, 212fr) minmax(0, 796fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .noticeTest .noticeMore {
+    display: inline;
+  }
+
+  .frame .chip {
+    top: 0.375rem;
+    left: 0.375rem;
+    padding: 0.125rem 0.3125rem;
+    font-size: 0.5625rem;
+    letter-spacing: 0.08em;
+  }
+}

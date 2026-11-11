@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-11-03T18:23:38.658Z",
+  "set": "VNEST-MEDIA-PEPPER-HOUSE-2026-11-04",
+  "source": "/Users/noe/Documents/VNest Media/Pepper House",
+  "totalImported": 7,
+  "items": [
+    {
+      "key": "pepper-house-3rd-floor-02",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-3rd-floor",
+      "sourceRelPath": "Pepper House/3th-floor/02.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-3rd-floor-02.jpg",
+      "sha256": "13459ae28b24a7f6d610a8ec6e74ce1c1cd3cff671da8fc2e7af37b7898d62d7",
+      "bytes": 1782261,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    },
+    {
+      "key": "pepper-house-3rd-floor-04",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-3rd-floor",
+      "sourceRelPath": "Pepper House/3th-floor/04.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-3rd-floor-04.jpg",
+      "sha256": "35ed5da642d4abcd197dec00ab7b026adb61f5b42bdf9ab3858a9f48ad15b4a6",
+      "bytes": 1778862,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    },
+    {
+      "key": "pepper-house-3rd-floor-09",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-3rd-floor",
+      "sourceRelPath": "Pepper House/3th-floor/09.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-3rd-floor-09.jpg",
+      "sha256": "b3f656a5168cf614fc17ac31659454f54b0ea7880490a5687cd4ac291db6e793",
+      "bytes": 1956676,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    },
+    {
+      "key": "pepper-house-4th-floor-72",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-4th-floor",
+      "sourceRelPath": "Pepper House/4th-floor/pepperhouse-72.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-4th-floor-72.jpg",
+      "sha256": "bc42f29fd0818de7502bfe4de61e158a1143cb522da28feb541bd517936cbaa3",
+      "bytes": 1632030,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    },
+    {
+      "key": "pepper-house-4th-floor-76",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-4th-floor",
+      "sourceRelPath": "Pepper House/4th-floor/pepperhouse-76.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-4th-floor-76.jpg",
+      "sha256": "c72714a8765d2121d57c71009933d9502c6700209313d57547dbdbe95ba7b295",
+      "bytes": 1587769,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    },
+    {
+      "key": "pepper-house-4th-floor-79",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-4th-floor",
+      "sourceRelPath": "Pepper House/4th-floor/pepperhouse-79.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-4th-floor-79.jpg",
+      "sha256": "664d7d430fa12c288c72cc1f847b3fc467b8a6b4935a620be2a874798a8dc2eb",
+      "bytes": 1845375,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    },
+    {
+      "key": "pepper-house-4th-floor-81",
+      "propertyId": "pepper-house",
+      "roomId": "pepper-house-4th-floor",
+      "sourceRelPath": "Pepper House/4th-floor/pepperhouse-81.jpg",
+      "localOriginal": ".local-media/client-photos/pepper-house-2026-11-04/pepper-house-4th-floor-81.jpg",
+      "sha256": "ba88dbee16a9699aae2d680b9bb3531ec69bb02da5615a33b8dd008079522bfc",
+      "bytes": 1701920,
+      "width": 2048,
+      "height": 1365,
+      "format": "jpeg",
+      "variantsCount": 12
+    }
+  ],
+  "alreadyImported": [
+    "3th-floor/01.jpg (sel-16)",
+    "3th-floor/03.jpg (G2 pepper-house)",
+    "3th-floor/08.jpg (sel-15)",
+    "4th-floor/pepperhouse-74.jpg (sel-17)"
+  ],
+  "excluded": [
+    {
+      "file": "4th-floor/pepperhouse-72 (1).jpg",
+      "reason": "byte-identical duplicate of 4th-floor/pepperhouse-72.jpg"
+    }
+  ]
+}

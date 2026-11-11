@@ -1,0 +1,1485 @@
+{
+  "base": "http://localhost:3401",
+  "ranAt": "2026-10-26T13:16:14.605Z",
+  "rooms": [
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-chic-one",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-chic-two",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5",
+      "drawer": 5
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-chic-three",
+      "total": 4,
+      "expected": 4,
+      "keys": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "4",
+      "drawer": 4
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-indochine",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5",
+      "drawer": 5
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-one",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-04-bare-hyphen-one",
+        "bare-hyphen"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-05-bare-hyphen-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-three",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-four",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-one",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-06-bare-da-kao-one",
+        "bare-da-kao"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-07-bare-da-kao-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-three",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-08-bare-da-kao-three"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-four",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-09-bare-da-kao-four"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-han-ground",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-10-bare-han-ground",
+        "bare-han-ground-26"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-han-one",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-han-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-11-bare-han-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "bare-han-three",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-12-bare-han-three"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "yellow-submarine",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "pale-blue-eyes",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "green-river",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "the-nang-suites"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "blue-moon",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "pepper-house-3rd-floor",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-15-pepper-house-3rd-floor-a",
+        "sel-16-pepper-house-3rd-floor-b",
+        "pepper-house"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "1440",
+      "surface": "booking-results",
+      "roomId": "pepper-house-4th-floor",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-17-pepper-house-4th-floor"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "1440",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-one",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3"
+    },
+    {
+      "view": "1440",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-two",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5"
+    },
+    {
+      "view": "1440",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-three",
+      "total": 4,
+      "expected": 4,
+      "keys": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "4"
+    },
+    {
+      "view": "1440",
+      "surface": "page-bare-chic",
+      "roomId": "bare-indochine",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5"
+    },
+    {
+      "view": "1440",
+      "surface": "page-the-nang-suites",
+      "roomId": "blue-moon",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3"
+    },
+    {
+      "view": "1440",
+      "surface": "page-the-nang-suites",
+      "roomId": "yellow-submarine",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2"
+    },
+    {
+      "view": "1440",
+      "surface": "page-the-nang-suites",
+      "roomId": "pale-blue-eyes",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2"
+    },
+    {
+      "view": "1440",
+      "surface": "page-the-nang-suites",
+      "roomId": "green-river",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "the-nang-suites"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1"
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-chic-one",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-chic-two",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5",
+      "drawer": 5
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-chic-three",
+      "total": 4,
+      "expected": 4,
+      "keys": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "4",
+      "drawer": 4
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-indochine",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5",
+      "drawer": 5
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-one",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-04-bare-hyphen-one",
+        "bare-hyphen"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-05-bare-hyphen-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-three",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-four",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-one",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-06-bare-da-kao-one",
+        "bare-da-kao"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-07-bare-da-kao-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-three",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-08-bare-da-kao-three"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-four",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-09-bare-da-kao-four"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-han-ground",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-10-bare-han-ground",
+        "bare-han-ground-26"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-han-one",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-han-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-11-bare-han-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "bare-han-three",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-12-bare-han-three"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "yellow-submarine",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "pale-blue-eyes",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "green-river",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "the-nang-suites"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "blue-moon",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "pepper-house-3rd-floor",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-15-pepper-house-3rd-floor-a",
+        "sel-16-pepper-house-3rd-floor-b",
+        "pepper-house"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "768",
+      "surface": "booking-results",
+      "roomId": "pepper-house-4th-floor",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-17-pepper-house-4th-floor"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "768",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-one",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3"
+    },
+    {
+      "view": "768",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-two",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5"
+    },
+    {
+      "view": "768",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-three",
+      "total": 4,
+      "expected": 4,
+      "keys": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "4"
+    },
+    {
+      "view": "768",
+      "surface": "page-bare-chic",
+      "roomId": "bare-indochine",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5"
+    },
+    {
+      "view": "768",
+      "surface": "page-the-nang-suites",
+      "roomId": "blue-moon",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3"
+    },
+    {
+      "view": "768",
+      "surface": "page-the-nang-suites",
+      "roomId": "yellow-submarine",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2"
+    },
+    {
+      "view": "768",
+      "surface": "page-the-nang-suites",
+      "roomId": "pale-blue-eyes",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2"
+    },
+    {
+      "view": "768",
+      "surface": "page-the-nang-suites",
+      "roomId": "green-river",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "the-nang-suites"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1"
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-chic-one",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-chic-two",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5",
+      "drawer": 5
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-chic-three",
+      "total": 4,
+      "expected": 4,
+      "keys": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "4",
+      "drawer": 4
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-indochine",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5",
+      "drawer": 5
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-one",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-04-bare-hyphen-one",
+        "bare-hyphen"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-05-bare-hyphen-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-three",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-hyphen-four",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-one",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-06-bare-da-kao-one",
+        "bare-da-kao"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-07-bare-da-kao-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-three",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-08-bare-da-kao-three"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-da-kao-four",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-09-bare-da-kao-four"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-han-ground",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-10-bare-han-ground",
+        "bare-han-ground-26"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-han-one",
+      "total": 0,
+      "expected": 0,
+      "keys": [],
+      "broken": [],
+      "distorted": [],
+      "drawer": 0
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-han-two",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-11-bare-han-two"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "bare-han-three",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-12-bare-han-three"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "yellow-submarine",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "pale-blue-eyes",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2",
+      "drawer": 2
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "green-river",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "the-nang-suites"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "blue-moon",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "pepper-house-3rd-floor",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-15-pepper-house-3rd-floor-a",
+        "sel-16-pepper-house-3rd-floor-b",
+        "pepper-house"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3",
+      "drawer": 3
+    },
+    {
+      "view": "390",
+      "surface": "booking-results",
+      "roomId": "pepper-house-4th-floor",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "sel-17-pepper-house-4th-floor"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1",
+      "drawer": 1
+    },
+    {
+      "view": "390",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-one",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3"
+    },
+    {
+      "view": "390",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-two",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5"
+    },
+    {
+      "view": "390",
+      "surface": "page-bare-chic",
+      "roomId": "bare-chic-three",
+      "total": 4,
+      "expected": 4,
+      "keys": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "4"
+    },
+    {
+      "view": "390",
+      "surface": "page-bare-chic",
+      "roomId": "bare-indochine",
+      "total": 5,
+      "expected": 5,
+      "keys": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "5"
+    },
+    {
+      "view": "390",
+      "surface": "page-the-nang-suites",
+      "roomId": "blue-moon",
+      "total": 3,
+      "expected": 3,
+      "keys": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "3"
+    },
+    {
+      "view": "390",
+      "surface": "page-the-nang-suites",
+      "roomId": "yellow-submarine",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2"
+    },
+    {
+      "view": "390",
+      "surface": "page-the-nang-suites",
+      "roomId": "pale-blue-eyes",
+      "total": 2,
+      "expected": 2,
+      "keys": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "2"
+    },
+    {
+      "view": "390",
+      "surface": "page-the-nang-suites",
+      "roomId": "green-river",
+      "total": 1,
+      "expected": 1,
+      "keys": [
+        "the-nang-suites"
+      ],
+      "broken": [],
+      "distorted": [],
+      "viewer": "1"
+    }
+  ],
+  "viewers": [
+    {
+      "view": "1440",
+      "page": "bare-chic",
+      "label": "Xem tất cả 17 ảnh",
+      "groups": [
+        {
+          "label": "Bare Chic One, 3 ảnh",
+          "imgs": 3
+        },
+        {
+          "label": "Bare Chic Two, 5 ảnh",
+          "imgs": 5
+        },
+        {
+          "label": "Bare Chic Three, 4 ảnh",
+          "imgs": 4
+        },
+        {
+          "label": "Bare Indochine, 5 ảnh",
+          "imgs": 5
+        }
+      ],
+      "sum": 17,
+      "expectedSum": 17
+    },
+    {
+      "view": "1440",
+      "page": "the-nang-suites",
+      "label": "Xem tất cả 8 ảnh",
+      "groups": [
+        {
+          "label": "Blue Moon, 3 ảnh",
+          "imgs": 3
+        },
+        {
+          "label": "Yellow Submarine, 2 ảnh",
+          "imgs": 2
+        },
+        {
+          "label": "Pale Blue Eyes, 2 ảnh",
+          "imgs": 2
+        },
+        {
+          "label": "Green River, 1 ảnh",
+          "imgs": 1
+        }
+      ],
+      "sum": 8,
+      "expectedSum": 8
+    },
+    {
+      "view": "768",
+      "page": "bare-chic",
+      "label": "Xem tất cả 17 ảnh",
+      "groups": [
+        {
+          "label": "Bare Chic One, 3 ảnh",
+          "imgs": 3
+        },
+        {
+          "label": "Bare Chic Two, 5 ảnh",
+          "imgs": 5
+        },
+        {
+          "label": "Bare Chic Three, 4 ảnh",
+          "imgs": 4
+        },
+        {
+          "label": "Bare Indochine, 5 ảnh",
+          "imgs": 5
+        }
+      ],
+      "sum": 17,
+      "expectedSum": 17
+    },
+    {
+      "view": "768",
+      "page": "the-nang-suites",
+      "label": "Xem tất cả 8 ảnh",
+      "groups": [
+        {
+          "label": "Blue Moon, 3 ảnh",
+          "imgs": 3
+        },
+        {
+          "label": "Yellow Submarine, 2 ảnh",
+          "imgs": 2
+        },
+        {
+          "label": "Pale Blue Eyes, 2 ảnh",
+          "imgs": 2
+        },
+        {
+          "label": "Green River, 1 ảnh",
+          "imgs": 1
+        }
+      ],
+      "sum": 8,
+      "expectedSum": 8
+    },
+    {
+      "view": "390",
+      "page": "bare-chic",
+      "label": "Xem tất cả 17 ảnh",
+      "groups": [
+        {
+          "label": "Bare Chic One, 3 ảnh",
+          "imgs": 3
+        },
+        {
+          "label": "Bare Chic Two, 5 ảnh",
+          "imgs": 5
+        },
+        {
+          "label": "Bare Chic Three, 4 ảnh",
+          "imgs": 4
+        },
+        {
+          "label": "Bare Indochine, 5 ảnh",
+          "imgs": 5
+        }
+      ],
+      "sum": 17,
+      "expectedSum": 17
+    },
+    {
+      "view": "390",
+      "page": "the-nang-suites",
+      "label": "Xem tất cả 8 ảnh",
+      "groups": [
+        {
+          "label": "Blue Moon, 3 ảnh",
+          "imgs": 3
+        },
+        {
+          "label": "Yellow Submarine, 2 ảnh",
+          "imgs": 2
+        },
+        {
+          "label": "Pale Blue Eyes, 2 ảnh",
+          "imgs": 2
+        },
+        {
+          "label": "Green River, 1 ảnh",
+          "imgs": 1
+        }
+      ],
+      "sum": 8,
+      "expectedSum": 8
+    }
+  ],
+  "failures": []
+}

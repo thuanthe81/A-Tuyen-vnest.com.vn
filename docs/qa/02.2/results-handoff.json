@@ -1,0 +1,52 @@
+[
+  {
+    "name": "hand-off supported, no price @1440: the room can be selected, as a room",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @1440: still no rate radio and no figure",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @1440: the summary says a room was chosen and that there is no price",
+    "pass": true,
+    "detail": "LỰA CHỌN CỦA BẠN |  | Loại phòng mẫu 1 |  | Đã chọn phòng · 12 thg 11 – 15 thg 11 · 3 đêm · 2 khách |  | Chưa có giá | MÔ PHỎNG | Tiếp tục với phòng này |  | Bạn đang chọn một phòng, không phải một mức giá. Trang này chưa có giá đã xác nhận cho phòng."
+  },
+  {
+    "name": "hand-off supported, no price @1440: the button is 'continue with this room', not 'continue booking'",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @1440: continuing stops at the boundary and claims no price",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @390: the room can be selected, as a room",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @390: still no rate radio and no figure",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @390: the summary says a room was chosen and that there is no price",
+    "pass": true,
+    "detail": "LỰA CHỌN CỦA BẠN |  | Loại phòng mẫu 1 |  | Đã chọn phòng · 12 thg 11 – 15 thg 11 · 3 đêm · 2 khách |  | Chưa có giá | Tiếp tục với phòng này |  | Bạn đang chọn một phòng, không phải một mức giá. Trang này chưa có giá đã xác nhận cho phòng."
+  },
+  {
+    "name": "hand-off supported, no price @390: the button is 'continue with this room', not 'continue booking'",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "hand-off supported, no price @390: continuing stops at the boundary and claims no price",
+    "pass": true,
+    "detail": ""
+  }
+]

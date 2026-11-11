@@ -1,0 +1,194 @@
+{
+ "b-1440.png": {
+  "size": [
+   1440,
+   1606
+  ],
+  "differentPixels": 0
+ },
+ "b-390.png": {
+  "size": [
+   390,
+   1393
+  ],
+  "differentPixels": 0
+ },
+ "b-768.png": {
+  "size": [
+   768,
+   1911
+  ],
+  "differentPixels": 0
+ },
+ "b-client-1440.png": {
+  "size": [
+   1440,
+   1613
+  ],
+  "differentPixels": 0
+ },
+ "b-client-390.png": {
+  "size": [
+   390,
+   1642
+  ],
+  "differentPixels": 0
+ },
+ "b-client-768.png": {
+  "size": [
+   768,
+   1937
+  ],
+  "differentPixels": 0
+ },
+ "bare-chic-20-10-1440.png": {
+  "size": [
+   1440,
+   4596
+  ],
+  "differentPixels": 0
+ },
+ "bare-chic-20-10-390.png": {
+  "size": [
+   390,
+   3854
+  ],
+  "differentPixels": 0
+ },
+ "bare-chic-20-10-768.png": {
+  "size": [
+   768,
+   3747
+  ],
+  "differentPixels": 0
+ },
+ "bare-chic-private-1440.png": {
+  "differentPixels": "size differs",
+  "a": [
+   1440,
+   3753
+  ],
+  "b": [
+   1440,
+   6443
+  ]
+ },
+ "bare-chic-private-390.png": {
+  "differentPixels": "size differs",
+  "a": [
+   390,
+   4572
+  ],
+  "b": [
+   390,
+   8831
+  ]
+ },
+ "bare-chic-private-768.png": {
+  "differentPixels": "size differs",
+  "a": [
+   768,
+   4119
+  ],
+  "b": [
+   768,
+   8189
+  ]
+ },
+ "bare-chic-public-1440.png": {
+  "differentPixels": "size differs",
+  "a": [
+   1440,
+   3193
+  ],
+  "b": [
+   1440,
+   5909
+  ]
+ },
+ "bare-chic-public-390.png": {
+  "differentPixels": "size differs",
+  "a": [
+   390,
+   3783
+  ],
+  "b": [
+   390,
+   7964
+  ]
+ },
+ "bare-chic-public-768.png": {
+  "differentPixels": "size differs",
+  "a": [
+   768,
+   3541
+  ],
+  "b": [
+   768,
+   7534
+  ]
+ },
+ "booking-search-1440.png": {
+  "size": [
+   1440,
+   2479
+  ],
+  "differentPixels": 0
+ },
+ "booking-search-390.png": {
+  "size": [
+   390,
+   3820
+  ],
+  "differentPixels": 0
+ },
+ "booking-search-768.png": {
+  "size": [
+   768,
+   2580
+  ],
+  "differentPixels": 0
+ },
+ "stays-1440.png": {
+  "size": [
+   1440,
+   1084
+  ],
+  "differentPixels": 0
+ },
+ "stays-390.png": {
+  "size": [
+   390,
+   1069
+  ],
+  "differentPixels": 0
+ },
+ "stays-768.png": {
+  "size": [
+   768,
+   1201
+  ],
+  "differentPixels": 0
+ },
+ "stays-bare-chic-1440.png": {
+  "size": [
+   1440,
+   1977
+  ],
+  "differentPixels": 0
+ },
+ "stays-bare-chic-390.png": {
+  "size": [
+   390,
+   1776
+  ],
+  "differentPixels": 0
+ },
+ "stays-bare-chic-768.png": {
+  "size": [
+   768,
+   1974
+  ],
+  "differentPixels": 0
+ }
+}

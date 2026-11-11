@@ -1,0 +1,259 @@
+{
+  "base": "http://localhost:3400",
+  "date": "2026-10-24",
+  "views": [
+    {
+      "view": "1440",
+      "checks": {
+        "Scenario 1 (All Properties room-first): all 22 rooms shown directly without mandatory property-card step, first card visible in viewport": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Tất cả nơi lưu trú · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "roomCardCount": 22,
+          "xemPhongButtonsCount": 0,
+          "chooseRoomButtonsCount": 22,
+          "firstCardVisibleInViewport": true,
+          "firstCardKicker": "Bare Chic · TP.HCM · Quận 1",
+          "overflow": false,
+          "brokenImgs": 0,
+          "hasFakeVndPrice": false
+        },
+        "Scenario 1: room cards display property name and city as compact metadata": {
+          "pass": true,
+          "firstCardKicker": "Bare Chic · TP.HCM · Quận 1"
+        },
+        "Scenario 10: no fake availability or pricing displayed": {
+          "pass": true,
+          "hasFakeVndPrice": false
+        },
+        "Scenario 1: zero horizontal overflow and zero broken images": {
+          "pass": true,
+          "overflow": false,
+          "brokenImgs": 0
+        },
+        "Scenario 1: inline city filter ('Đà Nẵng') filters to 8 rooms without navigating away": {
+          "pass": true,
+          "dnRoomCount": 8
+        },
+        "Scenario 2: Bare Chic room options appear immediately (4 rooms)": {
+          "pass": true,
+          "s2Count": 4
+        },
+        "Scenario 3: selecting first room shows obvious '+ Thêm phòng' action while search filter stays closed": {
+          "pass": true,
+          "editorOpen": false,
+          "hasDirectAddRoom": true
+        },
+        "Scenario 4: added second room directly from results without reopening search filter": {
+          "pass": true,
+          "editorOpen": false,
+          "activeText": "Đang chọn phòng 2/2",
+          "bareChicOneDisabledForRoom2": true,
+          "url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-one%2C"
+        },
+        "Scenario 6: unique physical room (Bare Chic One) is blocked from duplicate selection for Room 2": {
+          "pass": true,
+          "editorOpen": false,
+          "activeText": "Đang chọn phòng 2/2",
+          "bareChicOneDisabledForRoom2": true,
+          "url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-one%2C"
+        },
+        "Scenario 7: changed Room 1 selection without losing dates or Room 2 selection": {
+          "pass": true,
+          "s7Url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-three%2Cbare-chic-two"
+        },
+        "Scenario 8: refresh preserves dates, guest allocation, and multi-room selections": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 2 phòng · 4 khách",
+          "search": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-three%2Cbare-chic-two"
+        },
+        "Scenario 5: selected 2 units of Hạng Studio directly via same-room-type action without duplicating physical unit": {
+          "pass": true,
+          "s5Clicked": true,
+          "search": "?property=bare-hyphen&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-hyphen-one%2Cbare-hyphen-two",
+          "badgeText": "Hạng Studio: 3 căn tại Bare Hyphen (đã chọn 2/3 căn)",
+          "hasTwoStudioSummary": true
+        },
+        "Review Sheet opens cleanly and shows 2 × Hạng Studio summary": {
+          "pass": true,
+          "open": true,
+          "title": "Kiểm tra lựa chọn",
+          "hasTwoStudioLine": true
+        },
+        "Scenario 9: changing property resets incompatible room selections from previous property": {
+          "pass": true,
+          "s9Url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4"
+        }
+      }
+    },
+    {
+      "view": "768",
+      "checks": {
+        "Scenario 1 (All Properties room-first): all 22 rooms shown directly without mandatory property-card step, first card visible in viewport": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Tất cả nơi lưu trú · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "roomCardCount": 22,
+          "xemPhongButtonsCount": 0,
+          "chooseRoomButtonsCount": 22,
+          "firstCardVisibleInViewport": true,
+          "firstCardKicker": "Bare Chic · TP.HCM · Quận 1",
+          "overflow": false,
+          "brokenImgs": 0,
+          "hasFakeVndPrice": false
+        },
+        "Scenario 1: room cards display property name and city as compact metadata": {
+          "pass": true,
+          "firstCardKicker": "Bare Chic · TP.HCM · Quận 1"
+        },
+        "Scenario 10: no fake availability or pricing displayed": {
+          "pass": true,
+          "hasFakeVndPrice": false
+        },
+        "Scenario 1: zero horizontal overflow and zero broken images": {
+          "pass": true,
+          "overflow": false,
+          "brokenImgs": 0
+        },
+        "Scenario 1: inline city filter ('Đà Nẵng') filters to 8 rooms without navigating away": {
+          "pass": true,
+          "dnRoomCount": 8
+        },
+        "Scenario 2: Bare Chic room options appear immediately (4 rooms)": {
+          "pass": true,
+          "s2Count": 4
+        },
+        "Scenario 3: selecting first room shows obvious '+ Thêm phòng' action while search filter stays closed": {
+          "pass": true,
+          "editorOpen": false,
+          "hasDirectAddRoom": true
+        },
+        "Scenario 4: added second room directly from results without reopening search filter": {
+          "pass": true,
+          "editorOpen": false,
+          "activeText": "Đang chọn phòng 2/2",
+          "bareChicOneDisabledForRoom2": true,
+          "url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-one%2C"
+        },
+        "Scenario 6: unique physical room (Bare Chic One) is blocked from duplicate selection for Room 2": {
+          "pass": true,
+          "editorOpen": false,
+          "activeText": "Đang chọn phòng 2/2",
+          "bareChicOneDisabledForRoom2": true,
+          "url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-one%2C"
+        },
+        "Scenario 7: changed Room 1 selection without losing dates or Room 2 selection": {
+          "pass": true,
+          "s7Url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-three%2Cbare-chic-two"
+        },
+        "Scenario 8: refresh preserves dates, guest allocation, and multi-room selections": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 2 phòng · 4 khách",
+          "search": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-three%2Cbare-chic-two"
+        },
+        "Scenario 5: selected 2 units of Hạng Studio directly via same-room-type action without duplicating physical unit": {
+          "pass": true,
+          "s5Clicked": true,
+          "search": "?property=bare-hyphen&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-hyphen-one%2Cbare-hyphen-two",
+          "badgeText": "Hạng Studio: 3 căn tại Bare Hyphen (đã chọn 2/3 căn)",
+          "hasTwoStudioSummary": true
+        },
+        "Review Sheet opens cleanly and shows 2 × Hạng Studio summary": {
+          "pass": true,
+          "open": true,
+          "title": "Kiểm tra lựa chọn",
+          "hasTwoStudioLine": true
+        },
+        "Scenario 9: changing property resets incompatible room selections from previous property": {
+          "pass": true,
+          "s9Url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4"
+        }
+      }
+    },
+    {
+      "view": "390",
+      "checks": {
+        "Scenario 1 (All Properties room-first): all 22 rooms shown directly without mandatory property-card step, first card visible in viewport": {
+          "pass": true,
+          "h1": "Chọn phòng",
+          "summary": "Tất cả nơi lưu trú · 6 thg 11 – 8 thg 11 (2 đêm) · 1 phòng · 2 khách",
+          "roomCardCount": 22,
+          "xemPhongButtonsCount": 0,
+          "chooseRoomButtonsCount": 22,
+          "firstCardVisibleInViewport": true,
+          "firstCardKicker": "Bare Chic · TP.HCM · Quận 1",
+          "overflow": false,
+          "brokenImgs": 0,
+          "hasFakeVndPrice": false
+        },
+        "Scenario 1: room cards display property name and city as compact metadata": {
+          "pass": true,
+          "firstCardKicker": "Bare Chic · TP.HCM · Quận 1"
+        },
+        "Scenario 10: no fake availability or pricing displayed": {
+          "pass": true,
+          "hasFakeVndPrice": false
+        },
+        "Scenario 1: zero horizontal overflow and zero broken images": {
+          "pass": true,
+          "overflow": false,
+          "brokenImgs": 0
+        },
+        "Scenario 1: inline city filter ('Đà Nẵng') filters to 8 rooms without navigating away": {
+          "pass": true,
+          "dnRoomCount": 8
+        },
+        "Scenario 2: Bare Chic room options appear immediately (4 rooms)": {
+          "pass": true,
+          "s2Count": 4
+        },
+        "Scenario 3: selecting first room shows obvious '+ Thêm phòng' action while search filter stays closed": {
+          "pass": true,
+          "editorOpen": false,
+          "hasDirectAddRoom": true
+        },
+        "Scenario 4: added second room directly from results without reopening search filter": {
+          "pass": true,
+          "editorOpen": false,
+          "activeText": "Đang chọn phòng 2/2",
+          "bareChicOneDisabledForRoom2": true,
+          "url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-one%2C"
+        },
+        "Scenario 6: unique physical room (Bare Chic One) is blocked from duplicate selection for Room 2": {
+          "pass": true,
+          "editorOpen": false,
+          "activeText": "Đang chọn phòng 2/2",
+          "bareChicOneDisabledForRoom2": true,
+          "url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-one%2C"
+        },
+        "Scenario 7: changed Room 1 selection without losing dates or Room 2 selection": {
+          "pass": true,
+          "s7Url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-three%2Cbare-chic-two"
+        },
+        "Scenario 8: refresh preserves dates, guest allocation, and multi-room selections": {
+          "pass": true,
+          "summary": "Bare Chic · 6 thg 11 – 8 thg 11 (2 đêm) · 2 phòng · 4 khách",
+          "search": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-three%2Cbare-chic-two"
+        },
+        "Scenario 5: selected 2 units of Hạng Studio directly via same-room-type action without duplicating physical unit": {
+          "pass": true,
+          "s5Clicked": true,
+          "search": "?property=bare-hyphen&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-hyphen-one%2Cbare-hyphen-two",
+          "badgeText": "Hạng Studio: 3 căn tại Bare Hyphen (đã chọn 2/3 căn)",
+          "hasTwoStudioSummary": true
+        },
+        "Review Sheet opens cleanly and shows 2 × Hạng Studio summary": {
+          "pass": true,
+          "open": true,
+          "title": "Kiểm tra lựa chọn",
+          "hasTwoStudioLine": true
+        },
+        "Scenario 9: changing property resets incompatible room selections from previous property": {
+          "pass": true,
+          "s9Url": "?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4"
+        }
+      }
+    }
+  ],
+  "consoleErrors": []
+}

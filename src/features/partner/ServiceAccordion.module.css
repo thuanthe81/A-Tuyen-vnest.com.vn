@@ -1,0 +1,456 @@
+/* Hợp tác cùng VNest · Visual Accordion (Concept B, approved by the client 9/11/2026). Three editorial rows between
+   hairlines; the open one reveals its visual and description in place. VNest palette: Dark Olive #37412F, Copper
+   #A87444, Warm Beige #F1ECE4; small copper text uses the darker #8F6036 (AA on beige).
+
+   One column template for a row and its open content (9/11/2026 alignment): `--index` is the 01/02/03 column, `--toggle`
+   the round button's, `--gap` between them. The trigger and the open body both use it, so the visual starts on the index
+   column and the description and CTA on the card line's column, at every width, without offsets. */
+
+.section {
+  --olive: #37412f;
+  --copper: #a87444;
+  --copper-text: #8f6036;
+  --cta-copper: #9a683c;
+  --line: #d9d0c2;
+  --muted: #6f675b;
+  --quiet: #8a8173;
+  --grow: 300ms;
+  --index: 2.5rem;
+  --toggle: 2.5rem;
+  --gap: 0.75rem;
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: clamp(3.5rem, 2.5rem + 4vw, 7rem) var(--vn-gutter) clamp(3.5rem, 2.5rem + 3.5vw, 6rem);
+  color: var(--olive);
+  scroll-margin-top: 5.75rem;
+}
+
+.section * {
+  margin: 0;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--copper-text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.h2 {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+/* ── The collection ── */
+
+.rows {
+  margin-top: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+  border-bottom: 1px solid var(--line);
+  /* The page is moved by hand when a row above closes (PartnerAccordion.tsx); the browser must not move it too. */
+  overflow-anchor: none;
+}
+
+.row {
+  border-top: 1px solid var(--line);
+}
+
+.rowHeading {
+  font: inherit;
+}
+
+/* Phones: index, name, toggle; the card line under the name. */
+.trigger {
+  display: grid;
+  grid-template-columns: var(--index) minmax(0, 1fr) var(--toggle);
+  column-gap: var(--gap);
+  row-gap: 0.375rem;
+  align-items: start;
+  width: 100%;
+  padding: 1.25rem 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+  border-radius: 0.375rem;
+}
+
+.no {
+  padding-top: 0.2rem;
+  color: var(--copper);
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.name {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.title {
+  font-size: clamp(1.3125rem, 1.1rem + 1vw, 1.625rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  transition: color 200ms ease;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.line {
+  grid-column: 2;
+  grid-row: 2;
+  max-width: 34rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.toggle {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgb(55 65 47 / 0.3);
+  border-radius: 999px;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    rotate 280ms var(--vn-ease-out);
+}
+
+.toggle svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.trigger:hover .toggle {
+  border-color: var(--olive);
+}
+
+.row[data-open="true"] .toggle {
+  border-color: var(--olive);
+  background: var(--olive);
+  color: #fff;
+  rotate: 45deg;
+}
+
+/* With one row open, the closed names step back a little. */
+.rows:has(.row[data-open="true"]) .row[data-open="false"] .title {
+  color: var(--quiet);
+}
+
+.rows:has(.row[data-open="true"]) .row[data-open="false"] .trigger:hover .title {
+  color: var(--olive);
+}
+
+/* ── The open row's content ── */
+
+.drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+}
+
+.row[data-open="true"] .drawer {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows var(--grow) var(--vn-ease-out);
+}
+
+.drawerInner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: var(--index) minmax(0, 1fr) var(--toggle);
+  column-gap: var(--gap);
+  row-gap: 1.25rem;
+  padding-bottom: 1.75rem;
+}
+
+.row[data-open="true"] .body {
+  animation: body-in var(--grow) ease both;
+}
+
+@keyframes body-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.frame {
+  grid-column: 1 / -1;
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 0.875rem;
+  overflow: hidden;
+  box-shadow: 0 18px 36px -28px rgb(42 50 36 / 0.55);
+}
+
+/* The description and its CTA start on the card line's column (under the name on phones and tablets). */
+.copy {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.text {
+  max-width: 38rem;
+  font-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  line-height: 1.62;
+  letter-spacing: -0.005em;
+  text-wrap: pretty;
+}
+
+/* The approved solid Copper CTA (restored 9/11/2026): white label and arrow, no wipe, no arrow cell. */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.625rem;
+  background: var(--cta-copper);
+  color: #fff;
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  text-wrap: balance;
+  box-shadow: 0 10px 22px -14px rgb(90 58 28 / 0.65);
+  transition: background-color 120ms ease;
+}
+
+.cta > span {
+  flex: none;
+  font-size: 1.125rem;
+  transition: translate 160ms ease;
+}
+
+.cta:hover {
+  background: #8f6036;
+}
+
+.cta:hover > span {
+  translate: 0.25rem 0;
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+/* ── Tablet ── */
+
+@media (min-width: 48rem) {
+  .kicker::before {
+    content: "";
+    flex: none;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--copper);
+  }
+
+  .section {
+    --index: 4.5rem;
+    --toggle: 3rem;
+    --gap: 1.25rem;
+  }
+
+  .trigger {
+    padding: 1.75rem 0;
+  }
+
+  .no {
+    padding-top: 0;
+    font-size: 2rem;
+  }
+
+  .toggle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .body {
+    padding-bottom: 2.25rem;
+  }
+
+  .frame {
+    aspect-ratio: 2 / 1;
+  }
+
+  .cta {
+    width: auto;
+    min-width: 17rem;
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+}
+
+/* ── Desktop: index · name · card line · toggle in one line; open: the visual beside the text ── */
+
+@media (min-width: 64rem) {
+  .head {
+    max-width: 44rem;
+  }
+
+  .section {
+    --index: 6rem;
+    --gap: 2rem;
+  }
+
+  /* index · name · card line · toggle */
+  .trigger {
+    grid-template-columns: var(--index) minmax(0, 1fr) minmax(0, 21rem) var(--toggle);
+    align-items: center;
+    padding: clamp(1.75rem, 1rem + 1.2vw, 2.375rem) 0;
+  }
+
+  .no {
+    font-size: clamp(2.25rem, 1.5rem + 1.2vw, 3rem);
+  }
+
+  .title {
+    font-size: clamp(1.75rem, 1.1rem + 1.4vw, 2.625rem);
+  }
+
+  .line {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .toggle {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  /* The same four columns: the visual over index and name, the text over card line and toggle. */
+  .body {
+    grid-template-columns: var(--index) minmax(0, 1fr) minmax(0, 21rem) var(--toggle);
+    padding-bottom: clamp(2.25rem, 1.5rem + 1.5vw, 3.25rem);
+  }
+
+  .frame {
+    grid-column: 1 / 3;
+    aspect-ratio: 5 / 4;
+  }
+
+  .copy {
+    grid-column: 3 / -1;
+    justify-content: space-between;
+    padding-block: 0.25rem;
+  }
+
+}
+
+@media (min-width: 80rem) {
+  .frame {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* ── The section's closing action: the link to the partner page, as a footer row on the rows' own grid ──
+   No index; the label on the service names' column, the arrow centred on the toggles' column. One full-row hit area,
+   right under the last row's divider, with no line of its own. Quieter than a service row: smaller type, no number,
+   an arrow instead of a toggle. Dark Olive; Copper on hover; never underlined. */
+
+.moreLink {
+  display: grid;
+  grid-template-columns: var(--index) minmax(0, 1fr) var(--toggle);
+  column-gap: var(--gap);
+  align-items: center;
+  min-height: 3rem;
+  padding-block: clamp(1.125rem, 0.9rem + 0.6vw, 1.5rem);
+  color: var(--olive);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: color 160ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.moreLabel {
+  grid-column: 2;
+}
+
+.moreArrow {
+  grid-column: -2;
+  justify-self: center;
+  color: var(--copper-text);
+  font-size: 1.125rem;
+  line-height: 1;
+  transition: translate 160ms ease;
+}
+
+.moreLink:hover {
+  color: var(--copper-text);
+}
+
+.moreLink:hover .moreArrow {
+  translate: 0.125rem -0.125rem;
+}
+
+.moreLink:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+@media (min-width: 64rem) {
+  .moreLink {
+    grid-template-columns: var(--index) minmax(0, 1fr) minmax(0, 21rem) var(--toggle);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section {
+    --grow: 0ms;
+  }
+
+  .row[data-open="true"] .body {
+    animation: none;
+  }
+
+  .toggle,
+  .title,
+  .cta > span,
+  .moreArrow {
+    transition: none;
+  }
+}

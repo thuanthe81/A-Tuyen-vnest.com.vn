@@ -1,0 +1,126 @@
+/*
+ * Design tokens: the foundation every component reads.
+ *
+ * Two layers. Primitive tokens are raw scales (space, type, radius, motion). Semantic tokens
+ * say what a value is for; components read only the semantic layer.
+ *
+ * PROVISIONAL COLOURS AND FONTS. VNest has not supplied its identity. The values below are a
+ * neutral working set chosen for contrast, not a design direction: ink on paper measures
+ * above 15:1 and muted ink above 5:1. Replace them here and every page follows.
+ *
+ * A property may override the tokens listed in theme-contract.ts, scoped to its own pages,
+ * by setting them on an element that wraps its content.
+ */
+:root {
+  /* ---- Primitive: space (4px base) ---- */
+  --vn-space-1: 0.25rem;
+  --vn-space-2: 0.5rem;
+  --vn-space-3: 0.75rem;
+  --vn-space-4: 1rem;
+  --vn-space-6: 1.5rem;
+  --vn-space-8: 2rem;
+  --vn-space-12: 3rem;
+  --vn-space-16: 4rem;
+  --vn-space-24: 6rem;
+
+  /* ---- Primitive: type scale. Fluid between 360px and 1440px, no breakpoint jumps. ---- */
+  --vn-text-sm: 0.875rem;
+  --vn-text-base: 1rem;
+  --vn-text-lg: clamp(1.0625rem, 1.02rem + 0.19vw, 1.1875rem);
+  --vn-text-xl: clamp(1.25rem, 1.17rem + 0.37vw, 1.5rem);
+  --vn-text-2xl: clamp(1.5rem, 1.33rem + 0.74vw, 2rem);
+  --vn-text-3xl: clamp(1.875rem, 1.5rem + 1.67vw, 3rem);
+  --vn-text-4xl: clamp(2.25rem, 1.5rem + 3.33vw, 4.5rem);
+  --vn-leading-tight: 1.15;
+  --vn-leading-body: 1.6;
+
+  /* ---- Primitive: shape and motion ---- */
+  --vn-radius-sm: 0.25rem;
+  --vn-radius-md: 0.5rem;
+  --vn-duration-fast: 120ms;
+  --vn-duration-base: 240ms;
+  --vn-ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* ---- Primitive: layout ---- */
+  --vn-container: 80rem;
+  --vn-gutter: clamp(1rem, 0.5rem + 2.2vw, 2.5rem);
+  /* Minimum touch target, for every interactive control. */
+  --vn-target: 2.75rem;
+
+  /* ---- Semantic: surfaces and text (themeable) ---- */
+  --vn-surface: #fafaf8;
+  --vn-surface-muted: #f0efeb;
+  --vn-surface-raised: #ffffff;
+  --vn-ink: #1c1d1f;
+  --vn-ink-muted: #5c5f66;
+  --vn-line: #d9d7d0;
+
+  /* ---- Semantic: the floating booking bar. A warm matte off-white, solid for legibility over imagery. ---- */
+  --vn-capsule: #fbf9f5;
+  --vn-capsule-field: #f0ebe3;
+  --vn-shadow-pop: 0 1px 2px rgb(24 20 14 / 0.06), 0 24px 56px -16px rgb(24 20 14 / 0.3);
+  --vn-shadow-field: 0 1px 2px rgb(24 20 14 / 0.08), 0 4px 12px -4px rgb(24 20 14 / 0.12);
+
+  /* ---- Semantic: action (themeable). One action colour; it means "act". ---- */
+  --vn-action: #1c1d1f;
+  --vn-action-hover: #000000;
+  --vn-on-action: #ffffff;
+  --vn-focus: #1c1d1f;
+
+  /* ---- Semantic: states. Not themeable: a warning reads the same on every property. ---- */
+  --vn-positive: #1f6b3a;
+  --vn-caution: #8a5a00;
+  --vn-critical: #a3261c;
+
+  /* ---- Semantic: type and shape (themeable) ---- */
+  --vn-font-body: var(--font-be-vietnam-pro), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --vn-font-display: var(--vn-font-body);
+  --vn-radius: var(--vn-radius-sm);
+}
+
+/*
+ * Booking search: shape, depth and the Search colour. The booking components read only
+ * these variables for them, so the visual direction is defined here, in one place.
+ *
+ * Direction chosen by the owner on 10/10/2026: a soft rectangle (the earlier fully rounded
+ * capsule was set aside; its values are recorded in docs/decisions/02.1-…). 14px outside and
+ * 6px of padding give 8px fields, so inner and outer corners stay concentric. Depth is one
+ * hairline and one low, soft shadow.
+ *
+ * PROVISIONAL COPPER. VNest's logo has not been supplied, so this is not sampled from it:
+ * it is a restrained terracotta chosen for contrast. White on #b04f2a measures 5.25:1
+ * (WCAG AA for text); against the warm white bar it measures 5.0:1.
+ */
+:root {
+  --bk-r-shell: 0.875rem;
+  --bk-r-field: 0.5rem;
+  --bk-r-tabs: 0.75rem;
+  --bk-r-control: 0.5rem;
+  --bk-r-day: 0.5rem;
+  --bk-r-panel: 1rem;
+  --bk-r-row: 0.5rem;
+  --bk-shell-pad: 0.375rem;
+  --bk-field-h: 3.75rem;
+  --bk-divider-h: 2.5rem;
+  /* 15px where the bar is narrow, so a two-digit guest count never truncates; 16px from 1024px. */
+  --bk-value-size: 0.9375rem;
+  --bk-label-tracking: 0.12em;
+  --bk-shadow: 0 0 0 1px rgb(24 20 14 / 0.07), 0 14px 32px -18px rgb(24 20 14 / 0.3);
+  --bk-cta: #b04f2a;
+  --bk-cta-hover: #9a4526;
+  --bk-on-cta: #ffffff;
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --bk-value-size: 1rem;
+  }
+}
+
+/* Motion is decoration: with reduced motion requested, nothing depends on it. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --vn-duration-fast: 0ms;
+    --vn-duration-base: 0ms;
+  }
+}

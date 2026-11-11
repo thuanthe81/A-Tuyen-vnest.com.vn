@@ -1,0 +1,470 @@
+PASS @1440 vi brand heading: no "Xem tất cả nơi ở" link
+PASS @1440 vi brand heading: balanced gap to the brands — 48px
+PASS @1440 vi Discovery: no eyebrow, heading first — H2,P,A
+PASS @1440 vi Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @1440 vi Discovery marked as Vietnamese
+PASS @1440 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1440 vi initial: all six stays, "Tất cả" on, no city selected
+PASS @1440 vi initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1440 vi initial: all three Coming Soon teasers, after the stays
+PASS @1440 vi bare: 4 stay(s)
+PASS @1440 vi bare: city availability available/available, nothing selected
+PASS @1440 vi bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @1440 vi bare: the toolbar keeps its height (no reflow) — 99→99
+PASS @1440 vi pepper-house: 1 stay(s)
+PASS @1440 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @1440 vi pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @1440 vi pepper-house: the toolbar keeps its height (no reflow) — 99→99
+PASS @1440 vi the-nang: 1 stay(s)
+PASS @1440 vi the-nang: city availability unavailable/only, nothing selected
+PASS @1440 vi the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @1440 vi the-nang: the toolbar keeps its height (no reflow) — 99→99
+PASS @1440 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1440 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @1440 vi tapping the active city clears it
+PASS @1440 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @1440 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @1440 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1440 vi Bare + Đà Nẵng: Bare Hàn only
+PASS @1440 vi "Bỏ lọc": all six again, nothing selected
+PASS @1440 vi Coming Soon: no links, buttons or booking words; not among the stays
+PASS @1440 vi Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @1440 vi Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @1440 vi Coming Soon: text inside the card, no overlaps
+PASS @1440 vi Coming Soon: three columns, no inner scroll
+PASS @1440 vi Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS stay link /dev/stays/bare-chic?view=demo → 200
+PASS stay link /dev/stays/bare-hyphen → 200
+PASS stay link /dev/stays/bare-da-kao → 200
+PASS stay link /dev/stays/bare-han → 200
+PASS stay link /dev/stays/pepper-house → 200
+PASS stay link /dev/stays/the-nang-suites → 200
+PASS @1440 vi no horizontal overflow, no clipped text — 0 
+PASS @1440 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @1440 vi no console/hydration errors
+PASS @1440 en brand heading: no "Xem tất cả nơi ở" link
+PASS @1440 en brand heading: balanced gap to the brands — 48px
+PASS @1440 en Discovery: no eyebrow, heading first — H2,P,A
+PASS @1440 en Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @1440 en Discovery marked as Vietnamese
+PASS @1440 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1440 en initial: all six stays, "Tất cả" on, no city selected
+PASS @1440 en initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1440 en initial: all three Coming Soon teasers, after the stays
+PASS @1440 en bare: 4 stay(s)
+PASS @1440 en bare: city availability available/available, nothing selected
+PASS @1440 en bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @1440 en bare: the toolbar keeps its height (no reflow) — 99→99
+PASS @1440 en pepper-house: 1 stay(s)
+PASS @1440 en pepper-house: city availability only/unavailable, nothing selected
+PASS @1440 en pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @1440 en pepper-house: the toolbar keeps its height (no reflow) — 99→99
+PASS @1440 en the-nang: 1 stay(s)
+PASS @1440 en the-nang: city availability unavailable/only, nothing selected
+PASS @1440 en the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @1440 en the-nang: the toolbar keeps its height (no reflow) — 99→99
+PASS @1440 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1440 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @1440 en tapping the active city clears it
+PASS @1440 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @1440 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @1440 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1440 en Bare + Đà Nẵng: Bare Hàn only
+PASS @1440 en "Bỏ lọc": all six again, nothing selected
+PASS @1440 en Coming Soon: no links, buttons or booking words; not among the stays
+PASS @1440 en Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @1440 en Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @1440 en Coming Soon: text inside the card, no overlaps
+PASS @1440 en Coming Soon: three columns, no inner scroll
+PASS @1440 en Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @1440 en no horizontal overflow, no clipped text — 0 
+PASS @1440 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @1440 en no console/hydration errors
+PASS @1024 vi brand heading: no "Xem tất cả nơi ở" link
+PASS @1024 vi brand heading: balanced gap to the brands — 40px
+PASS @1024 vi Discovery: no eyebrow, heading first — H2,P,A
+PASS @1024 vi Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @1024 vi Discovery marked as Vietnamese
+PASS @1024 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1024 vi initial: all six stays, "Tất cả" on, no city selected
+PASS @1024 vi initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1024 vi initial: all three Coming Soon teasers, after the stays
+PASS @1024 vi bare: 4 stay(s)
+PASS @1024 vi bare: city availability available/available, nothing selected
+PASS @1024 vi bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @1024 vi bare: the toolbar keeps its height (no reflow) — 99→99
+PASS @1024 vi pepper-house: 1 stay(s)
+PASS @1024 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @1024 vi pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @1024 vi pepper-house: the toolbar keeps its height (no reflow) — 99→99
+PASS @1024 vi the-nang: 1 stay(s)
+PASS @1024 vi the-nang: city availability unavailable/only, nothing selected
+PASS @1024 vi the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @1024 vi the-nang: the toolbar keeps its height (no reflow) — 99→99
+PASS @1024 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1024 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @1024 vi tapping the active city clears it
+PASS @1024 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @1024 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @1024 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1024 vi Bare + Đà Nẵng: Bare Hàn only
+PASS @1024 vi "Bỏ lọc": all six again, nothing selected
+PASS @1024 vi Coming Soon: no links, buttons or booking words; not among the stays
+PASS @1024 vi Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @1024 vi Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @1024 vi Coming Soon: text inside the card, no overlaps
+PASS @1024 vi Coming Soon: three columns, no inner scroll
+PASS @1024 vi Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @1024 vi no horizontal overflow, no clipped text — 0 
+PASS @1024 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @1024 vi no console/hydration errors
+PASS @1024 en brand heading: no "Xem tất cả nơi ở" link
+PASS @1024 en brand heading: balanced gap to the brands — 40px
+PASS @1024 en Discovery: no eyebrow, heading first — H2,P,A
+PASS @1024 en Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @1024 en Discovery marked as Vietnamese
+PASS @1024 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1024 en initial: all six stays, "Tất cả" on, no city selected
+PASS @1024 en initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1024 en initial: all three Coming Soon teasers, after the stays
+PASS @1024 en bare: 4 stay(s)
+PASS @1024 en bare: city availability available/available, nothing selected
+PASS @1024 en bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @1024 en bare: the toolbar keeps its height (no reflow) — 99→99
+PASS @1024 en pepper-house: 1 stay(s)
+PASS @1024 en pepper-house: city availability only/unavailable, nothing selected
+PASS @1024 en pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @1024 en pepper-house: the toolbar keeps its height (no reflow) — 99→99
+PASS @1024 en the-nang: 1 stay(s)
+PASS @1024 en the-nang: city availability unavailable/only, nothing selected
+PASS @1024 en the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @1024 en the-nang: the toolbar keeps its height (no reflow) — 99→99
+PASS @1024 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1024 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @1024 en tapping the active city clears it
+PASS @1024 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @1024 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @1024 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1024 en Bare + Đà Nẵng: Bare Hàn only
+PASS @1024 en "Bỏ lọc": all six again, nothing selected
+PASS @1024 en Coming Soon: no links, buttons or booking words; not among the stays
+PASS @1024 en Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @1024 en Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @1024 en Coming Soon: text inside the card, no overlaps
+PASS @1024 en Coming Soon: three columns, no inner scroll
+PASS @1024 en Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @1024 en no horizontal overflow, no clipped text — 0 
+PASS @1024 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @1024 en no console/hydration errors
+PASS @768 vi brand heading: no "Xem tất cả nơi ở" link
+PASS @768 vi brand heading: balanced gap to the brands — 35px
+PASS @768 vi Discovery: no eyebrow, heading first — H2,P,A
+PASS @768 vi Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @768 vi Discovery marked as Vietnamese
+PASS @768 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @768 vi initial: all six stays, "Tất cả" on, no city selected
+PASS @768 vi initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @768 vi initial: all three Coming Soon teasers, after the stays
+PASS @768 vi bare: 4 stay(s)
+PASS @768 vi bare: city availability available/available, nothing selected
+PASS @768 vi bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @768 vi bare: the toolbar keeps its height (no reflow) — 151→151
+PASS @768 vi pepper-house: 1 stay(s)
+PASS @768 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @768 vi pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @768 vi pepper-house: the toolbar keeps its height (no reflow) — 151→151
+PASS @768 vi the-nang: 1 stay(s)
+PASS @768 vi the-nang: city availability unavailable/only, nothing selected
+PASS @768 vi the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @768 vi the-nang: the toolbar keeps its height (no reflow) — 151→151
+PASS @768 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @768 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @768 vi tapping the active city clears it
+PASS @768 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @768 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @768 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @768 vi Bare + Đà Nẵng: Bare Hàn only
+PASS @768 vi "Bỏ lọc": all six again, nothing selected
+PASS @768 vi Coming Soon: no links, buttons or booking words; not among the stays
+PASS @768 vi Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @768 vi Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @768 vi Coming Soon: text inside the card, no overlaps
+PASS @768 vi Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @768 vi Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @768 vi no horizontal overflow, no clipped text — 0 
+PASS @768 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @768 vi no console/hydration errors
+PASS @768 en brand heading: no "Xem tất cả nơi ở" link
+PASS @768 en brand heading: balanced gap to the brands — 35px
+PASS @768 en Discovery: no eyebrow, heading first — H2,P,A
+PASS @768 en Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @768 en Discovery marked as Vietnamese
+PASS @768 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @768 en initial: all six stays, "Tất cả" on, no city selected
+PASS @768 en initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @768 en initial: all three Coming Soon teasers, after the stays
+PASS @768 en bare: 4 stay(s)
+PASS @768 en bare: city availability available/available, nothing selected
+PASS @768 en bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @768 en bare: the toolbar keeps its height (no reflow) — 151→151
+PASS @768 en pepper-house: 1 stay(s)
+PASS @768 en pepper-house: city availability only/unavailable, nothing selected
+PASS @768 en pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @768 en pepper-house: the toolbar keeps its height (no reflow) — 151→151
+PASS @768 en the-nang: 1 stay(s)
+PASS @768 en the-nang: city availability unavailable/only, nothing selected
+PASS @768 en the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @768 en the-nang: the toolbar keeps its height (no reflow) — 151→151
+PASS @768 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @768 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @768 en tapping the active city clears it
+PASS @768 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @768 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @768 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @768 en Bare + Đà Nẵng: Bare Hàn only
+PASS @768 en "Bỏ lọc": all six again, nothing selected
+PASS @768 en Coming Soon: no links, buttons or booking words; not among the stays
+PASS @768 en Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @768 en Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @768 en Coming Soon: text inside the card, no overlaps
+PASS @768 en Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @768 en Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @768 en no horizontal overflow, no clipped text — 0 
+PASS @768 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @768 en no console/hydration errors
+PASS @430 vi brand heading: no "Xem tất cả nơi ở" link
+PASS @430 vi brand heading: balanced gap to the brands — 29px
+PASS @430 vi Discovery: no eyebrow, heading first — H2,P,A
+PASS @430 vi Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @430 vi Discovery marked as Vietnamese
+PASS @430 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @430 vi initial: all six stays, "Tất cả" on, no city selected
+PASS @430 vi initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @430 vi initial: all three Coming Soon teasers, after the stays
+PASS @430 vi bare: 4 stay(s)
+PASS @430 vi bare: city availability available/available, nothing selected
+PASS @430 vi bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @430 vi bare: the toolbar keeps its height (no reflow) — 201→201
+PASS @430 vi pepper-house: 1 stay(s)
+PASS @430 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @430 vi pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @430 vi pepper-house: the toolbar keeps its height (no reflow) — 201→201
+PASS @430 vi the-nang: 1 stay(s)
+PASS @430 vi the-nang: city availability unavailable/only, nothing selected
+PASS @430 vi the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @430 vi the-nang: the toolbar keeps its height (no reflow) — 201→201
+PASS @430 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @430 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @430 vi tapping the active city clears it
+PASS @430 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @430 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @430 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @430 vi Bare + Đà Nẵng: Bare Hàn only
+PASS @430 vi "Bỏ lọc": all six again, nothing selected
+PASS @430 vi Coming Soon: no links, buttons or booking words; not among the stays
+PASS @430 vi Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @430 vi Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @430 vi Coming Soon: text inside the card, no overlaps
+PASS @430 vi Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @430 vi Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @430 vi no horizontal overflow, no clipped text — 0 
+PASS @430 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @430 vi no console/hydration errors
+PASS @430 en brand heading: no "Xem tất cả nơi ở" link
+PASS @430 en brand heading: balanced gap to the brands — 29px
+PASS @430 en Discovery: no eyebrow, heading first — H2,P,A
+PASS @430 en Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @430 en Discovery marked as Vietnamese
+PASS @430 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @430 en initial: all six stays, "Tất cả" on, no city selected
+PASS @430 en initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @430 en initial: all three Coming Soon teasers, after the stays
+PASS @430 en bare: 4 stay(s)
+PASS @430 en bare: city availability available/available, nothing selected
+PASS @430 en bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @430 en bare: the toolbar keeps its height (no reflow) — 201→201
+PASS @430 en pepper-house: 1 stay(s)
+PASS @430 en pepper-house: city availability only/unavailable, nothing selected
+PASS @430 en pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @430 en pepper-house: the toolbar keeps its height (no reflow) — 201→201
+PASS @430 en the-nang: 1 stay(s)
+PASS @430 en the-nang: city availability unavailable/only, nothing selected
+PASS @430 en the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @430 en the-nang: the toolbar keeps its height (no reflow) — 201→201
+PASS @430 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @430 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @430 en tapping the active city clears it
+PASS @430 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @430 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @430 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @430 en Bare + Đà Nẵng: Bare Hàn only
+PASS @430 en "Bỏ lọc": all six again, nothing selected
+PASS @430 en Coming Soon: no links, buttons or booking words; not among the stays
+PASS @430 en Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @430 en Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @430 en Coming Soon: text inside the card, no overlaps
+PASS @430 en Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @430 en Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @430 en no horizontal overflow, no clipped text — 0 
+PASS @430 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @430 en no console/hydration errors
+PASS @390 vi brand heading: no "Xem tất cả nơi ở" link
+PASS @390 vi brand heading: balanced gap to the brands — 28px
+PASS @390 vi Discovery: no eyebrow, heading first — H2,P,A
+PASS @390 vi Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @390 vi Discovery marked as Vietnamese
+PASS @390 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @390 vi initial: all six stays, "Tất cả" on, no city selected
+PASS @390 vi initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @390 vi initial: all three Coming Soon teasers, after the stays
+PASS @390 vi bare: 4 stay(s)
+PASS @390 vi bare: city availability available/available, nothing selected
+PASS @390 vi bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @390 vi bare: the toolbar keeps its height (no reflow) — 201→201
+PASS @390 vi pepper-house: 1 stay(s)
+PASS @390 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @390 vi pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @390 vi pepper-house: the toolbar keeps its height (no reflow) — 201→201
+PASS @390 vi the-nang: 1 stay(s)
+PASS @390 vi the-nang: city availability unavailable/only, nothing selected
+PASS @390 vi the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @390 vi the-nang: the toolbar keeps its height (no reflow) — 201→201
+PASS @390 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @390 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @390 vi tapping the active city clears it
+PASS @390 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @390 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @390 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @390 vi Bare + Đà Nẵng: Bare Hàn only
+PASS @390 vi "Bỏ lọc": all six again, nothing selected
+PASS @390 vi Coming Soon: no links, buttons or booking words; not among the stays
+PASS @390 vi Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @390 vi Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @390 vi Coming Soon: text inside the card, no overlaps
+PASS @390 vi Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @390 vi Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @390 vi no horizontal overflow, no clipped text — 0 
+PASS @390 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @390 vi no console/hydration errors
+PASS @390 en brand heading: no "Xem tất cả nơi ở" link
+PASS @390 en brand heading: balanced gap to the brands — 28px
+PASS @390 en Discovery: no eyebrow, heading first — H2,P,A
+PASS @390 en Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @390 en Discovery marked as Vietnamese
+PASS @390 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @390 en initial: all six stays, "Tất cả" on, no city selected
+PASS @390 en initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @390 en initial: all three Coming Soon teasers, after the stays
+PASS @390 en bare: 4 stay(s)
+PASS @390 en bare: city availability available/available, nothing selected
+PASS @390 en bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @390 en bare: the toolbar keeps its height (no reflow) — 201→201
+PASS @390 en pepper-house: 1 stay(s)
+PASS @390 en pepper-house: city availability only/unavailable, nothing selected
+PASS @390 en pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @390 en pepper-house: the toolbar keeps its height (no reflow) — 201→201
+PASS @390 en the-nang: 1 stay(s)
+PASS @390 en the-nang: city availability unavailable/only, nothing selected
+PASS @390 en the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @390 en the-nang: the toolbar keeps its height (no reflow) — 201→201
+PASS @390 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @390 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @390 en tapping the active city clears it
+PASS @390 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @390 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @390 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @390 en Bare + Đà Nẵng: Bare Hàn only
+PASS @390 en "Bỏ lọc": all six again, nothing selected
+PASS @390 en Coming Soon: no links, buttons or booking words; not among the stays
+PASS @390 en Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @390 en Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @390 en Coming Soon: text inside the card, no overlaps
+PASS @390 en Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @390 en Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @390 en no horizontal overflow, no clipped text — 0 
+PASS @390 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @390 en no console/hydration errors
+PASS @375 vi brand heading: no "Xem tất cả nơi ở" link
+PASS @375 vi brand heading: balanced gap to the brands — 28px
+PASS @375 vi Discovery: no eyebrow, heading first — H2,P,A
+PASS @375 vi Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @375 vi Discovery marked as Vietnamese
+PASS @375 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @375 vi initial: all six stays, "Tất cả" on, no city selected
+PASS @375 vi initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @375 vi initial: all three Coming Soon teasers, after the stays
+PASS @375 vi bare: 4 stay(s)
+PASS @375 vi bare: city availability available/available, nothing selected
+PASS @375 vi bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @375 vi bare: the toolbar keeps its height (no reflow) — 201→201
+PASS @375 vi pepper-house: 1 stay(s)
+PASS @375 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @375 vi pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @375 vi pepper-house: the toolbar keeps its height (no reflow) — 201→201
+PASS @375 vi the-nang: 1 stay(s)
+PASS @375 vi the-nang: city availability unavailable/only, nothing selected
+PASS @375 vi the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @375 vi the-nang: the toolbar keeps its height (no reflow) — 201→201
+PASS @375 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @375 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @375 vi tapping the active city clears it
+PASS @375 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @375 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @375 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @375 vi Bare + Đà Nẵng: Bare Hàn only
+PASS @375 vi "Bỏ lọc": all six again, nothing selected
+PASS @375 vi Coming Soon: no links, buttons or booking words; not among the stays
+PASS @375 vi Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @375 vi Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @375 vi Coming Soon: text inside the card, no overlaps
+PASS @375 vi Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @375 vi Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @375 vi no horizontal overflow, no clipped text — 0 
+PASS @375 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @375 vi no console/hydration errors
+PASS @375 en brand heading: no "Xem tất cả nơi ở" link
+PASS @375 en brand heading: balanced gap to the brands — 28px
+PASS @375 en Discovery: no eyebrow, heading first — H2,P,A
+PASS @375 en Discovery: no "Mọi thương hiệu", "Mọi thành phố" or status text
+PASS @375 en Discovery marked as Vietnamese
+PASS @375 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @375 en initial: all six stays, "Tất cả" on, no city selected
+PASS @375 en initial: stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @375 en initial: all three Coming Soon teasers, after the stays
+PASS @375 en bare: 4 stay(s)
+PASS @375 en bare: city availability available/available, nothing selected
+PASS @375 en bare: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Bare Boutique Stays ↓
+PASS @375 en bare: the toolbar keeps its height (no reflow) — 201→201
+PASS @375 en pepper-house: 1 stay(s)
+PASS @375 en pepper-house: city availability only/unavailable, nothing selected
+PASS @375 en pepper-house: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của Pepper House ↓
+PASS @375 en pepper-house: the toolbar keeps its height (no reflow) — 201→201
+PASS @375 en the-nang: 1 stay(s)
+PASS @375 en the-nang: city availability unavailable/only, nothing selected
+PASS @375 en the-nang: only its Coming Soon teaser; entry names the brand — Sắp ra mắtÝ tưởng nơi ở mới của The Nắng Suites ↓
+PASS @375 en the-nang: the toolbar keeps its height (no reflow) — 201→201
+PASS @375 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @375 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address
+PASS @375 en tapping the active city clears it
+PASS @375 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgba(55, 65, 47, 0.09)/rgb(55, 65, 47)
+PASS @375 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no brand forced
+PASS @375 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @375 en Bare + Đà Nẵng: Bare Hàn only
+PASS @375 en "Bỏ lọc": all six again, nothing selected
+PASS @375 en Coming Soon: no links, buttons or booking words; not among the stays
+PASS @375 en Coming Soon: three distinct compositions (route / frame / sun), own grounds, official logos — route,frame,sun
+PASS @375 en Coming Soon: brand names and "Sắp ra mắt" on every card
+PASS @375 en Coming Soon: text inside the card, no overlaps
+PASS @375 en Coming Soon: a swipeable row (keyboard-focusable), page does not scroll sideways
+PASS @375 en Coming Soon entry scrolls to the teasers and focuses their heading — top=96
+PASS @375 en no horizontal overflow, no clipped text — 0 
+PASS @375 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @375 en no console/hydration errors
+PASS @1440 keyboard: ArrowRight from Tất cả chooses Bare Boutique Stays
+PASS @1440 keyboard: the focused brand shows an outline
+PASS @1440 keyboard: Tab reaches TP. Hồ Chí Minh, Space toggles it, outline visible
+PASS @1440 keyboard: Space again clears the city
+PASS @390 reduced motion: filters and entry without transitions — 0s / 0s / 0s
+PASS @1440 ?brand=the-nang opens with The Nắng Suites, Đà Nẵng marked, its teaser
+
+468/468 passed

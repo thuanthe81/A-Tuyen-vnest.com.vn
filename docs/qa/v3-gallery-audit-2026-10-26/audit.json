@@ -1,0 +1,563 @@
+{
+  "ranAt": "2026-10-26T13:16:06.398Z",
+  "rows": [
+    {
+      "property": "Bare Chic",
+      "propertyId": "bare-chic",
+      "room": "Bare Chic One",
+      "roomId": "bare-chic-one",
+      "driveFolder": "Bare Chic One (1eUkBZ-ntQTz79IcssBpiswLlkU4sGre4)",
+      "driveFiles": 6,
+      "approvedBefore": 3,
+      "approvedBeforeIds": [
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-42",
+        "bare-chic-one-1-47"
+      ],
+      "cover": "img 01",
+      "accessibleNow": 3,
+      "accessibleNowIds": [
+        "sel-01-bare-chic-one",
+        "bare-chic-one-1-55",
+        "bare-chic-one-1-47"
+      ],
+      "lostDistinct": [],
+      "held": [
+        "1.11.png (person)"
+      ],
+      "notYetLocal": [
+        "1.56.png",
+        "1.59.png"
+      ]
+    },
+    {
+      "property": "Bare Chic",
+      "propertyId": "bare-chic",
+      "room": "Bare Chic Two",
+      "roomId": "bare-chic-two",
+      "driveFolder": "Bare Chic Two (1-LJx_HPTYOn3GqOEXa8CDX5Rtg512e3L)",
+      "driveFiles": 6,
+      "approvedBefore": 5,
+      "approvedBeforeIds": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "cover": "held → kept earlier cover",
+      "accessibleNow": 5,
+      "accessibleNowIds": [
+        "bare-chic-two-2-3",
+        "bare-chic-two-2-10",
+        "bare-chic-two-2-4",
+        "bare-chic-two-2-5",
+        "bare-chic-two-2-9"
+      ],
+      "lostDistinct": [],
+      "held": [
+        "2.32.png (person)",
+        "img 02 = 2.32.png (person)"
+      ],
+      "notYetLocal": []
+    },
+    {
+      "property": "Bare Chic",
+      "propertyId": "bare-chic",
+      "room": "Bare Chic Three",
+      "roomId": "bare-chic-three",
+      "driveFolder": "Bare Chic Three (1w_pMRvlJe_y1Fl0bQ9NGVLiFuU9M16fi)",
+      "driveFiles": 6,
+      "approvedBefore": 3,
+      "approvedBeforeIds": [
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "cover": "img 03",
+      "accessibleNow": 4,
+      "accessibleNowIds": [
+        "sel-03-bare-chic-three",
+        "bare-chic-three-1-57",
+        "bare-chic-three-1-29",
+        "bare-chic-three-1-27"
+      ],
+      "lostDistinct": [],
+      "held": [
+        "1.18.png (person)"
+      ],
+      "notYetLocal": [
+        "1.56.png"
+      ]
+    },
+    {
+      "property": "Bare Chic",
+      "propertyId": "bare-chic",
+      "room": "Bare Indochine",
+      "roomId": "bare-indochine",
+      "driveFolder": "Bare Indochine (1zzTq0l1QIhwPkUayZDvQKrUw2f4jETHk)",
+      "driveFiles": 5,
+      "approvedBefore": 5,
+      "approvedBeforeIds": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "cover": "— (none selected)",
+      "accessibleNow": 5,
+      "accessibleNowIds": [
+        "bare-indochine-50",
+        "bare-indochine-51",
+        "bare-indochine-52",
+        "bare-indochine-53",
+        "bare-indochine-54"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": []
+    },
+    {
+      "property": "Bare Hyphen",
+      "propertyId": "bare-hyphen",
+      "room": "Bare Hyphen One",
+      "roomId": "bare-hyphen-one",
+      "driveFolder": "Bare Hyphen One (1WbvKxpl5G8VAsuTsS9Qrf0YHehU1nIsc)",
+      "driveFiles": 6,
+      "approvedBefore": 1,
+      "approvedBeforeIds": [
+        "bare-hyphen"
+      ],
+      "cover": "img 04",
+      "accessibleNow": 2,
+      "accessibleNowIds": [
+        "sel-04-bare-hyphen-one",
+        "bare-hyphen"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "a-10.jpg",
+        "a-17.jpg",
+        "a-21.jpg",
+        "a-25.jpg"
+      ]
+    },
+    {
+      "property": "Bare Hyphen",
+      "propertyId": "bare-hyphen",
+      "room": "Bare Hyphen Two",
+      "roomId": "bare-hyphen-two",
+      "driveFolder": "Bare Hyphen Two (1Jk6WG-M5Ld6tsUiMYXx2cHdKig-0OLA5)",
+      "driveFiles": 4,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 05",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-05-bare-hyphen-two"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "a-59.jpg",
+        "a-64.jpg",
+        "a-70.jpg"
+      ]
+    },
+    {
+      "property": "Bare Hyphen",
+      "propertyId": "bare-hyphen",
+      "room": "Bare Hyphen Three",
+      "roomId": "bare-hyphen-three",
+      "driveFolder": "Bare Hyphen Three (15aTksIiJG0E6F8ZzfxCokC5I7ZF7HrFG)",
+      "driveFiles": 6,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "— (none selected)",
+      "accessibleNow": 0,
+      "accessibleNowIds": [],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "a-6.jpg",
+        "a-10.jpg",
+        "a-16.jpg",
+        "a-17.jpg",
+        "a-21.jpg",
+        "a-25.jpg"
+      ]
+    },
+    {
+      "property": "Bare Hyphen",
+      "propertyId": "bare-hyphen",
+      "room": "Bare Hyphen Four",
+      "roomId": "bare-hyphen-four",
+      "driveFolder": "Bare Hyphen Four (1LL8O9WuzdHR_gjTzIsIILl9sINLLxyiW)",
+      "driveFiles": 5,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "— (none selected)",
+      "accessibleNow": 0,
+      "accessibleNowIds": [],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "6.jpg",
+        "10.jpg",
+        "14.jpg",
+        "16.jpg",
+        "25.jpg"
+      ]
+    },
+    {
+      "property": "Bare Đa Kao",
+      "propertyId": "bare-da-kao",
+      "room": "Bare Đa Kao One",
+      "roomId": "bare-da-kao-one",
+      "driveFolder": "Bare Đa Kao One (1TZJ8RysVLkRy3SxikbyiGlK1fq1Xl2Ii)",
+      "driveFiles": 5,
+      "approvedBefore": 1,
+      "approvedBeforeIds": [
+        "bare-da-kao"
+      ],
+      "cover": "img 06",
+      "accessibleNow": 2,
+      "accessibleNowIds": [
+        "sel-06-bare-da-kao-one",
+        "bare-da-kao"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "Bare ĐaKao_23.jpg",
+        "Bare ĐaKao_28 (4).jpg",
+        "Bare ĐaKao_28 (8).jpg"
+      ]
+    },
+    {
+      "property": "Bare Đa Kao",
+      "propertyId": "bare-da-kao",
+      "room": "Bare Đa Kao Two",
+      "roomId": "bare-da-kao-two",
+      "driveFolder": "Bare Đa Kao Two (19LXf2U9cCMr9vs2Z9Mci2e3RzW5yHKXp)",
+      "driveFiles": 6,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 07",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-07-bare-da-kao-two"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "Bare ĐaKao_30 (1).jpg",
+        "Bare ĐaKao_30 (10).jpg",
+        "Bare ĐaKao_30 (11).jpg",
+        "Bare ĐaKao_30 (12).jpg",
+        "Bare ĐaKao_30 (16).jpg"
+      ]
+    },
+    {
+      "property": "Bare Đa Kao",
+      "propertyId": "bare-da-kao",
+      "room": "Bare Đa Kao Three",
+      "roomId": "bare-da-kao-three",
+      "driveFolder": "Bare Đa Kao Three (1pCY0MtwnEA31HP8DHxWimliqDh6XU4GP)",
+      "driveFiles": 6,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 08",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-08-bare-da-kao-three"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "Bare ĐaKao_29 (6).jpg",
+        "Bare ĐaKao_29 (18).jpg",
+        "Bare ĐaKao_29 (20).jpg",
+        "Bare ĐaKao_29 (21).jpg",
+        "Bare ĐaKao_29 (22).jpg"
+      ]
+    },
+    {
+      "property": "Bare Đa Kao",
+      "propertyId": "bare-da-kao",
+      "room": "Bare Đa Kao Four",
+      "roomId": "bare-da-kao-four",
+      "driveFolder": "Bare Đa Kao Four (1G5U-P00SFqMk6n7QNz66SD3HXNhfkxrh)",
+      "driveFiles": 6,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 09",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-09-bare-da-kao-four"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "Bare ĐaKao_31 (1).jpg",
+        "Bare ĐaKao_31 (12).jpg",
+        "Bare ĐaKao_31 (17).jpg",
+        "Bare ĐaKao_31 (20).jpg",
+        "Bare ĐaKao_31 (23).jpg"
+      ]
+    },
+    {
+      "property": "Bare Hàn",
+      "propertyId": "bare-han",
+      "room": "Bare Hàn Ground",
+      "roomId": "bare-han-ground",
+      "driveFolder": "Bare Han Ground (1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb)",
+      "driveFiles": 6,
+      "approvedBefore": 1,
+      "approvedBeforeIds": [
+        "bare-han-ground-26"
+      ],
+      "cover": "img 10",
+      "accessibleNow": 2,
+      "accessibleNowIds": [
+        "sel-10-bare-han-ground",
+        "bare-han-ground-26"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "30.jpg",
+        "31.jpg",
+        "36.jpg",
+        "42.jpg"
+      ]
+    },
+    {
+      "property": "Bare Hàn",
+      "propertyId": "bare-han",
+      "room": "Bare Hàn One",
+      "roomId": "bare-han-one",
+      "driveFolder": "Bare Han One (1pOgr9Mm7hHXzirStOWOR7wEM2e8pAqA5)",
+      "driveFiles": 6,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "— (none selected)",
+      "accessibleNow": 0,
+      "accessibleNowIds": [],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "6.jpg",
+        "7.jpg",
+        "9.jpg",
+        "11.jpg",
+        "13.jpg",
+        "15.jpg"
+      ]
+    },
+    {
+      "property": "Bare Hàn",
+      "propertyId": "bare-han",
+      "room": "Bare Hàn Two",
+      "roomId": "bare-han-two",
+      "driveFolder": "Bare Han Two (15L3PUs29GMzUx_c9mVOExpV5JVJ_wa_1)",
+      "driveFiles": 5,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 11",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-11-bare-han-two"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "52.jpg",
+        "53.jpg",
+        "58.jpg",
+        "61.jpg"
+      ]
+    },
+    {
+      "property": "Bare Hàn",
+      "propertyId": "bare-han",
+      "room": "Bare Hàn Three",
+      "roomId": "bare-han-three",
+      "driveFolder": "Bare Han Three (1FFdEc9be4gOb073Kii5CNHGRsmR3mC4V)",
+      "driveFiles": 5,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 12",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-12-bare-han-three"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "73.jpg",
+        "81.jpg",
+        "82.jpg",
+        "84.jpg"
+      ]
+    },
+    {
+      "property": "The Nắng Suites",
+      "propertyId": "the-nang-suites",
+      "room": "Yellow Submarine",
+      "roomId": "yellow-submarine",
+      "driveFolder": "Yellow Submarine (1ExyqVrGs1azUqoX_gHyh15lxSYQw4kVC)",
+      "driveFiles": 5,
+      "approvedBefore": 2,
+      "approvedBeforeIds": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "cover": "— (none selected)",
+      "accessibleNow": 2,
+      "accessibleNowIds": [
+        "nang-yellow-4",
+        "nang-yellow-7"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "6.png",
+        "9.png",
+        "11.png"
+      ]
+    },
+    {
+      "property": "The Nắng Suites",
+      "propertyId": "the-nang-suites",
+      "room": "Pale Blue Eyes",
+      "roomId": "pale-blue-eyes",
+      "driveFolder": "Pale Blue Eyes (1U5oDedfTCielLny0PnMpzQfshimsYhAz)",
+      "driveFiles": 5,
+      "approvedBefore": 1,
+      "approvedBeforeIds": [
+        "nang-pale-4"
+      ],
+      "cover": "img 13",
+      "accessibleNow": 2,
+      "accessibleNowIds": [
+        "sel-13-the-nang-pale-blue-eyes",
+        "nang-pale-4"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "3.png",
+        "6 (1).png",
+        "7 (1).png"
+      ]
+    },
+    {
+      "property": "The Nắng Suites",
+      "propertyId": "the-nang-suites",
+      "room": "Green River",
+      "roomId": "green-river",
+      "driveFolder": "Green River (136jviLxLQlOcGXv1Y00dXETGBaXe2Lf2)",
+      "driveFiles": 5,
+      "approvedBefore": 1,
+      "approvedBeforeIds": [
+        "the-nang-suites"
+      ],
+      "cover": "— (none selected)",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "the-nang-suites"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "4.png",
+        "5.png",
+        "7.png",
+        "9.png"
+      ]
+    },
+    {
+      "property": "The Nắng Suites",
+      "propertyId": "the-nang-suites",
+      "room": "Blue Moon",
+      "roomId": "blue-moon",
+      "driveFolder": "Blue Moon (1lh0lRA5dLEqNnIlJsADanj0GthLQPMQf)",
+      "driveFiles": 7,
+      "approvedBefore": 3,
+      "approvedBeforeIds": [
+        "nang-blue-moon-17",
+        "nang-blue-moon-14",
+        "nang-blue-moon-18"
+      ],
+      "cover": "img 14",
+      "accessibleNow": 3,
+      "accessibleNowIds": [
+        "sel-14-the-nang-blue-moon",
+        "nang-blue-moon-17",
+        "nang-blue-moon-14"
+      ],
+      "lostDistinct": [],
+      "held": [
+        "4 (1).png (person)",
+        "24.png (person)"
+      ],
+      "notYetLocal": [
+        "10.png",
+        "15.png"
+      ]
+    },
+    {
+      "property": "Pepper House",
+      "propertyId": "pepper-house",
+      "room": "Pepper House 3rd-floor",
+      "roomId": "pepper-house-3rd-floor",
+      "driveFolder": "Pepper house 3rd-floor (1lk7TQU8WNX5y1YfUroMX37TCmv957tI7)",
+      "driveFiles": 6,
+      "approvedBefore": 1,
+      "approvedBeforeIds": [
+        "pepper-house"
+      ],
+      "cover": "img 15",
+      "accessibleNow": 3,
+      "accessibleNowIds": [
+        "sel-15-pepper-house-3rd-floor-a",
+        "sel-16-pepper-house-3rd-floor-b",
+        "pepper-house"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "02.jpg",
+        "04.jpg",
+        "09.jpg"
+      ]
+    },
+    {
+      "property": "Pepper House",
+      "propertyId": "pepper-house",
+      "room": "Pepper House 4th-floor",
+      "roomId": "pepper-house-4th-floor",
+      "driveFolder": "Pepper house 4th-floor (11BjCUAeropTZG4PkXjIMD3WAsEFeyqsH)",
+      "driveFiles": 6,
+      "approvedBefore": 0,
+      "approvedBeforeIds": [],
+      "cover": "img 17",
+      "accessibleNow": 1,
+      "accessibleNowIds": [
+        "sel-17-pepper-house-4th-floor"
+      ],
+      "lostDistinct": [],
+      "held": [],
+      "notYetLocal": [
+        "pepperhouse-72 (1).jpg",
+        "pepperhouse-72.jpg",
+        "pepperhouse-76.jpg",
+        "pepperhouse-79.jpg",
+        "pepperhouse-81.jpg"
+      ]
+    }
+  ]
+}

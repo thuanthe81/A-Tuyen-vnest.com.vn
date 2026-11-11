@@ -1,0 +1,24 @@
+▶ shared Phòng & khách field (property page header bar)
+  ✔ @1440 every valid combination, 1 guest / 1 room up to 12 / 6; a guest never adds a room (4734.767959ms)
+  ✔ @1440 the cap and its message at 2 guests / 1 room (1300.817708ms)
+  ✔ @390 every valid combination, 1 guest / 1 room up to 12 / 6; a guest never adds a room (4488.999ms)
+  ✔ @390 the cap and its message at 2 guests / 1 room (1253.716542ms)
+✔ shared Phòng & khách field (property page header bar) (11909.446458ms)
+▶ homepage bar (Phase D): adults and children, no room stepper
+  ✔ @1440 rooms are not shown; adults up to the request limit; children apart; the results start at the fewest rooms (1590.04075ms)
+  ✔ @390 rooms are not shown; adults up to the request limit; children apart; the results start at the fewest rooms (1596.275334ms)
+✔ homepage bar (Phase D): adults and children, no room stepper (3186.573208ms)
+▶ results page: no per-room guest steppers, the same rule
+  ✔ @1440 two steppers in the editor; refusals explained; Back and refresh keep the stay (3631.843458ms)
+  ✔ @1440 outdated links on the results page: kept as they are, no provider check, corrected by the guest (1056.728291ms)
+  ✔ @390 two steppers in the editor; refusals explained; Back and refresh keep the stay (3691.98575ms)
+  ✔ @390 outdated links on the results page: kept as they are, no provider check, corrected by the guest (1087.637916ms)
+✔ results page: no per-room guest steppers, the same rule (9468.790667ms)
+ℹ tests 10
+ℹ suites 3
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24736.355583

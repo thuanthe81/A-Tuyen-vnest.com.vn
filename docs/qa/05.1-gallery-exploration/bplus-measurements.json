@@ -1,0 +1,1142 @@
+{
+ "measured": "2026-10-11, production build (next build, next start on localhost:3300), headless Chrome over the DevTools protocol. Not Lighthouse, not a real device, not Safari.",
+ "method": {
+  "lcp": "PerformanceObserver largest-contentful-paint, median of 3 fresh loads with the cache disabled",
+  "layoutShift": "sum of every layout-shift entry without recent input (an upper bound for CLS), at load and after a real scroll to the foot of the page",
+  "fontsAndImages": "Resource Timing entries at load",
+  "throttling": "slow 4G: 150 ms latency, 1.6 Mbps down, 750 kbps up, 4x CPU"
+ },
+ "caveats": [
+  "Every picture is a drawn stand-in of about 4 KB. LCP with stand-ins says little about LCP with photographs.",
+  "At 1440px Chrome does not count the stand-in hero as an LCP candidate (too few bytes for its area), so the element reported there is the h1.",
+  "photographWeightHero replaces the hero with a synthetic 188 KB JPEG served through the throttled network. It is a sensitivity test, not a measurement of real VNest photography."
+ ],
+ "allRoutes_buildBeforeLastOneLineChange": [
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "B+",
+   "lcpMs": 780,
+   "lcpRuns": [
+    780,
+    812,
+    764
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 780,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    5,
+    4.6,
+    11.6,
+    4.3,
+    5,
+    13.1,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "B original",
+   "lcpMs": 784,
+   "lcpRuns": [
+    784,
+    772,
+    824
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 684,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "11 files, 269.2 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    21.6,
+    13.1,
+    5,
+    13,
+    128.2,
+    6.7,
+    7,
+    52.4
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-p.svg",
+    "b-room-p.svg"
+   ],
+   "imagesAfterScroll": 3
+  },
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "A",
+   "lcpMs": 1148,
+   "lcpRuns": [
+    1160,
+    1148,
+    1148
+   ],
+   "lcpElement": "IMG a-facade-p.svg",
+   "fcpMs": 980,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "14 files, 571.2 KB",
+   "fontFiles": [
+    143.6,
+    4.6,
+    12.6,
+    5,
+    26.6,
+    13.1,
+    5,
+    13,
+    27.4,
+    128.8,
+    7,
+    84.6,
+    93.2,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "a-facade-p.svg",
+    "a-lobby-p.svg",
+    "a-room-l.svg",
+    "a-stair-p.svg"
+   ],
+   "imagesAfterScroll": 4
+  },
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "current page",
+   "lcpMs": 684,
+   "lcpRuns": [
+    684,
+    668,
+    692
+   ],
+   "lcpElement": "IMG property-a.svg",
+   "fcpMs": 684,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "9 files, 74 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    5,
+    13.1,
+    13,
+    7,
+    6.7,
+    7
+   ],
+   "imagesAtLoad": [
+    "property-a.svg",
+    "property-a-room-1.svg"
+   ],
+   "imagesAfterScroll": 2
+  },
+  {
+   "profile": "phone 390, no throttling",
+   "route": "B+",
+   "lcpMs": 60,
+   "lcpRuns": [
+    60,
+    76,
+    56
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 60,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    4.3,
+    11.6,
+    13.1,
+    5,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "phone 390, no throttling",
+   "route": "B original",
+   "lcpMs": 60,
+   "lcpRuns": [
+    56,
+    60,
+    60
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 60,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "11 files, 269.2 KB",
+   "fontFiles": [
+    12.6,
+    21.6,
+    5,
+    4.6,
+    13.1,
+    128.2,
+    5,
+    13,
+    6.7,
+    7,
+    52.4
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-p.svg",
+    "b-room-p.svg"
+   ],
+   "imagesAfterScroll": 3
+  },
+  {
+   "profile": "phone 390, no throttling",
+   "route": "A",
+   "lcpMs": 60,
+   "lcpRuns": [
+    60,
+    64,
+    60
+   ],
+   "lcpElement": "IMG a-facade-p.svg",
+   "fcpMs": 60,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "14 files, 571.2 KB",
+   "fontFiles": [
+    143.6,
+    12.6,
+    4.6,
+    26.6,
+    5,
+    13.1,
+    5,
+    13,
+    27.4,
+    128.8,
+    7,
+    84.6,
+    93.2,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "a-facade-p.svg",
+    "a-lobby-p.svg",
+    "a-room-l.svg",
+    "a-stair-p.svg"
+   ],
+   "imagesAfterScroll": 4
+  },
+  {
+   "profile": "phone 390, no throttling",
+   "route": "current page",
+   "lcpMs": 56,
+   "lcpRuns": [
+    64,
+    56,
+    48
+   ],
+   "lcpElement": "IMG property-a.svg",
+   "fcpMs": 56,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "9 files, 74 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    13.1,
+    5,
+    13,
+    7,
+    6.7,
+    7
+   ],
+   "imagesAtLoad": [
+    "property-a.svg",
+    "property-a-room-1.svg"
+   ],
+   "imagesAfterScroll": 2
+  },
+  {
+   "profile": "tablet 768, no throttling",
+   "route": "B+",
+   "lcpMs": 68,
+   "lcpRuns": [
+    68,
+    68,
+    60
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 68,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    11.6,
+    13.1,
+    4.6,
+    4.3,
+    5,
+    5,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-room-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "tablet 768, no throttling",
+   "route": "B original",
+   "lcpMs": 64,
+   "lcpRuns": [
+    64,
+    60,
+    64
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 64,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "11 files, 269.2 KB",
+   "fontFiles": [
+    12.6,
+    21.6,
+    4.6,
+    5,
+    128.2,
+    5,
+    13.1,
+    13,
+    6.7,
+    7,
+    52.4
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-p.svg"
+   ],
+   "imagesAfterScroll": 2
+  },
+  {
+   "profile": "tablet 768, no throttling",
+   "route": "A",
+   "lcpMs": 60,
+   "lcpRuns": [
+    64,
+    60,
+    60
+   ],
+   "lcpElement": "IMG a-facade-p.svg",
+   "fcpMs": 60,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "14 files, 571.2 KB",
+   "fontFiles": [
+    143.6,
+    12.6,
+    13.1,
+    26.6,
+    4.6,
+    5,
+    5,
+    13,
+    27.4,
+    128.8,
+    7,
+    6.7,
+    84.6,
+    93.2
+   ],
+   "imagesAtLoad": [
+    "a-facade-p.svg",
+    "a-lobby-p.svg",
+    "a-stair-p.svg",
+    "a-detail-p.svg",
+    "a-room-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "tablet 768, no throttling",
+   "route": "current page",
+   "lcpMs": 60,
+   "lcpRuns": [
+    72,
+    40,
+    60
+   ],
+   "lcpElement": "P Dữ liệu mô phỏng · Tên cơ sở, hình ảnh, ",
+   "fcpMs": 60,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "9 files, 74 KB",
+   "fontFiles": [
+    12.6,
+    5,
+    4.6,
+    13.1,
+    13,
+    5,
+    7,
+    6.7,
+    7
+   ],
+   "imagesAtLoad": [
+    "property-a.svg",
+    "property-a-room-1.svg"
+   ],
+   "imagesAfterScroll": 2
+  },
+  {
+   "profile": "desktop 1440, no throttling",
+   "route": "B+",
+   "lcpMs": 56,
+   "lcpRuns": [
+    56,
+    60,
+    52
+   ],
+   "lcpElement": "H1 Cơ sở mẫu A",
+   "fcpMs": 56,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    11.6,
+    4.3,
+    5,
+    13.1,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-l.svg",
+    "b-room-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "desktop 1440, no throttling",
+   "route": "B original",
+   "lcpMs": 64,
+   "lcpRuns": [
+    64,
+    72,
+    64
+   ],
+   "lcpElement": "H1 Cơ sở mẫu A",
+   "fcpMs": 64,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "11 files, 269.2 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    21.6,
+    5,
+    128.2,
+    13.1,
+    5,
+    13,
+    6.7,
+    7,
+    52.4
+   ],
+   "imagesAtLoad": [
+    "b-facade-l.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 2
+  },
+  {
+   "profile": "desktop 1440, no throttling",
+   "route": "A",
+   "lcpMs": 68,
+   "lcpRuns": [
+    56,
+    68,
+    72
+   ],
+   "lcpElement": "IMG a-facade-p.svg",
+   "fcpMs": 56,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "14 files, 571.2 KB",
+   "fontFiles": [
+    143.6,
+    4.6,
+    5,
+    12.6,
+    13.1,
+    26.6,
+    5,
+    13,
+    27.4,
+    128.8,
+    7,
+    6.7,
+    84.6,
+    93.2
+   ],
+   "imagesAtLoad": [
+    "a-facade-p.svg",
+    "a-lobby-p.svg",
+    "a-room-l.svg",
+    "a-detail-p.svg",
+    "a-stair-p.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "desktop 1440, no throttling",
+   "route": "current page",
+   "lcpMs": 56,
+   "lcpRuns": [
+    44,
+    60,
+    56
+   ],
+   "lcpElement": "H1 Cơ sở mẫu A",
+   "fcpMs": 56,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "9 files, 74 KB",
+   "fontFiles": [
+    12.6,
+    5,
+    4.6,
+    13.1,
+    5,
+    13,
+    7,
+    6.7,
+    7
+   ],
+   "imagesAtLoad": [
+    "property-a.svg",
+    "property-a-room-1.svg"
+   ],
+   "imagesAfterScroll": 2
+  }
+ ],
+ "bPlus_finalBuild": [
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "B+",
+   "lcpMs": 784,
+   "lcpRuns": [
+    788,
+    772,
+    784
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 772,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    5,
+    4.6,
+    12.6,
+    4.3,
+    11.6,
+    5,
+    13.1,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "phone 390, no throttling",
+   "route": "B+",
+   "lcpMs": 64,
+   "lcpRuns": [
+    64,
+    56,
+    64
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 64,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    5,
+    4.6,
+    11.6,
+    4.3,
+    13.1,
+    5,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "tablet 768, no throttling",
+   "route": "B+",
+   "lcpMs": 48,
+   "lcpRuns": [
+    48,
+    48,
+    56
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 48,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    4.3,
+    11.6,
+    13.1,
+    5,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg",
+    "b-room-p.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "desktop 1440, no throttling",
+   "route": "B+",
+   "lcpMs": 56,
+   "lcpRuns": [
+    56,
+    48,
+    56
+   ],
+   "lcpElement": "H1 Cơ sở mẫu A",
+   "fcpMs": 56,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    4.6,
+    12.6,
+    5,
+    11.6,
+    4.3,
+    13.1,
+    5,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-l.svg",
+    "b-room-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  }
+ ],
+ "photographWeightHero_allRoutes": [
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "B+",
+   "lcpMs": 2656,
+   "lcpRuns": [
+    2656,
+    2660,
+    2644
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 800,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    4.3,
+    11.6,
+    5,
+    13.1,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  },
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "B original",
+   "lcpMs": 3572,
+   "lcpRuns": [
+    3576,
+    3572,
+    3572
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 828,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "11 files, 269.2 KB",
+   "fontFiles": [
+    12.6,
+    21.6,
+    4.6,
+    5,
+    5,
+    13.1,
+    128.2,
+    13,
+    6.7,
+    7,
+    52.4
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-p.svg",
+    "b-room-p.svg"
+   ],
+   "imagesAfterScroll": 3
+  },
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "A",
+   "lcpMs": 5052,
+   "lcpRuns": [
+    5052,
+    5056,
+    5044
+   ],
+   "lcpElement": "IMG a-facade-p.svg",
+   "fcpMs": 892,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "14 files, 571.2 KB",
+   "fontFiles": [
+    143.6,
+    4.6,
+    5,
+    12.6,
+    26.6,
+    5,
+    13.1,
+    13,
+    27.4,
+    128.8,
+    7,
+    84.6,
+    93.2,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "a-facade-p.svg",
+    "a-lobby-p.svg",
+    "a-room-l.svg",
+    "a-stair-p.svg"
+   ],
+   "imagesAfterScroll": 4
+  },
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "current page",
+   "lcpMs": 2628,
+   "lcpRuns": [
+    2628,
+    2628,
+    2624
+   ],
+   "lcpElement": "IMG property-a.svg",
+   "fcpMs": 720,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "9 files, 74 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    5,
+    13.1,
+    13,
+    7,
+    6.7,
+    7
+   ],
+   "imagesAtLoad": [
+    "property-a.svg",
+    "property-a-room-1.svg"
+   ],
+   "imagesAfterScroll": 2
+  }
+ ],
+ "photographWeightHero_bPlus_finalBuild": [
+  {
+   "profile": "phone 390, slow 4G, 4x CPU",
+   "route": "B+",
+   "lcpMs": 2656,
+   "lcpRuns": [
+    2664,
+    2656,
+    2652
+   ],
+   "lcpElement": "IMG b-facade-p.svg",
+   "fcpMs": 744,
+   "shiftAtLoad": 0,
+   "shiftAfterScroll": 0,
+   "shiftSources": [],
+   "fontsAtLoad": "10 files, 82.9 KB",
+   "fontFiles": [
+    12.6,
+    4.6,
+    5,
+    11.6,
+    4.3,
+    5,
+    13.1,
+    13,
+    7,
+    6.7
+   ],
+   "imagesAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "imagesAfterScroll": 5
+  }
+ ],
+ "interactionChecks_bPlus_finalBuild": {
+  "phone 390": {
+   "overflowPx": 0,
+   "firstScreen": {
+    "viewport": 844,
+    "heroBottom": 843,
+    "h1Bottom": 695,
+    "ctaBottom": 823,
+    "chipBottom": 202,
+    "pictureVisibleAbovePlate": 444
+   },
+   "targetsUnder44": [
+    [
+     "Đóng",
+     0,
+     0
+    ]
+   ],
+   "imagesRequestedAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg"
+   ],
+   "heroImage": {
+    "loading": "eager",
+    "fetchPriority": "high",
+    "file": "b-facade-p.svg"
+   },
+   "pinnedAtTop": [
+    [
+     "DIV",
+     390,
+     65
+    ]
+   ],
+   "viewer": {
+    "open": true,
+    "pictures": 8,
+    "focusInside": true,
+    "closeButton": [
+     72,
+     44
+    ]
+   },
+   "viewerAfterEscape": {
+    "open": false,
+    "focusBackOn": "Xem 8 ảnh"
+   },
+   "pillByScroll": "407:hidden  813:shown  1219:shown  1625:shown  2032:hidden(rooms on screen)  2439:hidden(rooms on screen)  2554:hidden(rooms on screen)  2554:hidden(rooms on screen)  2554:hidden(rooms on screen)",
+   "imagesRequestedAfterScroll": 6,
+   "pinnedMidPage": [
+    [
+     "DIV",
+     390,
+     65
+    ],
+    [
+     "A",
+     195,
+     48
+    ]
+   ],
+   "afterPill": {
+    "hash": "#rooms",
+    "queryKept": true,
+    "roomsTop": 96,
+    "barBottom": 65,
+    "pill": "hidden"
+   }
+  },
+  "tablet 768": {
+   "overflowPx": 0,
+   "firstScreen": {
+    "viewport": 1024,
+    "heroBottom": 1024,
+    "h1Bottom": 833,
+    "ctaBottom": 984,
+    "chipBottom": 1000,
+    "pictureVisibleAbovePlate": 547
+   },
+   "targetsUnder44": [
+    [
+     "Đóng",
+     0,
+     0
+    ]
+   ],
+   "imagesRequestedAtLoad": [
+    "b-facade-p.svg",
+    "b-lobby-l.svg",
+    "b-room-p.svg"
+   ],
+   "heroImage": {
+    "loading": "eager",
+    "fetchPriority": "high",
+    "file": "b-facade-p.svg"
+   },
+   "pinnedAtTop": [
+    [
+     "DIV",
+     768,
+     65
+    ]
+   ],
+   "viewer": {
+    "open": true,
+    "pictures": 8,
+    "focusInside": true,
+    "closeButton": [
+     72,
+     44
+    ]
+   },
+   "viewerAfterEscape": {
+    "open": false,
+    "focusBackOn": "Xem 8 ảnh"
+   },
+   "pillByScroll": "407:hidden  813:hidden  1220:shown  1626:hidden(rooms on screen)  2032:hidden(rooms on screen)  2180:hidden(rooms on screen)  2180:hidden(rooms on screen)  2180:hidden(rooms on screen)  2180:hidden(rooms on screen)",
+   "imagesRequestedAfterScroll": 8,
+   "pinnedMidPage": [
+    [
+     "DIV",
+     768,
+     65
+    ]
+   ],
+   "afterPill": {
+    "hash": "",
+    "queryKept": true,
+    "roomsTop": 1493,
+    "barBottom": 65,
+    "pill": "hidden"
+   }
+  },
+  "desktop 1440": {
+   "overflowPx": 0,
+   "firstScreen": {
+    "viewport": 900,
+    "heroBottom": 901,
+    "h1Bottom": 711,
+    "ctaBottom": 861,
+    "chipBottom": 877,
+    "pictureVisibleAbovePlate": 411
+   },
+   "targetsUnder44": [
+    [
+     "Đóng",
+     0,
+     0
+    ]
+   ],
+   "imagesRequestedAtLoad": [
+    "b-facade-l.svg",
+    "b-facade-p.svg",
+    "b-lobby-l.svg",
+    "b-room-p.svg"
+   ],
+   "heroImage": {
+    "loading": "eager",
+    "fetchPriority": "high",
+    "file": "b-facade-l.svg"
+   },
+   "pinnedAtTop": [
+    [
+     "DIV",
+     1440,
+     65
+    ]
+   ],
+   "viewer": {
+    "open": true,
+    "pictures": 8,
+    "focusInside": true,
+    "closeButton": [
+     72,
+     44
+    ]
+   },
+   "viewerAfterEscape": {
+    "open": false,
+    "focusBackOn": "Xem 8 ảnh"
+   },
+   "pillByScroll": "400:hidden  800:shown  1200:shown  1600:shown  2000:hidden(rooms on screen)  2400:hidden(rooms on screen)  2703:hidden(rooms on screen)  2703:hidden(rooms on screen)  2703:hidden(rooms on screen)  2703:hidden(rooms on screen)",
+   "imagesRequestedAfterScroll": 11,
+   "pinnedMidPage": [
+    [
+     "DIV",
+     1440,
+     65
+    ],
+    [
+     "A",
+     195,
+     52
+    ]
+   ],
+   "afterPill": {
+    "hash": "#rooms",
+    "queryKept": true,
+    "roomsTop": 177,
+    "barBottom": 65,
+    "pill": "hidden"
+   }
+  },
+  "keyboard": {
+   "tabStops": [
+    "VNest",
+    "Cơ sởCơ sở mẫu A",
+    "Ngày lưu trú12 thg 11 – 15 thg 11",
+    "Khách2 khách",
+    "Tìm kiếm",
+    "Tất cả cơ sở cho ngày này",
+    "Xem phòng trống",
+    "Xem 8 ảnh",
+    "Xem tất cả 8 ảnh",
+    "Mở ảnh 2: Không gian chung",
+    "Mở ảnh 3: Phòng ngủ",
+    "Mở ảnh 4: Tầng thượng",
+    "Mở ảnh 5: Con phố bên ngoài",
+    "Xem phòng trống",
+    "Mở trang cơ sở hiện tại để so sánh",
+    "Concept A · Architectural Editoria"
+   ],
+   "enterOnPicture": {
+    "viewerOpen": true,
+    "scrolledTo": 72
+   },
+   "tabInsideViewerStaysInside": true,
+   "afterEscape": {
+    "viewerOpen": false,
+    "focusBackOn": "Mở ảnh 2: Không gian chung"
+   }
+  },
+  "reducedMotion": {
+   "pillTransition": "0s, 0s, 0s, 0s",
+   "pictureHoverTransition": "0s",
+   "pictureArrival": "0s",
+   "ctaTransition": "0s"
+  },
+  "motionAllowed": {
+   "pillTransition": "0.24s, 0.24s, 0.24s, 0.12s",
+   "pictureHoverTransition": "0.7s",
+   "pictureArrival": "0.24s",
+   "heroAnimation": "none"
+  },
+  "withoutScript": {
+   "noscriptPictures": 4,
+   "heroInHtml": true,
+   "h1InHtml": true,
+   "ctaIsPlainLink": true
+  }
+ },
+ "interactionCheckNotes": [
+  "targetsUnder44 lists only the viewer close button while the viewer is closed (0 by 0, not rendered); open, it measures 72 by 44.",
+  "The desktop imagesRequestedAtLoad in this file includes both hero crops because the same tab was resized from tablet to desktop between loads. Fresh desktop loads (bPlus_finalBuild) request one.",
+  "On the tablet pass the corner button was hidden at the position where the script tapped, so the jump to rooms was exercised on phone and desktop only."
+ ]
+}

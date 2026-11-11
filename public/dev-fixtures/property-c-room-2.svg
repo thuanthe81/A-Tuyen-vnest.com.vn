@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1622"/><stop offset="0.6" stop-color="#1d3148"/><stop offset="1" stop-color="#35506b"/></linearGradient></defs><rect width="1200" height="900" fill="#22303f"/>
+<rect x="150" y="130" width="400" height="470" rx="10" fill="url(#s)"/>
+<rect x="346" y="130" width="8" height="470" fill="#22303f" fill-opacity="0.9"/>
+<rect y="690" width="1200" height="210" fill="#16222f"/>
+<rect x="600" y="560" width="470" height="170" rx="14" fill="#e9dcc0"/><rect x="600" y="640" width="470" height="110" fill="#0a1119" fill-opacity="0.85"/>
+<circle cx="860" cy="340" r="48" fill="#0a1119" fill-opacity="0.18"/>
+<text x="600" y="864" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="19" letter-spacing="3" fill="#ffffff" fill-opacity="0.72">ẢNH MẪU · KHÔNG PHẢI HÌNH ẢNH VNEST</text>
+</svg>

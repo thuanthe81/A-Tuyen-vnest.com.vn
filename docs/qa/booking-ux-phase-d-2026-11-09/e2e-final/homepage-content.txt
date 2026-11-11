@@ -1,0 +1,21 @@
+▶ Homepage content completion
+  ✔ the document parses into 3 brands, 3 services and 6 FAQs (vi) (1.009375ms)
+  ✔ vi @ 375: brands, services and FAQs show the client's copy, readable, no overflow (3977.865458ms)
+  ✔ vi @ 390: brands, services and FAQs show the client's copy, readable, no overflow (4011.61225ms)
+  ✔ vi @ 768: brands, services and FAQs show the client's copy, readable, no overflow (4097.583709ms)
+  ✔ vi @ 1440: brands, services and FAQs show the client's copy, readable, no overflow (4862.172792ms)
+  ✔ the document parses into 3 brands, 3 services and 6 FAQs (en) (0.206667ms)
+  ✔ en @ 375: brands, services and FAQs show the client's copy, readable, no overflow (4009.434334ms)
+  ✔ en @ 390: brands, services and FAQs show the client's copy, readable, no overflow (4012.906833ms)
+  ✔ en @ 768: brands, services and FAQs show the client's copy, readable, no overflow (4099.705333ms)
+  ✔ en @ 1440: brands, services and FAQs show the client's copy, readable, no overflow (4812.625875ms)
+  ✔ the default page is Vietnamese; the header, booking bar and section anchors are unchanged (1392.503125ms)
+✔ Homepage content completion (35337.90175ms)
+ℹ tests 11
+ℹ suites 1
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 35519.811958

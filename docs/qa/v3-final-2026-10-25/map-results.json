@@ -1,0 +1,112 @@
+{
+  "base": "http://localhost:3402",
+  "date": "2026-10-25",
+  "note": "Headless Chrome, device emulation",
+  "views": [
+    {
+      "view": "1440",
+      "checks": {
+        "bare-chic": {
+          "state": "loaded",
+          "earlyIframe": false,
+          "official": true,
+          "title": "Bản đồ Google: Bare Chic",
+          "loading": "lazy",
+          "size": "699×553",
+          "share": 58,
+          "mapAbove": false,
+          "sideBySide": true,
+          "overflow": false,
+          "distinctColours": 323,
+          "embedRequests": 1,
+          "scrollFromMapPx": null
+        },
+        "the-nang-suites": {
+          "state": "loaded",
+          "earlyIframe": false,
+          "official": true,
+          "title": "Bản đồ Google: The Nắng Suites",
+          "loading": "lazy",
+          "size": "699×553",
+          "share": 58,
+          "mapAbove": false,
+          "sideBySide": true,
+          "overflow": false,
+          "distinctColours": 238,
+          "embedRequests": 1,
+          "scrollFromMapPx": null
+        }
+      }
+    },
+    {
+      "view": "768",
+      "checks": {
+        "bare-chic": {
+          "state": "loaded",
+          "earlyIframe": false,
+          "official": true,
+          "title": "Bản đồ Google: Bare Chic",
+          "loading": "lazy",
+          "size": "716×320",
+          "share": 100,
+          "mapAbove": true,
+          "sideBySide": false,
+          "overflow": false,
+          "distinctColours": 400,
+          "embedRequests": 1,
+          "scrollFromMapPx": 290
+        },
+        "the-nang-suites": {
+          "state": "loaded",
+          "earlyIframe": false,
+          "official": true,
+          "title": "Bản đồ Google: The Nắng Suites",
+          "loading": "lazy",
+          "size": "716×320",
+          "share": 100,
+          "mapAbove": true,
+          "sideBySide": false,
+          "overflow": false,
+          "distinctColours": 390,
+          "embedRequests": 1,
+          "scrollFromMapPx": 311
+        }
+      }
+    },
+    {
+      "view": "390",
+      "checks": {
+        "bare-chic": {
+          "state": "loaded",
+          "earlyIframe": false,
+          "official": true,
+          "title": "Bản đồ Google: Bare Chic",
+          "loading": "lazy",
+          "size": "355×222",
+          "share": 99,
+          "mapAbove": true,
+          "sideBySide": false,
+          "overflow": false,
+          "distinctColours": 487,
+          "embedRequests": 1,
+          "scrollFromMapPx": 301
+        },
+        "the-nang-suites": {
+          "state": "loaded",
+          "earlyIframe": false,
+          "official": true,
+          "title": "Bản đồ Google: The Nắng Suites",
+          "loading": "lazy",
+          "size": "355×222",
+          "share": 99,
+          "mapAbove": true,
+          "sideBySide": false,
+          "overflow": false,
+          "distinctColours": 381,
+          "embedRequests": 1,
+          "scrollFromMapPx": 185
+        }
+      }
+    }
+  ]
+}

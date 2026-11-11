@@ -1,0 +1,3045 @@
+{
+  "base": "http://localhost:3300",
+  "route": "/dev/brand-collection/b-client",
+  "date": "2026-10-18T17:50:16.402Z",
+  "view-390": {
+    "all": {
+      "viewport": [
+        390,
+        844
+      ],
+      "overflowPx": 0,
+      "sectionHeight": 521,
+      "sectionTopToFirstCard": 0,
+      "index": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Bare Boutique Stays, 4 nơi ở",
+        "The Nắng Suites, 1 nơi ở",
+        "Pepper House, 1 nơi ở"
+      ],
+      "cityChips": [],
+      "citySelect": [
+        [
+          "Tất cả (6)",
+          "TP. Hồ Chí Minh (4)",
+          "Đà Nẵng (2)"
+        ]
+      ],
+      "areaControls": 0,
+      "stage": "3 thương hiệu · TP. Hồ Chí Minh · Đà Nẵng",
+      "placeholders": [
+        {
+          "w": 118,
+          "h": 143,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": null,
+          "reasonPx": null
+        },
+        {
+          "w": 173,
+          "h": 116,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "11px"
+        },
+        {
+          "w": 173,
+          "h": 116,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "11px"
+        }
+      ],
+      "prices": [
+        {
+          "name": "Bare Chic",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,100,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hyphen",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Bare Đa Kao",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hàn",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,110,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "The Nắng Suites",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 840,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Pepper House",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,215,000",
+          "layout": "below",
+          "clipped": []
+        }
+      ],
+      "landmarks": {
+        "main": 1,
+        "h1": [
+          {
+            "text": "Bộ sưu tập thương hiệu VNest · bản xem trước với dữ liệu VNest",
+            "visuallyHidden": true
+          }
+        ]
+      },
+      "controlsUnder44": [],
+      "state": {
+        "cards": [
+          "Bare Chic / TP.HCM · Quận 1",
+          "Bare Hyphen / TP.HCM",
+          "Bare Đa Kao / TP.HCM",
+          "Bare Hàn / Đà Nẵng · Hải Châu",
+          "The Nắng Suites / Đà Nẵng · Sơn Trà",
+          "Pepper House / TP.HCM · Quận 1"
+        ],
+        "summary": "Tất cả 6 nơi ở",
+        "chosen": [
+          "Tất cả thương hiệu, 6 nơi ở",
+          "Mọi thành phố, 6 nơi ở"
+        ],
+        "compactCity": "",
+        "address": ""
+      }
+    },
+    "bare": {
+      "viewport": [
+        390,
+        844
+      ],
+      "overflowPx": 0,
+      "sectionHeight": 521,
+      "sectionTopToFirstCard": 0,
+      "index": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Bare Boutique Stays, 4 nơi ở",
+        "The Nắng Suites, 1 nơi ở",
+        "Pepper House, 1 nơi ở"
+      ],
+      "cityChips": [],
+      "citySelect": [
+        [
+          "Tất cả (4)",
+          "TP. Hồ Chí Minh (3)",
+          "Đà Nẵng (1)"
+        ]
+      ],
+      "areaControls": 0,
+      "stage": "Bare Boutique Stays · LOGO · TP. Hồ Chí Minh · Đà Nẵng · Câu chuyện thương hiệu · chờ nội dung được duyệt",
+      "placeholders": [
+        {
+          "w": 88,
+          "h": 143,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": null,
+          "reasonPx": null
+        },
+        {
+          "w": 173,
+          "h": 116,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "11px"
+        }
+      ],
+      "prices": [
+        {
+          "name": "Bare Chic",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,100,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hyphen",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Bare Đa Kao",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "below",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hàn",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,110,000",
+          "layout": "below",
+          "clipped": []
+        }
+      ],
+      "landmarks": {
+        "main": 1,
+        "h1": [
+          {
+            "text": "Bộ sưu tập thương hiệu VNest · bản xem trước với dữ liệu VNest",
+            "visuallyHidden": true
+          }
+        ]
+      },
+      "controlsUnder44": [],
+      "state": {
+        "cards": [
+          "Bare Chic / TP.HCM · Quận 1",
+          "Bare Hyphen / TP.HCM",
+          "Bare Đa Kao / TP.HCM",
+          "Bare Hàn / Đà Nẵng · Hải Châu"
+        ],
+        "summary": "4 nơi ở · Bare Boutique Stays",
+        "chosen": [
+          "Bare Boutique Stays, 4 nơi ở",
+          "Mọi thành phố, 4 nơi ở"
+        ],
+        "compactCity": "",
+        "address": "?brand=bare"
+      }
+    },
+    "cityControl": "select",
+    "bareDaNang": {
+      "state": {
+        "cards": [
+          "Bare Hàn / Đà Nẵng · Hải Châu"
+        ],
+        "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+        "chosen": [
+          "Bare Boutique Stays, 1 nơi ở",
+          "Đà Nẵng, 1 nơi ở"
+        ],
+        "compactCity": "da-nang",
+        "address": "?brand=bare&city=da-nang"
+      },
+      "stage": "Bare Boutique Stays\nLOGO\nTP. Hồ Chí Minh · Đà Nẵng\nCâu chuyện thương hiệu · chờ nội dung được duyệt"
+    },
+    "pepperAfterDaNang": {
+      "cards": [
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=pepper-house",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+    },
+    "reset": {
+      "cards": [
+        "Bare Chic / TP.HCM · Quận 1",
+        "Bare Hyphen / TP.HCM",
+        "Bare Đa Kao / TP.HCM",
+        "Bare Hàn / Đà Nẵng · Hải Châu",
+        "The Nắng Suites / Đà Nẵng · Sơn Trà",
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "compactCity": "",
+      "address": ""
+    },
+    "errors": [],
+    "consoleErrors": []
+  },
+  "view-768": {
+    "all": {
+      "viewport": [
+        768,
+        1024
+      ],
+      "overflowPx": 0,
+      "sectionHeight": 670,
+      "sectionTopToFirstCard": 0,
+      "index": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Bare Boutique Stays, 4 nơi ở",
+        "The Nắng Suites, 1 nơi ở",
+        "Pepper House, 1 nơi ở"
+      ],
+      "cityChips": [
+        "Mọi thành phố, 6 nơi ở",
+        "TP. Hồ Chí Minh, 4 nơi ở",
+        "Đà Nẵng, 2 nơi ở"
+      ],
+      "citySelect": [],
+      "areaControls": 0,
+      "stage": "3 thương hiệu · TP. Hồ Chí Minh · Đà Nẵng",
+      "placeholders": [
+        {
+          "w": 238,
+          "h": 239,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "11.7743px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "13.9151px"
+        },
+        {
+          "w": 354,
+          "h": 236,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        },
+        {
+          "w": 354,
+          "h": 236,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        }
+      ],
+      "prices": [
+        {
+          "name": "Bare Chic",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,100,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hyphen",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Đa Kao",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hàn",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,110,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "The Nắng Suites",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 840,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Pepper House",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,215,000",
+          "layout": "beside",
+          "clipped": []
+        }
+      ],
+      "landmarks": {
+        "main": 1,
+        "h1": [
+          {
+            "text": "Bộ sưu tập thương hiệu VNest · bản xem trước với dữ liệu VNest",
+            "visuallyHidden": true
+          }
+        ]
+      },
+      "controlsUnder44": [],
+      "state": {
+        "cards": [
+          "Bare Chic / TP.HCM · Quận 1",
+          "Bare Hyphen / TP.HCM",
+          "Bare Đa Kao / TP.HCM",
+          "Bare Hàn / Đà Nẵng · Hải Châu",
+          "The Nắng Suites / Đà Nẵng · Sơn Trà",
+          "Pepper House / TP.HCM · Quận 1"
+        ],
+        "summary": "Tất cả 6 nơi ở",
+        "chosen": [
+          "Tất cả thương hiệu, 6 nơi ở",
+          "Mọi thành phố, 6 nơi ở"
+        ],
+        "compactCity": "",
+        "address": ""
+      }
+    },
+    "bare": {
+      "viewport": [
+        768,
+        1024
+      ],
+      "overflowPx": 0,
+      "sectionHeight": 670,
+      "sectionTopToFirstCard": 0,
+      "index": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Bare Boutique Stays, 4 nơi ở",
+        "The Nắng Suites, 1 nơi ở",
+        "Pepper House, 1 nơi ở"
+      ],
+      "cityChips": [
+        "Mọi thành phố, 4 nơi ở",
+        "TP. Hồ Chí Minh, 3 nơi ở",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "citySelect": [],
+      "areaControls": 0,
+      "stage": "Bare Boutique Stays · LOGO · TP. Hồ Chí Minh · Đà Nẵng · Câu chuyện thương hiệu · chờ nội dung được duyệt",
+      "placeholders": [
+        {
+          "w": 178,
+          "h": 239,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "11px"
+        },
+        {
+          "w": 354,
+          "h": 236,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        }
+      ],
+      "prices": [
+        {
+          "name": "Bare Chic",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,100,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hyphen",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Đa Kao",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hàn",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,110,000",
+          "layout": "beside",
+          "clipped": []
+        }
+      ],
+      "landmarks": {
+        "main": 1,
+        "h1": [
+          {
+            "text": "Bộ sưu tập thương hiệu VNest · bản xem trước với dữ liệu VNest",
+            "visuallyHidden": true
+          }
+        ]
+      },
+      "controlsUnder44": [],
+      "state": {
+        "cards": [
+          "Bare Chic / TP.HCM · Quận 1",
+          "Bare Hyphen / TP.HCM",
+          "Bare Đa Kao / TP.HCM",
+          "Bare Hàn / Đà Nẵng · Hải Châu"
+        ],
+        "summary": "4 nơi ở · Bare Boutique Stays",
+        "chosen": [
+          "Bare Boutique Stays, 4 nơi ở",
+          "Mọi thành phố, 4 nơi ở"
+        ],
+        "compactCity": "",
+        "address": "?brand=bare"
+      }
+    },
+    "cityControl": "chips",
+    "bareDaNang": {
+      "state": {
+        "cards": [
+          "Bare Hàn / Đà Nẵng · Hải Châu"
+        ],
+        "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+        "chosen": [
+          "Bare Boutique Stays, 1 nơi ở",
+          "Đà Nẵng, 1 nơi ở"
+        ],
+        "compactCity": "da-nang",
+        "address": "?brand=bare&city=da-nang"
+      },
+      "stage": "Bare Boutique Stays\nLOGO\nTP. Hồ Chí Minh · Đà Nẵng\nCâu chuyện thương hiệu · chờ nội dung được duyệt"
+    },
+    "pepperAfterDaNang": {
+      "cards": [
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=pepper-house",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+    },
+    "reset": {
+      "cards": [
+        "Bare Chic / TP.HCM · Quận 1",
+        "Bare Hyphen / TP.HCM",
+        "Bare Đa Kao / TP.HCM",
+        "Bare Hàn / Đà Nẵng · Hải Châu",
+        "The Nắng Suites / Đà Nẵng · Sơn Trà",
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "compactCity": "",
+      "address": ""
+    },
+    "errors": [],
+    "consoleErrors": []
+  },
+  "view-1440": {
+    "all": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflowPx": 0,
+      "sectionHeight": 555,
+      "sectionTopToFirstCard": 0,
+      "index": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Bare Boutique Stays, 4 nơi ở",
+        "The Nắng Suites, 1 nơi ở",
+        "Pepper House, 1 nơi ở"
+      ],
+      "cityChips": [
+        "Mọi thành phố, 6 nơi ở",
+        "TP. Hồ Chí Minh, 4 nơi ở",
+        "Đà Nẵng, 2 nơi ở"
+      ],
+      "citySelect": [],
+      "areaControls": 0,
+      "stage": "3 thương hiệu · TP. Hồ Chí Minh · Đà Nẵng",
+      "placeholders": [
+        {
+          "w": 246,
+          "h": 322,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        },
+        {
+          "w": 384,
+          "h": 256,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        },
+        {
+          "w": 384,
+          "h": 256,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        }
+      ],
+      "prices": [
+        {
+          "name": "Bare Chic",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,100,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hyphen",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Đa Kao",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hàn",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,110,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "The Nắng Suites",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 840,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Pepper House",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,215,000",
+          "layout": "beside",
+          "clipped": []
+        }
+      ],
+      "landmarks": {
+        "main": 1,
+        "h1": [
+          {
+            "text": "Bộ sưu tập thương hiệu VNest · bản xem trước với dữ liệu VNest",
+            "visuallyHidden": true
+          }
+        ]
+      },
+      "controlsUnder44": [],
+      "state": {
+        "cards": [
+          "Bare Chic / TP.HCM · Quận 1",
+          "Bare Hyphen / TP.HCM",
+          "Bare Đa Kao / TP.HCM",
+          "Bare Hàn / Đà Nẵng · Hải Châu",
+          "The Nắng Suites / Đà Nẵng · Sơn Trà",
+          "Pepper House / TP.HCM · Quận 1"
+        ],
+        "summary": "Tất cả 6 nơi ở",
+        "chosen": [
+          "Tất cả thương hiệu, 6 nơi ở",
+          "Mọi thành phố, 6 nơi ở"
+        ],
+        "compactCity": "",
+        "address": ""
+      }
+    },
+    "bare": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "overflowPx": 0,
+      "sectionHeight": 555,
+      "sectionTopToFirstCard": 0,
+      "index": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Bare Boutique Stays, 4 nơi ở",
+        "The Nắng Suites, 1 nơi ở",
+        "Pepper House, 1 nơi ở"
+      ],
+      "cityChips": [
+        "Mọi thành phố, 4 nơi ở",
+        "TP. Hồ Chí Minh, 3 nơi ở",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "citySelect": [],
+      "areaControls": 0,
+      "stage": "Bare Boutique Stays · LOGO · TP. Hồ Chí Minh · Đà Nẵng · Câu chuyện thương hiệu · chờ nội dung được duyệt",
+      "placeholders": [
+        {
+          "w": 184,
+          "h": 322,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "10px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "11px"
+        },
+        {
+          "w": 384,
+          "h": 256,
+          "tag": "Ảnh giữ chỗ",
+          "tagPx": "12px",
+          "reason": "Chờ VNest xác nhận thư mục ảnh",
+          "reasonPx": "14px"
+        }
+      ],
+      "prices": [
+        {
+          "name": "Bare Chic",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,100,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hyphen",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Đa Kao",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,000,000",
+          "layout": "beside",
+          "clipped": []
+        },
+        {
+          "name": "Bare Hàn",
+          "kind": "unverified",
+          "text": "Giá tham khảo | 1,110,000",
+          "layout": "beside",
+          "clipped": []
+        }
+      ],
+      "landmarks": {
+        "main": 1,
+        "h1": [
+          {
+            "text": "Bộ sưu tập thương hiệu VNest · bản xem trước với dữ liệu VNest",
+            "visuallyHidden": true
+          }
+        ]
+      },
+      "controlsUnder44": [],
+      "state": {
+        "cards": [
+          "Bare Chic / TP.HCM · Quận 1",
+          "Bare Hyphen / TP.HCM",
+          "Bare Đa Kao / TP.HCM",
+          "Bare Hàn / Đà Nẵng · Hải Châu"
+        ],
+        "summary": "4 nơi ở · Bare Boutique Stays",
+        "chosen": [
+          "Bare Boutique Stays, 4 nơi ở",
+          "Mọi thành phố, 4 nơi ở"
+        ],
+        "compactCity": "",
+        "address": "?brand=bare"
+      }
+    },
+    "cityControl": "chips",
+    "bareDaNang": {
+      "state": {
+        "cards": [
+          "Bare Hàn / Đà Nẵng · Hải Châu"
+        ],
+        "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+        "chosen": [
+          "Bare Boutique Stays, 1 nơi ở",
+          "Đà Nẵng, 1 nơi ở"
+        ],
+        "compactCity": "da-nang",
+        "address": "?brand=bare&city=da-nang"
+      },
+      "stage": "Bare Boutique Stays\nLOGO\nTP. Hồ Chí Minh · Đà Nẵng\nCâu chuyện thương hiệu · chờ nội dung được duyệt"
+    },
+    "pepperAfterDaNang": {
+      "cards": [
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=pepper-house",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+    },
+    "reset": {
+      "cards": [
+        "Bare Chic / TP.HCM · Quận 1",
+        "Bare Hyphen / TP.HCM",
+        "Bare Đa Kao / TP.HCM",
+        "Bare Hàn / Đà Nẵng · Hải Châu",
+        "The Nắng Suites / Đà Nẵng · Sơn Trà",
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "compactCity": "",
+      "address": ""
+    },
+    "errors": [],
+    "consoleErrors": []
+  },
+  "public-390": {
+    "prices": [
+      {
+        "name": "Bare Chic",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "below",
+        "clipped": []
+      },
+      {
+        "name": "Bare Hyphen",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "below",
+        "clipped": []
+      },
+      {
+        "name": "Bare Đa Kao",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "below",
+        "clipped": []
+      },
+      {
+        "name": "Bare Hàn",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "below",
+        "clipped": []
+      },
+      {
+        "name": "The Nắng Suites",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "below",
+        "clipped": []
+      },
+      {
+        "name": "Pepper House",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "below",
+        "clipped": []
+      }
+    ],
+    "digitsInPriceAreas": false,
+    "errors": []
+  },
+  "public-1440": {
+    "prices": [
+      {
+        "name": "Bare Chic",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "beside",
+        "clipped": []
+      },
+      {
+        "name": "Bare Hyphen",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "beside",
+        "clipped": []
+      },
+      {
+        "name": "Bare Đa Kao",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "beside",
+        "clipped": []
+      },
+      {
+        "name": "Bare Hàn",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "beside",
+        "clipped": []
+      },
+      {
+        "name": "The Nắng Suites",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "beside",
+        "clipped": []
+      },
+      {
+        "name": "Pepper House",
+        "kind": "unavailable",
+        "text": "Xem giá theo ngày",
+        "layout": "beside",
+        "clipped": []
+      }
+    ],
+    "digitsInPriceAreas": false,
+    "errors": []
+  },
+  "longName-390": [
+    {
+      "name": "The Nắng Suites Riverside Garden Residence",
+      "nameLines": 3,
+      "overlap": false,
+      "priceRight": 190,
+      "cardRight": 190,
+      "amountBottom": 1126,
+      "cityBottom": 1069,
+      "clipped": 0
+    },
+    {
+      "name": "Bare Đa Kao",
+      "nameLines": 1,
+      "overlap": false,
+      "priceRight": 373,
+      "cardRight": 373,
+      "amountBottom": 1084,
+      "cityBottom": 1027,
+      "clipped": 0
+    }
+  ],
+  "longName-1440": [
+    {
+      "name": "The Nắng Suites Riverside Garden Residence",
+      "nameLines": 2,
+      "overlap": false,
+      "priceRight": 504,
+      "cardRight": 504,
+      "amountBottom": 1223,
+      "cityBottom": 1223,
+      "clipped": 0
+    },
+    {
+      "name": "Bare Đa Kao",
+      "nameLines": 1,
+      "overlap": false,
+      "priceRight": 912,
+      "cardRight": 912,
+      "amountBottom": 1200,
+      "cityBottom": 1200,
+      "clipped": 0
+    }
+  ],
+  "photos-390": {
+    "beforeScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/480.avif",
+          "kb": 0,
+          "at": 9
+        },
+        {
+          "file": "/dev-client-media/pepper-house/480.avif",
+          "kb": 0,
+          "at": 9
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/480.avif",
+          "kb": 0,
+          "at": 21
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/480.avif",
+          "kb": 0,
+          "at": 21
+        }
+      ]
+    },
+    "afterScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/480.avif",
+          "kb": 0,
+          "at": 9
+        },
+        {
+          "file": "/dev-client-media/pepper-house/480.avif",
+          "kb": 0,
+          "at": 9
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/480.avif",
+          "kb": 0,
+          "at": 21
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/480.avif",
+          "kb": 0,
+          "at": 21
+        }
+      ],
+      "images": [
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/bare-chic/480.avif",
+          "rendered": [
+            118,
+            143
+          ],
+          "natural": [
+            233,
+            156
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/pepper-house/480.avif",
+          "rendered": [
+            118,
+            143
+          ],
+          "natural": [
+            233,
+            156
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Chic",
+          "currentSrc": "/dev-client-media/bare-chic/480.avif",
+          "rendered": [
+            173,
+            116
+          ],
+          "natural": [
+            194,
+            129
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Hyphen",
+          "currentSrc": "/dev-client-media/bare-hyphen/480.avif",
+          "rendered": [
+            173,
+            116
+          ],
+          "natural": [
+            194,
+            129
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "33% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Đa Kao",
+          "currentSrc": "/dev-client-media/bare-da-kao/480.avif",
+          "rendered": [
+            173,
+            116
+          ],
+          "natural": [
+            194,
+            129
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Pepper House",
+          "currentSrc": "/dev-client-media/pepper-house/480.avif",
+          "rendered": [
+            173,
+            116
+          ],
+          "natural": [
+            194,
+            129
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        }
+      ]
+    },
+    "bareStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-chic/480.avif",
+        "rendered": [
+          88,
+          143
+        ],
+        "natural": [
+          233,
+          156
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-hyphen/480.avif",
+        "rendered": [
+          88,
+          143
+        ],
+        "natural": [
+          233,
+          156
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-da-kao/480.avif",
+        "rendered": [
+          88,
+          143
+        ],
+        "natural": [
+          233,
+          156
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Chic",
+        "currentSrc": "/dev-client-media/bare-chic/480.avif",
+        "rendered": [
+          173,
+          116
+        ],
+        "natural": [
+          194,
+          129
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Hyphen",
+        "currentSrc": "/dev-client-media/bare-hyphen/480.avif",
+        "rendered": [
+          173,
+          116
+        ],
+        "natural": [
+          194,
+          129
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Đa Kao",
+        "currentSrc": "/dev-client-media/bare-da-kao/480.avif",
+        "rendered": [
+          173,
+          116
+        ],
+        "natural": [
+          194,
+          129
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      }
+    ],
+    "pepperStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/pepper-house/800.avif",
+        "rendered": [
+          357,
+          143
+        ],
+        "natural": [
+          390,
+          259
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Pepper House",
+        "currentSrc": "/dev-client-media/pepper-house/480.avif",
+        "rendered": [
+          173,
+          116
+        ],
+        "natural": [
+          194,
+          129
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      }
+    ],
+    "errors": []
+  },
+  "photos-768": {
+    "beforeScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/1200.avif",
+          "kb": 0,
+          "at": 12
+        },
+        {
+          "file": "/dev-client-media/pepper-house/1200.avif",
+          "kb": 0,
+          "at": 12
+        },
+        {
+          "file": "/dev-client-media/bare-chic/800.avif",
+          "kb": 0,
+          "at": 30
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/800.avif",
+          "kb": 0,
+          "at": 30
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/800.avif",
+          "kb": 0,
+          "at": 30
+        },
+        {
+          "file": "/dev-client-media/pepper-house/800.avif",
+          "kb": 0,
+          "at": 30
+        }
+      ]
+    },
+    "afterScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/1200.avif",
+          "kb": 0,
+          "at": 12
+        },
+        {
+          "file": "/dev-client-media/pepper-house/1200.avif",
+          "kb": 0,
+          "at": 12
+        },
+        {
+          "file": "/dev-client-media/bare-chic/800.avif",
+          "kb": 0,
+          "at": 30
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/800.avif",
+          "kb": 0,
+          "at": 30
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/800.avif",
+          "kb": 0,
+          "at": 30
+        },
+        {
+          "file": "/dev-client-media/pepper-house/800.avif",
+          "kb": 0,
+          "at": 30
+        }
+      ],
+      "images": [
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/bare-chic/1200.avif",
+          "rendered": [
+            238,
+            239
+          ],
+          "natural": [
+            460,
+            307
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/pepper-house/1200.avif",
+          "rendered": [
+            238,
+            239
+          ],
+          "natural": [
+            460,
+            307
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Chic",
+          "currentSrc": "/dev-client-media/bare-chic/800.avif",
+          "rendered": [
+            354,
+            236
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Hyphen",
+          "currentSrc": "/dev-client-media/bare-hyphen/800.avif",
+          "rendered": [
+            354,
+            236
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "33% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Đa Kao",
+          "currentSrc": "/dev-client-media/bare-da-kao/800.avif",
+          "rendered": [
+            354,
+            236
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Pepper House",
+          "currentSrc": "/dev-client-media/pepper-house/800.avif",
+          "rendered": [
+            354,
+            236
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        }
+      ]
+    },
+    "bareStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-chic/1200.avif",
+        "rendered": [
+          178,
+          239
+        ],
+        "natural": [
+          460,
+          307
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-hyphen/1200.avif",
+        "rendered": [
+          178,
+          239
+        ],
+        "natural": [
+          460,
+          307
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-da-kao/1200.avif",
+        "rendered": [
+          178,
+          239
+        ],
+        "natural": [
+          460,
+          307
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Chic",
+        "currentSrc": "/dev-client-media/bare-chic/1200.avif",
+        "rendered": [
+          354,
+          236
+        ],
+        "natural": [
+          384,
+          256
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Hyphen",
+        "currentSrc": "/dev-client-media/bare-hyphen/800.avif",
+        "rendered": [
+          354,
+          236
+        ],
+        "natural": [
+          384,
+          255
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Đa Kao",
+        "currentSrc": "/dev-client-media/bare-da-kao/800.avif",
+        "rendered": [
+          354,
+          236
+        ],
+        "natural": [
+          384,
+          255
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      }
+    ],
+    "pepperStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/pepper-house/1600.avif",
+        "rendered": [
+          718,
+          239
+        ],
+        "natural": [
+          768,
+          511
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Pepper House",
+        "currentSrc": "/dev-client-media/pepper-house/1200.avif",
+        "rendered": [
+          354,
+          236
+        ],
+        "natural": [
+          384,
+          256
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      }
+    ],
+    "errors": []
+  },
+  "photos-1440": {
+    "beforeScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/800.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/pepper-house/800.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/bare-chic/480.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/480.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/480.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/pepper-house/480.avif",
+          "kb": 0,
+          "at": 20
+        }
+      ]
+    },
+    "afterScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/800.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/pepper-house/800.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/bare-chic/480.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/480.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/480.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/pepper-house/480.avif",
+          "kb": 0,
+          "at": 20
+        }
+      ],
+      "images": [
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/bare-chic/800.avif",
+          "rendered": [
+            246,
+            322
+          ],
+          "natural": [
+            496,
+            330
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/pepper-house/800.avif",
+          "rendered": [
+            246,
+            322
+          ],
+          "natural": [
+            496,
+            330
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Chic",
+          "currentSrc": "/dev-client-media/bare-chic/480.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            256
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Hyphen",
+          "currentSrc": "/dev-client-media/bare-hyphen/480.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            256
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "33% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Đa Kao",
+          "currentSrc": "/dev-client-media/bare-da-kao/480.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            256
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Pepper House",
+          "currentSrc": "/dev-client-media/pepper-house/480.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            256
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        }
+      ]
+    },
+    "bareStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-chic/800.avif",
+        "rendered": [
+          184,
+          322
+        ],
+        "natural": [
+          496,
+          330
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-hyphen/800.avif",
+        "rendered": [
+          184,
+          322
+        ],
+        "natural": [
+          496,
+          330
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-da-kao/800.avif",
+        "rendered": [
+          184,
+          322
+        ],
+        "natural": [
+          496,
+          330
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Chic",
+        "currentSrc": "/dev-client-media/bare-chic/800.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          255
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Hyphen",
+        "currentSrc": "/dev-client-media/bare-hyphen/480.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          256
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Đa Kao",
+        "currentSrc": "/dev-client-media/bare-da-kao/480.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          256
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      }
+    ],
+    "pepperStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/pepper-house/800.avif",
+        "rendered": [
+          743,
+          322
+        ],
+        "natural": [
+          736,
+          490
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Pepper House",
+        "currentSrc": "/dev-client-media/pepper-house/800.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          255
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      }
+    ],
+    "errors": []
+  },
+  "photos-1440x2": {
+    "beforeScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/1200.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/pepper-house/1200.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/bare-chic/800.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/800.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/pepper-house/800.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/800.avif",
+          "kb": 0,
+          "at": 20
+        }
+      ]
+    },
+    "afterScroll": {
+      "fetched": [
+        {
+          "file": "/dev-client-media/bare-chic/1200.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/pepper-house/1200.avif",
+          "kb": 0,
+          "at": 8
+        },
+        {
+          "file": "/dev-client-media/bare-chic/800.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-hyphen/800.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/pepper-house/800.avif",
+          "kb": 0,
+          "at": 20
+        },
+        {
+          "file": "/dev-client-media/bare-da-kao/800.avif",
+          "kb": 0,
+          "at": 20
+        }
+      ],
+      "images": [
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/bare-chic/1200.avif",
+          "rendered": [
+            246,
+            322
+          ],
+          "natural": [
+            496,
+            330
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "stage",
+          "property": null,
+          "currentSrc": "/dev-client-media/pepper-house/1200.avif",
+          "rendered": [
+            246,
+            322
+          ],
+          "natural": [
+            496,
+            330
+          ],
+          "loading": null,
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Chic",
+          "currentSrc": "/dev-client-media/bare-chic/800.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "55% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Hyphen",
+          "currentSrc": "/dev-client-media/bare-hyphen/800.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "33% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Bare Đa Kao",
+          "currentSrc": "/dev-client-media/bare-da-kao/800.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "50% 50%",
+          "complete": true
+        },
+        {
+          "in": "card",
+          "property": "Pepper House",
+          "currentSrc": "/dev-client-media/pepper-house/800.avif",
+          "rendered": [
+            384,
+            256
+          ],
+          "natural": [
+            384,
+            255
+          ],
+          "loading": "lazy",
+          "alt": "",
+          "objectPosition": "20% 50%",
+          "complete": true
+        }
+      ]
+    },
+    "bareStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-chic/1200.avif",
+        "rendered": [
+          184,
+          322
+        ],
+        "natural": [
+          496,
+          330
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-hyphen/1200.avif",
+        "rendered": [
+          184,
+          322
+        ],
+        "natural": [
+          496,
+          330
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/bare-da-kao/1200.avif",
+        "rendered": [
+          184,
+          322
+        ],
+        "natural": [
+          496,
+          330
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Chic",
+        "currentSrc": "/dev-client-media/bare-chic/1200.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          256
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "55% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Hyphen",
+        "currentSrc": "/dev-client-media/bare-hyphen/800.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          255
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "33% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Bare Đa Kao",
+        "currentSrc": "/dev-client-media/bare-da-kao/800.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          255
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "50% 50%",
+        "complete": true
+      }
+    ],
+    "pepperStage": [
+      {
+        "in": "stage",
+        "property": null,
+        "currentSrc": "/dev-client-media/pepper-house/1600.avif",
+        "rendered": [
+          743,
+          322
+        ],
+        "natural": [
+          736,
+          490
+        ],
+        "loading": null,
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      },
+      {
+        "in": "card",
+        "property": "Pepper House",
+        "currentSrc": "/dev-client-media/pepper-house/1200.avif",
+        "rendered": [
+          384,
+          256
+        ],
+        "natural": [
+          384,
+          256
+        ],
+        "loading": "lazy",
+        "alt": "",
+        "objectPosition": "20% 50%",
+        "complete": true
+      }
+    ],
+    "errors": []
+  },
+  "lazyLoading": {
+    "gridTopBeforeScroll": 4841,
+    "beforeScroll": [
+      "/dev-client-media/bare-chic/480.avif",
+      "/dev-client-media/pepper-house/480.avif"
+    ],
+    "afterScroll": [
+      "/dev-client-media/bare-chic/480.avif",
+      "/dev-client-media/pepper-house/480.avif",
+      "/dev-client-media/bare-da-kao/480.avif",
+      "/dev-client-media/bare-hyphen/480.avif"
+    ],
+    "cardFiles": [
+      "/dev-client-media/bare-chic/480.avif",
+      "/dev-client-media/bare-hyphen/480.avif",
+      "/dev-client-media/bare-da-kao/480.avif",
+      "/dev-client-media/pepper-house/480.avif"
+    ],
+    "cardFilesFetchedBeforeScroll": [
+      "/dev-client-media/bare-chic/480.avif",
+      "/dev-client-media/pepper-house/480.avif"
+    ]
+  },
+  "location-390": {
+    "closed": [
+      {
+        "name": "Bare Chic",
+        "label": "TP.HCM · Quận 1",
+        "accessibleName": "TP.HCM · Quận 1, xem địa chỉ Bare Chic",
+        "expanded": "false",
+        "target": [
+          122,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Bare Hyphen",
+        "label": "TP.HCM",
+        "accessibleName": "TP.HCM, xem địa chỉ Bare Hyphen",
+        "expanded": "false",
+        "target": [
+          67,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Bare Đa Kao",
+        "label": "TP.HCM",
+        "accessibleName": "TP.HCM, xem địa chỉ Bare Đa Kao",
+        "expanded": "false",
+        "target": [
+          67,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Bare Hàn",
+        "label": "Đà Nẵng · Hải Châu",
+        "accessibleName": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "expanded": "false",
+        "target": [
+          144,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "The Nắng Suites",
+        "label": "Đà Nẵng · Sơn Trà",
+        "accessibleName": "Đà Nẵng · Sơn Trà, xem địa chỉ The Nắng Suites",
+        "expanded": "false",
+        "target": [
+          133,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Pepper House",
+        "label": "TP.HCM · Quận 1",
+        "accessibleName": "TP.HCM · Quận 1, xem địa chỉ Pepper House",
+        "expanded": "false",
+        "target": [
+          122,
+          44
+        ],
+        "panel": null
+      }
+    ],
+    "chicOpen": [
+      {
+        "name": "Bare Chic",
+        "label": "TP.HCM · Quận 1",
+        "accessibleName": "TP.HCM · Quận 1, xem địa chỉ Bare Chic",
+        "expanded": "true",
+        "target": [
+          122,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | 12/18 Nguyễn Thị Minh Khai | Phường Sài Gòn, Hồ Chí Minh | Xem bản đồ | Bare Chic trên Google Maps (mở thẻ mới) | ↗",
+          "left": 17,
+          "right": 190,
+          "width": 173,
+          "role": "region",
+          "label": "Địa chỉ Bare Chic",
+          "mapLink": "https://share.google/fskgZreXVjowaoQCO",
+          "mapLinkName": "Xem bản đồ Bare Chic trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "nangOpen": [
+      {
+        "name": "The Nắng Suites",
+        "label": "Đà Nẵng · Sơn Trà",
+        "accessibleName": "Đà Nẵng · Sơn Trà, xem địa chỉ The Nắng Suites",
+        "expanded": "true",
+        "target": [
+          133,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | Sơn Trà, Đà Nẵng | Số nhà đang chờ VNest xác nhận · Phường hiện hành chờ VNest xác nhận. | Xem bản đồ | The Nắng Suites trên Google Maps (mở thẻ mới) | ↗",
+          "left": 17,
+          "right": 190,
+          "width": 173,
+          "role": "region",
+          "label": "Địa chỉ The Nắng Suites",
+          "mapLink": "https://share.google/OZaB9ncAnVW8ijALJ",
+          "mapLinkName": "Xem bản đồ The Nắng Suites trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "afterOutside": 0,
+    "hanOpen": [
+      {
+        "name": "Bare Hàn",
+        "label": "Đà Nẵng · Hải Châu",
+        "accessibleName": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "expanded": "true",
+        "target": [
+          144,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | K169/14 Trần Phú | Hải Châu, Đà Nẵng | Địa chỉ theo VNest, chưa đối chiếu được · Phường hiện hành chờ VNest xác nhận. | Xem bản đồ | Bare Hàn trên Google Maps (mở thẻ mới) | ↗",
+          "left": 200,
+          "right": 373,
+          "width": 173,
+          "role": "region",
+          "label": "Địa chỉ Bare Hàn",
+          "mapLink": "https://share.google/Zmxp6tjY7ZyBmBBud",
+          "mapLinkName": "Xem bản đồ Bare Hàn trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "longAddress": [
+      {
+        "name": "Bare Hàn",
+        "label": "Đà Nẵng · Hải Châu",
+        "accessibleName": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "expanded": "true",
+        "target": [
+          144,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | K169/14 Kiệt Trần Phú nối dài, ngõ sau Chợ Hàn, cạnh Nhà thờ Chính toà Đà Nẵng | Hải Châu, Đà Nẵng | Địa chỉ theo VNest, chưa đối chiếu được · Phường hiện hành chờ VNest xác nhận. | Xem bản đồ | Bare Hàn trên Google Maps (mở thẻ mới) | ↗",
+          "left": 200,
+          "right": 373,
+          "width": 173,
+          "role": "region",
+          "label": "Địa chỉ Bare Hàn",
+          "mapLink": "https://share.google/Zmxp6tjY7ZyBmBBud",
+          "mapLinkName": "Xem bản đồ Bare Hàn trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "overflowPx": 0,
+    "afterFilter": {
+      "expanded": 0,
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ]
+    },
+    "errors": []
+  },
+  "location-1440": {
+    "closed": [
+      {
+        "name": "Bare Chic",
+        "label": "TP.HCM · Quận 1",
+        "accessibleName": "TP.HCM · Quận 1, xem địa chỉ Bare Chic",
+        "expanded": "false",
+        "target": [
+          122,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Bare Hyphen",
+        "label": "TP.HCM",
+        "accessibleName": "TP.HCM, xem địa chỉ Bare Hyphen",
+        "expanded": "false",
+        "target": [
+          67,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Bare Đa Kao",
+        "label": "TP.HCM",
+        "accessibleName": "TP.HCM, xem địa chỉ Bare Đa Kao",
+        "expanded": "false",
+        "target": [
+          67,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Bare Hàn",
+        "label": "Đà Nẵng · Hải Châu",
+        "accessibleName": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "expanded": "false",
+        "target": [
+          144,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "The Nắng Suites",
+        "label": "Đà Nẵng · Sơn Trà",
+        "accessibleName": "Đà Nẵng · Sơn Trà, xem địa chỉ The Nắng Suites",
+        "expanded": "false",
+        "target": [
+          133,
+          44
+        ],
+        "panel": null
+      },
+      {
+        "name": "Pepper House",
+        "label": "TP.HCM · Quận 1",
+        "accessibleName": "TP.HCM · Quận 1, xem địa chỉ Pepper House",
+        "expanded": "false",
+        "target": [
+          122,
+          44
+        ],
+        "panel": null
+      }
+    ],
+    "chicOpen": [
+      {
+        "name": "Bare Chic",
+        "label": "TP.HCM · Quận 1",
+        "accessibleName": "TP.HCM · Quận 1, xem địa chỉ Bare Chic",
+        "expanded": "true",
+        "target": [
+          122,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | 12/18 Nguyễn Thị Minh Khai | Phường Sài Gòn, Hồ Chí Minh | Xem bản đồ | Bare Chic trên Google Maps (mở thẻ mới) | ↗",
+          "left": 120,
+          "right": 504,
+          "width": 384,
+          "role": "region",
+          "label": "Địa chỉ Bare Chic",
+          "mapLink": "https://share.google/fskgZreXVjowaoQCO",
+          "mapLinkName": "Xem bản đồ Bare Chic trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "nangOpen": [
+      {
+        "name": "The Nắng Suites",
+        "label": "Đà Nẵng · Sơn Trà",
+        "accessibleName": "Đà Nẵng · Sơn Trà, xem địa chỉ The Nắng Suites",
+        "expanded": "true",
+        "target": [
+          133,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | Sơn Trà, Đà Nẵng | Số nhà đang chờ VNest xác nhận · Phường hiện hành chờ VNest xác nhận. | Xem bản đồ | The Nắng Suites trên Google Maps (mở thẻ mới) | ↗",
+          "left": 528,
+          "right": 912,
+          "width": 384,
+          "role": "region",
+          "label": "Địa chỉ The Nắng Suites",
+          "mapLink": "https://share.google/OZaB9ncAnVW8ijALJ",
+          "mapLinkName": "Xem bản đồ The Nắng Suites trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "afterOutside": 0,
+    "hanOpen": [
+      {
+        "name": "Bare Hàn",
+        "label": "Đà Nẵng · Hải Châu",
+        "accessibleName": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "expanded": "true",
+        "target": [
+          144,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | K169/14 Trần Phú | Hải Châu, Đà Nẵng | Địa chỉ theo VNest, chưa đối chiếu được · Phường hiện hành chờ VNest xác nhận. | Xem bản đồ | Bare Hàn trên Google Maps (mở thẻ mới) | ↗",
+          "left": 120,
+          "right": 504,
+          "width": 384,
+          "role": "region",
+          "label": "Địa chỉ Bare Hàn",
+          "mapLink": "https://share.google/Zmxp6tjY7ZyBmBBud",
+          "mapLinkName": "Xem bản đồ Bare Hàn trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "longAddress": [
+      {
+        "name": "Bare Hàn",
+        "label": "Đà Nẵng · Hải Châu",
+        "accessibleName": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "expanded": "true",
+        "target": [
+          144,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | K169/14 Kiệt Trần Phú nối dài, ngõ sau Chợ Hàn, cạnh Nhà thờ Chính toà Đà Nẵng | Hải Châu, Đà Nẵng | Địa chỉ theo VNest, chưa đối chiếu được · Phường hiện hành chờ VNest xác nhận. | Xem bản đồ | Bare Hàn trên Google Maps (mở thẻ mới) | ↗",
+          "left": 120,
+          "right": 504,
+          "width": 384,
+          "role": "region",
+          "label": "Địa chỉ Bare Hàn",
+          "mapLink": "https://share.google/Zmxp6tjY7ZyBmBBud",
+          "mapLinkName": "Xem bản đồ Bare Hàn trên Google Maps (mở thẻ mới)↗",
+          "clipped": 0
+        }
+      }
+    ],
+    "overflowPx": 0,
+    "afterFilter": {
+      "expanded": 0,
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ]
+    },
+    "errors": []
+  },
+  "locationKeyboard": {
+    "start": {
+      "tag": "button",
+      "text": "TP.HCM · Quận 1, xem địa chỉ Pepper House",
+      "outline": "none 3px"
+    },
+    "afterEnter": {
+      "expanded": "true",
+      "focus": {
+        "tag": "button",
+        "text": "TP.HCM · Quận 1, xem địa chỉ Pepper House",
+        "outline": "none 3px"
+      }
+    },
+    "tabIntoPanel": {
+      "tag": "a",
+      "text": "Xem bản đồ Pepper House trên Google Maps (mở thẻ mới)↗",
+      "outline": "solid 2px"
+    },
+    "afterEscape": {
+      "expanded": "false",
+      "focus": {
+        "tag": "button",
+        "text": "TP.HCM · Quận 1, xem địa chỉ Pepper House",
+        "outline": "none 3px"
+      }
+    },
+    "spaceOpens": "true",
+    "spaceCloses": "false",
+    "hyphenPanel": [
+      {
+        "name": "Bare Hyphen",
+        "label": "TP.HCM",
+        "accessibleName": "TP.HCM, xem địa chỉ Bare Hyphen",
+        "expanded": "true",
+        "target": [
+          67,
+          44
+        ],
+        "panel": {
+          "text": "Địa chỉ | 29A/18 Nguyễn Đình Chiểu | Phường Sài Gòn, Hồ Chí Minh | Đường dẫn bản đồ chờ VNest xác nhận.",
+          "left": 528,
+          "right": 912,
+          "width": 384,
+          "role": "region",
+          "label": "Địa chỉ Bare Hyphen",
+          "mapLink": null,
+          "mapLinkName": null,
+          "clipped": 0
+        }
+      }
+    ],
+    "errors": []
+  },
+  "matrixBrandThenCity": {
+    "Tất cả thương hiệu × Mọi thành phố": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn",
+        "The Nắng Suites",
+        "Pepper House"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "address": "",
+      "note": null
+    },
+    "Tất cả thương hiệu × TP. Hồ Chí Minh": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Pepper House"
+      ],
+      "summary": "4 nơi ở · TP. Hồ Chí Minh",
+      "address": "?city=ho-chi-minh",
+      "note": null
+    },
+    "Tất cả thương hiệu × Đà Nẵng": {
+      "cards": [
+        "Bare Hàn",
+        "The Nắng Suites"
+      ],
+      "summary": "2 nơi ở · Đà Nẵng",
+      "address": "?city=da-nang",
+      "note": null
+    },
+    "Bare Boutique Stays × Mọi thành phố": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ],
+      "summary": "4 nơi ở · Bare Boutique Stays",
+      "address": "?brand=bare",
+      "note": null
+    },
+    "Bare Boutique Stays × TP. Hồ Chí Minh": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao"
+      ],
+      "summary": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh",
+      "address": "?brand=bare&city=ho-chi-minh",
+      "note": null
+    },
+    "Bare Boutique Stays × Đà Nẵng": {
+      "cards": [
+        "Bare Hàn"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "address": "?brand=bare&city=da-nang",
+      "note": null
+    },
+    "The Nắng Suites × Mọi thành phố": {
+      "cards": [
+        "The Nắng Suites"
+      ],
+      "summary": "1 nơi ở · The Nắng Suites",
+      "address": "?brand=the-nang",
+      "note": null
+    },
+    "The Nắng Suites × TP. Hồ Chí Minh": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Pepper House"
+      ],
+      "summary": "4 nơi ở · TP. Hồ Chí MinhThe Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc thương hiệu đã được bỏ.",
+      "address": "?city=ho-chi-minh",
+      "note": "The Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc thương hiệu đã được bỏ."
+    },
+    "The Nắng Suites × Đà Nẵng": {
+      "cards": [
+        "The Nắng Suites"
+      ],
+      "summary": "1 nơi ở · The Nắng Suites · Đà Nẵng",
+      "address": "?brand=the-nang&city=da-nang",
+      "note": null
+    },
+    "Pepper House × Mọi thành phố": {
+      "cards": [
+        "Pepper House"
+      ],
+      "summary": "1 nơi ở · Pepper House",
+      "address": "?brand=pepper-house",
+      "note": null
+    },
+    "Pepper House × TP. Hồ Chí Minh": {
+      "cards": [
+        "Pepper House"
+      ],
+      "summary": "1 nơi ở · Pepper House · TP. Hồ Chí Minh",
+      "address": "?brand=pepper-house&city=ho-chi-minh",
+      "note": null
+    },
+    "Pepper House × Đà Nẵng": {
+      "cards": [
+        "Bare Hàn",
+        "The Nắng Suites"
+      ],
+      "summary": "2 nơi ở · Đà NẵngPepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc thương hiệu đã được bỏ.",
+      "address": "?city=da-nang",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc thương hiệu đã được bỏ."
+    }
+  },
+  "conflictsCityThenBrand": {
+    "TP. Hồ Chí Minh then The Nắng Suites": {
+      "cards": [
+        "The Nắng Suites / Đà Nẵng · Sơn Trà"
+      ],
+      "summary": "1 nơi ở · The Nắng SuitesThe Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "The Nắng Suites, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=the-nang",
+      "note": "The Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc địa điểm đã được bỏ."
+    },
+    "Đà Nẵng then Pepper House": {
+      "cards": [
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=pepper-house",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+    }
+  },
+  "address": {
+    "sharedLink": {
+      "cards": [
+        "Bare Hàn / Đà Nẵng · Hải Châu"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "chosen": [
+        "Bare Boutique Stays, 1 nơi ở",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "compactCity": "da-nang",
+      "address": "?brand=bare&city=da-nang"
+    },
+    "afterReload": {
+      "cards": [
+        "Bare Hàn / Đà Nẵng · Hải Châu"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "chosen": [
+        "Bare Boutique Stays, 1 nơi ở",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "compactCity": "da-nang",
+      "address": "?brand=bare&city=da-nang"
+    },
+    "contradictoryLink": {
+      "cards": [
+        "Bare Hàn / Đà Nẵng · Hải Châu",
+        "The Nắng Suites / Đà Nẵng · Sơn Trà"
+      ],
+      "summary": "2 nơi ở · Đà Nẵng",
+      "chosen": [
+        "Tất cả thương hiệu, 2 nơi ở",
+        "Đà Nẵng, 2 nơi ở"
+      ],
+      "compactCity": "da-nang",
+      "address": "?city=da-nang"
+    }
+  },
+  "keyboard": {
+    "focusOrder": [
+      {
+        "label": "Xem bản dữ liệu mẫu",
+        "role": "a",
+        "outline": "solid 2px rgb(241, 236, 228)"
+      },
+      {
+        "label": "Tất cả thương hiệu, 6 nơi ở",
+        "role": "radio",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Mọi thành phố, 6 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "TP. Hồ Chí Minh, 4 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Đà Nẵng, 2 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "TP.HCM · Quận 1, xem địa chỉ Bare Chic",
+        "role": "button",
+        "outline": "none 3px rgb(91, 97, 82)"
+      },
+      {
+        "label": "TP.HCM, xem địa chỉ Bare Hyphen",
+        "role": "button",
+        "outline": "none 3px rgb(91, 97, 82)"
+      },
+      {
+        "label": "TP.HCM, xem địa chỉ Bare Đa Kao",
+        "role": "button",
+        "outline": "none 3px rgb(91, 97, 82)"
+      },
+      {
+        "label": "Đà Nẵng · Hải Châu, xem địa chỉ Bare Hàn",
+        "role": "button",
+        "outline": "none 3px rgb(91, 97, 82)"
+      }
+    ],
+    "arrowRight": {
+      "cards": [
+        "Bare Chic / TP.HCM · Quận 1",
+        "Bare Hyphen / TP.HCM",
+        "Bare Đa Kao / TP.HCM",
+        "Bare Hàn / Đà Nẵng · Hải Châu"
+      ],
+      "summary": "4 nơi ở · Bare Boutique Stays",
+      "chosen": [
+        "Bare Boutique Stays, 4 nơi ở",
+        "Mọi thành phố, 4 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=bare"
+    },
+    "end": {
+      "cards": [
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "1 nơi ở · Pepper House",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=pepper-house"
+    },
+    "home": {
+      "cards": [
+        "Bare Chic / TP.HCM · Quận 1",
+        "Bare Hyphen / TP.HCM",
+        "Bare Đa Kao / TP.HCM",
+        "Bare Hàn / Đà Nẵng · Hải Châu",
+        "The Nắng Suites / Đà Nẵng · Sơn Trà",
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "compactCity": "",
+      "address": ""
+    },
+    "arrowLeftWraps": {
+      "cards": [
+        "Pepper House / TP.HCM · Quận 1"
+      ],
+      "summary": "1 nơi ở · Pepper House",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "compactCity": "",
+      "address": "?brand=pepper-house"
+    },
+    "tabStopsInRadiogroup": 1
+  },
+  "structure": {
+    "lang": "vi",
+    "headings": [
+      "H1 Bộ sưu tập thương hiệu VNest · bản xem trước với d",
+      "H2 Ba thương hiệu, một sợi chỉ nối.",
+      "H3 Tất cả thương hiệu VNest",
+      "H3 Bare Chic",
+      "H3 Bare Hyphen",
+      "H3 Bare Đa Kao",
+      "H3 Bare Hàn",
+      "H3 The Nắng Suites",
+      "H3 Pepper House"
+    ],
+    "main": 1,
+    "radiogroup": "Thương hiệu",
+    "liveRegion": "polite",
+    "listLabelledBy": "Tất cả 6 nơi ở",
+    "placeholdersHiddenFromAT": true,
+    "imagesWithoutAlt": 0,
+    "contrast": {
+      "placeholderTag": {
+        "text": "rgb(55, 65, 47)",
+        "background": "rgb(241, 236, 228)",
+        "ratio": 9.11,
+        "size": "10px",
+        "weight": "600"
+      },
+      "placeholderReason": {
+        "text": "rgb(91, 97, 82)",
+        "background": "rgb(241, 236, 228)",
+        "ratio": 5.45,
+        "size": "11px",
+        "weight": "400"
+      },
+      "cardName": {
+        "text": "rgb(55, 65, 47)",
+        "background": "rgb(251, 249, 245)",
+        "ratio": 10.19,
+        "size": "16px",
+        "weight": "500"
+      },
+      "cardCity": null,
+      "review": {
+        "text": "rgb(241, 236, 228)",
+        "background": "rgb(55, 65, 47)",
+        "ratio": 9.11,
+        "size": "12px",
+        "weight": "400"
+      }
+    },
+    "reducedMotion": {
+      "cards": [
+        "none 0s",
+        "none 0s"
+      ],
+      "slicePlaceholders": [
+        "none 0s"
+      ]
+    }
+  },
+  "seo": {
+    "title": "Khảo sát: bộ sưu tập thương hiệu B · dữ liệu VNest | VNest",
+    "robotsMeta": "noindex, nofollow",
+    "canonical": "http://localhost:3000/dev/brand-collection/b-client",
+    "description": null,
+    "headHasClientAddress": false,
+    "h1": 1,
+    "xRobotsTag": "noindex, nofollow",
+    "inSitemap": false,
+    "robotsTxt": [
+      "User-Agent: *",
+      "Disallow: /"
+    ]
+  },
+  "performance": {
+    "desktop": {
+      "cls": 0,
+      "lcp": {
+        "time": 60,
+        "size": 79260,
+        "element": "IMG. "
+      },
+      "nav": {
+        "ttfb": 5,
+        "domContentLoaded": 18,
+        "load": 52
+      },
+      "resources": {
+        "count": 28,
+        "totalKB": 343,
+        "scriptKB": 145,
+        "cssKB": 17,
+        "imageKB": 99,
+        "images": [
+          "/dev-client-media/bare-chic/800.avif 25255B",
+          "/dev-client-media/pepper-house/800.avif 28573B",
+          "/dev-client-media/bare-chic/480.avif 11628B",
+          "/dev-client-media/bare-hyphen/480.avif 10712B",
+          "/dev-client-media/bare-da-kao/480.avif 12699B",
+          "/dev-client-media/pepper-house/480.avif 12179B"
+        ]
+      },
+      "clsAfterFiltering": 0.0007,
+      "stageHeights": [
+        422,
+        422,
+        422,
+        422
+      ]
+    },
+    "phone-slow4g-cpu4": {
+      "cls": 0,
+      "lcp": {
+        "time": 808,
+        "size": 48087,
+        "element": "P. Khảo sát B · dữ liệu VNest · chưa duyệt."
+      },
+      "nav": {
+        "ttfb": 6,
+        "domContentLoaded": 692,
+        "load": 2032
+      },
+      "resources": {
+        "count": 26,
+        "totalKB": 290,
+        "scriptKB": 145,
+        "cssKB": 17,
+        "imageKB": 46,
+        "images": [
+          "/dev-client-media/bare-chic/480.avif 11628B",
+          "/dev-client-media/pepper-house/480.avif 12179B",
+          "/dev-client-media/bare-hyphen/480.avif 10712B",
+          "/dev-client-media/bare-da-kao/480.avif 12699B"
+        ]
+      },
+      "clsAfterFiltering": 0,
+      "stageHeights": [
+        208,
+        208,
+        208,
+        208
+      ]
+    }
+  }
+}

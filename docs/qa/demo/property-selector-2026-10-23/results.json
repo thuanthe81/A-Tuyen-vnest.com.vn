@@ -1,0 +1,634 @@
+[
+  {
+    "w": 1440,
+    "h": 900,
+    "mode": "hero",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": false
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 1440,
+    "h": 900,
+    "mode": "sticky",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": false
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 768,
+    "h": 900,
+    "mode": "hero",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": false
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 768,
+    "h": 900,
+    "mode": "sticky",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": false
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 390,
+    "h": 844,
+    "mode": "hero",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": false
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 390,
+    "h": 844,
+    "mode": "sticky",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": false
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 1440,
+    "h": 500,
+    "mode": "hero",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": true
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  },
+  {
+    "w": 1440,
+    "h": 500,
+    "mode": "sticky",
+    "inventory": [
+      {
+        "id": "",
+        "text": "Tất cả cơ sở\nTìm ở mọi cơ sở VNest"
+      },
+      {
+        "id": "bare-chic",
+        "text": "Bare Chic\nTP.HCM · Quận 1"
+      },
+      {
+        "id": "bare-hyphen",
+        "text": "Bare Hyphen\nTP.HCM"
+      },
+      {
+        "id": "bare-da-kao",
+        "text": "Bare Đa Kao\nTP.HCM"
+      },
+      {
+        "id": "bare-han",
+        "text": "Bare Hàn\nĐà Nẵng · Hải Châu"
+      },
+      {
+        "id": "the-nang-suites",
+        "text": "The Nắng Suites\nĐà Nẵng · Sơn Trà"
+      },
+      {
+        "id": "pepper-house",
+        "text": "Pepper House\nTP.HCM · Quận 1"
+      }
+    ],
+    "geometry": {
+      "fits": true,
+      "overflow": false,
+      "scrollable": true
+    },
+    "lastChoiceReachable": true,
+    "keyboard": "bare-chic",
+    "choices": [
+      {
+        "id": "the-nang-suites",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-chic",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-hyphen",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-da-kao",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "bare-han",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "pepper-house",
+        "datesOpened": true,
+        "selectionPersisted": true
+      },
+      {
+        "id": "",
+        "datesOpened": true,
+        "selectionPersisted": true
+      }
+    ]
+  }
+]

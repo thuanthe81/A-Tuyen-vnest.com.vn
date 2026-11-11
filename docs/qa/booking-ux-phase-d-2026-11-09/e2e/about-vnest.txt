@@ -1,0 +1,28 @@
+▶ About VNest V2
+  ✔ @375: editorial banner, real text, no imagery, no overflow, not full-height (783.639333ms)
+  ✔ @390: editorial banner, real text, no imagery, no overflow, not full-height (747.404208ms)
+  ✔ @430: editorial banner, real text, no imagery, no overflow, not full-height (767.914375ms)
+  ✔ @768: editorial banner, real text, no imagery, no overflow, not full-height (759.935084ms)
+  ✔ @1440: editorial banner, real text, no imagery, no overflow, not full-height (709.257ms)
+  ✔ CTA scrolls to the contact section without changing the address; it is a real link to #lien-he (1515.778167ms)
+  ✔ @390: the footer link 'Về VNest' still reaches the section (940.965833ms)
+  ✔ the homepage keeps one h1 and About sits between the stays and the services (675.893541ms)
+✔ About VNest V2 (6965.306542ms)
+▶ About VNest V2 — bilingual compositions
+  ✔ vi @375: composition, no clipping, no awkward wrap, no overflow, no layout shift (1170.333958ms)
+  ✔ vi @390: composition, no clipping, no awkward wrap, no overflow, no layout shift (1165.096333ms)
+  ✔ vi @768: composition, no clipping, no awkward wrap, no overflow, no layout shift (1158.657417ms)
+  ✔ vi @1440: composition, no clipping, no awkward wrap, no overflow, no layout shift (1167.48675ms)
+  ✔ en @375: composition, no clipping, no awkward wrap, no overflow, no layout shift (1157.887625ms)
+  ✔ en @390: composition, no clipping, no awkward wrap, no overflow, no layout shift (1150.843083ms)
+  ✔ en @768: composition, no clipping, no awkward wrap, no overflow, no layout shift (1167.081042ms)
+  ✔ en @1440: composition, no clipping, no awkward wrap, no overflow, no layout shift (1094.93775ms)
+✔ About VNest V2 — bilingual compositions (9233.377666ms)
+ℹ tests 16
+ℹ suites 2
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16360.460041

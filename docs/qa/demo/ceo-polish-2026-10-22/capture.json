@@ -1,0 +1,146 @@
+[
+  {
+    "w": 1440,
+    "name": "all",
+    "overflow": false,
+    "selected": "Tất cả thương hiệu, 6 nơi ở",
+    "nangImages": [
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/800.avif"
+      },
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      }
+    ],
+    "result": "Tất cả 6 nơi ở"
+  },
+  {
+    "w": 1440,
+    "name": "nang",
+    "overflow": false,
+    "selected": "The Nắng Suites, 1 nơi ở",
+    "nangImages": [
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/800.avif"
+      },
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/800.avif"
+      }
+    ],
+    "result": "1 nơi ở · The Nắng Suites"
+  },
+  {
+    "w": 1440,
+    "name": "about",
+    "overflow": false,
+    "broken": [],
+    "height": 1078
+  },
+  {
+    "w": 1440,
+    "name": "partner",
+    "overflow": false,
+    "broken": [],
+    "height": 1013
+  },
+  {
+    "w": 390,
+    "name": "all",
+    "overflow": false,
+    "selected": "Tất cả thương hiệu, 6 nơi ở",
+    "nangImages": [
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      },
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      }
+    ],
+    "result": "Tất cả 6 nơi ở"
+  },
+  {
+    "w": 390,
+    "name": "nang",
+    "overflow": false,
+    "selected": "The Nắng Suites, 1 nơi ở",
+    "nangImages": [
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      },
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      }
+    ],
+    "result": "1 nơi ở · The Nắng Suites"
+  },
+  {
+    "w": 390,
+    "name": "about",
+    "overflow": false,
+    "broken": [],
+    "height": 1659
+  },
+  {
+    "w": 390,
+    "name": "partner",
+    "overflow": false,
+    "broken": [],
+    "height": 1744
+  },
+  {
+    "w": 768,
+    "name": "all",
+    "overflow": false,
+    "selected": "Tất cả thương hiệu, 6 nơi ở",
+    "nangImages": [
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      },
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      }
+    ],
+    "result": "Tất cả 6 nơi ở"
+  },
+  {
+    "w": 768,
+    "name": "nang",
+    "overflow": false,
+    "selected": "The Nắng Suites, 1 nơi ở",
+    "nangImages": [
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/800.avif"
+      },
+      {
+        "loaded": true,
+        "src": "http://localhost:3400/dev-client-media/the-nang-suites/480.avif"
+      }
+    ],
+    "result": "1 nơi ở · The Nắng Suites"
+  },
+  {
+    "w": 768,
+    "name": "about",
+    "overflow": false,
+    "broken": [],
+    "height": 1678
+  },
+  {
+    "w": 768,
+    "name": "partner",
+    "overflow": false,
+    "broken": [],
+    "height": 1181
+  }
+]

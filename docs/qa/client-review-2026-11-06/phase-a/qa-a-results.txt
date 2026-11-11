@@ -1,0 +1,97 @@
+PASS @375 hero: no dots/arrows/caption, one pause control — {"dots":0,"buttons":["Tạm dừng trình chiếu ảnh"],"caption":false}
+PASS @375 hero autoplay advances — from 0 to 1
+PASS @375 hero dwell ≈ 3 s — 3008 ms
+PASS @375 pause stops rotation
+PASS @375 no horizontal overflow — 0px
+PASS @375 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @375 contact: details before form, one h2, same background, no DRAFT labels — {"infoFirst":true,"h2":1,"draft":false,"bgSame":true,"faqLine":"rgb(221, 213, 200)","tel":true}
+PASS @375 menu order, no numbers — Khám phá|Hợp tác|Hỏi đáp|Liên hệ
+PASS @375 menu fits without scrolling/overflow
+PASS @375 menu 'Liên hệ' reaches #lien-he, menu closed — top=119
+PASS @375 About CTA
+PASS @375 About CTA scrolls to contact — top=92
+PASS @375 service CTA lands on the form — top=96
+PASS @375 form never claims success
+PASS @375 no console/hydration errors
+PASS @390 hero: no dots/arrows/caption, one pause control — {"dots":0,"buttons":["Tạm dừng trình chiếu ảnh"],"caption":false}
+PASS @390 hero autoplay advances — from 0 to 1
+PASS @390 hero dwell ≈ 3 s — 3014 ms
+PASS @390 pause stops rotation
+PASS @390 no horizontal overflow — 0px
+PASS @390 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @390 contact: details before form, one h2, same background, no DRAFT labels — {"infoFirst":true,"h2":1,"draft":false,"bgSame":true,"faqLine":"rgb(221, 213, 200)","tel":true}
+PASS @390 menu order, no numbers — Khám phá|Hợp tác|Hỏi đáp|Liên hệ
+PASS @390 menu fits without scrolling/overflow
+PASS @390 menu 'Liên hệ' reaches #lien-he, menu closed — top=120
+PASS @390 About CTA
+PASS @390 About CTA scrolls to contact — top=92
+PASS @390 service CTA lands on the form — top=96
+PASS @390 form never claims success
+PASS @390 no console/hydration errors
+PASS @430 hero: no dots/arrows/caption, one pause control — {"dots":0,"buttons":["Tạm dừng trình chiếu ảnh"],"caption":false}
+PASS @430 hero autoplay advances — from 0 to 1
+PASS @430 hero dwell ≈ 3 s — 3012 ms
+PASS @430 pause stops rotation
+PASS @430 no horizontal overflow — 0px
+PASS @430 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @430 contact: details before form, one h2, same background, no DRAFT labels — {"infoFirst":true,"h2":1,"draft":false,"bgSame":true,"faqLine":"rgb(221, 213, 200)","tel":true}
+PASS @430 menu order, no numbers — Khám phá|Hợp tác|Hỏi đáp|Liên hệ
+PASS @430 menu fits without scrolling/overflow
+PASS @430 menu 'Liên hệ' reaches #lien-he, menu closed — top=117
+PASS @430 About CTA
+PASS @430 About CTA scrolls to contact — top=92
+PASS @430 service CTA lands on the form — top=96
+PASS @430 form never claims success
+PASS @430 no console/hydration errors
+PASS @768 hero: no dots/arrows/caption, one pause control — {"dots":0,"buttons":["Tạm dừng trình chiếu ảnh"],"caption":false}
+PASS @768 hero autoplay advances — from 0 to 1
+PASS @768 hero dwell ≈ 3 s — 3011 ms
+PASS @768 pause stops rotation
+PASS @768 no horizontal overflow — 0px
+PASS @768 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @768 contact: details before form, one h2, same background, no DRAFT labels — {"infoFirst":true,"h2":1,"draft":false,"bgSame":true,"faqLine":"rgb(221, 213, 200)","tel":true}
+PASS @768 menu order, no numbers — Khám phá|Hợp tác|Hỏi đáp|Liên hệ
+PASS @768 menu fits without scrolling/overflow
+PASS @768 menu 'Liên hệ' reaches #lien-he, menu closed — top=111
+PASS @768 About CTA
+PASS @768 About CTA scrolls to contact — top=92
+PASS @768 service CTA lands on the form — top=96
+PASS @768 form never claims success
+PASS @768 no console/hydration errors
+PASS @1024 hero: no dots/arrows/caption, one pause control — {"dots":0,"buttons":["Tạm dừng trình chiếu ảnh"],"caption":false}
+PASS @1024 hero autoplay advances — from 0 to 1
+PASS @1024 hero dwell ≈ 3 s — 2999 ms
+PASS @1024 pause stops rotation
+PASS @1024 no horizontal overflow — 0px
+PASS @1024 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @1024 contact: details before form, one h2, same background, no DRAFT labels — {"infoFirst":true,"h2":1,"draft":false,"bgSame":true,"faqLine":"rgb(221, 213, 200)","tel":true}
+PASS @1024 menu order, no numbers — Khám phá|Hợp tác|Hỏi đáp|Liên hệ
+PASS @1024 menu fits without scrolling/overflow
+PASS @1024 menu 'Liên hệ' reaches #lien-he, menu closed — top=92
+PASS @1024 About CTA
+PASS @1024 About CTA scrolls to contact — top=92
+PASS @1024 service CTA lands on the form — top=96
+PASS @1024 form never claims success
+PASS @1024 no console/hydration errors
+PASS @1440 hero: no dots/arrows/caption, one pause control — {"dots":0,"buttons":["Tạm dừng trình chiếu ảnh"],"caption":false}
+PASS @1440 hero autoplay advances — from 0 to 1
+PASS @1440 hero dwell ≈ 3 s — 3002 ms
+PASS @1440 pause stops rotation
+PASS @1440 no horizontal overflow — 0px
+PASS @1440 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @1440 contact: details before form, one h2, same background, no DRAFT labels — {"infoFirst":true,"h2":1,"draft":false,"bgSame":true,"faqLine":"rgb(221, 213, 200)","tel":true}
+PASS @1440 menu order, no numbers — Khám phá|Hợp tác|Hỏi đáp|Liên hệ
+PASS @1440 menu fits without scrolling/overflow
+PASS @1440 menu 'Liên hệ' reaches #lien-he, menu closed — top=92
+PASS @1440 About CTA
+PASS @1440 About CTA scrolls to contact — top=92
+PASS @1440 service CTA lands on the form — top=96
+PASS @1440 form never claims success
+PASS @1440 no console/hydration errors
+PASS reduced motion: starts paused, no fade — Tiếp tục trình chiếu ảnh, 0s
+PASS EN: menu, About CTA, contact form — Explore|Partner|FAQ|Contact / Contact VNest
+→
+PASS EN: no page errors
+PASS property page keeps the full footer with contact + CTA — {"v":"full","tel":true,"cta":"Gửi yêu cầu tư vấn\n→"}
+
+94/94 passed

@@ -1,0 +1,48 @@
+{
+  "files": 6,
+  "changed": 2,
+  "report": {
+    "a-original-1440-all.png": {
+      "size": [
+        1440,
+        1646
+      ],
+      "differentPixels": 189
+    },
+    "a-original-1440-bare.png": {
+      "size": [
+        1440,
+        1646
+      ],
+      "differentPixels": 167
+    },
+    "a-original-390-all.png": {
+      "size": [
+        780,
+        5872
+      ],
+      "differentPixels": 0
+    },
+    "a-original-390-bare.png": {
+      "size": [
+        780,
+        4534
+      ],
+      "differentPixels": 0
+    },
+    "a-original-768-all.png": {
+      "size": [
+        1536,
+        4038
+      ],
+      "differentPixels": 0
+    },
+    "a-original-768-bare.png": {
+      "size": [
+        1536,
+        3376
+      ],
+      "differentPixels": 0
+    }
+  }
+}

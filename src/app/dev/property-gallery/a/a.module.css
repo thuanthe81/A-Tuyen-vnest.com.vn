@@ -1,0 +1,630 @@
+/*
+ * CONCEPT A, "Architectural Editorial". Exploration only; scoped to this route.
+ * Colours and the display face are provisional, like the site's own tokens.
+ * Written phone first; the composed spread starts at 768px.
+ */
+.root {
+  --a-paper: #f3f1ea;
+  --a-ink: #1a1c1a;
+  /* 5.9:1 on the paper. */
+  --a-muted: #595b55;
+  --a-line: #cbc8bd;
+  --a-display: var(--font-concept-a), Georgia, "Times New Roman", serif;
+  --vn-focus: var(--a-ink);
+  background: var(--a-paper);
+  color: var(--a-ink);
+}
+
+/* ---------- Identity ---------- */
+
+.spread {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.identity {
+  padding: 0.5rem var(--vn-gutter) 1.75rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--a-muted);
+}
+
+.meta::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+}
+
+/* Line height stays above 1: Vietnamese stacks two marks on one vowel. */
+.name {
+  margin-top: 0.875rem;
+  font-family: var(--a-display);
+  font-size: clamp(2.75rem, 13vw, 3.5rem);
+  font-weight: 350;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.statement {
+  max-width: 24rem;
+  margin-top: 0.875rem;
+  font-family: var(--a-display);
+  font-size: 1.1875rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.cta {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: 3.25rem;
+  padding-inline: 1.25rem 1rem;
+  border-radius: 2px;
+  background: var(--bk-cta);
+  color: var(--bk-on-cta);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color var(--vn-duration-fast);
+}
+
+.cta:hover {
+  background: var(--bk-cta-hover);
+}
+
+.textLink {
+  height: 2.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: var(--a-line);
+  text-underline-offset: 0.4em;
+  cursor: pointer;
+}
+
+.textLink:hover {
+  text-decoration-color: currentColor;
+}
+
+/* ---------- Plates: a strip to swipe on a phone ---------- */
+
+.plates {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-inline: var(--vn-gutter);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--vn-gutter);
+  scrollbar-width: none;
+}
+
+.plates::-webkit-scrollbar {
+  display: none;
+}
+
+.plate {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #dcd9cf;
+  cursor: zoom-in;
+}
+
+/* Different proportions and a dropped top edge: the strip is a composition, not a row of equal slides. */
+.p1 {
+  width: 78vw;
+}
+.p1 .frame {
+  aspect-ratio: 4 / 5;
+}
+.p2 {
+  width: 56vw;
+  margin-top: 3.5rem;
+}
+.p2 .frame {
+  aspect-ratio: 3 / 4;
+}
+.p3 {
+  width: 84vw;
+  margin-top: 1.25rem;
+}
+.p3 .frame {
+  aspect-ratio: 4 / 3;
+}
+.p4 {
+  width: 60vw;
+}
+.p4 .frame {
+  aspect-ratio: 3 / 4;
+}
+.p5 {
+  width: 68vw;
+  margin-top: 2.5rem;
+}
+.p5 .frame {
+  aspect-ratio: 1;
+}
+
+.caption {
+  display: flex;
+  align-items: baseline;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+  font-size: 0.75rem;
+  color: var(--a-muted);
+}
+
+.plateNo {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--a-ink);
+}
+
+.standIn,
+.more {
+  position: absolute;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.standIn {
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: rgb(26 28 26 / 0.75);
+  color: #fff;
+}
+
+.more {
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 1rem;
+  background: var(--a-ink);
+  color: var(--a-paper);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+/* ---------- Plate index ---------- */
+
+.index {
+  padding: 1.25rem var(--vn-gutter) 0;
+}
+
+.index ol {
+  display: flex;
+  border-top: 1px solid var(--a-line);
+}
+
+.index li {
+  flex: 1;
+}
+
+.index button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 2.75rem;
+  margin-top: -1px;
+  border-top: 2px solid transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.index button .plateNo {
+  color: var(--a-muted);
+}
+
+.index button[aria-current] {
+  border-top-color: var(--a-ink);
+}
+
+.index button[aria-current] .plateNo {
+  color: var(--a-ink);
+}
+
+.indexTitle {
+  display: none;
+  font-size: 0.875rem;
+}
+
+.indexAll {
+  flex: 2.6;
+}
+
+.indexAll button {
+  justify-content: flex-end;
+}
+
+.indexAll .plateNo {
+  display: none;
+}
+
+.indexAll .indexTitle {
+  display: inline;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--a-line);
+  text-underline-offset: 0.4em;
+}
+
+.quote {
+  max-width: 22rem;
+  margin-top: 3rem;
+  padding-inline: var(--vn-gutter);
+  font-family: var(--a-display);
+  font-size: 1.5rem;
+  font-weight: 350;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
+}
+
+/* ---------- The way into amenities ---------- */
+
+.legend {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding: 0 var(--vn-gutter) 4.5rem;
+}
+
+.legendHead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  align-items: baseline;
+  padding-top: 1rem;
+  border-top: 1px solid var(--a-ink);
+}
+
+.sectionNo {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.legendTitle {
+  font-family: var(--a-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 350;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.stubNote {
+  grid-column: 2;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--a-muted);
+}
+
+.legendList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.legendList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 3.5rem;
+  border-top: 1px solid var(--a-line);
+  font-size: 0.9375rem;
+}
+
+.key {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--a-ink);
+  border-radius: 50%;
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+/* ---------- The booking action, once the first one has scrolled away ---------- */
+
+.dock {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem var(--vn-gutter) calc(0.75rem + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--a-line);
+  background: var(--a-paper);
+  visibility: hidden;
+  translate: 0 100%;
+  transition:
+    translate var(--vn-duration-base) var(--vn-ease-out),
+    visibility var(--vn-duration-base);
+}
+
+.dock[data-show] {
+  visibility: visible;
+  translate: 0;
+}
+
+.dock .cta {
+  flex: none;
+}
+
+.dockName {
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--a-display);
+  font-size: 1.125rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- The composed spread ---------- */
+
+@media (min-width: 48rem) {
+  .spread {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: auto 1fr auto auto;
+    column-gap: clamp(0.75rem, 1.7vw, 1.5rem);
+    max-width: 100rem;
+    margin-inline: auto;
+    /* No right padding: the plates on the right run off the page edge. */
+    padding: 0 0 clamp(5rem, 9vw, 8rem) var(--vn-gutter);
+  }
+
+  .identity {
+    grid-row: 1;
+    grid-column: 1 / span 5;
+    padding: clamp(0.5rem, 3vh, 2.5rem) 0 2rem;
+  }
+
+  .name {
+    font-size: clamp(3.25rem, 7.2vw, 6.75rem);
+  }
+
+  .statement {
+    font-size: clamp(1.1875rem, 1.6vw, 1.5rem);
+  }
+
+  .actions {
+    margin-top: 2rem;
+  }
+
+  .actions .cta {
+    flex: none;
+    min-width: 14rem;
+  }
+
+  .index {
+    grid-row: 2;
+    grid-column: 1 / span 4;
+    align-self: end;
+    padding: 0;
+  }
+
+  .index ol {
+    display: block;
+    border-top: 0;
+  }
+
+  .index button,
+  .index button[aria-current] {
+    gap: 1.25rem;
+    margin-top: 0;
+    border-top: 1px solid var(--a-line);
+    transition:
+      padding-left var(--vn-duration-base) var(--vn-ease-out),
+      border-color var(--vn-duration-fast);
+  }
+
+  .index button:is(:hover, :focus-visible) {
+    padding-left: 0.625rem;
+    border-top-color: var(--a-ink);
+  }
+
+  .index button .plateNo,
+  .indexAll .plateNo {
+    display: inline;
+    min-width: 1.5rem;
+    color: var(--a-muted);
+  }
+
+  .indexTitle {
+    display: inline;
+  }
+
+  .indexAll button {
+    justify-content: flex-start;
+  }
+
+  .plates {
+    display: contents;
+  }
+
+  .plate {
+    width: auto;
+    margin-top: 0;
+    transition: opacity var(--vn-duration-base);
+  }
+
+  .p1 {
+    position: relative;
+    grid-row: 1 / span 2;
+    grid-column: 8 / -1;
+    display: flex;
+    flex-direction: column;
+    min-height: clamp(30rem, calc(100svh - 11rem), 46rem);
+  }
+
+  .p1 .frame {
+    flex: 1;
+    aspect-ratio: auto;
+  }
+
+  /* The first plate's caption runs up its left edge, in the column left empty for it. */
+  .p1 .caption {
+    position: absolute;
+    top: 1.25rem;
+    right: 100%;
+    margin: 0 0.75rem 0 0;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    white-space: nowrap;
+  }
+
+  /* The second plate sits across the first one's edge and hangs below the row. It spans both rows so its height never pushes the index down. */
+  .p2 {
+    z-index: 1;
+    grid-row: 1 / span 2;
+    grid-column: 6 / span 3;
+    align-self: end;
+    translate: 0 3.5rem;
+  }
+
+  .p2 .frame {
+    aspect-ratio: 4 / 5;
+    outline: 0.625rem solid var(--a-paper);
+  }
+
+  .p3 {
+    grid-row: 3;
+    grid-column: 2 / span 7;
+    margin-top: clamp(7rem, 13vw, 11rem);
+  }
+
+  .p3 .frame {
+    aspect-ratio: 3 / 2;
+  }
+
+  .quote {
+    grid-row: 3;
+    grid-column: 10 / -1;
+    align-self: start;
+    max-width: none;
+    margin-top: clamp(7rem, 13vw, 11rem);
+    padding: 0 var(--vn-gutter) 0 0;
+    font-size: clamp(1.25rem, 2vw, 1.875rem);
+  }
+
+  .p4 {
+    grid-row: 3 / span 2;
+    grid-column: 10 / -1;
+    align-self: end;
+  }
+
+  .p5 {
+    z-index: 1;
+    grid-row: 4;
+    grid-column: 5 / span 3;
+    margin-top: -4.5rem;
+  }
+
+  .p5 .frame {
+    outline: 0.625rem solid var(--a-paper);
+  }
+
+  .legendList {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .legendList li {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem 0 2rem;
+  }
+
+  .dock {
+    inset-inline: auto var(--vn-gutter);
+    bottom: 1.5rem;
+    gap: 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+    border: 1px solid var(--a-line);
+    box-shadow: var(--vn-shadow-pop);
+    translate: 0 calc(100% + 2rem);
+  }
+}
+
+/* Pointing at an index line picks its plate out by quietening the others. */
+@media (hover: hover) and (min-width: 48rem) {
+  .spread:has(.index li:nth-child(1) button:is(:hover, :focus-visible)) .plate:not(.p1),
+  .spread:has(.index li:nth-child(2) button:is(:hover, :focus-visible)) .plate:not(.p2),
+  .spread:has(.index li:nth-child(3) button:is(:hover, :focus-visible)) .plate:not(.p3),
+  .spread:has(.index li:nth-child(4) button:is(:hover, :focus-visible)) .plate:not(.p4),
+  .spread:has(.index li:nth-child(5) button:is(:hover, :focus-visible)) .plate:not(.p5) {
+    opacity: 0.32;
+  }
+}
+
+/* Motion is small and optional: the second plate settles into place once, and a plate eases toward the pointer. */
+@media (prefers-reduced-motion: no-preference) {
+  .plates {
+    scroll-behavior: smooth;
+  }
+
+  .p2 {
+    animation: a-settle 700ms var(--vn-ease-out) 120ms both;
+  }
+
+  .frame img {
+    transition: scale 700ms var(--vn-ease-out);
+  }
+
+  .frame:hover img {
+    scale: 1.025;
+  }
+}
+
+@keyframes a-settle {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+}

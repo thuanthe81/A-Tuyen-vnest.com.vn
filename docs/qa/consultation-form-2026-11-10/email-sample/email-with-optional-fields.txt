@@ -1,0 +1,21 @@
+To: hello@vnest.com.vn
+From: VNest Website <website@vnest.com.vn>
+Reply-To: chu.nha.mau@example.com
+Subject: [VNest Website] Yêu cầu tư vấn — Quản lý vận hành
+
+Yêu cầu tư vấn mới từ website VNest
+
+Thời gian gửi: 10/11/2026, 14:32 (GMT+7, giờ Việt Nam)
+Dịch vụ quan tâm: Quản lý vận hành
+Họ tên: Nguyễn Văn Mẫu
+Email: chu.nha.mau@example.com
+Loại tài sản: Căn hộ dịch vụ, 12 phòng
+Nội dung trao đổi:
+  Tôi có một toà căn hộ ở Quận 3, muốn tìm hiểu về dịch vụ vận hành.
+  Có thể trao đổi vào buổi chiều.
+Trang gửi: Trang chủ (bản xem trước) — /dev/demo
+Ngôn ngữ: Tiếng Việt (VI)
+Mã yêu cầu: VN-SAMPLE01
+
+—
+Email này được gửi tự động từ biểu mẫu tư vấn trên website VNest. Nhấn Trả lời để phản hồi trực tiếp đến email khách đã để lại.

@@ -1,0 +1,1197 @@
+.focalSection {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin-top: clamp(2.25rem, 4.5vw, 4.75rem);
+  padding-block: clamp(2rem, 1.6rem + 3vw, 5rem);
+  color: #37412f;
+  scroll-margin-top: 5.5rem;
+}
+
+.focalSection::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background: #f1ece4;
+  border-top: 1px solid rgba(55, 65, 47, 0.12);
+  border-bottom: 1px solid rgba(55, 65, 47, 0.12);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 0.8rem + 1vw, 1.75rem);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+}
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a87444;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.75rem, 1.45rem + 1.8vw, 2.85rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #37412f;
+}
+
+.subtitle {
+  margin: 0.1rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #5c574f;
+}
+
+/* Inline Property Booking & Multi-Room Control Bar */
+.bookingControlCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.8rem 0.95rem;
+  border-radius: 0.85rem;
+  background: #ffffff;
+  border: 1px solid rgba(55, 65, 47, 0.14);
+  box-shadow: 0 10px 28px -20px rgba(24, 20, 14, 0.16);
+}
+
+@media (min-width: 48rem) {
+  .bookingControlCard {
+    gap: 0.85rem;
+    padding: 1rem 1.35rem;
+  }
+}
+
+.controlTopRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 1.15rem;
+}
+
+.controlLeftGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.dateTriggerBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.22);
+  background: #f1ece4;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 140ms ease, background-color 140ms ease;
+}
+
+.dateTriggerBtn:hover {
+  border-color: #a87444;
+}
+
+.dateTriggerBtn:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+.dateTriggerIcon {
+  width: 0.95rem;
+  height: 0.95rem;
+  color: #a87444;
+  flex-shrink: 0;
+}
+
+@media (max-width: 47.99rem) {
+  .bookingControlCard {
+    gap: 0.5rem;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .controlTopRow {
+    gap: 0.45rem;
+  }
+
+  .controlLeftGroup {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+
+  .dateTriggerBtn {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.4rem 0.85rem;
+  }
+}
+
+.controlRightGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+/* Hand-off properties only (ezCloud): their action beside the stay summary. Hidden on phones, as before. */
+@media (max-width: 47.99rem) {
+  .controlRightGroup {
+    display: none;
+  }
+}
+
+.bookNowActionBtn {
+  min-height: 2.65rem;
+  padding: 0.5rem 1.35rem;
+  border-radius: 0.5rem;
+  border: 1px solid #a87444;
+  background: #9a683c;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.bookNowActionBtn:hover {
+  background: #8f6036;
+  border-color: #8f6036;
+}
+
+.bookNowActionBtn:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+/* Inline Calendar Popover Sheet */
+.calendarSheet {
+  padding: 1rem 1.1rem;
+  border-radius: 0.75rem;
+  background: #f1ece4;
+  border: 1px solid rgba(55, 65, 47, 0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.calendarSheetHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.calendarSheetTitle {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #37412f;
+}
+
+.calendarCloseBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.22);
+  background: #ffffff;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.calendarWrap {
+  overflow-x: auto;
+}
+
+/* Multi-Room & Selected Room Slot Pills */
+
+/* Editorial Horizontal Room Cards */
+.roomGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.roomCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  border-radius: 0.95rem;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(55, 65, 47, 0.13);
+  box-shadow: 0 14px 34px -22px rgba(24, 20, 14, 0.16);
+  scroll-margin-top: 6rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.roomCard[data-selected="true"] {
+  border-color: #a87444;
+  box-shadow:
+    0 0 0 1.5px #a87444,
+    0 18px 40px -22px rgba(168, 116, 68, 0.26);
+}
+
+@media (min-width: 52rem) {
+  .roomCard {
+    grid-template-columns: minmax(0, 54%) minmax(0, 46%);
+    min-height: 15.5rem;
+  }
+}
+
+.roomMediaCol {
+  position: relative;
+  background: #e6dfd3;
+  aspect-ratio: 4 / 3;
+  display: flex;
+}
+
+@media (min-width: 52rem) {
+  .roomMediaCol {
+    aspect-ratio: 16 / 10;
+    min-height: 15.5rem;
+    max-height: 19.5rem;
+  }
+}
+
+.roomCarousel {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+.roomDetailsCol {
+  padding: clamp(1.1rem, 0.95rem + 0.7vw, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.15rem;
+}
+
+.roomInfoTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.roomDescriptionSlot {
+  width: 100%;
+}
+
+.roomDescriptionSlot[data-has-copy="false"] {
+  display: none;
+}
+
+.roomCardHeaderRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.roomIndexLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8173;
+}
+
+.selectedRoomBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(168, 116, 68, 0.14);
+  color: #a87444;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.roomName {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.45rem, 1.25rem + 0.65vw, 1.85rem);
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: #37412f;
+}
+
+.roomCompactMeta {
+  margin-top: 0.15rem;
+}
+
+.referencePriceBox {
+  margin-top: 0.25rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.55rem;
+  background: #f1ece4;
+  width: 100%;
+}
+
+.referencePriceLabel {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8173;
+}
+
+.referencePriceRows {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.85rem;
+  font-size: 0.84rem;
+}
+
+.referencePriceRows dt {
+  color: #5c574f;
+}
+
+.referencePriceRows dd {
+  margin: 0;
+  font-weight: 600;
+  color: #37412f;
+}
+
+.capacityWarning {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #a87444;
+}
+
+.roomActionsFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(55, 65, 47, 0.1);
+}
+
+.primaryAndSecondaryRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+
+.selectRoomPrimaryBtn {
+  min-height: 2.75rem;
+  padding: 0.55rem 1.45rem;
+  border-radius: 0.5rem;
+  border: 1px solid #a87444;
+  background: #9a683c;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+/* The review dialog's "Tiếp tục" is a link to the booking step. */
+a.selectRoomPrimaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.selectRoomPrimaryBtn:hover {
+  background: #8f6036;
+  border-color: #8f6036;
+}
+
+.selectRoomPrimaryBtn:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+.selectedRoomBtn {
+  min-height: 2.75rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  border: 1.5px solid #a87444;
+  background: #f1ece4;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+.selectedRoomBtn:hover {
+  background: #e5ddd0;
+}
+
+.disabledRoomBtn {
+  min-height: 2.75rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.18);
+  background: #f1ece4;
+  color: #8a8173;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+@media (max-width: 51.99rem) {
+  .primaryAndSecondaryRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .selectRoomPrimaryBtn,
+  .selectedRoomBtn,
+  .disabledRoomBtn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ── Price region and booking strip (25/10/2026) ───────────────────────────
+   Room name → metadata → price → "Chọn phòng" → "Xem chi tiết phòng". The price is its own
+   element beside the button, so hover, focus and the selected state never hide it. */
+.bookingStrip {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+
+.priceBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.4rem;
+  margin: 0;
+  color: #37412f;
+}
+
+.priceLead {
+  width: 100%;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6f675b;
+}
+
+.priceValue {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.priceUnit {
+  font-size: 0.875rem;
+  color: #6f675b;
+}
+
+.priceBlock[data-price="pending"] {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.priceBlock[data-price="pending"] .priceValue {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.priceIcon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+  color: #8f6036;
+}
+
+@media (min-width: 52rem) {
+  .bookingStrip {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 0.7rem 0.7rem 1.1rem;
+    border: 1px solid rgba(55, 65, 47, 0.14);
+    border-radius: 0.75rem;
+    background: #f1ece4;
+    transition: border-color 160ms ease;
+  }
+}
+
+/* Desktop with a real pointer: the price leads at rest and the action is outlined; hovering or
+   focusing the strip fills the action. Colour only: no movement, no width change. Touch screens
+   always get the filled button. */
+@media (min-width: 52rem) and (hover: hover) and (pointer: fine) {
+  .bookingStrip .selectRoomPrimaryBtn {
+    background: transparent;
+    border-color: #a87444;
+    color: #8f6036;
+    transition:
+      background-color 160ms ease,
+      border-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .bookingStrip:hover,
+  .bookingStrip:focus-within {
+    border-color: #a87444;
+  }
+
+  .bookingStrip:hover .selectRoomPrimaryBtn,
+  .bookingStrip:focus-within .selectRoomPrimaryBtn {
+    background: #9a683c;
+    border-color: #9a683c;
+    color: #ffffff;
+  }
+
+  .bookingStrip .selectRoomPrimaryBtn:hover {
+    background: #8f6036;
+    border-color: #8f6036;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bookingStrip,
+  .bookingStrip .selectRoomPrimaryBtn {
+    transition: none;
+  }
+}
+
+/* Sticky Selection Summary Bar when >= 1 room is selected */
+.selectionSummaryBar {
+  position: sticky;
+  bottom: max(0.5rem, env(safe-area-inset-bottom));
+  z-index: 15;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.75rem;
+  background: #37412f;
+  color: #ffffff;
+  box-shadow: 0 14px 32px -12px rgba(24, 20, 14, 0.38);
+}
+
+@media (min-width: 48rem) {
+  .selectionSummaryBar {
+    flex-wrap: wrap;
+    bottom: 1rem;
+    gap: 0.65rem 1.25rem;
+    padding: 0.95rem 1.35rem;
+    border-radius: 0.85rem;
+  }
+}
+
+.summaryBarLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+  flex: 1 1 0%;
+}
+
+.summaryBarCount {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f1ece4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.summaryBarRooms {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 48rem) {
+  .summaryBarLeft {
+    flex: 1 1 11rem;
+  }
+  .summaryBarCount {
+    font-size: 0.78rem;
+    white-space: normal;
+  }
+  .summaryBarRooms {
+    font-size: 0.95rem;
+    white-space: normal;
+  }
+}
+
+.summaryBarRight {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 47.99rem) {
+  .summaryBarRight .bookNowActionBtn {
+    min-height: 2.3rem;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.78rem;
+  }
+}
+
+.summaryBookNowBtn {
+  min-height: 2.65rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #a87444;
+  background: #9a683c;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.summaryBookNowBtn:hover {
+  background: #8f6036;
+  border-color: #8f6036;
+}
+
+/* On-Property Booking Request & Selection Review Dialog */
+.bookingDialog {
+  width: min(38rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 3rem);
+  margin: auto;
+  padding: 0;
+  border: 1px solid rgba(55, 65, 47, 0.16);
+  border-radius: 0.95rem;
+  background: #ffffff;
+  color: #37412f;
+  box-shadow: 0 28px 68px rgba(24, 20, 14, 0.3);
+}
+
+.bookingDialog::backdrop {
+  background: rgba(24, 20, 14, 0.56);
+}
+
+.dialogInner {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 3rem);
+}
+
+.dialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.45rem;
+  border-bottom: 1px solid rgba(55, 65, 47, 0.12);
+}
+
+.dialogTitle {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #37412f;
+}
+
+.dialogCloseBtn {
+  min-height: 2.25rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.2);
+  background: #f1ece4;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dialogBody {
+  padding: 1.3rem 1.45rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.dialogStayMeta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.75rem 1.25rem;
+  padding: 0.9rem 1.05rem;
+  border-radius: 0.65rem;
+  background: #f1ece4;
+}
+
+.dialogStayMeta dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8173;
+}
+
+.dialogStayMeta dd {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #37412f;
+}
+
+.dialogRoomList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.dialogRoomItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(55, 65, 47, 0.14);
+  background: #ffffff;
+}
+
+.dialogRoomSlot {
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a8173;
+}
+
+.dialogRoomName {
+  margin: 0.15rem 0 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #37412f;
+}
+
+.dialogRoomEmpty {
+  margin: 0.15rem 0 0;
+  font-size: 0.88rem;
+  color: #a87444;
+}
+
+.dialogRoomActions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.dialogTextBtn {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: #a87444;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dialogConfirmationBox {
+  padding: 1rem 1.1rem;
+  border-radius: 0.7rem;
+  background: rgba(55, 65, 47, 0.06);
+  border: 1px solid rgba(55, 65, 47, 0.16);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dialogConfirmationTitle {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #37412f;
+}
+
+.dialogConfirmationText {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #5c574f;
+}
+
+.dialogProviderNote {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #8a8173;
+}
+
+.dialogFoot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1.45rem;
+  border-top: 1px solid rgba(55, 65, 47, 0.12);
+  background: #f1ece4;
+}
+
+.dialogSecondaryBtn {
+  min-height: 2.55rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.24);
+  background: #ffffff;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ── Simplified room selection (owner brief, 5/11/2026) ─────────────────────────────────────────────
+   Dates, one shared "Phòng & khách" summary and the room slots; the selected count and the one BOOK NOW are in the
+   sticky bar below the room cards. */
+
+.dateTriggerBtn[data-missing="true"],
+.slot[data-missing="true"] {
+  border-color: #a87444;
+  box-shadow: 0 0 0 1px #a87444;
+}
+
+.occupancySummaryBtn {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.22);
+  background: #f1ece4;
+  color: #37412f;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 140ms ease;
+}
+
+.occupancySummaryBtn:hover {
+  border-color: #a87444;
+}
+
+.occupancySummaryBtn:focus-visible,
+.slotSelectBtn:focus-visible,
+.slotRemoveBtn:focus-visible,
+.addRoomLink:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+.occupancySummaryLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a7164;
+}
+
+.occupancySummaryValue {
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.slotsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(55, 65, 47, 0.1);
+}
+
+.slotList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slot {
+  display: inline-flex;
+  align-items: stretch;
+  min-width: 0;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(55, 65, 47, 0.16);
+  background: #faf8f4;
+  transition: border-color 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
+}
+
+.slot[data-active="true"] {
+  border-color: #37412f;
+  background: #ffffff;
+}
+
+.slotSelectBtn {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  min-width: 0;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.85rem;
+  border: none;
+  border-radius: inherit;
+  background: transparent;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.84rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.slotIndex {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.slotDash {
+  color: #a39886;
+}
+
+.slotRoomName {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #7a7164;
+}
+
+.slot[data-filled="true"] .slotRoomName {
+  color: #9a683c;
+  font-weight: 600;
+}
+
+.slotRemoveBtn {
+  flex-shrink: 0;
+  width: 2.25rem;
+  border: none;
+  border-left: 1px solid rgba(55, 65, 47, 0.1);
+  border-radius: 0 0.6rem 0.6rem 0;
+  background: transparent;
+  color: #8a8173;
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.slotRemoveBtn:hover {
+  color: #9a683c;
+  background: rgba(168, 116, 68, 0.08);
+}
+
+.addRoomLink {
+  min-height: 2.5rem;
+  padding: 0.35rem 0.25rem;
+  border: none;
+  background: transparent;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #a87444;
+  text-underline-offset: 0.3em;
+  cursor: pointer;
+}
+
+.addRoomLink:hover {
+  color: #9a683c;
+}
+
+.slotNotice {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #5c574f;
+}
+
+.slotNotice:empty {
+  display: none;
+}
+
+.summaryBarGuidance {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #f6dcc0;
+}
+
+@media (max-width: 47.99rem) {
+  .occupancySummaryBtn {
+    width: 100%;
+    min-height: 2.75rem;
+    justify-content: space-between;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .slotsBlock {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 0.5rem;
+  }
+
+  .slotList {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .slot {
+    width: 100%;
+  }
+
+  .slotSelectBtn {
+    flex: 1 1 0%;
+    min-height: 2.75rem;
+  }
+
+  .addRoomLink {
+    align-self: flex-start;
+    min-height: 2.75rem;
+  }
+
+  .summaryBarGuidance {
+    font-size: 0.8rem;
+  }
+}
+
+/* An address whose guests do not fit its rooms: what it says, and two explicit fixes (owner correction, 5/11/2026). */
+.occupancyCorrection {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(168, 116, 68, 0.45);
+  background: #fbf6ef;
+}
+
+.occupancyCorrectionText {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: #37412f;
+}
+
+.occupancyCorrectionActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.correctionBtn {
+  min-height: 2.5rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid #37412f;
+  background: #ffffff;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.correctionBtn:hover {
+  background: #37412f;
+  color: #ffffff;
+}
+
+.correctionBtn:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+@media (max-width: 47.99rem) {
+  .correctionBtn {
+    width: 100%;
+    min-height: 2.75rem;
+  }
+}

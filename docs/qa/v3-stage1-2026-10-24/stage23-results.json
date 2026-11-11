@@ -1,0 +1,732 @@
+{
+ "base": "http://localhost:3401",
+ "date": "2026-10-24",
+ "views": [
+  {
+   "view": "1440",
+   "checks": {
+    "S2 three brands, no 'Tất cả', no counts in the index": {
+     "pass": true,
+     "count": 3,
+     "names": [
+      "Bare Boutique Stays TP. Hồ Chí Minh · Đà Nẵng",
+      "The Nắng Suites Đà Nẵng",
+      "Pepper House TP. Hồ Chí Minh"
+     ],
+     "hasAll": false,
+     "digits": false,
+     "logos": [
+      {
+       "brand": "bare",
+       "h": 58,
+       "ratio": 1.908,
+       "natural": 1.908
+      },
+      {
+       "brand": "the-nang",
+       "h": 52,
+       "ratio": 0.711,
+       "natural": 0.711
+      },
+      {
+       "brand": "pepper-house",
+       "h": 44,
+       "ratio": 1,
+       "natural": 1
+      }
+     ],
+     "allLink": "Xem tất cả 6 nơi lưu trú →"
+    },
+    "S2 logos keep their own proportions (no distortion)": {
+     "pass": true,
+     "logos": [
+      {
+       "brand": "bare",
+       "h": 58,
+       "ratio": 1.908,
+       "natural": 1.908
+      },
+      {
+       "brand": "the-nang",
+       "h": 52,
+       "ratio": 0.711,
+       "natural": 0.711
+      },
+      {
+       "brand": "pepper-house",
+       "h": 44,
+       "ratio": 1,
+       "natural": 1
+      }
+     ]
+    },
+    "S2 Bare's thin script is drawn largest": {
+     "pass": true,
+     "heights": [
+      58,
+      52,
+      44
+     ]
+    },
+    "S2 hover previews without selecting": {
+     "pass": true,
+     "state": [
+      {
+       "brand": "bare",
+       "selected": true,
+       "preview": false
+      },
+      {
+       "brand": "the-nang",
+       "selected": false,
+       "preview": true
+      },
+      {
+       "brand": "pepper-house",
+       "selected": false,
+       "preview": false
+      }
+     ],
+     "panel": "bare"
+    },
+    "S2 floating preview opens beside the ledger, not over the hovered row": {
+     "pass": true,
+     "card": {
+      "x": 610,
+      "y": 248,
+      "w": 496,
+      "h": 492.578125,
+      "cx": 858,
+      "cy": 494.2890625,
+      "bottom": 740.578125,
+      "right": 1106
+     },
+     "rowRect": {
+      "x": 119.671875,
+      "y": 442.34375,
+      "w": 470.265625,
+      "h": 104,
+      "cx": 354.8046875,
+      "cy": 494.34375,
+      "bottom": 546.34375,
+      "right": 589.9375
+     }
+    },
+    "S2 a preview never blocks the panel's CTA (pointer-transparent)": {
+     "pass": true
+    },
+    "S2 click commits the selection": {
+     "pass": true,
+     "state": [
+      {
+       "brand": "bare",
+       "selected": false,
+       "preview": false
+      },
+      {
+       "brand": "the-nang",
+       "selected": true,
+       "preview": false
+      },
+      {
+       "brand": "pepper-house",
+       "selected": false,
+       "preview": false
+      }
+     ],
+     "panel": "the-nang"
+    },
+    "S2 keyboard: arrow previews, Escape closes, Enter commits": {
+     "pass": true,
+     "kb1": {
+      "focused": "pepper-house",
+      "state": [
+       {
+        "brand": "bare",
+        "selected": false,
+        "preview": false
+       },
+       {
+        "brand": "the-nang",
+        "selected": true,
+        "preview": false
+       },
+       {
+        "brand": "pepper-house",
+        "selected": false,
+        "preview": true
+       }
+      ]
+     },
+     "kb2": [
+      {
+       "brand": "bare",
+       "selected": false,
+       "preview": false
+      },
+      {
+       "brand": "the-nang",
+       "selected": true,
+       "preview": false
+      },
+      {
+       "brand": "pepper-house",
+       "selected": false,
+       "preview": false
+      }
+     ],
+     "kb3": {
+      "state": [
+       {
+        "brand": "bare",
+        "selected": false,
+        "preview": false
+       },
+       {
+        "brand": "the-nang",
+        "selected": false,
+        "preview": false
+       },
+       {
+        "brand": "pepper-house",
+        "selected": true,
+        "preview": false
+       }
+      ],
+      "panel": "pepper-house"
+     }
+    },
+    "S2 About CTA filters the collection to the brand and scrolls to it": {
+     "pass": true,
+     "url": "?brand=pepper-house",
+     "top": 80,
+     "header": 73,
+     "cards": 1,
+     "pressed": []
+    },
+    "S2 all six back": {
+     "pass": true
+    },
+    "S2 a card opens its property page in the same tab": {
+     "pass": true,
+     "url": "/dev/stays/bare-chic?view=demo",
+     "bars": 2,
+     "h1": "Bare Chic"
+    },
+    "S2 'Xem tất cả' reaches the collection": {
+     "pass": true
+    },
+    "S3 three cards visible, one detail region, first open": {
+     "pass": true,
+     "cards": [
+      {
+       "text": "Quản lý vận hành",
+       "expanded": "true"
+      },
+      {
+       "text": "Phát triển dự án (Tư vấn mô hình)",
+       "expanded": "false"
+      },
+      {
+       "text": "Nhượng quyền thương hiệu",
+       "expanded": "false"
+      }
+     ],
+     "regions": 1
+    },
+    "S3 choosing a card opens only its detail, directly below it": {
+     "pass": true,
+     "expanded": [
+      "false",
+      "false",
+      "true"
+     ],
+     "regions": 1,
+     "label": "Nhượng quyền thương hiệu",
+     "regionBelowCard3": true,
+     "gap": 20,
+     "noFigures": true
+    },
+    "S3 choosing the open card again closes it": {
+     "pass": true
+    },
+    "S3 'Phát triển dự án' states model consulting only": {
+     "pass": true
+    },
+    "S3 CTA → Contact with the service pre-selected, focus on its heading, clear of the header": {
+     "pass": true,
+     "checked": "tu-van-mo-hinh",
+     "focus": "lien-he-title",
+     "top": 205,
+     "header": 73
+    },
+    "S3 minimal fields (3) and a visible mockup label": {
+     "pass": true,
+     "inputs": 3,
+     "mock": "● Bản mô phỏng giao diện · chưa nhận yêu cầu thật"
+    },
+    "S3 no fake submission: stays, explains, no success state, no request": {
+     "pass": true,
+     "url": "/dev/demo",
+     "note": "Chưa gửi: đây là bản mô phỏng. Kênh nhận yêu cầu và cách xử lý dữ liệu đang chờ VNest xác nhận, nên biểu mẫu không gửi thông tin đi đâu.",
+     "success": false,
+     "posts": []
+    },
+    "S3 FAQ: one open at a time, keyboard operable": {
+     "pass": true,
+     "faq": [
+      false,
+      true,
+      false,
+      false,
+      false
+     ],
+     "faqKb": [
+      false,
+      false,
+      false,
+      true,
+      false
+     ]
+    },
+    "S3 footer: only working routes; contacts, social, policy flagged not linked": {
+     "pass": true,
+     "statuses": {
+      "/dev/demo": 200,
+      "/dev/demo#kham-pha": 200,
+      "/dev/demo#dat-phong": 200,
+      "/dev/stays/bare-chic?view=demo": 200,
+      "/dev/stays/the-nang-suites": 200,
+      "/dev/demo#ve-vnest": 200,
+      "/dev/demo#thuong-hieu": 200,
+      "/dev/demo#hop-tac": 200,
+      "/dev/demo#lien-he": 200,
+      "/dev/demo#hoi-dap": 200,
+      "#top": 200
+     }
+    },
+    "no horizontal overflow (homepage)": {
+     "pass": true
+    },
+    "reduced motion: no detail or panel animation": {
+     "pass": true,
+     "detail": "none",
+     "panel": "none"
+    }
+   }
+  },
+  {
+   "view": "768",
+   "checks": {
+    "S2 three brands, no 'Tất cả', no counts in the index": {
+     "pass": true,
+     "count": 3,
+     "names": [
+      "Bare Boutique Stays TP. Hồ Chí Minh · Đà Nẵng",
+      "The Nắng Suites Đà Nẵng",
+      "Pepper House TP. Hồ Chí Minh"
+     ],
+     "hasAll": false,
+     "digits": false,
+     "logos": [
+      {
+       "brand": "bare",
+       "h": 58,
+       "ratio": 1.908,
+       "natural": 1.908
+      },
+      {
+       "brand": "the-nang",
+       "h": 52,
+       "ratio": 0.711,
+       "natural": 0.711
+      },
+      {
+       "brand": "pepper-house",
+       "h": 44,
+       "ratio": 1,
+       "natural": 1
+      }
+     ],
+     "allLink": "Xem tất cả 6 nơi lưu trú →"
+    },
+    "S2 logos keep their own proportions (no distortion)": {
+     "pass": true,
+     "logos": [
+      {
+       "brand": "bare",
+       "h": 58,
+       "ratio": 1.908,
+       "natural": 1.908
+      },
+      {
+       "brand": "the-nang",
+       "h": 52,
+       "ratio": 0.711,
+       "natural": 0.711
+      },
+      {
+       "brand": "pepper-house",
+       "h": 44,
+       "ratio": 1,
+       "natural": 1
+      }
+     ]
+    },
+    "S2 Bare's thin script is drawn largest": {
+     "pass": true,
+     "heights": [
+      58,
+      52,
+      44
+     ]
+    },
+    "S2 tap selects directly": {
+     "pass": true,
+     "state": [
+      {
+       "brand": "bare",
+       "selected": false,
+       "preview": false
+      },
+      {
+       "brand": "the-nang",
+       "selected": false,
+       "preview": false
+      },
+      {
+       "brand": "pepper-house",
+       "selected": true,
+       "preview": false
+      }
+     ],
+     "panel": "pepper-house"
+    },
+    "S2 About CTA filters the collection to the brand and scrolls to it": {
+     "pass": true,
+     "url": "?brand=pepper-house",
+     "top": 80,
+     "header": 65,
+     "cards": 1,
+     "pressed": []
+    },
+    "S2 all six back": {
+     "pass": true
+    },
+    "S2 a card opens its property page in the same tab": {
+     "pass": true,
+     "url": "/dev/stays/bare-chic?view=demo",
+     "bars": 2,
+     "h1": "Bare Chic"
+    },
+    "S2 'Xem tất cả' reaches the collection": {
+     "pass": true
+    },
+    "S3 three cards visible, one detail region, first open": {
+     "pass": true,
+     "cards": [
+      {
+       "text": "Quản lý vận hành",
+       "expanded": "true"
+      },
+      {
+       "text": "Phát triển dự án (Tư vấn mô hình)",
+       "expanded": "false"
+      },
+      {
+       "text": "Nhượng quyền thương hiệu",
+       "expanded": "false"
+      }
+     ],
+     "regions": 1
+    },
+    "S3 choosing a card opens only its detail, directly below it": {
+     "pass": true,
+     "expanded": [
+      "false",
+      "false",
+      "true"
+     ],
+     "regions": 1,
+     "label": "Nhượng quyền thương hiệu",
+     "regionBelowCard3": true,
+     "gap": 20,
+     "noFigures": true
+    },
+    "S3 choosing the open card again closes it": {
+     "pass": true
+    },
+    "S3 'Phát triển dự án' states model consulting only": {
+     "pass": true
+    },
+    "S3 CTA → Contact with the service pre-selected, focus on its heading, clear of the header": {
+     "pass": true,
+     "checked": "tu-van-mo-hinh",
+     "focus": "lien-he-title",
+     "top": 178,
+     "header": 65
+    },
+    "S3 minimal fields (3) and a visible mockup label": {
+     "pass": true,
+     "inputs": 3,
+     "mock": "● Bản mô phỏng giao diện · chưa nhận yêu cầu thật"
+    },
+    "S3 no fake submission: stays, explains, no success state, no request": {
+     "pass": true,
+     "url": "/dev/demo",
+     "note": "Chưa gửi: đây là bản mô phỏng. Kênh nhận yêu cầu và cách xử lý dữ liệu đang chờ VNest xác nhận, nên biểu mẫu không gửi thông tin đi đâu.",
+     "success": false,
+     "posts": []
+    },
+    "S3 FAQ: one open at a time, keyboard operable": {
+     "pass": true,
+     "faq": [
+      false,
+      true,
+      false,
+      false,
+      false
+     ],
+     "faqKb": [
+      false,
+      false,
+      false,
+      true,
+      false
+     ]
+    },
+    "S3 footer: only working routes; contacts, social, policy flagged not linked": {
+     "pass": true,
+     "statuses": {
+      "/dev/demo": 200,
+      "/dev/demo#kham-pha": 200,
+      "/dev/demo#dat-phong": 200,
+      "/dev/stays/bare-chic?view=demo": 200,
+      "/dev/stays/the-nang-suites": 200,
+      "/dev/demo#ve-vnest": 200,
+      "/dev/demo#thuong-hieu": 200,
+      "/dev/demo#hop-tac": 200,
+      "/dev/demo#lien-he": 200,
+      "/dev/demo#hoi-dap": 200,
+      "#top": 200
+     }
+    },
+    "no horizontal overflow (homepage)": {
+     "pass": true
+    },
+    "reduced motion: no detail or panel animation": {
+     "pass": true,
+     "detail": "none",
+     "panel": "none"
+    }
+   }
+  },
+  {
+   "view": "390",
+   "checks": {
+    "S2 three brands, no 'Tất cả', no counts in the index": {
+     "pass": true,
+     "count": 3,
+     "names": [
+      "Bare",
+      "The Nắng",
+      "Pepper House"
+     ],
+     "hasAll": false,
+     "digits": false,
+     "logos": [
+      {
+       "brand": "bare",
+       "h": 44,
+       "ratio": 1.908,
+       "natural": 1.908
+      },
+      {
+       "brand": "the-nang",
+       "h": 40,
+       "ratio": 0.711,
+       "natural": 0.711
+      },
+      {
+       "brand": "pepper-house",
+       "h": 34,
+       "ratio": 1,
+       "natural": 1
+      }
+     ],
+     "allLink": "Xem tất cả 6 nơi lưu trú →"
+    },
+    "S2 logos keep their own proportions (no distortion)": {
+     "pass": true,
+     "logos": [
+      {
+       "brand": "bare",
+       "h": 44,
+       "ratio": 1.908,
+       "natural": 1.908
+      },
+      {
+       "brand": "the-nang",
+       "h": 40,
+       "ratio": 0.711,
+       "natural": 0.711
+      },
+      {
+       "brand": "pepper-house",
+       "h": 34,
+       "ratio": 1,
+       "natural": 1
+      }
+     ]
+    },
+    "S2 Bare's thin script is drawn largest": {
+     "pass": true,
+     "heights": [
+      44,
+      40,
+      34
+     ]
+    },
+    "S2 tap selects directly": {
+     "pass": true,
+     "state": [
+      {
+       "brand": "bare",
+       "selected": false,
+       "preview": false
+      },
+      {
+       "brand": "the-nang",
+       "selected": false,
+       "preview": false
+      },
+      {
+       "brand": "pepper-house",
+       "selected": true,
+       "preview": false
+      }
+     ],
+     "panel": "pepper-house"
+    },
+    "S2 About CTA filters the collection to the brand and scrolls to it": {
+     "pass": true,
+     "url": "?brand=pepper-house",
+     "top": 80,
+     "header": 65,
+     "cards": 1,
+     "pressed": []
+    },
+    "S2 all six back": {
+     "pass": true
+    },
+    "S2 a card opens its property page in the same tab": {
+     "pass": true,
+     "url": "/dev/stays/bare-chic?view=demo",
+     "bars": 2,
+     "h1": "Bare Chic"
+    },
+    "S2 'Xem tất cả' reaches the collection": {
+     "pass": true
+    },
+    "S3 three cards visible, one detail region, first open": {
+     "pass": true,
+     "cards": [
+      {
+       "text": "Quản lý vận hành",
+       "expanded": "true"
+      },
+      {
+       "text": "Phát triển dự án (Tư vấn mô hình)",
+       "expanded": "false"
+      },
+      {
+       "text": "Nhượng quyền thương hiệu",
+       "expanded": "false"
+      }
+     ],
+     "regions": 1
+    },
+    "S3 choosing a card opens only its detail, directly below it": {
+     "pass": true,
+     "expanded": [
+      "false",
+      "false",
+      "true"
+     ],
+     "regions": 1,
+     "label": "Nhượng quyền thương hiệu",
+     "regionBelowCard3": true,
+     "gap": 12,
+     "noFigures": true
+    },
+    "S3 choosing the open card again closes it": {
+     "pass": true
+    },
+    "S3 'Phát triển dự án' states model consulting only": {
+     "pass": true
+    },
+    "S3 CTA → Contact with the service pre-selected, focus on its heading, clear of the header": {
+     "pass": true,
+     "checked": "tu-van-mo-hinh",
+     "focus": "lien-he-title",
+     "top": 163,
+     "header": 65
+    },
+    "S3 minimal fields (3) and a visible mockup label": {
+     "pass": true,
+     "inputs": 3,
+     "mock": "● Bản mô phỏng giao diện · chưa nhận yêu cầu thật"
+    },
+    "S3 no fake submission: stays, explains, no success state, no request": {
+     "pass": true,
+     "url": "/dev/demo",
+     "note": "Chưa gửi: đây là bản mô phỏng. Kênh nhận yêu cầu và cách xử lý dữ liệu đang chờ VNest xác nhận, nên biểu mẫu không gửi thông tin đi đâu.",
+     "success": false,
+     "posts": []
+    },
+    "S3 FAQ: one open at a time, keyboard operable": {
+     "pass": true,
+     "faq": [
+      false,
+      true,
+      false,
+      false,
+      false
+     ],
+     "faqKb": [
+      false,
+      false,
+      false,
+      true,
+      false
+     ]
+    },
+    "S3 footer: only working routes; contacts, social, policy flagged not linked": {
+     "pass": true,
+     "statuses": {
+      "/dev/demo": 200,
+      "/dev/demo#kham-pha": 200,
+      "/dev/demo#dat-phong": 200,
+      "/dev/stays/bare-chic?view=demo": 200,
+      "/dev/stays/the-nang-suites": 200,
+      "/dev/demo#ve-vnest": 200,
+      "/dev/demo#thuong-hieu": 200,
+      "/dev/demo#hop-tac": 200,
+      "/dev/demo#lien-he": 200,
+      "/dev/demo#hoi-dap": 200,
+      "#top": 200
+     }
+    },
+    "no horizontal overflow (homepage)": {
+     "pass": true
+    },
+    "reduced motion: no detail or panel animation": {
+     "pass": true,
+     "detail": "none",
+     "panel": "none"
+    }
+   }
+  }
+ ],
+ "consoleErrors": []
+}

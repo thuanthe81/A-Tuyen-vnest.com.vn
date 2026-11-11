@@ -1,0 +1,30 @@
+▶ VNest V3 Real Browser Interaction QA & Regression Suite
+  ▶ Full 14-point mobile interaction journey at 390px in both Chromium and WebKit
+    ✔ Chromium Mobile (390x844) (14023.267625ms)
+    ✔ WebKit / iOS Safari Engine (390x844) (14598.67775ms)
+  ✔ Full 14-point mobile interaction journey at 390px in both Chromium and WebKit (28622.804459ms)
+  ▶ Multi-viewport responsive & interaction matrix across 375px, 390px, 430px, 768px, and 1440px
+    ✔ Viewport 375px (iPhone SE/Mini) (1387.359083ms)
+    ✔ Viewport 390px (iPhone 14/15) (1371.245333ms)
+    ✔ Viewport 430px (iPhone Pro Max) (1366.078791ms)
+    ✔ Viewport 768px (iPad Mini / Tablet) (1394.743375ms)
+    ✔ Viewport 1440px (Desktop Regression) (1383.964666ms)
+  ✔ Multi-viewport responsive & interaction matrix across 375px, 390px, 430px, 768px, and 1440px (6905.831583ms)
+  ✔ All 6 property pages render with zero errors and preserve approved room ordering & names (3953.771917ms)
+  ▶ LAN IP Hydration, Hard Refresh & Contact Form Anti-Fallback on exact LAN origin
+    ✔ Chromium Mobile LAN (http://172.16.2.53:3403) (1547.398166ms)
+    ✔ WebKit / iOS Safari LAN (http://172.16.2.53:3403) (1689.969333ms)
+  ✔ LAN IP Hydration, Hard Refresh & Contact Form Anti-Fallback on exact LAN origin (3238.257792ms)
+  ▶ Scroll-Lock Integrity: overlapping modal lifecycles, rapid open/close, route navigation & browser Back navigation
+    ✔ Chromium Mobile Scroll-Lock Stress (390x844) (9409.227459ms)
+    ✔ WebKit / iOS Safari Scroll-Lock Stress (390x844) (9956.633583ms)
+  ✔ Scroll-Lock Integrity: overlapping modal lifecycles, rapid open/close, route navigation & browser Back navigation (19366.610208ms)
+✔ VNest V3 Real Browser Interaction QA & Regression Suite (62694.923791ms)
+ℹ tests 16
+ℹ suites 1
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 62850.815625

@@ -1,0 +1,262 @@
+{
+  "base": "http://localhost:3402",
+  "date": "2026-10-24",
+  "views": [
+    {
+      "view": "1440",
+      "checks": {
+        "Homepage BOOK NOW (All Properties, 1 room / 2 adults) → /dev/demo/tim-phong with 6 grouped properties": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2",
+          "sections": 6,
+          "roomField": "SỐ PHÒNG & NGƯỜI LỚN MỖI PHÒNG 1 phòng · 2 người lớn Phòng 1: 2 người lớn",
+          "specsText": "Loại phòng: | Studio | Đơn vị vật lý: | 1 căn độc bản | Tồn kho khả dụng: | Chờ phản hồi ezCloud / PMS | Diện tích: | 28 m² | Sức chứa: | 2 người lớn",
+          "hasHonestNotice": true,
+          "hasFakeAvail": false
+        },
+        "Room card distinguishes roomType (Loại phòng), physicalUnits (1 căn độc bản), and inventoryQuantity (Chờ phản hồi ezCloud / PMS)": {
+          "pass": true,
+          "specsText": "Loại phòng: | Studio | Đơn vị vật lý: | 1 căn độc bản | Tồn kho khả dụng: | Chờ phản hồi ezCloud / PMS | Diện tích: | 28 m² | Sức chứa: | 2 người lớn"
+        },
+        "Property photo viewer BOOK NOW without dates closes viewer and opens date picker": {
+          "pass": true,
+          "viewerClosed": true,
+          "datesOpen": true
+        },
+        "Property room drawer BOOK NOW → /dev/demo/tim-phong constrained to Bare Chic with Bare Chic Two pre-selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two",
+          "sections": 1,
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 1/1 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 8 thg 11 (2 đêm) | Tổng số phòng & khách | 1 phòng · 2 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (1/1 phòng) | Xoá tất cả lựa chọn phòng",
+          "preselectedBareChicTwo": true
+        },
+        "Three room groups (2 + 3 + 2 = 7 adults) supported": {
+          "pass": true,
+          "threeGroups": "SỐ PHÒNG & NGƯỜI LỚN MỖI PHÒNG 3 phòng · 7 người lớn Phòng 1: 2 người lớn · Phòng 2: 3 người lớn · Phòng 3: 2 người lớn"
+        },
+        "Unique physical unit: Bare Chic One locked against duplicate selection in Room 2": {
+          "pass": true,
+          "lockedForSlot2": true
+        },
+        "Changing dates to Nov 6–9 (3 nights) updates URL and preserves room groups and provisional room preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Page refresh preserves dates (3 nights), 2 rooms / 4 adults, and provisional preferences (Bare Chic One & Two)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Review modal links cleanly to Step 05 (/dev/demo/dat-phong) showing multi-room allocation and honest no-PMS notice": {
+          "pass": true,
+          "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two"
+        },
+        "Returning from Step 05 to Booking Results preserves dates, 2 rooms / 4 adults, and both selected rooms": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Changing property to All Properties shows all 6 grouped properties": {
+          "pass": true,
+          "allPropsCount": 6
+        },
+        "Changing property to The Nắng Suites constrains results to 1 property and clears incompatible Bare Chic preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+          "sections": 1,
+          "h1": "Danh mục phòng tại The Nắng Suites",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 0/2 phòng dự kiến | Phạm vi cơ sở | The Nắng Suites | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Chọn ngay | Chưa chọn phòng dự kiến cho nhóm này | PHÒNG 2 · 2 NGƯỜI LỚN | Chọn ngay | Chưa chọn phòng dự kiến cho nhóm này | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (0/2 phòng)"
+        },
+        "No horizontal overflow and 0 broken images": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+          "overflowX": false,
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "brokenImages": [],
+          "cls": 0
+        }
+      },
+      "facts": {
+        "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+        "overflowX": false,
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "brokenImages": [],
+        "cls": 0
+      }
+    },
+    {
+      "view": "768",
+      "checks": {
+        "Homepage BOOK NOW (All Properties, 1 room / 2 adults) → /dev/demo/tim-phong with 6 grouped properties": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2",
+          "sections": 6,
+          "roomField": "SỐ PHÒNG & NGƯỜI LỚN MỖI PHÒNG 1 phòng · 2 người lớn Phòng 1: 2 người lớn",
+          "specsText": "Loại phòng: | Studio | Đơn vị vật lý: | 1 căn độc bản | Tồn kho khả dụng: | Chờ phản hồi ezCloud / PMS | Diện tích: | 28 m² | Sức chứa: | 2 người lớn",
+          "hasHonestNotice": true,
+          "hasFakeAvail": false
+        },
+        "Room card distinguishes roomType (Loại phòng), physicalUnits (1 căn độc bản), and inventoryQuantity (Chờ phản hồi ezCloud / PMS)": {
+          "pass": true,
+          "specsText": "Loại phòng: | Studio | Đơn vị vật lý: | 1 căn độc bản | Tồn kho khả dụng: | Chờ phản hồi ezCloud / PMS | Diện tích: | 28 m² | Sức chứa: | 2 người lớn"
+        },
+        "Property photo viewer BOOK NOW without dates closes viewer and opens date picker": {
+          "pass": true,
+          "viewerClosed": true,
+          "datesOpen": true
+        },
+        "Property room drawer BOOK NOW → /dev/demo/tim-phong constrained to Bare Chic with Bare Chic Two pre-selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two",
+          "sections": 1,
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 1/1 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 8 thg 11 (2 đêm) | Tổng số phòng & khách | 1 phòng · 2 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (1/1 phòng) | Xoá tất cả lựa chọn phòng",
+          "preselectedBareChicTwo": true
+        },
+        "Three room groups (2 + 3 + 2 = 7 adults) supported": {
+          "pass": true,
+          "threeGroups": "SỐ PHÒNG & NGƯỜI LỚN MỖI PHÒNG 3 phòng · 7 người lớn Phòng 1: 2 người lớn · Phòng 2: 3 người lớn · Phòng 3: 2 người lớn"
+        },
+        "Unique physical unit: Bare Chic One locked against duplicate selection in Room 2": {
+          "pass": true,
+          "lockedForSlot2": true
+        },
+        "Changing dates to Nov 6–9 (3 nights) updates URL and preserves room groups and provisional room preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Page refresh preserves dates (3 nights), 2 rooms / 4 adults, and provisional preferences (Bare Chic One & Two)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Review modal links cleanly to Step 05 (/dev/demo/dat-phong) showing multi-room allocation and honest no-PMS notice": {
+          "pass": true,
+          "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two"
+        },
+        "Returning from Step 05 to Booking Results preserves dates, 2 rooms / 4 adults, and both selected rooms": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Changing property to All Properties shows all 6 grouped properties": {
+          "pass": true,
+          "allPropsCount": 6
+        },
+        "Changing property to The Nắng Suites constrains results to 1 property and clears incompatible Bare Chic preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+          "sections": 1,
+          "h1": "Danh mục phòng tại The Nắng Suites",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 0/2 phòng dự kiến | Phạm vi cơ sở | The Nắng Suites | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Chọn ngay | Chưa chọn phòng dự kiến cho nhóm này | PHÒNG 2 · 2 NGƯỜI LỚN | Chọn ngay | Chưa chọn phòng dự kiến cho nhóm này | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (0/2 phòng)"
+        },
+        "No horizontal overflow and 0 broken images": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+          "overflowX": false,
+          "scrollWidth": 768,
+          "innerWidth": 768,
+          "brokenImages": [],
+          "cls": 0
+        }
+      },
+      "facts": {
+        "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+        "overflowX": false,
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "brokenImages": [],
+        "cls": 0
+      }
+    },
+    {
+      "view": "390",
+      "checks": {
+        "Homepage BOOK NOW (All Properties, 1 room / 2 adults) → /dev/demo/tim-phong with 6 grouped properties": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2",
+          "sections": 6,
+          "roomField": "SỐ PHÒNG & NGƯỜI LỚN MỖI PHÒNG 1 phòng · 2 người lớn Phòng 1: 2 người lớn",
+          "specsText": "Loại phòng: | Studio | Đơn vị vật lý: | 1 căn độc bản | Tồn kho khả dụng: | Chờ phản hồi ezCloud / PMS | Diện tích: | 28 m² | Sức chứa: | 2 người lớn",
+          "hasHonestNotice": true,
+          "hasFakeAvail": false
+        },
+        "Room card distinguishes roomType (Loại phòng), physicalUnits (1 căn độc bản), and inventoryQuantity (Chờ phản hồi ezCloud / PMS)": {
+          "pass": true,
+          "specsText": "Loại phòng: | Studio | Đơn vị vật lý: | 1 căn độc bản | Tồn kho khả dụng: | Chờ phản hồi ezCloud / PMS | Diện tích: | 28 m² | Sức chứa: | 2 người lớn"
+        },
+        "Property photo viewer BOOK NOW without dates closes viewer and opens date picker": {
+          "pass": true,
+          "viewerClosed": true,
+          "datesOpen": true
+        },
+        "Property room drawer BOOK NOW → /dev/demo/tim-phong constrained to Bare Chic with Bare Chic Two pre-selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two",
+          "sections": 1,
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 1/1 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 8 thg 11 (2 đêm) | Tổng số phòng & khách | 1 phòng · 2 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (1/1 phòng) | Xoá tất cả lựa chọn phòng",
+          "preselectedBareChicTwo": true
+        },
+        "Three room groups (2 + 3 + 2 = 7 adults) supported": {
+          "pass": true,
+          "threeGroups": "SỐ PHÒNG & NGƯỜI LỚN MỖI PHÒNG 3 phòng · 7 người lớn Phòng 1: 2 người lớn · Phòng 2: 3 người lớn · Phòng 3: 2 người lớn"
+        },
+        "Unique physical unit: Bare Chic One locked against duplicate selection in Room 2": {
+          "pass": true,
+          "lockedForSlot2": true
+        },
+        "Changing dates to Nov 6–9 (3 nights) updates URL and preserves room groups and provisional room preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Page refresh preserves dates (3 nights), 2 rooms / 4 adults, and provisional preferences (Bare Chic One & Two)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Review modal links cleanly to Step 05 (/dev/demo/dat-phong) showing multi-room allocation and honest no-PMS notice": {
+          "pass": true,
+          "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two"
+        },
+        "Returning from Step 05 to Booking Results preserves dates, 2 rooms / 4 adults, and both selected rooms": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4&prefs=bare-chic-one%2Cbare-chic-two",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 2/2 phòng dự kiến | Phạm vi cơ sở | Bare Chic | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic One (Bare Chic) | Sức chứa đã xác minh: tối đa 2 người lớn | PHÒNG 2 · 2 NGƯỜI LỚN | Bỏ chọn | Bare Chic Two (Bare Chic) | Sức chứa tối đa chưa xác minh — cần kiểm tra khi kết nối PMS | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (2/2 phòng) | Xoá tất cả lựa chọn phòng"
+        },
+        "Changing property to All Properties shows all 6 grouped properties": {
+          "pass": true,
+          "allPropsCount": 6
+        },
+        "Changing property to The Nắng Suites constrains results to 1 property and clears incompatible Bare Chic preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+          "sections": 1,
+          "h1": "Danh mục phòng tại The Nắng Suites",
+          "summary": "TÓM TẮT LỰA CHỌN DỰ KIẾN | Đã chọn 0/2 phòng dự kiến | Phạm vi cơ sở | The Nắng Suites | Nhận – Trả phòng | 6 thg 11 – 9 thg 11 (3 đêm) | Tổng số phòng & khách | 2 phòng · 4 người lớn | PHÒNG 1 · 2 NGƯỜI LỚN | Chọn ngay | Chưa chọn phòng dự kiến cho nhóm này | PHÒNG 2 · 2 NGƯỜI LỚN | Chọn ngay | Chưa chọn phòng dự kiến cho nhóm này | Chưa phải đặt phòng đã xác nhận | Tính năng kiểm tra phòng trống và giá theo ngày đang được hoàn thiện. Chưa có phòng nào được giữ và chưa phát sinh thanh toán. | Xem lại lựa chọn dự kiến (0/2 phòng)"
+        },
+        "No horizontal overflow and 0 broken images": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+          "overflowX": false,
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "brokenImages": [],
+          "cls": 0
+        }
+      },
+      "facts": {
+        "url": "/dev/demo/tim-phong?property=the-nang-suites&checkIn=2026-11-06&checkOut=2026-11-09&rooms=2%2C2&adults=4",
+        "overflowX": false,
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "brokenImages": [],
+        "cls": 0
+      }
+    }
+  ],
+  "consoleErrors": []
+}

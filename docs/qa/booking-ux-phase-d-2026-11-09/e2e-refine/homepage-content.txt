@@ -1,0 +1,71 @@
+▶ Homepage content completion
+  ✔ the document parses into 3 brands, 3 services and 6 FAQs (vi) (0.642083ms)
+  ✔ vi @ 375: brands, services and FAQs show the client's copy, readable, no overflow (4010.493583ms)
+  ✔ vi @ 390: brands, services and FAQs show the client's copy, readable, no overflow (3965.806459ms)
+  ✔ vi @ 768: brands, services and FAQs show the client's copy, readable, no overflow (4082.968375ms)
+  ✔ vi @ 1440: brands, services and FAQs show the client's copy, readable, no overflow (4831.84ms)
+  ✔ the document parses into 3 brands, 3 services and 6 FAQs (en) (0.192833ms)
+  ✖ en @ 375: brands, services and FAQs show the client's copy, readable, no overflow (30062.94075ms)
+  ✖ en @ 390: brands, services and FAQs show the client's copy, readable, no overflow (30060.438459ms)
+  ✖ en @ 768: brands, services and FAQs show the client's copy, readable, no overflow (30064.689209ms)
+  ✖ en @ 1440: brands, services and FAQs show the client's copy, readable, no overflow (30064.423625ms)
+  ✔ the default page is Vietnamese; the header, booking bar and section anchors are unchanged (1368.860958ms)
+✖ Homepage content completion (138584.053708ms)
+ℹ tests 11
+ℹ suites 1
+ℹ pass 7
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 138757.019458
+
+✖ failing tests:
+
+test at test/e2e/homepage-content.test.mjs:108:7
+✖ en @ 375: brands, services and FAQs show the client's copy, readable, no overflow (30062.94075ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:60:14)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:109:43) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/homepage-content.test.mjs:108:7
+✖ en @ 390: brands, services and FAQs show the client's copy, readable, no overflow (30060.438459ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:60:14)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:109:43) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/homepage-content.test.mjs:108:7
+✖ en @ 768: brands, services and FAQs show the client's copy, readable, no overflow (30064.689209ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:60:14)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:109:43) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }
+
+test at test/e2e/homepage-content.test.mjs:108:7
+✖ en @ 1440: brands, services and FAQs show the client's copy, readable, no overflow (30064.423625ms)
+  page.goto: Timeout 30000ms exceeded.
+  Call log:
+    - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"
+  
+      at open (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:60:14)
+      at async TestContext.<anonymous> (/Users/noe/Documents/GitHub/VNest 2/test/e2e/homepage-content.test.mjs:109:43) {
+    name: 'TimeoutError',
+    log: [ '  - navigating to "http://localhost:3403/dev/demo?intro=0&lang=en", waiting until "networkidle"' ]
+  }

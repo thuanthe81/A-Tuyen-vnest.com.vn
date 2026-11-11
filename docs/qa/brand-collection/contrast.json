@@ -1,0 +1,68 @@
+[
+  {
+    "text": "olive #37412f",
+    "on": "beige #f1ece4",
+    "ratio": 9.11,
+    "use": "headings, labels (A wall)"
+  },
+  {
+    "text": "olive #37412f",
+    "on": "paper #fbf9f5",
+    "ratio": 10.19,
+    "use": "headings, labels (B, results)"
+  },
+  {
+    "text": "olive #37412f",
+    "on": "white #ffffff",
+    "ratio": 10.72,
+    "use": "mount and stage text, chips"
+  },
+  {
+    "text": "beige #f1ece4",
+    "on": "olive #37412f",
+    "ratio": 9.11,
+    "use": "selected chip / A 'all' panel text"
+  },
+  {
+    "text": "muted #5b6152",
+    "on": "beige #f1ece4",
+    "ratio": 5.45,
+    "use": "secondary text on the wall"
+  },
+  {
+    "text": "muted #5b6152",
+    "on": "white #ffffff",
+    "ratio": 6.41,
+    "use": "secondary text on mounts"
+  },
+  {
+    "text": "muted #5b6152",
+    "on": "paper #fbf9f5",
+    "ratio": 6.1,
+    "use": "secondary text, B"
+  },
+  {
+    "text": "taupe #8a8173",
+    "on": "beige #f1ece4",
+    "ratio": 3.27,
+    "use": "A second headline sentence (display size only)"
+  },
+  {
+    "text": "copper #ab7444",
+    "on": "beige #f1ece4",
+    "ratio": 3.36,
+    "use": "lines and symbol only, never text"
+  },
+  {
+    "text": "copper #ab7444",
+    "on": "paper #fbf9f5",
+    "ratio": 3.76,
+    "use": "B thread and nodes (graphic)"
+  },
+  {
+    "text": "copper #ab7444",
+    "on": "white #ffffff",
+    "ratio": 3.95,
+    "use": "for reference"
+  }
+]

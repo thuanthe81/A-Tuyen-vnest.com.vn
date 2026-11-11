@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-20T02:22:40.015Z",
+  "url": "http://localhost:3400/dev/stays/bare-chic",
+  "perf-390": {
+    "lcpMs": 1356,
+    "lcpElement": "IMG",
+    "cls": 0,
+    "loadMs": 2263,
+    "images": 4,
+    "imageKB": 104,
+    "scripts": 10,
+    "scriptKB": 167,
+    "documentKB": 14
+  },
+  "perf-1440": {
+    "lcpMs": 1080,
+    "lcpElement": "IMG",
+    "cls": 0,
+    "loadMs": 2134,
+    "images": 6,
+    "imageKB": 76,
+    "scripts": 10,
+    "scriptKB": 167,
+    "documentKB": 14
+  },
+  "phone": {
+    "slides": [
+      {
+        "index": 1,
+        "counter": "1/19",
+        "label": "Bare Chic One",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 2,
+        "counter": "2/19",
+        "label": "Bare Chic Two",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 3,
+        "counter": "3/19",
+        "label": "Bare Chic Three",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 4,
+        "counter": "4/19",
+        "label": "Bare Indochine",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 5,
+        "counter": "5/19",
+        "label": "Bare Chic One",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 6,
+        "counter": "6/19",
+        "label": "Bare Chic Two",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 7,
+        "counter": "7/19",
+        "label": "Bare Chic Three",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 8,
+        "counter": "8/19",
+        "label": "Bare Indochine",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 9,
+        "counter": "9/19",
+        "label": "Bare Chic One",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 10,
+        "counter": "10/19",
+        "label": "Bare Chic Two",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 11,
+        "counter": "11/19",
+        "label": "Bare Chic Three",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 12,
+        "counter": "12/19",
+        "label": "Bare Indochine",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 13,
+        "counter": "13/19",
+        "label": "Bare Chic One",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 14,
+        "counter": "14/19",
+        "label": "Bare Chic Two",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 15,
+        "counter": "15/19",
+        "label": "Bare Chic Three",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 16,
+        "counter": "16/19",
+        "label": "Bare Indochine",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 17,
+        "counter": "17/19",
+        "label": "Bare Chic Two",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 18,
+        "counter": "18/19",
+        "label": "Bare Indochine",
+        "labelMatchesPhoto": true
+      },
+      {
+        "index": 19,
+        "counter": "19/19",
+        "label": "Bare Chic Two",
+        "labelMatchesPhoto": true
+      }
+    ],
+    "tapOpens": {
+      "tileLabel": "Bare Chic Two",
+      "open": true,
+      "caption": "Bare Chic Two6/6",
+      "img": "Bare Chic Two: một người ngồi bên cửa sổ trong ánh sáng dịu, tranh treo tường bên cạnh",
+      "focusInside": true
+    },
+    "viewerSwipeNext": "Bare Chic Three1/4",
+    "viewerSwipeBack": "Bare Chic Two6/6",
+    "closeButton": {
+      "open": false,
+      "focus": "Xem ảnh 19/19: Bare Chic Two: một người ngồi bên cửa sổ trong ánh sáng"
+    },
+    "scrollUnlocked": true,
+    "grid": {
+      "open": true,
+      "groups": [
+        "Bare Chic One4 ảnh",
+        "Bare Chic Two6 ảnh",
+        "Bare Chic Three4 ảnh",
+        "Bare Indochine5 ảnh"
+      ],
+      "thumbnails": 19
+    },
+    "rooms": [
+      {
+        "button": "Xem ảnh phòng (4): Bare Chic One",
+        "captions": [
+          "Bare Chic One1/4",
+          "Bare Chic One2/4",
+          "Bare Chic One3/4",
+          "Bare Chic One4/4"
+        ],
+        "after": {
+          "open": false,
+          "focus": "Xem ảnh phòng (4): Bare Chic One"
+        }
+      },
+      {
+        "button": "Xem ảnh phòng (6): Bare Chic Two",
+        "captions": [
+          "Bare Chic Two1/6",
+          "Bare Chic Two2/6",
+          "Bare Chic Two3/6",
+          "Bare Chic Two4/6",
+          "Bare Chic Two5/6",
+          "Bare Chic Two6/6"
+        ],
+        "after": {
+          "open": false,
+          "focus": "Xem ảnh phòng (6): Bare Chic Two"
+        }
+      },
+      {
+        "button": "Xem ảnh phòng (4): Bare Chic Three",
+        "captions": [
+          "Bare Chic Three1/4",
+          "Bare Chic Three2/4",
+          "Bare Chic Three3/4",
+          "Bare Chic Three4/4"
+        ],
+        "after": {
+          "open": false,
+          "focus": "Xem ảnh phòng (4): Bare Chic Three"
+        }
+      },
+      {
+        "button": "Xem ảnh phòng (5): Bare Indochine",
+        "captions": [
+          "Bare Indochine1/5",
+          "Bare Indochine2/5",
+          "Bare Indochine3/5",
+          "Bare Indochine4/5",
+          "Bare Indochine5/5"
+        ],
+        "after": {
+          "open": false,
+          "focus": "Xem ảnh phòng (5): Bare Indochine"
+        }
+      }
+    ],
+    "errors": []
+  },
+  "desktop": {
+    "tiles": [
+      {
+        "label": "Bare Chic One",
+        "name": "Xem ảnh 1/19: Bare Chic One: bàn làm việ"
+      },
+      {
+        "label": "Bare Chic Two",
+        "name": "Xem ảnh 2/19: Bare Chic Two: giường, TV "
+      },
+      {
+        "label": "Bare Chic Three",
+        "name": "Xem ảnh 3/19: Bare Chic Three: giường, t"
+      },
+      {
+        "label": "Bare Indochine",
+        "name": "Xem ảnh 4/19: Bare Indochine: tường xanh"
+      },
+      {
+        "label": "Bare Chic One",
+        "name": "Xem ảnh 5/19: Bare Chic One: giường và g"
+      }
+    ],
+    "open": {
+      "open": true,
+      "caption": "Bare Chic Three1/4",
+      "img": "Bare Chic Three: giường, tranh treo tường và góc ngồi bên cửa sổ ở cuối phòng",
+      "focusInside": true
+    },
+    "left1": "Bare Chic Two6/6",
+    "left2": "Bare Chic Two5/6",
+    "afterEscape": {
+      "open": false,
+      "focus": "Xem ảnh 3/19: Bare Chic Three: giường, tranh treo tường và góc ngồi bê"
+    },
+    "clickOpen": {
+      "open": true,
+      "caption": "Bare Chic One1/4",
+      "img": "Bare Chic One: bàn làm việc và ghế sofa dài bên khung cửa sổ lớn nhìn ra sân thể thao và phố",
+      "focusInside": true
+    },
+    "afterClose": {
+      "open": false,
+      "focus": "Xem ảnh 1/19: Bare Chic One: bàn làm việc và ghế sofa dài bên khung cử"
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,2220 @@
+{
+  "_meta": {
+    "status": "Working data inventory, accepted by the owner 16/10/2026. Not approval of content or photography; not wired into the site.",
+    "source": "VNest_Information.xlsx (created 2026-10-12 by openpyxl; received 2026-10-15)",
+    "driveCheckedOn": "2026-10-15",
+    "rules": [
+      "Client strings are verbatim (raw) or whitespace-trimmed only; nothing corrected.",
+      "indicativeRate is client-supplied guidance, never a bookable price; live price and availability come from the PMS.",
+      "mappingConfidence: high = folder title matches the row and no repeats; medium = some files repeat in another folder (by name and size); low = every file repeats another folder; conflict = the same folder URL is linked from rows of two properties (ownership unverified).",
+      "Repeats are detected from file name + exact byte size only. They are probable duplicates, not hash-verified."
+    ]
+  },
+  "brands": [
+    {
+      "id": "bare",
+      "name": "Bare Boutique Stays",
+      "evidence": "suffix \"- Bare Boutique Stays\" on four official names",
+      "logo": null,
+      "description": null
+    },
+    {
+      "id": "the-nang",
+      "name": "The Nắng Suites",
+      "evidence": "official name has no brand suffix; brand assumed = property",
+      "logo": null,
+      "description": null
+    },
+    {
+      "id": "pepper-house",
+      "name": "Pepper House",
+      "evidence": "official name has no brand suffix; brand assumed = property",
+      "logo": null,
+      "description": null
+    }
+  ],
+  "properties": [
+    {
+      "id": "bare-chic",
+      "workingName": "Bare Chic",
+      "officialName": "Bare Chic - Bare Boutique Stays",
+      "brand": "bare",
+      "city": "ho-chi-minh",
+      "address": {
+        "raw": "12/18 Nguyễn Thị Minh Khai, Phường Sài Gòn, Hồ Chí Minh",
+        "trimmed": "12/18 Nguyễn Thị Minh Khai, Phường Sài Gòn, Hồ Chí Minh",
+        "source": "Tổng quan 6 cơ sở!I4"
+      },
+      "area": {
+        "status": "unverified",
+        "note": "See audit section 5: no Area taxonomy agreed"
+      },
+      "googleMaps": {
+        "displayedText": "https://share.google/fskgZreXVjowaoQCO",
+        "hyperlinkTarget": "https://share.google/fskgZreXVjowaoQCO",
+        "consistent": true
+      },
+      "description": {
+        "raw": "Bare Chic – một ngôi nhà trong chuỗi các căn hộ Bare Boutique Stays. Không quá lộng lẫy như những khách sạn 3 – 4 sao bạn từng lưu trú mà ở Bare Chic đơn giản chỉ là nơi kết nối những trải nghiệm thú vị của bạn. Đó là một ngôi nhà gồm bốn tầng mà mỗi tầng là một căn studio riêng biệt, hiện đại và tiện nghi. Khi khép cửa căn phòng lại, hiện ra trước mắt bạn là một không gian nội thất gợi cảm với khoảng trời trong ô cửa cho riêng mình. Qua khung cửa sổ ấy, bạn và người đồng hành của mình ngồi tựa trên chiếc sofa, thưởng thức tách cà phê và cùng nhau đón một chút bình yên của buổi sớm mai.",
+        "source": "Tổng quan 6 cơ sở!E4"
+      },
+      "amenities": {
+        "raw": "Bếp nhỏ, Phòng tắm riêng, Smart TV, Wifi, Điều hoà nhiệt độ,..",
+        "list": [
+          "Bếp nhỏ",
+          "Phòng tắm riêng",
+          "Smart TV",
+          "Wifi",
+          "Điều hoà nhiệt độ"
+        ],
+        "incomplete": true
+      },
+      "nearbyReference": {
+        "raw": "'Booking & chính sách'!A3:H11",
+        "hyperlink": "null!A3:H11"
+      },
+      "transport": "Grab, đi bộ, xe bus",
+      "audience": "Khách đi du lịch, công tác, staycation, cặp đôi.",
+      "rooms": [
+        "bare-chic-one",
+        "bare-chic-two",
+        "bare-chic-three",
+        "bare-indochine"
+      ]
+    },
+    {
+      "id": "bare-hyphen",
+      "workingName": "Bare Hyphen",
+      "officialName": "Bare Hyphen - Bare Boutique Stays",
+      "brand": "bare",
+      "city": "ho-chi-minh",
+      "address": {
+        "raw": "29A/18 Nguyễn Đình Chiểu, Phường Sài Gòn, Hồ Chí Minh\n\n",
+        "trimmed": "29A/18 Nguyễn Đình Chiểu, Phường Sài Gòn, Hồ Chí Minh",
+        "source": "Tổng quan 6 cơ sở!I8"
+      },
+      "area": {
+        "status": "unverified",
+        "note": "See audit section 5: no Area taxonomy agreed"
+      },
+      "googleMaps": {
+        "displayedText": "https://share.google/YV37L6mKA2VrWBO2S",
+        "hyperlinkTarget": "https://share.google/fskgZreXVjowaoQCO",
+        "consistent": false,
+        "note": "Displayed short link resolves to Bare Hyphen; the cell hyperlink opens Bare Chic"
+      },
+      "description": {
+        "raw": "Bắt nguồn là câu chuyện của riêng mình, Bare Hyphen được viết tiếp một chương mới với phong cách thiết kế đan xen giữa quá khứ – hiện đại. Quá khứ với những hoài niệm đậm màu của thời gian và sự duyên dáng tươi trẻ của hiện tại. Quá khứ và hiện tại đan xen, kết nối cùng nhau tạo nên Bare Hyphen ấm cúng và tiện nghi. Bare Hyphen có bốn căn hộ, và vẫn được đặt theo tên đơn giản của những căn hộ trong chuỗi Bare Boutique Stay: One, Two, Three và Four. Ba căn hộ với hai tone màu đại diện khác nhau, riêng tư và thân quen như là nhà. Điểm nhấn của Bare Hyphen là các vật dụng nội thất được kết nối với nhau uyển chuyển, mềm mại, đường nét tinh gọn. Các vật liệu gỗ, đá mài, Inox màu Champagne được chọn làm vật liệu chủ đạo để thể hiện tính thẩm mỹ và chất cảm cho không gian nội thất.",
+        "source": "Tổng quan 6 cơ sở!E8"
+      },
+      "amenities": {
+        "raw": "Bếp nhỏ, Phòng tắm riêng, Smart TV, Wifi, Điều hoà nhiệt độ,..",
+        "list": [
+          "Bếp nhỏ",
+          "Phòng tắm riêng",
+          "Smart TV",
+          "Wifi",
+          "Điều hoà nhiệt độ"
+        ],
+        "incomplete": true
+      },
+      "nearbyReference": {
+        "raw": "'Booking & chính sách'!A3:H11",
+        "hyperlink": "null!A3:H11"
+      },
+      "transport": "Grab, đi bộ, xe bus",
+      "audience": "Khách đi du lịch, công tác, staycation, cặp đôi.",
+      "rooms": [
+        "bare-hyphen-one",
+        "bare-hyphen-two",
+        "bare-hyphen-three",
+        "bare-hyphen-four"
+      ]
+    },
+    {
+      "id": "bare-da-kao",
+      "workingName": "Bare Đa Kao",
+      "officialName": "Bare Đa Kao - Bare Boutique Stays",
+      "brand": "bare",
+      "city": "ho-chi-minh",
+      "address": {
+        "raw": "14/3 Nguyễn Đình Chiểu, phường Tân Định, TP HCM",
+        "trimmed": "14/3 Nguyễn Đình Chiểu, phường Tân Định, TP HCM",
+        "source": "Tổng quan 6 cơ sở!I12"
+      },
+      "area": {
+        "status": "unverified",
+        "note": "See audit section 5: no Area taxonomy agreed"
+      },
+      "googleMaps": {
+        "displayedText": "https://share.google/2GZVfHKLcCJLT8jU0",
+        "hyperlinkTarget": "https://share.google/2GZVfHKLcCJLT8jU0",
+        "consistent": true
+      },
+      "description": {
+        "raw": "Bare Đa Kao được lấy cảm hứng từ vẻ đẹp duyên dáng của kiến trúc hiện đại Saigon thời vàng son những năm 1950-1970. Từ đó, Bare giữ gìn hơi thở Saigon qua tên gọi và cảm xúc. Khoác lên mình chiếc áo mang màu sắc của thời gian, sự từng trải và cả những nét thăng trầm, trong từng chi tiết thiết kế, chính là vẻ đẹp của ký ức và tình yêu dành cho Saigon.\n\nTrong Bare Đa Kao có 4 căn hộ, mỗi căn hộ đều gợi lên những hoài niệm và kết nối với Saigon thông qua những chi tiết thiết kế. Với màu sắc, không gian khác nhau nhưng vẫn giữ được tinh thần chung của Bare, không gian trong Bare Đa Kao mang ngôn ngữ thẩm mỹ thiết kế đương đại và gợi lên chút hoài niệm với văn hoá Saigon xưa. Trong từng căn hộ, Bare tinh tế chiều chuộng cảm xúc thông qua mùi hương, thông qua bức tranh Saigon và cả khung cửa rộng. Và gợi ra một không gian vừa đủ để đối thoại với chính mình, để “breathe in breathe out”.",
+        "source": "Tổng quan 6 cơ sở!E12"
+      },
+      "amenities": {
+        "raw": "Bếp nhỏ, Phòng tắm riêng, Smart TV, Wifi, Điều hoà nhiệt độ,..",
+        "list": [
+          "Bếp nhỏ",
+          "Phòng tắm riêng",
+          "Smart TV",
+          "Wifi",
+          "Điều hoà nhiệt độ"
+        ],
+        "incomplete": true
+      },
+      "nearbyReference": {
+        "raw": "'Booking & chính sách'!A3:H11",
+        "hyperlink": "null!A3:H11"
+      },
+      "transport": "Grab, đi bộ, xe bus",
+      "audience": "Khách đi du lịch, công tác, staycation, cặp đôi.",
+      "rooms": [
+        "bare-da-kao-one",
+        "bare-da-kao-two",
+        "bare-da-kao-three",
+        "bare-da-kao-four"
+      ]
+    },
+    {
+      "id": "bare-han",
+      "workingName": "Bare Hàn",
+      "officialName": "Bare Hàn - Bare Boutique Stays",
+      "brand": "bare",
+      "city": "da-nang",
+      "address": {
+        "raw": "K169/14 Trần Phú, Hải Châu, Đà Nẵng",
+        "trimmed": "K169/14 Trần Phú, Hải Châu, Đà Nẵng",
+        "source": "Tổng quan 6 cơ sở!I16"
+      },
+      "area": {
+        "status": "unverified",
+        "note": "See audit section 5: no Area taxonomy agreed"
+      },
+      "googleMaps": {
+        "displayedText": "https://share.google/Zmxp6tjY7ZyBmBBud",
+        "hyperlinkTarget": "https://share.google/Zmxp6tjY7ZyBmBBud",
+        "consistent": true
+      },
+      "description": {
+        "raw": "\"Bare Đa Kao được lấy cảm hứng từ vẻ đẹp duyên dáng của kiến trúc hiện đại Saigon thời vàng son những năm 1950-1970. Từ đó, Bare giữ gìn hơi thở Saigon qua tên gọi và cảm xúc. Khoác lên mình chiếc áo mang màu sắc của thời gian, sự từng trải và cả những nét thăng trầm, trong từng chi tiết thiết kế, chính là vẻ đẹp của ký ức và tình yêu dành cho Saigon.\n\nTrong Bare Đa Kao có 4 căn hộ, mỗi căn hộ đều gợi lên những hoài niệm và kết nối với Saigon thông qua những chi tiết thiết kế. Với màu sắc, không gian khác nhau nhưng vẫn giữ được tinh thần chung của Bare, không gian trong Bare Đa Kao mang ngôn ngữ thẩm mỹ thiết kế đương đại và gợi lên chút hoài niệm với văn hoá Saigon xưa. Trong từng căn hộ, Bare tinh tế chiều chuộng cảm xúc thông qua mùi hương, thông qua bức tranh Saigon và cả khung cửa rộng. Và gợi ra một không gian vừa đủ để đối thoại với chính mình, để “breathe in breathe out”.\"\n\n",
+        "source": "Tổng quan 6 cơ sở!E16",
+        "status": "INVALID: identical to Bare Đa Kao (E12) apart from added quotation marks (confirmed by string comparison)"
+      },
+      "amenities": {
+        "raw": "Bếp nhỏ, Phòng tắm riêng, Smart TV, Wifi, Điều hoà nhiệt độ,..",
+        "list": [
+          "Bếp nhỏ",
+          "Phòng tắm riêng",
+          "Smart TV",
+          "Wifi",
+          "Điều hoà nhiệt độ"
+        ],
+        "incomplete": true
+      },
+      "nearbyReference": {
+        "raw": "Thông tin các điểm ăn uống & tham quan",
+        "hyperlink": "'Thông tin các điểm tham quan'!A21:D36"
+      },
+      "transport": "Grab, đi bộ, xe bus",
+      "audience": "Khách đi du lịch, công tác, staycation, cặp đôi.",
+      "rooms": [
+        "bare-han-ground",
+        "bare-han-one",
+        "bare-han-two",
+        "bare-han-three"
+      ]
+    },
+    {
+      "id": "the-nang-suites",
+      "workingName": "The Nắng Suites",
+      "officialName": "The Nắng Suites",
+      "brand": "the-nang",
+      "city": "da-nang",
+      "address": {
+        "raw": "K174/31 Võ Văn Kiệt, Sơn Trà, Đà Nẵng",
+        "trimmed": "K174/31 Võ Văn Kiệt, Sơn Trà, Đà Nẵng",
+        "source": "Tổng quan 6 cơ sở!I20"
+      },
+      "area": {
+        "status": "unverified",
+        "note": "See audit section 5: no Area taxonomy agreed"
+      },
+      "googleMaps": {
+        "displayedText": "https://share.google/OZaB9ncAnVW8ijALJ",
+        "hyperlinkTarget": "https://share.google/OZaB9ncAnVW8ijALJ",
+        "consistent": true
+      },
+      "description": {
+        "raw": "So với việc ở khách sạn, The Nắng Suites có trải nghiệm rất riêng. Đây không chỉ là nơi để lưu trú, mà bạn có thể thong thả nghỉ ngơi và có những cuộc gặp gỡ thú vị. Nơi này được tạo ra để những câu chuyện được kể và chia sẻ.\n\nGian phòng có diện tích rộng rãi nhất nên mọi tiện nghi từ phòng ngủ đến phòng tắm đều đem lại cảm giác thoải mái. Sau một ngày làm việc bận rộn, bạn hãy ngâm mình trong làn nước ấm để vơi bớt căng thẳng. Đón gió biển ngoài sân thượng, trong khi ngồi gác chân lên ghế với ly vang đỏ trên tay. Hay chỉ đơn giản là nằm lăn ra giường xem YouTube. Đây có phải là phong cách sống mà bạn đang tìm kiếm?\n",
+        "source": "Tổng quan 6 cơ sở!E20",
+        "status": "QUESTION: reads as the description of a single room (the largest), not of the property"
+      },
+      "amenities": {
+        "raw": "Bếp nhỏ, Phòng tắm riêng, Smart TV, Wifi, Điều hoà nhiệt độ,..",
+        "list": [
+          "Bếp nhỏ",
+          "Phòng tắm riêng",
+          "Smart TV",
+          "Wifi",
+          "Điều hoà nhiệt độ"
+        ],
+        "incomplete": true
+      },
+      "nearbyReference": {
+        "raw": "Thông tin các điểm ăn uống & tham quan",
+        "hyperlink": "'Thông tin các điểm tham quan'!A21:D36"
+      },
+      "transport": "Grab, đi bộ, xe bus",
+      "audience": "Khách đi du lịch, công tác, staycation, cặp đôi.",
+      "rooms": [
+        "yellow-submarine",
+        "pale-blue-eyes",
+        "green-river",
+        "blue-moon"
+      ]
+    },
+    {
+      "id": "pepper-house",
+      "workingName": "Pepper House",
+      "officialName": "Pepper House",
+      "brand": "pepper-house",
+      "city": "ho-chi-minh",
+      "address": {
+        "raw": "19 Hoàng Sa, Phường Sài Gòn, TP HCM",
+        "trimmed": "19 Hoàng Sa, Phường Sài Gòn, TP HCM",
+        "source": "Tổng quan 6 cơ sở!I24"
+      },
+      "area": {
+        "status": "unverified",
+        "note": "See audit section 5: no Area taxonomy agreed"
+      },
+      "googleMaps": {
+        "displayedText": "https://share.google/EtwVNoPbiCmG7Tvbj",
+        "hyperlinkTarget": "https://share.google/EtwVNoPbiCmG7Tvbj",
+        "consistent": true
+      },
+      "description": {
+        "raw": "Bước chân vào Pepper House, bạn sẽ ngửi thấy ngay mùi hương của một tiệm cà phê nhỏ, tiếp theo đó là không gian hội họp và làm việc. Vào sâu hơn là nơi phòng ở được thiết kế chu đáo để tối đa hóa cảm giác thoải mái, tiện nghi, có cửa sổ nhìn ra dòng kênh yên bình và lối đi bộ rợp bóng cây. Chiếc nệm chất lượng cao trên giường cỡ queen, sofa tiếp khách và bàn làm việc riêng biệt, căn bếp tiện nghi cùng phòng tắm rộng rãi sẽ luôn tạo cho bạn cảm giác như đang ở nhà.",
+        "source": "Tổng quan 6 cơ sở!E24"
+      },
+      "amenities": {
+        "raw": "Bếp, Phòng tắm riêng, Smart TV, Wifi, Điều hoà nhiệt độ,..",
+        "list": [
+          "Bếp",
+          "Phòng tắm riêng",
+          "Smart TV",
+          "Wifi",
+          "Điều hoà nhiệt độ"
+        ],
+        "incomplete": true
+      },
+      "nearbyReference": {
+        "raw": "'Booking & chính sách'!A3:H11",
+        "hyperlink": "null!A3:H11"
+      },
+      "transport": "Grab, đi bộ, xe bus",
+      "audience": "Khách đi du lịch, công tác, staycation, cặp đôi.",
+      "rooms": [
+        "pepper-house-3rd-floor",
+        "pepper-house-4th-floor"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "bare-chic-one",
+      "property": "bare-chic",
+      "name": "Bare Chic One",
+      "nameInRoomSheet": "Bare Chic One",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D4",
+      "size": "28m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E4",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1100000,
+        "weekend": 1200000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,100,000 Ngày cuối tuần: 1,200,000",
+        "source": "Tổng quan 6 cơ sở!L4",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1eUkBZ-ntQTz79IcssBpiswLlkU4sGre4",
+        "folderUrl": "https://drive.google.com/drive/folders/1eUkBZ-ntQTz79IcssBpiswLlkU4sGre4?usp=sharing",
+        "driveFolderTitle": "Bare Chic One",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "medium",
+        "issues": [
+          "1.56.png and 1.59.png have the same names and byte sizes as files in Bare Chic Three (probable duplicates, not hash-verified); which room they show is unconfirmed"
+        ],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-chic-two",
+      "property": "bare-chic",
+      "name": "Bare Chic Two",
+      "nameInRoomSheet": "Bare Chic Two",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D4",
+      "size": "28m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E4",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1100000,
+        "weekend": 1200000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,100,000 Ngày cuối tuần: 1,200,000",
+        "source": "Tổng quan 6 cơ sở!L4",
+        "sharedViaMergedCell": true
+      },
+      "media": {
+        "folderId": "1-LJx_HPTYOn3GqOEXa8CDX5Rtg512e3L",
+        "folderUrl": "https://drive.google.com/drive/folders/1-LJx_HPTYOn3GqOEXa8CDX5Rtg512e3L?usp=sharing",
+        "driveFolderTitle": "Bare Chic Two",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-chic-three",
+      "property": "bare-chic",
+      "name": "Bare Chic Three",
+      "nameInRoomSheet": "Bare Chic Three",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D4",
+      "size": "28m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E4",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1100000,
+        "weekend": 1200000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,100,000 Ngày cuối tuần: 1,200,000",
+        "source": "Tổng quan 6 cơ sở!L4",
+        "sharedViaMergedCell": true
+      },
+      "media": {
+        "folderId": "1w_pMRvlJe_y1Fl0bQ9NGVLiFuU9M16fi",
+        "folderUrl": "https://drive.google.com/drive/folders/1w_pMRvlJe_y1Fl0bQ9NGVLiFuU9M16fi?usp=sharing",
+        "driveFolderTitle": "Bare Chic Three",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "medium",
+        "issues": [
+          "1.56.png and 1.59.png have the same names and byte sizes as files in Bare Chic One (probable duplicates, not hash-verified)"
+        ],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-indochine",
+      "property": "bare-chic",
+      "name": "Bare Indochine",
+      "nameInRoomSheet": "Bare Indochine",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D4",
+      "size": "28m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E4",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1100000,
+        "weekend": 1200000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,100,000 Ngày cuối tuần: 1,200,000",
+        "source": "Tổng quan 6 cơ sở!L4",
+        "sharedViaMergedCell": true
+      },
+      "media": {
+        "folderId": "1zzTq0l1QIhwPkUayZDvQKrUw2f4jETHk",
+        "folderUrl": "https://drive.google.com/drive/folders/1zzTq0l1QIhwPkUayZDvQKrUw2f4jETHk?usp=sharing",
+        "driveFolderTitle": "Bare Indochine",
+        "fileCount": 5,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-hyphen-one",
+      "property": "bare-hyphen",
+      "name": "Bare Hyphen One",
+      "nameInRoomSheet": "Bare Hyphen One",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D8",
+      "size": "18m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E8",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1000000,
+        "weekend": 1100000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,000,000 Ngày cuối tuần: 1,100,000",
+        "source": "Tổng quan 6 cơ sở!L8",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1WbvKxpl5G8VAsuTsS9Qrf0YHehU1nIsc",
+        "folderUrl": "https://drive.google.com/drive/folders/1WbvKxpl5G8VAsuTsS9Qrf0YHehU1nIsc?usp=sharing",
+        "driveFolderTitle": "Bare Hyphen One",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "medium",
+        "issues": [
+          "All 6 files have the same names and byte sizes as the Bare Hyphen Three folder (probable duplicates, not hash-verified)"
+        ],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-hyphen-two",
+      "property": "bare-hyphen",
+      "name": "Bare Hyphen Two",
+      "nameInRoomSheet": "Bare Hyphen Two",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D9",
+      "size": "18m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E9",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": null,
+        "weekend": null,
+        "source": null,
+        "note": "Blank in workbook (cell not merged with a neighbour)"
+      },
+      "media": {
+        "folderId": "1Jk6WG-M5Ld6tsUiMYXx2cHdKig-0OLA5",
+        "folderUrl": "https://drive.google.com/drive/folders/1Jk6WG-M5Ld6tsUiMYXx2cHdKig-0OLA5?usp=sharing",
+        "driveFolderTitle": "Bare Hyphen Two",
+        "fileCount": 4,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [
+          "Only 4 images, the fewest of any room"
+        ],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-hyphen-three",
+      "property": "bare-hyphen",
+      "name": "Bare Hyphen Three",
+      "nameInRoomSheet": "Bare Hyphen Three",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D10",
+      "size": "18m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E10",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": null,
+        "weekend": null,
+        "source": null,
+        "note": "Blank in workbook (cell not merged with a neighbour)"
+      },
+      "media": {
+        "folderId": "15aTksIiJG0E6F8ZzfxCokC5I7ZF7HrFG",
+        "folderUrl": "https://drive.google.com/drive/folders/15aTksIiJG0E6F8ZzfxCokC5I7ZF7HrFG?usp=sharing",
+        "driveFolderTitle": "Bare Hyphen Three",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "low",
+        "issues": [
+          "All 6 files have the same names and byte sizes as Bare Hyphen One (probable duplicates, not hash-verified): possibly no photograph unique to this room"
+        ],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-hyphen-four",
+      "property": "bare-hyphen",
+      "name": "Bare Hyphen Four",
+      "nameInRoomSheet": "Bare Hyphen Four",
+      "type": "Duplex studio",
+      "typeSource": "Cơ sở & danh sách phòng!D11",
+      "size": "30m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E11",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1080000,
+        "weekend": 1180000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,080,000 Ngày cuối tuần: 1,180,000",
+        "source": "Tổng quan 6 cơ sở!L11",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1LL8O9WuzdHR_gjTzIsIILl9sINLLxyiW",
+        "folderUrl": "https://drive.google.com/drive/folders/1LL8O9WuzdHR_gjTzIsIILl9sINLLxyiW?usp=sharing",
+        "driveFolderTitle": "Bare Hyphen Four",
+        "fileCount": 5,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-da-kao-one",
+      "property": "bare-da-kao",
+      "name": "Bare Đa Kao One",
+      "nameInRoomSheet": "Bare Đa Kao One",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D12",
+      "size": "13m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E12",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1000000,
+        "weekend": 1100000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,000,000 Ngày cuối tuần: 1,100,000",
+        "source": "Tổng quan 6 cơ sở!L12",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1TZJ8RysVLkRy3SxikbyiGlK1fq1Xl2Ii",
+        "folderUrl": "https://drive.google.com/drive/folders/1TZJ8RysVLkRy3SxikbyiGlK1fq1Xl2Ii?usp=sharing",
+        "driveFolderTitle": "Bare Đa Kao One",
+        "fileCount": 5,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-da-kao-two",
+      "property": "bare-da-kao",
+      "name": "Bare Đa Kao Two",
+      "nameInRoomSheet": "Bare Đa Kao Two",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D13",
+      "size": "19m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E13",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1050000,
+        "weekend": 1150000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,050,000 Ngày cuối tuần: 1,150,000",
+        "source": "Tổng quan 6 cơ sở!L13",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "19LXf2U9cCMr9vs2Z9Mci2e3RzW5yHKXp",
+        "folderUrl": "https://drive.google.com/drive/folders/19LXf2U9cCMr9vs2Z9Mci2e3RzW5yHKXp?usp=sharing",
+        "driveFolderTitle": "Bare Đa Kao Two",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-da-kao-three",
+      "property": "bare-da-kao",
+      "name": "Bare Đa Kao Three",
+      "nameInRoomSheet": "Bare Đa Kao Three",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D14",
+      "size": "19m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E14",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1050000,
+        "weekend": 1150000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,050,000 Ngày cuối tuần: 1,150,000",
+        "source": "Tổng quan 6 cơ sở!L13",
+        "sharedViaMergedCell": true
+      },
+      "media": {
+        "folderId": "1pCY0MtwnEA31HP8DHxWimliqDh6XU4GP",
+        "folderUrl": "https://drive.google.com/drive/folders/1pCY0MtwnEA31HP8DHxWimliqDh6XU4GP?usp=sharing",
+        "driveFolderTitle": "Bare Đa Kao Three",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-da-kao-four",
+      "property": "bare-da-kao",
+      "name": "Bare Đa Kao Four",
+      "nameInRoomSheet": "Bare Đa Kao Four",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D15",
+      "size": "17m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E15",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1200000,
+        "weekend": 1300000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,200,000 Ngày cuối tuần: 1,300,000",
+        "source": "Tổng quan 6 cơ sở!L15",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1G5U-P00SFqMk6n7QNz66SD3HXNhfkxrh",
+        "folderUrl": "https://drive.google.com/drive/folders/1G5U-P00SFqMk6n7QNz66SD3HXNhfkxrh?usp=sharing",
+        "driveFolderTitle": "Bare Đa Kao Four",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "bare-han-ground",
+      "property": "bare-han",
+      "name": "Bare Hàn Ground",
+      "nameInRoomSheet": "Bare Hàn Ground",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D16",
+      "size": "30m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E16",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1160000,
+        "weekend": 1260000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,160,000 Ngày cuối tuần: 1,260,000",
+        "source": "Tổng quan 6 cơ sở!L16",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb",
+        "folderUrl": "https://drive.google.com/drive/folders/1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb?usp=sharing",
+        "driveFolderTitle": "Bare Han Ground",
+        "fileCount": 6,
+        "sharedWithRows": [
+          "Yellow Submarine"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a The Nắng Suites row. Drive folder title: \"Bare Han Ground\". Which property the photographs show is UNVERIFIED.",
+          "Files are 0.24–0.44 MB, far smaller than other properties (1.4–4.2 MB): resolution to be measured before any use"
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "bare-han-one",
+      "property": "bare-han",
+      "name": "Bare Hàn One",
+      "nameInRoomSheet": "Bare Hàn One",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D16",
+      "size": "30m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E16",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1110000,
+        "weekend": 1210000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,110,000 Ngày cuối tuần: 1,210,000",
+        "source": "Tổng quan 6 cơ sở!L17",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1pOgr9Mm7hHXzirStOWOR7wEM2e8pAqA5",
+        "folderUrl": "https://drive.google.com/drive/folders/1pOgr9Mm7hHXzirStOWOR7wEM2e8pAqA5?usp=sharing",
+        "driveFolderTitle": "Bare Han One",
+        "fileCount": 6,
+        "sharedWithRows": [
+          "Pale Blue Eyes"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a The Nắng Suites row. Drive folder title: \"Bare Han One\". Which property the photographs show is UNVERIFIED.",
+          "Files are 0.24–0.44 MB, far smaller than other properties (1.4–4.2 MB): resolution to be measured before any use"
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "bare-han-two",
+      "property": "bare-han",
+      "name": "Bare Hàn Two",
+      "nameInRoomSheet": "Bare Hàn Two",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D16",
+      "size": "30m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E16",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1200000,
+        "weekend": 1300000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,200,000 Ngày cuối tuần: 1,300,000",
+        "source": "Tổng quan 6 cơ sở!L18",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "15L3PUs29GMzUx_c9mVOExpV5JVJ_wa_1",
+        "folderUrl": "https://drive.google.com/drive/folders/15L3PUs29GMzUx_c9mVOExpV5JVJ_wa_1?usp=sharing",
+        "driveFolderTitle": "Bare Han Two",
+        "fileCount": 5,
+        "sharedWithRows": [
+          "Green River"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a The Nắng Suites row. Drive folder title: \"Bare Han Two\". Which property the photographs show is UNVERIFIED.",
+          "Files are 0.24–0.44 MB, far smaller than other properties (1.4–4.2 MB): resolution to be measured before any use"
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "bare-han-three",
+      "property": "bare-han",
+      "name": "Bare Hàn Three",
+      "nameInRoomSheet": "Bare Hàn Three",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D16",
+      "size": "30m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E16",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1200000,
+        "weekend": 1300000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,200,000 Ngày cuối tuần: 1,300,000",
+        "source": "Tổng quan 6 cơ sở!L18",
+        "sharedViaMergedCell": true
+      },
+      "media": {
+        "folderId": "1FFdEc9be4gOb073Kii5CNHGRsmR3mC4V",
+        "folderUrl": "https://drive.google.com/drive/folders/1FFdEc9be4gOb073Kii5CNHGRsmR3mC4V?usp=sharing",
+        "driveFolderTitle": "Bare Han Three",
+        "fileCount": 5,
+        "sharedWithRows": [
+          "Blue Moon"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a The Nắng Suites row. Drive folder title: \"Bare Han Three\". Which property the photographs show is UNVERIFIED.",
+          "Files are 0.24–0.44 MB, far smaller than other properties (1.4–4.2 MB): resolution to be measured before any use"
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "yellow-submarine",
+      "property": "the-nang-suites",
+      "name": "Yellow Submarine",
+      "nameInRoomSheet": "Yellow Submarine",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D20",
+      "size": "21m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E20",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 840000,
+        "weekend": 940000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 840,000 Ngày cuối tuần: 940,000",
+        "source": "Tổng quan 6 cơ sở!L20",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb",
+        "folderUrl": "https://drive.google.com/drive/folders/1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb?usp=sharing",
+        "driveFolderTitle": "Bare Han Ground",
+        "fileCount": 6,
+        "sharedWithRows": [
+          "Bare Hàn Ground"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a Bare Hàn row. Drive folder title: \"Bare Han Ground\". Which property the photographs show is UNVERIFIED."
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "pale-blue-eyes",
+      "property": "the-nang-suites",
+      "name": "Pale Blue Eyes",
+      "nameInRoomSheet": "Pale Blue Eyes",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D21",
+      "size": "23m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E21",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 970000,
+        "weekend": 1070000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 970,000 Ngày cuối tuần: 1,070,000",
+        "source": "Tổng quan 6 cơ sở!L21",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1pOgr9Mm7hHXzirStOWOR7wEM2e8pAqA5",
+        "folderUrl": "https://drive.google.com/drive/folders/1pOgr9Mm7hHXzirStOWOR7wEM2e8pAqA5?usp=sharing",
+        "driveFolderTitle": "Bare Han One",
+        "fileCount": 6,
+        "sharedWithRows": [
+          "Bare Hàn One"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a Bare Hàn row. Drive folder title: \"Bare Han One\". Which property the photographs show is UNVERIFIED."
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "green-river",
+      "property": "the-nang-suites",
+      "name": "Green River",
+      "nameInRoomSheet": "Green River",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D22",
+      "size": "30m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E22",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1085000,
+        "weekend": 1185000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,085,000 Ngày cuối tuần: 1,185,000",
+        "source": "Tổng quan 6 cơ sở!L22",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "15L3PUs29GMzUx_c9mVOExpV5JVJ_wa_1",
+        "folderUrl": "https://drive.google.com/drive/folders/15L3PUs29GMzUx_c9mVOExpV5JVJ_wa_1?usp=sharing",
+        "driveFolderTitle": "Bare Han Two",
+        "fileCount": 5,
+        "sharedWithRows": [
+          "Bare Hàn Two"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a Bare Hàn row. Drive folder title: \"Bare Han Two\". Which property the photographs show is UNVERIFIED."
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "blue-moon",
+      "property": "the-nang-suites",
+      "name": "Blue Moon",
+      "nameInRoomSheet": "Blue Moon",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D23",
+      "size": "36m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E23",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1390000,
+        "weekend": 1500000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,390,000 Ngày cuối tuần: 1,500,000",
+        "source": "Tổng quan 6 cơ sở!L23",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1FFdEc9be4gOb073Kii5CNHGRsmR3mC4V",
+        "folderUrl": "https://drive.google.com/drive/folders/1FFdEc9be4gOb073Kii5CNHGRsmR3mC4V?usp=sharing",
+        "driveFolderTitle": "Bare Han Three",
+        "fileCount": 5,
+        "sharedWithRows": [
+          "Bare Hàn Three"
+        ],
+        "mappingConfidence": "conflict",
+        "issues": [
+          "CONFIRMED conflict: the same folder URL is linked from a Bare Hàn row. Drive folder title: \"Bare Han Three\". Which property the photographs show is UNVERIFIED."
+        ],
+        "displayDecision": "labelled placeholder until VNest resolves the conflict"
+      }
+    },
+    {
+      "id": "pepper-house-3rd-floor",
+      "property": "pepper-house",
+      "name": "Pepper House 3rd-floor",
+      "nameInRoomSheet": "Pepper House 3rd-floor",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D24",
+      "size": "40m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E24",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1215000,
+        "weekend": 1315000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,215,000 Ngày cuối tuần: 1,315,000",
+        "source": "Tổng quan 6 cơ sở!L24",
+        "sharedViaMergedCell": false
+      },
+      "media": {
+        "folderId": "1lk7TQU8WNX5y1YfUroMX37TCmv957tI7",
+        "folderUrl": "https://drive.google.com/drive/folders/1lk7TQU8WNX5y1YfUroMX37TCmv957tI7?usp=sharing",
+        "driveFolderTitle": "Pepper house 3rd-floor",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [],
+        "displayDecision": "candidate, pending rights"
+      }
+    },
+    {
+      "id": "pepper-house-4th-floor",
+      "property": "pepper-house",
+      "name": "Pepper House 4th-floor",
+      "nameInRoomSheet": "Pepper House 4th-floor",
+      "type": "Studio",
+      "typeSource": "Cơ sở & danh sách phòng!D24",
+      "size": "40m2",
+      "sizeSource": "Cơ sở & danh sách phòng!E24",
+      "capacity": "2 người lớn",
+      "capacitySource": "Cơ sở & danh sách phòng!F4",
+      "indicativeRate": {
+        "weekday": 1215000,
+        "weekend": 1315000,
+        "currency": "unstated (VND assumed, not confirmed)",
+        "raw": "Ngày thường: 1,215,000 Ngày cuối tuần: 1,315,000",
+        "source": "Tổng quan 6 cơ sở!L24",
+        "sharedViaMergedCell": true
+      },
+      "media": {
+        "folderId": "11BjCUAeropTZG4PkXjIMD3WAsEFeyqsH",
+        "folderUrl": "https://drive.google.com/drive/folders/11BjCUAeropTZG4PkXjIMD3WAsEFeyqsH?usp=sharing",
+        "driveFolderTitle": "Pepper house 4th-floor",
+        "fileCount": 6,
+        "sharedWithRows": [],
+        "mappingConfidence": "high",
+        "issues": [
+          "pepperhouse-72 (1).jpg and pepperhouse-72.jpg have identical byte sizes (probable duplicate, not hash-verified)"
+        ],
+        "displayDecision": "candidate, pending rights"
+      }
+    }
+  ],
+  "mediaFolders": [
+    {
+      "folderId": "1eUkBZ-ntQTz79IcssBpiswLlkU4sGre4",
+      "driveFolderTitle": "Bare Chic One",
+      "linkedFromRows": [
+        "Bare Chic One"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "1.11.png",
+          "mime": "image/png",
+          "bytes": 3375315,
+          "driveFileId": "1wz8Pj30YbIFXTxmCf4d7OQWfuYAZduMy"
+        },
+        {
+          "name": "1.42.png",
+          "mime": "image/png",
+          "bytes": 3248158,
+          "driveFileId": "1BqgXASJvC6KHCL01_BN_3kPUTHCZPve5"
+        },
+        {
+          "name": "1.47.png",
+          "mime": "image/png",
+          "bytes": 3843562,
+          "driveFileId": "1ihDJCDmPd7_910xp0qM92p1b35QWfe86"
+        },
+        {
+          "name": "1.55.png",
+          "mime": "image/png",
+          "bytes": 3635039,
+          "driveFileId": "1-LBqLAjsV3lNI5Y-FA1t8DIEYbG4hKKh"
+        },
+        {
+          "name": "1.56.png",
+          "mime": "image/png",
+          "bytes": 3208591,
+          "driveFileId": "1zToFR3iSuI7g_I3Bmm4Mg-jhOrSUnR_t"
+        },
+        {
+          "name": "1.59.png",
+          "mime": "image/png",
+          "bytes": 3349394,
+          "driveFileId": "1Qv4Pgx1OFOy3uimpIEK4lqA46Kyfueuf"
+        }
+      ]
+    },
+    {
+      "folderId": "1-LJx_HPTYOn3GqOEXa8CDX5Rtg512e3L",
+      "driveFolderTitle": "Bare Chic Two",
+      "linkedFromRows": [
+        "Bare Chic Two"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "2.3.png",
+          "mime": "image/png",
+          "bytes": 3431825,
+          "driveFileId": "1N_0CxERGAIcDBC7BQkkXXCa-0UvXLsPB"
+        },
+        {
+          "name": "2.4.png",
+          "mime": "image/png",
+          "bytes": 3605527,
+          "driveFileId": "16r0hN3IUE4ttTG-l6xfNWqjJKUTuvt8X"
+        },
+        {
+          "name": "2.5.png",
+          "mime": "image/png",
+          "bytes": 2521394,
+          "driveFileId": "1qOSRDvBjDmMiAssqtnyQ-taaWnIiZW6V"
+        },
+        {
+          "name": "2.9.png",
+          "mime": "image/png",
+          "bytes": 3991898,
+          "driveFileId": "17tDGeCQWC93406lzdUOm7I5N-g1RMThZ"
+        },
+        {
+          "name": "2.10.png",
+          "mime": "image/png",
+          "bytes": 3175527,
+          "driveFileId": "1ayKHoOO5MOT8UVYaRkrTewM2fjTSkH1w"
+        },
+        {
+          "name": "2.32.png",
+          "mime": "image/png",
+          "bytes": 4189122,
+          "driveFileId": "1F8898suE4nMMFs75dl8--b5dOL597Mae"
+        }
+      ]
+    },
+    {
+      "folderId": "1w_pMRvlJe_y1Fl0bQ9NGVLiFuU9M16fi",
+      "driveFolderTitle": "Bare Chic Three",
+      "linkedFromRows": [
+        "Bare Chic Three"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "1.18.png",
+          "mime": "image/png",
+          "bytes": 3788660,
+          "driveFileId": "1weZPQ2CZkcMy9IZIxdi33oM63cDWyn6g"
+        },
+        {
+          "name": "1.27.png",
+          "mime": "image/png",
+          "bytes": 3965957,
+          "driveFileId": "1x2EH7xM6PKq30E8tr1veXO3-Pq2HpVba"
+        },
+        {
+          "name": "1.29.png",
+          "mime": "image/png",
+          "bytes": 3193072,
+          "driveFileId": "1LHikT4DdHTiT8Qz7pSoKV2G8H1fPImWy"
+        },
+        {
+          "name": "1.56.png",
+          "mime": "image/png",
+          "bytes": 3208591,
+          "driveFileId": "15HNX1GXHcB73W6BzNPyRFRHdNQnqyRHR"
+        },
+        {
+          "name": "1.57.png",
+          "mime": "image/png",
+          "bytes": 3306609,
+          "driveFileId": "15IBLnzUoJR06884tw39UYiHJ4vuwFVxr"
+        },
+        {
+          "name": "1.59.png",
+          "mime": "image/png",
+          "bytes": 3349394,
+          "driveFileId": "1qN4iaB-1jFwkX9GIy55jWwegWty8xdQf"
+        }
+      ]
+    },
+    {
+      "folderId": "1zzTq0l1QIhwPkUayZDvQKrUw2f4jETHk",
+      "driveFolderTitle": "Bare Indochine",
+      "linkedFromRows": [
+        "Bare Indochine"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "50.png",
+          "mime": "image/png",
+          "bytes": 2253920,
+          "driveFileId": "1282suPtzqCjQ6fpKpRektdX08bok8gUB"
+        },
+        {
+          "name": "51.png",
+          "mime": "image/png",
+          "bytes": 2863923,
+          "driveFileId": "1MZ49jyPV-hjCry16Xd8NdwLCy_LOjRY8"
+        },
+        {
+          "name": "52.png",
+          "mime": "image/png",
+          "bytes": 2734786,
+          "driveFileId": "1dq9FlCP-GPNIUWesD64EpnFCX6phzLXf"
+        },
+        {
+          "name": "53.png",
+          "mime": "image/png",
+          "bytes": 3101575,
+          "driveFileId": "16wjWHq1rooWa2IHOPy_g2jwas84uLIsu"
+        },
+        {
+          "name": "54.png",
+          "mime": "image/png",
+          "bytes": 3470033,
+          "driveFileId": "1mnYZqOunQI2EpvDD2mH1r96ZxxrTQU4E"
+        }
+      ]
+    },
+    {
+      "folderId": "1WbvKxpl5G8VAsuTsS9Qrf0YHehU1nIsc",
+      "driveFolderTitle": "Bare Hyphen One",
+      "linkedFromRows": [
+        "Bare Hyphen One"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "a-6.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1651629,
+          "driveFileId": "14POnUF_8WjW8y_F3N-jkuoKZs8wBpkmx"
+        },
+        {
+          "name": "a-10.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1680936,
+          "driveFileId": "1erF45olN9Tq0euueFDi3Xn7XNTGQXnST"
+        },
+        {
+          "name": "a-16.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1921051,
+          "driveFileId": "10GZwC3dwPRjDFabf469USnJ_JZ4TXKI0"
+        },
+        {
+          "name": "a-17.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1776621,
+          "driveFileId": "1TUfImXo-gGX9ms2VkcK70SjUPmMO-y51"
+        },
+        {
+          "name": "a-21.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1614429,
+          "driveFileId": "1i3fe-QECSFSaSDaTBpnFbSGhVvQdieSr"
+        },
+        {
+          "name": "a-25.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1640272,
+          "driveFileId": "1vHYqn5oHgxHoBr7_Sh8km8mQv14p0ayN"
+        }
+      ]
+    },
+    {
+      "folderId": "1Jk6WG-M5Ld6tsUiMYXx2cHdKig-0OLA5",
+      "driveFolderTitle": "Bare Hyphen Two",
+      "linkedFromRows": [
+        "Bare Hyphen Two"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "a-59.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1384101,
+          "driveFileId": "1IHAyhE0oOhmuzaKCRB6Z7XoxeIn4MlzI"
+        },
+        {
+          "name": "a-64.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1490904,
+          "driveFileId": "1u7rc4xhaaB2ajGul1Zpau0dJLPx9VGcz"
+        },
+        {
+          "name": "a-70.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1748824,
+          "driveFileId": "1wKdsCiDIMcajgDM4jw6h7cdrdAqg_GLn"
+        },
+        {
+          "name": "a-74.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1740838,
+          "driveFileId": "1jqWs_7AAuJ89jVHMMw3UzRWL4ngWizaK"
+        }
+      ]
+    },
+    {
+      "folderId": "15aTksIiJG0E6F8ZzfxCokC5I7ZF7HrFG",
+      "driveFolderTitle": "Bare Hyphen Three",
+      "linkedFromRows": [
+        "Bare Hyphen Three"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "a-6.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1651629,
+          "driveFileId": "1bukGVo-0xYuC0fHN0HiCg7B1JDe9_qdu"
+        },
+        {
+          "name": "a-10.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1680936,
+          "driveFileId": "1pt95kD39q_L8sVu0E3yA9iYVbJ1kDGy1"
+        },
+        {
+          "name": "a-16.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1921051,
+          "driveFileId": "1BqFN2J56qvm_XecltM-XFA_AmaXKWNm_"
+        },
+        {
+          "name": "a-17.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1776621,
+          "driveFileId": "1PGjq6aziPTYJcfIKCYnWkUSULbehTx7K"
+        },
+        {
+          "name": "a-21.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1614429,
+          "driveFileId": "1T5F_43zbe8F_r4UZYBS65JcN_EzeMLAB"
+        },
+        {
+          "name": "a-25.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1640272,
+          "driveFileId": "1tXbRiElgfvK8XoeR2tyqBwKWb1yNepAX"
+        }
+      ]
+    },
+    {
+      "folderId": "1LL8O9WuzdHR_gjTzIsIILl9sINLLxyiW",
+      "driveFolderTitle": "Bare Hyphen Four",
+      "linkedFromRows": [
+        "Bare Hyphen Four"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "6.jpg",
+          "mime": "image/jpeg",
+          "bytes": 2132538,
+          "driveFileId": "1d6TyGNirr8yaIEW-c8kJq_1eKMpIEpSR"
+        },
+        {
+          "name": "10.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1861476,
+          "driveFileId": "1cFCOupZ0vfMdKGHM6I3FL4l40Fjh3JQ4"
+        },
+        {
+          "name": "14.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1885575,
+          "driveFileId": "1slM1IiyUTfWq_45zTscPPYhASXmLXdtN"
+        },
+        {
+          "name": "16.jpg",
+          "mime": "image/jpeg",
+          "bytes": 2145492,
+          "driveFileId": "1mZKCCnhGUrfgop8iRbYsFYVJff7cxygj"
+        },
+        {
+          "name": "25.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1520469,
+          "driveFileId": "1lhM6KcVlvD6bddkfD_tvMBi5TYBev3MC"
+        }
+      ]
+    },
+    {
+      "folderId": "1TZJ8RysVLkRy3SxikbyiGlK1fq1Xl2Ii",
+      "driveFolderTitle": "Bare Đa Kao One",
+      "linkedFromRows": [
+        "Bare Đa Kao One"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "Bare ĐaKao_23.jpg",
+          "mime": "image/jpeg",
+          "bytes": 2242520,
+          "driveFileId": "1otq8B9Qvt0LQB7FvrPR1X-txkpIgJWnN"
+        },
+        {
+          "name": "Bare ĐaKao_25.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1887760,
+          "driveFileId": "11ideJFT8eairrkurIFrfJmRGtdSUKvey"
+        },
+        {
+          "name": "Bare ĐaKao_28 (4).jpg",
+          "mime": "image/jpeg",
+          "bytes": 2145825,
+          "driveFileId": "1JYp7_dIiC3ji0upm8HhGSaf3bCFRILXL"
+        },
+        {
+          "name": "Bare ĐaKao_28 (6).jpg",
+          "mime": "image/jpeg",
+          "bytes": 2262885,
+          "driveFileId": "1Jdnn7yNc5cJISHoZ3JOCt3OiV7A_d-4A"
+        },
+        {
+          "name": "Bare ĐaKao_28 (8).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1800215,
+          "driveFileId": "11I-21aaKhukye-bp8euYEdDZM_IHPvkQ"
+        }
+      ]
+    },
+    {
+      "folderId": "19LXf2U9cCMr9vs2Z9Mci2e3RzW5yHKXp",
+      "driveFolderTitle": "Bare Đa Kao Two",
+      "linkedFromRows": [
+        "Bare Đa Kao Two"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "Bare ĐaKao_30 (1).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1951644,
+          "driveFileId": "15fbwUKZ80-JIg4vUZftkmV7RYXTN0rk4"
+        },
+        {
+          "name": "Bare ĐaKao_30 (7).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1820322,
+          "driveFileId": "16fHe4evQ5aoxOyLiSE-vZwIU2OcyRX_F"
+        },
+        {
+          "name": "Bare ĐaKao_30 (10).jpg",
+          "mime": "image/jpeg",
+          "bytes": 2225284,
+          "driveFileId": "1hQHi-9I5kC4LP3pRp9fBfnhdEx76EPi8"
+        },
+        {
+          "name": "Bare ĐaKao_30 (11).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1929929,
+          "driveFileId": "1Ya2b9_bXCyNRoO47TYU5v1CCCltBzKrR"
+        },
+        {
+          "name": "Bare ĐaKao_30 (12).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1971321,
+          "driveFileId": "1f1_7Q9tdxw8aCtPF70fbObK_M0ujz7Og"
+        },
+        {
+          "name": "Bare ĐaKao_30 (16).jpg",
+          "mime": "image/jpeg",
+          "bytes": 2399846,
+          "driveFileId": "1sC0xHXekSxFE4K3IIj4X5YTjpi27QGUU"
+        }
+      ]
+    },
+    {
+      "folderId": "1pCY0MtwnEA31HP8DHxWimliqDh6XU4GP",
+      "driveFolderTitle": "Bare Đa Kao Three",
+      "linkedFromRows": [
+        "Bare Đa Kao Three"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "Bare ĐaKao_29 (6).jpg",
+          "mime": "image/jpeg",
+          "bytes": 2134244,
+          "driveFileId": "12maEc9NT-8BC57EEddtOZaPwe0FiURK_"
+        },
+        {
+          "name": "Bare ĐaKao_29 (8).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1837558,
+          "driveFileId": "1-ZP7kugStXWhEiewx_-bMStZvVTh6OqV"
+        },
+        {
+          "name": "Bare ĐaKao_29 (18).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1743376,
+          "driveFileId": "1r3DhBMyEGHvCJhhmK0vQUxopZB7rH1iu"
+        },
+        {
+          "name": "Bare ĐaKao_29 (20).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1951914,
+          "driveFileId": "1mH6PrSKnt0L75deZjo8FTJFYDiXOx7fS"
+        },
+        {
+          "name": "Bare ĐaKao_29 (21).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1970536,
+          "driveFileId": "19hnSk8JmqnVnu7TmVG4LrsELC1E5DJ4F"
+        },
+        {
+          "name": "Bare ĐaKao_29 (22).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1729155,
+          "driveFileId": "1_8CG_t79MkXL1CnPzd0xS4y7Mp3hxGxq"
+        }
+      ]
+    },
+    {
+      "folderId": "1G5U-P00SFqMk6n7QNz66SD3HXNhfkxrh",
+      "driveFolderTitle": "Bare Đa Kao Four",
+      "linkedFromRows": [
+        "Bare Đa Kao Four"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "Bare ĐaKao_30 (2).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1951850,
+          "driveFileId": "1eLIM7qZI-Gff-t2fOobglMYLpl0Tudq7"
+        },
+        {
+          "name": "Bare ĐaKao_31 (1).jpg",
+          "mime": "image/jpeg",
+          "bytes": 2243207,
+          "driveFileId": "1vJuJJv8Sr11jjLZWhFisUdsDYqYA6iVz"
+        },
+        {
+          "name": "Bare ĐaKao_31 (12).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1725747,
+          "driveFileId": "1vHzUTqpyAtzfTIhQfGc7WNGCOVJlzQl4"
+        },
+        {
+          "name": "Bare ĐaKao_31 (17).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1622400,
+          "driveFileId": "1aTHI-Pbg1T8q6-1_2t-Ft5EeliOnSuIe"
+        },
+        {
+          "name": "Bare ĐaKao_31 (20).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1897627,
+          "driveFileId": "1OlhmHHh-vGrYvHvokoGbTlb8-LK5GgIc"
+        },
+        {
+          "name": "Bare ĐaKao_31 (23).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1643301,
+          "driveFileId": "1TvYUsC9QmAAbvQPLqPw6qjAWOK6Ib-qf"
+        }
+      ]
+    },
+    {
+      "folderId": "1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb",
+      "driveFolderTitle": "Bare Han Ground",
+      "linkedFromRows": [
+        "Bare Hàn Ground",
+        "Yellow Submarine"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "26.jpg",
+          "mime": "image/jpeg",
+          "bytes": 332902,
+          "driveFileId": "1Z4vuWjXfnmulrXzy9cfMm_raSCjlehN-"
+        },
+        {
+          "name": "30.jpg",
+          "mime": "image/jpeg",
+          "bytes": 240092,
+          "driveFileId": "1WDv8shGpp-_kotTSqUc2TTjP_uXBPHfC"
+        },
+        {
+          "name": "31.jpg",
+          "mime": "image/jpeg",
+          "bytes": 302249,
+          "driveFileId": "1WXnJYVoDDpugPsO7GO1OOSIH7i-bpQMA"
+        },
+        {
+          "name": "36.jpg",
+          "mime": "image/jpeg",
+          "bytes": 323680,
+          "driveFileId": "1qFCxNgqI6ymM_AwsdVltRFW2rWLJk6WN"
+        },
+        {
+          "name": "42.jpg",
+          "mime": "image/jpeg",
+          "bytes": 293969,
+          "driveFileId": "1g_aqY7DKzDdKXM6zsWIdqJEloor6JOT6"
+        },
+        {
+          "name": "45.jpg",
+          "mime": "image/jpeg",
+          "bytes": 303379,
+          "driveFileId": "1YHUcL8ivmp_Jt_FQcP1ddYWzvgbJxoUD"
+        }
+      ]
+    },
+    {
+      "folderId": "1pOgr9Mm7hHXzirStOWOR7wEM2e8pAqA5",
+      "driveFolderTitle": "Bare Han One",
+      "linkedFromRows": [
+        "Bare Hàn One",
+        "Pale Blue Eyes"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "6.jpg",
+          "mime": "image/jpeg",
+          "bytes": 257312,
+          "driveFileId": "1o5wz9Rr_yls99d-6FK7VX1z5BnmHYkyb"
+        },
+        {
+          "name": "7.jpg",
+          "mime": "image/jpeg",
+          "bytes": 287248,
+          "driveFileId": "1u1T6Q9F4DbuU1OFH28Q4Y37jtkJZPKj-"
+        },
+        {
+          "name": "9.jpg",
+          "mime": "image/jpeg",
+          "bytes": 444789,
+          "driveFileId": "1NVHmNJiCp59Kpj7-1Gjdo0ezenRxYHcy"
+        },
+        {
+          "name": "11.jpg",
+          "mime": "image/jpeg",
+          "bytes": 272127,
+          "driveFileId": "1ZG5VMxcyGh_KJkPoV7J6F4e8wRGFAvyg"
+        },
+        {
+          "name": "13.jpg",
+          "mime": "image/jpeg",
+          "bytes": 258361,
+          "driveFileId": "1exiRyzXwpmD7SyDgHZES53ys4R3pvhxo"
+        },
+        {
+          "name": "15.jpg",
+          "mime": "image/jpeg",
+          "bytes": 261242,
+          "driveFileId": "1X2MrdqvqQHuy89rF0uLx63LhH8y5UJve"
+        }
+      ]
+    },
+    {
+      "folderId": "15L3PUs29GMzUx_c9mVOExpV5JVJ_wa_1",
+      "driveFolderTitle": "Bare Han Two",
+      "linkedFromRows": [
+        "Bare Hàn Two",
+        "Green River"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "52.jpg",
+          "mime": "image/jpeg",
+          "bytes": 324296,
+          "driveFileId": "19JniwX3bLYTM163fn6AIZH0V2t2fCPPu"
+        },
+        {
+          "name": "53.jpg",
+          "mime": "image/jpeg",
+          "bytes": 443675,
+          "driveFileId": "15CXRZ4tJHYlDQiaeTeSf0le9leTMl50-"
+        },
+        {
+          "name": "58.jpg",
+          "mime": "image/jpeg",
+          "bytes": 370640,
+          "driveFileId": "1QeDdH60lgGe-yegyFqmgaUrRX7CHcJFp"
+        },
+        {
+          "name": "61.jpg",
+          "mime": "image/jpeg",
+          "bytes": 321561,
+          "driveFileId": "1LXgvJj_R8mi33SmVx3nyFruFzBJ98mtY"
+        },
+        {
+          "name": "67.jpg",
+          "mime": "image/jpeg",
+          "bytes": 370286,
+          "driveFileId": "1V7LrMUNnxX5-NWpzS-5bARmvNyYITnTh"
+        }
+      ]
+    },
+    {
+      "folderId": "1FFdEc9be4gOb073Kii5CNHGRsmR3mC4V",
+      "driveFolderTitle": "Bare Han Three",
+      "linkedFromRows": [
+        "Bare Hàn Three",
+        "Blue Moon"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "73.jpg",
+          "mime": "image/jpeg",
+          "bytes": 268239,
+          "driveFileId": "1fc6wV9QVAp4ExsMPNgITPdzcRZRT7n9s"
+        },
+        {
+          "name": "81.jpg",
+          "mime": "image/jpeg",
+          "bytes": 344624,
+          "driveFileId": "1EZl8FbXJjXcskux6ZaJfLS3njnfVevrq"
+        },
+        {
+          "name": "82.jpg",
+          "mime": "image/jpeg",
+          "bytes": 361552,
+          "driveFileId": "1Qdjp9oQkhTTBp3MpFhvhaSjqm9qLs-wE"
+        },
+        {
+          "name": "83.jpg",
+          "mime": "image/jpeg",
+          "bytes": 387037,
+          "driveFileId": "1ZmUIXkWe3HnBhXJ_MERXvfCkUEQ6oVYu"
+        },
+        {
+          "name": "84.jpg",
+          "mime": "image/jpeg",
+          "bytes": 370538,
+          "driveFileId": "1q6KxLlXUn6L0JSWD2qC1SVsxufmqeLTb"
+        }
+      ]
+    },
+    {
+      "folderId": "1lk7TQU8WNX5y1YfUroMX37TCmv957tI7",
+      "driveFolderTitle": "Pepper house 3rd-floor",
+      "linkedFromRows": [
+        "Pepper House 3rd-floor"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "01.jpg",
+          "mime": "image/jpeg",
+          "bytes": 2040778,
+          "driveFileId": "1LoD0sZwW7DlnRJ6CByf_SNv4-aU5AQoT"
+        },
+        {
+          "name": "02.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1782261,
+          "driveFileId": "1ta-nvURj--FDcYI3C5j7X4K_E4EDyVHf"
+        },
+        {
+          "name": "03.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1796229,
+          "driveFileId": "1XRJfeb0xCDizmjOw5A_idKnhkDjepTJ1"
+        },
+        {
+          "name": "04.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1778862,
+          "driveFileId": "1nxHKwXLoO78QTL6GqdRXDkx6OIomiRIw"
+        },
+        {
+          "name": "08.jpg",
+          "mime": "image/jpeg",
+          "bytes": 2397369,
+          "driveFileId": "1OuF9wQ5ZSTsd_A1-l0igkKj4fpW9B8fd"
+        },
+        {
+          "name": "09.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1956676,
+          "driveFileId": "147LsSHJcS0Kcndt4rlwwagw1bYUN8IV-"
+        }
+      ]
+    },
+    {
+      "folderId": "11BjCUAeropTZG4PkXjIMD3WAsEFeyqsH",
+      "driveFolderTitle": "Pepper house 4th-floor",
+      "linkedFromRows": [
+        "Pepper House 4th-floor"
+      ],
+      "owner": "letsbare.today@gmail.com (from public folder page)",
+      "files": [
+        {
+          "name": "pepperhouse-72 (1).jpg",
+          "mime": "image/jpeg",
+          "bytes": 1632030,
+          "driveFileId": "19s2KF4TJy-Q3_A42wDRvTpVu3mTri2QM"
+        },
+        {
+          "name": "pepperhouse-72.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1632030,
+          "driveFileId": "1t9eZ1FxUHM5t_8JK31FrqL_WToon_stw"
+        },
+        {
+          "name": "pepperhouse-74.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1970384,
+          "driveFileId": "1OjSwMkMFxCpEuJVQb56zBFNKxYMVUEp7"
+        },
+        {
+          "name": "pepperhouse-76.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1587769,
+          "driveFileId": "1l1-8LzsuhH1kRNw3Cj1OSD3Z0NQnfuQy"
+        },
+        {
+          "name": "pepperhouse-79.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1845375,
+          "driveFileId": "1hXhrUNsfgzfOBHM_pd7RZ1Q_YAwGgykd"
+        },
+        {
+          "name": "pepperhouse-81.jpg",
+          "mime": "image/jpeg",
+          "bytes": 1701920,
+          "driveFileId": "1eTj9rX5J4j6FFsLJWNF3olAnwkmWvX_s"
+        }
+      ]
+    }
+  ],
+  "nearby": [
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Dinh Độc Lập",
+      "address": "135 Nam Kỳ Khởi Nghĩa, Phường  Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A4:D4",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "ThaiYen Cafe",
+      "address": "32 Nguyễn Đình Chiểu, Phường Tân Định, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A5:D5",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Phố đi bộ Nguyễn Huệ",
+      "address": "Đường  Nguyễn Huệ, Phường  Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A6:D6",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "Cơm niêu Thiên Lý",
+      "address": "16 Nguyễn Đình Chiểu, Phường Tân Định, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A7:D7",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Nhà thờ Đức Bà Sài Gòn & Bưu điện Trung tâm Thành phố",
+      "address": " 2 Công trường Công xã Paris, Phường  Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A8:D8",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "Phở Phượng",
+      "address": "25 Hoàng Sa, Phường Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A9:D9",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Chợ Bến Thành",
+      "address": "Đường Lê Lợi, Phường  Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A10:D10",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "Lunch Lady",
+      "address": "Lô C1 Chung Cư 1A1B Nguyễn Đình Chiểu,Phường Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A11:D11",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Thảo Cầm Viên Sài Gòn",
+      "address": " 2 Nguyễn Bỉnh Khiêm, Phường  Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A12:D12",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "Bánh mì Huynh Hoa",
+      "address": "26 Lê Thị Riêng, Phường Bến Thành, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A13:D13",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Bảo tàng Chứng tích chiến tranh",
+      "address": "28 Võ Văn Tần, Phường  Xuân Hòa, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A14:D14",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "Hủ tiếu nam vang Thành Đạt",
+      "address": "34 Cô Bắc, Phường Cầu Ông Lãnh, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A15:D15",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Bảo tàng Mỹ Thuật Thành phố Hồ Chí Minh",
+      "address": "97 Phó Đức Chính, Phường Bến Thành, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A16:D16",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "food-drink",
+      "name": "Bánh mì chim chạy",
+      "address": "11/4 Nguyễn Thị Minh Khai, Phường Sài Gòn, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A17:D17",
+      "distance": null
+    },
+    {
+      "cluster": "ho-chi-minh-central",
+      "appliesTo": [
+        "bare-chic",
+        "bare-hyphen",
+        "bare-da-kao",
+        "pepper-house"
+      ],
+      "kind": "attraction",
+      "name": "Nhà thờ Tân Định",
+      "address": "289 Hai Bà Trưng, Phường  Xuân Hòa, Hồ Chí Minh",
+      "source": "Thông tin các điểm tham quan!A18:D18",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Bán đảo Sơn Trà",
+      "address": "Sơn Trà, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A22:D22",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Hải sản Năm Đảnh",
+      "address": "139/59/38 Trần Quang Khải, Sơn Trà, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A23:D23",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Ngũ Hành Sơn",
+      "address": " 81 Huyền Trân Công Chúa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A24:D24",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Bún chả cá 109",
+      "address": "109 Nguyễn Chí Thanh, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A25:D25",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Cầu Rồng",
+      "address": "An Hải, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A26:D26",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Bún mắm Vân",
+      "address": "23/14 Trần Kế Xương, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A27:D27",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Nhà thờ chính toà Đà Nẵng (Nhà thờ Con Gà)",
+      "address": "156 Trần Phú, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A28:D28",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Bánh xèo Bà Dưỡng",
+      "address": "280/23 Hoàng Diệu, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A29:D29",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Chợ Hàn",
+      "address": "119 Trần phú, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A30:D30",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Tiệm kiết (cà phê)",
+      "address": "K332/22a Hoàng Diệu, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A31:D31",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Chợ Cồn",
+      "address": "90 Hùng Vương, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A32:D32",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Tan coffee",
+      "address": "!0 Nguyễn Thiện Thuật, Bình Hiên, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A33:D33",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Biển Mỹ Khê",
+      "address": "Sơn Trà, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A34:D34",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "food-drink",
+      "name": "Bếp của ngoại",
+      "address": "136b Yên Bái, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A35:D35",
+      "distance": null
+    },
+    {
+      "cluster": "da-nang",
+      "appliesTo": [
+        "bare-han",
+        "the-nang-suites"
+      ],
+      "kind": "attraction",
+      "name": "Bảo tàng Điêu khắc Chăm",
+      "address": "Số 2 đường 2/9, Hải Châu, Đà Nẵng",
+      "source": "Thông tin các điểm tham quan!A36:D36",
+      "distance": null
+    }
+  ],
+  "dynamic": {
+    "note": "Not in this file by design: live availability, bookable prices, taxes/fees, minimum stay, restrictions. Source = PMS via the booking contract."
+  }
+}

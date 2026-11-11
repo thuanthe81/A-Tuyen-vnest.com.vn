@@ -1,0 +1,127 @@
+PASS @1440 stepper changes add no history entry — 2 → 2
+PASS @1440 stepper changes leave the address alone (only a submitted search is kept) — http://localhost:3403/dev/demo?intro=0
+PASS @1440 results: stay as submitted — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @1440 one history entry for the search (homepage replaced in place)
+PASS @1440 1 Back: homepage address carries the search — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @1440 1 Back: no rooms invented on the homepage
+PASS @1440 1/4/5 Back: bar shows the dates, 3 adults and 1 child — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 3 người lớn · 1 trẻ em
+PASS @1440 8 panel restores 3 adults, 1 child
+PASS @1440 edited search: same dates, 2 children — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @1440 9 GoHost bare-da-kao: not asked with children — availability-needs-provider-check
+PASS @1440 9 GoHost pepper-house: not asked with children — availability-needs-provider-check
+PASS @1440 9 ezCloud bare-chic: hand-off unchanged
+PASS @1440 9 ezCloud bare-hyphen: hand-off unchanged
+PASS @1440 9 ezCloud bare-han: hand-off unchanged
+PASS @1440 9 ezCloud the-nang-suites: hand-off unchanged
+PASS @1440 9 results: no price
+PASS @1440 2 property keeps the stay — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @1440 2 Back: results keep the stay — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @1440 2 Back, Back: homepage shows the edited search — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 3 người lớn · 2 trẻ em
+PASS @1440 3 refresh: same search — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 3 người lớn · 2 trẻ em
+PASS @1440 7 homepage compact: "3 người lớn · 2 trẻ" whole — full "3 người lớn · 2 trẻ em", title 3 người lớn · 2 trẻ em, 134px
+PASS @1440 no console or hydration errors (homepage)
+PASS @1440 6 homepage from an address: dates and 4 adults shown — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 4 người lớn
+PASS @1440 6 results keep the explicit rooms 2,2 — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C2&adults=4
+PASS @1440 6 Back: homepage address keeps rooms 2,2 — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2
+PASS @1440 6 no console errors
+PASS @1440 7 property compact: "3 người lớn · 1 trẻ" whole — full "3 người lớn · 1 trẻ em · 2 phòng", title 3 người lớn · 1 trẻ em · 2 phòng, 134px
+PASS @1440 7 property compact: screen readers get the full reading, once — - button "Phòng & khách 3 người lớn · 1 trẻ em · 2 phòng"
+INFO @1440 7 property compact, no children — "3 khách · 2 phòng" whole at 121px; full "3 khách · 2 phòng"
+PASS @1440 7 property: no console errors
+PASS @1024 stepper changes add no history entry — 2 → 2
+PASS @1024 stepper changes leave the address alone (only a submitted search is kept) — http://localhost:3403/dev/demo?intro=0
+PASS @1024 results: stay as submitted — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @1024 one history entry for the search (homepage replaced in place)
+PASS @1024 1 Back: homepage address carries the search — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @1024 1 Back: no rooms invented on the homepage
+PASS @1024 1/4/5 Back: bar shows the dates, 3 adults and 1 child — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 3 người lớn · 1 trẻ em
+PASS @1024 8 panel restores 3 adults, 1 child
+PASS @1024 edited search: same dates, 2 children — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @1024 9 GoHost bare-da-kao: not asked with children — availability-needs-provider-check
+PASS @1024 9 GoHost pepper-house: not asked with children — availability-needs-provider-check
+PASS @1024 9 ezCloud bare-chic: hand-off unchanged
+PASS @1024 9 ezCloud bare-hyphen: hand-off unchanged
+PASS @1024 9 ezCloud bare-han: hand-off unchanged
+PASS @1024 9 ezCloud the-nang-suites: hand-off unchanged
+PASS @1024 9 results: no price
+PASS @1024 2 property keeps the stay — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @1024 2 Back: results keep the stay — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @1024 2 Back, Back: homepage shows the edited search — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 3 người lớn · 2 trẻ em
+PASS @1024 3 refresh: same search — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 3 người lớn · 2 trẻ em
+PASS @1024 7 homepage compact: "3 lớn · 2 trẻ" whole — full "3 người lớn · 2 trẻ em", title 3 người lớn · 2 trẻ em, 99px
+PASS @1024 no console or hydration errors (homepage)
+PASS @1024 6 homepage from an address: dates and 4 adults shown — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG Th 7, 28 thg 11 | TRẢ PHÒNG Th 4, 2 thg 12 | KHÁCH 4 người lớn
+PASS @1024 6 results keep the explicit rooms 2,2 — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C2&adults=4
+PASS @1024 6 Back: homepage address keeps rooms 2,2 — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2
+PASS @1024 6 no console errors
+PASS @1024 7 property compact: "3 lớn · 1 trẻ" whole — full "3 người lớn · 1 trẻ em · 2 phòng", title 3 người lớn · 1 trẻ em · 2 phòng, 99px
+PASS @1024 7 property compact: screen readers get the full reading, once — - button "Phòng & khách 3 người lớn · 1 trẻ em · 2 phòng"
+INFO @1024 7 property compact, no children — "3 khách" whole at 99px; full "3 khách · 2 phòng"
+PASS @1024 7 property: no console errors
+PASS @768 stepper changes add no history entry — 2 → 2
+PASS @768 stepper changes leave the address alone (only a submitted search is kept) — http://localhost:3403/dev/demo?intro=0
+PASS @768 results: stay as submitted — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @768 one history entry for the search (homepage replaced in place)
+PASS @768 1 Back: homepage address carries the search — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @768 1 Back: no rooms invented on the homepage
+PASS @768 1/4/5 Back: bar shows the dates, 3 adults and 1 child — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG 28 thg 11 | TRẢ PHÒNG 2 thg 12 | KHÁCH 3 người lớn · 1 trẻ em
+PASS @768 8 panel restores 3 adults, 1 child
+PASS @768 edited search: same dates, 2 children — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @768 9 GoHost bare-da-kao: not asked with children — availability-needs-provider-check
+PASS @768 9 GoHost pepper-house: not asked with children — availability-needs-provider-check
+PASS @768 9 ezCloud bare-chic: hand-off unchanged
+PASS @768 9 ezCloud bare-hyphen: hand-off unchanged
+PASS @768 9 ezCloud bare-han: hand-off unchanged
+PASS @768 9 ezCloud the-nang-suites: hand-off unchanged
+PASS @768 9 results: no price
+PASS @768 2 property keeps the stay — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @768 2 Back: results keep the stay — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @768 2 Back, Back: homepage shows the edited search — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG 28 thg 11 | TRẢ PHÒNG 2 thg 12 | KHÁCH 3 người lớn · 2 trẻ em
+PASS @768 3 refresh: same search — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG 28 thg 11 | TRẢ PHÒNG 2 thg 12 | KHÁCH 3 người lớn · 2 trẻ em
+PASS @768 7 homepage compact: "3 lớn · 2 trẻ" whole — full "3 người lớn · 2 trẻ em", title 3 người lớn · 2 trẻ em, 100px
+PASS @768 no console or hydration errors (homepage)
+PASS @768 6 homepage from an address: dates and 4 adults shown — CƠ SỞ Tất cả cơ sở | NHẬN PHÒNG 28 thg 11 | TRẢ PHÒNG 2 thg 12 | KHÁCH 4 người lớn
+PASS @768 6 results keep the explicit rooms 2,2 — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C2&adults=4
+PASS @768 6 Back: homepage address keeps rooms 2,2 — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2
+PASS @768 6 no console errors
+PASS @768 7 property compact: "3 lớn · 1 trẻ" whole — full "3 người lớn · 1 trẻ em · 2 phòng", title 3 người lớn · 1 trẻ em · 2 phòng, 100px
+PASS @768 7 property compact: screen readers get the full reading, once — - button "Phòng & khách 3 người lớn · 1 trẻ em · 2 phòng"
+INFO @768 7 property compact, no children — "3 khách" whole at 100px; full "3 khách · 2 phòng"
+PASS @768 7 property: no console errors
+PASS @390 stepper changes add no history entry — 2 → 2
+PASS @390 stepper changes leave the address alone (only a submitted search is kept) — http://localhost:3403/dev/demo?intro=0
+PASS @390 results: stay as submitted — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=1
+PASS @390 one history entry for the search (homepage replaced in place)
+PASS @390 1 Back: homepage address carries the search — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=3&children=1
+PASS @390 1 Back: no rooms invented on the homepage
+PASS @390 1/4/5 Back: bar shows the dates, 3 adults and 1 child — Tìm chỗ ở: Tất cả cơ sở 28 thg 11 – 2 thg 12 · 3 người lớn · 1 trẻ em BOOK NOW
+PASS @390 8 panel restores 3 adults, 1 child
+PASS @390 8 phone sheet restores the dates — Tìm chỗ ở Xoá tất cả Cơ sở Tất cả cơ sở Ngày lưu trú 28 thg 11 – 2 thg 12 Khách Người lớn 3 Trẻ em 1 Bạn chọn số phòng ở bước chọn phòng. Chính sách trẻ em (độ 
+PASS @390 edited search: same dates, 2 children — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @390 9 GoHost bare-da-kao: not asked with children — availability-needs-provider-check
+PASS @390 9 GoHost pepper-house: not asked with children — availability-needs-provider-check
+PASS @390 9 ezCloud bare-chic: hand-off unchanged
+PASS @390 9 ezCloud bare-hyphen: hand-off unchanged
+PASS @390 9 ezCloud bare-han: hand-off unchanged
+PASS @390 9 ezCloud the-nang-suites: hand-off unchanged
+PASS @390 9 results: no price
+PASS @390 2 property keeps the stay — http://localhost:3403/dev/stays/bare-da-kao?checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @390 2 Back: results keep the stay — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C1&adults=3&children=2
+PASS @390 2 Back, Back: homepage shows the edited search — Tìm chỗ ở: Tất cả cơ sở 28 thg 11 – 2 thg 12 · 3 người lớn · 2 trẻ em BOOK NOW
+PASS @390 3 refresh: same search — Tìm chỗ ở: Tất cả cơ sở 28 thg 11 – 2 thg 12 · 3 người lớn · 2 trẻ em BOOK NOW
+PASS @390 7 homepage compact: "28 thg 11 – 2 thg 12 · 3 lớn · 2 trẻ" (cut) — full "28 thg 11 – 2 thg 12 · 3 người lớn · 2 trẻ em", title 28 thg 11 – 2 thg 12 · 3 người lớn · 2 trẻ em, 130px
+PASS @390 no console or hydration errors (homepage)
+PASS @390 6 homepage from an address: dates and 4 adults shown — Tìm chỗ ở: Tất cả cơ sở 28 thg 11 – 2 thg 12 · 4 người lớn BOOK NOW
+PASS @390 6 results keep the explicit rooms 2,2 — http://localhost:3403/dev/demo/tim-phong?property=all&checkIn=2026-11-28&checkOut=2026-12-02&rooms=2%2C2&adults=4
+PASS @390 6 Back: homepage address keeps rooms 2,2 — http://localhost:3403/dev/demo?intro=0&checkIn=2026-11-28&checkOut=2026-12-02&adults=4&rooms=2%2C2
+PASS @390 6 no console errors
+PASS @390 7 property compact: "28 thg 11 – 2 thg 12 · 3 lớn · 1 trẻ" (cut) — full "28 thg 11 – 2 thg 12 · 3 người lớn · 1 trẻ em · 2 phòng", title 28 thg 11 – 2 thg 12 · 3 người lớn · 1 trẻ em · 2 phòng, 130px
+PASS @390 7 property compact: screen readers get the full reading, once — - 'button "Tìm chỗ ở: Bare Đa Kao 28 thg 11 – 2 thg 12 · 3 người lớn · 1 trẻ em · 2 phòng BOOK NOW"'
+INFO @390 7 property compact, no children — "28 thg 11 – 2 thg 12 · 3 khách" (cut) at 130px; full "28 thg 11 – 2 thg 12 · 3 khách · 2 phòng"
+PASS @390 7 property: no console errors
+PASS @1440 children stepper stops at the form's bound with a neutral note — 6: Đi cùng hơn 6 trẻ em? Vui lòng liên hệ VNest để được hỗ trợ.
+PASS @1440 the adult limit still reads as the provisional request limit
+PASS @1440 an address with 8 children keeps 8 (never dropped or cut down) — 8
+PASS @1440 above the bound: count down only
+
+121/121 passed

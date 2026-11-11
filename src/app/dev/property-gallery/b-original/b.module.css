@@ -1,0 +1,439 @@
+/*
+ * CONCEPT B, "Immersive Local Living". Exploration only; scoped to this route.
+ * Colours and the display face are provisional, like the site's own tokens.
+ * Written phone first.
+ */
+.root {
+  --b-night: #14100e;
+  --b-cream: #f7efe2;
+  /* 11:1 on the night surface. */
+  --b-soft: rgb(247 239 226 / 0.76);
+  --b-display: var(--font-concept-b), "Arial Narrow", system-ui, sans-serif;
+  /* What stands above the reel: the sample banner, the criteria bar and the way back. */
+  --b-chrome: 9.4rem;
+  /* The booking bar that holds the bottom edge on a phone. */
+  --b-dock: 4.75rem;
+  --vn-focus: var(--b-cream);
+  background: var(--b-night);
+  color: var(--b-cream);
+}
+
+/* ---------- The reel ---------- */
+
+.hero {
+  position: relative;
+  height: calc(100svh - var(--b-chrome));
+  min-height: 30rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.track:focus-visible {
+  outline-offset: -4px;
+}
+
+.frame {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #2a1c1a;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Keeps the words readable over any picture; the top band is for the two small labels. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgb(20 16 14 / 0.94) 0%, rgb(20 16 14 / 0.7) 24%, rgb(20 16 14 / 0) 60%),
+    linear-gradient(to bottom, rgb(20 16 14 / 0.5), rgb(20 16 14 / 0) 20%);
+  pointer-events: none;
+}
+
+.standIn,
+.all {
+  position: absolute;
+  top: 1rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.standIn {
+  left: var(--vn-gutter);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--vn-radius-sm);
+  background: rgb(20 16 14 / 0.75);
+}
+
+.all {
+  top: 0.5rem;
+  right: var(--vn-gutter);
+  height: 2.75rem;
+  padding-inline: 1rem;
+  border: 1px solid rgb(247 239 226 / 0.55);
+  border-radius: 999px;
+  background: rgb(20 16 14 / 0.45);
+  cursor: pointer;
+  transition: background-color var(--vn-duration-fast);
+}
+
+.all:hover {
+  background: rgb(20 16 14 / 0.8);
+}
+
+/* ---------- Identity, held still while the frames move ---------- */
+
+/* Not a target itself, so a swipe that starts on the words still moves the reel. */
+.title {
+  position: absolute;
+  inset-inline: var(--vn-gutter);
+  bottom: calc(var(--b-dock) + 5.25rem);
+  pointer-events: none;
+}
+
+.eyebrow {
+  display: flex;
+  gap: 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.chapterNow {
+  opacity: 0;
+  translate: -0.5rem 0;
+  transition:
+    opacity var(--vn-duration-base),
+    translate var(--vn-duration-base) var(--vn-ease-out);
+}
+
+.chapterNow::before {
+  content: "→ ";
+}
+
+.chapterNow[data-on] {
+  opacity: 1;
+  translate: 0;
+}
+
+/* Line height stays at 1 or above: Vietnamese stacks two marks on one vowel. */
+.name {
+  margin-top: 0.375rem;
+  font-family: var(--b-display);
+  font-size: clamp(3rem, 14.5vw, 4.5rem);
+  font-weight: 700;
+  font-stretch: 75%;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+/* Both lines share one cell, so the block keeps the taller one's height and nothing shifts. */
+.lines {
+  display: grid;
+  max-width: 28rem;
+  margin-top: 0.625rem;
+}
+
+.line {
+  grid-area: 1 / 1;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  opacity: 0;
+  text-wrap: pretty;
+  transition: opacity var(--vn-duration-base);
+}
+
+.line[data-on] {
+  opacity: 1;
+}
+
+/* ---------- The route: two chapters, one stop per frame ---------- */
+
+.route {
+  position: absolute;
+  inset-inline: var(--vn-gutter);
+  bottom: calc(var(--b-dock) + 0.25rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1rem;
+  align-items: end;
+  pointer-events: none;
+}
+
+.route > * {
+  pointer-events: auto;
+}
+
+.chapters {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: -0.75rem;
+}
+
+/* A full-height target; the label sits at its foot, just above the line. */
+.chapter {
+  display: flex;
+  flex-basis: 0;
+  align-items: flex-end;
+  height: 2.75rem;
+  padding-bottom: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--b-soft);
+  cursor: pointer;
+  transition: color var(--vn-duration-fast);
+}
+
+.chapter[aria-current] {
+  color: var(--b-cream);
+}
+
+.stops {
+  grid-column: 1;
+  display: flex;
+  gap: 0.25rem;
+}
+
+/* A full-height target around a thin line. */
+.stop {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  height: 2.75rem;
+  cursor: pointer;
+}
+
+.stop[data-first] {
+  margin-left: 0.5rem;
+}
+
+.stop span {
+  width: 100%;
+  height: 2px;
+  background: rgb(247 239 226 / 0.34);
+  transition:
+    background-color var(--vn-duration-base),
+    height var(--vn-duration-fast);
+}
+
+.stop[data-passed] span {
+  background: var(--b-cream);
+}
+
+.stop[aria-current] span {
+  height: 4px;
+}
+
+.step {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+}
+
+.count {
+  font-family: var(--b-display);
+  font-size: 1rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.count span {
+  color: var(--b-soft);
+  font-weight: 400;
+}
+
+/* On a phone the reel is swiped; the arrows are for a pointer and a keyboard. */
+.arrow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgb(247 239 226 / 0.55);
+  border-radius: 50%;
+  background: rgb(20 16 14 / 0.45);
+  cursor: pointer;
+  transition:
+    background-color var(--vn-duration-fast),
+    opacity var(--vn-duration-fast);
+}
+
+.arrow:hover:enabled {
+  background: var(--b-cream);
+  color: var(--b-night);
+}
+
+.arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* ---------- The way into amenities ---------- */
+
+.after {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding: clamp(3.5rem, 9vw, 7rem) var(--vn-gutter) clamp(3rem, 6vw, 5rem);
+}
+
+.stubNote {
+  font-size: 0.8125rem;
+  color: var(--b-soft);
+}
+
+.afterTitle {
+  margin-top: 0.75rem;
+  font-family: var(--b-display);
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 700;
+  font-stretch: 75%;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin-top: 1.5rem;
+  font-family: var(--b-display);
+  font-size: clamp(1.5rem, 3.4vw, 3rem);
+  line-height: 1.25;
+  color: var(--b-soft);
+}
+
+.words li:not(:last-child)::after {
+  content: "·";
+  margin-left: 1.25rem;
+  color: var(--bk-cta);
+}
+
+/* ---------- The booking action ---------- */
+
+.dock {
+  position: sticky;
+  bottom: 0;
+  z-index: 30;
+  padding: 0.75rem var(--vn-gutter) calc(0.75rem + env(safe-area-inset-bottom));
+  border-top: 1px solid rgb(247 239 226 / 0.14);
+  background: var(--b-night);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: 3.25rem;
+  padding-inline: 1.5rem 1.25rem;
+  border-radius: 999px;
+  background: var(--bk-cta);
+  color: var(--bk-on-cta);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color var(--vn-duration-fast);
+}
+
+.cta:hover {
+  background: var(--bk-cta-hover);
+}
+
+@media (min-width: 48rem) {
+  /* The sample banner wraps to two lines at this width. */
+  .root {
+    --b-chrome: 10.4rem;
+    --b-dock: 0rem;
+  }
+
+  .title {
+    bottom: 7.25rem;
+  }
+
+  .name {
+    font-size: clamp(4.5rem, 10.5vw, 10rem);
+  }
+
+  .line {
+    font-size: 1.25rem;
+  }
+
+  .lines {
+    max-width: 32rem;
+  }
+
+  .route {
+    right: auto;
+    bottom: 1.5rem;
+    width: min(42rem, 56vw);
+  }
+
+  .arrow {
+    display: inline-flex;
+  }
+
+  /* A floating button, bottom right, on the same line as the route. Still sticky, still leaving with the block. */
+  .dock {
+    bottom: 1.5rem;
+    width: fit-content;
+    margin: 0 var(--vn-gutter) 2rem auto;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+
+  .cta {
+    min-width: 15rem;
+    height: 3.5rem;
+    box-shadow: 0 16px 40px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+@media (min-width: 64rem) {
+  .root {
+    --b-chrome: 9.3rem;
+  }
+}
+
+/* Motion is optional: the frame in view drifts very slowly, and the strip glides when a control moves it. */
+@media (prefers-reduced-motion: no-preference) {
+  .track {
+    scroll-behavior: smooth;
+  }
+
+  .frame[data-active] img {
+    animation: b-drift 18s linear both;
+  }
+}
+
+@keyframes b-drift {
+  to {
+    scale: 1.08;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "files": 6,
+  "changed": 6,
+  "report": {
+    "b-client-1440-all.png": {
+      "size": [
+        1440,
+        1613
+      ],
+      "differentPixels": 18535
+    },
+    "b-client-1440-bare.png": {
+      "size": [
+        1440,
+        1613
+      ],
+      "differentPixels": 12790
+    },
+    "b-client-390-all.png": {
+      "size": [
+        780,
+        3284
+      ],
+      "differentPixels": 43794
+    },
+    "b-client-390-bare.png": {
+      "size": [
+        780,
+        2790
+      ],
+      "differentPixels": 36185
+    },
+    "b-client-768-all.png": {
+      "size": [
+        1536,
+        3874
+      ],
+      "differentPixels": 85956
+    },
+    "b-client-768-bare.png": {
+      "size": [
+        1536,
+        3254
+      ],
+      "differentPixels": 67446
+    }
+  }
+}

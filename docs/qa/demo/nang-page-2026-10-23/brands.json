@@ -1,0 +1,602 @@
+[
+  {
+    "w": 1440,
+    "name": "all",
+    "label": "Tất cả thương hiệu, 6 nơi ở",
+    "count": 6,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 36,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "Tất cả 6 nơi ở"
+  },
+  {
+    "w": 1440,
+    "name": "all",
+    "city": "ho-chi-minh",
+    "result": "4 nơi ở · TP. Hồ Chí Minh",
+    "selected": "Tất cả thương hiệu, 4 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "all",
+    "city": "da-nang",
+    "result": "2 nơi ở · Đà Nẵng",
+    "selected": "Tất cả thương hiệu, 2 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "bare",
+    "label": "Bare Boutique Stays, 4 nơi ở",
+    "count": 4,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 36,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "4 nơi ở · Bare Boutique Stays"
+  },
+  {
+    "w": 1440,
+    "name": "bare",
+    "city": "ho-chi-minh",
+    "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh",
+    "selected": "Bare Boutique Stays, 3 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "bare",
+    "city": "da-nang",
+    "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+    "selected": "Bare Boutique Stays, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "the-nang",
+    "label": "The Nắng Suites, 1 nơi ở",
+    "count": 1,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 36,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "1 nơi ở · The Nắng Suites"
+  },
+  {
+    "w": 1440,
+    "name": "the-nang",
+    "city": "ho-chi-minh",
+    "result": "4 nơi ở · TP. Hồ Chí Minh\nThe Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc thương hiệu đã được bỏ.",
+    "selected": "Tất cả thương hiệu, 4 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "the-nang",
+    "city": "da-nang",
+    "result": "1 nơi ở · The Nắng Suites · Đà Nẵng",
+    "selected": "The Nắng Suites, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "pepper-house",
+    "label": "Pepper House, 1 nơi ở",
+    "count": 1,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 40,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 76,
+        "h": 36,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "1 nơi ở · Pepper House"
+  },
+  {
+    "w": 1440,
+    "name": "pepper-house",
+    "city": "ho-chi-minh",
+    "result": "1 nơi ở · Pepper House · TP. Hồ Chí Minh",
+    "selected": "Pepper House, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 1440,
+    "name": "pepper-house",
+    "city": "da-nang",
+    "result": "2 nơi ở · Đà Nẵng\nPepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc thương hiệu đã được bỏ.",
+    "selected": "Tất cả thương hiệu, 2 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "all",
+    "label": "Tất cả thương hiệu, 6 nơi ở",
+    "count": 6,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "Tất cả 6 nơi ở"
+  },
+  {
+    "w": 390,
+    "name": "all",
+    "city": "ho-chi-minh",
+    "result": "4 nơi ở · TP. Hồ Chí Minh",
+    "selected": "Tất cả thương hiệu, 4 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "all",
+    "city": "da-nang",
+    "result": "2 nơi ở · Đà Nẵng",
+    "selected": "Tất cả thương hiệu, 2 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "bare",
+    "label": "Bare Boutique Stays, 4 nơi ở",
+    "count": 4,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "4 nơi ở · Bare Boutique Stays"
+  },
+  {
+    "w": 390,
+    "name": "bare",
+    "city": "ho-chi-minh",
+    "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh",
+    "selected": "Bare Boutique Stays, 3 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "bare",
+    "city": "da-nang",
+    "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+    "selected": "Bare Boutique Stays, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "the-nang",
+    "label": "The Nắng Suites, 1 nơi ở",
+    "count": 1,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "1 nơi ở · The Nắng Suites"
+  },
+  {
+    "w": 390,
+    "name": "the-nang",
+    "city": "ho-chi-minh",
+    "result": "4 nơi ở · TP. Hồ Chí Minh\nThe Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc thương hiệu đã được bỏ.",
+    "selected": "Tất cả thương hiệu, 4 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "the-nang",
+    "city": "da-nang",
+    "result": "1 nơi ở · The Nắng Suites · Đà Nẵng",
+    "selected": "The Nắng Suites, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "pepper-house",
+    "label": "Pepper House, 1 nơi ở",
+    "count": 1,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "1 nơi ở · Pepper House"
+  },
+  {
+    "w": 390,
+    "name": "pepper-house",
+    "city": "ho-chi-minh",
+    "result": "1 nơi ở · Pepper House · TP. Hồ Chí Minh",
+    "selected": "Pepper House, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 390,
+    "name": "pepper-house",
+    "city": "da-nang",
+    "result": "2 nơi ở · Đà Nẵng\nPepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc thương hiệu đã được bỏ.",
+    "selected": "Tất cả thương hiệu, 2 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "all",
+    "label": "Tất cả thương hiệu, 6 nơi ở",
+    "count": 6,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "Tất cả 6 nơi ở"
+  },
+  {
+    "w": 768,
+    "name": "all",
+    "city": "ho-chi-minh",
+    "result": "4 nơi ở · TP. Hồ Chí Minh",
+    "selected": "Tất cả thương hiệu, 4 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "all",
+    "city": "da-nang",
+    "result": "2 nơi ở · Đà Nẵng",
+    "selected": "Tất cả thương hiệu, 2 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "bare",
+    "label": "Bare Boutique Stays, 4 nơi ở",
+    "count": 4,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "4 nơi ở · Bare Boutique Stays"
+  },
+  {
+    "w": 768,
+    "name": "bare",
+    "city": "ho-chi-minh",
+    "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh",
+    "selected": "Bare Boutique Stays, 3 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "bare",
+    "city": "da-nang",
+    "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+    "selected": "Bare Boutique Stays, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "the-nang",
+    "label": "The Nắng Suites, 1 nơi ở",
+    "count": 1,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "1 nơi ở · The Nắng Suites"
+  },
+  {
+    "w": 768,
+    "name": "the-nang",
+    "city": "ho-chi-minh",
+    "result": "4 nơi ở · TP. Hồ Chí Minh\nThe Nắng Suites chưa có nơi ở tại TP. Hồ Chí Minh, nên bộ lọc thương hiệu đã được bỏ.",
+    "selected": "Tất cả thương hiệu, 4 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "the-nang",
+    "city": "da-nang",
+    "result": "1 nơi ở · The Nắng Suites · Đà Nẵng",
+    "selected": "The Nắng Suites, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "pepper-house",
+    "label": "Pepper House, 1 nơi ở",
+    "count": 1,
+    "overflow": false,
+    "logos": [
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/bare-wordmark-transparent.webp",
+        "loaded": true,
+        "w": 60,
+        "h": 32,
+        "naturalW": 767,
+        "naturalH": 402
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/the-nang-suites-transparent.webp",
+        "loaded": true,
+        "w": 24,
+        "h": 34,
+        "naturalW": 364,
+        "naturalH": 512
+      },
+      {
+        "src": "http://localhost:3400/dev-fixtures/brand-collection/official-logos/pepper-house-transparent.webp",
+        "loaded": true,
+        "w": 32,
+        "h": 32,
+        "naturalW": 1406,
+        "naturalH": 1406
+      }
+    ],
+    "result": "1 nơi ở · Pepper House"
+  },
+  {
+    "w": 768,
+    "name": "pepper-house",
+    "city": "ho-chi-minh",
+    "result": "1 nơi ở · Pepper House · TP. Hồ Chí Minh",
+    "selected": "Pepper House, 1 nơi ở",
+    "overflow": false
+  },
+  {
+    "w": 768,
+    "name": "pepper-house",
+    "city": "da-nang",
+    "result": "2 nơi ở · Đà Nẵng\nPepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc thương hiệu đã được bỏ.",
+    "selected": "Tất cả thương hiệu, 2 nơi ở",
+    "overflow": false
+  }
+]

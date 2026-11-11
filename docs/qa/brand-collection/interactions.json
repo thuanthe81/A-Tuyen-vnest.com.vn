@@ -1,0 +1,448 @@
+{
+  "keyboard-a": {
+    "focusOrder": [
+      {
+        "label": "Tất cả thương hiệu, 6 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Bare Boutique Stays, 4 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "The Nắng Suites, 1 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Pepper House, 1 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Mọi thành phố, 6 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "TP. Hồ Chí Minh, 4 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Đà Nẵng, 2 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Khảo sát A · chưa duyệt. Logo ba thương ",
+        "role": "body",
+        "outline": "none 3px rgb(28, 29, 31)"
+      },
+      {
+        "label": "Thử với khu vực mẫu",
+        "role": "a",
+        "outline": "solid 2px rgb(241, 236, 228)"
+      },
+      {
+        "label": "Sang khảo sát B",
+        "role": "a",
+        "outline": "solid 2px rgb(241, 236, 228)"
+      },
+      {
+        "label": "Tất cả thương hiệu, 6 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Bare Boutique Stays, 4 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      }
+    ],
+    "enterOnBare": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ],
+      "summary": "4 nơi ở · Bare Boutique Stays",
+      "chosen": [
+        "Bare Boutique Stays, 4 nơi ở",
+        "Mọi thành phố, 4 nơi ở"
+      ],
+      "address": "?brand=bare"
+    },
+    "spaceAgainUnchooses": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn",
+        "The Nắng Suites",
+        "Pepper House"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "address": ""
+    },
+    "errors": []
+  },
+  "keyboard-b": {
+    "focusOrder": [
+      {
+        "label": "Tất cả thương hiệu, 6 nơi ở",
+        "role": "radio",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Mọi thành phố, 6 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "TP. Hồ Chí Minh, 4 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Đà Nẵng, 2 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Khảo sát B · chưa duyệt. Logo ba thương ",
+        "role": "body",
+        "outline": "none 3px rgb(28, 29, 31)"
+      },
+      {
+        "label": "Thử với khu vực mẫu",
+        "role": "a",
+        "outline": "solid 2px rgb(241, 236, 228)"
+      },
+      {
+        "label": "Sang khảo sát A",
+        "role": "a",
+        "outline": "solid 2px rgb(241, 236, 228)"
+      },
+      {
+        "label": "Tất cả thương hiệu, 6 nơi ở",
+        "role": "radio",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Mọi thành phố, 6 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "TP. Hồ Chí Minh, 4 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Đà Nẵng, 2 nơi ở",
+        "role": "button",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      },
+      {
+        "label": "Khảo sát B · chưa duyệt. Logo ba thương ",
+        "role": "body",
+        "outline": "none 3px rgb(28, 29, 31)"
+      }
+    ],
+    "arrowRight": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ],
+      "summary": "4 nơi ở · Bare Boutique Stays",
+      "chosen": [
+        "Bare Boutique Stays, 4 nơi ở",
+        "Mọi thành phố, 4 nơi ở"
+      ],
+      "address": "?brand=bare",
+      "focus": {
+        "label": "Bare Boutique Stays, 4 nơi ở",
+        "role": "radio",
+        "outline": "solid 2px rgb(55, 65, 47)"
+      }
+    },
+    "end": {
+      "cards": [
+        "Pepper House"
+      ],
+      "summary": "1 nơi ở · Pepper House",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "address": "?brand=pepper-house"
+    },
+    "home": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn",
+        "The Nắng Suites",
+        "Pepper House"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "address": ""
+    },
+    "arrowLeftWraps": {
+      "cards": [
+        "Pepper House"
+      ],
+      "summary": "1 nơi ở · Pepper House",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "address": "?brand=pepper-house"
+    },
+    "tabStopsInRadiogroup": 1,
+    "errors": []
+  },
+  "combined-a": {
+    "bare": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ],
+      "summary": "4 nơi ở · Bare Boutique Stays",
+      "chosen": [
+        "Bare Boutique Stays, 4 nơi ở",
+        "Mọi thành phố, 4 nơi ở"
+      ],
+      "address": "?brand=bare"
+    },
+    "cityControl": "chips",
+    "bareInDaNang": {
+      "cards": [
+        "Bare Hàn"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "chosen": [
+        "Bare Boutique Stays, 1 nơi ở tại Đà Nẵng",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "address": "?brand=bare&city=da-nang"
+    },
+    "pepperHouseAfterDaNang": {
+      "cards": [
+        "Pepper House"
+      ],
+      "summary": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "address": "?brand=pepper-house",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+    },
+    "reset": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn",
+        "The Nắng Suites",
+        "Pepper House"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "address": ""
+    },
+    "errors": []
+  },
+  "combined-b": {
+    "bare": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn"
+      ],
+      "summary": "4 nơi ở · Bare Boutique Stays",
+      "chosen": [
+        "Bare Boutique Stays, 4 nơi ở",
+        "Mọi thành phố, 4 nơi ở"
+      ],
+      "address": "?brand=bare"
+    },
+    "cityControl": "select",
+    "bareInDaNang": {
+      "cards": [
+        "Bare Hàn"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "chosen": [
+        "Bare Boutique Stays, 1 nơi ở",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "address": "?brand=bare&city=da-nang"
+    },
+    "pepperHouseAfterDaNang": {
+      "cards": [
+        "Pepper House"
+      ],
+      "summary": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.",
+      "chosen": [
+        "Pepper House, 1 nơi ở",
+        "Mọi thành phố, 1 nơi ở"
+      ],
+      "address": "?brand=pepper-house",
+      "note": "Pepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+    },
+    "reset": {
+      "cards": [
+        "Bare Chic",
+        "Bare Hyphen",
+        "Bare Đa Kao",
+        "Bare Hàn",
+        "The Nắng Suites",
+        "Pepper House"
+      ],
+      "summary": "Tất cả 6 nơi ở",
+      "chosen": [
+        "Tất cả thương hiệu, 6 nơi ở",
+        "Mọi thành phố, 6 nơi ở"
+      ],
+      "address": ""
+    },
+    "errors": []
+  },
+  "address-a": {
+    "sharedLink": {
+      "cards": [
+        "Bare Hàn"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "chosen": [
+        "Bare Boutique Stays, 1 nơi ở tại Đà Nẵng",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "address": "?brand=bare&city=da-nang"
+    },
+    "contradictoryLink": {
+      "cards": [
+        "Bare Hàn",
+        "The Nắng Suites"
+      ],
+      "summary": "2 nơi ở · Đà Nẵng",
+      "chosen": [
+        "Tất cả thương hiệu, 2 nơi ở",
+        "Đà Nẵng, 2 nơi ở"
+      ],
+      "address": "?city=da-nang"
+    }
+  },
+  "address-b": {
+    "sharedLink": {
+      "cards": [
+        "Bare Hàn"
+      ],
+      "summary": "1 nơi ở · Bare Boutique Stays · Đà Nẵng",
+      "chosen": [
+        "Bare Boutique Stays, 1 nơi ở",
+        "Đà Nẵng, 1 nơi ở"
+      ],
+      "address": "?brand=bare&city=da-nang"
+    },
+    "contradictoryLink": {
+      "cards": [
+        "Bare Hàn",
+        "The Nắng Suites"
+      ],
+      "summary": "2 nơi ở · Đà Nẵng",
+      "chosen": [
+        "Tất cả thương hiệu, 2 nơi ở",
+        "Đà Nẵng, 2 nơi ở"
+      ],
+      "address": "?city=da-nang"
+    }
+  },
+  "area-a": {
+    "verified": {
+      "disabled": true,
+      "options": [
+        "Chờ xác minh"
+      ],
+      "describedBy": "Chưa có khu vực nào được xác minh cho các nơi ở này."
+    },
+    "sampleArea2": {
+      "cards": [
+        "Bare Hyphen",
+        "Pepper House"
+      ],
+      "summary": "2 nơi ở · Khu vực mẫu 2",
+      "chosen": [
+        "Tất cả thương hiệu, 2 nơi ở",
+        "TP. Hồ Chí Minh, 4 nơi ở"
+      ],
+      "address": "?areas=sample&city=ho-chi-minh&area=mau-2"
+    }
+  },
+  "area-b": {
+    "verified": {
+      "disabled": true,
+      "options": [
+        "Chờ xác minh"
+      ],
+      "describedBy": "Chưa có khu vực nào được xác minh cho các nơi ở này."
+    },
+    "sampleArea2": {
+      "cards": [
+        "Bare Hyphen",
+        "Pepper House"
+      ],
+      "summary": "2 nơi ở · Khu vực mẫu 2",
+      "chosen": [
+        "Tất cả thương hiệu, 2 nơi ở",
+        "TP. Hồ Chí Minh, 4 nơi ở"
+      ],
+      "address": "?areas=sample&city=ho-chi-minh&area=mau-2"
+    }
+  },
+  "reducedMotion-a": {
+    "cards": [
+      "none 0s / 0s",
+      "none 0s / 0s"
+    ],
+    "selected": [
+      "none 0s / 0s, 0s"
+    ],
+    "stage": []
+  },
+  "reducedMotion-b": {
+    "cards": [
+      "none 0s / 0s",
+      "none 0s / 0s"
+    ],
+    "selected": [
+      "none 0s / 0s"
+    ],
+    "stage": [
+      "none 0s / 0s"
+    ]
+  }
+}

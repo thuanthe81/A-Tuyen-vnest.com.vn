@@ -1,0 +1,56 @@
+/* "VI | EN": quiet header type in Dark Olive; the active language is bold with the copper underline (owner brief, 6/11/2026). */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  color: #37412f;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.divider {
+  padding-inline: 0.125rem;
+  color: rgb(55 65 47 / 0.35);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  min-height: 2.75rem;
+  padding-inline: 0.25rem;
+  color: rgb(55 65 47 / 0.62);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+
+.link:hover {
+  color: #37412f;
+}
+
+.link[aria-current="true"] {
+  color: #37412f;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #a87444;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45em;
+}
+
+.link:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link {
+    transition: none;
+  }
+}

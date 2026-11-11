@@ -1,0 +1,840 @@
+/* Stage 3 · Contact, consultation form, FAQ, Footer (24/10/2026; Services moved to the Visual Accordion 9/11/2026;
+   updated to CEO-approved VNest brand palette: #A87444 · #37412F · #8A8173 · #F1ECE4 · #FFFFFF). */
+.contact,
+.consult,
+.faq,
+.footer {
+  --olive: #37412f;
+  --olive-deep: #2a3224;
+  --copper: #a87444;
+  --sand: #f1ece4;
+  --line: #ddd5c8;
+  /* Official palette; small text uses darker shades of the same hues so it meets WCAG AA (25/10):
+     Warm Taupe #8A8173 is 3.3:1 on Light Beige, Copper Bronze #A87444 4.0:1 under white text. */
+  --taupe: #8a8173;
+  --muted: #6f675b;
+  --copper-text: #8f6036;
+  --paper: #ffffff;
+  --cta-copper: #9a683c;
+  color: var(--olive);
+  scroll-margin-top: 5.75rem;
+}
+
+.kicker {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.h2 {
+  margin-top: 0.625rem;
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.h2:focus {
+  outline: none;
+}
+
+.h2:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 6px;
+}
+
+
+/* The three-card Services section (24/10–8/11/2026) was replaced by the Visual Accordion on 9/11/2026
+   (features/partner/ServiceAccordion.module.css); its rules left with it. */
+
+.submit:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+/* ── Contact (owner's review of 7/11/2026): the footer composition of 25/10 restored as a homepage section, VNest's
+   identity left and a standalone Dark Olive card right (VNestContactBlock.tsx; `.footerTop` and `.footerContact` below).
+   ── Consultation form (`#tu-van`): its own section after Contact, separated by whitespace only (40 px on phones, 56 px
+   on tablets, 80 px on desktop), in a restrained cream card. Desktop gives the card the FAQ's 5/7 columns. ── */
+
+.contact {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: 0 var(--vn-gutter);
+}
+
+.contact a:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.consult {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: 2.5rem var(--vn-gutter) clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+}
+
+@media (min-width: 48rem) {
+  .consult {
+    padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .consult {
+    padding-top: 5rem;
+  }
+}
+
+.form {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  padding: clamp(1.5rem, 1rem + 2.5vw, 3.5rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #f8f4ee;
+}
+
+.formBody {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+@media (min-width: 64rem) {
+  .form {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: 5rem;
+    align-items: start;
+  }
+}
+
+.formHead {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* The form section's heading: modest, so it does not compete with the contact headline above. */
+.formTitle {
+  justify-self: start;
+  font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.formTitle:focus {
+  outline: none;
+}
+
+.formTitle:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+}
+
+.formNotice {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.chips legend {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.chip {
+  position: relative;
+  display: inline-flex;
+}
+
+.chip input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.chip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+.chip input:checked + span {
+  border-color: var(--olive);
+  background: var(--olive);
+  color: #fff;
+}
+
+.chip input:focus-visible + span {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.fields {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .fields {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wide {
+    grid-column: 1 / -1;
+  }
+}
+
+.field {
+  display: grid;
+  align-content: start;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.field em {
+  color: var(--cta-copper);
+  font-style: normal;
+}
+
+.field small {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.field input[aria-invalid="true"] {
+  border-color: #9b3b2a;
+  box-shadow: inset 0 0 0 1px #9b3b2a;
+}
+
+.error,
+.hint {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.error {
+  color: #9b3b2a;
+}
+
+.hint {
+  font-weight: 400;
+  color: #6f675b;
+}
+
+.field input,
+.field textarea {
+  min-height: 3rem;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid #b9ad9b;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: var(--olive);
+  font: inherit;
+  font-weight: 400;
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 1px;
+}
+
+/* Delivery off (the default): it checks the fields but sends nothing, so it is styled as a secondary action, not a live
+   CTA. `.submitLive` below takes over once the server sends requests (Consultation.tsx, `delivery`). */
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  min-height: 3.25rem;
+  border: 1px solid #a39886;
+  border-radius: 0.5rem;
+  background: #ebe4d9;
+  color: var(--olive);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.formNoteStrong {
+  color: var(--olive);
+  font-weight: 500;
+}
+
+.formNote {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.formNote:empty {
+  display: none;
+}
+
+/* Delivery on: the same button, filled in Dark Olive, because it now sends. */
+.submitLive {
+  border-color: var(--olive);
+  background: var(--olive);
+  color: #fff;
+  transition: background-color var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+@media (hover: hover) {
+  .submitLive:hover {
+    background: #2a3224;
+  }
+}
+
+/* Sending: the label says "Đang gửi..."; the button looks paused and refuses a second click (Consultation.tsx). */
+.submit[aria-disabled="true"] {
+  cursor: progress;
+  opacity: 0.72;
+}
+
+.formNote a {
+  color: var(--olive);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Simulated delivery (local development only): said on a line of its own, in the quieter note colour. */
+.formNoteMock {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* The live region still announces "Đang gửi..." while the button shows it. */
+.formNoteQuiet {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.chipsError {
+  flex-basis: 100%;
+  margin-top: 0.25rem;
+}
+
+/* The spam trap: never seen, never reached with the keyboard (aria-hidden and tabindex=-1 in the markup). */
+.trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ── FAQ ───────────────────────────────────────────────────────────────── */
+
+.faq {
+  display: grid;
+  gap: 2rem;
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: clamp(3.5rem, 2.5rem + 4vw, 6.5rem) var(--vn-gutter);
+}
+
+@media (min-width: 64rem) {
+  .faq {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: 5rem;
+  }
+}
+
+.faqList {
+  border-top: 1px solid var(--copper);
+}
+
+.faqList details {
+  border-bottom: 1px solid var(--line);
+}
+
+.faqList summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.75rem;
+  padding-block: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqList summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqList summary::after {
+  content: "+";
+  flex: none;
+  font-size: 1.375rem;
+  line-height: 1;
+  color: var(--copper);
+}
+
+.faqList details[open] summary::after {
+  content: "–";
+}
+
+.faqList summary:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 2px;
+}
+
+.faqList p {
+  padding-bottom: 1.25rem;
+  color: var(--muted);
+}
+
+/* ── Footer (redesigned 25/10/2026): brand left, a prominent Contact area right ── */
+
+.footer {
+  border-top: 1px solid var(--copper);
+  background: var(--sand);
+  font-size: 0.9375rem;
+}
+
+/* Homepage: the contact block sits above it, so the footer is only brand, links and © under a quiet rule. */
+.footer[data-variant="minimal"] {
+  border-top-color: var(--line);
+}
+
+.footer[data-variant="minimal"] .footerInner {
+  padding-top: clamp(2rem, 1.5rem + 2vw, 3rem);
+}
+
+.footer[data-variant="minimal"] .footerBottom {
+  margin-top: 1.5rem;
+}
+
+.footerInner {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: clamp(2.5rem, 2rem + 3vw, 4.5rem) var(--vn-gutter) 1.5rem;
+}
+
+.footerTop {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 64rem) {
+  .footerTop {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: start;
+  }
+}
+
+.footerBrand {
+  display: grid;
+  align-content: start;
+  gap: 0.875rem;
+}
+
+.footerLogo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-self: start;
+  min-height: 2.75rem;
+}
+
+.footerLogo img {
+  display: block;
+  width: auto;
+}
+
+.footerTagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper-text);
+}
+
+.footerDescriptor {
+  max-width: 26rem;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--olive);
+}
+
+.footer a:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+/* Contact: the footer's focal area, Dark Olive with Light Beige text. */
+.footerContact {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 1.1rem + 2vw, 2.75rem);
+  border-radius: 1rem;
+  background: var(--olive);
+  color: var(--sand);
+}
+
+.footerContactKicker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e2b98e;
+}
+
+.footerContactTitle {
+  font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+/* VNest's contact channels (ContactChannels.tsx): light on Light Beige (homepage contact), dark on Dark Olive (footer). */
+.channelGroup {
+  /* Fallbacks: the group is also used in the header menu, outside the sections that define the palette. */
+  --ink: var(--olive, #37412f);
+  --ink-soft: var(--muted, #6f675b);
+  --ink-hover: var(--copper-text, #8f6036);
+  --underline: rgb(55 65 47 / 0.35);
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* Header menu: the same channels, smaller, so the overlay fits a phone screen. */
+.channelGroup[data-size="compact"] {
+  gap: 0.5rem;
+}
+
+.channelGroup[data-size="compact"] .channels {
+  gap: 0.375rem;
+}
+
+.channelGroup[data-size="compact"] .channelBig {
+  font-size: 1.375rem;
+}
+
+.channelGroup[data-size="compact"] .channelLink {
+  font-size: 1rem;
+}
+
+.channelGroup[data-tone="dark"] {
+  --ink: #fff;
+  --ink-soft: rgb(241 236 228 / 0.72);
+  --ink-hover: #e2b98e;
+  --underline: rgb(241 236 228 / 0.4);
+  color: var(--sand);
+}
+
+.channels {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.channels li {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.channelLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.channelBig {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  font-size: clamp(1.625rem, 1.3rem + 1.2vw, 2.125rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.channelLink {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--underline);
+  text-underline-offset: 5px;
+}
+
+.channelBig:hover,
+.channelLink:hover,
+.social:hover {
+  color: var(--ink-hover);
+}
+
+.channelText {
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.channelActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  padding-top: 0.25rem;
+}
+
+.channelGroup a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.footerCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--cta-copper);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+.footerCta:hover {
+  background: #8f6036;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+/* The bottom row (10/11/2026): links, ©, and a right-hand group of social placeholders + back to top.
+   Phones: links / social · back to top / ©. Tablets: links / © · group. From 64rem: one row, as before. */
+.footerBottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "nav" "end" "legal";
+  align-items: center;
+  gap: 0.25rem 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.footerBottom > nav {
+  grid-area: nav;
+}
+
+.footerBottom > .footerLegal {
+  grid-area: legal;
+}
+
+.footerEnd {
+  grid-area: end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
+@media (min-width: 48rem) {
+  .footerBottom {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "nav nav" "legal end";
+  }
+
+  .footerEnd {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footerBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* Social icons (FooterSocial.tsx): quiet Dark Olive line icons; Facebook links out, the others are placeholders. */
+.footerSocial {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin: 0 0 0 -0.3125rem;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 48rem) {
+  .footerSocial {
+    margin-left: 0;
+  }
+}
+
+.socialIcon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 2.75rem;
+  color: var(--olive);
+  transition: color 160ms ease;
+}
+
+/* The link's keyboard focus: a ring hugging the icon rather than the tall hit area. */
+.footer a.socialIcon:focus-visible {
+  outline: none;
+}
+
+.footer a.socialIcon:focus-visible svg {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+  border-radius: 0.25rem;
+}
+
+/* A placeholder is not a link: no pointer. */
+span.socialIcon {
+  cursor: default;
+}
+
+.socialIcon svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* "Sắp cập nhật": a small tooltip above a placeholder, on hover only (pointer devices). */
+.socialIcon[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% - 0.5rem);
+  left: 50%;
+  translate: -50% 0.125rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--olive);
+  color: var(--sand);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, translate 160ms ease;
+}
+
+@media (hover: hover) {
+  .socialIcon:hover {
+    color: var(--copper-text);
+  }
+
+  .socialIcon[data-tip]:hover::after {
+    opacity: 1;
+    translate: -50% 0;
+  }
+}
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footerNav a,
+.footerTop2 {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--olive);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footerNav a:hover,
+.footerTop2:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footerLegal {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail {
+    animation: none;
+  }
+
+  .card,
+  .chevron,
+  .chip span,
+  .socialIcon,
+  .socialIcon::after {
+    transition: none;
+  }
+}

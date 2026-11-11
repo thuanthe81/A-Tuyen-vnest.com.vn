@@ -1,0 +1,55 @@
+/* BOOK NOW outside the bar (viewers, room drawer): the bar's own CTA copper (#9A683C, the text-safe shade of Copper Bronze #A87444, 25/10/2026), so the action reads as one. */
+.bookNow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding-inline: 1.25rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--bk-cta, #9a683c);
+  color: var(--bk-on-cta, #ffffff);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--vn-duration-fast) var(--vn-ease-out),
+    scale var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+.bookNow:hover {
+  background: var(--bk-cta-hover, #8f6036);
+}
+
+.bookNow:active {
+  scale: 0.97;
+}
+
+.bookNow:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 3px;
+}
+
+/* On the viewer's near-black ground the focus ring must be light to be seen. */
+.onDark:focus-visible {
+  outline-color: #fff;
+}
+
+.block {
+  width: 100%;
+  min-height: 3.25rem;
+  font-size: 0.9375rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bookNow {
+    transition: none;
+  }
+
+  .bookNow:active {
+    scale: none;
+  }
+}

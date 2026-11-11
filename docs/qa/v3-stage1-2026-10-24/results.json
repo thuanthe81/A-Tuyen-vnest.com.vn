@@ -1,0 +1,466 @@
+{
+ "base": "http://localhost:3401",
+ "date": "2026-10-24",
+ "views": [
+  {
+   "view": "1440",
+   "checks": {
+    "R01 header: no Khám phá / Về VNest / Hợp tác in the bar": {
+     "pass": true,
+     "links": [
+      "",
+      "Cơ sởTất cả cơ sở",
+      "Ngày lưu trúChọn ngày",
+      "Khách2 khách",
+      "BOOK NOW",
+      "BOOKING",
+      "MenuMở menu"
+     ],
+     "hasOldNav": false,
+     "symbolH": 38,
+     "wordH": 28,
+     "height": 73
+    },
+    "R01 BOOKING present, ≥44px, real link": {
+     "pass": true,
+     "href": "/dev/demo#dat-phong",
+     "bg": "rgb(176, 79, 42)",
+     "color": "rgb(255, 255, 255)",
+     "h": 48,
+     "w": 126
+    },
+    "R04 carousel: 5 slides, only 1–2 photographs loaded at start": {
+     "pass": true,
+     "slides": 5,
+     "mounted": [
+      {
+       "src": "pepper-house/1600.avif",
+       "done": true
+      },
+      {
+       "src": "bare-indochine-53/1600.avif",
+       "done": true
+      }
+     ]
+    },
+    "bars on first screen = 1": {
+     "pass": true,
+     "count": 1
+    },
+    "R04 auto-advance within ~6 s": {
+     "pass": true,
+     "firstIndex": 0,
+     "laterIndex": 1
+    },
+    "R04 dots keyboard-operable; choosing stops rotation": {
+     "pass": true,
+     "current": 2,
+     "live": "polite",
+     "caption": "The Nắng Suites · Đà Nẵng · Sơn Trà",
+     "after6s": 2
+    },
+    "R04 next control": true,
+    "hero: heading and booking bar inside the first screen": {
+     "pass": true,
+     "titleInHero": true,
+     "bookingInFirstScreen": true
+    },
+    "R01 BOOKING opens the booking dates": {
+     "pass": true,
+     "calendar": true,
+     "sheet": false
+    },
+    "R02 homepage scrolled: one bar, in the header, BOOK NOW": {
+     "pass": true,
+     "bars": 1,
+     "headerTop": 0,
+     "bookingHidden": true,
+     "cta": true
+    },
+    "menu keeps Khám phá, Về VNest, Hợp tác, Liên hệ; Escape returns focus": {
+     "pass": true,
+     "menu": [
+      "Khám phá nơi lưu trú",
+      "Về VNest",
+      "Hợp tác cùng VNest",
+      "Liên hệ"
+     ],
+     "focusBack": true
+    },
+    "R02 property top: one bar": {
+     "pass": true,
+     "count": 1
+    },
+    "R02 property scrolled: one bar": {
+     "pass": true,
+     "count": 1
+    },
+    "R03 viewer BOOK NOW visible, ≥44px, not over photo or close": {
+     "pass": true,
+     "ctaH": 44,
+     "overPhoto": false,
+     "overClose": false,
+     "inViewport": true
+    },
+    "R03 BOOK NOW without dates: viewer closes, booking dates open": {
+     "pass": true,
+     "viewerClosed": true,
+     "datesOpen": true
+    },
+    "R03 drawer BOOK NOW → step with property, dates, 3 guests, room": {
+     "pass": true,
+     "bar": "Cơ sở Bare Chic Ngày lưu trú 6 thg 11 – 8 thg 11 Khách 3 khách BOOK NOW",
+     "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&adults=3&room=Bare+Chic+Two",
+     "scrollY": 0,
+     "h1": "Kỳ lưu trú bạn đã chọn",
+     "summary": "Nơi lưu trú | Bare Chic · TP.HCM · Quận 1 | Phòng bạn đang xem | Bare Chic Two | Nhận phòng | Thứ Sáu, 6 tháng 11, 2026 | Trả phòng | Chủ Nhật, 8 tháng 11, 2026 | Thời gian | 2 đêm | Khách | 3 khách",
+     "notice": true,
+     "fake": false
+    },
+    "no fake booking: not-connected notice, no confirmation or availability wording": true,
+    "booking step: one bar": true,
+    "step → rooms of Bare Chic, same stay in the bar": {
+     "pass": true,
+     "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=3#rooms",
+     "bar": "Cơ sở Bare Chic Ngày lưu trú 6 thg 11 – 8 thg 11 Khách 3 khách BOOK NOW"
+    },
+    "R02 Nắng: one bar": true,
+    "R04 reduced motion: stays on slide 1, offers to start": {
+     "pass": true,
+     "current": 0,
+     "toggle": "Tiếp tục trình chiếu ảnh"
+    }
+   },
+   "home": {
+    "url": "/dev/demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0.0009
+   },
+   "step": {
+    "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&adults=3&room=Bare+Chic+Two",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   },
+   "property": {
+    "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=3",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   },
+   "nang": {
+    "url": "/dev/stays/the-nang-suites",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   }
+  },
+  {
+   "view": "768",
+   "checks": {
+    "R01 header: no Khám phá / Về VNest / Hợp tác in the bar": {
+     "pass": true,
+     "links": [
+      "",
+      "Cơ sởTất cả cơ sở",
+      "Ngày lưu trúChọn ngày",
+      "Khách2 khách",
+      "BOOK NOW",
+      "BOOKING",
+      "MenuMở menu"
+     ],
+     "hasOldNav": false,
+     "symbolH": 32,
+     "wordH": 23,
+     "height": 65
+    },
+    "R01 BOOKING present, ≥44px, real link": {
+     "pass": true,
+     "href": "/dev/demo#dat-phong",
+     "bg": "rgb(176, 79, 42)",
+     "color": "rgb(255, 255, 255)",
+     "h": 44,
+     "w": 108
+    },
+    "R04 carousel: 5 slides, only 1–2 photographs loaded at start": {
+     "pass": true,
+     "slides": 5,
+     "mounted": [
+      {
+       "src": "pepper-house/1200.avif",
+       "done": true
+      },
+      {
+       "src": "bare-indochine-53/1200.avif",
+       "done": true
+      }
+     ]
+    },
+    "bars on first screen = 1": {
+     "pass": true,
+     "count": 1
+    },
+    "R04 auto-advance within ~6 s": {
+     "pass": true,
+     "firstIndex": 0,
+     "laterIndex": 1
+    },
+    "R04 dots keyboard-operable; choosing stops rotation": {
+     "pass": true,
+     "current": 2,
+     "live": "polite",
+     "caption": "The Nắng Suites · Đà Nẵng · Sơn Trà",
+     "after6s": 2
+    },
+    "R04 next control": true,
+    "hero: heading and booking bar inside the first screen": {
+     "pass": true,
+     "titleInHero": true,
+     "bookingInFirstScreen": true
+    },
+    "R01 BOOKING opens the booking dates": {
+     "pass": true,
+     "calendar": true,
+     "sheet": false
+    },
+    "R02 homepage scrolled: one bar, in the header, BOOK NOW": {
+     "pass": true,
+     "bars": 1,
+     "headerTop": 0,
+     "bookingHidden": true,
+     "cta": true
+    },
+    "menu keeps Khám phá, Về VNest, Hợp tác, Liên hệ; Escape returns focus": {
+     "pass": true,
+     "menu": [
+      "Khám phá nơi lưu trú",
+      "Về VNest",
+      "Hợp tác cùng VNest",
+      "Liên hệ"
+     ],
+     "focusBack": true
+    },
+    "R02 property top: one bar": {
+     "pass": true,
+     "count": 1
+    },
+    "R02 property scrolled: one bar": {
+     "pass": true,
+     "count": 1
+    },
+    "R03 viewer BOOK NOW visible, ≥44px, not over photo or close": {
+     "pass": true,
+     "ctaH": 44,
+     "overPhoto": false,
+     "overClose": false,
+     "inViewport": true
+    },
+    "R03 BOOK NOW without dates: viewer closes, booking dates open": {
+     "pass": true,
+     "viewerClosed": true,
+     "datesOpen": true
+    },
+    "R03 drawer BOOK NOW → step with property, dates, 3 guests, room": {
+     "pass": true,
+     "bar": "Cơ sở Bare Chic Ngày lưu trú 6 thg 11 – 8 thg 11 Khách 3 khách BOOK NOW",
+     "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&adults=3&room=Bare+Chic+Two",
+     "scrollY": 0,
+     "h1": "Kỳ lưu trú bạn đã chọn",
+     "summary": "Nơi lưu trú | Bare Chic · TP.HCM · Quận 1 | Phòng bạn đang xem | Bare Chic Two | Nhận phòng | Thứ Sáu, 6 tháng 11, 2026 | Trả phòng | Chủ Nhật, 8 tháng 11, 2026 | Thời gian | 2 đêm | Khách | 3 khách",
+     "notice": true,
+     "fake": false
+    },
+    "no fake booking: not-connected notice, no confirmation or availability wording": true,
+    "booking step: one bar": true,
+    "step → rooms of Bare Chic, same stay in the bar": {
+     "pass": true,
+     "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=3#rooms",
+     "bar": "Cơ sở Bare Chic Ngày lưu trú 6 thg 11 – 8 thg 11 Khách 3 khách BOOK NOW"
+    },
+    "R02 Nắng: one bar": true,
+    "R04 reduced motion: stays on slide 1, offers to start": {
+     "pass": true,
+     "current": 0,
+     "toggle": "Tiếp tục trình chiếu ảnh"
+    }
+   },
+   "home": {
+    "url": "/dev/demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0.0015
+   },
+   "step": {
+    "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&adults=3&room=Bare+Chic+Two",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   },
+   "property": {
+    "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=3",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   },
+   "nang": {
+    "url": "/dev/stays/the-nang-suites",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   }
+  },
+  {
+   "view": "390",
+   "checks": {
+    "R01 header: no Khám phá / Về VNest / Hợp tác in the bar": {
+     "pass": true,
+     "links": [
+      "",
+      "Tìm chỗ ở: Tất cả cơ sởChọn ngày · 2 kháchBOOK NOW",
+      "BOOKING",
+      "MenuMở menu"
+     ],
+     "hasOldNav": false,
+     "symbolH": 32,
+     "wordH": 23,
+     "height": 65
+    },
+    "R01 BOOKING present, ≥44px, real link": {
+     "pass": true,
+     "href": "/dev/demo#dat-phong",
+     "bg": "rgb(176, 79, 42)",
+     "color": "rgb(255, 255, 255)",
+     "h": 44,
+     "w": 108
+    },
+    "R04 carousel: 5 slides, only 1–2 photographs loaded at start": {
+     "pass": true,
+     "slides": 5,
+     "mounted": [
+      {
+       "src": "pepper-house/1600.avif",
+       "done": true
+      },
+      {
+       "src": "bare-indochine-53/1600.avif",
+       "done": true
+      }
+     ]
+    },
+    "bars on first screen = 1": {
+     "pass": true,
+     "count": 1
+    },
+    "R04 auto-advance within ~6 s": {
+     "pass": true,
+     "firstIndex": 0,
+     "laterIndex": 1
+    },
+    "R04 dots keyboard-operable; choosing stops rotation": {
+     "pass": true,
+     "current": 2,
+     "live": "polite",
+     "caption": "The Nắng Suites · Đà Nẵng · Sơn Trà",
+     "after6s": 2
+    },
+    "R04 next control": true,
+    "hero: heading and booking bar inside the first screen": {
+     "pass": true,
+     "titleInHero": true,
+     "bookingInFirstScreen": true
+    },
+    "R01 BOOKING opens the booking dates": {
+     "pass": true,
+     "calendar": false,
+     "sheet": true
+    },
+    "R02 homepage scrolled: one bar, in the header, BOOK NOW": {
+     "pass": true,
+     "bars": 1,
+     "headerTop": 0,
+     "bookingHidden": true,
+     "cta": true
+    },
+    "menu keeps Khám phá, Về VNest, Hợp tác, Liên hệ; Escape returns focus": {
+     "pass": true,
+     "menu": [
+      "Khám phá nơi lưu trú",
+      "Về VNest",
+      "Hợp tác cùng VNest",
+      "Liên hệ"
+     ],
+     "focusBack": true
+    },
+    "R02 property top: one bar": {
+     "pass": true,
+     "count": 1
+    },
+    "R02 property scrolled: one bar": {
+     "pass": true,
+     "count": 1
+    },
+    "R03 viewer BOOK NOW visible, ≥44px, not over photo or close": {
+     "pass": true,
+     "ctaH": 44,
+     "overPhoto": false,
+     "overClose": false,
+     "inViewport": true
+    },
+    "R03 BOOK NOW without dates: viewer closes, booking dates open": {
+     "pass": true,
+     "viewerClosed": true,
+     "datesOpen": true
+    },
+    "R03 drawer BOOK NOW → step with property, dates, 3 guests, room": {
+     "pass": true,
+     "bar": "Tìm chỗ ở: Bare Chic 6 thg 11 – 8 thg 11 · 3 khách BOOK NOW",
+     "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&adults=3&room=Bare+Chic+Two",
+     "scrollY": 0,
+     "h1": "Kỳ lưu trú bạn đã chọn",
+     "summary": "Nơi lưu trú | Bare Chic · TP.HCM · Quận 1 | Phòng bạn đang xem | Bare Chic Two | Nhận phòng | Thứ Sáu, 6 tháng 11, 2026 | Trả phòng | Chủ Nhật, 8 tháng 11, 2026 | Thời gian | 2 đêm | Khách | 3 khách",
+     "notice": true,
+     "fake": false
+    },
+    "no fake booking: not-connected notice, no confirmation or availability wording": true,
+    "booking step: one bar": true,
+    "step → rooms of Bare Chic, same stay in the bar": {
+     "pass": true,
+     "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=3#rooms",
+     "bar": "Tìm chỗ ở: Bare Chic 6 thg 11 – 8 thg 11 · 3 khách BOOK NOW"
+    },
+    "R02 Nắng: one bar": true,
+    "R04 reduced motion: stays on slide 1, offers to start": {
+     "pass": true,
+     "current": 0,
+     "toggle": "Tiếp tục trình chiếu ảnh"
+    }
+   },
+   "home": {
+    "url": "/dev/demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0.0037
+   },
+   "step": {
+    "url": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&adults=3&room=Bare+Chic+Two",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   },
+   "property": {
+    "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=3",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   },
+   "nang": {
+    "url": "/dev/stays/the-nang-suites",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0
+   }
+  }
+ ],
+ "consoleErrors": []
+}

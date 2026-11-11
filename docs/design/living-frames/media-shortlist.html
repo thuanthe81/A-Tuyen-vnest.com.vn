@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>VNest — Living Frames: media shortlist (reality check)</title>
+<style>
+:root{--paper:#eeebe4;--card:#f8f6f1;--ink:#1b1a17;--mute:#5d5a52;--line:#d6d1c5;--cta:#b0502a;--tag:#3c3a35}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1240px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:34px;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
+h2{font-size:22px;margin:56px 0 6px;padding-top:20px;border-top:1px solid var(--line)}
+h3{font-size:16px;margin:0 0 2px}
+p{margin:8px 0;max-width:76ch}
+a{color:var(--cta)}
+.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.note{background:#1b1a17;color:#f3efe6;padding:14px 16px;border-radius:2px;max-width:none;margin:18px 0}
+.note b{color:#fff}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line)}
+.card .pic{position:relative;background:#d8d4c8;display:block}
+.card .pic img{display:block;width:100%;height:auto}
+.card .id{position:absolute;left:8px;top:8px;background:var(--tag);color:#fff;font-size:11px;letter-spacing:.1em;padding:3px 7px}
+.card .kind{position:absolute;right:8px;top:8px;background:var(--cta);color:#fff;font-size:11px;letter-spacing:.1em;padding:3px 7px}
+.card .body{padding:14px 16px 16px}
+dl{display:grid;grid-template-columns:104px 1fr;gap:4px 10px;margin:10px 0 0;font-size:14px}
+dt{color:var(--mute)}dd{margin:0}
+.warn{color:#8a3413}
+ul{padding-left:20px;max-width:76ch}li{margin:4px 0}
+/* crop proofs: the measured geometry of the prototype's first screen, drawn as a static board */
+.proof{background:var(--paper);border:1px solid var(--line);padding:28px 24px;margin-top:16px;overflow:hidden}
+.sheet{display:grid;grid-template-columns:130fr 174fr 864fr;column-gap:16px;grid-template-areas:"id id show" "sq up show";grid-template-rows:1fr auto;max-width:1200px;margin:0 auto}
+.sheet .idn{grid-area:id}
+.sheet .show{grid-area:show}.sheet .up{grid-area:up;align-self:end}.sheet .sq{grid-area:sq;align-self:end}
+.idn .loc{font-size:1.1cqw;color:var(--mute)}
+.idn .name{font-size:4.2cqw;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:.2cqw 0 .9cqw}
+.idn .tag{font-size:1.35cqw;color:var(--mute);max-width:24cqw;line-height:1.35}
+.wrap{container-type:inline-size;max-width:1200px;margin:0 auto}
+.fr{position:relative;overflow:hidden;background:#d8d4c8}
+.fr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.r169{aspect-ratio:16/9}.r45{aspect-ratio:4/5}.r11{aspect-ratio:1}.r32{aspect-ratio:3/2}
+.mh{position:absolute;left:1cqw;top:1cqw;background:rgba(40,38,34,.82);color:#fff;font-size:max(9px,.85cqw);letter-spacing:.1em;padding:.3cqw .6cqw;z-index:2}
+.pill{position:absolute;left:1.3cqw;bottom:1.3cqw;background:rgba(27,26,23,.82);color:#fff;border:1px solid rgba(255,255,255,.7);border-radius:99px;font-size:max(10px,1cqw);padding:.6cqw 1.2cqw;z-index:2}
+.play{position:absolute;right:1.3cqw;bottom:1.3cqw;width:3.6cqw;height:3.6cqw;min-width:26px;min-height:26px;border-radius:50%;background:rgba(27,26,23,.82);border:1px solid rgba(255,255,255,.7);z-index:2}
+.play:after{content:"";position:absolute;left:54%;top:50%;transform:translate(-50%,-50%);border-left:.9cqw solid #fff;border-top:.6cqw solid transparent;border-bottom:.6cqw solid transparent}
+.cap{font-size:max(9px,.85cqw);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:.9cqw}
+.cap b{color:var(--ink);margin-right:.8em}
+.phones{display:flex;gap:32px;flex-wrap:wrap;justify-content:center}
+.phone{width:390px;max-width:100%;background:var(--paper);border:1px solid var(--line);container-type:inline-size}
+.phone .pad{padding:14px 17px 20px}
+.phone .name{font-size:36px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:2px 0 6px}
+.phone .tag{color:var(--mute);font-size:16px;line-height:1.35}
+.phone .cta{background:var(--cta);color:#fff;font-weight:600;padding:16px 22px;margin:14px 0 24px;display:flex;justify-content:space-between}
+.phone .sup{display:grid;grid-template-columns:200fr 142fr;gap:12px;align-items:end}
+.phone .mh{font-size:10px;left:10px;top:10px;padding:3px 6px}
+.phone .pill{font-size:12px;left:10px;bottom:10px;padding:6px 12px}
+.phone .play{width:38px;height:38px;right:10px;bottom:10px}
+.phone .play:after{border-left-width:10px;border-top-width:7px;border-bottom-width:7px}
+.label{font-size:13px;color:var(--mute);margin:26px 0 8px;text-align:center}
+table{border-collapse:collapse;font-size:14px;margin-top:10px}td,th{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}th{background:var(--card)}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">VNest V2 · Living Frames · media reality check · 13 Oct 2026</div>
+<h1>Curated media shortlist</h1>
+<p>Three clips and eight photographs proposed as <b>visual references</b> for one controlled local test of the Living Frames composition. Nothing here has been downloaded into the repository or wired into the prototype: every preview on this page is loaded straight from Pexels' own image server, so this page needs a network connection.</p>
+<div class="note"><b>None of this is VNest.</b> Every asset is third-party stock, shot in other buildings and other cities (one in Bangkok, one in London, several in Hà Nội and Hồ Chí Minh City, per the creators' own descriptions). In any prototype it must keep the existing “MINH HOẠ · không phải hình ảnh VNest” marking, and it must be replaced by commissioned VNest photography before anything is shown as a real property.</div>
+
+<h2>Licence, once for all eleven assets</h2>
+<p>All assets are under the <a href="https://www.pexels.com/license/">Pexels licence</a> (checked 13 Oct 2026): free for commercial use, no attribution required, modification allowed. Creator credit is still recorded below and I recommend keeping it in the prototype's source notes.</p>
+<ul>
+<li><b>Not allowed:</b> showing identifiable people in a bad light, implying that people or brands in the picture endorse a product, redistributing on other stock platforms, using an asset as part of a trade mark.</li>
+<li><b>Not covered:</b> Pexels gives no warranty of model or property releases. Assets with identifiable people (V2) or readable shop signs (P6, P7) are fine for a private local test; I would not carry them to a public page.</li>
+<li><b>Record at download time:</b> source URL, creator, date, licence text as it stood. The licence can change for future downloads.</li>
+</ul>
+
+<h2>Video clips</h2>
+<div class="grid">
+ <div class="card"><a class="pic" href="https://www.pexels.com/video/cozy-modern-bedroom-with-minimalist-decor-39952442/"><img loading="lazy" alt="Bedroom with quilted bedspread and open balcony door" src="https://images.pexels.com/videos/39952442/pexels-photo-39952442.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">V1</span><span class="kind">PRIMARY</span></a><div class="body"><h3>Cozy Modern Bedroom with Minimalist Decor</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@tolaca/">Cá Bảo</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/video/cozy-modern-bedroom-with-minimalist-decor-39952442/">pexels.com/video/…-39952442</a></dd><dt>Format</dt><dd>16:9 · 3840×2160 · 9 s · 30 fps (1080p and 1440p files offered)</dd><dt>Placement</dt><dd>Frame 01, the showcase. Native 16:9 on desktop; the 3:2 phone crop keeps 84% of the width.</dd><dt>Why</dt><dd>A slow lateral move from the balcony door across the bed: daylight, greenery outside, one calm subject. It reads as “a room you could wake up in”, which is what the booking action sells.</dd><dt>Watch for</dt><dd class="warn">A camera move does not loop cleanly: play once and hold, or cross-fade the loop. A massage chair enters at the right edge near the end; trim to roughly the first 6 s.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/video/people-in-a-common-room-of-a-hostel-5157338/"><img loading="lazy" alt="Group of young people on sofas in a hostel lounge" src="https://images.pexels.com/videos/5157338/pexels-photo-5157338.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">V2</span><span class="kind">MOTION PREVIEW</span></a><div class="body"><h3>People in a Common Room of a Hostel</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@cottonbro/">cottonbro studio</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/video/people-in-a-common-room-of-a-hostel-5157338/">pexels.com/video/…-5157338</a></dd><dt>Format</dt><dd>1.9:1 · 4096×2160 · 81 s · 25 fps</dd><dt>Placement</dt><dd>Frame 04, “Sinh hoạt chung”, as the optional short motion preview (3:2 crop keeps 79% of the width). Not for the first screen.</dd><dt>Why</dt><dd>The only shortlisted asset with people in it: a locked-off shot of a shared lounge in use. It tests whether a second moving frame adds life or competes with the showcase.</dd><dt>Watch for</dt><dd class="warn">Identifiable people, no release warranty: local test only. Styling is bohemian-European, not Vietnamese.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/video/d-ng-sa-ha-n-i-bu-i-t-i-20079154/"><img loading="lazy" alt="Tree-lined Hà Nội avenue at night seen from an overpass" src="https://images.pexels.com/videos/20079154/hanoi-heavy-traffic-night-out-overpass-20079154.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">V3</span><span class="kind">ALT. PRIMARY</span></a><div class="body"><h3>Đường sá Hà Nội buổi tối</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@baolinh/">Bao Linh</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/video/d-ng-sa-ha-n-i-bu-i-t-i-20079154/">pexels.com/video/…-20079154</a></dd><dt>Format</dt><dd>16:9 · 3840×2160 · 42 s · 24 fps</dd><dt>Placement</dt><dd>Frame 05, “Khu phố”, or the showcase in the atmosphere-led comparison below.</dd><dt>Why</dt><dd>A locked-off evening view down a tree-lined avenue; the traffic supplies the motion, so it loops without a visible jump. 24 fps gives it the most filmic cadence of the three.</dd><dt>Watch for</dt><dd class="warn">Names a city. Use only if it matches where the test property is meant to be; the project docs I checked do not record VNest's locations.</dd></dl></div></div>
+</div>
+<p><b>Reserve:</b> <a href="https://www.pexels.com/video/luxurious-modern-bedroom-with-natural-light-39024331/">Luxurious Modern Bedroom with Natural Light</a> by Alef Morais (16:9, 3840×2160, 8 s, 30 fps). A stronger push-in than V1, but a teal cast and a resort pool outside the window, which fights the warm paper palette and the urban story.</p>
+
+<h2>Photographs</h2>
+<div class="grid">
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/narrow-apartment-building-with-balconies-25712622/"><img loading="lazy" alt="Narrow pale-blue town house with bougainvillea on its balconies" src="https://images.pexels.com/photos/25712622/pexels-photo-25712622.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P1</span></a><div class="body"><h3>Narrow Apartment Building with Balconies</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@thejourneyofframes/">Theodore Nguyen</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/narrow-apartment-building-with-balconies-25712622/">pexels.com/photo/…-25712622</a></dd><dt>Format</dt><dd>2:3 portrait · 3943×5915</dd><dt>Placement</dt><dd>Frame 02, “Kiến trúc” (4:5: crop the rusted roof off the bottom, keeps 83% of the height).</dd><dt>Why</dt><dd>A Vietnamese tube house at human scale, flowers on the balconies, clean sky. Cool daylight to set against the warm interiors. Described by its creator as Hồ Chí Minh City.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/white-bed-linen-near-black-framed-window-6606354/"><img loading="lazy" alt="Unmade white bed under black steel-framed windows" src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P2</span></a><div class="body"><h3>White Bed Linen Near Black Framed Window</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@belle-shang-21953574/">Belle Shang</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/white-bed-linen-near-black-framed-window-6606354/">pexels.com/photo/…-6606354</a></dd><dt>Format</dt><dd>1:1 · 3024×3024</dd><dt>Placement</dt><dd>Frame 03, “Phòng”, when the showcase is <em>not</em> a room (native square, no crop).</dd><dt>Why</dt><dd>Lived-in rather than staged: rumpled linen, steel windows, plants. The least “hotel brochure” room on Pexels that still looks bookable.</dd><dt>Watch for</dt><dd class="warn">Dark overall; at 130 px wide the bed is the only thing that survives.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/window-in-hotel-bedroom-5475923/"><img loading="lazy" alt="Sunlight through wooden shutters falling across a bed" src="https://images.pexels.com/photos/5475923/pexels-photo-5475923.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P3</span></a><div class="body"><h3>Window in Hotel Bedroom</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@egor-kunovsky-1199972/">Egor Kunovsky</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/window-in-hotel-bedroom-5475923/">pexels.com/photo/…-5475923</a></dd><dt>Format</dt><dd>2:3 portrait · 2368×3568</dd><dt>Placement</dt><dd>Gallery, “Phòng”; reserve for frame 02 if the pairing wants two interiors.</dd><dt>Why</dt><dd>The most cinematic still of the set: a single hard patch of sun on the bed. Shows what “atmosphere” means better than any caption.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/cozy-bedroom-with-elegant-wall-sconces-30455215/"><img loading="lazy" alt="Rattan wall sconces glowing on a teal wall above white pillows" src="https://images.pexels.com/photos/30455215/pexels-photo-30455215.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P4</span></a><div class="body"><h3>Cozy Bedroom with Elegant Wall Sconces</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@marion-batteur-2148544082/">Marion Batteur</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/cozy-bedroom-with-elegant-wall-sconces-30455215/">pexels.com/photo/…-30455215</a></dd><dt>Format</dt><dd>2:3 portrait · 4625×6937</dd><dt>Placement</dt><dd>Frame 03 as a detail when V1 is the showcase (1:1 crop on the upper sconce and pillows); gallery “Chi tiết”.</dd><dt>Why</dt><dd>A close shot with one bright warm point: it stays legible at thumbnail size, which the small square needs.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/a-cozy-living-room-of-a-house-4931412/"><img loading="lazy" alt="Bright living room with shared table, sofa, framed prints and plants" src="https://images.pexels.com/photos/4931412/pexels-photo-4931412.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P5</span></a><div class="body"><h3>A Cozy Living Room of a House</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@rsantos1232/">Rodrigo Santos</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/a-cozy-living-room-of-a-house-4931412/">pexels.com/photo/…-4931412</a></dd><dt>Format</dt><dd>3:2 · 4288×2848</dd><dt>Placement</dt><dd>Frame 04, “Sinh hoạt chung” (native 3:2).</dd><dt>Why</dt><dd>A table to work at, a sofa to sink into, plants, daylight: shared living without anyone posed in it.</dd><dt>Watch for</dt><dd class="warn">A private home in London, per the creator. Reference for mood only.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/interior-of-flat-with-dining-table-5825538/"><img loading="lazy" alt="Long wooden communal table under a globe pendant in a white-brick loft" src="https://images.pexels.com/photos/5825538/pexels-photo-5825538.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P6</span></a><div class="body"><h3>Interior of flat with dining table</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@charlotte-may/">Charlotte May</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/interior-of-flat-with-dining-table-5825538/">pexels.com/photo/…-5825538</a></dd><dt>Format</dt><dd>3:2 · 6000×4000</dd><dt>Placement</dt><dd>Gallery, shared kitchen and dining; alternate for frame 04.</dd><dt>Why</dt><dd>One long table says “people eat together here” more directly than a lounge. Warm wood ties to the CTA's terracotta.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/busy-hanoi-street-at-dusk-with-motorbikes-and-shops-35205520/"><img loading="lazy" alt="Wet Hà Nội street at dusk with trees, shops and motorbikes" src="https://images.pexels.com/photos/35205520/pexels-photo-35205520.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P7</span></a><div class="body"><h3>Busy Hanoi Street at Dusk with Motorbikes and Shops</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@jordan-coleman-811018869/">Jordan Coleman</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/busy-hanoi-street-at-dusk-with-motorbikes-and-shops-35205520/">pexels.com/photo/…-35205520</a></dd><dt>Format</dt><dd>3:2 · 6000×4000</dd><dt>Placement</dt><dd>Frame 05, “Khu phố” (native 3:2; crop left to lose the utility pole).</dd><dt>Why</dt><dd>Blue hour, wet road, lit shopfronts: ordinary street life, not a landmark postcard.</dd><dt>Watch for</dt><dd class="warn">Readable shop signs and a named city.</dd></dl></div></div>
+
+ <div class="card"><a class="pic" href="https://www.pexels.com/photo/charming-vintage-cafe-in-hanoi-vietnam-31416319/"><img loading="lazy" alt="Small café front with wooden benches, posters and potted plants" src="https://images.pexels.com/photos/31416319/pexels-photo-31416319.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="id">P8</span></a><div class="body"><h3>Charming Vintage Cafe in Hanoi, Vietnam</h3>
+ <dl><dt>Creator</dt><dd><a href="https://www.pexels.com/@alxistar/">Gia Minh</a></dd><dt>Source</dt><dd><a href="https://www.pexels.com/photo/charming-vintage-cafe-in-hanoi-vietnam-31416319/">pexels.com/photo/…-31416319</a></dd><dt>Format</dt><dd>1.62:1 · 4896×3019</dd><dt>Placement</dt><dd>Gallery, “Quán cà phê gần đây”; first frame of Nearby Experiences later.</dd><dt>Why</dt><dd>A frontal, almost architectural café front with benches on the pavement: the neighbourhood at walking pace.</dd><dt>Watch for</dt><dd class="warn">A real business with visible signage and posters.</dd></dl></div></div>
+</div>
+
+<h2>Crop proof: the first screen at its measured proportions</h2>
+<p>A static board, not the prototype. The frame proportions are the prototype's own (130 : 174 : 864 on a 1200 px sheet; phone 3:2 showcase, then 200 : 142). The video frame shows the clip's poster.</p>
+
+<div class="label">A · Room-led (recommended for the test) — V1 showcase · P1 architecture · P4 detail</div>
+<div class="proof"><div class="wrap"><div class="sheet">
+ <div class="idn"><div class="loc">Địa điểm mẫu 1</div><div class="name">Cơ sở mẫu A</div><div class="tag">Dòng tuyên ngôn mẫu: một câu ngắn nói lên tính cách riêng của nơi này.</div></div>
+ <div class="sq"><div class="fr r11"><img alt="" style="object-position:70% 22%" src="https://images.pexels.com/photos/30455215/pexels-photo-30455215.jpeg?auto=compress&cs=tinysrgb&w=750"></div><div class="cap"><b>03</b>Chi tiết</div></div>
+ <div class="up"><div class="fr r45"><img alt="" style="object-position:50% 20%" src="https://images.pexels.com/photos/25712622/pexels-photo-25712622.jpeg?auto=compress&cs=tinysrgb&w=750"></div><div class="cap"><b>02</b>Kiến trúc</div></div>
+ <div class="show"><div class="fr r169"><span class="mh">MINH HOẠ</span><img alt="" src="https://images.pexels.com/videos/39952442/pexels-photo-39952442.jpeg?auto=compress&cs=tinysrgb&w=1440"><span class="pill">▦ 7 ảnh</span><span class="play"></span></div><div class="cap"><b>01</b>Phòng</div></div>
+</div></div></div>
+
+<div class="label">B · Atmosphere-led (comparison) — V3 showcase · P1 architecture · P2 room</div>
+<div class="proof"><div class="wrap"><div class="sheet">
+ <div class="idn"><div class="loc">Địa điểm mẫu 1</div><div class="name">Cơ sở mẫu A</div><div class="tag">Dòng tuyên ngôn mẫu: một câu ngắn nói lên tính cách riêng của nơi này.</div></div>
+ <div class="sq"><div class="fr r11"><img alt="" src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&w=750"></div><div class="cap"><b>03</b>Phòng</div></div>
+ <div class="up"><div class="fr r45"><img alt="" style="object-position:50% 20%" src="https://images.pexels.com/photos/25712622/pexels-photo-25712622.jpeg?auto=compress&cs=tinysrgb&w=750"></div><div class="cap"><b>02</b>Kiến trúc</div></div>
+ <div class="show"><div class="fr r169"><span class="mh">MINH HOẠ</span><img alt="" src="https://images.pexels.com/videos/20079154/hanoi-heavy-traffic-night-out-overpass-20079154.jpeg?auto=compress&cs=tinysrgb&w=1440"><span class="pill">▦ 7 ảnh</span><span class="play"></span></div><div class="cap"><b>01</b>Không khí</div></div>
+</div></div></div>
+
+<div class="label">Phone, 390 px — A (left) and B (right)</div>
+<div class="phones">
+ <div class="phone"><div class="fr r32"><span class="mh">MINH HOẠ</span><img alt="" src="https://images.pexels.com/videos/39952442/pexels-photo-39952442.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="pill">▦ 7 ảnh</span><span class="play"></span></div><div class="pad"><div class="kicker" style="text-transform:none;letter-spacing:0;font-size:14px">Địa điểm mẫu 1</div><div class="name">Cơ sở mẫu A</div><div class="tag">Dòng tuyên ngôn mẫu: một câu ngắn nói lên tính cách riêng của nơi này.</div><div class="cta"><span>Xem phòng trống</span><span>↓</span></div><div class="sup"><div class="fr r45"><img alt="" style="object-position:50% 20%" src="https://images.pexels.com/photos/25712622/pexels-photo-25712622.jpeg?auto=compress&cs=tinysrgb&w=750"></div><div class="fr r11"><img alt="" style="object-position:70% 22%" src="https://images.pexels.com/photos/30455215/pexels-photo-30455215.jpeg?auto=compress&cs=tinysrgb&w=750"></div></div></div></div>
+ <div class="phone"><div class="fr r32"><span class="mh">MINH HOẠ</span><img alt="" src="https://images.pexels.com/videos/20079154/hanoi-heavy-traffic-night-out-overpass-20079154.jpeg?auto=compress&cs=tinysrgb&w=750"><span class="pill">▦ 7 ảnh</span><span class="play"></span></div><div class="pad"><div class="kicker" style="text-transform:none;letter-spacing:0;font-size:14px">Địa điểm mẫu 1</div><div class="name">Cơ sở mẫu A</div><div class="tag">Dòng tuyên ngôn mẫu: một câu ngắn nói lên tính cách riêng của nơi này.</div><div class="cta"><span>Xem phòng trống</span><span>↓</span></div><div class="sup"><div class="fr r45"><img alt="" style="object-position:50% 20%" src="https://images.pexels.com/photos/25712622/pexels-photo-25712622.jpeg?auto=compress&cs=tinysrgb&w=750"></div><div class="fr r11"><img alt="" src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&w=750"></div></div></div></div>
+</div>
+
+<h2>Sizes the frames ask of the media</h2>
+<table>
+<tr><th>Frame</th><th>Shape</th><th>CSS size at 1440</th><th>Share of the showcase's area</th><th>Source needed at 2×</th></tr>
+<tr><td>01 showcase</td><td>16:9</td><td>864 × 486</td><td>100%</td><td>1728 px wide: the 1080p file is enough</td></tr>
+<tr><td>02 upright</td><td>4:5</td><td>174 × 217</td><td>9%</td><td>348 px wide</td></tr>
+<tr><td>03 square</td><td>1:1</td><td>130 × 130</td><td>4%</td><td>260 px wide</td></tr>
+</table>
+<p>Every shortlisted file exceeds these many times over; resolution is not the constraint. The small frames' <em>size on the page</em> is: see the assessment in the review message.</p>
+</main>
+</body>
+</html>

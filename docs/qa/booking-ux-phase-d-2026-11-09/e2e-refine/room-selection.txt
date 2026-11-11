@@ -1,0 +1,32 @@
+▶ room selection: one shared summary, room slots, one BOOK NOW
+  ✔ @1440 1 guests → 1 room(s): slots, select, review (1085.280875ms)
+  ✔ @1440 2 guests → 1 room(s): slots, select, review (1066.84825ms)
+  ✔ @1440 3 guests → 2 room(s): slots, select, review (1266.767917ms)
+  ✔ @1440 4 guests → 2 room(s): slots, select, review (1266.789667ms)
+  ✔ @1440 5 guests → 3 room(s): slots, select, review (1451.102875ms)
+  ✔ @1440 3 guests → 3 room(s): slots, select, review (1465.7845ms)
+  ✔ @1440 BOOK NOW guidance: no dates, then an incomplete selection (2819.167875ms)
+  ✔ @1440 rooms: add, refuse with a reason, remove; identities kept; refresh and Back (2998.835625ms)
+  ✔ @1440 the summary opens the shared field: guest cap, explicit room, never an automatic room (1370.475458ms)
+  ✔ @1440 outdated links: guests that do not fit are kept, flagged, and corrected only by the guest (1733.016791ms)
+  ✔ @1440 ezCloud hand-off keeps its single action and carries the stay (1380.891792ms)
+  ✔ @390 1 guests → 1 room(s): slots, select, review (1112.342042ms)
+  ✔ @390 2 guests → 1 room(s): slots, select, review (1116.605334ms)
+  ✔ @390 3 guests → 2 room(s): slots, select, review (1299.753ms)
+  ✔ @390 4 guests → 2 room(s): slots, select, review (1316.912584ms)
+  ✔ @390 5 guests → 3 room(s): slots, select, review (1500.246708ms)
+  ✔ @390 3 guests → 3 room(s): slots, select, review (1515.304708ms)
+  ✔ @390 BOOK NOW guidance: no dates, then an incomplete selection (1888.015167ms)
+  ✔ @390 rooms: add, refuse with a reason, remove; identities kept; refresh and Back (3064.869709ms)
+  ✔ @390 the summary opens the shared field: guest cap, explicit room, never an automatic room (31414.180917ms)
+  ✔ @390 outdated links: guests that do not fit are kept, flagged, and corrected only by the guest (1819.517292ms)
+  ✔ @390 ezCloud hand-off keeps its single action and carries the stay (1388.61225ms)
+✔ room selection: one shared summary, room slots, one BOOK NOW (65403.747583ms)
+ℹ tests 22
+ℹ suites 1
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 65571.799666

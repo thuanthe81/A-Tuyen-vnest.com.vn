@@ -1,0 +1,122 @@
+/* Review layout of the CTA preview (never part of a design under review). */
+
+.page {
+  color: #37412f;
+  padding-bottom: 4rem;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.625rem var(--vn-gutter);
+  background: #2a3224;
+  color: #f1ece4;
+  font-size: 0.8125rem;
+}
+
+.barTitle {
+  font-weight: 600;
+}
+
+.barLinks {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.barLinks a {
+  color: rgb(241 236 228 / 0.8);
+  text-decoration: none;
+}
+
+.option {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: clamp(2.5rem, 2rem + 2vw, 3.5rem) var(--vn-gutter) 0;
+}
+
+.option + .option {
+  margin-top: clamp(2rem, 1.5rem + 2vw, 3rem);
+  border-top: 1px solid #d9d0c2;
+}
+
+.h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.hint {
+  max-width: 44rem;
+  margin: 0.5rem 0 0;
+  color: #6f675b;
+  line-height: 1.55;
+}
+
+.h3 {
+  margin: 2.25rem 0 0;
+  color: #6f675b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.states {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.state {
+  display: grid;
+  justify-items: start;
+  gap: 0.625rem;
+  margin: 0;
+}
+
+.state figcaption {
+  color: #6f675b;
+  font-size: 0.8125rem;
+}
+
+.live {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1rem 0 0;
+}
+
+.live div {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.live dt {
+  color: #6f675b;
+  font-size: 0.8125rem;
+}
+
+.live dd {
+  margin: 0;
+}
+
+/* The frozen focus example shows the ring the browser draws on keyboard focus. */
+.state [data-focus-preview] {
+  outline: 2px solid #37412f;
+  outline-offset: 3px;
+}
+
+@media (min-width: 48rem) {
+  .states {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 2.5rem;
+  }
+
+  .live {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 3rem;
+  }
+}

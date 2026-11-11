@@ -1,0 +1,20 @@
+[
+  {
+    "name": "bare-boutique-stays",
+    "pixelIdentical": true,
+    "pngBytes": 177808,
+    "webpBytes": 59584
+  },
+  {
+    "name": "pepper-house",
+    "pixelIdentical": true,
+    "pngBytes": 49932,
+    "webpBytes": 3332
+  },
+  {
+    "name": "the-nang-suites",
+    "pixelIdentical": true,
+    "pngBytes": 23566,
+    "webpBytes": 4578
+  }
+]

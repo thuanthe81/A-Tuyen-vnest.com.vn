@@ -1,0 +1,9 @@
+Official Google Maps embed codes, generated 25/10/2026 in the built-in browser via Google Maps -> place -> Share -> Embed a map (default size). The places are the verified ones: their Google IDs match the workbook share links (15/10 audit).
+
+Bare Chic - Bare Boutique Stays, place 0x317529bd65e9671d:0x1aff14577a350dd4, kgmid /g/11f6ywgqpw, 10.7885194, 106.701447
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2973934104402!2d106.701447!3d10.7885194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bd65e9671d%3A0x1aff14577a350dd4!2sBare%20Chic%20-%20Bare%20Boutique%20Stays!5e0!3m2!1sen!2s!4v1792942946773!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+The Nang Suites, place 0x3142172062a243ed:0xbf1dc451da67c4c2, kgmid /g/11fnr8n47n, 16.0629787, 108.2372741
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0483867251623!2d108.2372741!3d16.0629787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142172062a243ed%3A0xbf1dc451da67c4c2!2sThe%20Nang%20Suites!5e0!3m2!1sen!2s!4v1792943016484!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+Note: Google's place card inside The Nang Suites embed shows Google's address (74/31 Võ Văn Kiệt), which conflicts with the workbook's K174/31 (Q19). The VNest page text states no house number.

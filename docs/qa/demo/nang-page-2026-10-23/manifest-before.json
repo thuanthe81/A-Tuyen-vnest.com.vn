@@ -1,0 +1,2172 @@
+{
+  "generatedOn": "2026-10-20T01:58:20.483Z",
+  "note": "Local private review only (G2, G3, G4). Git-ignored.",
+  "photos": {
+    "bare-chic": {
+      "driveFileId": "1-LBqLAjsV3lNI5Y-FA1t8DIEYbG4hKKh",
+      "sha256": "4f9e82875a37f8244187b55806d90a814169eedb1653676e8e8e4453471f5155",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G2",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11328
+        },
+        {
+          "src": "/dev-client-media/bare-chic/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15260
+        },
+        {
+          "src": "/dev-client-media/bare-chic/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 22836
+        },
+        {
+          "src": "/dev-client-media/bare-chic/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 24955
+        },
+        {
+          "src": "/dev-client-media/bare-chic/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 34196
+        },
+        {
+          "src": "/dev-client-media/bare-chic/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 53054
+        },
+        {
+          "src": "/dev-client-media/bare-chic/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 47880
+        },
+        {
+          "src": "/dev-client-media/bare-chic/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 65358
+        },
+        {
+          "src": "/dev-client-media/bare-chic/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 102865
+        },
+        {
+          "src": "/dev-client-media/bare-chic/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 78014
+        },
+        {
+          "src": "/dev-client-media/bare-chic/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 107022
+        },
+        {
+          "src": "/dev-client-media/bare-chic/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 168590
+        }
+      ]
+    },
+    "bare-hyphen": {
+      "driveFileId": "10GZwC3dwPRjDFabf469USnJ_JZ4TXKI0",
+      "sha256": "48a4dd86c9818e081c3c93f14b34a92dc249178848aa15b16c3cba70b8722d90",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G2",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-hyphen/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 10412
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 12836
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 20036
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 21309
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 27256
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 45494
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 38283
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 49094
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 85491
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 59857
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 75450
+        },
+        {
+          "src": "/dev-client-media/bare-hyphen/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 137737
+        }
+      ]
+    },
+    "bare-da-kao": {
+      "driveFileId": "1Jdnn7yNc5cJISHoZ3JOCt3OiV7A_d-4A",
+      "sha256": "fe3ad0dc790d7164ee3fba09d0474bd6e569a93a20cae80ff9ef7957c0a3f26d",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G2",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-da-kao/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 12399
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 17160
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 25601
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 28129
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 39294
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 60899
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 52657
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 73232
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 118364
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 82372
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 110714
+        },
+        {
+          "src": "/dev-client-media/bare-da-kao/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 188826
+        }
+      ]
+    },
+    "pepper-house": {
+      "driveFileId": "1XRJfeb0xCDizmjOw5A_idKnhkDjepTJ1",
+      "sha256": "c1edf019938179033df3c1e7487bca8a0f8f780f39323371b838956d80c7efcd",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G2",
+      "variants": [
+        {
+          "src": "/dev-client-media/pepper-house/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11879
+        },
+        {
+          "src": "/dev-client-media/pepper-house/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 16130
+        },
+        {
+          "src": "/dev-client-media/pepper-house/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 22164
+        },
+        {
+          "src": "/dev-client-media/pepper-house/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 28273
+        },
+        {
+          "src": "/dev-client-media/pepper-house/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 38794
+        },
+        {
+          "src": "/dev-client-media/pepper-house/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 54456
+        },
+        {
+          "src": "/dev-client-media/pepper-house/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 56445
+        },
+        {
+          "src": "/dev-client-media/pepper-house/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 77760
+        },
+        {
+          "src": "/dev-client-media/pepper-house/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 109032
+        },
+        {
+          "src": "/dev-client-media/pepper-house/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 94087
+        },
+        {
+          "src": "/dev-client-media/pepper-house/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 129498
+        },
+        {
+          "src": "/dev-client-media/pepper-house/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 181396
+        }
+      ]
+    },
+    "bare-chic-two-2-3": {
+      "driveFileId": "1N_0CxERGAIcDBC7BQkkXXCa-0UvXLsPB",
+      "sha256": "ab95e66c949a9fb4de73bd9071576efb128a07bea5dec4276199a39137293bd4",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G3",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11591
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15526
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 23400
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 25155
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 33906
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 54312
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 47366
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 63528
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 103426
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 74116
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 99806
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-3/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 164736
+        }
+      ]
+    },
+    "bare-chic-three-1-29": {
+      "driveFileId": "1LHikT4DdHTiT8Qz7pSoKV2G8H1fPImWy",
+      "sha256": "ad61fd24cae0441d59436d1c1e6ced836b3701358507274e261f472a2cd27b25",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G3",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 10433
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13858
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 22378
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 21855
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 28404
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 49057
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 38501
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 49824
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 91813
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 59303
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 75420
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-29/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 144633
+        }
+      ]
+    },
+    "bare-indochine-53": {
+      "driveFileId": "16wjWHq1rooWa2IHOPy_g2jwas84uLIsu",
+      "sha256": "cbfcf4f8010fcbdcb140b10304fb3eb76c0eb5f3089faecfedb0860efe22685d",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G3",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-indochine-53/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 13763
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18428
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 25610
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 30995
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 41406
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 59764
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 55315
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 75904
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 113442
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 84660
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 116238
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-53/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 181123
+        }
+      ]
+    },
+    "bare-indochine-54": {
+      "driveFileId": "1mnYZqOunQI2EpvDD2mH1r96ZxxrTQU4E",
+      "sha256": "3e15fd4a763616f47dca4725317984f7819a3d62d1294c83bc04fd4cac085f47",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G3",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-indochine-54/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11090
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14104
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 22423
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 24805
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 32206
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 52294
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 46579
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 59808
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 101940
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 73658
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 94512
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-54/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 164195
+        }
+      ]
+    },
+    "bare-chic-one-1-47": {
+      "driveFileId": "1ihDJCDmPd7_910xp0qM92p1b35QWfe86",
+      "sha256": "f47e278289f5ccd318ff5e7bccfec168955c1c0545515aa6d0185eb5aa62ba95",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G3",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 15599
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22476
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 30964
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 35591
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 52206
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 77548
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 65633
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 96588
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 151950
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 101005
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 148850
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-47/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 243047
+        }
+      ]
+    },
+    "bare-chic-one-1-11": {
+      "driveFileId": "1wz8Pj30YbIFXTxmCf4d7OQWfuYAZduMy",
+      "sha256": "a929f2da97f90f4202e1404744a80b63e2201363ab8840d7061e388e2eee8cbf",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 12577
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 16466
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 24223
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 27180
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 36696
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 56269
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 50306
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 68794
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 109442
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 78182
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 105628
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-11/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 173993
+        }
+      ]
+    },
+    "bare-chic-one-1-42": {
+      "driveFileId": "1BqgXASJvC6KHCL01_BN_3kPUTHCZPve5",
+      "sha256": "f0d846395d07a2bca32ae206cd6e9477836fa5721a6232e1617627136c0c5e49",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 10850
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 14336
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 23266
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 21833
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 28952
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 50505
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 39140
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 50306
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 93475
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 60128
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 75898
+        },
+        {
+          "src": "/dev-client-media/bare-chic-one-1-42/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 145996
+        }
+      ]
+    },
+    "bare-chic-two-2-4": {
+      "driveFileId": "16r0hN3IUE4ttTG-l6xfNWqjJKUTuvt8X",
+      "sha256": "6d7b69c25a641193c796ecb0e5598eb895f70c5cf674c4b2534eed6b5cc16a7e",
+      "width": 2048,
+      "height": 1370,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 321,
+          "bytes": 12562
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 321,
+          "bytes": 15842
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 321,
+          "bytes": 25257
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 535,
+          "bytes": 26387
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 535,
+          "bytes": 33872
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 535,
+          "bytes": 57385
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 803,
+          "bytes": 49696
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 803,
+          "bytes": 62338
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 803,
+          "bytes": 110355
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1070,
+          "bytes": 76768
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1070,
+          "bytes": 97200
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-4/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1070,
+          "bytes": 176468
+        }
+      ]
+    },
+    "bare-chic-two-2-5": {
+      "driveFileId": "1qOSRDvBjDmMiAssqtnyQ-taaWnIiZW6V",
+      "sha256": "2f392d84c9e32a9a7a89986434afd91520e747debfeb1e780dd827a18e3f95a6",
+      "width": 1920,
+      "height": 1279,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 10466
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 12256
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 20531
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 20617
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 24510
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 44383
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 799,
+          "bytes": 36499
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 799,
+          "bytes": 41982
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 799,
+          "bytes": 80943
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 55256
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 62580
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-5/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 124705
+        }
+      ]
+    },
+    "bare-chic-two-2-9": {
+      "driveFileId": "17tDGeCQWC93406lzdUOm7I5N-g1RMThZ",
+      "sha256": "894e185b2ae6fd60cd311fde329ab0110c5af895d70b61d145d837b8b2028041",
+      "width": 2048,
+      "height": 1366,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 14043
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19426
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 27454
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 534,
+          "bytes": 33550
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 47676
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 534,
+          "bytes": 67517
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 66955
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 95452
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 137337
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 108944
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 155116
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-9/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 228682
+        }
+      ]
+    },
+    "bare-chic-two-2-10": {
+      "driveFileId": "1ayKHoOO5MOT8UVYaRkrTewM2fjTSkH1w",
+      "sha256": "916fb0fba4c1f115ea71d84ea90082d76671c219f0b646ada33c5583f048cd13",
+      "width": 2048,
+      "height": 1366,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 8344
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9834
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 17650
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 534,
+          "bytes": 17057
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 20106
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 534,
+          "bytes": 38434
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 31096
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 36896
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 71816
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 50131
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 60448
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-10/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 116023
+        }
+      ]
+    },
+    "bare-chic-two-2-32": {
+      "driveFileId": "1F8898suE4nMMFs75dl8--b5dOL597Mae",
+      "sha256": "73e431898b908f3c4c66b90280114e63266a5e30bfeac6e54b4cf66b8bf16a6c",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 9356
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11044
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 19086
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 18142
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 21130
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 40487
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 31891
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 35188
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 74703
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 51514
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 57242
+        },
+        {
+          "src": "/dev-client-media/bare-chic-two-2-32/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 122609
+        }
+      ]
+    },
+    "bare-chic-three-1-18": {
+      "driveFileId": "1weZPQ2CZkcMy9IZIxdi33oM63cDWyn6g",
+      "sha256": "c3b76d798c3c1f2259e2d798bdaab97e46b213bf9f8c1c40b97017e175bd9592",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11651
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15140
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 23363
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 25430
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 33064
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 54556
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 46184
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 60152
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 104725
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 72933
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 94314
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-18/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 168834
+        }
+      ]
+    },
+    "bare-chic-three-1-27": {
+      "driveFileId": "1x2EH7xM6PKq30E8tr1veXO3-Pq2HpVba",
+      "sha256": "ca939dfd3c861a81d5c17fe713dda1928907a2100fdf55ae59fd68307e3249f7",
+      "width": 2048,
+      "height": 1370,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 321,
+          "bytes": 14403
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 321,
+          "bytes": 21844
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 321,
+          "bytes": 27171
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 535,
+          "bytes": 36423
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 535,
+          "bytes": 55304
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 535,
+          "bytes": 72419
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 803,
+          "bytes": 73394
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 803,
+          "bytes": 108812
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 803,
+          "bytes": 154168
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1070,
+          "bytes": 113623
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1070,
+          "bytes": 167612
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-27/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1070,
+          "bytes": 251400
+        }
+      ]
+    },
+    "bare-chic-three-1-57": {
+      "driveFileId": "15IBLnzUoJR06884tw39UYiHJ4vuwFVxr",
+      "sha256": "d214ff9f5ddc50558285fbc767c9ec483018105ec0a0b5c6bfc08389f5d336d1",
+      "width": 2048,
+      "height": 1366,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 9337
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11678
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 19039
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 534,
+          "bytes": 20237
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 25156
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 534,
+          "bytes": 42872
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 38085
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 48402
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 82806
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 62395
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 79250
+        },
+        {
+          "src": "/dev-client-media/bare-chic-three-1-57/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 134729
+        }
+      ]
+    },
+    "bare-indochine-50": {
+      "driveFileId": "1282suPtzqCjQ6fpKpRektdX08bok8gUB",
+      "sha256": "68d7cca693247120dd7401be13673ace7a9436426af3d107dd8546fe74937cc7",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-indochine-50/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 9937
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 11310
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 18288
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 20202
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 24680
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 41187
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 35696
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 44842
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 76844
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 53216
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 67100
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-50/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 120802
+        }
+      ]
+    },
+    "bare-indochine-51": {
+      "driveFileId": "1MZ49jyPV-hjCry16Xd8NdwLCy_LOjRY8",
+      "sha256": "340dafd8b5cf07a2e9c4a988af75f5c3509f7f3c0dc663e7ad4897df21b866c5",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-indochine-51/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11313
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 12948
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 21581
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 25135
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 29248
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 49460
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 44894
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 54626
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 93276
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 69992
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 85272
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-51/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 149185
+        }
+      ]
+    },
+    "bare-indochine-52": {
+      "driveFileId": "1dq9FlCP-GPNIUWesD64EpnFCX6phzLXf",
+      "sha256": "cb798133b2724a4575c2b43248f1dc5ff04470aba7288f85892d9fb5756b7aaa",
+      "width": 2048,
+      "height": 1365,
+      "rights": "client-supplied-unconfirmed",
+      "set": "G4",
+      "variants": [
+        {
+          "src": "/dev-client-media/bare-indochine-52/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 11082
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13004
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 20927
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 533,
+          "bytes": 24505
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 29166
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 533,
+          "bytes": 46956
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 45335
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 54352
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 91328
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 72124
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 87554
+        },
+        {
+          "src": "/dev-client-media/bare-indochine-52/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 147587
+        }
+      ]
+    },
+    "the-nang-suites": {
+      "driveFileId": "135fYrwL4yxt7jR0K0eSre400uuh_Ufro",
+      "sha256": "13ca0898f9ecce41d958bad0759691653a73931b51e42bb450bfe3253e51a600",
+      "width": 2048,
+      "height": 1366,
+      "variants": [
+        {
+          "src": "/dev-client-media/the-nang-suites/480.avif",
+          "type": "image/avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 13421
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/480.webp",
+          "type": "image/webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 23298
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/480.jpg",
+          "type": "image/jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 32137
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/800.avif",
+          "type": "image/avif",
+          "width": 800,
+          "height": 534,
+          "bytes": 30054
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/800.webp",
+          "type": "image/webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 52564
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/800.jpg",
+          "type": "image/jpeg",
+          "width": 800,
+          "height": 534,
+          "bytes": 76044
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/1200.avif",
+          "type": "image/avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 59584
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/1200.webp",
+          "type": "image/webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 108418
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/1200.jpg",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 154243
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/1600.avif",
+          "type": "image/avif",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 99839
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/1600.webp",
+          "type": "image/webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 188592
+        },
+        {
+          "src": "/dev-client-media/the-nang-suites/1600.jpg",
+          "type": "image/jpeg",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 264386
+        }
+      ],
+      "source": ".local-media/client-photos/nang-2026-10-22/green-river-3.png",
+      "folderId": "136jviLxLQlOcGXv1Y00dXETGBaXe2Lf2",
+      "room": "Green River",
+      "file": "3.png",
+      "approval": "Owner confirmation in Codex, 2026-10-22; local CEO demo",
+      "set": "CEO-2026-10-22"
+    }
+  }
+}

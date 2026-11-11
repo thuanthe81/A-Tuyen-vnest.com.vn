@@ -1,0 +1,115 @@
+/* PARTNER PAGE CTA: two-state wipe (owner's correction, 9/11/2026). Used only on /dev/demo/hop-tac (hero and service
+   CTAs). The homepage keeps its approved solid Copper CTA (ServiceAccordion.module.css), and the contact card, footer
+   and booking buttons are untouched: this is a scoped class, not a global button style.
+
+   - Default: white, a Dark Olive label, a Copper arrow, one subtle 1 px edge.
+   - Hover / keyboard focus / press: one Copper layer is revealed from left to right over the WHOLE button (label,
+     arrow and edge), 300 ms ease-out, and runs back the same way when the pointer leaves. At the end the button is
+     entirely Copper with a white label and arrow: one object, no segment, ring or second outline.
+   - Readable throughout: the Copper layer carries its own white copy of the label and arrow, and both layers are laid
+     out identically, so every letter is either Dark Olive on white (11:1) or white on Copper (4.6:1), never white on
+     white. The arrow stays still. No shadow, glow, scale or bounce.
+   - Reduced motion: the state changes at once.
+   Copper fill #9A683C, the approved CTA Copper (white on #A87444 would be 4.0:1, below AA for this text size);
+   the resting arrow uses Copper #A87444 (4.0:1 on white, above the 3:1 needed for a graphic). */
+
+.cta {
+  --ink: #37412f;
+  --accent: #a87444;
+  --fill: #9a683c;
+  --on: #fff;
+  --speed: 300ms;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-grid;
+  width: 100%;
+  min-height: 3.5rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  background: #fff;
+  color: var(--ink);
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgb(55 65 47 / 0.22);
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Both faces share one cell and one layout: the label left, the arrow right. */
+.face {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.625rem 1.5rem;
+}
+
+.label {
+  text-wrap: balance;
+}
+
+.arrow {
+  flex: none;
+  display: grid;
+  color: var(--accent);
+}
+
+.arrow svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* The Copper face: hidden to its left edge at rest, revealed left to right. */
+.fill {
+  background: var(--fill);
+  color: var(--on);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path var(--speed) var(--ease);
+  pointer-events: none;
+}
+
+.fill .arrow {
+  color: var(--on);
+}
+
+@media (hover: hover) {
+  .cta:hover .fill {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.cta:focus-visible .fill,
+.cta:active .fill,
+.cta[data-state="full"] .fill {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Review only (/dev/partner-cta): the wipe frozen half way. */
+.cta[data-state="half"] .fill {
+  clip-path: inset(0 50% 0 0);
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media (min-width: 48rem) {
+  .cta {
+    width: auto;
+    min-width: 17rem;
+  }
+
+  .label {
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fill {
+    transition: none;
+  }
+}

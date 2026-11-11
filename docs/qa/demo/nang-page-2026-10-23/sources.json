@@ -1,0 +1,688 @@
+[
+  {
+    "key": "nang-blue-moon-17",
+    "driveFileId": "16U9iuZuwTWXw8hqGqcqp9OKhnR_m0QK3",
+    "sha256": "1fa767846a665145b83c29118a4a7bd60c3d0d0fee72ed6176e523e6d05c5722",
+    "width": 2048,
+    "height": 1366,
+    "variants": [
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 17468
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 30954
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 320,
+        "bytes": 38961
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 43274
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 79268
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 99388
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 89329
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 170384
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 800,
+        "bytes": 210497
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 153271
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 304350
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-17/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 368881
+      }
+    ],
+    "source": ".local-media/client-photos/nang-page-2026-10-23/blue-moon-17.png",
+    "folderId": "1lh0lRA5dLEqNnIlJsADanj0GthLQPMQf",
+    "room": "Blue Moon",
+    "workbookCell": "D23",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  },
+  {
+    "key": "nang-blue-moon-14",
+    "driveFileId": "10WSAdJ87KpzjGLr0bucHaoH068Djl-LK",
+    "sha256": "a419d4ff8c5aa9dbd1ecea6b05df5487c4acacc9485f31a9dde6d08d0fa85b63",
+    "width": 2048,
+    "height": 1366,
+    "variants": [
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 15366
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 25822
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 320,
+        "bytes": 34601
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 37238
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 64616
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 85797
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 75295
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 133942
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 800,
+        "bytes": 179827
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 126439
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 231548
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-14/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 310000
+      }
+    ],
+    "source": ".local-media/client-photos/nang-page-2026-10-23/blue-moon-14.png",
+    "folderId": "1lh0lRA5dLEqNnIlJsADanj0GthLQPMQf",
+    "room": "Blue Moon",
+    "workbookCell": "D23",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  },
+  {
+    "key": "nang-blue-moon-18",
+    "driveFileId": "1fa3OhAg0JPyWzSSSSM-0ES4jSYs8GGKm",
+    "sha256": "edbf101d7c8d6dba58b92348eb785f8ce4104d8406d9e4dca2a5130de3efb7ad",
+    "width": 2048,
+    "height": 1366,
+    "variants": [
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 12809
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 23036
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 320,
+        "bytes": 31636
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 32851
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 62380
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 82565
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 71566
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 135888
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 800,
+        "bytes": 179369
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 126462
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 232798
+      },
+      {
+        "src": "/dev-client-media/nang-blue-moon-18/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 315189
+      }
+    ],
+    "source": ".local-media/client-photos/nang-page-2026-10-23/blue-moon-18.png",
+    "folderId": "1lh0lRA5dLEqNnIlJsADanj0GthLQPMQf",
+    "room": "Blue Moon",
+    "workbookCell": "D23",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  },
+  {
+    "key": "nang-yellow-7",
+    "driveFileId": "1kHzZ4ZVumwAMysYOBQfwMY8GVKPqMY32",
+    "sha256": "ae19ba9f8ed7f81be18858def44ea179a544ec20515a0c8e1e52b02888edc52b",
+    "width": 2048,
+    "height": 1366,
+    "variants": [
+      {
+        "src": "/dev-client-media/nang-yellow-7/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 11262
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 18868
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 320,
+        "bytes": 27590
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 25346
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 47346
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 66249
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 48029
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 93286
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 800,
+        "bytes": 131721
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 77884
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 152204
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-7/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 220840
+      }
+    ],
+    "source": ".local-media/client-photos/nang-page-2026-10-23/yellow-submarine-7.png",
+    "folderId": "1ExyqVrGs1azUqoX_gHyh15lxSYQw4kVC",
+    "room": "Yellow Submarine",
+    "workbookCell": "D20",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  },
+  {
+    "key": "nang-yellow-4",
+    "driveFileId": "1n7W30NIgqEVugF11hczm4jKtxUp7e6Bk",
+    "sha256": "dd6e0c70065ec5fd53f0038e049b39ecdc4a197a71294c31402a226cba2902e4",
+    "width": 2048,
+    "height": 1366,
+    "variants": [
+      {
+        "src": "/dev-client-media/nang-yellow-4/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 11080
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 18016
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 320,
+        "bytes": 26179
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 25277
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 42638
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 62460
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 49412
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 87662
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 800,
+        "bytes": 128317
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 81948
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 150338
+      },
+      {
+        "src": "/dev-client-media/nang-yellow-4/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 220181
+      }
+    ],
+    "source": ".local-media/client-photos/nang-2026-10-22/yellow-submarine-4.png",
+    "folderId": "1ExyqVrGs1azUqoX_gHyh15lxSYQw4kVC",
+    "room": "Yellow Submarine",
+    "workbookCell": "D20",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  },
+  {
+    "key": "nang-pale-4",
+    "driveFileId": "105G-i5K0nP5eQNhxrSLNcm7c5qciiwiM",
+    "sha256": "3041966107809f20679777ca05b4ab843d7ea2e360aacbdb140e4900b0d0634a",
+    "width": 2048,
+    "height": 1366,
+    "variants": [
+      {
+        "src": "/dev-client-media/nang-pale-4/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 11074
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 17384
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 320,
+        "bytes": 25359
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 23541
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 38920
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 60927
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 43345
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 75182
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 800,
+        "bytes": 121749
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 68477
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 123046
+      },
+      {
+        "src": "/dev-client-media/nang-pale-4/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 205814
+      }
+    ],
+    "source": ".local-media/client-photos/nang-2026-10-22/pale-blue-eyes-4.png",
+    "folderId": "1U5oDedfTCielLny0PnMpzQfshimsYhAz",
+    "room": "Pale Blue Eyes",
+    "workbookCell": "D21",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  },
+  {
+    "key": "bare-han-ground-26",
+    "driveFileId": "1Z4vuWjXfnmulrXzy9cfMm_raSCjlehN-",
+    "sha256": "fc4965325d2000e6aad6269b8b6e14548e6198ba2cbe0b2be248c6006b5c978e",
+    "width": 2048,
+    "height": 1368,
+    "variants": [
+      {
+        "src": "/dev-client-media/bare-han-ground-26/480.avif",
+        "type": "image/avif",
+        "width": 480,
+        "height": 321,
+        "bytes": 10499
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/480.webp",
+        "type": "image/webp",
+        "width": 480,
+        "height": 321,
+        "bytes": 16738
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/480.jpg",
+        "type": "image/jpeg",
+        "width": 480,
+        "height": 321,
+        "bytes": 24970
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/800.avif",
+        "type": "image/avif",
+        "width": 800,
+        "height": 534,
+        "bytes": 21527
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/800.webp",
+        "type": "image/webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 36136
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/800.jpg",
+        "type": "image/jpeg",
+        "width": 800,
+        "height": 534,
+        "bytes": 58398
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/1200.avif",
+        "type": "image/avif",
+        "width": 1200,
+        "height": 802,
+        "bytes": 40323
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/1200.webp",
+        "type": "image/webp",
+        "width": 1200,
+        "height": 802,
+        "bytes": 70670
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/1200.jpg",
+        "type": "image/jpeg",
+        "width": 1200,
+        "height": 802,
+        "bytes": 120669
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/1600.avif",
+        "type": "image/avif",
+        "width": 1600,
+        "height": 1069,
+        "bytes": 66521
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/1600.webp",
+        "type": "image/webp",
+        "width": 1600,
+        "height": 1069,
+        "bytes": 113442
+      },
+      {
+        "src": "/dev-client-media/bare-han-ground-26/1600.jpg",
+        "type": "image/jpeg",
+        "width": 1600,
+        "height": 1069,
+        "bytes": 208937
+      }
+    ],
+    "source": ".local-media/client-photos/nang-page-2026-10-23/bare-han-ground-26.jpg",
+    "folderId": "1qX1rKDTZSbS0c_KdGh3tbSk_gf8lugnb",
+    "room": "Bare Hàn Ground",
+    "workbookCell": "D16",
+    "approval": "Owner request 2026-10-23; local demo only; original inspected, no people"
+  }
+]

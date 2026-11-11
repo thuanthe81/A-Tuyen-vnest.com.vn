@@ -1,0 +1,1022 @@
+[
+  {
+    "name": "a-all-six-available @390: heading",
+    "pass": true,
+    "detail": "6 nơi còn phòng"
+  },
+  {
+    "name": "a-all-six-available @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-all-six-available @390: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-some-available @390: heading",
+    "pass": true,
+    "detail": "3 nơi còn phòng"
+  },
+  {
+    "name": "a-some-available @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-some-available @390: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-one-fails @390: heading",
+    "pass": true,
+    "detail": "3 nơi còn phòng"
+  },
+  {
+    "name": "a-one-fails @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-one-fails @390: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-all-sold-out @390: heading",
+    "pass": true,
+    "detail": "Không còn phòng cho ngày này"
+  },
+  {
+    "name": "a-all-sold-out @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-all-sold-out @390: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-no-reliable-price @390: heading",
+    "pass": true,
+    "detail": "6 nơi còn phòng"
+  },
+  {
+    "name": "a-no-reliable-price @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-no-reliable-price @390: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "b-rooms-and-rates @390: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu D"
+  },
+  {
+    "name": "b-rooms-and-rates @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-rooms-and-rates @390: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-all-six-available @768: heading",
+    "pass": true,
+    "detail": "6 nơi còn phòng"
+  },
+  {
+    "name": "a-all-six-available @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-all-six-available @768: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-some-available @768: heading",
+    "pass": true,
+    "detail": "3 nơi còn phòng"
+  },
+  {
+    "name": "a-some-available @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-some-available @768: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-one-fails @768: heading",
+    "pass": true,
+    "detail": "3 nơi còn phòng"
+  },
+  {
+    "name": "a-one-fails @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-one-fails @768: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-all-sold-out @768: heading",
+    "pass": true,
+    "detail": "Không còn phòng cho ngày này"
+  },
+  {
+    "name": "a-all-sold-out @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-all-sold-out @768: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-no-reliable-price @768: heading",
+    "pass": true,
+    "detail": "6 nơi còn phòng"
+  },
+  {
+    "name": "a-no-reliable-price @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-no-reliable-price @768: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "b-rooms-and-rates @768: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu D"
+  },
+  {
+    "name": "b-rooms-and-rates @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-rooms-and-rates @768: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-all-six-available @1440: heading",
+    "pass": true,
+    "detail": "6 nơi còn phòng"
+  },
+  {
+    "name": "a-all-six-available @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-all-six-available @1440: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-some-available @1440: heading",
+    "pass": true,
+    "detail": "3 nơi còn phòng"
+  },
+  {
+    "name": "a-some-available @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-some-available @1440: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-one-fails @1440: heading",
+    "pass": true,
+    "detail": "3 nơi còn phòng"
+  },
+  {
+    "name": "a-one-fails @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-one-fails @1440: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-all-sold-out @1440: heading",
+    "pass": true,
+    "detail": "Không còn phòng cho ngày này"
+  },
+  {
+    "name": "a-all-sold-out @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-all-sold-out @1440: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-no-reliable-price @1440: heading",
+    "pass": true,
+    "detail": "6 nơi còn phòng"
+  },
+  {
+    "name": "a-no-reliable-price @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-no-reliable-price @1440: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "b-rooms-and-rates @1440: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu D"
+  },
+  {
+    "name": "b-rooms-and-rates @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-rooms-and-rates @1440: nothing clipped",
+    "pass": true,
+    "detail": "0"
+  },
+  {
+    "name": "a-availability-unknown @390: heading",
+    "pass": true,
+    "detail": "Chưa xác nhận được phòng trống"
+  },
+  {
+    "name": "a-availability-unknown @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-provider-error @390: heading",
+    "pass": true,
+    "detail": "Chưa kiểm tra được phòng trống"
+  },
+  {
+    "name": "a-provider-error @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-timeout @390: heading",
+    "pass": true,
+    "detail": "Chưa kiểm tra được phòng trống"
+  },
+  {
+    "name": "a-timeout @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-browse-no-dates @390: heading",
+    "pass": true,
+    "detail": "6 nơi lưu trú"
+  },
+  {
+    "name": "a-browse-no-dates @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-invalid-search @390: heading",
+    "pass": true,
+    "detail": "Tìm kiếm cần chỉnh lại"
+  },
+  {
+    "name": "a-invalid-search @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-five-guests @390: heading",
+    "pass": true,
+    "detail": "2 nơi còn phòng"
+  },
+  {
+    "name": "a-five-guests @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-sold-out @390: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu B"
+  },
+  {
+    "name": "b-sold-out @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-mixed-rooms-no-price @390: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu A"
+  },
+  {
+    "name": "b-mixed-rooms-no-price @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-too-many-guests @390: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu E"
+  },
+  {
+    "name": "b-too-many-guests @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-no-dates @390: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu A"
+  },
+  {
+    "name": "b-no-dates @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-provider-error @390: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu A"
+  },
+  {
+    "name": "b-provider-error @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-availability-unknown @1440: heading",
+    "pass": true,
+    "detail": "Chưa xác nhận được phòng trống"
+  },
+  {
+    "name": "a-availability-unknown @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-provider-error @1440: heading",
+    "pass": true,
+    "detail": "Chưa kiểm tra được phòng trống"
+  },
+  {
+    "name": "a-provider-error @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-timeout @1440: heading",
+    "pass": true,
+    "detail": "Chưa kiểm tra được phòng trống"
+  },
+  {
+    "name": "a-timeout @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-browse-no-dates @1440: heading",
+    "pass": true,
+    "detail": "6 nơi lưu trú"
+  },
+  {
+    "name": "a-browse-no-dates @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-invalid-search @1440: heading",
+    "pass": true,
+    "detail": "Tìm kiếm cần chỉnh lại"
+  },
+  {
+    "name": "a-invalid-search @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a-five-guests @1440: heading",
+    "pass": true,
+    "detail": "2 nơi còn phòng"
+  },
+  {
+    "name": "a-five-guests @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-sold-out @1440: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu B"
+  },
+  {
+    "name": "b-sold-out @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-mixed-rooms-no-price @1440: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu A"
+  },
+  {
+    "name": "b-mixed-rooms-no-price @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-too-many-guests @1440: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu E"
+  },
+  {
+    "name": "b-too-many-guests @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-no-dates @1440: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu A"
+  },
+  {
+    "name": "b-no-dates @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "b-provider-error @1440: heading",
+    "pass": true,
+    "detail": "Cơ sở mẫu A"
+  },
+  {
+    "name": "b-provider-error @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "no price, A: cards say 'Chưa có giá' and show no figure",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "no price, A: nothing claims the next step will show a price",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "no price, B: no rate can be selected (no radio exists)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "no price, B: pricing is stated as unavailable, with no figure",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "no price, B: with no hand-off connected there is no Continue and no room selection",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "no price, B: nothing claims the next step will show a price",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "partial failure: the failed property reads 'Chưa kiểm tra được', not 'Hết phòng'",
+    "pass": true,
+    "detail": "ẢNH MẪU |  | ĐỊA ĐIỂM MẪU 1 |  | Chưa kiểm tra được |  | Cơ sở mẫu C |  | Dòng giới thiệu mẫu |  | Tiện nghi mẫu 1 | Tiện nghi mẫu 2 |  | Hệ thống đặt phòng chưa phản hồi. |  | Thử lại | : Cơ sở mẫu C"
+  },
+  {
+    "name": "partial failure: only the confirmed sold-out property is under 'Hết phòng'",
+    "pass": true,
+    "detail": "HẾT PHÒNG CHO NGÀY NÀYMÔ PHỎNG | Đổi ngày | Cơ sở mẫu F |  | Địa điểm mẫu 3 · Hết phòng cho kỳ lưu trú đã chọn |  | Hết phòng"
+  },
+  {
+    "name": "order: available, then unchecked, then sold out",
+    "pass": true,
+    "detail": "ABDCEF"
+  },
+  {
+    "name": "error: nothing on the page says sold out",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "timeout: nothing on the page says sold out",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "retry: the retried card is updated where it stands; no card moves",
+    "pass": true,
+    "detail": "ABDCE -> ABDCE"
+  },
+  {
+    "name": "retry: layout shift below 0.1",
+    "pass": true,
+    "detail": "CLS 0.0113"
+  },
+  {
+    "name": "retry one failed property: it answers and joins the available ones",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "retry: one extra request, for that property only",
+    "pass": true,
+    "detail": "http://localhost:3300/api/availability?property=co-so-mau-c&checkIn=2026-11-12&checkOut=2026-11-15&mock=partial-failure"
+  },
+  {
+    "name": "results to property: its own page opens, with the stay in the URL",
+    "pass": true,
+    "detail": "/stays/co-so-mau-a?checkIn=2026-11-12&checkOut=2026-11-15&mock=with-rates"
+  },
+  {
+    "name": "A to B: no new availability request",
+    "pass": true,
+    "detail": "0 extra"
+  },
+  {
+    "name": "B back to A: no new request either",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "back button: returns to the property's rooms",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "sold-out property offers the same dates across all properties",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "B (direct) to A: one request for all properties",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "B: no rate chosen at first",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "B: choosing a rate shows the summary and Continue",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "B: 'more rates' reveals the fourth plan",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "B: Continue stops at the labelled boundary, no booking is made",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "keyboard: Tab from the back link reaches the first rate",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "keyboard: Space chooses, arrows move the choice",
+    "pass": true,
+    "detail": "mock-offer:room-mock-a1:standard -> mock-offer:room-mock-a1:flexible"
+  },
+  {
+    "name": "keyboard: arrows cross from one room's rates to the next room's",
+    "pass": true,
+    "detail": "mock-offer:room-mock-a2:standard"
+  },
+  {
+    "name": "keyboard: Enter continues",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a11y: every rate group is a labelled fieldset",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "a11y: one live status region announces results",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "property @390: 'Xem phòng trống' is within the first screen",
+    "pass": true,
+    "detail": "{\"bottom\":809,\"h\":48}"
+  },
+  {
+    "name": "property @390: it jumps to the rooms, clear of the sticky bar, and keeps the stay in the URL",
+    "pass": true,
+    "detail": "{\"top\":96,\"url\":\"/stays/co-so-mau-d?checkIn=2026-11-12&checkOut=2026-11-15&mock=with-rates#rooms\"}"
+  },
+  {
+    "name": "property @390: before a choice the only pinned element is the criteria bar",
+    "pass": true,
+    "detail": "DIV:65"
+  },
+  {
+    "name": "B @390: no summary bar before a choice",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "B @390: after a choice the summary is fixed to the bottom",
+    "pass": true,
+    "detail": "{\"bottom\":844,\"pos\":\"fixed\"}"
+  },
+  {
+    "name": "touch targets 44px or more @390: A",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "name": "touch targets 44px or more @390: B",
+    "pass": true,
+    "detail": "[]"
+  },
+  {
+    "name": "@390: 'Đổi ngày' opens the booking search panel",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "change guests in the bar: URL and results follow",
+    "pass": true,
+    "detail": "?checkIn=2026-11-12&checkOut=2026-11-15&adults=3"
+  },
+  {
+    "name": "the scenario survives a search from the bar (remembered for the tab)",
+    "pass": true,
+    "detail": "http://localhost:3300/api/availability?checkIn=2026-11-12&checkOut=2026-11-15&adults=3&mock=with-rates"
+  },
+  {
+    "name": "back: the earlier search is restored in results and in the bar",
+    "pass": true,
+    "detail": "Khách 2 khách"
+  },
+  {
+    "name": "forward: the later search is restored",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "change dates in the bar: URL and results follow",
+    "pass": true,
+    "detail": "?checkIn=2026-12-03&checkOut=2026-12-05"
+  },
+  {
+    "name": "loading @390: six outlines of final size, and no real card yet to be moved later",
+    "pass": true,
+    "detail": "{\"cards\":0,\"outlines\":6}"
+  },
+  {
+    "name": "loading @1440: six outlines of final size, and no real card yet to be moved later",
+    "pass": true,
+    "detail": "{\"cards\":0,\"outlines\":6}"
+  },
+  {
+    "name": "stale @390: fresh on arrival",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "stale @390: the notice appears by itself when validity passes, with no new request",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "stale @1440: fresh on arrival",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "stale @1440: the notice appears by itself when validity passes, with no new request",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "stale B: Continue is disabled until prices are refreshed",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "stale B: refresh asks again and the chosen rate is kept",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "stale B: fresh again after refresh",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "booking bar with a property chosen: lands on the property page with dates and guests kept",
+    "pass": true,
+    "detail": "http://localhost:3300/stays/co-so-mau-c?checkIn=2026-11-12&checkOut=2026-11-15"
+  },
+  {
+    "name": "property page: the bar shows this property and the stay",
+    "pass": true,
+    "detail": "Cơ sở Cơ sở mẫu C Ngày lưu trú 12 thg 11 – 15 thg 11 Khách 2 khách Tìm kiếm"
+  },
+  {
+    "name": "property page: changing guests keeps the property and the dates",
+    "pass": true,
+    "detail": "/stays/co-so-mau-c?checkIn=2026-11-12&checkOut=2026-11-15&adults=3"
+  },
+  {
+    "name": "property page: rooms follow the new party (the room for two is no longer offered)",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "property page: back restores the earlier stay in the bar and the rooms",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "property page with no dates: the page is complete and claims no price or availability",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "legacy /stays?property= lands on the property page",
+    "pass": true,
+    "detail": "/stays/co-so-mau-a"
+  },
+  {
+    "name": "property page: the canonical is the same with and without dates, and has no parameters",
+    "pass": true,
+    "detail": "http://localhost:3000/stays/co-so-mau-a | http://localhost:3000/stays/co-so-mau-a"
+  },
+  {
+    "name": "property page: a sample property is noindex",
+    "pass": true,
+    "detail": "noindex, nofollow"
+  },
+  {
+    "name": "property shell @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "property shell @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "property shell @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A all available @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A all available @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A all available @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A no price @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A no price @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A no price @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A some sold out @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A some sold out @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A some sold out @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A one fails, one unknown, one sold out @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A one fails, one unknown, one sold out @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A one fails, one unknown, one sold out @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A all sold out @390",
+    "pass": true,
+    "detail": "CLS 0.0023"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A all sold out @768",
+    "pass": true,
+    "detail": "CLS 0.0011"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: A all sold out @1440",
+    "pass": true,
+    "detail": "CLS 0.0013"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, rooms @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, rooms @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, rooms @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, some rooms sold out @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, some rooms sold out @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, some rooms sold out @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, sold out @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, sold out @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, sold out @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, no dates @390",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, no dates @768",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "layout shift below 0.1, loading to results: property page, no dates @1440",
+    "pass": true,
+    "detail": "CLS 0"
+  },
+  {
+    "name": "02.1 @390: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1 @768: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1 @1440: no horizontal overflow",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1: the property list (all + six fixtures) fits the viewport",
+    "pass": true,
+    "detail": "{\"top\":496,\"bottom\":878}"
+  },
+  {
+    "name": "02.1: the list scrolls inside its panel",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1: focus starts on the current choice",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1: arrow keys reach the last property and it scrolls into view",
+    "pass": true,
+    "detail": "{\"label\":\"Cơ sở mẫu F\",\"inside\":true,\"inViewport\":true}"
+  },
+  {
+    "name": "02.1: Enter confirms the choice, closes the list and moves on to the dates",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1: Escape closes the list and returns focus to its field",
+    "pass": true,
+    "detail": ""
+  },
+  {
+    "name": "02.1: the property list stays inside a 1440x700 viewport",
+    "pass": true,
+    "detail": "{\"top\":396,\"bottom\":678,\"h\":700}"
+  },
+  {
+    "name": "02.1: the property list stays inside a 1024x768 viewport",
+    "pass": true,
+    "detail": "{\"top\":22,\"bottom\":338,\"h\":768}"
+  },
+  {
+    "name": "02.1: the property list stays inside a 768x1024 viewport",
+    "pass": true,
+    "detail": "{\"top\":558,\"bottom\":1002,\"h\":1024}"
+  },
+  {
+    "name": "02.1 compact bar on /stays: the property list fits the viewport",
+    "pass": true,
+    "detail": "{\"bottom\":585}"
+  },
+  {
+    "name": "no console errors or warnings in the whole run",
+    "pass": true,
+    "detail": ""
+  }
+]

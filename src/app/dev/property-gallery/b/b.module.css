@@ -1,0 +1,465 @@
+/*
+ * B+, "Cinematic Arrival, Editorial Discovery". Exploration only; scoped to this route.
+ * Colours and the display face are provisional, like the site's own tokens.
+ * Written phone first; the wider composition starts at 768px.
+ *
+ * One language: full-bleed photographs, and one paper surface that carries all the words.
+ * No text is ever set on a photograph, so contrast does not depend on the picture.
+ */
+.root {
+  --b-paper: #f3f1ea;
+  --b-ink: #1a1c1a;
+  /* 5.9:1 on the paper. */
+  --b-muted: #595b55;
+  --b-line: #cbc8bd;
+  --b-display: var(--font-concept-b), Georgia, "Times New Roman", serif;
+  /* What stands above the hero: the sample banner, the criteria bar and the way back. */
+  --b-chrome: 9.4rem;
+  --vn-focus: var(--b-ink);
+  background: var(--b-paper);
+  color: var(--b-ink);
+}
+
+/* ---------- Arrival: one picture, and the identity on paper ---------- */
+
+.hero {
+  position: relative;
+  height: calc(100svh - var(--b-chrome));
+  min-height: 30rem;
+  max-height: 58rem;
+  overflow: hidden;
+  background: #2a1c1a;
+}
+
+.heroPicture {
+  position: absolute;
+  inset: 0;
+}
+
+.standIn {
+  position: absolute;
+  top: 1rem;
+  left: var(--vn-gutter);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--vn-radius-sm);
+  background: rgb(26 28 26 / 0.75);
+  color: #fff;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* The page's paper, cut into the picture's lower corner. Flush with the edges, so it reads as the page rising into the picture, not a card laid on it. */
+.plate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 2.75rem);
+  padding: 1.375rem 1.25rem 1.25rem var(--vn-gutter);
+  background: var(--b-paper);
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Line height stays above 1: Vietnamese stacks two marks on one vowel. */
+.name {
+  margin-top: 0.5rem;
+  font-family: var(--b-display);
+  font-size: clamp(2.5rem, 12vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.statement {
+  max-width: 30rem;
+  margin-top: 0.625rem;
+  color: var(--b-muted);
+  font-size: 1rem;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: 3.25rem;
+  margin-top: 1.25rem;
+  padding-inline: 1.25rem 1rem;
+  border-radius: 2px;
+  background: var(--bk-cta);
+  color: var(--bk-on-cta);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color var(--vn-duration-fast);
+}
+
+.cta:hover {
+  background: var(--bk-cta-hover);
+}
+
+/* The way to every picture. One labelled control, where a hand expects it. */
+.chip {
+  position: absolute;
+  top: 0.5rem;
+  right: var(--vn-gutter);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  padding-inline: 0.875rem 1rem;
+  border-radius: 2px;
+  background: var(--b-paper);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--vn-duration-fast);
+}
+
+.chip:hover {
+  background: #fff;
+}
+
+/* ---------- Discovery: four pictures, four sides of the property ---------- */
+
+.tour {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding: 3.5rem var(--vn-gutter) 0;
+}
+
+.tourHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
+}
+
+.title {
+  font-family: var(--b-display);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.textButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--b-line);
+  text-underline-offset: 0.4em;
+  cursor: pointer;
+}
+
+.textButton:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Phone: wide, two upright side by side, wide. Four pictures in about a screen and a half. */
+.stories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.s1,
+.s4 {
+  grid-column: 1 / -1;
+}
+
+.frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #d9d5ca;
+  aspect-ratio: 3 / 4;
+  cursor: zoom-in;
+}
+
+.s1 .frame,
+.s4 .frame {
+  aspect-ratio: 4 / 3;
+}
+
+.deferred {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.deferred img {
+  animation: b-appear var(--vn-duration-base) var(--vn-ease-out);
+}
+
+@keyframes b-appear {
+  from {
+    opacity: 0;
+  }
+}
+
+.caption {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 0.625rem;
+  align-items: baseline;
+  margin-top: 0.75rem;
+}
+
+.no {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+  color: var(--b-muted);
+}
+
+.aspect {
+  font-family: var(--b-display);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.note {
+  grid-column: 2;
+  margin-top: 0.25rem;
+  color: var(--b-muted);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* ---------- The way into amenities and nearby: two rows of pictograms ---------- */
+
+.next {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding: 3.5rem var(--vn-gutter) 4rem;
+}
+
+.row {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--b-line);
+}
+
+.rowTitle {
+  font-family: var(--b-display);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.marks {
+  display: grid;
+  gap: 1.25rem 0.75rem;
+}
+
+.six {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.marks li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.3;
+}
+
+.stubNote {
+  padding-top: 1rem;
+  border-top: 1px solid var(--b-line);
+  color: var(--b-muted);
+  font-size: 0.8125rem;
+}
+
+/* ---------- The booking action, once the hero's has scrolled away ---------- */
+
+.pill {
+  position: fixed;
+  right: var(--vn-gutter);
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 3rem;
+  padding-inline: 1.25rem 1rem;
+  border-radius: 999px;
+  background: var(--bk-cta);
+  box-shadow: 0 10px 28px -10px rgb(26 28 26 / 0.55);
+  color: var(--bk-on-cta);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  translate: 0 0.75rem;
+  transition:
+    opacity var(--vn-duration-base),
+    translate var(--vn-duration-base) var(--vn-ease-out),
+    visibility var(--vn-duration-base),
+    background-color var(--vn-duration-fast);
+}
+
+.pill[data-show] {
+  visibility: visible;
+  opacity: 1;
+  translate: 0;
+}
+
+.pill:hover {
+  background: var(--bk-cta-hover);
+}
+
+/* ---------- From 768px ---------- */
+
+@media (min-width: 48rem) {
+  /* The sample banner wraps to two lines at this width. */
+  .root {
+    --b-chrome: 10.4rem;
+  }
+
+  .plate {
+    width: calc(var(--vn-gutter) + min(36rem, 52vw));
+    padding: 2.25rem 2.75rem 2.5rem var(--vn-gutter);
+  }
+
+  .name {
+    font-size: clamp(3.25rem, 5.6vw, 5.25rem);
+  }
+
+  .statement {
+    margin-top: 0.875rem;
+    font-size: 1.125rem;
+  }
+
+  .cta {
+    display: inline-flex;
+    min-width: 15rem;
+    height: 3.5rem;
+    margin-top: 1.75rem;
+  }
+
+  .chip {
+    top: auto;
+    bottom: 1.5rem;
+  }
+
+  .tour {
+    padding-top: clamp(4.5rem, 8vw, 7rem);
+  }
+
+  /* Wide then upright, upright then wide: the same two shapes, mirrored, with one empty column between them. */
+  .stories {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: clamp(3.5rem, 6vw, 5.5rem) clamp(0.75rem, 1.7vw, 1.5rem);
+    align-items: end;
+    margin-top: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .s1 {
+    grid-column: 1 / span 7;
+  }
+  .s2 {
+    grid-column: 9 / span 4;
+  }
+  .s3 {
+    grid-column: 1 / span 4;
+  }
+  .s4 {
+    grid-column: 6 / span 7;
+  }
+
+  .frame {
+    aspect-ratio: 4 / 5;
+  }
+
+  .s1 .frame,
+  .s4 .frame {
+    aspect-ratio: 3 / 2;
+  }
+
+  .caption {
+    margin-top: 1rem;
+  }
+
+  .aspect {
+    font-size: 1.5rem;
+  }
+
+  .next {
+    padding-top: clamp(4.5rem, 8vw, 7rem);
+  }
+
+  .row {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: clamp(0.75rem, 1.7vw, 1.5rem);
+    align-items: start;
+    padding-block: 1.75rem;
+  }
+
+  .rowTitle {
+    grid-column: 1 / span 3;
+    font-size: 1.75rem;
+  }
+
+  .marks {
+    grid-column: 4 / -1;
+    column-gap: clamp(0.75rem, 1.7vw, 1.5rem);
+  }
+
+  .six,
+  .four {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .marks li {
+    font-size: 0.875rem;
+  }
+
+  .pill {
+    bottom: 1.5rem;
+    height: 3.25rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .root {
+    --b-chrome: 9.3rem;
+  }
+}
+
+/* The only motion beyond fades: a picture eases toward the pointer, to say it opens. */
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+  .frame img {
+    transition: scale 700ms var(--vn-ease-out);
+  }
+
+  .frame:hover img {
+    scale: 1.025;
+  }
+}

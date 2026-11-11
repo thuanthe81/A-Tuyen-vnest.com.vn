@@ -1,0 +1,277 @@
+/* Service visuals of Hợp tác cùng VNest (8/11/2026; homepage accordion and partner page). Each one fills the frame it is
+   given (any shape) and is measured against that frame (container units), so it keeps its composition from a phone strip
+   to a wide panel. */
+
+.visual {
+  --olive: #37412f;
+  --copper: #a87444;
+  --paper: #f7f3ec;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  container-type: size;
+  border-radius: inherit;
+  /* The height a concept lays text over at the visual's foot (e.g. Concept A's desktop panel); compositions centre above it. */
+  --clear: calc(100cqh - var(--reserve, 0px));
+}
+
+/* ── 01 · photograph ── */
+
+.visual[data-visual="photo"] {
+  background: #2f3828;
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── 02 · planning sheet ── */
+
+.visual[data-visual="plan"] {
+  background-color: var(--paper);
+  /* A faint survey grid, the paper of a planning sheet. */
+  background-image: radial-gradient(circle, rgb(55 65 47 / 0.16) 0.75px, transparent 1px);
+  background-size: 1rem 1rem;
+  background-position: center;
+}
+
+/* The sheet keeps its 600 × 375 shape inside any frame, with a margin all round. */
+.planStage {
+  position: absolute;
+  left: 50%;
+  top: calc(var(--clear) / 2);
+  width: min(92cqw, var(--clear) * 0.84 * 1.6);
+  aspect-ratio: 600 / 375;
+  translate: -50% -50%;
+  container-type: inline-size;
+}
+
+.planSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.planNarrow {
+  display: none;
+}
+
+.plot {
+  fill: rgb(225 214 196 / 0.45);
+  stroke: var(--olive);
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+
+.survey {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 1;
+}
+
+.surveyDot,
+.leaderDot {
+  fill: var(--copper);
+}
+
+.building {
+  fill: #fbf9f5;
+  stroke: var(--olive);
+  stroke-width: 1.6;
+}
+
+.rooms,
+.door {
+  fill: none;
+  stroke: var(--olive);
+  stroke-width: 0.9;
+}
+
+.door {
+  stroke-width: 0.7;
+  opacity: 0.7;
+}
+
+.roomTone {
+  fill: rgb(168 116 68 / 0.24);
+}
+
+.roomToneSoft {
+  fill: rgb(168 116 68 / 0.1);
+}
+
+.partners {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 1.1;
+  stroke-dasharray: 5 5;
+}
+
+.leader {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 0.8;
+}
+
+/* The client's three highlights for 02, each at the end of its leader. */
+.planNotes {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.planNotes li {
+  position: absolute;
+  left: 70%;
+  width: 29%;
+  translate: 0 -0.68em;
+  color: var(--olive);
+  font-size: clamp(0.6875rem, 2.1cqw, 0.875rem);
+  font-weight: 500;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+/* Narrow sheets: no room for the notes; the drawing alone, larger. */
+@container (width < 26rem) {
+  .planWide,
+  .planNotes {
+    display: none;
+  }
+
+  .planNarrow {
+    display: block;
+  }
+}
+
+/* ── 03 · brand composition ── */
+
+.visual[data-visual="brands"] {
+  --tile: min(var(--clear) * 0.4, 24cqw);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgb(255 255 255 / 0.06), transparent 60%),
+    var(--olive);
+}
+
+.brands {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: calc(var(--tile) * 0.16);
+  padding-top: calc(var(--clear) / 2 - var(--tile) * 0.5 - 1.25rem);
+}
+
+.side {
+  display: grid;
+  justify-items: center;
+  gap: calc(var(--tile) * 0.09);
+}
+
+.pair {
+  display: flex;
+  gap: calc(var(--tile) * 0.08);
+}
+
+.tile {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--tile);
+  height: var(--tile);
+  border-radius: calc(var(--tile) * 0.05);
+  background: var(--paper);
+}
+
+.tile > img {
+  display: block;
+  width: auto;
+}
+
+.tile[data-logo="bare"] > img {
+  height: calc(var(--tile) * 0.76);
+}
+
+.tile[data-logo="pepper-house"] {
+  align-content: center;
+  gap: calc(var(--tile) * 0.06);
+}
+
+.tile[data-logo="pepper-house"] > img {
+  height: calc(var(--tile) * 0.48);
+}
+
+.tileName {
+  color: #1e1e1e;
+  font-size: calc(var(--tile) * 0.085);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* VNest's stacked lockup: symbol 64.7 % of the wordmark's width, 2.4 % gap (vnest-lockup.svg geometry). */
+.vnestLockup {
+  display: grid;
+  justify-items: center;
+  gap: calc(var(--tile) * 0.62 * 0.024);
+  width: calc(var(--tile) * 0.62);
+}
+
+.vnestSymbol {
+  display: block;
+  width: 64.7%;
+  height: auto;
+}
+
+.vnestWordmark {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* A bracket under each side: the two brands read as one half of the sum. */
+.bracket {
+  justify-self: stretch;
+  height: calc(var(--tile) * 0.07);
+  margin-inline: calc(var(--tile) * 0.04);
+  border: 1px solid rgb(201 157 112 / 0.75);
+  border-top: 0;
+}
+
+.sideLabel {
+  color: rgb(241 236 228 / 0.86);
+  font-size: clamp(0.625rem, calc(var(--tile) * 0.085), 0.8125rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* VNest's side is one tile wide: its label may take two lines on a phone rather than run past the frame. */
+.side:last-child .sideLabel {
+  max-width: calc(var(--tile) * 1.3);
+}
+
+.plus {
+  display: grid;
+  place-items: center;
+  height: var(--tile);
+  color: #d2a578;
+  font-size: calc(var(--tile) * 0.3);
+  font-weight: 300;
+  line-height: 1;
+}

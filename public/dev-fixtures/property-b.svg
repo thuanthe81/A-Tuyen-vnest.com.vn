@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe8dc"/><stop offset="0.6" stop-color="#b9cbb0"/><stop offset="1" stop-color="#8fa888"/></linearGradient></defs><rect width="1600" height="1200" fill="url(#s)"/>
+<circle cx="380" cy="300" r="110" fill="#f7f4e6"/>
+<path d="M0 560C400 480 800 640 1600 520V1200H0Z" fill="#2f4a3b" fill-opacity="0.22"/><path d="M0 690C400 610 800 760 1600 655V1200H0Z" fill="#2f4a3b" fill-opacity="0.39"/><path d="M0 820C400 740 800 880 1600 790V1200H0Z" fill="#2f4a3b" fill-opacity="0.56"/><path d="M0 950C400 870 800 1000 1600 925V1200H0Z" fill="#2f4a3b" fill-opacity="0.73"/><path d="M0 1080C400 1000 800 1120 1600 1060V1200H0Z" fill="#2f4a3b" fill-opacity="0.9"/>
+<rect x="1080" y="470" width="230" height="150" fill="#f7f4e6"/><path d="M1050 470l145-90 145 90Z" fill="#2f4a3b"/>
+<text x="800" y="1164" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="25" letter-spacing="4" fill="#ffffff" fill-opacity="0.72">ẢNH MẪU · KHÔNG PHẢI HÌNH ẢNH VNEST</text>
+</svg>

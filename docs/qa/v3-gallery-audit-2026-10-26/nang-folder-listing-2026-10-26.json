@@ -1,0 +1,162 @@
+{
+  "readOn": "2026-10-26",
+  "method": "public Drive folder page, metadata only (names, ids, sizes); nothing downloaded",
+  "folders": [
+    {
+      "room": "Yellow Submarine",
+      "folderId": "1ExyqVrGs1azUqoX_gHyh15lxSYQw4kVC",
+      "files": [
+        {
+          "name": "4.png",
+          "id": "1n7W30NIgqEVugF11hczm4jKtxUp7e6Bk",
+          "mime": "image/png",
+          "bytes": 4074817
+        },
+        {
+          "name": "6.png",
+          "id": "1JZoO1XQJrkwBbC4RpLhn3SabNZhFLqhq",
+          "mime": "image/png",
+          "bytes": 4046853
+        },
+        {
+          "name": "7.png",
+          "id": "1kHzZ4ZVumwAMysYOBQfwMY8GVKPqMY32",
+          "mime": "image/png",
+          "bytes": 3850627
+        },
+        {
+          "name": "9.png",
+          "id": "19J5YldjB9H79oA_UF7HvAppBbmsv4Iwd",
+          "mime": "image/png",
+          "bytes": 3886513
+        },
+        {
+          "name": "11.png",
+          "id": "1_7BvB0uLrofIZ4IEXNAUNSdzO15qt7qk",
+          "mime": "image/png",
+          "bytes": 4386058
+        }
+      ]
+    },
+    {
+      "room": "Pale Blue Eyes",
+      "folderId": "1U5oDedfTCielLny0PnMpzQfshimsYhAz",
+      "files": [
+        {
+          "name": "3.png",
+          "id": "18HZEaCUbMIK6KXWbKdilyK8-zFDQNIDH",
+          "mime": "image/png",
+          "bytes": 4224064
+        },
+        {
+          "name": "4 (1).png",
+          "id": "105G-i5K0nP5eQNhxrSLNcm7c5qciiwiM",
+          "mime": "image/png",
+          "bytes": 3708134
+        },
+        {
+          "name": "6 (1).png",
+          "id": "1ntzwvUkAnfAqpLLh_hVuxjIQG9HeP3nB",
+          "mime": "image/png",
+          "bytes": 4420358
+        },
+        {
+          "name": "7 (1).png",
+          "id": "1MqoU7z49c_2cxolZphU2vaXI9jdlrEu4",
+          "mime": "image/png",
+          "bytes": 4333755
+        },
+        {
+          "name": "8.png",
+          "id": "1S6nf_jvuHyH5MiKKzW0MpBfpqILAb2Xm",
+          "mime": "image/png",
+          "bytes": 3981600
+        }
+      ]
+    },
+    {
+      "room": "Green River",
+      "folderId": "136jviLxLQlOcGXv1Y00dXETGBaXe2Lf2",
+      "files": [
+        {
+          "name": "3.png",
+          "id": "135fYrwL4yxt7jR0K0eSre400uuh_Ufro",
+          "mime": "image/png",
+          "bytes": 4178681
+        },
+        {
+          "name": "4.png",
+          "id": "1n-ltRYOCrat8AXgS1mgbrRXfIIdxaha2",
+          "mime": "image/png",
+          "bytes": 4347197
+        },
+        {
+          "name": "5.png",
+          "id": "1dyayWttLWhbw6h-2C_Ry8MF7eEzJUfXb",
+          "mime": "image/png",
+          "bytes": 5364434
+        },
+        {
+          "name": "7.png",
+          "id": "1a8X1ecpW9EEhqDSX2VzHremhKRpEp8ns",
+          "mime": "image/png",
+          "bytes": 4029691
+        },
+        {
+          "name": "9.png",
+          "id": "1AZiGGcaogXb-vp8MTmrdEw2GVeMGL5MM",
+          "mime": "image/png",
+          "bytes": 4304619
+        }
+      ]
+    },
+    {
+      "room": "Blue Moon",
+      "folderId": "1lh0lRA5dLEqNnIlJsADanj0GthLQPMQf",
+      "files": [
+        {
+          "name": "4 (1).png",
+          "id": "1YzkczhfGZLV0Uv2jG651h_UJUGa1C5ut",
+          "mime": "image/png",
+          "bytes": 5233455
+        },
+        {
+          "name": "10.png",
+          "id": "1QEeREufB2jlQYDnVd6N2AgKki7X97ECH",
+          "mime": "image/png",
+          "bytes": 4512964
+        },
+        {
+          "name": "14.png",
+          "id": "10WSAdJ87KpzjGLr0bucHaoH068Djl-LK",
+          "mime": "image/png",
+          "bytes": 4708996
+        },
+        {
+          "name": "15.png",
+          "id": "1Ct4vi9aqc9-y4Z8CvnNODuIfZNB5mpRn",
+          "mime": "image/png",
+          "bytes": 5083573
+        },
+        {
+          "name": "17.png",
+          "id": "16U9iuZuwTWXw8hqGqcqp9OKhnR_m0QK3",
+          "mime": "image/png",
+          "bytes": 5457799
+        },
+        {
+          "name": "18.png",
+          "id": "1fa3OhAg0JPyWzSSSSM-0ES4jSYs8GGKm",
+          "mime": "image/png",
+          "bytes": 4687317
+        },
+        {
+          "name": "24.png",
+          "id": "1JjJTMnQNsnnb--j_UfRQIsVSEfynPzYn",
+          "mime": "image/png",
+          "bytes": 3336461
+        }
+      ]
+    }
+  ]
+}

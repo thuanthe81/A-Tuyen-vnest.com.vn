@@ -1,0 +1,139 @@
+PASS @375 hero: no visible controls, dots, arrows or captions — {"visibleControls":0,"pauseName":"Tạm dừng trình chiếu ảnh","caption":false,"fade":"0.6s"}
+PASS @375 hero: pause button exists for keyboard/screen readers — Tạm dừng trình chiếu ảnh
+PASS @375 hero: 600 ms cross-fade — 0.6s
+PASS @375 hero: changes automatically every ≈2.6 s (600 ms fade + ≈2 s fully visible) — 0→1→2, cycle 2615 ms
+PASS @375 keyboard: Tab reaches pause; it appears on focus, no layout shift — {"w":234,"h":44,"textTop":349,"inView":true}
+PASS @375 keyboard pause holds after focus leaves — Tiếp tục trình chiếu ảnh
+PASS @375 no horizontal overflow — 0px
+PASS @375 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @375 contact panel: Dark Olive, cream heading, copper CTA → #tu-van — {"bg":"rgb(55, 65, 47)","h2":"rgb(241, 236, 228)","cta":"rgb(154, 104, 60)","text":"Gửi yêu cầu tư vấn\n→"}
+PASS @375 one large contact heading — 38px
+PASS @375 form directly below the panel, on Beige — rgb(248, 244, 238)
+PASS @375 hotline, email, address, Facebook once each; minimal footer; no DRAFT — {"panelBg":"rgb(55, 65, 47)","h2Color":"rgb(241, 236, 228)","h2Size":38,"h2Text":"Bắt đầu một cuộc trò chuyện.","headings":1,"bigHeadings":1,"ctaText":"Gửi yêu cầu tư vấn\n→","ctaBg":"rgb(154, 104, 60)","formBelow":true,"formBg":"rgb(248, 244, 238)","tel":1,"mail":1,"address":1,"facebook":1,"draft":false,"footer":"minimal","faqGap":0}
+PASS @375 contact CTA scrolls to the form, focus on its heading — {"top":96,"focus":"H3:Yêu cầu tư vấn"}
+PASS @375 form honestly non-operational, keeps what was typed
+PASS @375 menu: exact labels, no numbers, no "Về VNest", fits, no clipping — {"labels":"Khám phá nơi ở|Hợp tác cùng VNest|QA|Liên hệ","numbers":false,"fits":true,"clip":false,"size":29.8,"ve":false}
+PASS @375 menu 'Khám phá nơi ở' → #kham-pha, menu closed — top=80
+PASS @375 menu 'Hợp tác cùng VNest' → #hop-tac, menu closed — top=92
+PASS @375 menu 'QA' → #hoi-dap, menu closed — top=92
+PASS @375 menu 'Liên hệ' → #lien-he, menu closed — top=94
+PASS @375 menu: Escape closes, focus back on the button
+PASS @375 footer keeps "Về VNest"
+PASS @375 no console/hydration errors
+PASS @390 hero: no visible controls, dots, arrows or captions — {"visibleControls":0,"pauseName":"Tạm dừng trình chiếu ảnh","caption":false,"fade":"0.6s"}
+PASS @390 hero: pause button exists for keyboard/screen readers — Tạm dừng trình chiếu ảnh
+PASS @390 hero: 600 ms cross-fade — 0.6s
+PASS @390 hero: changes automatically every ≈2.6 s (600 ms fade + ≈2 s fully visible) — 0→1→2, cycle 2594 ms
+PASS @390 keyboard: Tab reaches pause; it appears on focus, no layout shift — {"w":234,"h":44,"textTop":370,"inView":true}
+PASS @390 keyboard pause holds after focus leaves — Tiếp tục trình chiếu ảnh
+PASS @390 no horizontal overflow — 0px
+PASS @390 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @390 contact panel: Dark Olive, cream heading, copper CTA → #tu-van — {"bg":"rgb(55, 65, 47)","h2":"rgb(241, 236, 228)","cta":"rgb(154, 104, 60)","text":"Gửi yêu cầu tư vấn\n→"}
+PASS @390 one large contact heading — 38.04px
+PASS @390 form directly below the panel, on Beige — rgb(248, 244, 238)
+PASS @390 hotline, email, address, Facebook once each; minimal footer; no DRAFT — {"panelBg":"rgb(55, 65, 47)","h2Color":"rgb(241, 236, 228)","h2Size":38.04,"h2Text":"Bắt đầu một cuộc trò chuyện.","headings":1,"bigHeadings":1,"ctaText":"Gửi yêu cầu tư vấn\n→","ctaBg":"rgb(154, 104, 60)","formBelow":true,"formBg":"rgb(248, 244, 238)","tel":1,"mail":1,"address":1,"facebook":1,"draft":false,"footer":"minimal","faqGap":0}
+PASS @390 contact CTA scrolls to the form, focus on its heading — {"top":96,"focus":"H3:Yêu cầu tư vấn"}
+PASS @390 form honestly non-operational, keeps what was typed
+PASS @390 menu: exact labels, no numbers, no "Về VNest", fits, no clipping — {"labels":"Khám phá nơi ở|Hợp tác cùng VNest|QA|Liên hệ","numbers":false,"fits":true,"clip":false,"size":30.16,"ve":false}
+PASS @390 menu 'Khám phá nơi ở' → #kham-pha, menu closed — top=80
+PASS @390 menu 'Hợp tác cùng VNest' → #hop-tac, menu closed — top=92
+PASS @390 menu 'QA' → #hoi-dap, menu closed — top=92
+PASS @390 menu 'Liên hệ' → #lien-he, menu closed — top=95
+PASS @390 menu: Escape closes, focus back on the button
+PASS @390 footer keeps "Về VNest"
+PASS @390 no console/hydration errors
+PASS @430 hero: no visible controls, dots, arrows or captions — {"visibleControls":0,"pauseName":"Tạm dừng trình chiếu ảnh","caption":false,"fade":"0.6s"}
+PASS @430 hero: pause button exists for keyboard/screen readers — Tạm dừng trình chiếu ảnh
+PASS @430 hero: 600 ms cross-fade — 0.6s
+PASS @430 hero: changes automatically every ≈2.6 s (600 ms fade + ≈2 s fully visible) — 0→1→2, cycle 2602 ms
+PASS @430 keyboard: Tab reaches pause; it appears on focus, no layout shift — {"w":234,"h":44,"textTop":383,"inView":true}
+PASS @430 keyboard pause holds after focus leaves — Tiếp tục trình chiếu ảnh
+PASS @430 no horizontal overflow — 0px
+PASS @430 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @430 contact panel: Dark Olive, cream heading, copper CTA → #tu-van — {"bg":"rgb(55, 65, 47)","h2":"rgb(241, 236, 228)","cta":"rgb(154, 104, 60)","text":"Gửi yêu cầu tư vấn\n→"}
+PASS @430 one large contact heading — 39.48px
+PASS @430 form directly below the panel, on Beige — rgb(248, 244, 238)
+PASS @430 hotline, email, address, Facebook once each; minimal footer; no DRAFT — {"panelBg":"rgb(55, 65, 47)","h2Color":"rgb(241, 236, 228)","h2Size":39.48,"h2Text":"Bắt đầu một cuộc trò chuyện.","headings":1,"bigHeadings":1,"ctaText":"Gửi yêu cầu tư vấn\n→","ctaBg":"rgb(154, 104, 60)","formBelow":true,"formBg":"rgb(248, 244, 238)","tel":1,"mail":1,"address":1,"facebook":1,"draft":false,"footer":"minimal","faqGap":0}
+PASS @430 contact CTA scrolls to the form, focus on its heading — {"top":96,"focus":"H3:Yêu cầu tư vấn"}
+PASS @430 form honestly non-operational, keeps what was typed
+PASS @430 menu: exact labels, no numbers, no "Về VNest", fits, no clipping — {"labels":"Khám phá nơi ở|Hợp tác cùng VNest|QA|Liên hệ","numbers":false,"fits":true,"clip":false,"size":31.12,"ve":false}
+PASS @430 menu 'Khám phá nơi ở' → #kham-pha, menu closed — top=80
+PASS @430 menu 'Hợp tác cùng VNest' → #hop-tac, menu closed — top=92
+PASS @430 menu 'QA' → #hoi-dap, menu closed — top=92
+PASS @430 menu 'Liên hệ' → #lien-he, menu closed — top=94
+PASS @430 menu: Escape closes, focus back on the button
+PASS @430 footer keeps "Về VNest"
+PASS @430 no console/hydration errors
+PASS @768 hero: no visible controls, dots, arrows or captions — {"visibleControls":0,"pauseName":"Tạm dừng trình chiếu ảnh","caption":false,"fade":"0.6s"}
+PASS @768 hero: pause button exists for keyboard/screen readers — Tạm dừng trình chiếu ảnh
+PASS @768 hero: 600 ms cross-fade — 0.6s
+PASS @768 hero: changes automatically every ≈2.6 s (600 ms fade + ≈2 s fully visible) — 0→1→2, cycle 2600 ms
+PASS @768 keyboard: Tab reaches pause; it appears on focus, no layout shift — {"w":234,"h":44,"textTop":333,"inView":true}
+PASS @768 keyboard pause holds after focus leaves — Tiếp tục trình chiếu ảnh
+PASS @768 no horizontal overflow — 0px
+PASS @768 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @768 contact panel: Dark Olive, cream heading, copper CTA → #tu-van — {"bg":"rgb(55, 65, 47)","h2":"rgb(241, 236, 228)","cta":"rgb(154, 104, 60)","text":"Gửi yêu cầu tư vấn\n→"}
+PASS @768 one large contact heading — 51.648px
+PASS @768 form directly below the panel, on Beige — rgb(248, 244, 238)
+PASS @768 hotline, email, address, Facebook once each; minimal footer; no DRAFT — {"panelBg":"rgb(55, 65, 47)","h2Color":"rgb(241, 236, 228)","h2Size":51.648,"h2Text":"Bắt đầu một cuộc trò chuyện.","headings":1,"bigHeadings":1,"ctaText":"Gửi yêu cầu tư vấn\n→","ctaBg":"rgb(154, 104, 60)","formBelow":true,"formBg":"rgb(248, 244, 238)","tel":1,"mail":1,"address":1,"facebook":1,"draft":false,"footer":"minimal","faqGap":0}
+PASS @768 contact CTA scrolls to the form, focus on its heading — {"top":96,"focus":"H3:Yêu cầu tư vấn"}
+PASS @768 form honestly non-operational, keeps what was typed
+PASS @768 menu: exact labels, no numbers, no "Về VNest", fits, no clipping — {"labels":"Khám phá nơi ở|Hợp tác cùng VNest|QA|Liên hệ","numbers":false,"fits":true,"clip":false,"size":39.232,"ve":false}
+PASS @768 menu 'Khám phá nơi ở' → #kham-pha, menu closed — top=80
+PASS @768 menu 'Hợp tác cùng VNest' → #hop-tac, menu closed — top=92
+PASS @768 menu 'QA' → #hoi-dap, menu closed — top=92
+PASS @768 menu 'Liên hệ' → #lien-he, menu closed — top=92
+PASS @768 menu: Escape closes, focus back on the button
+PASS @768 footer keeps "Về VNest"
+PASS @768 no console/hydration errors
+PASS @1024 hero: no visible controls, dots, arrows or captions — {"visibleControls":0,"pauseName":"Tạm dừng trình chiếu ảnh","caption":false,"fade":"0.6s"}
+PASS @1024 hero: pause button exists for keyboard/screen readers — Tạm dừng trình chiếu ảnh
+PASS @1024 hero: 600 ms cross-fade — 0.6s
+PASS @1024 hero: changes automatically every ≈2.6 s (600 ms fade + ≈2 s fully visible) — 0→1→2, cycle 2629 ms
+PASS @1024 keyboard: Tab reaches pause; it appears on focus, no layout shift — {"w":234,"h":44,"textTop":296,"inView":true}
+PASS @1024 keyboard pause holds after focus leaves — Tiếp tục trình chiếu ảnh
+PASS @1024 no horizontal overflow — 0px
+PASS @1024 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @1024 contact panel: Dark Olive, cream heading, copper CTA → #tu-van — {"bg":"rgb(55, 65, 47)","h2":"rgb(241, 236, 228)","cta":"rgb(154, 104, 60)","text":"Gửi yêu cầu tư vấn\n→"}
+PASS @1024 one large contact heading — 60.864px
+PASS @1024 form directly below the panel, on Beige — rgb(248, 244, 238)
+PASS @1024 hotline, email, address, Facebook once each; minimal footer; no DRAFT — {"panelBg":"rgb(55, 65, 47)","h2Color":"rgb(241, 236, 228)","h2Size":60.864,"h2Text":"Bắt đầu một cuộc trò chuyện.","headings":1,"bigHeadings":1,"ctaText":"Gửi yêu cầu tư vấn\n→","ctaBg":"rgb(154, 104, 60)","formBelow":true,"formBg":"rgb(248, 244, 238)","tel":1,"mail":1,"address":1,"facebook":1,"draft":false,"footer":"minimal","faqGap":0}
+PASS @1024 contact CTA scrolls to the form, focus on its heading — {"top":96,"focus":"H3:Yêu cầu tư vấn"}
+PASS @1024 form honestly non-operational, keeps what was typed
+PASS @1024 menu: exact labels, no numbers, no "Về VNest", fits, no clipping — {"labels":"Khám phá nơi ở|Hợp tác cùng VNest|QA|Liên hệ","numbers":false,"fits":true,"clip":false,"size":45.376,"ve":false}
+PASS @1024 menu 'Khám phá nơi ở' → #kham-pha, menu closed — top=80
+PASS @1024 menu 'Hợp tác cùng VNest' → #hop-tac, menu closed — top=92
+PASS @1024 menu 'QA' → #hoi-dap, menu closed — top=92
+PASS @1024 menu 'Liên hệ' → #lien-he, menu closed — top=92
+PASS @1024 menu: Escape closes, focus back on the button
+PASS @1024 footer keeps "Về VNest"
+PASS @1024 no console/hydration errors
+PASS @1440 hero: no visible controls, dots, arrows or captions — {"visibleControls":0,"pauseName":"Tạm dừng trình chiếu ảnh","caption":false,"fade":"0.6s"}
+PASS @1440 hero: pause button exists for keyboard/screen readers — Tạm dừng trình chiếu ảnh
+PASS @1440 hero: 600 ms cross-fade — 0.6s
+PASS @1440 hero: changes automatically every ≈2.6 s (600 ms fade + ≈2 s fully visible) — 0→1→2, cycle 2630 ms
+PASS @1440 keyboard: Tab reaches pause; it appears on focus, no layout shift — {"w":234,"h":44,"textTop":268,"inView":true}
+PASS @1440 keyboard pause holds after focus leaves — Tiếp tục trình chiếu ảnh
+PASS @1440 no horizontal overflow — 0px
+PASS @1440 order services → FAQ → contact — hop-tac > hoi-dap > lien-he
+PASS @1440 contact panel: Dark Olive, cream heading, copper CTA → #tu-van — {"bg":"rgb(55, 65, 47)","h2":"rgb(241, 236, 228)","cta":"rgb(154, 104, 60)","text":"Gửi yêu cầu tư vấn\n→"}
+PASS @1440 one large contact heading — 72px
+PASS @1440 form directly below the panel, on Beige — rgb(248, 244, 238)
+PASS @1440 hotline, email, address, Facebook once each; minimal footer; no DRAFT — {"panelBg":"rgb(55, 65, 47)","h2Color":"rgb(241, 236, 228)","h2Size":72,"h2Text":"Bắt đầu một cuộc trò chuyện.","headings":1,"bigHeadings":1,"ctaText":"Gửi yêu cầu tư vấn\n→","ctaBg":"rgb(154, 104, 60)","formBelow":true,"formBg":"rgb(248, 244, 238)","tel":1,"mail":1,"address":1,"facebook":1,"draft":false,"footer":"minimal","faqGap":0}
+PASS @1440 contact CTA scrolls to the form, focus on its heading — {"top":96,"focus":"H3:Yêu cầu tư vấn"}
+PASS @1440 form honestly non-operational, keeps what was typed
+PASS @1440 menu: exact labels, no numbers, no "Về VNest", fits, no clipping — {"labels":"Khám phá nơi ở|Hợp tác cùng VNest|QA|Liên hệ","numbers":false,"fits":true,"clip":false,"size":52,"ve":false}
+PASS @1440 menu 'Khám phá nơi ở' → #kham-pha, menu closed — top=80
+PASS @1440 menu 'Hợp tác cùng VNest' → #hop-tac, menu closed — top=92
+PASS @1440 menu 'QA' → #hoi-dap, menu closed — top=92
+PASS @1440 menu 'Liên hệ' → #lien-he, menu closed — top=92
+PASS @1440 menu: Escape closes, focus back on the button
+PASS @1440 footer keeps "Về VNest"
+PASS @1440 no console/hydration errors
+PASS reduced motion: static hero, no fade; control offers play — Tiếp tục trình chiếu ảnh, 0s
+PASS hidden tab pauses the hero; it resumes when visible — 0/0, resumed true
+PASS EN: menu labels, contact panel, form, pause label — Explore stays|Partner with VNest|Q&A|Contact
+PASS EN: no page errors
+PASS property page keeps the full footer with contact + CTA — {"v":"full","tel":true,"cta":"Gửi yêu cầu tư vấn\n→"}
+
+137/137 passed

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e3c4"/><stop offset="0.6" stop-color="#e5c48e"/><stop offset="1" stop-color="#d3a368"/></linearGradient></defs><rect width="1600" height="1200" fill="url(#s)"/>
+<rect x="200" y="1000" width="1400" height="200" fill="#7a5330" fill-opacity="0.18"/><rect x="400" y="870" width="1200" height="330" fill="#7a5330" fill-opacity="0.3"/><rect x="600" y="740" width="1000" height="460" fill="#7a5330" fill-opacity="0.42"/><rect x="800" y="610" width="800" height="590" fill="#7a5330" fill-opacity="0.54"/><rect x="1000" y="480" width="600" height="720" fill="#7a5330" fill-opacity="0.6599999999999999"/><rect x="1200" y="350" width="400" height="850" fill="#7a5330" fill-opacity="0.78"/>
+<path d="M0 1200L0 1000L200 1000L200 1200Z" fill="#b98b52"/>
+<circle cx="330" cy="290" r="120" fill="#fff6e2"/>
+<text x="800" y="1164" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="25" letter-spacing="4" fill="#ffffff" fill-opacity="0.72">ẢNH MẪU · KHÔNG PHẢI HÌNH ẢNH VNEST</text>
+</svg>

@@ -1,0 +1,404 @@
+/* Location module (redesigned 25/10/2026): map preview left, essentials right; stacked on phones. */
+
+.module {
+  margin-top: var(--pd-section, 5rem);
+  scroll-margin-top: 6rem;
+  color: #37412f;
+}
+
+.heading {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.75rem, 1.35rem + 1.4vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.card {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid rgba(55, 65, 47, 0.14);
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+@media (min-width: 52rem) {
+  .card {
+    /* Map about 58%, information about 42%. */
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+}
+
+/* The official Google Maps embed: 16:10 on phones (compact), the full card height on desktop. */
+.map {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  max-height: 20rem;
+  width: 100%;
+  overflow: hidden;
+  background: #f1ece4;
+}
+
+@media (min-width: 52rem) {
+  .map {
+    aspect-ratio: auto;
+    max-height: none;
+    min-height: 24rem;
+  }
+}
+
+.mapFrame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  opacity: 0;
+  transition: opacity 240ms ease;
+}
+
+.mapFrame[data-loaded] {
+  opacity: 1;
+}
+
+/* Shown until Google's map has loaded, or instead of it if it never does: text and a link only. */
+.mapFallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: #37412f;
+}
+
+.mapFallback svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #9a683c;
+}
+
+.mapFallbackStatus {
+  font-size: 0.8125rem;
+  color: #6f675b;
+}
+
+.mapFallbackAddress {
+  max-width: 22rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.mapFallbackLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: #37412f;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.map[data-map-state="loaded"] .mapFallback {
+  visibility: hidden;
+}
+
+/* Essentials. */
+.info {
+  display: grid;
+  align-content: center;
+  gap: 1.25rem;
+  padding: clamp(1.25rem, 1rem + 1.5vw, 2.25rem);
+}
+
+.address {
+  display: grid;
+  gap: 0.2rem;
+  font-style: normal;
+}
+
+.street {
+  font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.rest {
+  color: #6f675b;
+}
+
+.reviewNote {
+  padding: 0.25rem 0.625rem;
+  border: 1px dashed #a39886;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  color: #6f675b;
+}
+
+.facts {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 1rem 0;
+  border-block: 1px solid rgba(55, 65, 47, 0.12);
+}
+
+.facts > div {
+  display: grid;
+  grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.facts dt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #6f675b;
+}
+
+.facts dt svg {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: none;
+  fill: none;
+  stroke: #8f6036;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.code {
+  font-weight: 400;
+  color: #6f675b;
+}
+
+.modes {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.modesLabel {
+  font-size: 0.875rem;
+  color: #6f675b;
+}
+
+.modes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modes li {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #f1ece4;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+}
+
+.mapCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3rem;
+  padding-inline: 1.4rem;
+  border-radius: 0.5rem;
+  background: #9a683c;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 140ms ease;
+}
+
+.mapCta:hover {
+  background: #8f6036;
+}
+
+.mapCta:focus-visible,
+.policyBtn:focus-visible,
+.mapFallbackLink:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+.policyBtn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #37412f;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(55, 65, 47, 0.35);
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+
+.policyBtn:hover {
+  text-decoration-color: #37412f;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: #6f675b;
+}
+
+@media (max-width: 30rem) {
+  .facts > div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .mapCta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mapCta,
+  .mapFrame {
+    transition: none;
+  }
+}
+
+.policyDialog {
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 3rem);
+  margin: auto;
+  padding: 0;
+  border: 1px solid rgba(55, 65, 47, 0.16);
+  border-radius: 0.85rem;
+  background: #ffffff;
+  color: #37412f;
+  box-shadow: 0 24px 60px rgba(24, 20, 14, 0.24);
+}
+
+.policyDialog::backdrop {
+  background: rgba(24, 20, 14, 0.52);
+}
+
+.dialogInner {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 3rem);
+}
+
+.dialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 1.4rem;
+  border-bottom: 1px solid rgba(55, 65, 47, 0.12);
+}
+
+.dialogTitle {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #37412f;
+}
+
+.dialogClose {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.2);
+  background: #f1ece4;
+  color: #37412f;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dialogClose:focus-visible {
+  outline: 2px solid #37412f;
+  outline-offset: 2px;
+}
+
+.dialogBody {
+  padding: 1.25rem 1.4rem 1.4rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dialogLead {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #37412f;
+}
+
+.policyList {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.policyRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.55rem;
+  background: #f1ece4;
+  border: 1px solid rgba(55, 65, 47, 0.08);
+}
+
+.policyRow dt {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a8173;
+}
+
+.policyRow dd {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #37412f;
+}
+
+.dialogNote {
+  margin: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(55, 65, 47, 0.1);
+  font-size: 0.8rem;
+  line-height: 1.48;
+  color: #8a8173;
+}

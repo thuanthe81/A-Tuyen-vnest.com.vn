@@ -1,0 +1,138 @@
+PASS @1440 vi no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @1440 vi "Xem tất cả nơi ở →": no underline, arrow kept, #kham-pha — Xem tất cả nơi ở →
+PASS @1440 vi CTA hover: copper, still no underline — rgb(143, 96, 54)
+PASS @1440 vi CTA keyboard focus keeps a visible outline — solid 2px
+PASS @1440 vi CTA still scrolls to the stays — top=80
+PASS @1440 vi bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @1440 vi bare: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1440 vi pepper-house: property names are links without underline — Pepper House
+PASS @1440 vi pepper-house: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1440 vi the-nang: property names are links without underline — The Nắng Suites
+PASS @1440 vi the-nang: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1440 vi property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @1440 vi preview stays inside the stage, clear of the rows and heading, pointer-transparent
+PASS @1440 vi preview card has its soft shadow — rgba(24, 20, 14, 0.06) 0px 1px 2px 0px, rgba(24, 20, 14, 0.3
+PASS @1440 vi no unexpected layout shift (CLS without input) — 0.0019
+PASS @1440 vi no horizontal overflow
+PASS @1440 vi no console/hydration errors
+PASS @1440 en no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @1440 en "See all stays →": no underline, arrow kept, #kham-pha — See all stays →
+PASS @1440 en CTA hover: copper, still no underline — rgb(143, 96, 54)
+PASS @1440 en CTA keyboard focus keeps a visible outline — solid 2px
+PASS @1440 en CTA still scrolls to the stays — top=80
+PASS @1440 en bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @1440 en bare: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1440 en pepper-house: property names are links without underline — Pepper House
+PASS @1440 en pepper-house: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1440 en the-nang: property names are links without underline — The Nắng Suites
+PASS @1440 en the-nang: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1440 en property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @1440 en preview stays inside the stage, clear of the rows and heading, pointer-transparent
+PASS @1440 en preview card has its soft shadow — rgba(24, 20, 14, 0.06) 0px 1px 2px 0px, rgba(24, 20, 14, 0.3
+PASS @1440 en no unexpected layout shift (CLS without input) — 0.0019
+PASS @1440 en no horizontal overflow
+PASS @1440 en no console/hydration errors
+PASS @1024 vi no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @1024 vi "Xem tất cả nơi ở →": no underline, arrow kept, #kham-pha — Xem tất cả nơi ở →
+PASS @1024 vi CTA hover: copper, still no underline — rgb(143, 96, 54)
+PASS @1024 vi CTA keyboard focus keeps a visible outline — solid 2px
+PASS @1024 vi CTA still scrolls to the stays — top=80
+PASS @1024 vi bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @1024 vi bare: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1024 vi pepper-house: property names are links without underline — Pepper House
+PASS @1024 vi pepper-house: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1024 vi the-nang: property names are links without underline — The Nắng Suites
+PASS @1024 vi the-nang: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1024 vi property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @1024 vi preview stays inside the stage, clear of the rows and heading, pointer-transparent
+PASS @1024 vi preview card has its soft shadow — rgba(24, 20, 14, 0.06) 0px 1px 2px 0px, rgba(24, 20, 14, 0.3
+PASS @1024 vi no unexpected layout shift (CLS without input) — 0.0038
+PASS @1024 vi no horizontal overflow
+PASS @1024 vi no console/hydration errors
+PASS @1024 en no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @1024 en "See all stays →": no underline, arrow kept, #kham-pha — See all stays →
+PASS @1024 en CTA hover: copper, still no underline — rgb(143, 96, 54)
+PASS @1024 en CTA keyboard focus keeps a visible outline — solid 2px
+PASS @1024 en CTA still scrolls to the stays — top=80
+PASS @1024 en bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @1024 en bare: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1024 en pepper-house: property names are links without underline — Pepper House
+PASS @1024 en pepper-house: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1024 en the-nang: property names are links without underline — The Nắng Suites
+PASS @1024 en the-nang: property hover turns copper, no underline — rgb(143, 96, 54)
+PASS @1024 en property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @1024 en preview stays inside the stage, clear of the rows and heading, pointer-transparent
+PASS @1024 en preview card has its soft shadow — rgba(24, 20, 14, 0.06) 0px 1px 2px 0px, rgba(24, 20, 14, 0.3
+PASS @1024 en no unexpected layout shift (CLS without input) — 0.0038
+PASS @1024 en no horizontal overflow
+PASS @1024 en no console/hydration errors
+PASS @768 vi no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @768 vi "Xem tất cả nơi ở →": no underline, arrow kept, #kham-pha — Xem tất cả nơi ở →
+PASS @768 vi CTA keyboard focus keeps a visible outline — solid 2px
+PASS @768 vi CTA still scrolls to the stays — top=80
+PASS @768 vi bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @768 vi pepper-house: property names are links without underline — Pepper House
+PASS @768 vi the-nang: property names are links without underline — The Nắng Suites
+PASS @768 vi property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @768 vi no unexpected layout shift (CLS without input) — 0.0046
+PASS @768 vi no horizontal overflow
+PASS @768 vi no console/hydration errors
+PASS @768 en no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @768 en "See all stays →": no underline, arrow kept, #kham-pha — See all stays →
+PASS @768 en CTA keyboard focus keeps a visible outline — solid 2px
+PASS @768 en CTA still scrolls to the stays — top=80
+PASS @768 en bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @768 en pepper-house: property names are links without underline — Pepper House
+PASS @768 en the-nang: property names are links without underline — The Nắng Suites
+PASS @768 en property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @768 en no unexpected layout shift (CLS without input) — 0.0046
+PASS @768 en no horizontal overflow
+PASS @768 en no console/hydration errors
+PASS @390 vi no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @390 vi "Xem tất cả nơi ở →": no underline, arrow kept, #kham-pha — Xem tất cả nơi ở →
+PASS @390 vi CTA keyboard focus keeps a visible outline — solid 2px
+PASS @390 vi CTA still scrolls to the stays — top=80
+PASS @390 vi bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @390 vi pepper-house: property names are links without underline — Pepper House
+PASS @390 vi the-nang: property names are links without underline — The Nắng Suites
+PASS @390 vi property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @390 vi no unexpected layout shift (CLS without input) — 0.0050
+PASS @390 vi no horizontal overflow
+PASS @390 vi no console/hydration errors
+PASS @390 en no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @390 en "See all stays →": no underline, arrow kept, #kham-pha — See all stays →
+PASS @390 en CTA keyboard focus keeps a visible outline — solid 2px
+PASS @390 en CTA still scrolls to the stays — top=80
+PASS @390 en bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @390 en pepper-house: property names are links without underline — Pepper House
+PASS @390 en the-nang: property names are links without underline — The Nắng Suites
+PASS @390 en property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @390 en no unexpected layout shift (CLS without input) — 0.0050
+PASS @390 en no horizontal overflow
+PASS @390 en no console/hydration errors
+PASS @375 vi no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @375 vi "Xem tất cả nơi ở →": no underline, arrow kept, #kham-pha — Xem tất cả nơi ở →
+PASS @375 vi CTA keyboard focus keeps a visible outline — solid 2px
+PASS @375 vi CTA still scrolls to the stays — top=80
+PASS @375 vi bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @375 vi pepper-house: property names are links without underline — Pepper House
+PASS @375 vi the-nang: property names are links without underline — The Nắng Suites
+PASS @375 vi property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @375 vi no unexpected layout shift (CLS without input) — 0.0052
+PASS @375 vi no horizontal overflow
+PASS @375 vi no console/hydration errors
+PASS @375 en no "Đang hiển thị tất cả nơi ở" (or English) status — {"exists":true,"live":"polite","text":"","page":false}
+PASS @375 en "See all stays →": no underline, arrow kept, #kham-pha — See all stays →
+PASS @375 en CTA keyboard focus keeps a visible outline — solid 2px
+PASS @375 en CTA still scrolls to the stays — top=80
+PASS @375 en bare: property names are links without underline — Bare Chic, Bare Hyphen, Bare Đa Kao, Bare Hàn
+PASS @375 en pepper-house: property names are links without underline — Pepper House
+PASS @375 en the-nang: property names are links without underline — The Nắng Suites
+PASS @375 en property link keyboard focus keeps a visible outline — {"href":"/dev/stays/the-nang-suites","outline":"solid 2px"}
+PASS @375 en no unexpected layout shift (CLS without input) — 0.0052
+PASS @375 en no horizontal overflow
+PASS @375 en no console/hydration errors
+PASS @1440 property link "Bare Hyphen" opens its page — http://localhost:3401/dev/stays/bare-hyphen
+PASS @390 property link "Bare Hyphen" opens its page — http://localhost:3401/dev/stays/bare-hyphen
+
+136/136 passed

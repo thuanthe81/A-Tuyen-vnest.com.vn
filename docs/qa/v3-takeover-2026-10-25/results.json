@@ -1,0 +1,1274 @@
+{
+  "base": "http://localhost:3402",
+  "date": "2026-10-25",
+  "note": "Headless Chrome device emulation; not a physical phone or a screen reader.",
+  "views": [
+    {
+      "view": "1440",
+      "checks": {
+        "A1 homepage BOOK NOW opens Booking Results with the stay": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2"
+        },
+        "A2 one room selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two"
+        },
+        "A3 add a room directly (no editor)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-two%2C"
+        },
+        "A4 the same physical room is locked for room 2": {
+          "pass": true,
+          "text": "Đã chọn cho Phòng 1",
+          "disabled": true
+        },
+        "A5 two different rooms, no duplicate": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-chic-two,bare-chic-three"
+        },
+        "A6 guest allocation per room (2 + 3)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,3&adults=5&prefs=bare-chic-two,bare-chic-three",
+          "bareChicOne": " |  |  |  |  |  | Xem chi tiết phòng | Đóng | ← Ảnh trước | Ảnh sau → | Đóng | Chọn phòng này | Chọn phòng"
+        },
+        "A7 reassign room 1's preference": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A8 refresh keeps dates, rooms, guests and preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A9 review sheet: honest notice and Tiếp tục to the booking step": {
+          "pass": true,
+          "open": true,
+          "text": "Kiểm tra lựa chọn | Đóng | NƠI LƯU TRÚ | Bare Chic · TP.HCM · Quận 1 | NGÀY LƯU TRÚ | 6 thg 11 – 8 thg 11 (2 đêm) | 2 × Hạng Studio (Bare Indochine, Bare Chic Three) · 4 khách | Phòng 1 · 2 khách | Bare Indochine | Bare Chic · Studio · 28 m² | Đổi phòng | Xoá | Phòng 2 · 2 khách | Bare Chic Three | Bare Chic · Studio · 28 m² | Đổi phòng | Xoá | + Thêm phòng vào yêu cầu | Giá và tình trạng phòng trống sẽ được xác nhận khi hệ thống đặt phòng được kết nối. Hiện chưa có phòng nào được giữ và chưa ph",
+          "cont": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-indochine%2Cbare-chic-three"
+        },
+        "A10 booking step restates allocation, books nothing": {
+          "pass": true,
+          "url": "/dev/demo/dat-phong"
+        },
+        "A11 browser Back returns to the same selection": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A12 remove a room": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-indochine"
+        },
+        "A13 same room type twice maps to two different physical units": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-hyphen&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-hyphen-one,bare-hyphen-two"
+        },
+        "A14 Booking Results: one footer, no overflow, no fake confirmation": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 1440,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "R1 all 22 rooms show the R3 type · area · 2 người lớn (visible text only, no double count)": {
+          "pass": true,
+          "cards": 22,
+          "wrong": []
+        },
+        "R2 occupancy is not enforced: 3 adults can still prefer Bare Chic One (no 'Tối đa')": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=3&prefs=bare-chic-one"
+        },
+        "P1 Studio shortcut stops at the 4 real Bare Chic rooms, each assigned once": {
+          "pass": true,
+          "steps": 3,
+          "prefs": [
+            "bare-chic-one",
+            "bare-chic-two",
+            "bare-chic-three",
+            "bare-indochine"
+          ],
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2,2,2&adults=8&prefs=bare-chic-one,bare-chic-two,bare-chic-three,bare-indochine"
+        },
+        "P2 shortcut label claims no availability count": {
+          "pass": true,
+          "label": "+ Chọn thêm 1 phòng hạng Studio khác"
+        },
+        "P3 summary: 4 × Hạng Studio on desktop; 4/4 selected on touch": {
+          "pass": true,
+          "summary": "4 × Hạng Studio | Bare Chic",
+          "bar": "4/4 phòng đã chọn"
+        },
+        "P4 an already-assigned Studio room cannot be picked again": {
+          "pass": true,
+          "bareChicTwo": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Xem chi tiết phòng",
+            "Đã chọn cho Phòng 2 [disabled]"
+          ]
+        },
+        "P5 refresh keeps the four distinct Studio preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2,2,2&adults=8&prefs=bare-chic-one,bare-chic-two,bare-chic-three,bare-indochine"
+        },
+        "Q1 property page: two distinct Studio rooms, then change room 2": {
+          "pass": true,
+          "twoStudio": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=4&rooms=2,2&prefs=bare-chic-two,bare-chic-three",
+          "changed": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=4&rooms=2,2&prefs=bare-chic-two,bare-indochine"
+        },
+        "Q2 property shortcut fills only the remaining real Studio rooms, no duplicates, no count": {
+          "pass": true,
+          "shortcutPresses": 2,
+          "prefs": [
+            "bare-chic-two",
+            "bare-indochine",
+            "bare-chic-one",
+            "bare-chic-three"
+          ]
+        },
+        "Q3 removing a room from the review drops only that room": {
+          "pass": true,
+          "removedPrefs": [
+            "bare-chic-two",
+            "bare-indochine",
+            "bare-chic-one"
+          ]
+        },
+        "Q4 refresh keeps the property selection exactly": {
+          "pass": true,
+          "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=6&rooms=2,2,2&prefs=bare-chic-two,bare-indochine,bare-chic-one"
+        },
+        "U1 direct URLs answer 200 (no HTTP 500)": {
+          "pass": true,
+          "/dev/demo": 200,
+          "/dev/demo/tim-phong": 200,
+          "/dev/stays/bare-chic?view=demo": 200,
+          "/dev/stays/the-nang-suites": 200,
+          "/dev/demo/dat-phong": 200
+        },
+        "U2 homepage → The Nắng Suites by click, then Back to the homepage": {
+          "pass": true,
+          "nang": {
+            "path": "/dev/stays/the-nang-suites",
+            "h1": "The Nắng Suites",
+            "y": 0,
+            "footers": 1
+          },
+          "backHome": "/dev/demo"
+        },
+        "B1 homepage → Bare Chic opens at the top": {
+          "pass": true,
+          "url": "/dev/stays/bare-chic?view=demo&rooms=1&adults=2",
+          "y": 0
+        },
+        "B2 inline room gallery moves (next button)": {
+          "pass": true,
+          "before": "0",
+          "after": "1"
+        },
+        "B3 select 1 then 2 rooms on the property page; unit locked": {
+          "pass": true,
+          "c1": "1/1 phòng đã chọn",
+          "c2": "2/2 phòng đã chọn",
+          "lockB": "Đã chọn cho Phòng 1"
+        },
+        "B4 BOOK NOW review: no fake confirmation, Tiếp tục to the booking step": {
+          "pass": true,
+          "open": true,
+          "text": "Yêu cầu đặt phòng · Bare Chic | Đóng | NƠI Ở | Bare Chic | NGÀY LƯU TRÚ | 6 thg 11 – 8 thg 11 (2 đêm) | SỐ LƯỢNG | 2/2 phòng · 4 khách | PHÒNG 1 · 2 KHÁCH | Bare Chic Two · Studio · 28 m² | Đổi phòng | Xoá | PHÒNG 2 · 2 KHÁCH | Bare Chic Three · Studio · 28 m² | Đổi phòng | Xoá | Đặt phòng trực tuyến chưa được kết nối. Chưa có phòng nào được giữ và chưa phát sinh thanh toán; phòng trống và giá sẽ được xác nhận khi hệ thống đặt phòng của VNest được kết nối. | Quay lại chỉnh sửa | Tiếp tục",
+          "cont": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-two%2Cbare-chic-three",
+          "fake": false
+        },
+        "B5 Escape closes the review": {
+          "pass": true
+        },
+        "B6 refresh keeps the property selection (and hydrates cleanly, see console)": {
+          "pass": true,
+          "afterReload": "2/2 phòng đã chọn"
+        },
+        "B7 booking step → property page keeps 1 room · 2 guests and the preference": {
+          "pass": true,
+          "url": "?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two",
+          "summary": "1/1 PHÒNG ĐÃ CHỌN · 2 KHÁCH Bare Chic Two + Thêm phòng BOOK NOW"
+        },
+        "PR1 every Bare Chic room card shows its price region; no amount without an approved rate": {
+          "pass": true,
+          "prices": [
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày"
+          ]
+        },
+        "PR2 desktop: price leads at rest, hover and focus fill the action; price stays visible; no width jump": {
+          "pass": true,
+          "rest": {
+            "bg": "rgba(0, 0, 0, 0)",
+            "w": 135,
+            "price": "Xem giá theo ngày",
+            "priceVisible": true,
+            "described": true,
+            "full": false
+          },
+          "hover": {
+            "bg": "rgb(154, 104, 60)",
+            "w": 135,
+            "price": "Xem giá theo ngày",
+            "priceVisible": true,
+            "described": true,
+            "full": false
+          },
+          "focus": {
+            "bg": "rgb(154, 104, 60)",
+            "w": 135,
+            "price": "Xem giá theo ngày",
+            "priceVisible": true,
+            "described": true,
+            "full": false
+          }
+        },
+        "L bare-chic: map + address, airport, distance, drive time, workbook transport, Google Maps (new tab), policies; layout": {
+          "pass": true,
+          "dd": [
+            "Tân Sơn Nhất (SGN)",
+            "khoảng 9,5 km",
+            "khoảng 30 phút bằng ô tô"
+          ],
+          "modes": [
+            "Grab",
+            "Đi bộ",
+            "Xe bus"
+          ],
+          "cta": "_blank",
+          "policy": true,
+          "base": true,
+          "sideBySide": true,
+          "mapFirst": false,
+          "heroLink": true,
+          "cityNotesAfter": true
+        },
+        "L the-nang-suites: map + address, airport, distance, drive time, workbook transport, Google Maps (new tab), policies; layout": {
+          "pass": true,
+          "dd": [
+            "Đà Nẵng (DAD)",
+            "khoảng 5,9 km",
+            "khoảng 15 phút bằng ô tô"
+          ],
+          "modes": [
+            "Grab",
+            "Đi bộ",
+            "Xe bus"
+          ],
+          "cta": "_blank",
+          "policy": true,
+          "base": true,
+          "sideBySide": true,
+          "mapFirst": false,
+          "heroLink": true,
+          "cityNotesAfter": true
+        },
+        "P bare-chic: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 1440,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "P bare-chic: Google Maps link is this property's": {
+          "pass": true,
+          "map": "https://share.google/fskgZreXVjowaoQCO"
+        },
+        "P bare-chic: related properties exclude this one (5 shown)": {
+          "pass": true,
+          "related": [
+            "Bare Hyphen",
+            "Bare Đa Kao",
+            "Bare Hàn",
+            "The Nắng Suites",
+            "Pepper House"
+          ],
+          "h1": "Bare Chic"
+        },
+        "P bare-chic: policy dialog shows topics only (no values or promises), Escape returns focus": {
+          "pass": true,
+          "text": "Chính sách đặt phòng · Bare Chic\nĐóng\n\nVNest chưa xác nhận chính sách áp dụng cho Bare Chic. Các mục dưới đây sẽ được cập nhật khi có thông tin chính thức.\n\nGIỜ NHẬN PHÒNG & TRẢ PHÒNG\nChờ VNest xác nhận\nHỦY, HOÀN TIỀN & ĐỔI NGÀY\nChờ VNest xác nhận\nTHANH TOÁN & TIỀN CỌC\nChờ VNest xác nhận\nQUY ĐỊNH LƯ",
+          "focusBack": "open-policy-dialog"
+        },
+        "P bare-chic: footer's last link not covered by a fixed bar": {
+          "pass": true,
+          "cover": false
+        },
+        "P the-nang-suites: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 1440,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "P the-nang-suites: Google Maps link is this property's": {
+          "pass": true,
+          "map": "https://share.google/OZaB9ncAnVW8ijALJ"
+        },
+        "P the-nang-suites: related properties exclude this one (5 shown)": {
+          "pass": true,
+          "related": [
+            "Bare Chic",
+            "Bare Hyphen",
+            "Bare Đa Kao",
+            "Bare Hàn",
+            "Pepper House"
+          ],
+          "h1": "The Nắng Suites"
+        },
+        "P the-nang-suites: policy dialog shows topics only (no values or promises), Escape returns focus": {
+          "pass": true,
+          "text": "Chính sách đặt phòng · The Nắng Suites\nĐóng\n\nVNest chưa xác nhận chính sách áp dụng cho The Nắng Suites. Các mục dưới đây sẽ được cập nhật khi có thông tin chính thức.\n\nGIỜ NHẬN PHÒNG & TRẢ PHÒNG\nChờ VNest xác nhận\nHỦY, HOÀN TIỀN & ĐỔI NGÀY\nChờ VNest xác nhận\nTHANH TOÁN & TIỀN CỌC\nChờ VNest xác nhận",
+          "focusBack": "open-policy-dialog"
+        },
+        "P the-nang-suites: footer's last link not covered by a fixed bar": {
+          "pass": true,
+          "cover": false
+        },
+        "S1 one shared detail region follows the chosen card": {
+          "pass": true,
+          "label": "Phát triển dự án (Tư vấn mô hình)",
+          "regions": 1,
+          "expanded": [
+            "tu-van-mo-hinh"
+          ],
+          "scope": true
+        },
+        "S2 CTA scrolls to Contact, keeps the service, places focus": {
+          "pass": true,
+          "top": 80,
+          "chip": "tu-van-mo-hinh",
+          "focus": "name",
+          "url": "?dich-vu=tu-van-mo-hinh#lien-he"
+        },
+        "S3 contact fields: name, phone/email, service, asset type (optional), notes (optional)": {
+          "pass": true,
+          "fields": [
+            "Dịch vụ quan tâm",
+            "Họ tên *",
+            "Số điện thoại hoặc email *",
+            "Loại tài sản (không bắt buộc)",
+            "Nội dung trao đổi (không bắt buộc)"
+          ]
+        },
+        "S4 empty submit: accessible errors, focus on the first": {
+          "pass": true,
+          "invalid": [
+            "name",
+            "reach"
+          ],
+          "described": true,
+          "focus": "name",
+          "status": "Vui lòng kiểm tra các ô được đánh dấu."
+        },
+        "S5 valid submit sends nothing and says so; input kept": {
+          "pass": true,
+          "status": "Chưa gửi. Thông tin hợp lệ, nhưng biểu mẫu chưa được kết nối: VNest chưa xác nhận kênh nhận yêu cầu và cách xử lý dữ liệu, nên không có thông tin nào được gửi đi.",
+          "invalid": 0,
+          "name": "Nguyễn An"
+        },
+        "S6 a service link or refresh keeps the service (?dich-vu=)": {
+          "pass": true,
+          "card": "true",
+          "chip": "nhuong-quyen"
+        },
+        "S7 FAQ: six questions, one open at a time": {
+          "pass": true,
+          "count": 6,
+          "open": 1,
+          "third": true
+        },
+        "S8 FAQ opens with the keyboard": {
+          "pass": true
+        },
+        "S9 footer: internal links resolve; only the official hotline, email and Facebook are linked (no Instagram/TikTok)": {
+          "pass": true,
+          "links": 10,
+          "broken": [],
+          "channels": [
+            "tel:+84906988261",
+            "mailto:hello@vnest.com.vn",
+            "https://www.facebook.com/vnest.com.vn [new tab]"
+          ]
+        },
+        "F1 footer: no 'Lưu trú' column; Contact is the focal area (≈ half width on desktop, full on phones); large hotline": {
+          "pass": true,
+          "headings": [
+            "Bắt đầu một cuộc trò chuyện."
+          ],
+          "luuTru": false,
+          "contactShare": 44,
+          "phoneSize": 34
+        },
+        "S10 homepage: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 1440,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "BR hover previews without selecting": {
+          "pass": true,
+          "prev": [
+            {
+              "sel": "true"
+            },
+            {
+              "sel": "false",
+              "preview": "true"
+            },
+            {
+              "sel": "false"
+            }
+          ]
+        },
+        "C CTA fills use the text-safe copper (white text ≥ 4.5:1)": {
+          "pass": true,
+          "service": "rgb(154, 104, 60)"
+        }
+      }
+    },
+    {
+      "view": "768",
+      "checks": {
+        "A1 homepage BOOK NOW opens Booking Results with the stay": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2"
+        },
+        "A2 one room selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two"
+        },
+        "A3 add a room directly (no editor)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-two%2C"
+        },
+        "A4 the same physical room is locked for room 2": {
+          "pass": true,
+          "text": "Đã chọn cho Phòng 1",
+          "disabled": true
+        },
+        "A5 two different rooms, no duplicate": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-chic-two,bare-chic-three"
+        },
+        "A6 guest allocation per room (2 + 3)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,3&adults=5&prefs=bare-chic-two,bare-chic-three",
+          "bareChicOne": " |  |  |  |  |  | Xem chi tiết phòng | Đóng | ← Ảnh trước | Ảnh sau → | Đóng | Chọn phòng này | Chọn phòng"
+        },
+        "A7 reassign room 1's preference": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A8 refresh keeps dates, rooms, guests and preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A9 review sheet: honest notice and Tiếp tục to the booking step": {
+          "pass": true,
+          "open": true,
+          "text": "Kiểm tra lựa chọn | Đóng | NƠI LƯU TRÚ | Bare Chic · TP.HCM · Quận 1 | NGÀY LƯU TRÚ | 6 thg 11 – 8 thg 11 (2 đêm) | 2 × Hạng Studio (Bare Indochine, Bare Chic Three) · 4 khách | Phòng 1 · 2 khách | Bare Indochine | Bare Chic · Studio · 28 m² | Đổi phòng | Xoá | Phòng 2 · 2 khách | Bare Chic Three | Bare Chic · Studio · 28 m² | Đổi phòng | Xoá | + Thêm phòng vào yêu cầu | Giá và tình trạng phòng trống sẽ được xác nhận khi hệ thống đặt phòng được kết nối. Hiện chưa có phòng nào được giữ và chưa ph",
+          "cont": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-indochine%2Cbare-chic-three"
+        },
+        "A10 booking step restates allocation, books nothing": {
+          "pass": true,
+          "url": "/dev/demo/dat-phong"
+        },
+        "A11 browser Back returns to the same selection": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A12 remove a room": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-indochine"
+        },
+        "A13 same room type twice maps to two different physical units": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-hyphen&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-hyphen-one,bare-hyphen-two"
+        },
+        "A14 Booking Results: one footer, no overflow, no fake confirmation": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 768,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "R1 all 22 rooms show the R3 type · area · 2 người lớn (visible text only, no double count)": {
+          "pass": true,
+          "cards": 22,
+          "wrong": []
+        },
+        "R2 occupancy is not enforced: 3 adults can still prefer Bare Chic One (no 'Tối đa')": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=3&prefs=bare-chic-one"
+        },
+        "P1 Studio shortcut stops at the 4 real Bare Chic rooms, each assigned once": {
+          "pass": true,
+          "steps": 3,
+          "prefs": [
+            "bare-chic-one",
+            "bare-chic-two",
+            "bare-chic-three",
+            "bare-indochine"
+          ],
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2,2,2&adults=8&prefs=bare-chic-one,bare-chic-two,bare-chic-three,bare-indochine"
+        },
+        "P2 shortcut label claims no availability count": {
+          "pass": true,
+          "label": "+ Chọn thêm 1 phòng hạng Studio khác"
+        },
+        "P3 summary: 4 × Hạng Studio on desktop; 4/4 selected on touch": {
+          "pass": true,
+          "summary": "",
+          "bar": "4/4 phòng đã chọn"
+        },
+        "P4 an already-assigned Studio room cannot be picked again": {
+          "pass": true,
+          "bareChicTwo": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Xem chi tiết phòng",
+            "Đã chọn cho Phòng 2 [disabled]"
+          ]
+        },
+        "P5 refresh keeps the four distinct Studio preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2,2,2&adults=8&prefs=bare-chic-one,bare-chic-two,bare-chic-three,bare-indochine"
+        },
+        "Q1 property page: two distinct Studio rooms, then change room 2": {
+          "pass": true,
+          "twoStudio": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=4&rooms=2,2&prefs=bare-chic-two,bare-chic-three",
+          "changed": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=4&rooms=2,2&prefs=bare-chic-two,bare-indochine"
+        },
+        "Q2 property shortcut fills only the remaining real Studio rooms, no duplicates, no count": {
+          "pass": true,
+          "shortcutPresses": 2,
+          "prefs": [
+            "bare-chic-two",
+            "bare-indochine",
+            "bare-chic-one",
+            "bare-chic-three"
+          ]
+        },
+        "Q3 removing a room from the review drops only that room": {
+          "pass": true,
+          "removedPrefs": [
+            "bare-chic-two",
+            "bare-indochine",
+            "bare-chic-one"
+          ]
+        },
+        "Q4 refresh keeps the property selection exactly": {
+          "pass": true,
+          "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=6&rooms=2,2,2&prefs=bare-chic-two,bare-indochine,bare-chic-one"
+        },
+        "U1 direct URLs answer 200 (no HTTP 500)": {
+          "pass": true,
+          "/dev/demo": 200,
+          "/dev/demo/tim-phong": 200,
+          "/dev/stays/bare-chic?view=demo": 200,
+          "/dev/stays/the-nang-suites": 200,
+          "/dev/demo/dat-phong": 200
+        },
+        "U2 homepage → The Nắng Suites by click, then Back to the homepage": {
+          "pass": true,
+          "nang": {
+            "path": "/dev/stays/the-nang-suites",
+            "h1": "The Nắng Suites",
+            "y": 0,
+            "footers": 1
+          },
+          "backHome": "/dev/demo"
+        },
+        "B1 homepage → Bare Chic opens at the top": {
+          "pass": true,
+          "url": "/dev/stays/bare-chic?view=demo&rooms=1&adults=2",
+          "y": 0
+        },
+        "B2 inline room gallery moves (swipe)": {
+          "pass": true,
+          "before": "0",
+          "after": "1"
+        },
+        "B3 select 1 then 2 rooms on the property page; unit locked": {
+          "pass": true,
+          "c1": "1/1 phòng đã chọn",
+          "c2": "2/2 phòng đã chọn",
+          "lockB": "Đã chọn cho Phòng 1"
+        },
+        "B4 BOOK NOW review: no fake confirmation, Tiếp tục to the booking step": {
+          "pass": true,
+          "open": true,
+          "text": "Yêu cầu đặt phòng · Bare Chic | Đóng | NƠI Ở | Bare Chic | NGÀY LƯU TRÚ | 6 thg 11 – 8 thg 11 (2 đêm) | SỐ LƯỢNG | 2/2 phòng · 4 khách | PHÒNG 1 · 2 KHÁCH | Bare Chic Two · Studio · 28 m² | Đổi phòng | Xoá | PHÒNG 2 · 2 KHÁCH | Bare Chic Three · Studio · 28 m² | Đổi phòng | Xoá | Đặt phòng trực tuyến chưa được kết nối. Chưa có phòng nào được giữ và chưa phát sinh thanh toán; phòng trống và giá sẽ được xác nhận khi hệ thống đặt phòng của VNest được kết nối. | Quay lại chỉnh sửa | Tiếp tục",
+          "cont": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-two%2Cbare-chic-three",
+          "fake": false
+        },
+        "B5 Escape closes the review": {
+          "pass": true
+        },
+        "B6 refresh keeps the property selection (and hydrates cleanly, see console)": {
+          "pass": true,
+          "afterReload": "2/2 phòng đã chọn"
+        },
+        "B7 booking step → property page keeps 1 room · 2 guests and the preference": {
+          "pass": true,
+          "url": "?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two",
+          "summary": "1/1 PHÒNG ĐÃ CHỌN · 2 KHÁCH Bare Chic Two + Thêm phòng BOOK NOW"
+        },
+        "PR1 every Bare Chic room card shows its price region; no amount without an approved rate": {
+          "pass": true,
+          "prices": [
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày"
+          ]
+        },
+        "PR2 touch: price on its own line, full-width filled 'Chọn phòng' always": {
+          "pass": true,
+          "bg": "rgb(154, 104, 60)",
+          "w": 666,
+          "price": "Xem giá theo ngày",
+          "priceVisible": true,
+          "described": true,
+          "full": true
+        },
+        "L bare-chic: map + address, airport, distance, drive time, workbook transport, Google Maps (new tab), policies; layout": {
+          "pass": true,
+          "dd": [
+            "Tân Sơn Nhất (SGN)",
+            "khoảng 9,5 km",
+            "khoảng 30 phút bằng ô tô"
+          ],
+          "modes": [
+            "Grab",
+            "Đi bộ",
+            "Xe bus"
+          ],
+          "cta": "_blank",
+          "policy": true,
+          "base": true,
+          "sideBySide": false,
+          "mapFirst": true,
+          "heroLink": true,
+          "cityNotesAfter": true
+        },
+        "L the-nang-suites: map + address, airport, distance, drive time, workbook transport, Google Maps (new tab), policies; layout": {
+          "pass": true,
+          "dd": [
+            "Đà Nẵng (DAD)",
+            "khoảng 5,9 km",
+            "khoảng 15 phút bằng ô tô"
+          ],
+          "modes": [
+            "Grab",
+            "Đi bộ",
+            "Xe bus"
+          ],
+          "cta": "_blank",
+          "policy": true,
+          "base": true,
+          "sideBySide": false,
+          "mapFirst": true,
+          "heroLink": true,
+          "cityNotesAfter": true
+        },
+        "P bare-chic: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 768,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "P bare-chic: Google Maps link is this property's": {
+          "pass": true,
+          "map": "https://share.google/fskgZreXVjowaoQCO"
+        },
+        "P bare-chic: related properties exclude this one (5 shown)": {
+          "pass": true,
+          "related": [
+            "Bare Hyphen",
+            "Bare Đa Kao",
+            "Bare Hàn",
+            "The Nắng Suites",
+            "Pepper House"
+          ],
+          "h1": "Bare Chic"
+        },
+        "P bare-chic: policy dialog shows topics only (no values or promises), Escape returns focus": {
+          "pass": true,
+          "text": "Chính sách đặt phòng · Bare Chic\nĐóng\n\nVNest chưa xác nhận chính sách áp dụng cho Bare Chic. Các mục dưới đây sẽ được cập nhật khi có thông tin chính thức.\n\nGIỜ NHẬN PHÒNG & TRẢ PHÒNG\nChờ VNest xác nhận\nHỦY, HOÀN TIỀN & ĐỔI NGÀY\nChờ VNest xác nhận\nTHANH TOÁN & TIỀN CỌC\nChờ VNest xác nhận\nQUY ĐỊNH LƯ",
+          "focusBack": "open-policy-dialog"
+        },
+        "P bare-chic: footer's last link not covered by a fixed bar": {
+          "pass": true,
+          "cover": false
+        },
+        "P the-nang-suites: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 768,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "P the-nang-suites: Google Maps link is this property's": {
+          "pass": true,
+          "map": "https://share.google/OZaB9ncAnVW8ijALJ"
+        },
+        "P the-nang-suites: related properties exclude this one (5 shown)": {
+          "pass": true,
+          "related": [
+            "Bare Chic",
+            "Bare Hyphen",
+            "Bare Đa Kao",
+            "Bare Hàn",
+            "Pepper House"
+          ],
+          "h1": "The Nắng Suites"
+        },
+        "P the-nang-suites: policy dialog shows topics only (no values or promises), Escape returns focus": {
+          "pass": true,
+          "text": "Chính sách đặt phòng · The Nắng Suites\nĐóng\n\nVNest chưa xác nhận chính sách áp dụng cho The Nắng Suites. Các mục dưới đây sẽ được cập nhật khi có thông tin chính thức.\n\nGIỜ NHẬN PHÒNG & TRẢ PHÒNG\nChờ VNest xác nhận\nHỦY, HOÀN TIỀN & ĐỔI NGÀY\nChờ VNest xác nhận\nTHANH TOÁN & TIỀN CỌC\nChờ VNest xác nhận",
+          "focusBack": "open-policy-dialog"
+        },
+        "P the-nang-suites: footer's last link not covered by a fixed bar": {
+          "pass": true,
+          "cover": false
+        },
+        "S1 one shared detail region follows the chosen card": {
+          "pass": true,
+          "label": "Phát triển dự án (Tư vấn mô hình)",
+          "regions": 1,
+          "expanded": [
+            "tu-van-mo-hinh"
+          ],
+          "scope": true
+        },
+        "S2 CTA scrolls to Contact, keeps the service, places focus": {
+          "pass": true,
+          "top": 80,
+          "chip": "tu-van-mo-hinh",
+          "focus": "lien-he-title",
+          "url": "?dich-vu=tu-van-mo-hinh#lien-he"
+        },
+        "S3 contact fields: name, phone/email, service, asset type (optional), notes (optional)": {
+          "pass": true,
+          "fields": [
+            "Dịch vụ quan tâm",
+            "Họ tên *",
+            "Số điện thoại hoặc email *",
+            "Loại tài sản (không bắt buộc)",
+            "Nội dung trao đổi (không bắt buộc)"
+          ]
+        },
+        "S4 empty submit: accessible errors, focus on the first": {
+          "pass": true,
+          "invalid": [
+            "name",
+            "reach"
+          ],
+          "described": true,
+          "focus": "name",
+          "status": "Vui lòng kiểm tra các ô được đánh dấu."
+        },
+        "S5 valid submit sends nothing and says so; input kept": {
+          "pass": true,
+          "status": "Chưa gửi. Thông tin hợp lệ, nhưng biểu mẫu chưa được kết nối: VNest chưa xác nhận kênh nhận yêu cầu và cách xử lý dữ liệu, nên không có thông tin nào được gửi đi.",
+          "invalid": 0,
+          "name": "Nguyễn An"
+        },
+        "S6 a service link or refresh keeps the service (?dich-vu=)": {
+          "pass": true,
+          "card": "true",
+          "chip": "nhuong-quyen"
+        },
+        "S7 FAQ: six questions, one open at a time": {
+          "pass": true,
+          "count": 6,
+          "open": 1,
+          "third": true
+        },
+        "S8 FAQ opens with the keyboard": {
+          "pass": true
+        },
+        "S9 footer: internal links resolve; only the official hotline, email and Facebook are linked (no Instagram/TikTok)": {
+          "pass": true,
+          "links": 10,
+          "broken": [],
+          "channels": [
+            "tel:+84906988261",
+            "mailto:hello@vnest.com.vn",
+            "https://www.facebook.com/vnest.com.vn [new tab]"
+          ]
+        },
+        "F1 footer: no 'Lưu trú' column; Contact is the focal area (≈ half width on desktop, full on phones); large hotline": {
+          "pass": true,
+          "headings": [
+            "Bắt đầu một cuộc trò chuyện."
+          ],
+          "luuTru": false,
+          "contactShare": 94,
+          "phoneSize": 30.016
+        },
+        "S10 homepage: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 768,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "BR tap selects a brand": {
+          "pass": true
+        },
+        "C CTA fills use the text-safe copper (white text ≥ 4.5:1)": {
+          "pass": true,
+          "service": "rgb(154, 104, 60)"
+        }
+      }
+    },
+    {
+      "view": "390",
+      "checks": {
+        "A1 homepage BOOK NOW opens Booking Results with the stay": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2"
+        },
+        "A2 one room selected": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two"
+        },
+        "A3 add a room directly (no editor)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-two%2C"
+        },
+        "A4 the same physical room is locked for room 2": {
+          "pass": true,
+          "text": "Đã chọn cho Phòng 1",
+          "disabled": true
+        },
+        "A5 two different rooms, no duplicate": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-chic-two,bare-chic-three"
+        },
+        "A6 guest allocation per room (2 + 3)": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,3&adults=5&prefs=bare-chic-two,bare-chic-three",
+          "bareChicOne": " |  |  |  |  |  | Xem chi tiết phòng | Đóng | ← Ảnh trước | Ảnh sau → | Đóng | Chọn phòng này | Chọn phòng"
+        },
+        "A7 reassign room 1's preference": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A8 refresh keeps dates, rooms, guests and preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A9 review sheet: honest notice and Tiếp tục to the booking step": {
+          "pass": true,
+          "open": true,
+          "text": "Kiểm tra lựa chọn | Đóng | NƠI LƯU TRÚ | Bare Chic · TP.HCM · Quận 1 | NGÀY LƯU TRÚ | 6 thg 11 – 8 thg 11 (2 đêm) | 2 × Hạng Studio (Bare Indochine, Bare Chic Three) · 4 khách | Phòng 1 · 2 khách | Bare Indochine | Bare Chic · Studio · 28 m² | Đổi phòng | Xoá | Phòng 2 · 2 khách | Bare Chic Three | Bare Chic · Studio · 28 m² | Đổi phòng | Xoá | + Thêm phòng vào yêu cầu | Giá và tình trạng phòng trống sẽ được xác nhận khi hệ thống đặt phòng được kết nối. Hiện chưa có phòng nào được giữ và chưa ph",
+          "cont": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-indochine%2Cbare-chic-three"
+        },
+        "A10 booking step restates allocation, books nothing": {
+          "pass": true,
+          "url": "/dev/demo/dat-phong"
+        },
+        "A11 browser Back returns to the same selection": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-indochine,bare-chic-three"
+        },
+        "A12 remove a room": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-indochine"
+        },
+        "A13 same room type twice maps to two different physical units": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-hyphen&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2&adults=4&prefs=bare-hyphen-one,bare-hyphen-two"
+        },
+        "A14 Booking Results: one footer, no overflow, no fake confirmation": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 390,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "R1 all 22 rooms show the R3 type · area · 2 người lớn (visible text only, no double count)": {
+          "pass": true,
+          "cards": 22,
+          "wrong": []
+        },
+        "R2 occupancy is not enforced: 3 adults can still prefer Bare Chic One (no 'Tối đa')": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=all&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=3&prefs=bare-chic-one"
+        },
+        "P1 Studio shortcut stops at the 4 real Bare Chic rooms, each assigned once": {
+          "pass": true,
+          "steps": 3,
+          "prefs": [
+            "bare-chic-one",
+            "bare-chic-two",
+            "bare-chic-three",
+            "bare-indochine"
+          ],
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2,2,2&adults=8&prefs=bare-chic-one,bare-chic-two,bare-chic-three,bare-indochine"
+        },
+        "P2 shortcut label claims no availability count": {
+          "pass": true,
+          "label": "+ Chọn thêm 1 phòng hạng Studio khác"
+        },
+        "P3 summary: 4 × Hạng Studio on desktop; 4/4 selected on touch": {
+          "pass": true,
+          "summary": "",
+          "bar": "4/4 phòng đã chọn"
+        },
+        "P4 an already-assigned Studio room cannot be picked again": {
+          "pass": true,
+          "bareChicTwo": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Xem chi tiết phòng",
+            "Đã chọn cho Phòng 2 [disabled]"
+          ]
+        },
+        "P5 refresh keeps the four distinct Studio preferences": {
+          "pass": true,
+          "url": "/dev/demo/tim-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2,2,2,2&adults=8&prefs=bare-chic-one,bare-chic-two,bare-chic-three,bare-indochine"
+        },
+        "Q1 property page: two distinct Studio rooms, then change room 2": {
+          "pass": true,
+          "twoStudio": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=4&rooms=2,2&prefs=bare-chic-two,bare-chic-three",
+          "changed": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=4&rooms=2,2&prefs=bare-chic-two,bare-indochine"
+        },
+        "Q2 property shortcut fills only the remaining real Studio rooms, no duplicates, no count": {
+          "pass": true,
+          "shortcutPresses": 2,
+          "prefs": [
+            "bare-chic-two",
+            "bare-indochine",
+            "bare-chic-one",
+            "bare-chic-three"
+          ]
+        },
+        "Q3 removing a room from the review drops only that room": {
+          "pass": true,
+          "removedPrefs": [
+            "bare-chic-two",
+            "bare-indochine",
+            "bare-chic-one"
+          ]
+        },
+        "Q4 refresh keeps the property selection exactly": {
+          "pass": true,
+          "url": "/dev/stays/bare-chic?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&adults=6&rooms=2,2,2&prefs=bare-chic-two,bare-indochine,bare-chic-one"
+        },
+        "U1 direct URLs answer 200 (no HTTP 500)": {
+          "pass": true,
+          "/dev/demo": 200,
+          "/dev/demo/tim-phong": 200,
+          "/dev/stays/bare-chic?view=demo": 200,
+          "/dev/stays/the-nang-suites": 200,
+          "/dev/demo/dat-phong": 200
+        },
+        "U2 homepage → The Nắng Suites by click, then Back to the homepage": {
+          "pass": true,
+          "nang": {
+            "path": "/dev/stays/the-nang-suites",
+            "h1": "The Nắng Suites",
+            "y": 0,
+            "footers": 1
+          },
+          "backHome": "/dev/demo"
+        },
+        "B1 homepage → Bare Chic opens at the top": {
+          "pass": true,
+          "url": "/dev/stays/bare-chic?view=demo&rooms=1&adults=2",
+          "y": 0
+        },
+        "B2 inline room gallery moves (swipe)": {
+          "pass": true,
+          "before": "0",
+          "after": "1"
+        },
+        "B3 select 1 then 2 rooms on the property page; unit locked": {
+          "pass": true,
+          "c1": "1/1 phòng đã chọn",
+          "c2": "2/2 phòng đã chọn",
+          "lockB": "Đã chọn cho Phòng 1"
+        },
+        "B4 BOOK NOW review: no fake confirmation, Tiếp tục to the booking step": {
+          "pass": true,
+          "open": true,
+          "text": "Yêu cầu đặt phòng · Bare Chic | Đóng | NƠI Ở | Bare Chic | NGÀY LƯU TRÚ | 6 thg 11 – 8 thg 11 (2 đêm) | SỐ LƯỢNG | 2/2 phòng · 4 khách | PHÒNG 1 · 2 KHÁCH | Bare Chic Two · Studio · 28 m² | Đổi phòng | Xoá | PHÒNG 2 · 2 KHÁCH | Bare Chic Three · Studio · 28 m² | Đổi phòng | Xoá | Đặt phòng trực tuyến chưa được kết nối. Chưa có phòng nào được giữ và chưa phát sinh thanh toán; phòng trống và giá sẽ được xác nhận khi hệ thống đặt phòng của VNest được kết nối. | Quay lại chỉnh sửa | Tiếp tục",
+          "cont": "/dev/demo/dat-phong?property=bare-chic&checkIn=2026-11-06&checkOut=2026-11-08&rooms=2%2C2&adults=4&prefs=bare-chic-two%2Cbare-chic-three",
+          "fake": false
+        },
+        "B5 Escape closes the review": {
+          "pass": true
+        },
+        "B6 refresh keeps the property selection (and hydrates cleanly, see console)": {
+          "pass": true,
+          "afterReload": "2/2 phòng đã chọn"
+        },
+        "B7 booking step → property page keeps 1 room · 2 guests and the preference": {
+          "pass": true,
+          "url": "?view=demo&checkIn=2026-11-06&checkOut=2026-11-08&rooms=1&adults=2&prefs=bare-chic-two",
+          "summary": "1/1 PHÒNG ĐÃ CHỌN · 2 KHÁCH Bare Chic Two + Thêm phòng BOOK NOW"
+        },
+        "PR1 every Bare Chic room card shows its price region; no amount without an approved rate": {
+          "pass": true,
+          "prices": [
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày",
+            "pending:Xem giá theo ngày"
+          ]
+        },
+        "PR2 touch: price on its own line, full-width filled 'Chọn phòng' always": {
+          "pass": true,
+          "bg": "rgb(154, 104, 60)",
+          "w": 312,
+          "price": "Xem giá theo ngày",
+          "priceVisible": true,
+          "described": true,
+          "full": true
+        },
+        "L bare-chic: map + address, airport, distance, drive time, workbook transport, Google Maps (new tab), policies; layout": {
+          "pass": true,
+          "dd": [
+            "Tân Sơn Nhất (SGN)",
+            "khoảng 9,5 km",
+            "khoảng 30 phút bằng ô tô"
+          ],
+          "modes": [
+            "Grab",
+            "Đi bộ",
+            "Xe bus"
+          ],
+          "cta": "_blank",
+          "policy": true,
+          "base": true,
+          "sideBySide": false,
+          "mapFirst": true,
+          "heroLink": true,
+          "cityNotesAfter": true
+        },
+        "L the-nang-suites: map + address, airport, distance, drive time, workbook transport, Google Maps (new tab), policies; layout": {
+          "pass": true,
+          "dd": [
+            "Đà Nẵng (DAD)",
+            "khoảng 5,9 km",
+            "khoảng 15 phút bằng ô tô"
+          ],
+          "modes": [
+            "Grab",
+            "Đi bộ",
+            "Xe bus"
+          ],
+          "cta": "_blank",
+          "policy": true,
+          "base": true,
+          "sideBySide": false,
+          "mapFirst": true,
+          "heroLink": true,
+          "cityNotesAfter": true
+        },
+        "P bare-chic: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 390,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "P bare-chic: Google Maps link is this property's": {
+          "pass": true,
+          "map": "https://share.google/fskgZreXVjowaoQCO"
+        },
+        "P bare-chic: related properties exclude this one (5 shown)": {
+          "pass": true,
+          "related": [
+            "Bare Hyphen",
+            "Bare Đa Kao",
+            "Bare Hàn",
+            "The Nắng Suites",
+            "Pepper House"
+          ],
+          "h1": "Bare Chic"
+        },
+        "P bare-chic: policy dialog shows topics only (no values or promises), Escape returns focus": {
+          "pass": true,
+          "text": "Chính sách đặt phòng · Bare Chic\nĐóng\n\nVNest chưa xác nhận chính sách áp dụng cho Bare Chic. Các mục dưới đây sẽ được cập nhật khi có thông tin chính thức.\n\nGIỜ NHẬN PHÒNG & TRẢ PHÒNG\nChờ VNest xác nhận\nHỦY, HOÀN TIỀN & ĐỔI NGÀY\nChờ VNest xác nhận\nTHANH TOÁN & TIỀN CỌC\nChờ VNest xác nhận\nQUY ĐỊNH LƯ",
+          "focusBack": "open-policy-dialog"
+        },
+        "P bare-chic: footer's last link not covered by a fixed bar": {
+          "pass": true,
+          "cover": false
+        },
+        "P the-nang-suites: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 390,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "P the-nang-suites: Google Maps link is this property's": {
+          "pass": true,
+          "map": "https://share.google/OZaB9ncAnVW8ijALJ"
+        },
+        "P the-nang-suites: related properties exclude this one (5 shown)": {
+          "pass": true,
+          "related": [
+            "Bare Chic",
+            "Bare Hyphen",
+            "Bare Đa Kao",
+            "Bare Hàn",
+            "Pepper House"
+          ],
+          "h1": "The Nắng Suites"
+        },
+        "P the-nang-suites: policy dialog shows topics only (no values or promises), Escape returns focus": {
+          "pass": true,
+          "text": "Chính sách đặt phòng · The Nắng Suites\nĐóng\n\nVNest chưa xác nhận chính sách áp dụng cho The Nắng Suites. Các mục dưới đây sẽ được cập nhật khi có thông tin chính thức.\n\nGIỜ NHẬN PHÒNG & TRẢ PHÒNG\nChờ VNest xác nhận\nHỦY, HOÀN TIỀN & ĐỔI NGÀY\nChờ VNest xác nhận\nTHANH TOÁN & TIỀN CỌC\nChờ VNest xác nhận",
+          "focusBack": "open-policy-dialog"
+        },
+        "P the-nang-suites: footer's last link not covered by a fixed bar": {
+          "pass": true,
+          "cover": false
+        },
+        "S1 one shared detail region follows the chosen card": {
+          "pass": true,
+          "label": "Phát triển dự án (Tư vấn mô hình)",
+          "regions": 1,
+          "expanded": [
+            "tu-van-mo-hinh"
+          ],
+          "scope": true
+        },
+        "S2 CTA scrolls to Contact, keeps the service, places focus": {
+          "pass": true,
+          "top": 80,
+          "chip": "tu-van-mo-hinh",
+          "focus": "lien-he-title",
+          "url": "?dich-vu=tu-van-mo-hinh#lien-he"
+        },
+        "S3 contact fields: name, phone/email, service, asset type (optional), notes (optional)": {
+          "pass": true,
+          "fields": [
+            "Dịch vụ quan tâm",
+            "Họ tên *",
+            "Số điện thoại hoặc email *",
+            "Loại tài sản (không bắt buộc)",
+            "Nội dung trao đổi (không bắt buộc)"
+          ]
+        },
+        "S4 empty submit: accessible errors, focus on the first": {
+          "pass": true,
+          "invalid": [
+            "name",
+            "reach"
+          ],
+          "described": true,
+          "focus": "name",
+          "status": "Vui lòng kiểm tra các ô được đánh dấu."
+        },
+        "S5 valid submit sends nothing and says so; input kept": {
+          "pass": true,
+          "status": "Chưa gửi. Thông tin hợp lệ, nhưng biểu mẫu chưa được kết nối: VNest chưa xác nhận kênh nhận yêu cầu và cách xử lý dữ liệu, nên không có thông tin nào được gửi đi.",
+          "invalid": 0,
+          "name": "Nguyễn An"
+        },
+        "S6 a service link or refresh keeps the service (?dich-vu=)": {
+          "pass": true,
+          "card": "true",
+          "chip": "nhuong-quyen"
+        },
+        "S7 FAQ: six questions, one open at a time": {
+          "pass": true,
+          "count": 6,
+          "open": 1,
+          "third": true
+        },
+        "S8 FAQ opens with the keyboard": {
+          "pass": true
+        },
+        "S9 footer: internal links resolve; only the official hotline, email and Facebook are linked (no Instagram/TikTok)": {
+          "pass": true,
+          "links": 10,
+          "broken": [],
+          "channels": [
+            "tel:+84906988261",
+            "mailto:hello@vnest.com.vn",
+            "https://www.facebook.com/vnest.com.vn [new tab]"
+          ]
+        },
+        "F1 footer: no 'Lưu trú' column; Contact is the focal area (≈ half width on desktop, full on phones); large hotline": {
+          "pass": true,
+          "headings": [
+            "Bắt đầu một cuộc trò chuyện."
+          ],
+          "luuTru": false,
+          "contactShare": 91,
+          "phoneSize": 26
+        },
+        "S10 homepage: one footer, no overflow, no broken images": {
+          "pass": true,
+          "overflowX": false,
+          "pageWidth": 390,
+          "brokenImages": [],
+          "footers": 1,
+          "fakeConfirm": false
+        },
+        "BR tap selects a brand": {
+          "pass": true
+        },
+        "C CTA fills use the text-safe copper (white text ≥ 4.5:1)": {
+          "pass": true,
+          "booking": "rgb(154, 104, 60)",
+          "service": "rgb(154, 104, 60)"
+        }
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "nonGetRequests": [],
+  "summary": {
+    "checks": 183,
+    "passed": 183,
+    "failed": [],
+    "consoleErrors": 0,
+    "nonGetRequests": 0
+  }
+}

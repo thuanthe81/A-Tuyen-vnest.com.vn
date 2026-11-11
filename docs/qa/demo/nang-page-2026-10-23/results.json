@@ -1,0 +1,460 @@
+{
+ "base": "http://localhost:3400",
+ "views": [
+  {
+   "view": "1440",
+   "steps": [
+    "menu: open",
+    "menu: open again",
+    "menu: Đóng",
+    "menu",
+    "menu link: Hợp tác cùng VNest",
+    "menu",
+    "menu link: Về VNest",
+    "menu",
+    "menu link: Liên hệ",
+    "menu",
+    "menu link: Khám phá nơi lưu trú",
+    "partner CTA",
+    "card: Bare Chic",
+    "gallery: photo 1",
+    "viewer: next",
+    "room: Xem ảnh phòng",
+    "viewer: Đóng",
+    "room: Xem chi tiết phòng",
+    "drawer: next photo",
+    "room: Xem chi tiết phòng (again)",
+    "drawer: Chọn ngày lưu trú",
+    "City Notes: Khám phá",
+    "City Notes: Xem tất cả",
+    "City Notes: Thu gọn",
+    "VNest mark"
+   ],
+   "start": {
+    "url": "/dev/demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0,
+    "h1": "Sáu nơi ở, hai thành phố",
+    "internal": [],
+    "questionIds": [],
+    "figures": [],
+    "dataSource": 0
+   },
+   "hero": {
+    "heightShare": 0.66,
+    "posterLoaded": true,
+    "video": false,
+    "barInHero": true,
+    "barBottomInFirstScreen": true
+   },
+   "stickyShown": true,
+   "stickyHiddenAtTop": true,
+   "menuOpen": true,
+   "menuFocusTrapped": true,
+   "menuClosedByEscape": true,
+   "menuFocusRestored": true,
+   "menuClosedByButton": true,
+   "sectionLinks": {
+    "Hợp tác cùng VNest": {
+     "closed": true,
+     "hash": "#hop-tac",
+     "top": 80
+    },
+    "Về VNest": {
+     "closed": true,
+     "hash": "#ve-vnest",
+     "top": 80
+    },
+    "Liên hệ": {
+     "closed": true,
+     "hash": "#lien-he",
+     "top": 454
+    },
+    "Khám phá nơi lưu trú": {
+     "closed": true,
+     "hash": "#kham-pha",
+     "top": 80
+    }
+   },
+   "partnerCta": {
+    "hash": "#lien-he",
+    "top": 454
+   },
+   "reachedBareChic": true,
+   "tabsAfterCard": 2,
+   "bareChic": {
+    "url": "/dev/stays/bare-chic?view=demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0,
+    "h1": "Bare Chic",
+    "internal": [],
+    "questionIds": [],
+    "figures": [],
+    "dataSource": 0
+   },
+   "content": {
+    "brand": true,
+    "address": "12/18 Nguyễn Thị Minh Khai Phường Sài Gòn, Hồ Chí Minh",
+    "mapHref": "https://share.google/fskgZreXVjowaoQCO",
+    "galleryLabel": "Ảnh các phòng của Bare Chic: 16 ảnh",
+    "roomButtons": [
+     "Xem ảnh phòng (3): Bare Chic One",
+     "Xem ảnh phòng (5): Bare Chic Two",
+     "Xem ảnh phòng (3): Bare Chic Three",
+     "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "amenities": [
+     "Bếp nhỏ",
+     "Phòng tắm riêng",
+     "Smart TV",
+     "Wifi",
+     "Điều hoà nhiệt độ"
+    ],
+    "amenityDisclosure": false,
+    "amenityIconsNeutral": 0,
+    "huynhHoa": true,
+    "oldSpelling": false,
+    "heldPhotos": [],
+    "bookingNote": true
+   },
+   "viewerOpened": true,
+   "viewerNext": true,
+   "viewerClosedByEscape": true,
+   "roomViewerOpened": true,
+   "roomViewerClosed": true,
+   "drawer": {
+    "open": true,
+    "widthShare": 0.42,
+    "heightShare": 1,
+    "ctaInView": true,
+    "bodyScrolls": true,
+    "firstImageLoaded": true,
+    "imageClipped": false,
+    "overflowX": false,
+    "text": "CHI TIẾT PHÒNG Đóng 1/3 Bare Chic One LOẠI PHÒNG Studio DIỆN TÍCH 28 m² SỨC CHỨA 2 người lớn Tiện nghi chung tại Bare Chic Bếp nhỏ Phòng tắm riêng Smart TV Wifi Điều hoà nhiệt độ Giá đang cập nhật Chọn ngày lưu trú Đặt phòng trực tuyến cho Bare Chic chưa được kết nối."
+   },
+   "drawerCounter": "2/3",
+   "drawerScrolledTo": 104,
+   "drawerClosedByEscape": true,
+   "drawerFocusRestored": true,
+   "drawerCta": {
+    "drawerClosed": true,
+    "scrollY": 0,
+    "datesOpened": true
+   },
+   "cityNotesTab": "Khám phá8 địa điểm",
+   "cityNotesExpanded": 8,
+   "cityNotesCollapsed": 4,
+   "logoToStart": true,
+   "tabsAtEnd": 2,
+   "consoleErrors": [],
+   "failedRequests": [
+    "404 http://localhost:3400/favicon.ico"
+   ]
+  },
+  {
+   "view": "390",
+   "steps": [
+    "menu: open",
+    "menu: open again",
+    "menu: Đóng",
+    "menu",
+    "menu link: Hợp tác cùng VNest",
+    "menu",
+    "menu link: Về VNest",
+    "menu",
+    "menu link: Liên hệ",
+    "menu",
+    "menu link: Khám phá nơi lưu trú",
+    "partner CTA",
+    "card: Bare Chic",
+    "gallery: photo 1",
+    "viewer: next",
+    "room: Xem ảnh phòng",
+    "viewer: Đóng",
+    "room: Xem chi tiết phòng",
+    "drawer: next photo",
+    "room: Xem chi tiết phòng (again)",
+    "drawer: Chọn ngày lưu trú",
+    "City Notes: Khám phá",
+    "City Notes: Xem tất cả",
+    "City Notes: Thu gọn",
+    "VNest mark"
+   ],
+   "start": {
+    "url": "/dev/demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0,
+    "h1": "Sáu nơi ở, hai thành phố",
+    "internal": [],
+    "questionIds": [],
+    "figures": [],
+    "dataSource": 0
+   },
+   "hero": {
+    "heightShare": 0.74,
+    "posterLoaded": true,
+    "video": false,
+    "barInHero": true,
+    "barBottomInFirstScreen": true
+   },
+   "stickyShown": true,
+   "stickyHiddenAtTop": true,
+   "menuOpen": true,
+   "menuFocusTrapped": true,
+   "menuClosedByEscape": true,
+   "menuFocusRestored": true,
+   "menuClosedByButton": true,
+   "sectionLinks": {
+    "Hợp tác cùng VNest": {
+     "closed": true,
+     "hash": "#hop-tac",
+     "top": 80
+    },
+    "Về VNest": {
+     "closed": true,
+     "hash": "#ve-vnest",
+     "top": 80
+    },
+    "Liên hệ": {
+     "closed": true,
+     "hash": "#lien-he",
+     "top": 218
+    },
+    "Khám phá nơi lưu trú": {
+     "closed": true,
+     "hash": "#kham-pha",
+     "top": 80
+    }
+   },
+   "partnerCta": {
+    "hash": "#lien-he",
+    "top": 218
+   },
+   "reachedBareChic": true,
+   "tabsAfterCard": 2,
+   "bareChic": {
+    "url": "/dev/stays/bare-chic?view=demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0,
+    "h1": "Bare Chic",
+    "internal": [],
+    "questionIds": [],
+    "figures": [],
+    "dataSource": 0
+   },
+   "content": {
+    "brand": true,
+    "address": "12/18 Nguyễn Thị Minh Khai Phường Sài Gòn, Hồ Chí Minh",
+    "mapHref": "https://share.google/fskgZreXVjowaoQCO",
+    "galleryLabel": "Ảnh các phòng của Bare Chic: 16 ảnh",
+    "roomButtons": [
+     "Xem ảnh phòng (3): Bare Chic One",
+     "Xem ảnh phòng (5): Bare Chic Two",
+     "Xem ảnh phòng (3): Bare Chic Three",
+     "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "amenities": [
+     "Bếp nhỏ",
+     "Phòng tắm riêng",
+     "Smart TV",
+     "Wifi",
+     "Điều hoà nhiệt độ"
+    ],
+    "amenityDisclosure": false,
+    "amenityIconsNeutral": 0,
+    "huynhHoa": true,
+    "oldSpelling": false,
+    "heldPhotos": [],
+    "bookingNote": true
+   },
+   "viewerOpened": true,
+   "viewerNext": true,
+   "viewerClosedByEscape": true,
+   "roomViewerOpened": true,
+   "roomViewerClosed": true,
+   "drawer": {
+    "open": true,
+    "widthShare": 1,
+    "heightShare": 0.99,
+    "ctaInView": true,
+    "bodyScrolls": true,
+    "firstImageLoaded": true,
+    "imageClipped": false,
+    "overflowX": false,
+    "text": "CHI TIẾT PHÒNG Đóng 1/3 Bare Chic One LOẠI PHÒNG Studio DIỆN TÍCH 28 m² SỨC CHỨA 2 người lớn Tiện nghi chung tại Bare Chic Bếp nhỏ Phòng tắm riêng Smart TV Wifi Điều hoà nhiệt độ Giá đang cập nhật Chọn ngày lưu trú Đặt phòng trực tuyến cho Bare Chic chưa được kết nối."
+   },
+   "drawerCounter": "2/3",
+   "drawerScrolledTo": 16,
+   "drawerClosedByEscape": true,
+   "drawerFocusRestored": true,
+   "drawerCta": {
+    "drawerClosed": true,
+    "scrollY": 0,
+    "datesOpened": true
+   },
+   "cityNotesTab": "Khám phá8 địa điểm",
+   "cityNotesExpanded": 8,
+   "cityNotesCollapsed": 4,
+   "logoToStart": true,
+   "tabsAtEnd": 2,
+   "consoleErrors": [],
+   "failedRequests": []
+  },
+  {
+   "view": "768",
+   "steps": [
+    "menu: open",
+    "menu: open again",
+    "menu: Đóng",
+    "menu",
+    "menu link: Hợp tác cùng VNest",
+    "menu",
+    "menu link: Về VNest",
+    "menu",
+    "menu link: Liên hệ",
+    "menu",
+    "menu link: Khám phá nơi lưu trú",
+    "partner CTA",
+    "card: Bare Chic",
+    "gallery: photo 1",
+    "viewer: next",
+    "room: Xem ảnh phòng",
+    "viewer: Đóng",
+    "room: Xem chi tiết phòng",
+    "drawer: next photo",
+    "room: Xem chi tiết phòng (again)",
+    "drawer: Chọn ngày lưu trú",
+    "City Notes: Khám phá",
+    "City Notes: Xem tất cả",
+    "City Notes: Thu gọn",
+    "VNest mark"
+   ],
+   "start": {
+    "url": "/dev/demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0,
+    "h1": "Sáu nơi ở, hai thành phố",
+    "internal": [],
+    "questionIds": [],
+    "figures": [],
+    "dataSource": 0
+   },
+   "hero": {
+    "heightShare": 0.66,
+    "posterLoaded": true,
+    "video": false,
+    "barInHero": true,
+    "barBottomInFirstScreen": true
+   },
+   "stickyShown": true,
+   "stickyHiddenAtTop": true,
+   "menuOpen": true,
+   "menuFocusTrapped": true,
+   "menuClosedByEscape": true,
+   "menuFocusRestored": true,
+   "menuClosedByButton": true,
+   "sectionLinks": {
+    "Hợp tác cùng VNest": {
+     "closed": true,
+     "hash": "#hop-tac",
+     "top": 80
+    },
+    "Về VNest": {
+     "closed": true,
+     "hash": "#ve-vnest",
+     "top": 80
+    },
+    "Liên hệ": {
+     "closed": true,
+     "hash": "#lien-he",
+     "top": 606
+    },
+    "Khám phá nơi lưu trú": {
+     "closed": true,
+     "hash": "#kham-pha",
+     "top": 80
+    }
+   },
+   "partnerCta": {
+    "hash": "#lien-he",
+    "top": 606
+   },
+   "reachedBareChic": true,
+   "tabsAfterCard": 2,
+   "bareChic": {
+    "url": "/dev/stays/bare-chic?view=demo",
+    "overflowX": false,
+    "brokenImages": [],
+    "cls": 0,
+    "h1": "Bare Chic",
+    "internal": [],
+    "questionIds": [],
+    "figures": [],
+    "dataSource": 0
+   },
+   "content": {
+    "brand": true,
+    "address": "12/18 Nguyễn Thị Minh Khai Phường Sài Gòn, Hồ Chí Minh",
+    "mapHref": "https://share.google/fskgZreXVjowaoQCO",
+    "galleryLabel": "Ảnh các phòng của Bare Chic: 16 ảnh",
+    "roomButtons": [
+     "Xem ảnh phòng (3): Bare Chic One",
+     "Xem ảnh phòng (5): Bare Chic Two",
+     "Xem ảnh phòng (3): Bare Chic Three",
+     "Xem ảnh phòng (5): Bare Indochine"
+    ],
+    "amenities": [
+     "Bếp nhỏ",
+     "Phòng tắm riêng",
+     "Smart TV",
+     "Wifi",
+     "Điều hoà nhiệt độ"
+    ],
+    "amenityDisclosure": false,
+    "amenityIconsNeutral": 0,
+    "huynhHoa": true,
+    "oldSpelling": false,
+    "heldPhotos": [],
+    "bookingNote": true
+   },
+   "viewerOpened": true,
+   "viewerNext": true,
+   "viewerClosedByEscape": true,
+   "roomViewerOpened": true,
+   "roomViewerClosed": true,
+   "drawer": {
+    "open": true,
+    "widthShare": 0.54,
+    "heightShare": 1,
+    "ctaInView": true,
+    "bodyScrolls": false,
+    "firstImageLoaded": true,
+    "imageClipped": false,
+    "overflowX": false,
+    "text": "CHI TIẾT PHÒNG Đóng 1/3 Bare Chic One LOẠI PHÒNG Studio DIỆN TÍCH 28 m² SỨC CHỨA 2 người lớn Tiện nghi chung tại Bare Chic Bếp nhỏ Phòng tắm riêng Smart TV Wifi Điều hoà nhiệt độ Giá đang cập nhật Chọn ngày lưu trú Đặt phòng trực tuyến cho Bare Chic chưa được kết nối."
+   },
+   "drawerCounter": "2/3",
+   "drawerScrolledTo": 0,
+   "drawerClosedByEscape": true,
+   "drawerFocusRestored": true,
+   "drawerCta": {
+    "drawerClosed": true,
+    "scrollY": 0,
+    "datesOpened": true
+   },
+   "cityNotesTab": "Khám phá8 địa điểm",
+   "cityNotesExpanded": 8,
+   "cityNotesCollapsed": 4,
+   "logoToStart": true,
+   "tabsAtEnd": 2,
+   "consoleErrors": [],
+   "failedRequests": []
+  }
+ ]
+}

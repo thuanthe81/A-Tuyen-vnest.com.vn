@@ -1,0 +1,1385 @@
+/* ==========================================================================
+   VNest V3 — Room-First Booking Results & Frictionless Multi-Room Selection
+   CEO-Approved Palette:
+   - Copper Bronze: #A87444
+   - Dark Olive:    #37412F
+   - Warm Taupe:    #8A8173
+   - Light Beige:   #F1ECE4
+   - White:         #FFFFFF
+   ========================================================================== */
+
+.page {
+  --vn-copper: #a87444;
+  --vn-copper-hover: #8f6036;
+  /* CTA fill under white text: a deeper Copper Bronze that meets WCAG AA (4.75:1; #A87444 is 4.0:1). */
+  --vn-copper-cta: #9a683c;
+  --vn-olive: #37412f;
+  --vn-taupe: #8a8173;
+  --vn-beige: #f1ece4;
+  --vn-white: #ffffff;
+  --vn-paper: #f1ece4;
+  --vn-line: rgba(55, 65, 47, 0.14);
+
+  background: var(--vn-paper);
+  color: var(--vn-olive);
+  min-height: 100vh;
+  padding-bottom: 6.5rem;
+}
+
+.container {
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 1.5rem clamp(1rem, 4vw, 3rem) 4rem;
+}
+
+/* 1. Page Header & Single Provider Notice */
+.pageHeader {
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--vn-line);
+}
+
+.headerTopRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pageTitle {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--vn-olive);
+}
+
+.conciseSummary {
+  margin: 0.35rem 0 0;
+  font-size: 0.96rem;
+  line-height: 1.5;
+  color: var(--vn-taupe);
+}
+
+.editSearchBtn {
+  min-height: 2.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.25);
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+.editSearchBtn:hover {
+  background: var(--vn-beige);
+  border-color: var(--vn-copper);
+}
+
+.compactNotice {
+  margin: 0.9rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--vn-taupe);
+}
+
+/* Inline City & Property Filter Bar (Task 1) */
+.filterToolbar {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(55, 65, 47, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+}
+
+.filterLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vn-taupe);
+  min-width: 4.5rem;
+  flex-shrink: 0;
+}
+
+.filterChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+@media (max-width: 47.99rem) {
+  .filterRow {
+    flex-wrap: nowrap;
+  }
+
+  .filterChips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 0.1rem;
+  }
+
+  .filterChips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filterChip {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
+
+.filterChip {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-line);
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.filterChip:hover {
+  border-color: var(--vn-copper);
+}
+
+.filterChip[aria-pressed="true"] {
+  background: var(--vn-olive);
+  border-color: var(--vn-olive);
+  color: var(--vn-white);
+}
+
+/* Collapsible Search Editor */
+.editorSheet {
+  margin-top: 1.15rem;
+  background: var(--vn-white);
+  border: 1px solid var(--vn-line);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 12px 32px rgba(24, 28, 20, 0.06);
+}
+
+.editorTabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 42rem) {
+  .editorTabs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editorTabBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--vn-line);
+  background: var(--vn-paper);
+  color: var(--vn-olive);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.editorTabBtn[aria-selected="true"] {
+  background: var(--vn-white);
+  border-color: var(--vn-copper);
+  box-shadow: 0 0 0 1px var(--vn-copper);
+}
+
+.editorTabLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vn-taupe);
+}
+
+.editorTabValue {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.editorBody {
+  padding-top: 0.25rem;
+}
+
+.propertyOptionGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
+  gap: 0.55rem;
+}
+
+.propertyOptionBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--vn-line);
+  background: var(--vn-paper);
+  color: var(--vn-olive);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.propertyOptionBtn[aria-pressed="true"] {
+  background: var(--vn-beige);
+  border-color: var(--vn-copper);
+}
+
+.propertyOptionName {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.propertyOptionMeta {
+  font-size: 0.76rem;
+  color: var(--vn-taupe);
+}
+
+.calendarWrap {
+  overflow-x: auto;
+}
+
+.roomGroupList {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.roomGroupItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.7rem;
+  background: var(--vn-paper);
+  border: 1px solid var(--vn-line);
+}
+
+.roomGroupTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.roomGroupControls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.stepperGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--vn-white);
+  padding: 0.2rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-line);
+}
+
+.stepperBtn {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--vn-beige);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.stepperBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.stepperCount {
+  min-width: 4rem;
+  text-align: center;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.editorFooterRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* Workspace Layout (Room List + Sticky Summary) */
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: start;
+}
+
+@media (min-width: 64rem) {
+  .workspace {
+    grid-template-columns: minmax(0, 1fr) 21.5rem;
+  }
+}
+
+.resultsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Active Room Group & Direct "+ Thêm phòng" Bar (Task 3) */
+.sequentialBar {
+  padding: 1rem 1.2rem;
+  border-radius: 0.9rem;
+  background: var(--vn-beige);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.sequentialHeaderRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.sequentialPrimary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.sequentialStepTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.directAddRoomBtn {
+  min-height: 2.15rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-copper);
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.directAddRoomBtn:hover {
+  background: var(--vn-copper-cta);
+  color: var(--vn-white);
+}
+
+.sequentialPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sequentialPill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.65rem;
+  background: var(--vn-white);
+  border: 1px solid var(--vn-line);
+  overflow: hidden;
+}
+
+.sequentialPill[data-active="true"] {
+  border-color: var(--vn-copper);
+  box-shadow: 0 0 0 1px var(--vn-copper);
+}
+
+.sequentialPillBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  padding: 0.45rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: var(--vn-olive);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sequentialPillLabel {
+  font-size: 0.7rem;
+  color: var(--vn-taupe);
+}
+
+.sequentialPillValue {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.sequentialPillClear {
+  padding: 0.45rem 0.6rem;
+  border: none;
+  border-left: 1px solid var(--vn-line);
+  background: transparent;
+  color: var(--vn-taupe);
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.sequentialPillClear:hover {
+  color: var(--vn-copper);
+}
+
+.propertyLockBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--vn-line);
+  font-size: 0.83rem;
+  color: var(--vn-olive);
+}
+
+.insufficientRoomsNotice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.65rem;
+  background: var(--vn-white);
+  border: 1px solid rgba(168, 116, 68, 0.35);
+}
+
+.insufficientRoomsNotice p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--vn-olive);
+}
+
+/* Room Cards List (Task 1, 2, 4) */
+.roomCardList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.roomCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--vn-white);
+  border: 1px solid var(--vn-line);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+@media (min-width: 44rem) {
+  .roomCard {
+    grid-template-columns: 18rem minmax(0, 1fr);
+  }
+}
+
+.roomCard[data-selected="true"] {
+  border-color: var(--vn-copper);
+  box-shadow: 0 0 0 1px var(--vn-copper);
+}
+
+.roomMediaCol {
+  background: var(--vn-beige);
+  aspect-ratio: 4 / 3;
+  display: flex;
+}
+
+@media (min-width: 44rem) {
+  .roomMediaCol {
+    aspect-ratio: auto;
+    min-height: 14rem;
+  }
+}
+
+.roomCardCarousel {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+.roomPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.05rem;
+  color: var(--vn-taupe);
+  background: var(--vn-beige);
+}
+
+.roomContentCol {
+  padding: 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.roomMainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.roomPropertyKicker {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vn-copper);
+}
+
+.roomName {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.22;
+  color: var(--vn-olive);
+}
+
+.roomMetaLines {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.65rem;
+  margin-top: 0.15rem;
+}
+
+.roomVerifiedInfo {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.roomCapacityVerified {
+  font-size: 0.83rem;
+  color: var(--vn-olive);
+}
+
+.roomCapacityHint {
+  font-size: 0.82rem;
+  color: var(--vn-taupe);
+}
+
+.roomCategoryBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: var(--vn-beige);
+  color: var(--vn-olive);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.roomUnitBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: var(--vn-paper);
+  border: 1px solid var(--vn-line);
+  color: var(--vn-taupe);
+  font-size: 0.75rem;
+}
+
+.roomRateLine {
+  margin: 0.25rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.roomAvailLine {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--vn-copper);
+}
+
+.roomCapacityLimit {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vn-copper);
+}
+
+.roomDetailLink {
+  margin-top: 0.2rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.83rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--vn-copper);
+  text-underline-offset: 0.22em;
+  cursor: pointer;
+}
+
+.roomDetailLink:hover {
+  color: var(--vn-copper);
+}
+
+.roomActionRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(55, 65, 47, 0.08);
+}
+
+/* The review's "Tiếp tục" is a link to the booking step. */
+a.primaryActionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.primaryActionBtn {
+  min-height: 2.55rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--vn-copper);
+  background: var(--vn-copper-cta);
+  color: var(--vn-white);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+.primaryActionBtn:hover {
+  background: var(--vn-copper-hover);
+  border-color: var(--vn-copper-hover);
+}
+
+.selectedActionBtn {
+  min-height: 2.55rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-copper);
+  background: var(--vn-beige);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.disabledActionBtn {
+  min-height: 2.55rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-line);
+  background: var(--vn-paper);
+  color: var(--vn-taupe);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+.sameTypeAddBtn {
+  min-height: 2.55rem;
+  padding: 0.5rem 1.05rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-copper);
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.sameTypeAddBtn:hover {
+  background: var(--vn-copper-cta);
+  color: var(--vn-white);
+}
+
+.secondaryBtn {
+  min-height: 2.55rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 47, 0.25);
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.textLinkBtn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  flex-shrink: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.textLinkBtn:hover {
+  color: var(--vn-copper);
+}
+
+/* Desktop Sticky Summary Sidebar (Task 5) */
+.summarySidebar {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  .summarySidebar {
+    display: block;
+    position: sticky;
+    top: 5.5rem;
+  }
+}
+
+.summaryCard {
+  background: var(--vn-white);
+  border: 1px solid var(--vn-line);
+  border-radius: 1rem;
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.summaryHeaderRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.summaryTitle {
+  margin: 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--vn-olive);
+}
+
+.summaryGuestTotal {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vn-taupe);
+}
+
+.summaryTypeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.65rem;
+  background: var(--vn-beige);
+}
+
+.summaryTypeBadge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.summaryTypeQty {
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.summaryTypeProp {
+  color: var(--vn-taupe);
+}
+
+.summarySlotsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.summarySlotItem {
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.75rem;
+  background: var(--vn-paper);
+  border: 1px solid var(--vn-line);
+}
+
+.summarySlotItem[data-active="true"] {
+  border-color: var(--vn-copper);
+}
+
+.summarySlotHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.summarySlotSelectBtn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.summarySlotActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.summarySlotClearBtn,
+.summarySlotRemoveBtn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--vn-taupe);
+  font: inherit;
+  font-size: 0.74rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.summarySlotClearBtn:hover,
+.summarySlotRemoveBtn:hover {
+  color: var(--vn-copper);
+}
+
+.summarySlotSelected {
+  margin-top: 0.35rem;
+}
+
+.summaryRoomName {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.summaryRoomSub {
+  margin: 0.12rem 0 0;
+  font-size: 0.75rem;
+  color: var(--vn-taupe);
+}
+
+.summarySlotPlaceholder {
+  margin: 0.3rem 0 0;
+  font-size: 0.82rem;
+  color: var(--vn-taupe);
+}
+
+.summaryAddRoomBtn {
+  width: 100%;
+  min-height: 2.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px dashed var(--vn-copper);
+  background: var(--vn-paper);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+.summaryAddRoomBtn:hover {
+  background: var(--vn-beige);
+}
+
+.reviewCtaBtn {
+  width: 100%;
+  min-height: 2.8rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--vn-copper-cta);
+  color: var(--vn-white);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 140ms ease;
+}
+
+.reviewCtaBtn:hover {
+  background: var(--vn-copper-hover);
+}
+
+/* Mobile & Tablet Minimal Sticky Bottom Bar (Task 5) */
+.mobileStickyBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--vn-line);
+  padding: 0.7rem clamp(1rem, 4vw, 2rem);
+  box-shadow: 0 -8px 24px rgba(24, 28, 20, 0.08);
+}
+
+@media (min-width: 64rem) {
+  .mobileStickyBar {
+    display: none;
+  }
+}
+
+.mobileStickyInner {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.mobileStickyInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileStickyProgress {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.mobileStickySub {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--vn-taupe);
+}
+
+.mobileStickyActions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.mobileAddRoomBtn {
+  min-height: 2.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-copper);
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.mobileStickyCta {
+  min-height: 2.4rem;
+  padding: 0.45rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--vn-copper-cta);
+  color: var(--vn-white);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Dialogs: Room Detail & Review Sheet */
+.detailDialog,
+.reviewDialog {
+  width: min(92vw, 38rem);
+  max-height: 88vh;
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--vn-line);
+  border-radius: 1.15rem;
+  background: var(--vn-white);
+  color: var(--vn-olive);
+  box-shadow: 0 24px 60px rgba(20, 24, 18, 0.22);
+}
+
+.detailDialog::backdrop,
+.reviewDialog::backdrop {
+  background: rgba(24, 28, 20, 0.45);
+}
+
+.detailDialogInner,
+.reviewDialogInner {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
+
+.detailDialogHead,
+.reviewDialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--vn-line);
+}
+
+.detailDialogKicker {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vn-copper);
+}
+
+.detailDialogTitle,
+.reviewDialogTitle {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--vn-olive);
+}
+
+.dialogCloseBtn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-line);
+  background: var(--vn-paper);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detailDialogBody,
+.reviewDialogBody {
+  padding: 1.35rem 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.detailGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.detailMainPhotoWrap {
+  aspect-ratio: 3 / 2;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--vn-beige);
+}
+
+.detailMainPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detailGalleryControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.galleryNavBtn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--vn-line);
+  background: var(--vn-paper);
+  color: var(--vn-olive);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.galleryNavBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.galleryCounter {
+  font-size: 0.82rem;
+  color: var(--vn-taupe);
+}
+
+.detailFactsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detailVerifiedLine {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--vn-olive);
+}
+
+.detailUnverifiedLine {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--vn-taupe);
+}
+
+.detailSectionLabel {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vn-taupe);
+}
+
+.amenitiesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.amenitiesList li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  color: var(--vn-olive);
+}
+
+/* Review Sheet Content */
+.reviewSummaryMeta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--vn-line);
+}
+
+.reviewSummaryMeta dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vn-taupe);
+}
+
+.reviewSummaryMeta dd {
+  margin: 0.25rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.reviewTypeSummary {
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.65rem;
+  background: var(--vn-beige);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.reviewTypeLine {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--vn-olive);
+}
+
+.reviewRoomsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.reviewRoomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--vn-paper);
+  border: 1px solid var(--vn-line);
+}
+
+.reviewRowActions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.reviewRoomSlot {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--vn-taupe);
+}
+
+.reviewRoomName {
+  margin: 0.2rem 0 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--vn-olive);
+}
+
+.reviewRoomNote {
+  margin: 0.15rem 0 0;
+  font-size: 0.78rem;
+  color: var(--vn-taupe);
+}
+
+.reviewRoomEmpty {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--vn-taupe);
+}
+
+.reviewHonestNotice {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--vn-beige);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--vn-olive);
+}
+
+.detailDialogFoot,
+.reviewDialogFoot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--vn-line);
+}
+
+/* A notice with nothing to say takes no space (room add/remove explanations, 5/11/2026). */
+.compactNotice:empty {
+  display: none;
+}
+
+/* With the room count in its own stepper, "Áp dụng" is alone in the footer: it keeps its place on the right. */
+.editorFooterRow > :only-child {
+  margin-left: auto;
+}

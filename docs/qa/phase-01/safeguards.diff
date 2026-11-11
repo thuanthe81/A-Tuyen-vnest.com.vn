@@ -1,0 +1,418 @@
+diff --git a/.env.example b/.env.example
+index 701e9ba4..c77b1b8a 100644
+--- a/.env.example
++++ b/.env.example
+@@ -2,6 +2,8 @@
+ # Copy to .env.local to change a value. Every variable is read in src/config/env.ts.
+ 
+ # Public origin used for canonical URLs, the sitemap and structured data.
++# Required when the deployment is production, where it must be a public https origin:
++# the build and the server refuse to start without one. Development and previews may use localhost.
+ SITE_URL=http://localhost:3000
+ 
+ # development | preview | production. On Vercel, VERCEL_ENV is used when this is unset.
+@@ -16,7 +18,9 @@ CONTENT_SOURCE=mock
+ # Booking provider: "mock" (simulated, development only) or "none" (not connected).
+ BOOKING_PROVIDER=mock
+ 
+-# Mock provider only. Availability: mixed | all-available | with-rates | sold-out | error | timeout
++# Mock provider only. Availability: mixed | all-available | with-rates | partial-availability |
++# partial-failure | stale-prices | no-answer | sold-out | error | timeout
++# On /stays the same names can be chosen per request with ?mock=<name> (mock provider only).
+ MOCK_AVAILABILITY_SCENARIO=mixed
+ 
+ # Mock provider only. Hand-off: not-integrated | redirect | embedded | native | offer-expired | error
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index d508a880..b1ecebe4 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -26,3 +26,5 @@ jobs:
+       - run: npm run typecheck
+       - run: npm test
+       - run: npm run build
++      # Builds again with production and preview settings to prove a promoted build cannot be indexed.
++      - run: npm run test:promotion
+diff --git a/next.config.ts b/next.config.ts
+index 3fa986d7..0b79048f 100644
+--- a/next.config.ts
++++ b/next.config.ts
+@@ -4,8 +4,9 @@ import { env } from "./src/config/env.ts";
+ const nextConfig: NextConfig = {
+   poweredByHeader: false,
+   async headers() {
+-    // A second lock on top of robots.txt and the robots meta tag: a build that is not
+-    // indexable says so on every response, including files that carry no meta tag.
++    // The build-time lock: a build that was not made indexable says so on every response,
++    // including files that carry no meta tag, wherever it is later started.
++    // src/proxy.ts is the request-time lock for the opposite case. Both must agree.
+     return env.indexable ? [] : [{ source: "/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }];
+   },
+ };
+diff --git a/package.json b/package.json
+index 76c67266..70a5bc2e 100644
+--- a/package.json
++++ b/package.json
+@@ -13,6 +13,7 @@
+     "lint": "eslint",
+     "typecheck": "tsc --noEmit",
+     "test": "node --import ./test/register.mjs --test \"src/**/*.test.ts\"",
++    "test:promotion": "node --test test/e2e/build-promotion.test.mjs",
+     "check": "npm run lint && npm run typecheck && npm test"
+   },
+   "dependencies": {
+diff --git a/src/app/robots.ts b/src/app/robots.ts
+index e3c64494..c7ff1e3c 100644
+--- a/src/app/robots.ts
++++ b/src/app/robots.ts
+@@ -1,8 +1,12 @@
+ import type { MetadataRoute } from "next";
+ import { env } from "@/config/env";
++import { buildRobots } from "@/seo/robots";
+ import { absoluteUrl } from "@/seo/urls";
+ 
++// Answered per request from the running deployment's settings, never prerendered: a build
++// promoted from one environment to another must not carry the first one's answer with it.
++export const dynamic = "force-dynamic";
++
+ export default function robots(): MetadataRoute.Robots {
+-  if (!env.indexable) return { rules: { userAgent: "*", disallow: "/" } };
+-  return { rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/dev/"] }, sitemap: absoluteUrl("/sitemap.xml") };
++  return buildRobots(env, absoluteUrl);
+ }
+diff --git a/src/app/sitemap.ts b/src/app/sitemap.ts
+index 71b7518a..f939d6e3 100644
+--- a/src/app/sitemap.ts
++++ b/src/app/sitemap.ts
+@@ -5,6 +5,9 @@ import { buildSitemap } from "@/seo/sitemap";
+ import { absoluteUrl } from "@/seo/urls";
+ import { getServices } from "@/server/services";
+ 
++// Per request, for the same reason as robots.ts: the sitemap follows the running deployment, not the build.
++export const dynamic = "force-dynamic";
++
+ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+   if (!env.indexable) return [];
+   const properties = await getServices().properties.listProperties(site.defaultLocale);
+diff --git a/src/config/config.test.ts b/src/config/config.test.ts
+index 9e76047b..eda94446 100644
+--- a/src/config/config.test.ts
++++ b/src/config/config.test.ts
+@@ -4,7 +4,7 @@ import { readEnv } from "@/config/env";
+ import { routes } from "@/config/routes";
+ import { parseIsoDate } from "@/domain/dates";
+ 
+-const live = { SITE_INDEXABLE: "true", DEPLOY_ENV: "production", CONTENT_SOURCE: "files", BOOKING_PROVIDER: "none" };
++const live = { SITE_URL: "https://vnest.example", SITE_INDEXABLE: "true", DEPLOY_ENV: "production", CONTENT_SOURCE: "files", BOOKING_PROVIDER: "none" };
+ 
+ test("defaults are safe: mock data, development, not indexable", () => {
+   const env = readEnv({});
+@@ -37,6 +37,28 @@ test("invalid values fail loudly", () => {
+   assert.throws(() => readEnv({ MOCK_AVAILABILITY_SCENARIO: "nope" }), /MOCK_AVAILABILITY_SCENARIO/);
+ });
+ 
++// Regression for verification finding F2: production used to fall back to http://localhost:3000 in silence.
++test("production refuses to start without a public https SITE_URL", () => {
++  const production = { DEPLOY_ENV: "production" };
++  assert.throws(() => readEnv(production), /SITE_URL is required when the deployment is production/);
++  assert.throws(() => readEnv({ ...production, SITE_URL: "  " }), /SITE_URL is required/);
++  assert.throws(() => readEnv({ VERCEL_ENV: "production" }), /SITE_URL is required/, "a Vercel production deployment is production too");
++  for (const local of ["http://localhost:3000", "https://localhost", "https://127.0.0.1:3000", "https://[::1]", "https://vnest.local", "https://vnest.test"]) {
++    assert.throws(() => readEnv({ ...production, SITE_URL: local }), /not a public https origin/, local);
++  }
++  assert.throws(() => readEnv({ ...production, SITE_URL: "http://vnest.example" }), /not a public https origin/);
++  assert.throws(() => readEnv({ ...production, SITE_URL: "ftp://vnest.example" }), /Expected http or https/);
++  assert.equal(readEnv({ ...production, SITE_URL: "https://vnest.example" }).siteUrl.origin, "https://vnest.example");
++});
++
++test("development and previews may still use localhost, and are never indexable", () => {
++  for (const DEPLOY_ENV of ["development", "preview"]) {
++    const env = readEnv({ DEPLOY_ENV, SITE_INDEXABLE: "true", CONTENT_SOURCE: "files", BOOKING_PROVIDER: "none" });
++    assert.equal(env.siteUrl.origin, "http://localhost:3000");
++    assert.equal(env.indexable, false);
++  }
++});
++
+ test("routes: the primary language has no prefix and stay criteria are carried", () => {
+   const criteria = { checkIn: parseIsoDate("2026-12-10")!, checkOut: parseIsoDate("2026-12-12")!, adults: 3 };
+   assert.equal(routes.home(), "/");
+diff --git a/src/config/env.ts b/src/config/env.ts
+index 7b922858..e4bbd18f 100644
+--- a/src/config/env.ts
++++ b/src/config/env.ts
+@@ -31,13 +31,33 @@ function nonNegativeInt(source: Source, name: string, fallback: number): number
+   throw new Error(`${name}="${value}" is not valid. Expected a whole number of milliseconds.`);
+ }
+ 
+-function siteUrl(source: Source): URL {
+-  const value = source.SITE_URL?.trim() || "http://localhost:3000";
++const LOCAL_HOST = /^(localhost|0\.0\.0\.0|127(\.\d+){3}|\[::1\])$|\.(localhost|local|test|internal)$/;
++const DEVELOPMENT_SITE_URL = "http://localhost:3000";
++
++/**
++ * The public origin behind canonical URLs, the sitemap and structured data.
++ *
++ * Development and previews may fall back to localhost: neither is ever indexed. Production
++ * may not. A production deployment without a real public origin would publish localhost
++ * canonicals, so it refuses to start instead of guessing.
++ */
++function siteUrl(source: Source, deployEnv: (typeof DEPLOY_ENVS)[number]): URL {
++  const value = source.SITE_URL?.trim();
++  const production = deployEnv === "production";
++  if (!value && production) {
++    throw new Error("SITE_URL is required when the deployment is production. Set it to the public https origin of the site.");
++  }
++  let url: URL;
+   try {
+-    return new URL(value);
++    url = new URL(value || DEVELOPMENT_SITE_URL);
+   } catch {
+     throw new Error(`SITE_URL="${value}" is not a valid URL.`);
+   }
++  if (url.protocol !== "http:" && url.protocol !== "https:") throw new Error(`SITE_URL="${value}" is not a valid URL. Expected http or https.`);
++  if (production && (url.protocol !== "https:" || LOCAL_HOST.test(url.hostname))) {
++    throw new Error(`SITE_URL="${value}" is not a public https origin, which a production deployment requires.`);
++  }
++  return url;
+ }
+ 
+ export function readEnv(source: Source) {
+@@ -48,7 +68,7 @@ export function readEnv(source: Source) {
+   const usesMockData = contentSource === "mock" || bookingProvider === "mock";
+ 
+   return {
+-    siteUrl: siteUrl(source),
++    siteUrl: siteUrl(source, deployEnv),
+     deployEnv,
+     contentSource,
+     bookingProvider,
+diff --git a/src/seo/seo.test.ts b/src/seo/seo.test.ts
+index 50d4c5e6..d66d7ef4 100644
+--- a/src/seo/seo.test.ts
++++ b/src/seo/seo.test.ts
+@@ -4,7 +4,9 @@ import { routes } from "@/config/routes";
+ import type { PropertyRecord } from "@/domain/property";
+ import { resolveProperty } from "@/domain/property";
+ import { mockPropertyRecords } from "@/integrations/content/mock/records";
++import { readEnv } from "@/config/env";
+ import { buildMetadata } from "@/seo/metadata";
++import { buildRobots, robotsHeader } from "@/seo/robots";
+ import { buildSitemap } from "@/seo/sitemap";
+ import { breadcrumbJsonLd, lodgingJsonLd, organizationJsonLd, serializeJsonLd } from "@/seo/structured-data";
+ 
+@@ -113,3 +115,26 @@ test("sitemap: a property is listed in each approved language with alternates",
+     languages: { vi: "https://example.test/stays/real-stay", en: "https://example.test/en/stays/real-stay" },
+   });
+ });
++
++// Regression for verification finding F1: these answers used to be fixed when the site was built.
++// They are now functions of the settings of the deployment that is running.
++test("robots: the same code refuses crawlers as a preview and admits them only as indexable production", () => {
++  const production = { SITE_URL: "https://vnest.example", SITE_INDEXABLE: "true", DEPLOY_ENV: "production", CONTENT_SOURCE: "files", BOOKING_PROVIDER: "none" };
++  const refused = [
++    readEnv({ ...production, DEPLOY_ENV: "preview" }),
++    readEnv({ ...production, DEPLOY_ENV: "development" }),
++    readEnv({ ...production, DEPLOY_ENV: undefined }),
++    readEnv({ ...production, SITE_INDEXABLE: undefined }),
++    readEnv({ ...production, BOOKING_PROVIDER: "mock" }),
++  ];
++  for (const settings of refused) {
++    assert.deepEqual(buildRobots(settings, absolute), { rules: { userAgent: "*", disallow: "/" } });
++    assert.deepEqual(robotsHeader(settings), { name: "X-Robots-Tag", value: "noindex, nofollow" });
++  }
++  const live = readEnv(production);
++  assert.equal(robotsHeader(live), undefined);
++  assert.deepEqual(buildRobots(live, absolute), {
++    rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/dev/"] },
++    sitemap: "https://example.test/sitemap.xml",
++  });
++});
+diff --git a/src/proxy.ts b/src/proxy.ts
+new file mode 100644
+index 00000000..90b3d6d5
+--- /dev/null
++++ b/src/proxy.ts
+@@ -0,0 +1,18 @@
++import { NextResponse } from "next/server";
++import { env } from "@/config/env";
++import { robotsHeader } from "@/seo/robots";
++
++/**
++ * The request-time indexing lock. Unless the deployment that is running right now is
++ * indexable, every response says noindex, whatever settings the build was made with.
++ *
++ * next.config.ts keeps the build-time lock, so both must agree before anything can be
++ * indexed: a production build started as a preview is refused here, and a preview build
++ * started as production is refused there.
++ */
++export function proxy() {
++  const response = NextResponse.next();
++  const header = robotsHeader(env);
++  if (header) response.headers.set(header.name, header.value);
++  return response;
++}
+diff --git a/src/seo/robots.ts b/src/seo/robots.ts
+new file mode 100644
+index 00000000..eafd6a10
+--- /dev/null
++++ b/src/seo/robots.ts
+@@ -0,0 +1,23 @@
++/**
++ * What crawlers are told, as pure functions of the current settings.
++ *
++ * Both are evaluated per request (src/app/robots.ts, src/proxy.ts), never baked into a build:
++ * a build made for production and then started as a preview must still refuse crawlers.
++ */
++
++export const NOINDEX_HEADER = { name: "X-Robots-Tag", value: "noindex, nofollow" } as const;
++
++export interface RobotsRules {
++  rules: { userAgent: string; allow?: string; disallow: string | string[] };
++  sitemap?: string;
++}
++
++export function buildRobots(settings: { indexable: boolean }, absolute: (path: string) => string): RobotsRules {
++  if (!settings.indexable) return { rules: { userAgent: "*", disallow: "/" } };
++  return { rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/dev/"] }, sitemap: absolute("/sitemap.xml") };
++}
++
++/** The header every response carries unless the running deployment is indexable. */
++export function robotsHeader(settings: { indexable: boolean }): typeof NOINDEX_HEADER | undefined {
++  return settings.indexable ? undefined : NOINDEX_HEADER;
++}
+diff --git a/test/e2e/build-promotion.test.mjs b/test/e2e/build-promotion.test.mjs
+new file mode 100644
+index 00000000..98e28d6c
+--- /dev/null
++++ b/test/e2e/build-promotion.test.mjs
+@@ -0,0 +1,131 @@
++/**
++ * Regression for Phase 01 verification findings F1 and F2, against real builds.
++ *
++ * F1  A build made with production, indexable settings and then started as a preview or as
++ *     development used to send no X-Robots-Tag header and serve an allowing robots.txt.
++ * F2  A production deployment without SITE_URL used to publish http://localhost:3000.
++ *
++ * This builds the site, so it is not part of `npm test`. Run it with `npm run test:promotion`.
++ */
++import assert from "node:assert/strict";
++import { spawn, spawnSync } from "node:child_process";
++import { createServer } from "node:net";
++import { after, test } from "node:test";
++import { fileURLToPath } from "node:url";
++
++const root = fileURLToPath(new URL("../../", import.meta.url));
++const next = fileURLToPath(new URL("../../node_modules/next/dist/bin/next", import.meta.url));
++
++const PRODUCTION = { SITE_URL: "https://vnest.example", SITE_INDEXABLE: "true", DEPLOY_ENV: "production", CONTENT_SOURCE: "files", BOOKING_PROVIDER: "none" };
++const PREVIEW = { ...PRODUCTION, DEPLOY_ENV: "preview" };
++const DEVELOPMENT = { DEPLOY_ENV: "development" };
++
++/** Only what a deployment would set: nothing leaks in from the shell that runs the test. */
++function environment(settings) {
++  const { PATH, HOME, TMPDIR } = process.env;
++  return { PATH, HOME, TMPDIR, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", ...settings };
++}
++
++function build(settings) {
++  return spawnSync(process.execPath, [next, "build"], { cwd: root, env: environment(settings), encoding: "utf8" });
++}
++
++function freePort() {
++  return new Promise((resolve, reject) => {
++    const server = createServer();
++    server.once("error", reject);
++    server.listen(0, () => {
++      const { port } = server.address();
++      server.close(() => resolve(port));
++    });
++  });
++}
++
++const running = new Set();
++after(() => running.forEach((child) => child.kill()));
++
++/** Starts the current build with the given settings and returns what a crawler would see. */
++async function crawl(settings) {
++  const port = await freePort();
++  const child = spawn(process.execPath, [next, "start", "--port", String(port)], { cwd: root, env: environment(settings) });
++  running.add(child);
++  let output = "";
++  child.stdout.on("data", (chunk) => (output += chunk));
++  child.stderr.on("data", (chunk) => (output += chunk));
++  try {
++    const origin = `http://127.0.0.1:${port}`;
++    for (let attempt = 0; ; attempt += 1) {
++      if (child.exitCode !== null) return { started: false, output };
++      try {
++        await fetch(origin);
++        break;
++      } catch {
++        if (attempt > 150) throw new Error(`The server did not start:\n${output}`);
++        await new Promise((resolve) => setTimeout(resolve, 200));
++      }
++    }
++    const [page, robots, sitemap, api] = await Promise.all(["/", "/robots.txt", "/sitemap.xml", "/api/availability"].map((path) => fetch(origin + path)));
++    return {
++      started: true,
++      pageHeader: page.headers.get("x-robots-tag"),
++      robotsHeader: robots.headers.get("x-robots-tag"),
++      apiHeader: api.headers.get("x-robots-tag"),
++      robots: await robots.text(),
++      sitemap: await sitemap.text(),
++    };
++  } finally {
++    child.kill();
++    running.delete(child);
++  }
++}
++
++const refuses = (seen) => {
++  assert.equal(seen.started, true);
++  assert.match(seen.pageHeader ?? "", /noindex/, "pages must carry X-Robots-Tag: noindex");
++  assert.match(seen.robotsHeader ?? "", /noindex/);
++  assert.match(seen.apiHeader ?? "", /noindex/);
++  assert.match(seen.robots, /^Disallow: \/$/m, "robots.txt must disallow everything");
++  assert.doesNotMatch(seen.robots, /Allow:|Sitemap:/);
++  assert.doesNotMatch(seen.sitemap, /<loc>/, "the sitemap must be empty");
++};
++
++test("F2: a production build without a public SITE_URL fails instead of using localhost", () => {
++  for (const SITE_URL of [undefined, "http://localhost:3000"]) {
++    const result = build({ ...PRODUCTION, SITE_URL });
++    assert.notEqual(result.status, 0, "the build must fail");
++    assert.match(result.stdout + result.stderr, /SITE_URL/);
++  }
++});
++
++test("a build made for production, with production settings", async (t) => {
++  const built = build(PRODUCTION);
++  assert.equal(built.status, 0, built.stdout + built.stderr);
++
++  await t.test("is indexable when started as production (the control case)", async () => {
++    const seen = await crawl(PRODUCTION);
++    assert.equal(seen.started, true);
++    assert.equal(seen.pageHeader, null);
++    assert.match(seen.robots, /^Allow: \/$/m);
++    assert.match(seen.robots, /^Sitemap: https:\/\/vnest\.example\/sitemap\.xml$/m);
++    assert.doesNotMatch(seen.robots + seen.sitemap, /localhost/);
++    assert.match(seen.apiHeader ?? "", /noindex/, "the API is never indexable");
++  });
++
++  await t.test("F1: refuses crawlers when the same artifacts are started as a preview", async () => refuses(await crawl(PREVIEW)));
++  await t.test("F1: refuses crawlers when the same artifacts are started as development", async () => refuses(await crawl(DEVELOPMENT)));
++  await t.test("F1: refuses crawlers when started on mock booking data", async () => refuses(await crawl({ ...PRODUCTION, BOOKING_PROVIDER: "mock" })));
++
++  await t.test("F2: refuses to start as production without SITE_URL", async () => {
++    const seen = await crawl({ ...PRODUCTION, SITE_URL: undefined });
++    assert.equal(seen.started, false);
++    assert.match(seen.output, /SITE_URL is required/);
++  });
++});
++
++test("a build made as a preview stays closed when its artifacts are started as production", async () => {
++  const built = build(PREVIEW);
++  assert.equal(built.status, 0, built.stdout + built.stderr);
++  const seen = await crawl(PRODUCTION);
++  assert.equal(seen.started, true);
++  assert.match(seen.pageHeader ?? "", /noindex/, "the build-time lock must still hold");
++});

@@ -1,0 +1,34 @@
+[
+  {
+    "height": 900,
+    "hero": {
+      "top": 65,
+      "bottom": 659,
+      "overflow": "clip"
+    },
+    "panel": {
+      "top": 79,
+      "bottom": 532,
+      "left": 483.34375,
+      "right": 1171.34375
+    },
+    "portal": false,
+    "lastDateHit": true
+  },
+  {
+    "height": 1400,
+    "hero": {
+      "top": 65,
+      "bottom": 897,
+      "overflow": "clip"
+    },
+    "panel": {
+      "top": 851,
+      "bottom": 1304,
+      "left": 483.34375,
+      "right": 1171.34375
+    },
+    "portal": false,
+    "lastDateHit": false
+  }
+]

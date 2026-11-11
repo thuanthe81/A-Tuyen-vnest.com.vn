@@ -1,0 +1,554 @@
+{
+ "links": {
+  "/dev/demo": [
+   {
+    "text": "VNest, về trang chủ",
+    "to": "/dev/demo",
+    "newTab": false
+   },
+   {
+    "text": "Khám phá nơi lưu trú",
+    "to": "/dev/demo#kham-pha",
+    "newTab": false
+   },
+   {
+    "text": "Về VNest",
+    "to": "/dev/demo#ve-vnest",
+    "newTab": false
+   },
+   {
+    "text": "Hợp tác",
+    "to": "/dev/demo#hop-tac",
+    "newTab": false
+   },
+   {
+    "text": "01Khám phá nơi lưu trú",
+    "to": "/dev/demo#kham-pha",
+    "newTab": false
+   },
+   {
+    "text": "02Về VNest",
+    "to": "/dev/demo#ve-vnest",
+    "newTab": false
+   },
+   {
+    "text": "03Hợp tác cùng VNest",
+    "to": "/dev/demo#hop-tac",
+    "newTab": false
+   },
+   {
+    "text": "04Liên hệ",
+    "to": "/dev/demo#lien-he",
+    "newTab": false
+   },
+   {
+    "text": "",
+    "to": "/dev/stays/bare-chic?view=demo",
+    "newTab": false
+   },
+   {
+    "text": "Bare Chic →",
+    "to": "/dev/stays/bare-chic?view=demo",
+    "newTab": false
+   },
+   {
+    "text": "Liên hệ hợp tác",
+    "to": "/dev/demo#lien-he",
+    "newTab": false
+   }
+  ],
+  "/dev/stays/bare-chic?view=demo": [
+   {
+    "text": "VNest, về trang chủ",
+    "to": "/dev/demo",
+    "newTab": false
+   },
+   {
+    "text": "Khám phá nơi lưu trú",
+    "to": "/dev/demo#kham-pha",
+    "newTab": false
+   },
+   {
+    "text": "Về VNest",
+    "to": "/dev/demo#ve-vnest",
+    "newTab": false
+   },
+   {
+    "text": "Hợp tác",
+    "to": "/dev/demo#hop-tac",
+    "newTab": false
+   },
+   {
+    "text": "01Khám phá nơi lưu trú",
+    "to": "/dev/demo#kham-pha",
+    "newTab": false
+   },
+   {
+    "text": "02Về VNest",
+    "to": "/dev/demo#ve-vnest",
+    "newTab": false
+   },
+   {
+    "text": "03Hợp tác cùng VNest",
+    "to": "/dev/demo#hop-tac",
+    "newTab": false
+   },
+   {
+    "text": "04Liên hệ",
+    "to": "/dev/demo#lien-he",
+    "newTab": false
+   },
+   {
+    "text": "VNest",
+    "to": "/",
+    "newTab": false
+   },
+   {
+    "text": "Tất cả cơ sở",
+    "to": "/stays",
+    "newTab": false
+   },
+   {
+    "text": "01Bare Chic One",
+    "to": "/dev/stays/bare-chic?view=demo#phong-bare-chic-one",
+    "newTab": false
+   },
+   {
+    "text": "02Bare Chic Two",
+    "to": "/dev/stays/bare-chic?view=demo#phong-bare-chic-two",
+    "newTab": false
+   },
+   {
+    "text": "03Bare Chic Three",
+    "to": "/dev/stays/bare-chic?view=demo#phong-bare-chic-three",
+    "newTab": false
+   },
+   {
+    "text": "04Bare Indochine",
+    "to": "/dev/stays/bare-chic?view=demo#phong-bare-indochine",
+    "newTab": false
+   },
+   {
+    "text": "Khám phá các loại phòng",
+    "to": "/dev/stays/bare-chic?view=demo#rooms",
+    "newTab": false
+   },
+   {
+    "text": "Xem bản đồ Bare Chic trên Google Maps (m",
+    "to": "https://share.google/fskgZreXVjowaoQCO",
+    "newTab": true
+   }
+  ]
+ },
+ "drawers": [
+  {
+   "width": 1440,
+   "room": "Bare Chic One",
+   "specs": [
+    "Loại phòng: Studio",
+    "Diện tích: 28 m²",
+    "Sức chứa: 2 người lớn"
+   ],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 3,
+   "firstLoaded": true,
+   "counter": "1/3",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.42,
+   "counterAfterNext": "2/3",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 1440,
+   "room": "Bare Chic Two",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 5,
+   "firstLoaded": true,
+   "counter": "1/5",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.42,
+   "counterAfterNext": "2/5",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 1440,
+   "room": "Bare Chic Three",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 3,
+   "firstLoaded": true,
+   "counter": "1/3",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.42,
+   "counterAfterNext": "2/3",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 1440,
+   "room": "Bare Indochine",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 5,
+   "firstLoaded": true,
+   "counter": "1/5",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.42,
+   "counterAfterNext": "2/5",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 1440,
+   "cta": {
+    "drawerClosed": true,
+    "datesOpened": true,
+    "path": "/dev/stays/bare-chic"
+   },
+   "errors": []
+  },
+  {
+   "width": 768,
+   "room": "Bare Chic One",
+   "specs": [
+    "Loại phòng: Studio",
+    "Diện tích: 28 m²",
+    "Sức chứa: 2 người lớn"
+   ],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 3,
+   "firstLoaded": true,
+   "counter": "1/3",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.54,
+   "counterAfterNext": "2/3",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 768,
+   "room": "Bare Chic Two",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 5,
+   "firstLoaded": true,
+   "counter": "1/5",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.54,
+   "counterAfterNext": "2/5",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 768,
+   "room": "Bare Chic Three",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 3,
+   "firstLoaded": true,
+   "counter": "1/3",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.54,
+   "counterAfterNext": "2/3",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 768,
+   "room": "Bare Indochine",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 5,
+   "firstLoaded": true,
+   "counter": "1/5",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 0.54,
+   "counterAfterNext": "2/5",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 768,
+   "cta": {
+    "drawerClosed": true,
+    "datesOpened": true,
+    "path": "/dev/stays/bare-chic"
+   },
+   "errors": []
+  },
+  {
+   "width": 390,
+   "room": "Bare Chic One",
+   "specs": [
+    "Loại phòng: Studio",
+    "Diện tích: 28 m²",
+    "Sức chứa: 2 người lớn"
+   ],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 3,
+   "firstLoaded": true,
+   "counter": "1/3",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 1,
+   "counterAfterNext": "2/3",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 390,
+   "room": "Bare Chic Two",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 5,
+   "firstLoaded": true,
+   "counter": "1/5",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 1,
+   "counterAfterNext": "2/5",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 390,
+   "room": "Bare Chic Three",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 3,
+   "firstLoaded": true,
+   "counter": "1/3",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 1,
+   "counterAfterNext": "2/3",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 390,
+   "room": "Bare Indochine",
+   "specs": [],
+   "placeholderLines": 1,
+   "invented": [],
+   "amenities": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Bếp nhỏ",
+    "Phòng tắm riêng",
+    "Smart TV",
+    "Wifi",
+    "Điều hoà nhiệt độ"
+   ],
+   "price": [
+    "Giá đang cập nhật"
+   ],
+   "photos": 5,
+   "firstLoaded": true,
+   "counter": "1/5",
+   "ctaInView": true,
+   "overflowX": false,
+   "widthShare": 1,
+   "counterAfterNext": "2/5",
+   "closed": true,
+   "focusBack": true
+  },
+  {
+   "width": 390,
+   "cta": {
+    "drawerClosed": true,
+    "datesOpened": true,
+    "path": "/dev/stays/bare-chic"
+   },
+   "errors": []
+  }
+ ],
+ "guard": {
+  "02.1 bar: VNest": {
+   "href": "/",
+   "landed": "/dev/demo"
+  },
+  "02.1 wrapper: Tất cả cơ sở": {
+   "href": "/stays",
+   "landed": "/dev/demo#kham-pha"
+  }
+ }
+}

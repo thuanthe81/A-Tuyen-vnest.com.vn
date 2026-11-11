@@ -1,0 +1,5164 @@
+{
+ "measured": "2026-10-13, production build (next build, next start on localhost:3300), headless Chrome 154 over the DevTools protocol. LAB DATA ONLY: one machine, synthetic loads and inputs. No field data, no real device, no Safari, not Lighthouse.",
+ "method": {
+  "lcp": "PerformanceObserver largest-contentful-paint, median of 3 fresh loads in a new tab, cache disabled",
+  "layoutShift": "sum of layout-shift entries without recent input, at load and after a scroll to the foot of the page and back",
+  "throttling": "slow 4G: 150 ms latency, 1.6 Mbit/s down, 750 kbit/s up; CPU slowdown as named in each profile",
+  "clip": "media events (playing, waiting, ended) timed from navigation start. One 'waiting' at about 0.06 s is the clip starting, also seen with no throttling; more than one is a visible stall",
+  "geometry": "getBoundingClientRect with prefers-reduced-motion set, so the showcase shows its poster",
+  "interaction": "real key presses, touch taps and clicks dispatched through the DevTools protocol"
+ },
+ "caveats": [
+  "With no throttling at 1440px Chrome reports the clip's first frame as the LCP element, as in the earlier rounds; the poster is already painted by then.",
+  "prefers-reduced-data could not be emulated in this Chrome (the media query did not match); the Save-Data and 2G paths were tested through navigator.connection.",
+  "The drawn page's clip loops, so it has no 'ended' time.",
+  "Stock media: three assets from three unrelated places. The numbers say how photographs and film of this weight behave in this layout, not how VNest's own will look."
+ ],
+ "mediaFilesBytes": {
+  "p1-facade-1200.avif": 167012,
+  "p1-facade-1200.jpg": 253652,
+  "p1-facade-1200.webp": 209206,
+  "p1-facade-240.avif": 10296,
+  "p1-facade-240.jpg": 14742,
+  "p1-facade-240.webp": 12688,
+  "p1-facade-360.avif": 20001,
+  "p1-facade-360.jpg": 29558,
+  "p1-facade-360.webp": 25170,
+  "p1-facade-480.avif": 32900,
+  "p1-facade-480.jpg": 49446,
+  "p1-facade-480.webp": 41546,
+  "p1-facade-720.avif": 65367,
+  "p1-facade-720.jpg": 100268,
+  "p1-facade-720.webp": 82954,
+  "p4-detail-1200.avif": 52887,
+  "p4-detail-1200.jpg": 114809,
+  "p4-detail-1200.webp": 66504,
+  "p4-detail-240.avif": 6328,
+  "p4-detail-240.jpg": 9998,
+  "p4-detail-240.webp": 7026,
+  "p4-detail-360.avif": 10631,
+  "p4-detail-360.jpg": 18394,
+  "p4-detail-360.webp": 12638,
+  "p4-detail-480.avif": 15134,
+  "p4-detail-480.jpg": 28080,
+  "p4-detail-480.webp": 18646,
+  "p4-detail-720.avif": 26152,
+  "p4-detail-720.jpg": 52027,
+  "p4-detail-720.webp": 33054,
+  "v1-room-1280.mp4": 1412770,
+  "v1-room-960.mp4": 773638,
+  "v1-room-poster-1280.avif": 59516,
+  "v1-room-poster-1280.jpg": 107983,
+  "v1-room-poster-1280.webp": 81230,
+  "v1-room-poster-1920.avif": 117386,
+  "v1-room-poster-1920.jpg": 209862,
+  "v1-room-poster-1920.webp": 144452,
+  "v1-room-poster-640.avif": 17933,
+  "v1-room-poster-640.jpg": 32817,
+  "v1-room-poster-640.webp": 28120,
+  "v1-room-poster-960.avif": 36771,
+  "v1-room-poster-960.jpg": 66505,
+  "v1-room-poster-960.webp": 53310
+ },
+ "illustratedPageUnchanged": {
+  "note": "Today's drawn page against the 12/10 captures in ../refine-01, pixel by pixel. Every differing pixel is either on an edge inside the showcase picture (the 12/10 captures show the clip's first frame over the poster; today's show the poster alone) or in the section frame below the fold (its arrival animation is skipped under reduced motion). Layout, type, frames and the booking action are identical.",
+  "differences": {
+   "390": {
+    "pixels": 1316640,
+    "differing": 22704,
+    "box": [
+     0,
+     434,
+     779,
+     1681
+    ]
+   },
+   "768": {
+    "pixels": 786432,
+    "differing": 42794,
+    "box": [
+     25,
+     6,
+     742,
+     1023
+    ]
+   },
+   "1440": {
+    "pixels": 1296000,
+    "differing": 32562,
+    "box": [
+     120,
+     285,
+     1319,
+     899
+    ]
+   },
+   "360x640": {
+    "pixels": 921600,
+    "differing": 15285,
+    "box": [
+     0,
+     406,
+     719,
+     716
+    ]
+   }
+  },
+  "aVersusBOnPhones": {
+   "a vs b at 390 (still)": {
+    "sameSize": true,
+    "pixels": 1316640,
+    "differing": 0,
+    "share": 0
+   },
+   "a vs b at 360x640 (still)": {
+    "sameSize": true,
+    "pixels": 921600,
+    "differing": 0,
+    "share": 0
+   },
+   "drawn at 1440 today vs refine-01/after-1440x900.png (12/10)": {
+    "sameSize": true,
+    "pixels": 1296000,
+    "differing": 32562,
+    "share": 0.02513
+   },
+   "drawn at 390 today vs refine-01/after-390x844.png (12/10)": {
+    "sameSize": true,
+    "pixels": 1316640,
+    "differing": 22651,
+    "share": 0.0172
+   },
+   "drawn at 768 today vs refine-01/after-768x1024.png (12/10)": {
+    "sameSize": false,
+    "a": [
+     1536,
+     2048
+    ],
+    "b": [
+     768,
+     1024
+    ]
+   }
+  }
+ },
+ "geometry": {
+  "drawn-390-static": {
+   "viewport": [
+    390,
+    844
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 390,
+    "h": 260,
+    "ratio": 1.5,
+    "poster": "c-rooftop-l.svg",
+    "posterNatural": [
+     2000,
+     1125
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.844,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.308
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 17,
+     "y": 647,
+     "w": 202,
+     "h": 252,
+     "file": "c-facade-p.svg",
+     "natural": [
+      1200,
+      1500
+     ],
+     "shareOfShowcaseArea": 0.502
+    },
+    {
+     "label": "03Phòng",
+     "x": 230,
+     "y": 756,
+     "w": 143,
+     "h": 143,
+     "file": "c-room-p.svg",
+     "natural": [
+      1200,
+      1500
+     ],
+     "shareOfShowcaseArea": 0.202
+    }
+   ],
+   "identity": {
+    "x": 17,
+    "y": 405,
+    "w": 357,
+    "h": 148
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -260,
+   "h1": {
+    "x": 17,
+    "y": 444,
+    "w": 357,
+    "h": 58,
+    "lines": 1,
+    "size": 55.38
+   },
+   "cta": {
+    "x": 17,
+    "y": 567,
+    "w": 357,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 221
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": true,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-390-static": {
+   "viewport": [
+    390,
+    844
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 390,
+    "h": 260,
+    "ratio": 1.5,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     389,
+     219
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.844,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.308
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 17,
+     "y": 647,
+     "w": 202,
+     "h": 252,
+     "file": "p1-facade-480.avif",
+     "natural": [
+      218,
+      327
+     ],
+     "shareOfShowcaseArea": 0.502
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 230,
+     "y": 756,
+     "w": 143,
+     "h": 143,
+     "file": "p4-detail-360.avif",
+     "natural": [
+      156,
+      234
+     ],
+     "shareOfShowcaseArea": 0.202
+    }
+   ],
+   "identity": {
+    "x": 17,
+    "y": 405,
+    "w": 357,
+    "h": 148
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -260,
+   "h1": {
+    "x": 17,
+    "y": 444,
+    "w": 357,
+    "h": 58,
+    "lines": 1,
+    "size": 55.38
+   },
+   "cta": {
+    "x": 17,
+    "y": 567,
+    "w": 357,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 221
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-390-held": {
+   "viewport": [
+    390,
+    844
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 390,
+    "h": 260,
+    "ratio": 1.5,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     389,
+     219
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.844,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.308
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 17,
+     "y": 647,
+     "w": 202,
+     "h": 252,
+     "file": "p1-facade-480.avif",
+     "natural": [
+      218,
+      327
+     ],
+     "shareOfShowcaseArea": 0.502
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 230,
+     "y": 756,
+     "w": 143,
+     "h": 143,
+     "file": "p4-detail-360.avif",
+     "natural": [
+      156,
+      234
+     ],
+     "shareOfShowcaseArea": 0.202
+    }
+   ],
+   "identity": {
+    "x": 17,
+    "y": 405,
+    "w": 357,
+    "h": 148
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -260,
+   "h1": {
+    "x": 17,
+    "y": 444,
+    "w": 357,
+    "h": 58,
+    "lines": 1,
+    "size": 55.38
+   },
+   "cta": {
+    "x": 17,
+    "y": 567,
+    "w": 357,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 221
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "v1-room-960.mp4",
+    "paused": true,
+    "ended": true,
+    "t": 5,
+    "duration": 5,
+    "shown": true,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     960,
+     540
+    ]
+   },
+   "toggle": "Phát lại thước phim"
+  },
+  "b-390-static": {
+   "viewport": [
+    390,
+    844
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 390,
+    "h": 260,
+    "ratio": 1.5,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     389,
+     219
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.844,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.308
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 17,
+     "y": 647,
+     "w": 202,
+     "h": 252,
+     "file": "p1-facade-480.avif",
+     "natural": [
+      218,
+      327
+     ],
+     "shareOfShowcaseArea": 0.502
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 230,
+     "y": 756,
+     "w": 143,
+     "h": 143,
+     "file": "p4-detail-360.avif",
+     "natural": [
+      156,
+      234
+     ],
+     "shareOfShowcaseArea": 0.202
+    }
+   ],
+   "identity": {
+    "x": 17,
+    "y": 405,
+    "w": 357,
+    "h": 148
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -260,
+   "h1": {
+    "x": 17,
+    "y": 444,
+    "w": 357,
+    "h": 58,
+    "lines": 1,
+    "size": 55.38
+   },
+   "cta": {
+    "x": 17,
+    "y": 567,
+    "w": 357,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 221
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-390-held": {
+   "viewport": [
+    390,
+    844
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 390,
+    "h": 260,
+    "ratio": 1.5,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     389,
+     219
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.844,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.308
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 17,
+     "y": 647,
+     "w": 202,
+     "h": 252,
+     "file": "p1-facade-480.avif",
+     "natural": [
+      218,
+      327
+     ],
+     "shareOfShowcaseArea": 0.502
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 230,
+     "y": 756,
+     "w": 143,
+     "h": 143,
+     "file": "p4-detail-360.avif",
+     "natural": [
+      156,
+      234
+     ],
+     "shareOfShowcaseArea": 0.202
+    }
+   ],
+   "identity": {
+    "x": 17,
+    "y": 405,
+    "w": 357,
+    "h": 148
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -260,
+   "h1": {
+    "x": 17,
+    "y": 444,
+    "w": 357,
+    "h": 58,
+    "lines": 1,
+    "size": 55.38
+   },
+   "cta": {
+    "x": 17,
+    "y": 567,
+    "w": 357,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 221
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "v1-room-960.mp4",
+    "paused": true,
+    "ended": true,
+    "t": 5,
+    "duration": 5,
+    "shown": true,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     960,
+     540
+    ]
+   },
+   "toggle": "Phát lại thước phim"
+  },
+  "drawn-768-static": {
+   "viewport": [
+    768,
+    1024
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 235,
+    "y": 245,
+    "w": 508,
+    "h": 286,
+    "ratio": 1.776,
+    "poster": "c-rooftop-l.svg",
+    "posterNatural": [
+     2000,
+     1125
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.999,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.185
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 117,
+     "y": 402,
+     "w": 102,
+     "h": 128,
+     "file": "c-facade-p.svg",
+     "natural": [
+      1200,
+      1500
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Phòng",
+     "x": 25,
+     "y": 454,
+     "w": 76,
+     "h": 76,
+     "file": "c-room-p.svg",
+     "natural": [
+      1200,
+      1500
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 25,
+    "y": 161,
+    "w": 195,
+    "h": 241
+   },
+   "identityBottomToUprightTop": 0,
+   "showcaseTopMinusIdentityTop": 84,
+   "h1": {
+    "x": 25,
+    "y": 193,
+    "w": 195,
+    "h": 75,
+    "lines": 2,
+    "size": 36
+   },
+   "cta": {
+    "x": 455,
+    "y": 603,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 361
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": true,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-768-static": {
+   "viewport": [
+    768,
+    1024
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 235,
+    "y": 245,
+    "w": 508,
+    "h": 286,
+    "ratio": 1.776,
+    "poster": "v1-room-poster-1280.avif",
+    "posterNatural": [
+     552,
+     311
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.999
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.185
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 117,
+     "y": 402,
+     "w": 102,
+     "h": 128,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      107,
+      161
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 25,
+     "y": 454,
+     "w": 76,
+     "h": 76,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      76,
+      115
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 25,
+    "y": 161,
+    "w": 195,
+    "h": 241
+   },
+   "identityBottomToUprightTop": 0,
+   "showcaseTopMinusIdentityTop": 84,
+   "h1": {
+    "x": 25,
+    "y": 193,
+    "w": 195,
+    "h": 75,
+    "lines": 2,
+    "size": 36
+   },
+   "cta": {
+    "x": 455,
+    "y": 603,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 361
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-768-held": {
+   "viewport": [
+    768,
+    1024
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 235,
+    "y": 245,
+    "w": 508,
+    "h": 286,
+    "ratio": 1.776,
+    "poster": "v1-room-poster-1280.avif",
+    "posterNatural": [
+     552,
+     311
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.999
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.185
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 117,
+     "y": 402,
+     "w": 102,
+     "h": 128,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      107,
+      161
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 25,
+     "y": 454,
+     "w": 76,
+     "h": 76,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      76,
+      115
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 25,
+    "y": 161,
+    "w": 195,
+    "h": 241
+   },
+   "identityBottomToUprightTop": 0,
+   "showcaseTopMinusIdentityTop": 84,
+   "h1": {
+    "x": 25,
+    "y": 193,
+    "w": 195,
+    "h": 75,
+    "lines": 2,
+    "size": 36
+   },
+   "cta": {
+    "x": 455,
+    "y": 603,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 361
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "v1-room-1280.mp4",
+    "paused": true,
+    "ended": true,
+    "t": 5,
+    "duration": 5,
+    "shown": true,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     1280,
+     720
+    ]
+   },
+   "toggle": "Phát lại thước phim"
+  },
+  "b-768-static": {
+   "viewport": [
+    768,
+    1024
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 275,
+    "y": 233,
+    "w": 468,
+    "h": 263,
+    "ratio": 1.779,
+    "poster": "v1-room-poster-1280.avif",
+    "posterNatural": [
+     552,
+     311
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.997
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.157
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 135,
+     "y": 341,
+     "w": 125,
+     "h": 156,
+     "file": "p1-facade-360.avif",
+     "natural": [
+      126,
+      190
+     ],
+     "shareOfShowcaseArea": 0.158
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 25,
+     "y": 403,
+     "w": 94,
+     "h": 94,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      96,
+      144
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 25,
+    "y": 161,
+    "w": 235,
+    "h": 180
+   },
+   "identityBottomToUprightTop": 0,
+   "showcaseTopMinusIdentityTop": 72,
+   "h1": {
+    "x": 25,
+    "y": 193,
+    "w": 235,
+    "h": 37,
+    "lines": 1,
+    "size": 36
+   },
+   "cta": {
+    "x": 455,
+    "y": 570,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 394
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-768-held": {
+   "viewport": [
+    768,
+    1024
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 275,
+    "y": 233,
+    "w": 468,
+    "h": 263,
+    "ratio": 1.779,
+    "poster": "v1-room-poster-1280.avif",
+    "posterNatural": [
+     552,
+     311
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.997
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.157
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 135,
+     "y": 341,
+     "w": 125,
+     "h": 156,
+     "file": "p1-facade-360.avif",
+     "natural": [
+      126,
+      190
+     ],
+     "shareOfShowcaseArea": 0.158
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 25,
+     "y": 403,
+     "w": 94,
+     "h": 94,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      96,
+      144
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 25,
+    "y": 161,
+    "w": 235,
+    "h": 180
+   },
+   "identityBottomToUprightTop": 0,
+   "showcaseTopMinusIdentityTop": 72,
+   "h1": {
+    "x": 25,
+    "y": 193,
+    "w": 235,
+    "h": 37,
+    "lines": 1,
+    "size": 36
+   },
+   "cta": {
+    "x": 455,
+    "y": 570,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 394
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "v1-room-960.mp4",
+    "paused": true,
+    "ended": true,
+    "t": 5,
+    "duration": 5,
+    "shown": true,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     960,
+     540
+    ]
+   },
+   "toggle": "Phát lại thước phim"
+  },
+  "drawn-1440-static": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 456,
+    "y": 161,
+    "w": 865,
+    "h": 486,
+    "ratio": 1.78,
+    "poster": "c-rooftop-l.svg",
+    "posterNatural": [
+     2000,
+     1125
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.999
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.324
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 266,
+     "y": 430,
+     "w": 174,
+     "h": 218,
+     "file": "c-facade-p.svg",
+     "natural": [
+      1200,
+      1500
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Phòng",
+     "x": 120,
+     "y": 517,
+     "w": 130,
+     "h": 130,
+     "file": "c-room-p.svg",
+     "natural": [
+      1200,
+      1500
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 120,
+    "y": 161,
+    "w": 320,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 120,
+    "y": 193,
+    "w": 320,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1032,
+    "y": 720,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 120
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": true,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-1440-static": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 456,
+    "y": 161,
+    "w": 865,
+    "h": 486,
+    "ratio": 1.78,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.999
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.324
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 266,
+     "y": 430,
+     "w": 174,
+     "h": 218,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      201,
+      302
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 120,
+     "y": 517,
+     "w": 130,
+     "h": 130,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      144,
+      216
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 120,
+    "y": 161,
+    "w": 320,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 120,
+    "y": 193,
+    "w": 320,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1032,
+    "y": 720,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 120
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-1440-held": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 456,
+    "y": 161,
+    "w": 865,
+    "h": 486,
+    "ratio": 1.78,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.999
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.324
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 266,
+     "y": 430,
+     "w": 174,
+     "h": 218,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      201,
+      302
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 120,
+     "y": 517,
+     "w": 130,
+     "h": 130,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      144,
+      216
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 120,
+    "y": 161,
+    "w": 320,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 120,
+    "y": 193,
+    "w": 320,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1032,
+    "y": 720,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 120
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "v1-room-1280.mp4",
+    "paused": true,
+    "ended": true,
+    "t": 5,
+    "duration": 5,
+    "shown": true,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     1280,
+     720
+    ]
+   },
+   "toggle": "Phát lại thước phim"
+  },
+  "b-1440-static": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 524,
+    "y": 161,
+    "w": 796,
+    "h": 448,
+    "ratio": 1.777,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.999,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.275
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 296,
+     "y": 344,
+     "w": 212,
+     "h": 265,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      212,
+      318
+     ],
+     "shareOfShowcaseArea": 0.158
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 120,
+     "y": 449,
+     "w": 160,
+     "h": 160,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      160,
+      240
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 120,
+    "y": 161,
+    "w": 388,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 8,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 120,
+    "y": 193,
+    "w": 388,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1032,
+    "y": 682,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 158
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-1440-held": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 524,
+    "y": 161,
+    "w": 796,
+    "h": 448,
+    "ratio": 1.777,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.999,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.275
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 296,
+     "y": 344,
+     "w": 212,
+     "h": 265,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      212,
+      318
+     ],
+     "shareOfShowcaseArea": 0.158
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 120,
+     "y": 449,
+     "w": 160,
+     "h": 160,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      160,
+      240
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 120,
+    "y": 161,
+    "w": 388,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 8,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 120,
+    "y": 193,
+    "w": 388,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1032,
+    "y": 682,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 158
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "v1-room-1280.mp4",
+    "paused": true,
+    "ended": true,
+    "t": 5,
+    "duration": 5,
+    "shown": true,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     1280,
+     720
+    ]
+   },
+   "toggle": "Phát lại thước phim"
+  },
+  "a-360x640-static": {
+   "viewport": [
+    360,
+    640
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 360,
+    "h": 218,
+    "ratio": 1.651,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     360,
+     202
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.927,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.341
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 16,
+     "y": 600,
+     "w": 185,
+     "h": 231,
+     "file": "p1-facade-480.avif",
+     "natural": [
+      201,
+      302
+     ],
+     "shareOfShowcaseArea": 0.545
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 213,
+     "y": 700,
+     "w": 131,
+     "h": 131,
+     "file": "p4-detail-360.avif",
+     "natural": [
+      144,
+      216
+     ],
+     "shareOfShowcaseArea": 0.219
+    }
+   ],
+   "identity": {
+    "x": 16,
+    "y": 363,
+    "w": 328,
+    "h": 143
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -218,
+   "h1": {
+    "x": 16,
+    "y": 401,
+    "w": 328,
+    "h": 53,
+    "lines": 1,
+    "size": 51.12
+   },
+   "cta": {
+    "x": 16,
+    "y": 520,
+    "w": 328,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 64
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-360x640-static": {
+   "viewport": [
+    360,
+    640
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 0,
+    "y": 145,
+    "w": 360,
+    "h": 218,
+    "ratio": 1.651,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     360,
+     202
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.927,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.341
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 16,
+     "y": 600,
+     "w": 185,
+     "h": 231,
+     "file": "p1-facade-480.avif",
+     "natural": [
+      201,
+      302
+     ],
+     "shareOfShowcaseArea": 0.545
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 213,
+     "y": 700,
+     "w": 131,
+     "h": 131,
+     "file": "p4-detail-360.avif",
+     "natural": [
+      144,
+      216
+     ],
+     "shareOfShowcaseArea": 0.219
+    }
+   ],
+   "identity": {
+    "x": 16,
+    "y": 363,
+    "w": 328,
+    "h": 143
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": -218,
+   "h1": {
+    "x": 16,
+    "y": 401,
+    "w": 328,
+    "h": 53,
+    "lines": 1,
+    "size": 51.12
+   },
+   "cta": {
+    "x": 16,
+    "y": 520,
+    "w": 328,
+    "h": 56,
+    "inFirstScreen": true,
+    "bottomFromFold": 64
+   },
+   "framesInFirstScreen": 0,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-1024-static": {
+   "viewport": [
+    1024,
+    768
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 305,
+    "y": 161,
+    "w": 689,
+    "h": 387,
+    "ratio": 1.78,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     737,
+     414
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.339
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 150,
+     "y": 375,
+     "w": 139,
+     "h": 173,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      143,
+      215
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 31,
+     "y": 445,
+     "w": 104,
+     "h": 104,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      102,
+      153
+     ],
+     "shareOfShowcaseArea": 0.041
+    }
+   ],
+   "identity": {
+    "x": 31,
+    "y": 161,
+    "w": 258,
+    "h": 182
+   },
+   "identityBottomToUprightTop": 32,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 31,
+    "y": 193,
+    "w": 258,
+    "h": 40,
+    "lines": 1,
+    "size": 38.4
+   },
+   "cta": {
+    "x": 705,
+    "y": 621,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 87
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-1024-static": {
+   "viewport": [
+    1024,
+    768
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 359,
+    "y": 174,
+    "w": 634,
+    "h": 357,
+    "ratio": 1.776,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     737,
+     414
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.998,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.288
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 174,
+     "y": 319,
+     "w": 169,
+     "h": 211,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      168,
+      253
+     ],
+     "shareOfShowcaseArea": 0.158
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 31,
+     "y": 403,
+     "w": 128,
+     "h": 128,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      128,
+      192
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 31,
+    "y": 161,
+    "w": 313,
+    "h": 158
+   },
+   "identityBottomToUprightTop": 0,
+   "showcaseTopMinusIdentityTop": 13,
+   "h1": {
+    "x": 31,
+    "y": 193,
+    "w": 313,
+    "h": 40,
+    "lines": 1,
+    "size": 38.4
+   },
+   "cta": {
+    "x": 705,
+    "y": 604,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 104
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-1280-static": {
+   "viewport": [
+    1280,
+    800
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 374,
+    "y": 161,
+    "w": 870,
+    "h": 489,
+    "ratio": 1.779,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 0.999
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.415
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 183,
+     "y": 431,
+     "w": 175,
+     "h": 219,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      179,
+      268
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 36,
+     "y": 519,
+     "w": 131,
+     "h": 131,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      128,
+      192
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 36,
+    "y": 161,
+    "w": 322,
+    "h": 168
+   },
+   "identityBottomToUprightTop": 102,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 36,
+    "y": 193,
+    "w": 322,
+    "h": 50,
+    "lines": 1,
+    "size": 48
+   },
+   "cta": {
+    "x": 956,
+    "y": 723,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 17
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-1280-static": {
+   "viewport": [
+    1280,
+    800
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 443,
+    "y": 161,
+    "w": 801,
+    "h": 451,
+    "ratio": 1.776,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.999,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.353
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 213,
+     "y": 345,
+     "w": 213,
+     "h": 267,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      212,
+      318
+     ],
+     "shareOfShowcaseArea": 0.157
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 36,
+     "y": 451,
+     "w": 161,
+     "h": 161,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      160,
+      240
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 36,
+    "y": 161,
+    "w": 390,
+    "h": 168
+   },
+   "identityBottomToUprightTop": 16,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 36,
+    "y": 193,
+    "w": 390,
+    "h": 50,
+    "lines": 1,
+    "size": 48
+   },
+   "cta": {
+    "x": 956,
+    "y": 685,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 55
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "a-1920-static": {
+   "viewport": [
+    1920,
+    1080
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 696,
+    "y": 161,
+    "w": 864,
+    "h": 486,
+    "ratio": 1.778,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 1,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.203
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 506,
+     "y": 430,
+     "w": 174,
+     "h": 218,
+     "file": "p1-facade-360.avif",
+     "natural": [
+      268,
+      403
+     ],
+     "shareOfShowcaseArea": 0.09
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 360,
+     "y": 517,
+     "w": 130,
+     "h": 130,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      192,
+      288
+     ],
+     "shareOfShowcaseArea": 0.04
+    }
+   ],
+   "identity": {
+    "x": 360,
+    "y": 161,
+    "w": 320,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 94,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 360,
+    "y": 193,
+    "w": 320,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1272,
+    "y": 720,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 300
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  },
+  "b-1920-static": {
+   "viewport": [
+    1920,
+    1080
+   ],
+   "overflowPx": 0,
+   "showcase": {
+    "x": 764,
+    "y": 161,
+    "w": 796,
+    "h": 448,
+    "ratio": 1.777,
+    "poster": "v1-room-poster-960.avif",
+    "posterNatural": [
+     864,
+     486
+    ],
+    "posterCrop": {
+     "visibleWidth": 0.999,
+     "visibleHeight": 1
+    },
+    "objectPosition": "50% 50%",
+    "shareOfViewport": 0.172
+   },
+   "frames": [
+    {
+     "label": "02Kiến trúc",
+     "x": 536,
+     "y": 344,
+     "w": 212,
+     "h": 265,
+     "file": "p1-facade-240.avif",
+     "natural": [
+      212,
+      318
+     ],
+     "shareOfShowcaseArea": 0.158
+    },
+    {
+     "label": "03Chi tiết",
+     "x": 360,
+     "y": 449,
+     "w": 160,
+     "h": 160,
+     "file": "p4-detail-240.avif",
+     "natural": [
+      160,
+      240
+     ],
+     "shareOfShowcaseArea": 0.072
+    }
+   ],
+   "identity": {
+    "x": 360,
+    "y": 161,
+    "w": 388,
+    "h": 175
+   },
+   "identityBottomToUprightTop": 8,
+   "showcaseTopMinusIdentityTop": 0,
+   "h1": {
+    "x": 360,
+    "y": 193,
+    "w": 388,
+    "h": 56,
+    "lines": 1,
+    "size": 54
+   },
+   "cta": {
+    "x": 1272,
+    "y": 682,
+    "w": 288,
+    "h": 60,
+    "inFirstScreen": true,
+    "bottomFromFold": 338
+   },
+   "framesInFirstScreen": 2,
+   "barBottom": 93,
+   "video": {
+    "src": "",
+    "paused": true,
+    "ended": false,
+    "t": 0,
+    "duration": 0,
+    "shown": false,
+    "loop": false,
+    "muted": true,
+    "inline": true,
+    "preload": "none",
+    "size": [
+     0,
+     0
+    ]
+   },
+   "toggle": "Phát thước phim"
+  }
+ },
+ "loading": [
+  {
+   "profile": "phone 390x844 @3x, slow 4G, 4x CPU",
+   "route": "drawn",
+   "clipFirstPlayingMs": [
+    3624,
+    3545,
+    3560
+   ],
+   "clipWaitsAfterStart": [
+    0,
+    0,
+    0
+   ],
+   "clipEndedMs": [
+    null,
+    null,
+    null
+   ],
+   "lcpMs": 876,
+   "lcpRuns": [
+    876,
+    868,
+    884
+   ],
+   "lcpElement": "IMG c-rooftop-l.svg",
+   "fcpMs": 816,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 876,
+    "lcpElement": "IMG c-rooftop-l.svg",
+    "lcpSize": 101400,
+    "lcpCandidates": [
+     "812 ms H1 Cơ sở mẫu A",
+     "876 ms IMG c-rooftop-l.svg"
+    ],
+    "fcp": 812,
+    "nav": {
+     "ttfb": 16,
+     "dcl": 678,
+     "load": 2049
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2112,
+      0
+     ],
+     [
+      "loadstart",
+      2112,
+      0
+     ],
+     [
+      "playing",
+      3624,
+      0
+     ],
+     [
+      "pause",
+      7782,
+      4.16
+     ],
+     [
+      "playing",
+      9485,
+      4.16
+     ]
+    ],
+    "firstPlayingMs": 3624,
+    "waitsAfterStart": 0,
+    "endedMs": null,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "c-rooftop-l.svg",
+      "kb": 1.2,
+      "start": 184,
+      "end": 850
+     },
+     {
+      "file": "c-facade-p.svg",
+      "kb": 1.3,
+      "start": 805,
+      "end": 1067
+     },
+     {
+      "file": "c-room-p.svg",
+      "kb": 1.1,
+      "start": 805,
+      "end": 1082
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2117,
+      "end": 2288
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 7786,
+      "end": 7958
+     }
+    ],
+    "video": [
+     {
+      "file": "lf-showcase-s.mp4",
+      "kb": 245.9,
+      "start": 2111,
+      "end": 3570,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "lf-showcase-s.mp4",
+     "t": 4.01,
+     "ended": false,
+     "paused": false,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": null,
+    "bytesBeforeLoadKb": 303.3,
+    "totalKb": 557.1,
+    "requests": 37
+   }
+  },
+  {
+   "profile": "phone 390x844 @3x, slow 4G, 4x CPU",
+   "route": "a",
+   "clipFirstPlayingMs": [
+    3436,
+    3434,
+    3443
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    1,
+    1
+   ],
+   "clipEndedMs": [
+    8551,
+    8542,
+    8542
+   ],
+   "lcpMs": 2168,
+   "lcpRuns": [
+    2164,
+    2236,
+    2168
+   ],
+   "lcpElement": "IMG v1-room-poster-1280.avif",
+   "fcpMs": 808,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 2164,
+    "lcpElement": "IMG v1-room-poster-1280.avif",
+    "lcpSize": 101400,
+    "lcpCandidates": [
+     "804 ms H1 Cơ sở mẫu A",
+     "2164 ms IMG v1-room-poster-1280.avif"
+    ],
+    "fcp": 804,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 673,
+     "load": 2682
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2734,
+      0
+     ],
+     [
+      "loadstart",
+      2734,
+      0
+     ],
+     [
+      "playing",
+      3436,
+      0
+     ],
+     [
+      "waiting",
+      3490,
+      0.05
+     ],
+     [
+      "playing",
+      3592,
+      0.05
+     ],
+     [
+      "pause",
+      8548,
+      5
+     ],
+     [
+      "ended",
+      8551,
+      5
+     ]
+    ],
+    "firstPlayingMs": 3436,
+    "waitsAfterStart": 1,
+    "endedMs": 8551,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1280.avif",
+      "kb": 58.4,
+      "start": 179,
+      "end": 2149
+     },
+     {
+      "file": "p1-facade-720.avif",
+      "kb": 64.1,
+      "start": 797,
+      "end": 2539
+     },
+     {
+      "file": "p4-detail-480.avif",
+      "kb": 15.1,
+      "start": 797,
+      "end": 1489
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2740,
+      "end": 2907
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 8924,
+      "end": 9094
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-960.mp4",
+      "kb": 755.9,
+      "start": 2733,
+      "end": 6806,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-960.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 5776,
+    "bytesBeforeLoadKb": 437.9,
+    "totalKb": 1201.3,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "phone 390x844 @3x, slow 4G, 4x CPU",
+   "route": "b",
+   "clipFirstPlayingMs": [
+    3435,
+    3443,
+    3429
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    1,
+    1
+   ],
+   "clipEndedMs": [
+    8538,
+    8547,
+    8537
+   ],
+   "lcpMs": 2136,
+   "lcpRuns": [
+    2096,
+    2172,
+    2136
+   ],
+   "lcpElement": "IMG v1-room-poster-1280.avif",
+   "fcpMs": 808,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 2096,
+    "lcpElement": "IMG v1-room-poster-1280.avif",
+    "lcpSize": 101400,
+    "lcpCandidates": [
+     "800 ms H1 Cơ sở mẫu A",
+     "2096 ms IMG v1-room-poster-1280.avif"
+    ],
+    "fcp": 800,
+    "nav": {
+     "ttfb": 5,
+     "dcl": 674,
+     "load": 2681
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2735,
+      0
+     ],
+     [
+      "loadstart",
+      2735,
+      0
+     ],
+     [
+      "playing",
+      3435,
+      0
+     ],
+     [
+      "waiting",
+      3496,
+      0.06
+     ],
+     [
+      "playing",
+      3591,
+      0.06
+     ],
+     [
+      "pause",
+      8535,
+      5
+     ],
+     [
+      "ended",
+      8538,
+      5
+     ]
+    ],
+    "firstPlayingMs": 3435,
+    "waitsAfterStart": 1,
+    "endedMs": 8538,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1280.avif",
+      "kb": 58.4,
+      "start": 177,
+      "end": 2088
+     },
+     {
+      "file": "p1-facade-720.avif",
+      "kb": 64.1,
+      "start": 797,
+      "end": 2560
+     },
+     {
+      "file": "p4-detail-480.avif",
+      "kb": 15.1,
+      "start": 797,
+      "end": 1495
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2747,
+      "end": 2913
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 8929,
+      "end": 9100
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-960.mp4",
+      "kb": 755.9,
+      "start": 2733,
+      "end": 6805,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-960.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 5778,
+    "bytesBeforeLoadKb": 437.9,
+    "totalKb": 1201.4,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "phone 390x844 @3x, no throttling",
+   "route": "drawn",
+   "clipFirstPlayingMs": [
+    77,
+    73,
+    73
+   ],
+   "clipWaitsAfterStart": [
+    0,
+    0,
+    0
+   ],
+   "clipEndedMs": [
+    null,
+    null,
+    null
+   ],
+   "lcpMs": 48,
+   "lcpRuns": [
+    60,
+    48,
+    48
+   ],
+   "lcpElement": "IMG c-rooftop-l.svg",
+   "fcpMs": 48,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 60,
+    "lcpElement": "IMG c-rooftop-l.svg",
+    "lcpSize": 101400,
+    "lcpCandidates": [
+     "60 ms IMG c-rooftop-l.svg"
+    ],
+    "fcp": 60,
+    "nav": {
+     "ttfb": 4,
+     "dcl": 21,
+     "load": 59
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      64,
+      0
+     ],
+     [
+      "loadstart",
+      64,
+      0
+     ],
+     [
+      "playing",
+      77,
+      0
+     ],
+     [
+      "pause",
+      4304,
+      4.23
+     ],
+     [
+      "playing",
+      6017,
+      4.23
+     ]
+    ],
+    "firstPlayingMs": 77,
+    "waitsAfterStart": 0,
+    "endedMs": null,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "c-rooftop-l.svg",
+      "kb": 1.2,
+      "start": 9,
+      "end": 23
+     },
+     {
+      "file": "c-facade-p.svg",
+      "kb": 1.3,
+      "start": 47,
+      "end": 50
+     },
+     {
+      "file": "c-room-p.svg",
+      "kb": 1.1,
+      "start": 47,
+      "end": 49
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 73,
+      "end": 75
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 4307,
+      "end": 4312
+     }
+    ],
+    "video": [
+     {
+      "file": "lf-showcase-s.mp4",
+      "kb": 245.9,
+      "start": 63,
+      "end": 68,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "lf-showcase-s.mp4",
+     "t": 4.07,
+     "ended": false,
+     "paused": false,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": null,
+    "bytesBeforeLoadKb": 303.3,
+    "totalKb": 555.6,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "phone 390x844 @3x, no throttling",
+   "route": "a",
+   "clipFirstPlayingMs": [
+    74,
+    82,
+    79
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    0,
+    0
+   ],
+   "clipEndedMs": [
+    5084,
+    5091,
+    5090
+   ],
+   "lcpMs": 52,
+   "lcpRuns": [
+    60,
+    52,
+    48
+   ],
+   "lcpElement": "IMG v1-room-poster-1280.avif",
+   "fcpMs": 52,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 60,
+    "lcpElement": "IMG v1-room-poster-1280.avif",
+    "lcpSize": 101400,
+    "lcpCandidates": [
+     "60 ms IMG v1-room-poster-1280.avif"
+    ],
+    "fcp": 60,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 20,
+     "load": 57
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      61,
+      0
+     ],
+     [
+      "loadstart",
+      61,
+      0
+     ],
+     [
+      "playing",
+      74,
+      0
+     ],
+     [
+      "waiting",
+      137,
+      0.06
+     ],
+     [
+      "playing",
+      137,
+      0.06
+     ],
+     [
+      "pause",
+      5080,
+      5
+     ],
+     [
+      "ended",
+      5084,
+      5
+     ]
+    ],
+    "firstPlayingMs": 74,
+    "waitsAfterStart": 1,
+    "endedMs": 5084,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1280.avif",
+      "kb": 58.4,
+      "start": 7,
+      "end": 20
+     },
+     {
+      "file": "p1-facade-720.avif",
+      "kb": 64.1,
+      "start": 46,
+      "end": 49
+     },
+     {
+      "file": "p4-detail-480.avif",
+      "kb": 15.1,
+      "start": 46,
+      "end": 49
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 71,
+      "end": 74
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 5321,
+      "end": 5326
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-960.mp4",
+      "kb": 755.9,
+      "start": 61,
+      "end": 64,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-960.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 4799,
+    "bytesBeforeLoadKb": 437.9,
+    "totalKb": 1199.4,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "phone 390x844 @3x, no throttling",
+   "route": "b",
+   "clipFirstPlayingMs": [
+    76,
+    81,
+    74
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    0,
+    1
+   ],
+   "clipEndedMs": [
+    5082,
+    5090,
+    5085
+   ],
+   "lcpMs": 56,
+   "lcpRuns": [
+    56,
+    52,
+    60
+   ],
+   "lcpElement": "IMG v1-room-poster-1280.avif",
+   "fcpMs": 56,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 56,
+    "lcpElement": "IMG v1-room-poster-1280.avif",
+    "lcpSize": 101400,
+    "lcpCandidates": [
+     "56 ms IMG v1-room-poster-1280.avif"
+    ],
+    "fcp": 56,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 19,
+     "load": 56
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      61,
+      0
+     ],
+     [
+      "loadstart",
+      61,
+      0
+     ],
+     [
+      "playing",
+      76,
+      0
+     ],
+     [
+      "waiting",
+      134,
+      0.06
+     ],
+     [
+      "playing",
+      134,
+      0.06
+     ],
+     [
+      "pause",
+      5081,
+      5
+     ],
+     [
+      "ended",
+      5082,
+      5
+     ]
+    ],
+    "firstPlayingMs": 76,
+    "waitsAfterStart": 1,
+    "endedMs": 5082,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1280.avif",
+      "kb": 58.4,
+      "start": 7,
+      "end": 21
+     },
+     {
+      "file": "p1-facade-720.avif",
+      "kb": 64.1,
+      "start": 45,
+      "end": 47
+     },
+     {
+      "file": "p4-detail-480.avif",
+      "kb": 15.1,
+      "start": 45,
+      "end": 47
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 70,
+      "end": 73
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 5318,
+      "end": 5323
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-960.mp4",
+      "kb": 755.9,
+      "start": 60,
+      "end": 64,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-960.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 4797,
+    "bytesBeforeLoadKb": 437.9,
+    "totalKb": 1199.4,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "tablet 768x1024 @2x, slow 4G, 4x CPU",
+   "route": "drawn",
+   "clipFirstPlayingMs": [
+    4552,
+    4602,
+    4536
+   ],
+   "clipWaitsAfterStart": [
+    0,
+    0,
+    0
+   ],
+   "clipEndedMs": [
+    null,
+    null,
+    null
+   ],
+   "lcpMs": 876,
+   "lcpRuns": [
+    860,
+    960,
+    876
+   ],
+   "lcpElement": "IMG c-rooftop-l.svg",
+   "fcpMs": 780,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 860,
+    "lcpElement": "IMG c-rooftop-l.svg",
+    "lcpSize": 144641,
+    "lcpCandidates": [
+     "780 ms P Dòng tuyên ngôn mẫu: một câu n",
+     "860 ms IMG c-rooftop-l.svg"
+    ],
+    "fcp": 780,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 651,
+     "load": 2027
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2082,
+      0
+     ],
+     [
+      "loadstart",
+      2082,
+      0
+     ],
+     [
+      "playing",
+      4552,
+      0
+     ],
+     [
+      "pause",
+      8902,
+      4.35
+     ],
+     [
+      "playing",
+      10305,
+      4.35
+     ]
+    ],
+    "firstPlayingMs": 4552,
+    "waitsAfterStart": 0,
+    "endedMs": null,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "c-rooftop-l.svg",
+      "kb": 1.2,
+      "start": 178,
+      "end": 837
+     },
+     {
+      "file": "c-facade-p.svg",
+      "kb": 1.3,
+      "start": 774,
+      "end": 1009
+     },
+     {
+      "file": "c-room-p.svg",
+      "kb": 1.1,
+      "start": 774,
+      "end": 1061
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2084,
+      "end": 2254
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 2084,
+      "end": 2277
+     }
+    ],
+    "video": [
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 31.5,
+      "start": 2081,
+      "end": null,
+      "range": "bytes=0-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 31.5,
+      "start": 2458,
+      "end": null,
+      "range": "bytes=294912-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 31.5,
+      "start": 2787,
+      "end": null,
+      "range": "bytes=589824-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 185.6,
+      "start": 3109,
+      "end": 4211,
+      "range": "bytes=884736-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 255.6,
+      "start": 4212,
+      "end": null,
+      "range": "bytes=32768-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 255.6,
+      "start": 5689,
+      "end": null,
+      "range": "bytes=327680-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 255.6,
+      "start": 7159,
+      "end": null,
+      "range": "bytes=622592-"
+     }
+    ],
+    "videoState": {
+     "src": "lf-showcase-l.mp4",
+     "t": 4.05,
+     "ended": false,
+     "paused": false,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": null,
+    "bytesBeforeLoadKb": 303.3,
+    "totalKb": 1357.6,
+    "requests": 42
+   }
+  },
+  {
+   "profile": "tablet 768x1024 @2x, slow 4G, 4x CPU",
+   "route": "a",
+   "clipFirstPlayingMs": [
+    3292,
+    3291,
+    3315
+   ],
+   "clipWaitsAfterStart": [
+    5,
+    6,
+    5
+   ],
+   "clipEndedMs": [
+    10286,
+    10161,
+    10309
+   ],
+   "lcpMs": 2052,
+   "lcpRuns": [
+    2168,
+    1976,
+    2052
+   ],
+   "lcpElement": "IMG v1-room-poster-1280.avif",
+   "fcpMs": 804,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 2168,
+    "lcpElement": "IMG v1-room-poster-1280.avif",
+    "lcpSize": 144641,
+    "lcpCandidates": [
+     "916 ms P Dòng tuyên ngôn mẫu: một câu n",
+     "2168 ms IMG v1-room-poster-1280.avif"
+    ],
+    "fcp": 916,
+    "nav": {
+     "ttfb": 6,
+     "dcl": 787,
+     "load": 2365
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2420,
+      0
+     ],
+     [
+      "loadstart",
+      2420,
+      0
+     ],
+     [
+      "playing",
+      3292,
+      0
+     ],
+     [
+      "waiting",
+      3348,
+      0.06
+     ],
+     [
+      "playing",
+      3456,
+      0.06
+     ],
+     [
+      "waiting",
+      3948,
+      0.55
+     ],
+     [
+      "playing",
+      4117,
+      0.55
+     ],
+     [
+      "waiting",
+      4916,
+      1.35
+     ],
+     [
+      "playing",
+      5263,
+      1.35
+     ],
+     [
+      "waiting",
+      5731,
+      1.82
+     ],
+     [
+      "playing",
+      6247,
+      1.82
+     ],
+     [
+      "waiting",
+      8015,
+      3.59
+     ],
+     [
+      "playing",
+      8863,
+      3.59
+     ],
+     [
+      "pause",
+      10284,
+      5
+     ],
+     [
+      "ended",
+      10286,
+      5
+     ]
+    ],
+    "firstPlayingMs": 3292,
+    "waitsAfterStart": 5,
+    "endedMs": 10286,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1280.avif",
+      "kb": 58.4,
+      "start": 179,
+      "end": 2156
+     },
+     {
+      "file": "p1-facade-240.avif",
+      "kb": 10.4,
+      "start": 911,
+      "end": 1714
+     },
+     {
+      "file": "p4-detail-240.avif",
+      "kb": 6.5,
+      "start": 911,
+      "end": 1414
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2416,
+      "end": 2583
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 2416,
+      "end": 2605
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-1280.mp4",
+      "kb": 1380,
+      "start": 2419,
+      "end": 9701,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-1280.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 7780,
+    "bytesBeforeLoadKb": 375.5,
+    "totalKb": 1763.1,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "tablet 768x1024 @2x, slow 4G, 4x CPU",
+   "route": "b",
+   "clipFirstPlayingMs": [
+    3179,
+    3188,
+    3180
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    1,
+    1
+   ],
+   "clipEndedMs": [
+    8289,
+    8297,
+    8278
+   ],
+   "lcpMs": 2112,
+   "lcpRuns": [
+    2136,
+    2112,
+    2048
+   ],
+   "lcpElement": "IMG v1-room-poster-1280.avif",
+   "fcpMs": 736,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 2136,
+    "lcpElement": "IMG v1-room-poster-1280.avif",
+    "lcpSize": 122998,
+    "lcpCandidates": [
+     "724 ms P Dòng tuyên ngôn mẫu: một câu n",
+     "1360 ms IMG p1-facade-360.avif",
+     "2136 ms IMG v1-room-poster-1280.avif"
+    ],
+    "fcp": 724,
+    "nav": {
+     "ttfb": 5,
+     "dcl": 591,
+     "load": 2409
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2466,
+      0
+     ],
+     [
+      "loadstart",
+      2466,
+      0
+     ],
+     [
+      "playing",
+      3179,
+      0
+     ],
+     [
+      "waiting",
+      3235,
+      0.06
+     ],
+     [
+      "playing",
+      3336,
+      0.06
+     ],
+     [
+      "pause",
+      8286,
+      5
+     ],
+     [
+      "ended",
+      8289,
+      5
+     ]
+    ],
+    "firstPlayingMs": 3179,
+    "waitsAfterStart": 1,
+    "endedMs": 8289,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1280.avif",
+      "kb": 58.4,
+      "start": 178,
+      "end": 2125
+     },
+     {
+      "file": "p1-facade-360.avif",
+      "kb": 19.8,
+      "start": 717,
+      "end": 1353
+     },
+     {
+      "file": "p4-detail-240.avif",
+      "kb": 6.5,
+      "start": 717,
+      "end": 1188
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2469,
+      "end": 2643
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 2469,
+      "end": 2658
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-960.mp4",
+      "kb": 755.9,
+      "start": 2465,
+      "end": 6550,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-960.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 5772,
+    "bytesBeforeLoadKb": 385,
+    "totalKb": 1148.5,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "desktop 1440x900 @2x, slow 4G, no CPU slowdown",
+   "route": "drawn",
+   "clipFirstPlayingMs": [
+    4503,
+    4504,
+    4489
+   ],
+   "clipWaitsAfterStart": [
+    0,
+    0,
+    0
+   ],
+   "clipEndedMs": [
+    null,
+    null,
+    null
+   ],
+   "lcpMs": 868,
+   "lcpRuns": [
+    868,
+    868,
+    880
+   ],
+   "lcpElement": "IMG c-rooftop-l.svg",
+   "fcpMs": 808,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 868,
+    "lcpElement": "IMG c-rooftop-l.svg",
+    "lcpSize": 419904,
+    "lcpCandidates": [
+     "804 ms H1 Cơ sở mẫu A",
+     "868 ms IMG c-rooftop-l.svg"
+    ],
+    "fcp": 804,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 675,
+     "load": 2011
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2026,
+      0
+     ],
+     [
+      "loadstart",
+      2027,
+      0
+     ],
+     [
+      "playing",
+      4503,
+      0
+     ],
+     [
+      "pause",
+      8900,
+      4.4
+     ],
+     [
+      "playing",
+      10457,
+      4.4
+     ]
+    ],
+    "firstPlayingMs": 4503,
+    "waitsAfterStart": 0,
+    "endedMs": null,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [
+     {
+      "v": 0,
+      "t": 933,
+      "nodes": [
+       "SPAN",
+       "B"
+      ]
+     }
+    ],
+    "pictures": [
+     {
+      "file": "c-rooftop-l.svg",
+      "kb": 1.2,
+      "start": 179,
+      "end": 853
+     },
+     {
+      "file": "c-facade-p.svg",
+      "kb": 1.3,
+      "start": 791,
+      "end": 1086
+     },
+     {
+      "file": "c-room-p.svg",
+      "kb": 1.1,
+      "start": 791,
+      "end": 1101
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2032,
+      "end": 2204
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 8766,
+      "end": 8938
+     }
+    ],
+    "video": [
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 31.5,
+      "start": 2026,
+      "end": null,
+      "range": "bytes=0-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 31.5,
+      "start": 2393,
+      "end": null,
+      "range": "bytes=294912-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 31.5,
+      "start": 2721,
+      "end": null,
+      "range": "bytes=589824-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 185.6,
+      "start": 3044,
+      "end": 4153,
+      "range": "bytes=884736-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 255.6,
+      "start": 4154,
+      "end": null,
+      "range": "bytes=32768-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 255.6,
+      "start": 5632,
+      "end": null,
+      "range": "bytes=327680-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 255.6,
+      "start": 7101,
+      "end": null,
+      "range": "bytes=622592-"
+     }
+    ],
+    "videoState": {
+     "src": "lf-showcase-l.mp4",
+     "t": 4.09,
+     "ended": false,
+     "paused": false,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": null,
+    "bytesBeforeLoadKb": 303.3,
+    "totalKb": 1357.6,
+    "requests": 42
+   }
+  },
+  {
+   "profile": "desktop 1440x900 @2x, slow 4G, no CPU slowdown",
+   "route": "a",
+   "clipFirstPlayingMs": [
+    3586,
+    3616,
+    3603
+   ],
+   "clipWaitsAfterStart": [
+    6,
+    5,
+    5
+   ],
+   "clipEndedMs": [
+    10454,
+    10601,
+    10449
+   ],
+   "lcpMs": 2776,
+   "lcpRuns": [
+    2756,
+    2776,
+    2776
+   ],
+   "lcpElement": "IMG v1-room-poster-1920.avif",
+   "fcpMs": 828,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 2756,
+    "lcpElement": "IMG v1-room-poster-1920.avif",
+    "lcpSize": 419904,
+    "lcpCandidates": [
+     "812 ms H1 Cơ sở mẫu A",
+     "1848 ms IMG p1-facade-480.avif",
+     "2756 ms IMG v1-room-poster-1920.avif"
+    ],
+    "fcp": 812,
+    "nav": {
+     "ttfb": 4,
+     "dcl": 670,
+     "load": 2730
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2737,
+      0
+     ],
+     [
+      "loadstart",
+      2737,
+      0
+     ],
+     [
+      "playing",
+      3586,
+      0
+     ],
+     [
+      "waiting",
+      3653,
+      0.07
+     ],
+     [
+      "playing",
+      3749,
+      0.07
+     ],
+     [
+      "waiting",
+      4070,
+      0.39
+     ],
+     [
+      "playing",
+      4241,
+      0.39
+     ],
+     [
+      "waiting",
+      5204,
+      1.35
+     ],
+     [
+      "playing",
+      5553,
+      1.35
+     ],
+     [
+      "waiting",
+      6020,
+      1.82
+     ],
+     [
+      "playing",
+      6538,
+      1.82
+     ],
+     [
+      "waiting",
+      8171,
+      3.45
+     ],
+     [
+      "playing",
+      8337,
+      3.45
+     ],
+     [
+      "waiting",
+      8604,
+      3.72
+     ],
+     [
+      "playing",
+      9155,
+      3.72
+     ],
+     [
+      "pause",
+      10452,
+      5
+     ],
+     [
+      "ended",
+      10454,
+      5
+     ]
+    ],
+    "firstPlayingMs": 3586,
+    "waitsAfterStart": 6,
+    "endedMs": 10454,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [
+     {
+      "v": 0,
+      "t": 921,
+      "nodes": [
+       "SPAN",
+       "B"
+      ]
+     }
+    ],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1920.avif",
+      "kb": 114.9,
+      "start": 172,
+      "end": 2730
+     },
+     {
+      "file": "p1-facade-480.avif",
+      "kb": 32.4,
+      "start": 790,
+      "end": 1837
+     },
+     {
+      "file": "p4-detail-360.avif",
+      "kb": 10.7,
+      "start": 790,
+      "end": 1477
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2670,
+      "end": 2834
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 10754,
+      "end": 10928
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-1280.mp4",
+      "kb": 1380,
+      "start": 2736,
+      "end": 9991,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-1280.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 7559,
+    "bytesBeforeLoadKb": 458.3,
+    "totalKb": 1845.9,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "desktop 1440x900 @2x, slow 4G, no CPU slowdown",
+   "route": "b",
+   "clipFirstPlayingMs": [
+    3605,
+    3677,
+    3588
+   ],
+   "clipWaitsAfterStart": [
+    6,
+    5,
+    6
+   ],
+   "clipEndedMs": [
+    10475,
+    10663,
+    10459
+   ],
+   "lcpMs": 2768,
+   "lcpRuns": [
+    2768,
+    2936,
+    2760
+   ],
+   "lcpElement": "IMG v1-room-poster-1920.avif",
+   "fcpMs": 816,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 2768,
+    "lcpElement": "IMG v1-room-poster-1920.avif",
+    "lcpSize": 356595,
+    "lcpCandidates": [
+     "808 ms H1 Cơ sở mẫu A",
+     "1500 ms IMG p4-detail-360.avif",
+     "1868 ms IMG p1-facade-480.avif",
+     "2768 ms IMG v1-room-poster-1920.avif"
+    ],
+    "fcp": 808,
+    "nav": {
+     "ttfb": 5,
+     "dcl": 683,
+     "load": 2745
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      2751,
+      0
+     ],
+     [
+      "loadstart",
+      2751,
+      0
+     ],
+     [
+      "playing",
+      3605,
+      0
+     ],
+     [
+      "waiting",
+      3666,
+      0.06
+     ],
+     [
+      "playing",
+      3768,
+      0.06
+     ],
+     [
+      "waiting",
+      4233,
+      0.53
+     ],
+     [
+      "playing",
+      4426,
+      0.53
+     ],
+     [
+      "waiting",
+      5383,
+      1.48
+     ],
+     [
+      "playing",
+      5732,
+      1.48
+     ],
+     [
+      "waiting",
+      6067,
+      1.82
+     ],
+     [
+      "playing",
+      6561,
+      1.82
+     ],
+     [
+      "waiting",
+      8183,
+      3.44
+     ],
+     [
+      "playing",
+      8360,
+      3.44
+     ],
+     [
+      "waiting",
+      8633,
+      3.71
+     ],
+     [
+      "playing",
+      9179,
+      3.71
+     ],
+     [
+      "pause",
+      10473,
+      5
+     ],
+     [
+      "ended",
+      10475,
+      5
+     ]
+    ],
+    "firstPlayingMs": 3605,
+    "waitsAfterStart": 6,
+    "endedMs": 10475,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [
+     {
+      "v": 0,
+      "t": 954,
+      "nodes": [
+       "SPAN",
+       "B"
+      ]
+     }
+    ],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1920.avif",
+      "kb": 114.9,
+      "start": 178,
+      "end": 2744
+     },
+     {
+      "file": "p1-facade-480.avif",
+      "kb": 32.4,
+      "start": 796,
+      "end": 1860
+     },
+     {
+      "file": "p4-detail-360.avif",
+      "kb": 10.7,
+      "start": 796,
+      "end": 1492
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 2683,
+      "end": 2849
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 10766,
+      "end": 10942
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-1280.mp4",
+      "kb": 1380,
+      "start": 2750,
+      "end": 10012,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-1280.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 7553,
+    "bytesBeforeLoadKb": 458.3,
+    "totalKb": 1845.9,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "desktop 1440x900 @2x, no throttling",
+   "route": "drawn",
+   "clipFirstPlayingMs": [
+    80,
+    79,
+    77
+   ],
+   "clipWaitsAfterStart": [
+    0,
+    0,
+    0
+   ],
+   "clipEndedMs": [
+    null,
+    null,
+    null
+   ],
+   "lcpMs": 104,
+   "lcpRuns": [
+    104,
+    48,
+    112
+   ],
+   "lcpElement": "VIDEO lf-showcase-l.mp4",
+   "fcpMs": 48,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 104,
+    "lcpElement": "VIDEO lf-showcase-l.mp4",
+    "lcpSize": 420390,
+    "lcpCandidates": [
+     "56 ms IMG c-rooftop-l.svg",
+     "104 ms VIDEO lf-showcase-l.mp4"
+    ],
+    "fcp": 56,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 17,
+     "load": 58
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      63,
+      0
+     ],
+     [
+      "loadstart",
+      63,
+      0
+     ],
+     [
+      "playing",
+      80,
+      0
+     ],
+     [
+      "pause",
+      4454,
+      4.37
+     ],
+     [
+      "playing",
+      6009,
+      4.37
+     ]
+    ],
+    "firstPlayingMs": 80,
+    "waitsAfterStart": 0,
+    "endedMs": null,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "c-rooftop-l.svg",
+      "kb": 1.2,
+      "start": 6,
+      "end": 19
+     },
+     {
+      "file": "c-facade-p.svg",
+      "kb": 1.3,
+      "start": 45,
+      "end": 48
+     },
+     {
+      "file": "c-room-p.svg",
+      "kb": 1.1,
+      "start": 45,
+      "end": 48
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 70,
+      "end": 73
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 4318,
+      "end": 4323
+     }
+    ],
+    "video": [
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 0,
+      "start": 62,
+      "end": null,
+      "range": "bytes=0-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 761.6,
+      "start": 66,
+      "end": 70,
+      "range": "bytes=294912-"
+     },
+     {
+      "file": "lf-showcase-l.mp4",
+      "kb": 451.6,
+      "start": 72,
+      "end": null,
+      "range": "bytes=98304-"
+     }
+    ],
+    "videoState": {
+     "src": "lf-showcase-l.mp4",
+     "t": 4.07,
+     "ended": false,
+     "paused": false,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": null,
+    "bytesBeforeLoadKb": 303.3,
+    "totalKb": 1521.8,
+    "requests": 38
+   }
+  },
+  {
+   "profile": "desktop 1440x900 @2x, no throttling",
+   "route": "a",
+   "clipFirstPlayingMs": [
+    80,
+    80,
+    78
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    0,
+    1
+   ],
+   "clipEndedMs": [
+    5090,
+    5093,
+    5090
+   ],
+   "lcpMs": 84,
+   "lcpRuns": [
+    84,
+    84,
+    64
+   ],
+   "lcpElement": "VIDEO v1-room-1280.mp4",
+   "fcpMs": 40,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 84,
+    "lcpElement": "VIDEO v1-room-1280.mp4",
+    "lcpSize": 420390,
+    "lcpCandidates": [
+     "40 ms IMG v1-room-poster-1920.avif",
+     "84 ms VIDEO v1-room-1280.mp4"
+    ],
+    "fcp": 40,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 19,
+     "load": 51
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      66,
+      0
+     ],
+     [
+      "loadstart",
+      66,
+      0
+     ],
+     [
+      "playing",
+      80,
+      0
+     ],
+     [
+      "waiting",
+      145,
+      0.07
+     ],
+     [
+      "playing",
+      146,
+      0.07
+     ],
+     [
+      "pause",
+      5087,
+      5
+     ],
+     [
+      "ended",
+      5090,
+      5
+     ]
+    ],
+    "firstPlayingMs": 80,
+    "waitsAfterStart": 1,
+    "endedMs": 5090,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1920.avif",
+      "kb": 114.9,
+      "start": 6,
+      "end": 19
+     },
+     {
+      "file": "p1-facade-480.avif",
+      "kb": 32.4,
+      "start": 30,
+      "end": 34
+     },
+     {
+      "file": "p4-detail-360.avif",
+      "kb": 10.7,
+      "start": 30,
+      "end": 35
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 81,
+      "end": 83
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 5314,
+      "end": 5320
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-1280.mp4",
+      "kb": 1380,
+      "start": 65,
+      "end": 74,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-1280.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 4795,
+    "bytesBeforeLoadKb": 458.3,
+    "totalKb": 1844.9,
+    "requests": 36
+   }
+  },
+  {
+   "profile": "desktop 1440x900 @2x, no throttling",
+   "route": "b",
+   "clipFirstPlayingMs": [
+    85,
+    79,
+    91
+   ],
+   "clipWaitsAfterStart": [
+    1,
+    1,
+    1
+   ],
+   "clipEndedMs": [
+    5093,
+    5093,
+    5098
+   ],
+   "lcpMs": 100,
+   "lcpRuns": [
+    100,
+    100,
+    108
+   ],
+   "lcpElement": "VIDEO v1-room-1280.mp4",
+   "fcpMs": 56,
+   "clsAtLoad": 0,
+   "clsAfterScroll": 0,
+   "firstRun": {
+    "lcp": 100,
+    "lcpElement": "VIDEO v1-room-1280.mp4",
+    "lcpSize": 356791,
+    "lcpCandidates": [
+     "52 ms IMG v1-room-poster-1920.avif",
+     "100 ms VIDEO v1-room-1280.mp4"
+    ],
+    "fcp": 52,
+    "nav": {
+     "ttfb": 3,
+     "dcl": 17,
+     "load": 54
+    },
+    "videoEvents": [
+     [
+      "waiting",
+      71,
+      0
+     ],
+     [
+      "loadstart",
+      71,
+      0
+     ],
+     [
+      "playing",
+      85,
+      0
+     ],
+     [
+      "waiting",
+      148,
+      0.06
+     ],
+     [
+      "playing",
+      148,
+      0.06
+     ],
+     [
+      "pause",
+      5091,
+      5
+     ],
+     [
+      "ended",
+      5093,
+      5
+     ]
+    ],
+    "firstPlayingMs": 85,
+    "waitsAfterStart": 1,
+    "endedMs": 5093,
+    "clsAtLoad": 0,
+    "clsAfterScroll": 0,
+    "shifts": [],
+    "pictures": [
+     {
+      "file": "v1-room-poster-1920.avif",
+      "kb": 114.9,
+      "start": 6,
+      "end": 19
+     },
+     {
+      "file": "p1-facade-480.avif",
+      "kb": 32.4,
+      "start": 33,
+      "end": 36
+     },
+     {
+      "file": "p4-detail-360.avif",
+      "kb": 10.7,
+      "start": 33,
+      "end": 35
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "kb": 1.1,
+      "start": 84,
+      "end": 87
+     },
+     {
+      "file": "c-street-l.svg",
+      "kb": 1.5,
+      "start": 5316,
+      "end": 5320
+     }
+    ],
+    "video": [
+     {
+      "file": "v1-room-1280.mp4",
+      "kb": 1380,
+      "start": 71,
+      "end": 79,
+      "range": "bytes=0-"
+     }
+    ],
+    "videoState": {
+     "src": "v1-room-1280.mp4",
+     "t": 5,
+     "ended": true,
+     "paused": true,
+     "ready": 4,
+     "shown": true,
+     "stalls": 0
+    },
+    "clipFinishedMsAfterLoad": 4799,
+    "bytesBeforeLoadKb": 458.3,
+    "totalKb": 1844.2,
+    "requests": 36
+   }
+  }
+ ],
+ "interaction": {
+  "reducedMotion": {
+   "still": {
+    "t": 0,
+    "paused": true,
+    "ended": false,
+    "shown": false,
+    "src": "",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "clipRequestedWhileStill": 0,
+   "afterGuestPressesPlay": {
+    "t": 0.47,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "clipRequestedAfterPress": true,
+   "errors": [
+    "network: Failed to load resource: the server responded with a status of 404 (Not Found) favicon.ico"
+   ]
+  },
+  "saveData": {
+   "how": "navigator.connection replaced by an injected script before the page's own code ran",
+   "reported": {
+    "saveData": true,
+    "effectiveType": "4g"
+   },
+   "state": {
+    "t": 0,
+    "paused": true,
+    "ended": false,
+    "shown": false,
+    "src": "",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "clipRequested": 0,
+   "errors": []
+  },
+  "effectiveType2g": {
+   "how": "navigator.connection replaced by an injected script before the page's own code ran",
+   "reported": {
+    "saveData": false,
+    "effectiveType": "2g"
+   },
+   "state": {
+    "t": 0,
+    "paused": true,
+    "ended": false,
+    "shown": false,
+    "src": "",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "clipRequested": 0,
+   "errors": []
+  },
+  "prefersReducedData": {
+   "emulation": true,
+   "matches": false,
+   "state": {
+    "t": 3.58,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "clipRequested": 1
+  },
+  "pause": {
+   "playing": {
+    "t": 1.04,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "toggleSize": [
+    44,
+    44
+   ],
+   "paused": {
+    "t": 1.05,
+    "paused": true,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": "paused"
+   },
+   "oneSecondLater": {
+    "t": 1.05,
+    "paused": true,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": "paused"
+   },
+   "timeHeld": true,
+   "afterReload": {
+    "t": 0,
+    "paused": true,
+    "ended": false,
+    "shown": false,
+    "src": "",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": "paused"
+   },
+   "clipRequestedAfterReload": 0,
+   "afterPressingPlay": {
+    "t": 0.52,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "errors": []
+  },
+  "completion": {
+   "started": {
+    "t": 0.58,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "ended": {
+    "t": 5,
+    "paused": true,
+    "ended": true,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Phát lại thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "attributes": {
+    "loop": false,
+    "muted": true,
+    "playsInline": true,
+    "preload": "none",
+    "duration": 5,
+    "controls": false,
+    "size": [
+     960,
+     540
+    ]
+   },
+   "afterScrollingAwayAndBack": {
+    "t": 5,
+    "paused": true,
+    "ended": true,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Phát lại thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "restartedByItself": false,
+   "afterPressingReplay": {
+    "t": 0.4,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "endedAgain": {
+    "t": 5,
+    "paused": true,
+    "ended": true,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Phát lại thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "clipRequests": 1,
+   "errors": []
+  },
+  "offScreen": {
+   "whileAway": {
+    "t": 0.89,
+    "paused": true,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "pillWhileAway": {
+    "shown": false,
+    "visibility": "hidden"
+   },
+   "onReturn": {
+    "t": 1.04,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-960.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "resumed": true,
+   "errors": []
+  },
+  "clipBlocked_phone": {
+   "state": {
+    "t": 0,
+    "paused": true,
+    "ended": false,
+    "shown": false,
+    "src": "v1-room-960.mp4",
+    "label": null,
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "controlOffered": null,
+   "ctaInFirstScreen": true,
+   "galleryControl": true,
+   "afterBookingAction": {
+    "hash": "#rooms",
+    "search": "?checkIn=2026-11-12&checkOut=2026-11-15&adults=2",
+    "roomsTop": 508
+   },
+   "errors": []
+  },
+  "clipBlocked_desktop": {
+   "state": {
+    "t": 0,
+    "paused": true,
+    "ended": false,
+    "shown": false,
+    "src": "v1-room-1280.mp4",
+    "label": null,
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "controlOffered": null,
+   "ctaInFirstScreen": true,
+   "galleryControl": true,
+   "afterBookingAction": {
+    "hash": "#rooms",
+    "search": "?checkIn=2026-11-12&checkOut=2026-11-15&adults=2",
+    "roomsTop": 596
+   },
+   "errors": []
+  },
+  "posterBlocked": {
+   "frame": [
+    390,
+    260
+   ],
+   "previewBehind": "url(\"data:image/webp;base64,Uk",
+   "posterLoaded": false,
+   "clipStillPlayedThrough": true,
+   "cta": true
+  },
+  "noScript": {
+   "evaluated": 1,
+   "hasName": true,
+   "hasBookingLink": true,
+   "hasPoster": true,
+   "hasDisclosure": true
+  },
+  "keyboardVideo": {
+   "before": {
+    "t": 2,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-1280.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "afterEnter": {
+    "t": 2.17,
+    "paused": true,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-1280.mp4",
+    "label": "Phát thước phim",
+    "posterLoaded": true,
+    "remembered": "paused"
+   },
+   "afterSpace": {
+    "t": 2.9,
+    "paused": false,
+    "ended": false,
+    "shown": true,
+    "src": "v1-room-1280.mp4",
+    "label": "Tạm dừng thước phim",
+    "posterLoaded": true,
+    "remembered": null
+   },
+   "enterPauses": true,
+   "spacePlays": true
+  },
+  "keyboardGallery": {
+   "opened": {
+    "open": true,
+    "pictures": 7,
+    "focusInside": true,
+    "focused": "Đóng"
+   },
+   "inside": {
+    "openedAtPicture2Top": 72,
+    "items": [
+     {
+      "file": "v1-room-poster-960.avif",
+      "fit": "contain",
+      "caption": "01 Phòng (khung đầu của thước phim) · Ảnh tham khảo, không phải VNest (Cá Bảo, Pexels)"
+     },
+     {
+      "file": "p1-facade-1200.avif",
+      "fit": "contain",
+      "caption": "02 Kiến trúc · Ảnh tham khảo, không phải VNest (Theodore Nguyen, Pexels)"
+     },
+     {
+      "file": "p4-detail-1200.avif",
+      "fit": "contain",
+      "caption": "03 Chi tiết · Ảnh tham khảo, không phải VNest (Marion Batteur, Pexels)"
+     },
+     {
+      "file": "c-lobby-l.svg",
+      "fit": "cover",
+      "caption": "04 Sinh hoạt chung · Ảnh mẫu"
+     }
+    ]
+   },
+   "tabStaysInside": false,
+   "afterEscape": {
+    "open": false,
+    "pictures": 7,
+    "focusInside": false,
+    "focused": "Mở ảnh 2: Kiến trúc"
+   },
+   "focusReturnedToOpener": true
+  },
+  "keyboardBooking": {
+   "focused": "Xem phòng trống",
+   "hash": "#rooms",
+   "search": "?checkIn=2026-11-12&checkOut=2026-11-15&adults=2",
+   "roomsTop": 596
+  },
+  "keyboardOrder": {
+   "order": [
+    "Minh hoạ [ring]",
+    "A [ring]",
+    "B [ring]",
+    "VNest [ring]",
+    "Cơ sởCơ sở mẫu A [ring]",
+    "Ngày lưu trú12 thg 11 – 15 thg 11 [ring]",
+    "Khách2 khách [ring]",
+    "Tìm kiếm [ring]",
+    "Tất cả cơ sở cho ngày này [ring]",
+    "Xem tất cả 7 ảnh [ring]",
+    "Tạm dừng thước phim [ring]",
+    "Xem phòng trống [ring]",
+    "Mở ảnh 2: Kiến trúc [ring]",
+    "Mở ảnh 3: Chi tiết [ring]"
+   ],
+   "withoutRing": [],
+   "errors": []
+  },
+  "touch": {
+   "firstScreenTargets": [
+    {
+     "what": "VNest",
+     "w": 52,
+     "h": 44
+    },
+    {
+     "what": "Tìm chỗ ở: Cơ sở mẫu A12 thg 11 – 15",
+     "w": 288,
+     "h": 50
+    },
+    {
+     "what": "Tất cả cơ sở cho ngày này",
+     "w": 207,
+     "h": 44
+    },
+    {
+     "what": "Xem tất cả 7 ảnh",
+     "w": 87,
+     "h": 44
+    },
+    {
+     "what": "Tạm dừng thước phim",
+     "w": 44,
+     "h": 44
+    },
+    {
+     "what": "Xem phòng trống",
+     "w": 357,
+     "h": 56
+    },
+    {
+     "what": "Mở ảnh 2: Kiến trúc",
+     "w": 202,
+     "h": 252
+    },
+    {
+     "what": "Mở ảnh 3: Chi tiết",
+     "w": 143,
+     "h": 143
+    }
+   ],
+   "under44": [],
+   "galleryViaControl": {
+    "open": true,
+    "pictures": 7,
+    "focusInside": true,
+    "focused": "Đóng"
+   },
+   "afterClose": {
+    "open": false,
+    "pictures": 7,
+    "focusInside": false,
+    "focused": "Xem tất cả 7 ảnh"
+   },
+   "galleryViaFrame": {
+    "open": true,
+    "picture3Top": 72,
+    "file": "p4-detail-1200.avif",
+    "fit": "cover",
+    "caption": "03 Chi tiết · Ảnh tham khảo, không phải VNest (Marion Batteur, Pexels)"
+   },
+   "bookingPill": {
+    "shown": true,
+    "size": [
+     195,
+     48
+    ],
+    "x": 276,
+    "y": 804
+   },
+   "afterBookingPill": {
+    "hash": "#rooms",
+    "search": "?checkIn=2026-11-12&checkOut=2026-11-15&adults=2",
+    "roomsTop": 508,
+    "pillShown": false
+   },
+   "errors": []
+  }
+ }
+}

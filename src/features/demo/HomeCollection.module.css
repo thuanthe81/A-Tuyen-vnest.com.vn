@@ -1,0 +1,497 @@
+/* Stage 2 · shared homepage collection styles and the six-property collection (24/10/2026;
+   updated to CEO-approved VNest brand palette: #A87444 · #37412F · #8A8173 · #F1ECE4 · #FFFFFF). */
+.root {
+  --olive: #37412f;
+  --copper: #a87444;
+  --sand: #f1ece4;
+  --sand-soft: #ffffff;
+  --line: #ddd5c8;
+  --muted: #8a8173;
+  --paper: #ffffff;
+  --bc-copper: #a87444;
+  --bc-olive: #37412f;
+  --bc-taupe: #8a8173;
+  --bc-beige: #f1ece4;
+  --bc-paper: #f1ece4;
+  --bc-white: #ffffff;
+  --bc-muted: #8a8173;
+  --index-gap: clamp(2.5rem, 1rem + 4vw, 4.5rem);
+  background: var(--sand);
+  color: var(--olive);
+}
+
+.kicker {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.h2 {
+  margin-top: 0.625rem;
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+/* DRAFT placeholders: visibly provisional, at the real length the content team will write to. */
+.draft {
+  background: linear-gradient(transparent 64%, rgb(171 116 68 / 0.14) 0);
+}
+
+.draftTag {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--copper);
+  vertical-align: 0.12em;
+}
+
+/* The brand section (#thuong-hieu) has its own styles: BrandShowcase.module.css (Phase B, 7/11/2026). */
+
+/* ── Six-property discovery ────────────────────────────────────────────── */
+
+.collection {
+  position: relative;
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding: clamp(2.5rem, 2rem + 2vw, 4.5rem) var(--vn-gutter) clamp(3rem, 2.25rem + 2.5vw, 4.5rem);
+  scroll-margin-top: 5.75rem;
+}
+
+/* The stays (and a brand's Coming Soon card) close the section: the section's own bottom padding is the only end space. */
+.collection > ul {
+  padding-bottom: 0;
+}
+
+/* The section rule aligns with the content edges, like the toolbar's hairlines. */
+.collection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--vn-gutter);
+  right: var(--vn-gutter);
+  height: 1px;
+  background: var(--line);
+}
+
+/* 1. Full-width introduction. */
+.discoveryIntro {
+  max-width: 48rem;
+}
+
+.discoveryLead {
+  margin-top: 0.875rem;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Phase C: no eyebrow above the heading (owner, 7/11/2026), so the heading opens the section. */
+.discoveryTitle {
+  margin-top: 0;
+}
+
+/* 2. Filters (Phase C revision, 8/11/2026): the earlier approved layout with the new options. One toolbar between two
+   hairlines; each filter is a labelled row whose options share one rounded white track, the active option filled Dark
+   Olive. Brand: "Tất cả" + the three brands (one choice). City: the two real cities as toggles, none chosen at first.
+   Phones: label above each track, the four brands in a 2 × 2 track. Tablet: one row per track, options share the width.
+   Desktop: two rows on a shared label column. No visible result line or reset (owner, 8/11/2026): "Tất cả" resets. */
+.toolbar {
+  display: grid;
+  margin-top: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem);
+  padding-block: 1.25rem;
+  border-block: 1px solid var(--line);
+}
+
+.filterRows {
+  display: grid;
+  gap: 1rem;
+}
+
+.filterRow {
+  display: grid;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.filterLabel {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.125rem;
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: #ffffff;
+}
+
+.segmented[data-filter="city"] {
+  border-radius: 999px;
+}
+
+.segment {
+  position: relative;
+  display: flex;
+  min-width: 0;
+}
+
+.segment input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.segment span,
+.citySegment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4375rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding-inline: 0.5rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--olive);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    background-color var(--vn-duration-fast) var(--vn-ease-out),
+    color var(--vn-duration-fast) var(--vn-ease-out),
+    box-shadow var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+.citySegment {
+  cursor: pointer;
+}
+
+.segment:hover span,
+.citySegment:not([data-state="active"], [data-state="unavailable"]):hover {
+  background: var(--sand);
+}
+
+/* The active filter: filled Dark Olive with the copper hairline (brand and city alike). */
+.segment input:checked + span,
+.citySegment[data-state="active"] {
+  background: var(--olive);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px var(--copper);
+}
+
+.segment input:focus-visible + span,
+.citySegment:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 2px;
+}
+
+/* Availability, not a filter: the one city of a one-city brand gets a Dark Olive ring and dot, never a fill. */
+.citySegment[data-state="only"] {
+  box-shadow: inset 0 0 0 1px var(--olive);
+  font-weight: 600;
+}
+
+.citySegment[data-state="only"]::before {
+  content: "";
+  flex: none;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 999px;
+  background: var(--olive);
+}
+
+/* A city the chosen brand is not in: present but quiet; a tap explains instead of filtering. */
+.citySegment[data-state="unavailable"] {
+  color: #a39a8c;
+  cursor: default;
+}
+
+/* Tablet: one row per track; the options share the full width evenly. */
+@media (min-width: 48rem) {
+  .segmented,
+  .segmented[data-filter="city"] {
+    display: flex;
+    border-radius: 999px;
+  }
+
+  .segment,
+  .citySegment {
+    flex: 1 1 0;
+  }
+
+  .segment span,
+  .citySegment {
+    padding-inline: 1rem;
+  }
+}
+
+/* Desktop: two aligned rows on one label column. */
+@media (min-width: 64rem) {
+  .filterRow {
+    grid-template-columns: 7.5rem auto;
+    gap: 1rem;
+  }
+
+  .segmented,
+  .segmented[data-filter="city"] {
+    display: inline-flex;
+    justify-self: start;
+  }
+
+  .segment,
+  .citySegment {
+    flex: 0 0 auto;
+  }
+
+  .citySegment {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segment span,
+  .citySegment {
+    transition: none;
+  }
+}
+
+.empty {
+  padding-bottom: 3rem;
+  color: var(--muted);
+}
+
+/* ── Mobile Property Collection Redesign V2 (< 64rem) ──────────────────── */
+
+.mobilePropertyGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(0.875rem, 0.75rem + 0.4vw, 1rem);
+  margin: 1rem 0 0;
+  padding: 0 0 3.75rem;
+  list-style: none;
+}
+
+.mobilePropertyCard {
+  min-width: 0;
+  animation: mobile-card-in 240ms var(--vn-ease-out) both;
+  animation-delay: calc(var(--i, 0) * 30ms);
+}
+
+@keyframes mobile-card-in {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+
+.mobilePropertyLink {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: clamp(12.25rem, 52vw, 13.75rem);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--sand);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow:
+    0 0 0 1px rgb(24 20 14 / 0.08),
+    0 12px 26px -16px rgb(24 20 14 / 0.26);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition:
+    transform var(--vn-duration-fast) var(--vn-ease-out),
+    box-shadow var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+.mobilePropertyLink:active {
+  transform: scale(0.99);
+}
+
+.mobilePropertyLink:focus-visible {
+  outline: 2.5px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.mobilePropertyImage {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--sand);
+  transition: transform 320ms var(--vn-ease-out);
+}
+
+/* Landscape card focal points: keep beds, seating and architectural warmth centered rather than ceiling. */
+.mobilePropertyCard[data-property-id="bare-chic"] .mobilePropertyImage {
+  object-position: 64% 60% !important;
+}
+
+.mobilePropertyCard[data-property-id="bare-hyphen"] .mobilePropertyImage {
+  object-position: 45% 60% !important;
+}
+
+.mobilePropertyCard[data-property-id="bare-da-kao"] .mobilePropertyImage {
+  object-position: 58% 64% !important;
+}
+
+.mobilePropertyCard[data-property-id="bare-han"] .mobilePropertyImage {
+  object-position: 58% 60% !important;
+}
+
+.mobilePropertyCard[data-property-id="the-nang-suites"] .mobilePropertyImage {
+  object-position: 52% 62% !important;
+}
+
+.mobilePropertyCard[data-property-id="pepper-house"] .mobilePropertyImage {
+  object-position: 46% 64% !important;
+}
+
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .mobilePropertyCard[data-property-id="bare-chic"] .mobilePropertyImage {
+    object-position: 58% 64% !important;
+  }
+
+  .mobilePropertyCard[data-property-id="bare-hyphen"] .mobilePropertyImage {
+    object-position: 48% 64% !important;
+  }
+
+  .mobilePropertyCard[data-property-id="bare-da-kao"] .mobilePropertyImage {
+    object-position: 55% 68% !important;
+  }
+
+  .mobilePropertyCard[data-property-id="bare-han"] .mobilePropertyImage {
+    object-position: 55% 64% !important;
+  }
+
+  .mobilePropertyCard[data-property-id="the-nang-suites"] .mobilePropertyImage {
+    object-position: 52% 66% !important;
+  }
+
+  .mobilePropertyCard[data-property-id="pepper-house"] .mobilePropertyImage {
+    object-position: 48% 68% !important;
+  }
+}
+
+.mobilePropertyScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(22 26 19 / 0) 44%,
+    rgb(22 26 19 / 0.26) 70%,
+    rgb(22 26 19 / 0.7) 100%
+  );
+  pointer-events: none;
+}
+
+.mobilePropertyFooter {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding: 0.875rem 1rem;
+}
+
+.mobilePropertyName {
+  margin: 0;
+  min-width: 0;
+  font-size: clamp(1.125rem, 0.98rem + 0.6vw, 1.3125rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-shadow: 0 1px 10px rgb(0 0 0 / 0.38);
+  overflow-wrap: break-word;
+}
+
+.mobilePropertyCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  min-height: 2.75rem;
+  padding-inline: 0.9375rem;
+  border-radius: 0.5rem;
+  background: #9a683c;
+  color: #ffffff;
+  font-size: 0.84375rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 2px 10px rgb(16 14 10 / 0.26);
+  transition:
+    background-color var(--vn-duration-fast) var(--vn-ease-out),
+    box-shadow var(--vn-duration-fast) var(--vn-ease-out),
+    transform var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+.mobilePropertyCtaLabel {
+  display: inline-block;
+}
+
+.mobilePropertyCtaIcon {
+  flex: none;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  transition: transform var(--vn-duration-fast) var(--vn-ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mobilePropertyLink:hover .mobilePropertyCta {
+    background: #875931;
+    box-shadow: 0 4px 14px rgb(16 14 10 / 0.32);
+  }
+
+  .mobilePropertyLink:hover .mobilePropertyCtaIcon {
+    transform: translate(1px, -1px);
+  }
+}
+
+.mobilePropertyLink:active .mobilePropertyCta {
+  background: #875931;
+}
+
+.mobilePropertyLink:focus-visible .mobilePropertyCta {
+  background: #875931;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 4px 12px rgb(16 14 10 / 0.32);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segment span,
+  .mobilePropertyCard,
+  .mobilePropertyLink,
+  .mobilePropertyImage,
+  .mobilePropertyCta,
+  .mobilePropertyCtaIcon {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}

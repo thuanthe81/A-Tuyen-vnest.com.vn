@@ -1,0 +1,817 @@
+/*
+ * PROPERTY DETAIL, Bare Chic prototype (section 05.2, 20/10/2026). Exploration, not approved.
+ *
+ * Palette: VNest's, as the Brand Collection uses it (public/dev-fixtures/brand-collection/SOURCES.md):
+ * olive text, copper for hairlines and marks only (it measures under 4.5:1 for small text), beige
+ * and paper grounds. The muted olive and the line colour are derived values, as there.
+ * Type: the site face (Be Vietnam Pro, provisional), at three sizes: display, lead, body.
+ */
+.page,
+.review {
+  --pd-olive: #37412f;
+  --pd-muted: #5b6152; /* derived: 5.4:1 on beige, 6.4:1 on white */
+  --pd-copper: #ab7444;
+  --pd-beige: #f1ece4;
+  --pd-paper: #fbf9f5;
+  --pd-line: #ddd5c8; /* derived */
+  --pd-gap: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+  --pd-section: clamp(4rem, 3rem + 4vw, 7.5rem);
+  --pd-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --pd-fast: 160ms;
+}
+
+.page {
+  background: var(--pd-paper);
+  color: var(--pd-olive);
+  padding-bottom: var(--pd-section);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    --pd-fast: 0ms;
+  }
+}
+
+.wrap {
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding-inline: var(--vn-gutter);
+}
+
+.page :focus-visible {
+  outline: 2px solid var(--pd-olive);
+  outline-offset: 3px;
+}
+
+/* Small caps label: brand, section labels. */
+.label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pd-muted);
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--pd-muted);
+}
+
+/* ── Primary action ─────────────────────────────────────────────────────────── */
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding-inline: 1.5rem;
+  border-radius: 999px;
+  background: var(--pd-olive);
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--pd-fast) var(--pd-ease);
+}
+
+.cta:hover {
+  background: #2a3224;
+}
+
+.cta svg {
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+}
+
+/* ── Hero ───────────────────────────────────────────────────────────────────── */
+
+.hero {
+  display: grid;
+  gap: 1.25rem;
+  padding-top: 0;
+}
+
+.heroFrame {
+  /* Full-bleed on phones: the photograph is the first thing seen, edge to edge. */
+  margin-inline: calc(var(--vn-gutter) * -1);
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  object-position: 55% 50%;
+  background: var(--pd-beige);
+}
+
+.heroFrame .caption {
+  padding-inline: var(--vn-gutter);
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 0.5rem;
+  font-size: clamp(3rem, 1.9rem + 4.6vw, 6.25rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.address {
+  margin-top: 1rem;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--pd-muted);
+}
+
+.address strong {
+  display: block;
+  font-weight: 500;
+  color: var(--pd-olive);
+}
+
+.heroActions {
+  margin-top: 1.5rem;
+}
+
+.heroActions .cta {
+  width: 100%;
+}
+
+/* The room index: the four rooms by name, each a way straight to its block. Wider screens only. */
+.index {
+  display: none;
+}
+
+.index ol {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--pd-line);
+}
+
+.index li {
+  border-bottom: 1px solid var(--pd-line);
+}
+
+.index a {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  min-height: 2.75rem;
+  padding-block: 0.625rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.index a:hover .indexName {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--pd-copper);
+}
+
+.indexNumber {
+  flex: none;
+  min-width: 1.25rem; /* the face has no tabular figures: a fixed box keeps the names aligned */
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--pd-copper);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    align-items: stretch;
+    gap: var(--pd-gap);
+    padding-top: 1.5rem;
+  }
+
+  .heroFrame {
+    margin-inline: 0;
+  }
+
+  .heroFrame .caption {
+    padding-inline: 0;
+  }
+
+  .heroImage {
+    aspect-ratio: 4 / 5;
+    border-radius: 2px;
+  }
+
+  .identity {
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 1.75rem; /* the caption's line under the photograph */
+  }
+
+  .index {
+    display: block;
+  }
+
+  .heroActions .cta {
+    width: auto;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+    gap: 3rem;
+  }
+
+  .heroImage {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ── Sections ───────────────────────────────────────────────────────────────── */
+
+.section {
+  margin-top: var(--pd-section);
+  scroll-margin-top: 6rem;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--pd-copper);
+}
+
+.h2 {
+  font-size: clamp(1.5rem, 1.2rem + 1.3vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.headNote {
+  font-size: 0.8125rem;
+  color: var(--pd-muted);
+  text-align: right;
+}
+
+/* ── Story ──────────────────────────────────────────────────────────────────── */
+
+.story {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas: "head" "lead" "figure" "body";
+}
+
+.story .sectionHead {
+  grid-area: head;
+}
+
+.lead {
+  grid-area: lead;
+  font-size: clamp(1.125rem, 1.02rem + 0.45vw, 1.375rem);
+  line-height: 1.55;
+  letter-spacing: -0.012em;
+  text-wrap: pretty;
+}
+
+.storyBody {
+  grid-area: body;
+  max-width: 38rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--pd-olive);
+  text-wrap: pretty;
+}
+
+.storyFigure {
+  grid-area: figure;
+  margin-inline: calc(var(--vn-gutter) * -1);
+}
+
+.storyFigure .caption {
+  padding-inline: var(--vn-gutter);
+}
+
+.storyImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--pd-beige);
+}
+
+@media (min-width: 48rem) {
+  .story {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-areas: "head head" "lead figure" "body figure";
+    grid-template-rows: auto auto 1fr;
+    column-gap: var(--pd-gap);
+    row-gap: 2rem;
+  }
+
+  .storyFigure {
+    margin-inline: 0;
+  }
+
+  .storyFigure .caption {
+    padding-inline: 0;
+  }
+
+  .storyImage {
+    border-radius: 2px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .story {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    column-gap: 6rem;
+  }
+}
+
+/* ── Amenities ──────────────────────────────────────────────────────────────── */
+
+.amenityList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--pd-gap);
+}
+
+.amenityList li {
+  padding-block: 0.875rem;
+  border-bottom: 1px solid var(--pd-line);
+  font-size: 1rem;
+}
+
+.amenityNote {
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  color: var(--pd-muted);
+}
+
+@media (min-width: 48rem) {
+  .amenityList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .amenityList {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* ── Rooms ──────────────────────────────────────────────────────────────────── */
+
+.status {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  font-size: 0.875rem;
+  color: var(--pd-muted);
+}
+
+.status::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--pd-copper);
+  transform: translateY(-0.05rem);
+}
+
+.status strong {
+  font-weight: 500;
+  color: var(--pd-olive);
+}
+
+.roomList {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0;
+}
+
+.room {
+  scroll-margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--pd-line);
+}
+
+.roomImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2px;
+  background: var(--pd-beige);
+}
+
+.roomName {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.price {
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--pd-muted);
+}
+
+.priceRows {
+  margin-top: 0.25rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  column-gap: 1rem;
+  row-gap: 0.125rem;
+}
+
+.priceRows dt {
+  color: var(--pd-muted);
+}
+
+.priceRows dd {
+  font-weight: 600;
+  color: var(--pd-olive);
+  font-size: 0.9375rem;
+}
+
+.pending {
+  font-style: normal;
+}
+
+/* Wider screens: still one list, so the rooms read as a choice rather than a second gallery. */
+@media (min-width: 48rem) {
+  .roomList {
+    margin-top: 1.5rem;
+  }
+
+  .room {
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: var(--pd-gap);
+    padding-block: 1.25rem;
+  }
+
+  .roomImage {
+    aspect-ratio: 3 / 2;
+  }
+
+  .roomText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .roomName {
+    font-size: 1.375rem;
+  }
+
+  .price {
+    margin-top: 0;
+    text-align: right;
+    flex: none;
+  }
+
+  .priceRows {
+    justify-content: end;
+  }
+}
+
+@media (min-width: 64rem) {
+  .room {
+    grid-template-columns: 15rem minmax(0, 1fr);
+  }
+
+  .roomName {
+    font-size: 1.625rem;
+  }
+}
+
+/* ── Location ───────────────────────────────────────────────────────────────── */
+
+.place {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.placeAddress {
+  font-style: normal;
+}
+
+.street {
+  font-size: clamp(1.375rem, 1.1rem + 1.2vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.ward {
+  margin-top: 0.25rem;
+  color: var(--pd-muted);
+}
+
+.mapLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 2.75rem;
+  margin-top: 0.75rem;
+  color: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--pd-copper);
+  text-underline-offset: 5px;
+}
+
+.facts {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.facts dt {
+  color: var(--pd-muted);
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 48rem) {
+  .place {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: var(--pd-gap);
+    margin-top: 2rem;
+  }
+}
+
+/* ── Photographs ────────────────────────────────────────────────────────────── */
+
+/* Phones: one row that scrolls sideways, each photograph a tall frame, the next one peeking. */
+.strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 78%;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  margin-inline: calc(var(--vn-gutter) * -1);
+  padding-inline: var(--vn-gutter);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--vn-gutter);
+  scrollbar-width: none;
+}
+
+.strip::-webkit-scrollbar {
+  display: none;
+}
+
+.strip > li {
+  scroll-snap-align: start;
+}
+
+.thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.thumb img,
+.thumbPlaceholder {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 2px;
+  background: var(--pd-beige);
+}
+
+.thumbPlaceholder {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--pd-muted);
+  font-size: 0.75rem;
+  color: var(--pd-muted);
+  text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .strip {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin-inline: 0;
+    padding-inline: 0;
+    overflow: visible;
+    gap: var(--pd-gap);
+    row-gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* An editorial rhythm, not a uniform grid: one tall frame and two beside it, then a row of three. */
+  .strip > li:nth-child(1) {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .strip > li:nth-child(2),
+  .strip > li:nth-child(3) {
+    grid-column: span 3;
+  }
+
+  .strip > li:nth-child(n + 4) {
+    grid-column: span 2;
+  }
+
+  .strip > li:nth-child(1) .thumb img,
+  .strip > li:nth-child(1) .thumbPlaceholder {
+    aspect-ratio: auto;
+    height: 100%;
+  }
+
+  .strip > li:nth-child(1) .thumb {
+    height: calc(100% - 1.75rem);
+  }
+
+  .strip > li:nth-child(n + 2) .thumb img,
+  .strip > li:nth-child(n + 2) .thumbPlaceholder {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* ── Viewer ─────────────────────────────────────────────────────────────────── */
+
+.viewer {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #161a13;
+  color: #f1ece4;
+}
+
+.viewer::backdrop {
+  background: #161a13;
+}
+
+.viewerInner {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100%;
+}
+
+.viewerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem var(--vn-gutter);
+}
+
+/* The photograph fits the space between the bars, whole (contain), whatever its proportions. */
+.viewerFigure {
+  position: relative;
+  min-height: 0;
+}
+
+.viewerFigure img {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: var(--vn-gutter);
+  width: calc(100% - 2 * var(--vn-gutter));
+  height: 100%;
+  object-fit: contain;
+}
+
+.viewerNav {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem var(--vn-gutter) max(1rem, env(safe-area-inset-bottom));
+}
+
+.iconButton {
+  display: inline-grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid rgb(241 236 228 / 0.35);
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.iconButton:hover {
+  border-color: #f1ece4;
+}
+
+.iconButton svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.viewer :focus-visible {
+  outline: 2px solid #f1ece4;
+  outline-offset: 3px;
+}
+
+.viewerCaption {
+  font-size: 0.875rem;
+}
+
+.viewerCount {
+  color: rgb(241 236 228 / 0.7);
+  font-size: 0.8125rem;
+  margin-left: 0.5rem;
+}
+
+/* ── Phone booking pill ─────────────────────────────────────────────────────── */
+
+.pill {
+  position: fixed;
+  inset-inline: var(--vn-gutter);
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition:
+    opacity var(--pd-fast) var(--pd-ease),
+    transform var(--pd-fast) var(--pd-ease);
+}
+
+.pill[data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.pill[data-shown="true"] .cta {
+  pointer-events: auto;
+}
+
+.pill .cta {
+  box-shadow: 0 6px 24px rgb(22 26 19 / 0.22);
+}
+
+@media (min-width: 48rem) {
+  .pill {
+    display: none;
+  }
+}
+
+/* ── Review notice (private preview) ────────────────────────────────────────── */
+
+.review {
+  background: var(--pd-olive);
+  color: #f1ece4;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  padding: 0.5rem var(--vn-gutter);
+  text-align: center;
+}
+
+.review strong {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.review a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}

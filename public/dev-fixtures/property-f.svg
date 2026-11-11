@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9d8d2"/><stop offset="0.6" stop-color="#b4b3ab"/><stop offset="1" stop-color="#8b8a83"/></linearGradient></defs><rect width="1600" height="1200" fill="url(#s)"/>
+<rect x="140" y="420" width="1320" height="56" fill="#26272a"/>
+<rect x="200" y="476" width="34" height="520" fill="#26272a"/><rect x="395" y="476" width="34" height="520" fill="#26272a"/><rect x="590" y="476" width="34" height="520" fill="#26272a"/><rect x="785" y="476" width="34" height="520" fill="#26272a"/><rect x="980" y="476" width="34" height="520" fill="#26272a"/><rect x="1175" y="476" width="34" height="520" fill="#26272a"/><rect x="1370" y="476" width="34" height="520" fill="#26272a"/>
+<rect y="996" width="1600" height="204" fill="#5d5c57"/>
+<rect x="640" y="620" width="330" height="376" fill="#f4f2ea" fill-opacity="0.8"/>
+<text x="800" y="1164" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="25" letter-spacing="4" fill="#ffffff" fill-opacity="0.72">ẢNH MẪU · KHÔNG PHẢI HÌNH ẢNH VNEST</text>
+</svg>

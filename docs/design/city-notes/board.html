@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>City Notes board</title>
+<style>
+  :root { --olive: #37412f; --beige: #f1ece4; --paper: #fbf9f5; --muted: #5b6152; --line: #ddd5c8; --copper: #ab7444; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--olive); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header, section { max-width: 1440px; margin: 0 auto; padding: 32px 24px; }
+  h1 { font-size: 28px; font-weight: 500; letter-spacing: -0.02em; margin: 4px 0 8px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 0 0 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+  h3 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  p, li { max-width: 78ch; color: var(--muted); }
+  b { color: var(--olive); }
+  figure { margin: 0; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  figcaption b { color: var(--olive); }
+  img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+  .stack { display: grid; gap: 24px; }
+  .phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
+  .order { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  ol.page { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  ol.page li { max-width: none; display: flex; justify-content: space-between; gap: 12px; padding: 10px 14px; border: 1px dashed var(--line); border-radius: 4px; color: var(--muted); background: #fff; }
+  ol.page li.new { border: 1.5px solid var(--olive); color: var(--olive); background: var(--beige); font-weight: 600; }
+  ol.page li.book { border-style: solid; border-color: var(--copper); color: var(--olive); }
+  ol.page small { font-size: 12px; font-weight: 400; color: var(--muted); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  td, th { text-align: left; vertical-align: top; padding: 8px 10px; border-top: 1px solid var(--line); }
+  th { font-weight: 600; }
+  td { color: var(--muted); }
+  a { color: var(--olive); }
+  @media (max-width: 760px) { .phones, .order { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">VNest V2 · City Notes · 20/10/2026 · đề xuất, chưa duyệt</p>
+  <h1>VNest City Notes: layout proposal, 1440 and 390 px</h1>
+  <p>One responsive module for every property page, built from the destination sheet of <code>VNest_Informationv2.xlsx</code>: 30 places, two cities, names and addresses exactly as VNest wrote them. No distances, hours, ratings, photographs or map links, because the sheet has none. Unchanged sections are drawn as ghosts. Specification and decisions: <a href="../../sections/city-notes-spec.md">docs/sections/city-notes-spec.md</a>. Try the interaction: <a href="frames/city-notes.html">frames/city-notes.html</a> (add <code>?city=da-nang</code>).</p>
+</header>
+
+<section>
+  <h2>1. Placement on the property page (CS-2)</h2>
+  <div class="order">
+    <div>
+      <h3>Recommended: section 6, after Vị trí</h3>
+      <ol class="page">
+        <li>1 · Hero: gallery, identity, primary action <small>unchanged</small></li>
+        <li>2 · Introduction <small>unchanged</small></li>
+        <li>3 · Tiện nghi <small>unchanged</small></li>
+        <li class="book">4 · Các loại phòng (#rooms, booking) <small>unchanged</small></li>
+        <li>5 · Vị trí <small>unchanged</small></li>
+        <li class="new">6 · VNest City Notes <small>new</small></li>
+      </ol>
+    </div>
+    <div>
+      <h3>Why</h3>
+      <ul>
+        <li><b>Booking stays first.</b> Everything needed to choose and book comes before it. On phones the booking pill stays over City Notes, by its existing rule; no booking code changes.</li>
+        <li><b>It continues "where is it?"</b> Vị trí gives the property's address; City Notes widens to the city.</li>
+        <li><b>Its own section, not inside Vị trí.</b> Under the property's address the list would read as "near this address", which the sheet does not support (one list serves four properties).</li>
+        <li><b>Rejected:</b> between amenities and rooms (delays booking); in the hero (the first screen belongs to the property).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>2. Desktop, 1440 px</h2>
+  <div class="stack">
+    <figure><img src="boards/desktop-1440-hcm-eat.png" alt="Desktop, TP. Hồ Chí Minh, Ăn và uống selected, four places in one row"><figcaption><b>First state</b> · Bare Chic (TP. Hồ Chí Minh) · Ăn &amp; uống · first four in the workbook's order · section 320 px tall</figcaption></figure>
+    <figure><img src="boards/desktop-1440-hcm-explore-open.png" alt="Desktop, Khám phá selected and expanded to eight places"><figcaption><b>Expanded</b> · Khám phá, all 8 · two rows of four · 455 px</figcaption></figure>
+    <figure><img src="boards/desktop-1440-dn-eat.png" alt="Desktop, Đà Nẵng, Ăn và uống selected"><figcaption><b>Same module, other city</b> · Bare Hàn / The Nắng Suites (Đà Nẵng)</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>3. Mobile, 390 px</h2>
+  <div class="phones">
+    <figure><img src="boards/mobile-390-hcm-eat.png" alt="Phone, TP. Hồ Chí Minh, first state, booking pill at the bottom"><figcaption><b>First state</b> · 630 px, about ¾ of a screen · the booking pill (05.2, unchanged) stays above it</figcaption></figure>
+    <figure><img src="boards/mobile-390-hcm-explore-open.png" alt="Phone, Khám phá expanded to eight places"><figcaption><b>Expanded</b> · Khám phá, all 8 · 941 px (frame taller than one screen)</figcaption></figure>
+    <figure><img src="boards/mobile-390-dn-eat.png" alt="Phone, Đà Nẵng, first state"><figcaption><b>Other city</b> · Đà Nẵng</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>4. What to review</h2>
+  <table>
+    <tr><th>#</th><th>Decision</th><th>Proposed</th></tr>
+    <tr><td>CS-1</td><td>Heading</td><td>"Ăn gì, đi đâu ở [city]" under the label "VNest City Notes". "Khám phá quanh nơi bạn ở" would say the places are around the guest's property, which the sheet does not support.</td></tr>
+    <tr><td>CS-2</td><td>Placement</td><td>Section 6, after Vị trí.</td></tr>
+    <tr><td>CS-3</td><td>First view</td><td>Four per category, the workbook's order, Ăn &amp; uống selected; not numbered, so not a ranking (Q36 asks VNest to choose).</td></tr>
+    <tr><td>CS-4</td><td>Expanded</td><td>Inline, same panel, stays expanded across tabs; "Thu gọn" to collapse.</td></tr>
+    <tr><td>CS-5</td><td>Copy address</td><td>Not now; a possible Grab-friendly addition later.</td></tr>
+    <tr><td>CS-6</td><td>Imagery</td><td>None. Two meaningful icons only: bowl and chopsticks, compass.</td></tr>
+    <tr><td>CS-7</td><td>Next</td><td>Reader with tests and an isolated /dev/city-notes prototype; Bare Chic integration later, as its own step.</td></tr>
+  </table>
+  <p>Location lines: the city is dropped (the heading names it), spaces are tidied, nothing is respelt. Two addresses with open defects show only their area: Tan coffee "Bình Hiên, Hải Châu" (D33 "!0"), Chợ Hàn "Hải Châu" (D30 "Trần phú"), until VNest answers Q32.</p>
+</section>
+</body>
+</html>

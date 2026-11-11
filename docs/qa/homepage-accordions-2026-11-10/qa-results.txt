@@ -1,0 +1,2 @@
+Homepage accordions QA · 2026-11-09T17:20:42.699Z · http://localhost:3401
+passed 476, failed 0

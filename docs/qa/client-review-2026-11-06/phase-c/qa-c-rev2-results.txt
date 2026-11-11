@@ -1,0 +1,782 @@
+PASS @1440 vi Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @1440 vi no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @1440 vi no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @1440 vi Discovery marked as Vietnamese
+PASS @1440 vi filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @1440 vi filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @1440 vi filters (desktop): labels in one column beside the tracks, tracks aligned, one line each
+PASS @1440 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1440 vi city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @1440 vi "Tất cả": the six real stays only, no Coming Soon card
+PASS @1440 vi "Tất cả": no city selected
+PASS @1440 vi stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1440 vi bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @1440 vi bare: city availability available/available, nothing selected
+PASS @1440 vi bare: the filter rows keep their size — 124→124
+PASS @1440 vi bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @1440 vi bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @1440 vi bare card: its own motif and official logo — route
+PASS @1440 vi bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @1440 vi bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1440 vi bare card: the listing card's shell (photo box: same size and radius, same name size) — 384×256/6px vs 384×256/6px; 18px vs 18px
+PASS @1440 vi bare card: mark, name and label inside, no overlaps
+PASS @1440 vi pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @1440 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @1440 vi pepper-house: the filter rows keep their size — 124→124
+PASS @1440 vi pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @1440 vi pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @1440 vi pepper-house card: its own motif and official logo — frame
+PASS @1440 vi pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @1440 vi pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1440 vi pepper-house card: the listing card's shell (photo box: same size and radius, same name size) — 384×256/6px vs 384×256/6px; 18px vs 18px
+PASS @1440 vi pepper-house card: mark, name and label inside, no overlaps
+PASS @1440 vi the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @1440 vi the-nang: city availability unavailable/only, nothing selected
+PASS @1440 vi the-nang: the filter rows keep their size — 124→124
+PASS @1440 vi the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @1440 vi the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @1440 vi the-nang card: its own motif and official logo — sun
+PASS @1440 vi the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @1440 vi the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1440 vi the-nang card: the listing card's shell (photo box: same size and radius, same name size) — 384×256/6px vs 384×256/6px; 18px vs 18px
+PASS @1440 vi the-nang card: mark, name and label inside, no overlaps
+PASS @1440 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1440 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @1440 vi tapping the active city clears it
+PASS @1440 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @1440 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @1440 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1440 vi Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @1440 vi "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS stay link /dev/stays/bare-chic?view=demo → 200
+PASS stay link /dev/stays/bare-hyphen → 200
+PASS stay link /dev/stays/bare-da-kao → 200
+PASS stay link /dev/stays/bare-han → 200
+PASS stay link /dev/stays/pepper-house → 200
+PASS stay link /dev/stays/the-nang-suites → 200
+PASS @1440 vi About "Liên hệ VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @1440 vi stay name "→" links: no underline on hover, a space before the arrow — none gap=5.0
+PASS @1440 vi Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @1440 vi Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 52px, 1 line(s)
+PASS @1440 vi Hợp tác: three cards in one row, even heights — 176/176/176
+PASS @1440 vi Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @1440 vi Hợp tác panel: description at reading size and measure — 20px, 32em
+PASS @1440 vi Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), one line, inside the panel — 56×297 16px label 20
+PASS @1440 vi Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1440 vi Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1440 vi Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1440 vi Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @1440 vi no horizontal overflow, no clipped or spilling text — 0  
+PASS @1440 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @1440 vi no console/hydration errors
+PASS @1440 en Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @1440 en no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @1440 en no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @1440 en Discovery marked as Vietnamese
+PASS @1440 en filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @1440 en filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @1440 en filters (desktop): labels in one column beside the tracks, tracks aligned, one line each
+PASS @1440 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1440 en city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @1440 en "Tất cả": the six real stays only, no Coming Soon card
+PASS @1440 en "Tất cả": no city selected
+PASS @1440 en stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1440 en bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @1440 en bare: city availability available/available, nothing selected
+PASS @1440 en bare: the filter rows keep their size — 124→124
+PASS @1440 en bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @1440 en bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @1440 en bare card: its own motif and official logo — route
+PASS @1440 en bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @1440 en bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1440 en bare card: the listing card's shell (photo box: same size and radius, same name size) — 384×256/6px vs 384×256/6px; 18px vs 18px
+PASS @1440 en bare card: mark, name and label inside, no overlaps
+PASS @1440 en pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @1440 en pepper-house: city availability only/unavailable, nothing selected
+PASS @1440 en pepper-house: the filter rows keep their size — 124→124
+PASS @1440 en pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @1440 en pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @1440 en pepper-house card: its own motif and official logo — frame
+PASS @1440 en pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @1440 en pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1440 en pepper-house card: the listing card's shell (photo box: same size and radius, same name size) — 384×256/6px vs 384×256/6px; 18px vs 18px
+PASS @1440 en pepper-house card: mark, name and label inside, no overlaps
+PASS @1440 en the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @1440 en the-nang: city availability unavailable/only, nothing selected
+PASS @1440 en the-nang: the filter rows keep their size — 124→124
+PASS @1440 en the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @1440 en the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @1440 en the-nang card: its own motif and official logo — sun
+PASS @1440 en the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @1440 en the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1440 en the-nang card: the listing card's shell (photo box: same size and radius, same name size) — 384×256/6px vs 384×256/6px; 18px vs 18px
+PASS @1440 en the-nang card: mark, name and label inside, no overlaps
+PASS @1440 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1440 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @1440 en tapping the active city clears it
+PASS @1440 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @1440 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @1440 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1440 en Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @1440 en "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @1440 en About "Contact VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @1440 en stay name "→" links: no underline on hover, a space before the arrow — none gap=5.0
+PASS @1440 en Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @1440 en Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 52px, 1 line(s)
+PASS @1440 en Hợp tác: three cards in one row, even heights — 197/197/197
+PASS @1440 en Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @1440 en Hợp tác panel: description at reading size and measure — 20px, 31em
+PASS @1440 en Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), one line, inside the panel — 56×363 16px label 20
+PASS @1440 en Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1440 en Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1440 en Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1440 en Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&lang=en&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @1440 en no horizontal overflow, no clipped or spilling text — 0  
+PASS @1440 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @1440 en no console/hydration errors
+PASS @1024 vi Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @1024 vi no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @1024 vi no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @1024 vi Discovery marked as Vietnamese
+PASS @1024 vi filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @1024 vi filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @1024 vi filters (desktop): labels in one column beside the tracks, tracks aligned, one line each
+PASS @1024 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1024 vi city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @1024 vi "Tất cả": the six real stays only, no Coming Soon card
+PASS @1024 vi "Tất cả": no city selected
+PASS @1024 vi stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1024 vi bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @1024 vi bare: city availability available/available, nothing selected
+PASS @1024 vi bare: the filter rows keep their size — 124→124
+PASS @1024 vi bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @1024 vi bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @1024 vi bare card: its own motif and official logo — route
+PASS @1024 vi bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @1024 vi bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1024 vi bare card: the listing card's shell (photo box: same size and radius, same name size) — 305×203/6px vs 305×203/6px; 18px vs 18px
+PASS @1024 vi bare card: mark, name and label inside, no overlaps
+PASS @1024 vi pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @1024 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @1024 vi pepper-house: the filter rows keep their size — 124→124
+PASS @1024 vi pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @1024 vi pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @1024 vi pepper-house card: its own motif and official logo — frame
+PASS @1024 vi pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @1024 vi pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1024 vi pepper-house card: the listing card's shell (photo box: same size and radius, same name size) — 305×203/6px vs 305×203/6px; 18px vs 18px
+PASS @1024 vi pepper-house card: mark, name and label inside, no overlaps
+PASS @1024 vi the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @1024 vi the-nang: city availability unavailable/only, nothing selected
+PASS @1024 vi the-nang: the filter rows keep their size — 124→124
+PASS @1024 vi the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @1024 vi the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @1024 vi the-nang card: its own motif and official logo — sun
+PASS @1024 vi the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @1024 vi the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1024 vi the-nang card: the listing card's shell (photo box: same size and radius, same name size) — 305×203/6px vs 305×203/6px; 18px vs 18px
+PASS @1024 vi the-nang card: mark, name and label inside, no overlaps
+PASS @1024 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1024 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @1024 vi tapping the active city clears it
+PASS @1024 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @1024 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @1024 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1024 vi Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @1024 vi "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @1024 vi About "Liên hệ VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @1024 vi stay name "→" links: no underline on hover, a space before the arrow — none gap=5.0
+PASS @1024 vi Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @1024 vi Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 46.976px, 1 line(s)
+PASS @1024 vi Hợp tác: three cards in one row, even heights — 217/217/217
+PASS @1024 vi Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @1024 vi Hợp tác panel: description at reading size and measure — 19.072px, 26em
+PASS @1024 vi Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), one line, inside the panel — 56×297 16px label 20
+PASS @1024 vi Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1024 vi Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1024 vi Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1024 vi Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @1024 vi no horizontal overflow, no clipped or spilling text — 0  
+PASS @1024 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @1024 vi no console/hydration errors
+PASS @1024 en Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @1024 en no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @1024 en no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @1024 en Discovery marked as Vietnamese
+PASS @1024 en filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @1024 en filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @1024 en filters (desktop): labels in one column beside the tracks, tracks aligned, one line each
+PASS @1024 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @1024 en city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @1024 en "Tất cả": the six real stays only, no Coming Soon card
+PASS @1024 en "Tất cả": no city selected
+PASS @1024 en stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @1024 en bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @1024 en bare: city availability available/available, nothing selected
+PASS @1024 en bare: the filter rows keep their size — 124→124
+PASS @1024 en bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @1024 en bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @1024 en bare card: its own motif and official logo — route
+PASS @1024 en bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @1024 en bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1024 en bare card: the listing card's shell (photo box: same size and radius, same name size) — 305×203/6px vs 305×203/6px; 18px vs 18px
+PASS @1024 en bare card: mark, name and label inside, no overlaps
+PASS @1024 en pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @1024 en pepper-house: city availability only/unavailable, nothing selected
+PASS @1024 en pepper-house: the filter rows keep their size — 124→124
+PASS @1024 en pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @1024 en pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @1024 en pepper-house card: its own motif and official logo — frame
+PASS @1024 en pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @1024 en pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1024 en pepper-house card: the listing card's shell (photo box: same size and radius, same name size) — 305×203/6px vs 305×203/6px; 18px vs 18px
+PASS @1024 en pepper-house card: mark, name and label inside, no overlaps
+PASS @1024 en the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @1024 en the-nang: city availability unavailable/only, nothing selected
+PASS @1024 en the-nang: the filter rows keep their size — 124→124
+PASS @1024 en the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @1024 en the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @1024 en the-nang card: its own motif and official logo — sun
+PASS @1024 en the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @1024 en the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @1024 en the-nang card: the listing card's shell (photo box: same size and radius, same name size) — 305×203/6px vs 305×203/6px; 18px vs 18px
+PASS @1024 en the-nang card: mark, name and label inside, no overlaps
+PASS @1024 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @1024 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @1024 en tapping the active city clears it
+PASS @1024 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @1024 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @1024 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @1024 en Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @1024 en "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @1024 en About "Contact VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @1024 en stay name "→" links: no underline on hover, a space before the arrow — none gap=5.0
+PASS @1024 en Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @1024 en Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 46.976px, 2 line(s)
+PASS @1024 en Hợp tác: three cards in one row, even heights — 217/217/217
+PASS @1024 en Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @1024 en Hợp tác panel: description at reading size and measure — 19.072px, 23em
+PASS @1024 en Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), one line, inside the panel — 56×363 16px label 20
+PASS @1024 en Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1024 en Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1024 en Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @1024 en Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&lang=en&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @1024 en no horizontal overflow, no clipped or spilling text — 0  
+PASS @1024 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @1024 en no console/hydration errors
+PASS @768 vi Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @768 vi no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @768 vi no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @768 vi Discovery marked as Vietnamese
+PASS @768 vi filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @768 vi filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @768 vi filters (tablet): label above each full-width track, one line each
+PASS @768 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @768 vi city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @768 vi "Tất cả": the six real stays only, no Coming Soon card
+PASS @768 vi "Tất cả": no city selected
+PASS @768 vi stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @768 vi bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @768 vi bare: city availability available/available, nothing selected
+PASS @768 vi bare: the filter rows keep their size — 175.1875→175.1875
+PASS @768 vi bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @768 vi bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @768 vi bare card: its own motif and official logo — route
+PASS @768 vi bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @768 vi bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @768 vi bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 718×220/12px vs 718×220/12px; 20.288px vs 20.288px
+PASS @768 vi bare card: mark, name and label inside, no overlaps
+PASS @768 vi pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @768 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @768 vi pepper-house: the filter rows keep their size — 175.1875→175.1875
+PASS @768 vi pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @768 vi pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @768 vi pepper-house card: its own motif and official logo — frame
+PASS @768 vi pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @768 vi pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @768 vi pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 718×220/12px vs 718×220/12px; 20.288px vs 20.288px
+PASS @768 vi pepper-house card: mark, name and label inside, no overlaps
+PASS @768 vi the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @768 vi the-nang: city availability unavailable/only, nothing selected
+PASS @768 vi the-nang: the filter rows keep their size — 175.1875→175.1875
+PASS @768 vi the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @768 vi the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @768 vi the-nang card: its own motif and official logo — sun
+PASS @768 vi the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @768 vi the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @768 vi the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 718×220/12px vs 718×220/12px; 20.288px vs 20.288px
+PASS @768 vi the-nang card: mark, name and label inside, no overlaps
+PASS @768 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @768 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @768 vi tapping the active city clears it
+PASS @768 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @768 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @768 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @768 vi Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @768 vi "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @768 vi About "Liên hệ VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @768 vi Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @768 vi Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 40.832px, 2 line(s)
+PASS @768 vi Hợp tác: three cards in one row, even heights — 236/236/236
+PASS @768 vi Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @768 vi Hợp tác panel: description at reading size and measure — 18.304px, 35em
+PASS @768 vi Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), one line, inside the panel — 56×320 15.936px label 20
+PASS @768 vi Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @768 vi Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @768 vi Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @768 vi Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @768 vi no horizontal overflow, no clipped or spilling text — 0  
+PASS @768 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @768 vi no console/hydration errors
+PASS @768 en Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @768 en no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @768 en no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @768 en Discovery marked as Vietnamese
+PASS @768 en filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @768 en filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @768 en filters (tablet): label above each full-width track, one line each
+PASS @768 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @768 en city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @768 en "Tất cả": the six real stays only, no Coming Soon card
+PASS @768 en "Tất cả": no city selected
+PASS @768 en stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @768 en bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @768 en bare: city availability available/available, nothing selected
+PASS @768 en bare: the filter rows keep their size — 175.1875→175.1875
+PASS @768 en bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @768 en bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @768 en bare card: its own motif and official logo — route
+PASS @768 en bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @768 en bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @768 en bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 718×220/12px vs 718×220/12px; 20.288px vs 20.288px
+PASS @768 en bare card: mark, name and label inside, no overlaps
+PASS @768 en pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @768 en pepper-house: city availability only/unavailable, nothing selected
+PASS @768 en pepper-house: the filter rows keep their size — 175.1875→175.1875
+PASS @768 en pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @768 en pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @768 en pepper-house card: its own motif and official logo — frame
+PASS @768 en pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @768 en pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @768 en pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 718×220/12px vs 718×220/12px; 20.288px vs 20.288px
+PASS @768 en pepper-house card: mark, name and label inside, no overlaps
+PASS @768 en the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @768 en the-nang: city availability unavailable/only, nothing selected
+PASS @768 en the-nang: the filter rows keep their size — 175.1875→175.1875
+PASS @768 en the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @768 en the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @768 en the-nang card: its own motif and official logo — sun
+PASS @768 en the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @768 en the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @768 en the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 718×220/12px vs 718×220/12px; 20.288px vs 20.288px
+PASS @768 en the-nang card: mark, name and label inside, no overlaps
+PASS @768 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @768 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @768 en tapping the active city clears it
+PASS @768 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @768 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @768 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @768 en Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @768 en "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @768 en About "Contact VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @768 en Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @768 en Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 40.832px, 2 line(s)
+PASS @768 en Hợp tác: three cards in one row, even heights — 288/288/288
+PASS @768 en Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @768 en Hợp tác panel: description at reading size and measure — 18.304px, 35em
+PASS @768 en Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), one line, inside the panel — 56×362 15.936px label 20
+PASS @768 en Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @768 en Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @768 en Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 20 overflow 0
+PASS @768 en Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&lang=en&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @768 en no horizontal overflow, no clipped or spilling text — 0  
+PASS @768 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @768 en no console/hydration errors
+PASS @430 vi Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @430 vi no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @430 vi no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @430 vi Discovery marked as Vietnamese
+PASS @430 vi filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @430 vi filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @430 vi filters (phones): label above each full-width track; brands 2 × 2, cities one line — 2/1
+PASS @430 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @430 vi city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @430 vi "Tất cả": the six real stays only, no Coming Soon card
+PASS @430 vi "Tất cả": no city selected
+PASS @430 vi stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @430 vi bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @430 vi bare: city availability available/available, nothing selected
+PASS @430 vi bare: the filter rows keep their size — 221.1875→221.1875
+PASS @430 vi bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @430 vi bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @430 vi bare card: its own motif and official logo — route
+PASS @430 vi bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @430 vi bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @430 vi bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 395×220/12px vs 395×220/12px; 18.26px vs 18.26px
+PASS @430 vi bare card: mark, name and label inside, no overlaps
+PASS @430 vi pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @430 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @430 vi pepper-house: the filter rows keep their size — 221.1875→221.1875
+PASS @430 vi pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @430 vi pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @430 vi pepper-house card: its own motif and official logo — frame
+PASS @430 vi pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @430 vi pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @430 vi pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 395×220/12px vs 395×220/12px; 18.26px vs 18.26px
+PASS @430 vi pepper-house card: mark, name and label inside, no overlaps
+PASS @430 vi the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @430 vi the-nang: city availability unavailable/only, nothing selected
+PASS @430 vi the-nang: the filter rows keep their size — 221.1875→221.1875
+PASS @430 vi the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @430 vi the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @430 vi the-nang card: its own motif and official logo — sun
+PASS @430 vi the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @430 vi the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @430 vi the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 395×220/12px vs 395×220/12px; 18.26px vs 18.26px
+PASS @430 vi the-nang card: mark, name and label inside, no overlaps
+PASS @430 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @430 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @430 vi tapping the active city clears it
+PASS @430 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @430 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @430 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @430 vi Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @430 vi "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @430 vi About "Liên hệ VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @430 vi Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @430 vi Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 32.72px, 2 line(s)
+PASS @430 vi Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @430 vi Hợp tác panel: description at reading size and measure — 17.29px, 20em
+PASS @430 vi Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), at most two lines, inside the panel — 56×342 15.26px label 19
+PASS @430 vi Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @430 vi Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @430 vi Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @430 vi Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @430 vi no horizontal overflow, no clipped or spilling text — 0  
+PASS @430 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @430 vi no console/hydration errors
+PASS @430 en Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @430 en no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @430 en no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @430 en Discovery marked as Vietnamese
+PASS @430 en filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @430 en filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @430 en filters (phones): label above each full-width track; brands 2 × 2, cities one line — 2/1
+PASS @430 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @430 en city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @430 en "Tất cả": the six real stays only, no Coming Soon card
+PASS @430 en "Tất cả": no city selected
+PASS @430 en stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @430 en bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @430 en bare: city availability available/available, nothing selected
+PASS @430 en bare: the filter rows keep their size — 221.1875→221.1875
+PASS @430 en bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @430 en bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @430 en bare card: its own motif and official logo — route
+PASS @430 en bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @430 en bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @430 en bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 395×220/12px vs 395×220/12px; 18.26px vs 18.26px
+PASS @430 en bare card: mark, name and label inside, no overlaps
+PASS @430 en pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @430 en pepper-house: city availability only/unavailable, nothing selected
+PASS @430 en pepper-house: the filter rows keep their size — 221.1875→221.1875
+PASS @430 en pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @430 en pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @430 en pepper-house card: its own motif and official logo — frame
+PASS @430 en pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @430 en pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @430 en pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 395×220/12px vs 395×220/12px; 18.26px vs 18.26px
+PASS @430 en pepper-house card: mark, name and label inside, no overlaps
+PASS @430 en the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @430 en the-nang: city availability unavailable/only, nothing selected
+PASS @430 en the-nang: the filter rows keep their size — 221.1875→221.1875
+PASS @430 en the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @430 en the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @430 en the-nang card: its own motif and official logo — sun
+PASS @430 en the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @430 en the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @430 en the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 395×220/12px vs 395×220/12px; 18.26px vs 18.26px
+PASS @430 en the-nang card: mark, name and label inside, no overlaps
+PASS @430 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @430 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @430 en tapping the active city clears it
+PASS @430 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @430 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @430 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @430 en Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @430 en "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @430 en About "Contact VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @430 en Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @430 en Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 32.72px, 2 line(s)
+PASS @430 en Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @430 en Hợp tác panel: description at reading size and measure — 17.29px, 20em
+PASS @430 en Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), at most two lines, inside the panel — 59.6875×342 15.26px label 39
+PASS @430 en Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @430 en Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @430 en Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @430 en Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&lang=en&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @430 en no horizontal overflow, no clipped or spilling text — 0  
+PASS @430 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @430 en no console/hydration errors
+PASS @390 vi Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @390 vi no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @390 vi no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @390 vi Discovery marked as Vietnamese
+PASS @390 vi filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @390 vi filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @390 vi filters (phones): label above each full-width track; brands 2 × 2, cities one line — 2/1
+PASS @390 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @390 vi city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @390 vi "Tất cả": the six real stays only, no Coming Soon card
+PASS @390 vi "Tất cả": no city selected
+PASS @390 vi stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @390 vi bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @390 vi bare: city availability available/available, nothing selected
+PASS @390 vi bare: the filter rows keep their size — 221.1875→221.1875
+PASS @390 vi bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @390 vi bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @390 vi bare card: its own motif and official logo — route
+PASS @390 vi bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @390 vi bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @390 vi bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 357×203/12px vs 357×203/12px; 18.02px vs 18.02px
+PASS @390 vi bare card: mark, name and label inside, no overlaps
+PASS @390 vi pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @390 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @390 vi pepper-house: the filter rows keep their size — 221.1875→221.1875
+PASS @390 vi pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @390 vi pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @390 vi pepper-house card: its own motif and official logo — frame
+PASS @390 vi pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @390 vi pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @390 vi pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 357×203/12px vs 357×203/12px; 18.02px vs 18.02px
+PASS @390 vi pepper-house card: mark, name and label inside, no overlaps
+PASS @390 vi the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @390 vi the-nang: city availability unavailable/only, nothing selected
+PASS @390 vi the-nang: the filter rows keep their size — 221.1875→221.1875
+PASS @390 vi the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @390 vi the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @390 vi the-nang card: its own motif and official logo — sun
+PASS @390 vi the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @390 vi the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @390 vi the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 357×203/12px vs 357×203/12px; 18.02px vs 18.02px
+PASS @390 vi the-nang card: mark, name and label inside, no overlaps
+PASS @390 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @390 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @390 vi tapping the active city clears it
+PASS @390 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @390 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @390 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @390 vi Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @390 vi "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @390 vi About "Liên hệ VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @390 vi Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @390 vi Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 32px, 2 line(s)
+PASS @390 vi Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @390 vi Hợp tác panel: description at reading size and measure — 17.17px, 18em
+PASS @390 vi Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), at most two lines, inside the panel — 56×305 15.18px label 19
+PASS @390 vi Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @390 vi Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @390 vi Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @390 vi Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @390 vi no horizontal overflow, no clipped or spilling text — 0  
+PASS @390 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @390 vi no console/hydration errors
+PASS @390 en Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @390 en no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @390 en no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @390 en Discovery marked as Vietnamese
+PASS @390 en filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @390 en filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @390 en filters (phones): label above each full-width track; brands 2 × 2, cities one line — 2/1
+PASS @390 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @390 en city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @390 en "Tất cả": the six real stays only, no Coming Soon card
+PASS @390 en "Tất cả": no city selected
+PASS @390 en stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @390 en bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @390 en bare: city availability available/available, nothing selected
+PASS @390 en bare: the filter rows keep their size — 221.1875→221.1875
+PASS @390 en bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @390 en bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @390 en bare card: its own motif and official logo — route
+PASS @390 en bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @390 en bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @390 en bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 357×203/12px vs 357×203/12px; 18.02px vs 18.02px
+PASS @390 en bare card: mark, name and label inside, no overlaps
+PASS @390 en pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @390 en pepper-house: city availability only/unavailable, nothing selected
+PASS @390 en pepper-house: the filter rows keep their size — 221.1875→221.1875
+PASS @390 en pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @390 en pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @390 en pepper-house card: its own motif and official logo — frame
+PASS @390 en pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @390 en pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @390 en pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 357×203/12px vs 357×203/12px; 18.02px vs 18.02px
+PASS @390 en pepper-house card: mark, name and label inside, no overlaps
+PASS @390 en the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @390 en the-nang: city availability unavailable/only, nothing selected
+PASS @390 en the-nang: the filter rows keep their size — 221.1875→221.1875
+PASS @390 en the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @390 en the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @390 en the-nang card: its own motif and official logo — sun
+PASS @390 en the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @390 en the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @390 en the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 357×203/12px vs 357×203/12px; 18.02px vs 18.02px
+PASS @390 en the-nang card: mark, name and label inside, no overlaps
+PASS @390 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @390 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @390 en tapping the active city clears it
+PASS @390 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @390 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @390 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @390 en Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @390 en "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @390 en About "Contact VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @390 en Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @390 en Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 32px, 3 line(s)
+PASS @390 en Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @390 en Hợp tác panel: description at reading size and measure — 17.17px, 18em
+PASS @390 en Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), at most two lines, inside the panel — 59.46875×305 15.18px label 39
+PASS @390 en Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @390 en Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @390 en Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @390 en Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&lang=en&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @390 en no horizontal overflow, no clipped or spilling text — 0  
+PASS @390 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @390 en no console/hydration errors
+PASS @375 vi Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @375 vi no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @375 vi no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @375 vi Discovery marked as Vietnamese
+PASS @375 vi filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @375 vi filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @375 vi filters (phones): label above each full-width track; brands 2 × 2, cities one line — 2/1
+PASS @375 vi brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @375 vi city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @375 vi "Tất cả": the six real stays only, no Coming Soon card
+PASS @375 vi "Tất cả": no city selected
+PASS @375 vi stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @375 vi bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @375 vi bare: city availability available/available, nothing selected
+PASS @375 vi bare: the filter rows keep their size — 221.1875→221.1875
+PASS @375 vi bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @375 vi bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @375 vi bare card: its own motif and official logo — route
+PASS @375 vi bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @375 vi bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @375 vi bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 343×196/12px vs 343×196/12px; 18px vs 18px
+PASS @375 vi bare card: mark, name and label inside, no overlaps
+PASS @375 vi pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @375 vi pepper-house: city availability only/unavailable, nothing selected
+PASS @375 vi pepper-house: the filter rows keep their size — 221.1875→221.1875
+PASS @375 vi pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @375 vi pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @375 vi pepper-house card: its own motif and official logo — frame
+PASS @375 vi pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @375 vi pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @375 vi pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 343×196/12px vs 343×196/12px; 18px vs 18px
+PASS @375 vi pepper-house card: mark, name and label inside, no overlaps
+PASS @375 vi the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @375 vi the-nang: city availability unavailable/only, nothing selected
+PASS @375 vi the-nang: the filter rows keep their size — 221.1875→221.1875
+PASS @375 vi the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @375 vi the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @375 vi the-nang card: its own motif and official logo — sun
+PASS @375 vi the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @375 vi the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @375 vi the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 343×196/12px vs 343×196/12px; 18px vs 18px
+PASS @375 vi the-nang card: mark, name and label inside, no overlaps
+PASS @375 vi Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @375 vi Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @375 vi tapping the active city clears it
+PASS @375 vi active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @375 vi Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @375 vi then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @375 vi Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @375 vi "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @375 vi About "Liên hệ VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @375 vi Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @375 vi Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 32px, 2 line(s)
+PASS @375 vi Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @375 vi Hợp tác panel: description at reading size and measure — 17.125px, 17em
+PASS @375 vi Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), at most two lines, inside the panel — 56×292 15.15px label 19
+PASS @375 vi Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @375 vi Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @375 vi Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 19 overflow 0
+PASS @375 vi Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @375 vi no horizontal overflow, no clipped or spilling text — 0  
+PASS @375 vi no unexpected layout shift (CLS without input) — 0.0000
+PASS @375 vi no console/hydration errors
+PASS @375 en Discovery intro: heading and description only (no "Sắp ra mắt …" line) — H2,P
+PASS @375 en no Coming Soon section, heading, lead or "Thông tin sẽ được công bố sau" anywhere
+PASS @375 en no "Mọi thương hiệu" / "Mọi thành phố" / status text
+PASS @375 en Discovery marked as Vietnamese
+PASS @375 en filters: toolbar between two hairlines, rows labelled "Thương hiệu" and "Thành phố" — Thương hiệu|Thành phố
+PASS @375 en filters: options on rounded white tracks, pill options, chosen one filled Dark Olive
+PASS @375 en filters (phones): label above each full-width track; brands 2 × 2, cities one line — 2/1
+PASS @375 en brand filters: Tất cả, Bare, Pepper House, The Nắng — Tất cả|Bare Boutique Stays|Pepper House|The Nắng Suites
+PASS @375 en city filters: TP. Hồ Chí Minh and Đà Nẵng only — TP. Hồ Chí Minh|Đà Nẵng
+PASS @375 en "Tất cả": the six real stays only, no Coming Soon card
+PASS @375 en "Tất cả": no city selected
+PASS @375 en stays in brand order with their original URLs — /dev/stays/bare-chic?view=demo,/dev/stays/bare-hyphen,/dev/stays/bare-da-kao,/dev/stays/bare-han,/dev/stays/pepper-house,/dev/stays/the-nang-suites
+PASS @375 en bare: 4 real stay(s), then its own Coming Soon card, last
+PASS @375 en bare: city availability available/available, nothing selected
+PASS @375 en bare: the filter rows keep their size — 221.1875→221.1875
+PASS @375 en bare card: only the brand name and "Sắp ra mắt", no body text — Bare Boutique Stays|Sắp ra mắt
+PASS @375 en bare card: never bookable (no controls, prices, numbers or booking words) — Bare Boutique StaysSắp ra mắt
+PASS @375 en bare card: its own motif and official logo — route
+PASS @375 en bare card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-01-bare-chic-one/2048.jpg
+PASS @375 en bare card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @375 en bare card: the listing card's shell (mobile strip: same size and radius, same name size) — 343×196/12px vs 343×196/12px; 18px vs 18px
+PASS @375 en bare card: mark, name and label inside, no overlaps
+PASS @375 en pepper-house: 1 real stay(s), then its own Coming Soon card, last
+PASS @375 en pepper-house: city availability only/unavailable, nothing selected
+PASS @375 en pepper-house: the filter rows keep their size — 221.1875→221.1875
+PASS @375 en pepper-house card: only the brand name and "Sắp ra mắt", no body text — Pepper House|Sắp ra mắt
+PASS @375 en pepper-house card: never bookable (no controls, prices, numbers or booking words) — Pepper HouseSắp ra mắt
+PASS @375 en pepper-house card: its own motif and official logo — frame
+PASS @375 en pepper-house card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-17-pepper-house-4th-floor/2048.jpg
+PASS @375 en pepper-house card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @375 en pepper-house card: the listing card's shell (mobile strip: same size and radius, same name size) — 343×196/12px vs 343×196/12px; 18px vs 18px
+PASS @375 en pepper-house card: mark, name and label inside, no overlaps
+PASS @375 en the-nang: 1 real stay(s), then its own Coming Soon card, last
+PASS @375 en the-nang: city availability unavailable/only, nothing selected
+PASS @375 en the-nang: the filter rows keep their size — 221.1875→221.1875
+PASS @375 en the-nang card: only the brand name and "Sắp ra mắt", no body text — The Nắng Suites|Sắp ra mắt
+PASS @375 en the-nang card: never bookable (no controls, prices, numbers or booking words) — The Nắng SuitesSắp ra mắt
+PASS @375 en the-nang card: its own motif and official logo — sun
+PASS @375 en the-nang card: built from the brand's own photograph (one of its listed stays), blurred — /dev-client-media/selection/sel-13-the-nang-pale-blue-eyes/2048.jpg
+PASS @375 en the-nang card: links to the confirmed brand website, or is not a link while none is confirmed — DIV pending
+PASS @375 en the-nang card: the listing card's shell (mobile strip: same size and radius, same name size) — 343×196/12px vs 343×196/12px; 18px vs 18px
+PASS @375 en the-nang card: mark, name and label inside, no overlaps
+PASS @375 en Pepper House + Đà Nẵng tap: explained, list unchanged — Pepper House chưa có nơi ở tại Đà Nẵng.
+PASS @375 en Pepper House + TP. Hồ Chí Minh: active (filled), in the address, its card still last
+PASS @375 en tapping the active city clears it
+PASS @375 en active filter (filled olive) looks different from the availability hint (olive ring) — rgb(55, 65, 47) vs rgb(241, 236, 228)/rgb(55, 65, 47) 0px 0px 0px 1px inset
+PASS @375 en Tất cả + Đà Nẵng: Bare Hàn and The Nắng Suites, no Coming Soon
+PASS @375 en then Pepper House: city dropped and explained, never empty — 1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ.
+PASS @375 en Bare + Đà Nẵng: Bare Hàn, then the Bare card
+PASS @375 en "Bỏ lọc": all six again, nothing selected, no Coming Soon
+PASS @375 en About "Contact VNest →": no underline at rest, hover or focus; focus outline visible — none/none/none/solid
+PASS @375 en Hợp tác: the overline is visible (copper, ≥ 13 px, semibold) — {"size":13,"color":"rgb(143, 96, 54)","weight":600}
+PASS @375 en Hợp tác: the heading stays dominant (≥ 32 px; one line on desktop in Vietnamese, at most two in English) — 32px, 3 line(s)
+PASS @375 en Hợp tác panel: no repeated title or highlight lines; named for screen readers
+PASS @375 en Hợp tác panel: description at reading size and measure — 17.125px, 17em
+PASS @375 en Hợp tác panel: one CTA, large (≥ 56 px tall, ≥ 15 px text), at most two lines, inside the panel — 59.40625×292 15.15px label 39
+PASS @375 en Hợp tác service 1: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @375 en Hợp tác service 2: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @375 en Hợp tác service 3: panel without repetition, CTA label fits, no overflow — label 39 overflow 0
+PASS @375 en Hợp tác CTA: scrolls to the form with the service chosen — 92 ?intro=0&lang=en&dich-vu=nhuong-quyen#tu-van nhuong-quyen
+PASS @375 en no horizontal overflow, no clipped or spilling text — 0  
+PASS @375 en no unexpected layout shift (CLS without input) — 0.0000
+PASS @375 en no console/hydration errors
+PASS @1440 property page "Xem tất cả nơi ở →": no underline at rest or on hover — none/none
+PASS @390 property page "Xem tất cả nơi ở →": no underline at rest or on hover — none/none
+PASS @1440 keyboard: ArrowRight from Tất cả chooses Bare Boutique Stays (and its card follows)
+PASS @1440 keyboard: the focused brand shows an outline
+PASS @1440 keyboard: Tab reaches TP. Hồ Chí Minh, Space toggles it, outline visible
+PASS @1440 keyboard: Space again clears the city
+PASS @390 reduced motion: filters without transitions — 0s / 0s
+PASS @1440 ?brand=the-nang opens with The Nắng Suites, Đà Nẵng marked, then its card
+
+780/780 passed

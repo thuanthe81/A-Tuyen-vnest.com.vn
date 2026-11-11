@@ -1,0 +1,137 @@
+/* About VNest V2 — "The Art of Staying" (owner-approved direction, 4/11/2026).
+   Dark Olive editorial banner, real text only. Height follows the content (never 100vh). */
+
+.about {
+  --about-olive: #37412f;
+  --about-sand: #f1ece4;
+  --about-copper: #a87444;
+
+  scroll-margin-top: 5rem;
+  background: var(--about-olive);
+  color: var(--about-sand);
+  padding-block: clamp(3.25rem, 2.25rem + 4vw, 7rem);
+}
+
+.inner {
+  display: grid;
+  gap: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+  max-width: var(--vn-container);
+  margin-inline: auto;
+  padding-inline: var(--vn-gutter);
+}
+
+@media (min-width: 64rem) {
+  .inner {
+    grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
+    column-gap: clamp(2.5rem, 1rem + 4vw, 6rem);
+    align-items: start;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(241 236 228 / 0.72);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.75rem, 1.6rem + 5vw, 6.25rem);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  color: var(--about-sand);
+}
+
+.body {
+  max-width: 38rem;
+}
+
+/* "Ở." stays the strongest accent at every width; the rest of the statement sits on its baseline. */
+.statement {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: clamp(0.75rem, 0.5rem + 1vw, 1.25rem);
+  row-gap: 0.25rem;
+  margin: 0;
+}
+
+.accent {
+  font-family: var(--font-editorial-serif), Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(6.25rem, 4.25rem + 7vw, 10rem);
+  line-height: 0.82;
+  color: var(--about-copper);
+}
+
+/* English composition: "Stay." is five letters to "Ở."'s one, so it is set smaller and tighter to keep the same weight on
+   the page and the supporting line on its baseline (still the largest type in the section at every width). */
+.about[data-lang="en"] .accent {
+  font-size: clamp(4.5rem, 3.1rem + 5.4vw, 8.25rem);
+  letter-spacing: -0.025em;
+  padding-right: 0.04em; /* the italic "." overhangs its box */
+}
+
+.statementRest {
+  font-size: clamp(1.375rem, 1rem + 1.6vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.description {
+  margin: clamp(1.25rem, 1rem + 1vw, 2rem) 0 0;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.65;
+  color: rgb(241 236 228 / 0.86);
+  text-wrap: pretty;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  margin-top: clamp(1rem, 0.75rem + 1vw, 1.75rem);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--about-sand);
+  /* No underline under the arrow CTA (owner, 8/11/2026): copper text and a short arrow nudge on hover instead. */
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.cta > span {
+  display: inline-block;
+  color: var(--about-copper);
+  transition: translate 160ms ease;
+}
+
+.cta:hover {
+  color: #ffffff;
+}
+
+.cta:hover > span {
+  translate: 0.25rem 0;
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--about-sand);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta,
+  .cta > span {
+    transition: none;
+  }
+}

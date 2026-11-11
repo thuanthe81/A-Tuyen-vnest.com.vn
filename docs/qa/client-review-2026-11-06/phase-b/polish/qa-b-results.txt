@@ -1,0 +1,538 @@
+PASS @1440 vi order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @1440 vi canonical names
+PASS @1440 vi neutral at first: nothing selected, no detail panel
+PASS @1440 vi rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @1440 vi logos keep their proportions — 0.000,0.000,0.000
+PASS @1440 vi heading stands above the brand composition
+PASS @1440 vi neutral (desktop): three photo bands, aligned with the three rows
+PASS @1440 vi rows and stage aligned top and bottom — nav 308–1058 stage 308–1058
+PASS @1440 vi three rows of equal height — 245,245,245
+PASS @1440 vi no Facebook button, no "Khám phá nơi ở" button
+PASS @1440 vi hover bare: preview with its Brand Hover line — Một nơi ở thân thuộc, nhưng luôn có điều
+PASS @1440 vi hover bare: fades and settles in scale (no jump) — opacity@~60ms=0.52 matrix(0.991191, 0, 0,
+PASS @1440 vi hover bare: emphasised, the other two subdued
+PASS @1440 vi hover bare: stage size unchanged
+PASS @1440 vi hover pepper-house: preview with its Brand Hover line — Những ngôi nhà đô thị có phong cách riên
+PASS @1440 vi hover pepper-house: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997111, 0, 0,
+PASS @1440 vi hover pepper-house: emphasised, the other two subdued
+PASS @1440 vi hover pepper-house: stage size unchanged
+PASS @1440 vi hover the-nang: preview with its Brand Hover line — Một chỗ ở nhẹ nhàng theo tinh thần co-li
+PASS @1440 vi hover the-nang: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997114, 0, 0,
+PASS @1440 vi hover the-nang: emphasised, the other two subdued
+PASS @1440 vi hover the-nang: stage size unchanged
+PASS @1440 vi pointer away: back to neutral
+PASS @1440 vi select bare: locked, its panel only
+PASS @1440 vi select bare: logo is the heading (alt = name), no repeated name — logo 72px
+PASS @1440 vi select bare: Positioning + About shown, readable colour
+PASS @1440 vi select bare: cities | stays in two columns with a divider
+PASS @1440 vi select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @1440 vi select bare: selected row tinted (not white), others subdued
+PASS @1440 vi select bare: stage size and page position unchanged
+PASS @1440 vi select bare: rows and panel aligned
+PASS @1440 vi select bare: no overflow, no clipped text — 0 
+PASS @1440 vi select pepper-house: locked, its panel only
+PASS @1440 vi select pepper-house: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @1440 vi select pepper-house: Positioning + About shown, readable colour
+PASS @1440 vi select pepper-house: cities | stays in two columns with a divider
+PASS @1440 vi select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @1440 vi select pepper-house: selected row tinted (not white), others subdued
+PASS @1440 vi select pepper-house: stage size and page position unchanged
+PASS @1440 vi select pepper-house: rows and panel aligned
+PASS @1440 vi select pepper-house: no overflow, no clipped text — 0 
+PASS @1440 vi select the-nang: locked, its panel only
+PASS @1440 vi select the-nang: logo is the heading (alt = name), no repeated name — logo 68px
+PASS @1440 vi select the-nang: Positioning + About shown, readable colour
+PASS @1440 vi select the-nang: cities | stays in two columns with a divider
+PASS @1440 vi select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @1440 vi select the-nang: selected row tinted (not white), others subdued
+PASS @1440 vi select the-nang: stage size and page position unchanged
+PASS @1440 vi select the-nang: rows and panel aligned
+PASS @1440 vi select the-nang: no overflow, no clipped text — 0 
+PASS @1440 vi no console/hydration errors
+PASS @1440 vi keyboard focus previews like hover
+PASS @1440 vi ArrowDown moves to Pepper House and previews it
+PASS @1440 vi Enter locks Pepper House
+PASS @1440 vi Space locks The Nắng Suites
+PASS @1440 vi Escape closes the preview, the selection stays
+PASS @1440 vi Tab continues into the selected panel — The Nắng Suites
+PASS @1440 en order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @1440 en canonical names
+PASS @1440 en neutral at first: nothing selected, no detail panel
+PASS @1440 en rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @1440 en logos keep their proportions — 0.000,0.000,0.000
+PASS @1440 en heading stands above the brand composition
+PASS @1440 en neutral (desktop): three photo bands, aligned with the three rows
+PASS @1440 en rows and stage aligned top and bottom — nav 362–1112 stage 362–1112
+PASS @1440 en three rows of equal height — 245,245,245
+PASS @1440 en no Facebook button, no "Khám phá nơi ở" button
+PASS @1440 en hover bare: preview with its Brand Hover line — A place that feels familiar, with someth
+PASS @1440 en hover bare: fades and settles in scale (no jump) — opacity@~60ms=0.52 matrix(0.9911, 0, 0, 0
+PASS @1440 en hover bare: emphasised, the other two subdued
+PASS @1440 en hover bare: stage size unchanged
+PASS @1440 en hover pepper-house: preview with its Brand Hover line — Urban homes with character and the comfo
+PASS @1440 en hover pepper-house: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997114, 0, 0,
+PASS @1440 en hover pepper-house: emphasised, the other two subdued
+PASS @1440 en hover pepper-house: stage size unchanged
+PASS @1440 en hover the-nang: preview with its Brand Hover line — Easygoing co-living for stays of a few d
+PASS @1440 en hover the-nang: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997104, 0, 0,
+PASS @1440 en hover the-nang: emphasised, the other two subdued
+PASS @1440 en hover the-nang: stage size unchanged
+PASS @1440 en pointer away: back to neutral
+PASS @1440 en select bare: locked, its panel only
+PASS @1440 en select bare: logo is the heading (alt = name), no repeated name — logo 72px
+PASS @1440 en select bare: Positioning + About shown, readable colour
+PASS @1440 en select bare: English copy
+PASS @1440 en select bare: cities | stays in two columns with a divider
+PASS @1440 en select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @1440 en select bare: selected row tinted (not white), others subdued
+PASS @1440 en select bare: stage size and page position unchanged
+PASS @1440 en select bare: rows and panel aligned
+PASS @1440 en select bare: no overflow, no clipped text — 0 
+PASS @1440 en select pepper-house: locked, its panel only
+PASS @1440 en select pepper-house: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @1440 en select pepper-house: Positioning + About shown, readable colour
+PASS @1440 en select pepper-house: English copy
+PASS @1440 en select pepper-house: cities | stays in two columns with a divider
+PASS @1440 en select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @1440 en select pepper-house: selected row tinted (not white), others subdued
+PASS @1440 en select pepper-house: stage size and page position unchanged
+PASS @1440 en select pepper-house: rows and panel aligned
+PASS @1440 en select pepper-house: no overflow, no clipped text — 0 
+PASS @1440 en select the-nang: locked, its panel only
+PASS @1440 en select the-nang: logo is the heading (alt = name), no repeated name — logo 68px
+PASS @1440 en select the-nang: Positioning + About shown, readable colour
+PASS @1440 en select the-nang: English copy
+PASS @1440 en select the-nang: cities | stays in two columns with a divider
+PASS @1440 en select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @1440 en select the-nang: selected row tinted (not white), others subdued
+PASS @1440 en select the-nang: stage size and page position unchanged
+PASS @1440 en select the-nang: rows and panel aligned
+PASS @1440 en select the-nang: no overflow, no clipped text — 0 
+PASS @1440 en no console/hydration errors
+PASS @1440 en keyboard focus previews like hover
+PASS @1440 en ArrowDown moves to Pepper House and previews it
+PASS @1440 en Enter locks Pepper House
+PASS @1440 en Space locks The Nắng Suites
+PASS @1440 en Escape closes the preview, the selection stays
+PASS @1440 en Tab continues into the selected panel — The Nắng Suites
+PASS @1024 vi order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @1024 vi canonical names
+PASS @1024 vi neutral at first: nothing selected, no detail panel
+PASS @1024 vi rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @1024 vi logos keep their proportions — 0.000,0.000,0.000
+PASS @1024 vi heading stands above the brand composition
+PASS @1024 vi neutral (desktop): three photo bands, aligned with the three rows
+PASS @1024 vi rows and stage aligned top and bottom — nav 278–1006 stage 278–1006
+PASS @1024 vi three rows of equal height — 238,238,238
+PASS @1024 vi no Facebook button, no "Khám phá nơi ở" button
+PASS @1024 vi hover bare: preview with its Brand Hover line — Một nơi ở thân thuộc, nhưng luôn có điều
+PASS @1024 vi hover bare: fades and settles in scale (no jump) — opacity@~60ms=0.53 matrix(0.991203, 0, 0,
+PASS @1024 vi hover bare: emphasised, the other two subdued
+PASS @1024 vi hover bare: stage size unchanged
+PASS @1024 vi hover pepper-house: preview with its Brand Hover line — Những ngôi nhà đô thị có phong cách riên
+PASS @1024 vi hover pepper-house: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997115, 0, 0,
+PASS @1024 vi hover pepper-house: emphasised, the other two subdued
+PASS @1024 vi hover pepper-house: stage size unchanged
+PASS @1024 vi hover the-nang: preview with its Brand Hover line — Một chỗ ở nhẹ nhàng theo tinh thần co-li
+PASS @1024 vi hover the-nang: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997139, 0, 0,
+PASS @1024 vi hover the-nang: emphasised, the other two subdued
+PASS @1024 vi hover the-nang: stage size unchanged
+PASS @1024 vi pointer away: back to neutral
+PASS @1024 vi select bare: locked, its panel only
+PASS @1024 vi select bare: logo is the heading (alt = name), no repeated name — logo 72px
+PASS @1024 vi select bare: Positioning + About shown, readable colour
+PASS @1024 vi select bare: cities | stays in two columns with a divider
+PASS @1024 vi select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @1024 vi select bare: selected row tinted (not white), others subdued
+PASS @1024 vi select bare: stage size and page position unchanged
+PASS @1024 vi select bare: rows and panel aligned
+PASS @1024 vi select bare: no overflow, no clipped text — 0 
+PASS @1024 vi select pepper-house: locked, its panel only
+PASS @1024 vi select pepper-house: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @1024 vi select pepper-house: Positioning + About shown, readable colour
+PASS @1024 vi select pepper-house: cities | stays in two columns with a divider
+PASS @1024 vi select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @1024 vi select pepper-house: selected row tinted (not white), others subdued
+PASS @1024 vi select pepper-house: stage size and page position unchanged
+PASS @1024 vi select pepper-house: rows and panel aligned
+PASS @1024 vi select pepper-house: no overflow, no clipped text — 0 
+PASS @1024 vi select the-nang: locked, its panel only
+PASS @1024 vi select the-nang: logo is the heading (alt = name), no repeated name — logo 68px
+PASS @1024 vi select the-nang: Positioning + About shown, readable colour
+PASS @1024 vi select the-nang: cities | stays in two columns with a divider
+PASS @1024 vi select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @1024 vi select the-nang: selected row tinted (not white), others subdued
+PASS @1024 vi select the-nang: stage size and page position unchanged
+PASS @1024 vi select the-nang: rows and panel aligned
+PASS @1024 vi select the-nang: no overflow, no clipped text — 0 
+PASS @1024 vi no console/hydration errors
+PASS @1024 vi keyboard focus previews like hover
+PASS @1024 vi ArrowDown moves to Pepper House and previews it
+PASS @1024 vi Enter locks Pepper House
+PASS @1024 vi Space locks The Nắng Suites
+PASS @1024 vi Escape closes the preview, the selection stays
+PASS @1024 vi Tab continues into the selected panel — The Nắng Suites
+PASS @1024 en order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @1024 en canonical names
+PASS @1024 en neutral at first: nothing selected, no detail panel
+PASS @1024 en rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @1024 en logos keep their proportions — 0.000,0.000,0.000
+PASS @1024 en heading stands above the brand composition
+PASS @1024 en neutral (desktop): three photo bands, aligned with the three rows
+PASS @1024 en rows and stage aligned top and bottom — nav 327–1055 stage 327–1055
+PASS @1024 en three rows of equal height — 238,238,238
+PASS @1024 en no Facebook button, no "Khám phá nơi ở" button
+PASS @1024 en hover bare: preview with its Brand Hover line — A place that feels familiar, with someth
+PASS @1024 en hover bare: fades and settles in scale (no jump) — opacity@~60ms=0.52 matrix(0.991166, 0, 0,
+PASS @1024 en hover bare: emphasised, the other two subdued
+PASS @1024 en hover bare: stage size unchanged
+PASS @1024 en hover pepper-house: preview with its Brand Hover line — Urban homes with character and the comfo
+PASS @1024 en hover pepper-house: fades and settles in scale (no jump) — opacity@~60ms=0.90 matrix(0.997092, 0, 0,
+PASS @1024 en hover pepper-house: emphasised, the other two subdued
+PASS @1024 en hover pepper-house: stage size unchanged
+PASS @1024 en hover the-nang: preview with its Brand Hover line — Easygoing co-living for stays of a few d
+PASS @1024 en hover the-nang: fades and settles in scale (no jump) — opacity@~60ms=0.91 matrix(0.997113, 0, 0,
+PASS @1024 en hover the-nang: emphasised, the other two subdued
+PASS @1024 en hover the-nang: stage size unchanged
+PASS @1024 en pointer away: back to neutral
+PASS @1024 en select bare: locked, its panel only
+PASS @1024 en select bare: logo is the heading (alt = name), no repeated name — logo 72px
+PASS @1024 en select bare: Positioning + About shown, readable colour
+PASS @1024 en select bare: English copy
+PASS @1024 en select bare: cities | stays in two columns with a divider
+PASS @1024 en select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @1024 en select bare: selected row tinted (not white), others subdued
+PASS @1024 en select bare: stage size and page position unchanged
+PASS @1024 en select bare: rows and panel aligned
+PASS @1024 en select bare: no overflow, no clipped text — 0 
+PASS @1024 en select pepper-house: locked, its panel only
+PASS @1024 en select pepper-house: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @1024 en select pepper-house: Positioning + About shown, readable colour
+PASS @1024 en select pepper-house: English copy
+PASS @1024 en select pepper-house: cities | stays in two columns with a divider
+PASS @1024 en select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @1024 en select pepper-house: selected row tinted (not white), others subdued
+PASS @1024 en select pepper-house: stage size and page position unchanged
+PASS @1024 en select pepper-house: rows and panel aligned
+PASS @1024 en select pepper-house: no overflow, no clipped text — 0 
+PASS @1024 en select the-nang: locked, its panel only
+PASS @1024 en select the-nang: logo is the heading (alt = name), no repeated name — logo 68px
+PASS @1024 en select the-nang: Positioning + About shown, readable colour
+PASS @1024 en select the-nang: English copy
+PASS @1024 en select the-nang: cities | stays in two columns with a divider
+PASS @1024 en select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @1024 en select the-nang: selected row tinted (not white), others subdued
+PASS @1024 en select the-nang: stage size and page position unchanged
+PASS @1024 en select the-nang: rows and panel aligned
+PASS @1024 en select the-nang: no overflow, no clipped text — 0 
+PASS @1024 en no console/hydration errors
+PASS @1024 en keyboard focus previews like hover
+PASS @1024 en ArrowDown moves to Pepper House and previews it
+PASS @1024 en Enter locks Pepper House
+PASS @1024 en Space locks The Nắng Suites
+PASS @1024 en Escape closes the preview, the selection stays
+PASS @1024 en Tab continues into the selected panel — The Nắng Suites
+PASS @768 vi order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @768 vi canonical names
+PASS @768 vi neutral at first: nothing selected, no detail panel
+PASS @768 vi rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @768 vi logos keep their proportions — 0.000,0.000,0.000
+PASS @768 vi heading stands above the brand composition
+PASS @768 vi neutral (phone/tablet): strip + hint, no empty stage
+PASS @768 vi no Facebook button, no "Khám phá nơi ở" button
+PASS @768 vi select bare: locked, its panel only
+PASS @768 vi select bare: logo is the heading (alt = name), no repeated name — logo 72px
+PASS @768 vi select bare: Positioning + About shown, readable colour
+PASS @768 vi select bare: cities | stays in two columns with a divider
+PASS @768 vi select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @768 vi select bare: selected row tinted (not white), others subdued
+PASS @768 vi select bare: strip stays on screen, panel starts on screen — strip 301 panel 475 header 73
+PASS @768 vi select bare: hint gone
+PASS @768 vi select bare: no overflow, no clipped text — 0 
+PASS @768 vi select pepper-house: locked, its panel only
+PASS @768 vi select pepper-house: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @768 vi select pepper-house: Positioning + About shown, readable colour
+PASS @768 vi select pepper-house: cities | stays in two columns with a divider
+PASS @768 vi select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @768 vi select pepper-house: selected row tinted (not white), others subdued
+PASS @768 vi select pepper-house: strip stays on screen, panel starts on screen — strip 301 panel 475 header 73
+PASS @768 vi select pepper-house: hint gone
+PASS @768 vi select pepper-house: no overflow, no clipped text — 0 
+PASS @768 vi select the-nang: locked, its panel only
+PASS @768 vi select the-nang: logo is the heading (alt = name), no repeated name — logo 68px
+PASS @768 vi select the-nang: Positioning + About shown, readable colour
+PASS @768 vi select the-nang: cities | stays in two columns with a divider
+PASS @768 vi select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @768 vi select the-nang: selected row tinted (not white), others subdued
+PASS @768 vi select the-nang: strip stays on screen, panel starts on screen — strip 301 panel 475 header 73
+PASS @768 vi select the-nang: hint gone
+PASS @768 vi select the-nang: no overflow, no clipped text — 0 
+PASS @768 vi no console/hydration errors
+PASS @768 en order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @768 en canonical names
+PASS @768 en neutral at first: nothing selected, no detail panel
+PASS @768 en rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @768 en logos keep their proportions — 0.000,0.000,0.000
+PASS @768 en heading stands above the brand composition
+PASS @768 en neutral (phone/tablet): strip + hint, no empty stage
+PASS @768 en no Facebook button, no "Khám phá nơi ở" button
+PASS @768 en select bare: locked, its panel only
+PASS @768 en select bare: logo is the heading (alt = name), no repeated name — logo 72px
+PASS @768 en select bare: Positioning + About shown, readable colour
+PASS @768 en select bare: English copy
+PASS @768 en select bare: cities | stays in two columns with a divider
+PASS @768 en select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @768 en select bare: selected row tinted (not white), others subdued
+PASS @768 en select bare: strip stays on screen, panel starts on screen — strip 85 panel 260 header 73
+PASS @768 en select bare: hint gone
+PASS @768 en select bare: no overflow, no clipped text — 0 
+PASS @768 en select pepper-house: locked, its panel only
+PASS @768 en select pepper-house: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @768 en select pepper-house: Positioning + About shown, readable colour
+PASS @768 en select pepper-house: English copy
+PASS @768 en select pepper-house: cities | stays in two columns with a divider
+PASS @768 en select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @768 en select pepper-house: selected row tinted (not white), others subdued
+PASS @768 en select pepper-house: strip stays on screen, panel starts on screen — strip 85 panel 260 header 73
+PASS @768 en select pepper-house: hint gone
+PASS @768 en select pepper-house: no overflow, no clipped text — 0 
+PASS @768 en select the-nang: locked, its panel only
+PASS @768 en select the-nang: logo is the heading (alt = name), no repeated name — logo 68px
+PASS @768 en select the-nang: Positioning + About shown, readable colour
+PASS @768 en select the-nang: English copy
+PASS @768 en select the-nang: cities | stays in two columns with a divider
+PASS @768 en select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @768 en select the-nang: selected row tinted (not white), others subdued
+PASS @768 en select the-nang: strip stays on screen, panel starts on screen — strip 85 panel 260 header 73
+PASS @768 en select the-nang: hint gone
+PASS @768 en select the-nang: no overflow, no clipped text — 0 
+PASS @768 en no console/hydration errors
+PASS @430 vi order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @430 vi canonical names
+PASS @430 vi neutral at first: nothing selected, no detail panel
+PASS @430 vi rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @430 vi logos keep their proportions — 0.000,0.000,0.000
+PASS @430 vi heading stands above the brand composition
+PASS @430 vi neutral (phone/tablet): strip + hint, no empty stage
+PASS @430 vi no Facebook button, no "Khám phá nơi ở" button
+PASS @430 vi select bare: locked, its panel only
+PASS @430 vi select bare: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @430 vi select bare: Positioning + About shown, readable colour
+PASS @430 vi select bare: cities | stays stacked
+PASS @430 vi select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @430 vi select bare: selected row tinted (not white), others subdued
+PASS @430 vi select bare: strip stays on screen, panel starts on screen — strip 312 panel 449 header 73
+PASS @430 vi select bare: hint gone
+PASS @430 vi select bare: no overflow, no clipped text — 0 
+PASS @430 vi select pepper-house: locked, its panel only
+PASS @430 vi select pepper-house: logo is the heading (alt = name), no repeated name — logo 52px
+PASS @430 vi select pepper-house: Positioning + About shown, readable colour
+PASS @430 vi select pepper-house: cities | stays stacked
+PASS @430 vi select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @430 vi select pepper-house: selected row tinted (not white), others subdued
+PASS @430 vi select pepper-house: strip stays on screen, panel starts on screen — strip 312 panel 449 header 73
+PASS @430 vi select pepper-house: hint gone
+PASS @430 vi select pepper-house: no overflow, no clipped text — 0 
+PASS @430 vi select the-nang: locked, its panel only
+PASS @430 vi select the-nang: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @430 vi select the-nang: Positioning + About shown, readable colour
+PASS @430 vi select the-nang: cities | stays stacked
+PASS @430 vi select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @430 vi select the-nang: selected row tinted (not white), others subdued
+PASS @430 vi select the-nang: strip stays on screen, panel starts on screen — strip 312 panel 449 header 73
+PASS @430 vi select the-nang: hint gone
+PASS @430 vi select the-nang: no overflow, no clipped text — 0 
+PASS @430 vi no console/hydration errors
+PASS @430 en order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @430 en canonical names
+PASS @430 en neutral at first: nothing selected, no detail panel
+PASS @430 en rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @430 en logos keep their proportions — 0.000,0.000,0.000
+PASS @430 en heading stands above the brand composition
+PASS @430 en neutral (phone/tablet): strip + hint, no empty stage
+PASS @430 en no Facebook button, no "Khám phá nơi ở" button
+PASS @430 en select bare: locked, its panel only
+PASS @430 en select bare: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @430 en select bare: Positioning + About shown, readable colour
+PASS @430 en select bare: English copy
+PASS @430 en select bare: cities | stays stacked
+PASS @430 en select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @430 en select bare: selected row tinted (not white), others subdued
+PASS @430 en select bare: strip stays on screen, panel starts on screen — strip 312 panel 449 header 73
+PASS @430 en select bare: hint gone
+PASS @430 en select bare: no overflow, no clipped text — 0 
+PASS @430 en select pepper-house: locked, its panel only
+PASS @430 en select pepper-house: logo is the heading (alt = name), no repeated name — logo 52px
+PASS @430 en select pepper-house: Positioning + About shown, readable colour
+PASS @430 en select pepper-house: English copy
+PASS @430 en select pepper-house: cities | stays stacked
+PASS @430 en select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @430 en select pepper-house: selected row tinted (not white), others subdued
+PASS @430 en select pepper-house: strip stays on screen, panel starts on screen — strip 312 panel 449 header 73
+PASS @430 en select pepper-house: hint gone
+PASS @430 en select pepper-house: no overflow, no clipped text — 0 
+PASS @430 en select the-nang: locked, its panel only
+PASS @430 en select the-nang: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @430 en select the-nang: Positioning + About shown, readable colour
+PASS @430 en select the-nang: English copy
+PASS @430 en select the-nang: cities | stays stacked
+PASS @430 en select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @430 en select the-nang: selected row tinted (not white), others subdued
+PASS @430 en select the-nang: strip stays on screen, panel starts on screen — strip 312 panel 449 header 73
+PASS @430 en select the-nang: hint gone
+PASS @430 en select the-nang: no overflow, no clipped text — 0 
+PASS @430 en no console/hydration errors
+PASS @390 vi order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @390 vi canonical names
+PASS @390 vi neutral at first: nothing selected, no detail panel
+PASS @390 vi rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @390 vi logos keep their proportions — 0.000,0.000,0.000
+PASS @390 vi heading stands above the brand composition
+PASS @390 vi neutral (phone/tablet): strip + hint, no empty stage
+PASS @390 vi no Facebook button, no "Khám phá nơi ở" button
+PASS @390 vi select bare: locked, its panel only
+PASS @390 vi select bare: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @390 vi select bare: Positioning + About shown, readable colour
+PASS @390 vi select bare: cities | stays stacked
+PASS @390 vi select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @390 vi select bare: selected row tinted (not white), others subdued
+PASS @390 vi select bare: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @390 vi select bare: hint gone
+PASS @390 vi select bare: no overflow, no clipped text — 0 
+PASS @390 vi select pepper-house: locked, its panel only
+PASS @390 vi select pepper-house: logo is the heading (alt = name), no repeated name — logo 52px
+PASS @390 vi select pepper-house: Positioning + About shown, readable colour
+PASS @390 vi select pepper-house: cities | stays stacked
+PASS @390 vi select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @390 vi select pepper-house: selected row tinted (not white), others subdued
+PASS @390 vi select pepper-house: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @390 vi select pepper-house: hint gone
+PASS @390 vi select pepper-house: no overflow, no clipped text — 0 
+PASS @390 vi select the-nang: locked, its panel only
+PASS @390 vi select the-nang: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @390 vi select the-nang: Positioning + About shown, readable colour
+PASS @390 vi select the-nang: cities | stays stacked
+PASS @390 vi select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @390 vi select the-nang: selected row tinted (not white), others subdued
+PASS @390 vi select the-nang: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @390 vi select the-nang: hint gone
+PASS @390 vi select the-nang: no overflow, no clipped text — 0 
+PASS @390 vi no console/hydration errors
+PASS @390 en order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @390 en canonical names
+PASS @390 en neutral at first: nothing selected, no detail panel
+PASS @390 en rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @390 en logos keep their proportions — 0.000,0.000,0.000
+PASS @390 en heading stands above the brand composition
+PASS @390 en neutral (phone/tablet): strip + hint, no empty stage
+PASS @390 en no Facebook button, no "Khám phá nơi ở" button
+PASS @390 en select bare: locked, its panel only
+PASS @390 en select bare: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @390 en select bare: Positioning + About shown, readable colour
+PASS @390 en select bare: English copy
+PASS @390 en select bare: cities | stays stacked
+PASS @390 en select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @390 en select bare: selected row tinted (not white), others subdued
+PASS @390 en select bare: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @390 en select bare: hint gone
+PASS @390 en select bare: no overflow, no clipped text — 0 
+PASS @390 en select pepper-house: locked, its panel only
+PASS @390 en select pepper-house: logo is the heading (alt = name), no repeated name — logo 52px
+PASS @390 en select pepper-house: Positioning + About shown, readable colour
+PASS @390 en select pepper-house: English copy
+PASS @390 en select pepper-house: cities | stays stacked
+PASS @390 en select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @390 en select pepper-house: selected row tinted (not white), others subdued
+PASS @390 en select pepper-house: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @390 en select pepper-house: hint gone
+PASS @390 en select pepper-house: no overflow, no clipped text — 0 
+PASS @390 en select the-nang: locked, its panel only
+PASS @390 en select the-nang: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @390 en select the-nang: Positioning + About shown, readable colour
+PASS @390 en select the-nang: English copy
+PASS @390 en select the-nang: cities | stays stacked
+PASS @390 en select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @390 en select the-nang: selected row tinted (not white), others subdued
+PASS @390 en select the-nang: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @390 en select the-nang: hint gone
+PASS @390 en select the-nang: no overflow, no clipped text — 0 
+PASS @390 en no console/hydration errors
+PASS @375 vi order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @375 vi canonical names
+PASS @375 vi neutral at first: nothing selected, no detail panel
+PASS @375 vi rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @375 vi logos keep their proportions — 0.000,0.000,0.000
+PASS @375 vi heading stands above the brand composition
+PASS @375 vi neutral (phone/tablet): strip + hint, no empty stage
+PASS @375 vi no Facebook button, no "Khám phá nơi ở" button
+PASS @375 vi select bare: locked, its panel only
+PASS @375 vi select bare: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @375 vi select bare: Positioning + About shown, readable colour
+PASS @375 vi select bare: cities | stays stacked
+PASS @375 vi select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @375 vi select bare: selected row tinted (not white), others subdued
+PASS @375 vi select bare: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @375 vi select bare: hint gone
+PASS @375 vi select bare: no overflow, no clipped text — 0 
+PASS @375 vi select pepper-house: locked, its panel only
+PASS @375 vi select pepper-house: logo is the heading (alt = name), no repeated name — logo 52px
+PASS @375 vi select pepper-house: Positioning + About shown, readable colour
+PASS @375 vi select pepper-house: cities | stays stacked
+PASS @375 vi select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @375 vi select pepper-house: selected row tinted (not white), others subdued
+PASS @375 vi select pepper-house: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @375 vi select pepper-house: hint gone
+PASS @375 vi select pepper-house: no overflow, no clipped text — 0 
+PASS @375 vi select the-nang: locked, its panel only
+PASS @375 vi select the-nang: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @375 vi select the-nang: Positioning + About shown, readable colour
+PASS @375 vi select the-nang: cities | stays stacked
+PASS @375 vi select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @375 vi select the-nang: selected row tinted (not white), others subdued
+PASS @375 vi select the-nang: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @375 vi select the-nang: hint gone
+PASS @375 vi select the-nang: no overflow, no clipped text — 0 
+PASS @375 vi no console/hydration errors
+PASS @375 en order Bare → Pepper House → The Nắng — bare,pepper-house,the-nang
+PASS @375 en canonical names
+PASS @375 en neutral at first: nothing selected, no detail panel
+PASS @375 en rows: no lines, no borders, no white block — none,none,none,none,none
+PASS @375 en logos keep their proportions — 0.000,0.000,0.000
+PASS @375 en heading stands above the brand composition
+PASS @375 en neutral (phone/tablet): strip + hint, no empty stage
+PASS @375 en no Facebook button, no "Khám phá nơi ở" button
+PASS @375 en select bare: locked, its panel only
+PASS @375 en select bare: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @375 en select bare: Positioning + About shown, readable colour
+PASS @375 en select bare: English copy
+PASS @375 en select bare: cities | stays stacked
+PASS @375 en select bare: one "Visit us ↗", not a link until a website is confirmed
+PASS @375 en select bare: selected row tinted (not white), others subdued
+PASS @375 en select bare: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @375 en select bare: hint gone
+PASS @375 en select bare: no overflow, no clipped text — 0 
+PASS @375 en select pepper-house: locked, its panel only
+PASS @375 en select pepper-house: logo is the heading (alt = name), no repeated name — logo 52px
+PASS @375 en select pepper-house: Positioning + About shown, readable colour
+PASS @375 en select pepper-house: English copy
+PASS @375 en select pepper-house: cities | stays stacked
+PASS @375 en select pepper-house: one "Visit us ↗", not a link until a website is confirmed
+PASS @375 en select pepper-house: selected row tinted (not white), others subdued
+PASS @375 en select pepper-house: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @375 en select pepper-house: hint gone
+PASS @375 en select pepper-house: no overflow, no clipped text — 0 
+PASS @375 en select the-nang: locked, its panel only
+PASS @375 en select the-nang: logo is the heading (alt = name), no repeated name — logo 60px
+PASS @375 en select the-nang: Positioning + About shown, readable colour
+PASS @375 en select the-nang: English copy
+PASS @375 en select the-nang: cities | stays stacked
+PASS @375 en select the-nang: one "Visit us ↗", not a link until a website is confirmed
+PASS @375 en select the-nang: selected row tinted (not white), others subdued
+PASS @375 en select the-nang: strip stays on screen, panel starts on screen — strip 310 panel 446 header 73
+PASS @375 en select the-nang: hint gone
+PASS @375 en select the-nang: no overflow, no clipped text — 0 
+PASS @375 en no console/hydration errors
+PASS @1440 reduced motion: preview appears without transition or scale — {"d":"0s","t":"none","o":"1"}
+PASS @390 reduced motion: panel appears without animation — none
+
+536/536 passed

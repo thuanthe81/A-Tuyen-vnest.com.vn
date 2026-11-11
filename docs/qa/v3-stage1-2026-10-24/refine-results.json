@@ -1,0 +1,1042 @@
+{
+ "base": "http://localhost:3401",
+ "date": "2026-10-24",
+ "views": [
+  {
+   "view": "1440",
+   "checks": {
+    "T1 rows at rest: logo, name, city only (no thumbnail, no draft text)": {
+     "pass": true,
+     "rest": [
+      {
+       "brand": "bare",
+       "imgs": 1,
+       "draft": false,
+       "text": "Bare Boutique Stays | TP. Hồ Chí Minh · Đà Nẵng"
+      },
+      {
+       "brand": "the-nang",
+       "imgs": 1,
+       "draft": false,
+       "text": "The Nắng Suites | Đà Nẵng"
+      },
+      {
+       "brand": "pepper-house",
+       "imgs": 1,
+       "draft": false,
+       "text": "Pepper House | TP. Hồ Chí Minh"
+      }
+     ]
+    },
+    "T1 hover intent: a quick pass does not open a preview": {
+     "pass": true
+    },
+    "T1 hover Nắng: floating preview only, selection and panel unchanged": {
+     "pass": true,
+     "selected": "bare",
+     "panel": "bare",
+     "card": "the-nang",
+     "placed": true
+    },
+    "T1 preview size: about 32–38vw, capped near 500px": {
+     "pass": true,
+     "width": 496,
+     "vw": 1440
+    },
+    "T1 preview inside the viewport, below the header": {
+     "pass": true,
+     "card": {
+      "x": 610,
+      "y": 248,
+      "w": 496,
+      "h": 493,
+      "cx": 858,
+      "cy": 494.2890625,
+      "bottom": 741,
+      "right": 1106
+     },
+     "header": 73
+    },
+    "T1 preview never covers the navigation or the active row": {
+     "pass": true,
+     "card": {
+      "x": 610,
+      "y": 248,
+      "w": 496,
+      "h": 493,
+      "cx": 858,
+      "cy": 494.2890625,
+      "bottom": 741,
+      "right": 1106
+     },
+     "ledger": {
+      "x": 120,
+      "y": 337,
+      "w": 470,
+      "h": 313,
+      "cx": 354.8046875,
+      "cy": 493.84375,
+      "bottom": 650,
+      "right": 590
+     },
+     "selectedRow": {
+      "x": 120,
+      "y": 338,
+      "w": 470,
+      "h": 104,
+      "cx": 354.8046875,
+      "cy": 390.34375,
+      "bottom": 442,
+      "right": 590
+     }
+    },
+    "T1 preview is pointer-transparent (never blocks a click)": {
+     "pass": true
+    },
+    "T1 no reflow: rows, panel and link did not move": {
+     "pass": true,
+     "before": {
+      "rows": [
+       338,
+       442,
+       546
+      ],
+      "panel": {
+       "x": 662,
+       "y": 170,
+       "w": 658,
+       "h": 744,
+       "cx": 991.1328125,
+       "cy": 541.4140625,
+       "bottom": 913,
+       "right": 1320
+      },
+      "link": 670
+     },
+     "after": {
+      "rows": [
+       338,
+       442,
+       546
+      ],
+      "panel": {
+       "x": 662,
+       "y": 170,
+       "w": 658,
+       "h": 744,
+       "cx": 991.1328125,
+       "cy": 541.4140625,
+       "bottom": 913,
+       "right": 1320
+      },
+      "link": 670
+     }
+    },
+    "T1 subtle entrance animation": {
+     "pass": true,
+     "anim": "HomeCollection-module__MI459G__preview-in"
+    },
+    "T1 hover Pepper: switches directly between rows": {
+     "pass": true,
+     "mid": {
+      "selected": "bare",
+      "panel": "bare",
+      "card": "pepper-house",
+      "placed": true
+     },
+     "hp": {
+      "selected": "bare",
+      "panel": "bare",
+      "card": "pepper-house",
+      "placed": true
+     }
+    },
+    "T1 Pepper preview inside the viewport": {
+     "pass": true,
+     "cardP": {
+      "x": 610,
+      "y": 354,
+      "w": 496,
+      "h": 489,
+      "cx": 858,
+      "cy": 598.2890625,
+      "bottom": 843,
+      "right": 1106
+     }
+    },
+    "T1 the selected brand never previews": {
+     "pass": true
+    },
+    "T1 leaving closes after a short grace": {
+     "pass": true,
+     "grace": {
+      "selected": "bare",
+      "panel": "bare",
+      "card": "pepper-house",
+      "placed": true
+     }
+    },
+    "T1 Escape closes the preview and keeps the selection": {
+     "pass": true,
+     "selected": "bare",
+     "panel": "bare",
+     "card": null,
+     "placed": false
+    },
+    "T1 click commits, updates the About panel, closes the preview": {
+     "pass": true,
+     "selected": "pepper-house",
+     "panel": "pepper-house",
+     "card": null,
+     "placed": false
+    },
+    "T1 keyboard: focus previews, Escape closes, Enter commits": {
+     "pass": true,
+     "kf": {
+      "selected": "pepper-house",
+      "panel": "pepper-house",
+      "card": "the-nang",
+      "placed": true,
+      "focused": "the-nang",
+      "described": true
+     },
+     "ke": {
+      "selected": "pepper-house",
+      "panel": "pepper-house",
+      "card": null,
+      "placed": false
+     },
+     "kn": {
+      "selected": "the-nang",
+      "panel": "the-nang",
+      "card": null,
+      "placed": false
+     }
+    },
+    "T1 reduced motion: preview appears without animation": {
+     "pass": true
+    },
+    "T1 no unexpected layout shift during preview interaction": {
+     "pass": true,
+     "shifts": 0
+    },
+    "T2 order: introduction, then toolbar, then grid": {
+     "pass": true,
+     "introAbove": true,
+     "barAboveGrid": true,
+     "barWidth": 1201,
+     "sectionWidth": 1280,
+     "segmentedVisible": true,
+     "selectsVisible": false,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ],
+     "selectH": [],
+     "barHeight": 158,
+     "lead": "6 nơi lưu trú của ba thương hiệu VNest tại TP. Hồ Chí Minh và Đà Nẵng.",
+     "options": {
+      "brand": [
+       "Mọi thương hiệu",
+       "Bare Boutique Stays",
+       "The Nắng Suites",
+       "Pepper House"
+      ],
+      "city": [
+       "Mọi thành phố",
+       "TP. Hồ Chí Minh",
+       "Đà Nẵng"
+      ]
+     }
+    },
+    "T2 all brands and all cities still offered": {
+     "pass": true,
+     "brand": [
+      "Mọi thương hiệu",
+      "Bare Boutique Stays",
+      "The Nắng Suites",
+      "Pepper House"
+     ],
+     "city": [
+      "Mọi thành phố",
+      "TP. Hồ Chí Minh",
+      "Đà Nẵng"
+     ]
+    },
+    "T2 segmented controls (no selects) at this width": {
+     "pass": true
+    },
+    "T2 no orphan wrapping: each filter on one line": {
+     "pass": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ]
+    },
+    "T2 touch-size options (≥ 44px)": {
+     "pass": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ]
+    },
+    "T2 brand × city combinations and result counts": {
+     "pass": true,
+     "combos": [
+      {
+       "step": "brand: Bare Boutique Stays",
+       "n": 4,
+       "result": "4 nơi ở · Bare Boutique Stays"
+      },
+      {
+       "step": "city: TP. Hồ Chí Minh",
+       "n": 3,
+       "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng"
+      },
+      {
+       "step": "brand: Pepper House",
+       "n": 1,
+       "result": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+      },
+      {
+       "step": "brand: The Nắng Suites",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites · Đà Nẵng"
+      },
+      {
+       "step": "brand: Mọi thương hiệu",
+       "n": 2,
+       "result": "2 nơi ở · Đà Nẵng"
+      },
+      {
+       "step": "city: Mọi thành phố",
+       "n": 6,
+       "result": "Tất cả 6 nơi ở"
+      }
+     ]
+    },
+    "no horizontal overflow": {
+     "pass": true
+    }
+   }
+  },
+  {
+   "view": "1280",
+   "checks": {
+    "T1 rows at rest: logo, name, city only (no thumbnail, no draft text)": {
+     "pass": true,
+     "rest": [
+      {
+       "brand": "bare",
+       "imgs": 1,
+       "draft": false,
+       "text": "Bare Boutique Stays | TP. Hồ Chí Minh · Đà Nẵng"
+      },
+      {
+       "brand": "the-nang",
+       "imgs": 1,
+       "draft": false,
+       "text": "The Nắng Suites | Đà Nẵng"
+      },
+      {
+       "brand": "pepper-house",
+       "imgs": 1,
+       "draft": false,
+       "text": "Pepper House | TP. Hồ Chí Minh"
+      }
+     ]
+    },
+    "T1 hover intent: a quick pass does not open a preview": {
+     "pass": true
+    },
+    "T1 hover Nắng: floating preview only, selection and panel unchanged": {
+     "pass": true,
+     "selected": "bare",
+     "panel": "bare",
+     "card": "the-nang",
+     "placed": true
+    },
+    "T1 preview size: about 32–38vw, capped near 500px": {
+     "pass": true,
+     "width": 461,
+     "vw": 1280
+    },
+    "T1 preview inside the viewport, below the header": {
+     "pass": true,
+     "card": {
+      "x": 531,
+      "y": 252,
+      "w": 461,
+      "h": 471,
+      "cx": 761.3984375,
+      "cy": 487.28125,
+      "bottom": 723,
+      "right": 992
+     },
+     "header": 73
+    },
+    "T1 preview never covers the navigation or the active row": {
+     "pass": true,
+     "card": {
+      "x": 531,
+      "y": 252,
+      "w": 461,
+      "h": 471,
+      "cx": 761.3984375,
+      "cy": 487.28125,
+      "bottom": 723,
+      "right": 992
+     },
+     "ledger": {
+      "x": 36,
+      "y": 331,
+      "w": 475,
+      "h": 313,
+      "cx": 273.7578125,
+      "cy": 487.4375,
+      "bottom": 644,
+      "right": 511
+     },
+     "selectedRow": {
+      "x": 36,
+      "y": 332,
+      "w": 475,
+      "h": 104,
+      "cx": 273.7578125,
+      "cy": 383.9375,
+      "bottom": 436,
+      "right": 511
+     }
+    },
+    "T1 preview is pointer-transparent (never blocks a click)": {
+     "pass": true
+    },
+    "T1 no reflow: rows, panel and link did not move": {
+     "pass": true,
+     "before": {
+      "rows": [
+       332,
+       436,
+       540
+      ],
+      "panel": {
+       "x": 579,
+       "y": 163,
+       "w": 665,
+       "h": 738,
+       "cx": 911.1875,
+       "cy": 532.3515625,
+       "bottom": 902,
+       "right": 1244
+      },
+      "link": 664
+     },
+     "after": {
+      "rows": [
+       332,
+       436,
+       540
+      ],
+      "panel": {
+       "x": 579,
+       "y": 163,
+       "w": 665,
+       "h": 738,
+       "cx": 911.1875,
+       "cy": 532.3515625,
+       "bottom": 902,
+       "right": 1244
+      },
+      "link": 664
+     }
+    },
+    "T1 subtle entrance animation": {
+     "pass": true,
+     "anim": "HomeCollection-module__MI459G__preview-in"
+    },
+    "T1 hover Pepper: switches directly between rows": {
+     "pass": true,
+     "mid": {
+      "selected": "bare",
+      "panel": "bare",
+      "card": "pepper-house",
+      "placed": true
+     },
+     "hp": {
+      "selected": "bare",
+      "panel": "bare",
+      "card": "pepper-house",
+      "placed": true
+     }
+    },
+    "T1 Pepper preview inside the viewport": {
+     "pass": true,
+     "cardP": {
+      "x": 531,
+      "y": 321,
+      "w": 461,
+      "h": 467,
+      "cx": 761.3984375,
+      "cy": 554.28125,
+      "bottom": 788,
+      "right": 992
+     }
+    },
+    "T1 the selected brand never previews": {
+     "pass": true
+    },
+    "T1 leaving closes after a short grace": {
+     "pass": true,
+     "grace": {
+      "selected": "bare",
+      "panel": "bare",
+      "card": "pepper-house",
+      "placed": true
+     }
+    },
+    "T1 Escape closes the preview and keeps the selection": {
+     "pass": true,
+     "selected": "bare",
+     "panel": "bare",
+     "card": null,
+     "placed": false
+    },
+    "T1 click commits, updates the About panel, closes the preview": {
+     "pass": true,
+     "selected": "pepper-house",
+     "panel": "pepper-house",
+     "card": null,
+     "placed": false
+    },
+    "T1 keyboard: focus previews, Escape closes, Enter commits": {
+     "pass": true,
+     "kf": {
+      "selected": "pepper-house",
+      "panel": "pepper-house",
+      "card": "the-nang",
+      "placed": true,
+      "focused": "the-nang",
+      "described": true
+     },
+     "ke": {
+      "selected": "pepper-house",
+      "panel": "pepper-house",
+      "card": null,
+      "placed": false
+     },
+     "kn": {
+      "selected": "the-nang",
+      "panel": "the-nang",
+      "card": null,
+      "placed": false
+     }
+    },
+    "T1 reduced motion: preview appears without animation": {
+     "pass": true
+    },
+    "T1 no unexpected layout shift during preview interaction": {
+     "pass": true,
+     "shifts": 0
+    },
+    "T2 order: introduction, then toolbar, then grid": {
+     "pass": true,
+     "introAbove": true,
+     "barAboveGrid": true,
+     "barWidth": 1208,
+     "sectionWidth": 1280,
+     "segmentedVisible": true,
+     "selectsVisible": false,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ],
+     "selectH": [],
+     "barHeight": 158,
+     "lead": "6 nơi lưu trú của ba thương hiệu VNest tại TP. Hồ Chí Minh và Đà Nẵng.",
+     "options": {
+      "brand": [
+       "Mọi thương hiệu",
+       "Bare Boutique Stays",
+       "The Nắng Suites",
+       "Pepper House"
+      ],
+      "city": [
+       "Mọi thành phố",
+       "TP. Hồ Chí Minh",
+       "Đà Nẵng"
+      ]
+     }
+    },
+    "T2 all brands and all cities still offered": {
+     "pass": true,
+     "brand": [
+      "Mọi thương hiệu",
+      "Bare Boutique Stays",
+      "The Nắng Suites",
+      "Pepper House"
+     ],
+     "city": [
+      "Mọi thành phố",
+      "TP. Hồ Chí Minh",
+      "Đà Nẵng"
+     ]
+    },
+    "T2 segmented controls (no selects) at this width": {
+     "pass": true
+    },
+    "T2 no orphan wrapping: each filter on one line": {
+     "pass": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ]
+    },
+    "T2 touch-size options (≥ 44px)": {
+     "pass": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ]
+    },
+    "T2 brand × city combinations and result counts": {
+     "pass": true,
+     "combos": [
+      {
+       "step": "brand: Bare Boutique Stays",
+       "n": 4,
+       "result": "4 nơi ở · Bare Boutique Stays"
+      },
+      {
+       "step": "city: TP. Hồ Chí Minh",
+       "n": 3,
+       "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng"
+      },
+      {
+       "step": "brand: Pepper House",
+       "n": 1,
+       "result": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+      },
+      {
+       "step": "brand: The Nắng Suites",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites · Đà Nẵng"
+      },
+      {
+       "step": "brand: Mọi thương hiệu",
+       "n": 2,
+       "result": "2 nơi ở · Đà Nẵng"
+      },
+      {
+       "step": "city: Mọi thành phố",
+       "n": 6,
+       "result": "Tất cả 6 nơi ở"
+      }
+     ]
+    },
+    "no horizontal overflow": {
+     "pass": true
+    }
+   }
+  },
+  {
+   "view": "768",
+   "checks": {
+    "T1 rows at rest: logo, name, city only (no thumbnail, no draft text)": {
+     "pass": true,
+     "rest": [
+      {
+       "brand": "bare",
+       "imgs": 1,
+       "draft": false,
+       "text": "Bare Boutique Stays | TP. Hồ Chí Minh · Đà Nẵng"
+      },
+      {
+       "brand": "the-nang",
+       "imgs": 1,
+       "draft": false,
+       "text": "The Nắng Suites | Đà Nẵng"
+      },
+      {
+       "brand": "pepper-house",
+       "imgs": 1,
+       "draft": false,
+       "text": "Pepper House | TP. Hồ Chí Minh"
+      }
+     ]
+    },
+    "T1 touch: tap selects directly, no floating preview, panel below": {
+     "pass": true,
+     "selected": "the-nang",
+     "panel": "the-nang",
+     "card": null,
+     "placed": false
+    },
+    "T1 touch: logos readable (≥ 32px tall)": {
+     "pass": true,
+     "logos": [
+      58,
+      52,
+      44
+     ]
+    },
+    "T2 order: introduction, then toolbar, then grid": {
+     "pass": true,
+     "introAbove": true,
+     "barAboveGrid": true,
+     "barWidth": 718,
+     "sectionWidth": 768,
+     "segmentedVisible": true,
+     "selectsVisible": false,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ],
+     "selectH": [],
+     "barHeight": 269,
+     "lead": "6 nơi lưu trú của ba thương hiệu VNest tại TP. Hồ Chí Minh và Đà Nẵng.",
+     "options": {
+      "brand": [
+       "Mọi thương hiệu",
+       "Bare Boutique Stays",
+       "The Nắng Suites",
+       "Pepper House"
+      ],
+      "city": [
+       "Mọi thành phố",
+       "TP. Hồ Chí Minh",
+       "Đà Nẵng"
+      ]
+     }
+    },
+    "T2 all brands and all cities still offered": {
+     "pass": true,
+     "brand": [
+      "Mọi thương hiệu",
+      "Bare Boutique Stays",
+      "The Nắng Suites",
+      "Pepper House"
+     ],
+     "city": [
+      "Mọi thành phố",
+      "TP. Hồ Chí Minh",
+      "Đà Nẵng"
+     ]
+    },
+    "T2 segmented controls (no selects) at this width": {
+     "pass": true
+    },
+    "T2 no orphan wrapping: each filter on one line": {
+     "pass": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ]
+    },
+    "T2 touch-size options (≥ 44px)": {
+     "pass": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 44
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 44
+      }
+     ]
+    },
+    "T2 brand × city combinations and result counts": {
+     "pass": true,
+     "combos": [
+      {
+       "step": "brand: Bare Boutique Stays",
+       "n": 4,
+       "result": "4 nơi ở · Bare Boutique Stays"
+      },
+      {
+       "step": "city: TP. Hồ Chí Minh",
+       "n": 3,
+       "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng"
+      },
+      {
+       "step": "brand: Pepper House",
+       "n": 1,
+       "result": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+      },
+      {
+       "step": "brand: The Nắng Suites",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites · Đà Nẵng"
+      },
+      {
+       "step": "brand: Mọi thương hiệu",
+       "n": 2,
+       "result": "2 nơi ở · Đà Nẵng"
+      },
+      {
+       "step": "city: Mọi thành phố",
+       "n": 6,
+       "result": "Tất cả 6 nơi ở"
+      }
+     ]
+    },
+    "no horizontal overflow": {
+     "pass": true
+    }
+   }
+  },
+  {
+   "view": "390",
+   "checks": {
+    "T1 rows at rest: logo, name, city only (no thumbnail, no draft text)": {
+     "pass": true,
+     "rest": [
+      {
+       "brand": "bare",
+       "imgs": 1,
+       "draft": false,
+       "text": "Bare"
+      },
+      {
+       "brand": "the-nang",
+       "imgs": 1,
+       "draft": false,
+       "text": "The Nắng"
+      },
+      {
+       "brand": "pepper-house",
+       "imgs": 1,
+       "draft": false,
+       "text": "Pepper House"
+      }
+     ]
+    },
+    "T1 touch: tap selects directly, no floating preview, panel below": {
+     "pass": true,
+     "selected": "the-nang",
+     "panel": "the-nang",
+     "card": null,
+     "placed": false
+    },
+    "T1 touch: logos readable (≥ 32px tall)": {
+     "pass": true,
+     "logos": [
+      44,
+      40,
+      34
+     ]
+    },
+    "T2 order: introduction, then toolbar, then grid": {
+     "pass": true,
+     "introAbove": true,
+     "barAboveGrid": true,
+     "barWidth": 357,
+     "sectionWidth": 390,
+     "segmentedVisible": false,
+     "selectsVisible": true,
+     "rows": [
+      {
+       "label": "_R_2ainpfivb_-brand",
+       "lines": 1,
+       "h": 0
+      },
+      {
+       "label": "_R_2ainpfivb_-city",
+       "lines": 1,
+       "h": 0
+      }
+     ],
+     "selectH": [
+      46,
+      46
+     ],
+     "barHeight": 172,
+     "lead": "6 nơi lưu trú của ba thương hiệu VNest tại TP. Hồ Chí Minh và Đà Nẵng.",
+     "options": {
+      "brand": [
+       "Mọi thương hiệu",
+       "Bare Boutique Stays",
+       "The Nắng Suites",
+       "Pepper House"
+      ],
+      "city": [
+       "Mọi thành phố",
+       "TP. Hồ Chí Minh",
+       "Đà Nẵng"
+      ]
+     }
+    },
+    "T2 all brands and all cities still offered": {
+     "pass": true,
+     "brand": [
+      "Mọi thương hiệu",
+      "Bare Boutique Stays",
+      "The Nắng Suites",
+      "Pepper House"
+     ],
+     "city": [
+      "Mọi thành phố",
+      "TP. Hồ Chí Minh",
+      "Đà Nẵng"
+     ]
+    },
+    "T2 phone: two compact selects (no segmented)": {
+     "pass": true,
+     "selectH": [
+      46,
+      46
+     ]
+    },
+    "T2 phone: compact filter area": {
+     "pass": true,
+     "barHeight": 172
+    },
+    "T2 brand × city combinations and result counts": {
+     "pass": true,
+     "combos": [
+      {
+       "step": "brand: Bare Boutique Stays",
+       "n": 4,
+       "result": "4 nơi ở · Bare Boutique Stays"
+      },
+      {
+       "step": "city: TP. Hồ Chí Minh",
+       "n": 3,
+       "result": "3 nơi ở · Bare Boutique Stays · TP. Hồ Chí Minh"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · Bare Boutique Stays · Đà Nẵng"
+      },
+      {
+       "step": "brand: Pepper House",
+       "n": 1,
+       "result": "1 nơi ở · Pepper HousePepper House chưa có nơi ở tại Đà Nẵng, nên bộ lọc địa điểm đã được bỏ."
+      },
+      {
+       "step": "brand: The Nắng Suites",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites"
+      },
+      {
+       "step": "city: Đà Nẵng",
+       "n": 1,
+       "result": "1 nơi ở · The Nắng Suites · Đà Nẵng"
+      },
+      {
+       "step": "brand: Mọi thương hiệu",
+       "n": 2,
+       "result": "2 nơi ở · Đà Nẵng"
+      },
+      {
+       "step": "city: Mọi thành phố",
+       "n": 6,
+       "result": "Tất cả 6 nơi ở"
+      }
+     ]
+    },
+    "no horizontal overflow": {
+     "pass": true
+    }
+   }
+  }
+ ],
+ "consoleErrors": []
+}

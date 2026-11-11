@@ -1,0 +1,10 @@
+- list "Mạng xã hội VNest":
+  - listitem:
+    - img "Instagram – sắp cập nhật": Sắp cập nhật
+  - listitem:
+    - img "LinkedIn – sắp cập nhật": Sắp cập nhật
+  - listitem:
+    - img "TikTok – sắp cập nhật": Sắp cập nhật
+  - listitem:
+    - img "Facebook – sắp cập nhật": Sắp cập nhật
+667 passed, 0 failed

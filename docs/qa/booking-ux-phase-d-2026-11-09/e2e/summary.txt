@@ -1,0 +1,6 @@
+occupancy exit 0
+room-selection exit 0
+hybrid-booking exit 1
+mobile-interactions exit 0
+about-vnest exit 0
+homepage-content exit 0

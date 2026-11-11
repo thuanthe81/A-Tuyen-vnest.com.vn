@@ -1,0 +1,3 @@
+Google Maps driving directions, read 25/10/2026 in the built-in browser (screenshots alongside). Times are for traffic at the time of checking.
+1. Tan Son Nhat International Airport -> Bare Chic - Bare Boutique Stays (18 Hẻm 12 Nguyễn Thị Minh Khai): fastest 29 min, 9.5 km. Destination 10.7885194, 106.701447.
+2. Danang International Airport -> The Nang Suites (74/31 Võ Văn Kiệt, An Hải): fastest 15 min, 5.9 km. Destination 16.0629799, 108.2372824.

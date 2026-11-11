@@ -1,0 +1,38 @@
+[
+  {
+    "name": "yellow-submarine-4",
+    "id": "1n7W30NIgqEVugF11hczm4jKtxUp7e6Bk",
+    "size": 4074817,
+    "localOriginal": ".local-media/client-photos/nang-2026-10-22/yellow-submarine-4.png",
+    "sha256": "dd6e0c70065ec5fd53f0038e049b39ecdc4a197a71294c31402a226cba2902e4",
+    "used": false,
+    "inspection": "Nang watermark, no people visible"
+  },
+  {
+    "name": "pale-blue-eyes-4",
+    "id": "105G-i5K0nP5eQNhxrSLNcm7c5qciiwiM",
+    "size": 3708134,
+    "localOriginal": ".local-media/client-photos/nang-2026-10-22/pale-blue-eyes-4.png",
+    "sha256": "3041966107809f20679777ca05b4ab843d7ea2e360aacbdb140e4900b0d0634a",
+    "used": false,
+    "inspection": "Nang watermark, no people visible"
+  },
+  {
+    "name": "green-river-3",
+    "id": "135fYrwL4yxt7jR0K0eSre400uuh_Ufro",
+    "size": 4178681,
+    "localOriginal": ".local-media/client-photos/nang-2026-10-22/green-river-3.png",
+    "sha256": "13ca0898f9ecce41d958bad0759691653a73931b51e42bb450bfe3253e51a600",
+    "used": true,
+    "inspection": "Nang watermark, no people visible"
+  },
+  {
+    "name": "blue-moon-4",
+    "id": "1YzkczhfGZLV0Uv2jG651h_UJUGa1C5ut",
+    "size": 5233455,
+    "localOriginal": ".local-media/client-photos/nang-2026-10-22/blue-moon-4.png",
+    "sha256": "2b5477a51c9ea6761018e5ce125f739d336de95f6fe546abfab968e0880213f2",
+    "used": false,
+    "inspection": "People visible; excluded from demo"
+  }
+]

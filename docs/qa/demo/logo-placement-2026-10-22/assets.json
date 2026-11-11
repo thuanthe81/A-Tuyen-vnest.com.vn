@@ -1,0 +1,68 @@
+[
+  {
+    "name": "bare-boutique-stays",
+    "background": [
+      242,
+      242,
+      242
+    ],
+    "foreground": [
+      35,
+      31,
+      32
+    ],
+    "box": {
+      "left": 640,
+      "top": 753,
+      "width": 767,
+      "height": 1047
+    }
+  },
+  {
+    "name": "bare-wordmark",
+    "box": {
+      "left": 640,
+      "top": 753,
+      "width": 767,
+      "height": 402
+    }
+  },
+  {
+    "name": "pepper-house",
+    "background": [
+      255,
+      255,
+      255
+    ],
+    "foreground": [
+      0,
+      0,
+      0
+    ],
+    "box": {
+      "left": 111,
+      "top": 101,
+      "width": 1406,
+      "height": 1406
+    }
+  },
+  {
+    "name": "the-nang-suites",
+    "background": [
+      255,
+      255,
+      255
+    ],
+    "foreground": [
+      188,
+      138,
+      42
+    ],
+    "box": {
+      "left": 215,
+      "top": 126,
+      "width": 364,
+      "height": 512
+    }
+  }
+]

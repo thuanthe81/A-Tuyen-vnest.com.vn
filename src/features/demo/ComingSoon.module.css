@@ -1,0 +1,218 @@
+/* Coming Soon card in Discovery (Phase C; artwork revised 8/11/2026).
+   Shell: the listing card's (desktop: the property photo box via sharedStyles.cardImage; below 64rem: the mobile property
+   strip, values mirrored from HomeCollection.module.css `.mobilePropertyLink`). The label "Sắp ra mắt" sits under the
+   artwork, where a stay shows its name.
+   Artwork: one composition per brand in a centred group (--group-width), measured in cqh (1 % of the artwork's height),
+   around the official logo files, unaltered; VNest copper #A87444 as the one accent. */
+
+.card {
+  --copper: #a87444;
+  position: relative;
+  display: block;
+  color: #37412f;
+  text-decoration: none;
+}
+
+.art {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  container-type: size;
+  isolation: isolate;
+  /* A hairline edge so the light grounds hold their shape against the page. */
+  box-shadow: inset 0 0 0 1px rgb(55 65 47 / 0.07);
+}
+
+/* Phones and tablets: the mobile property card's strip. */
+.card[data-variant="strip"] .art {
+  width: 100%;
+  height: clamp(12.25rem, 52vw, 13.75rem);
+  border-radius: 0.75rem;
+  box-shadow:
+    inset 0 0 0 1px rgb(55 65 47 / 0.07),
+    0 12px 26px -16px rgb(24 20 14 / 0.26);
+}
+
+.card * {
+  margin: 0;
+}
+
+/* The one visible line of text, where a stay shows its name: large and copper (bold ≥ 20 px is large text: 3.4:1 on the
+   page passes). */
+.label {
+  margin-top: 0.875rem;
+  color: var(--copper);
+  font-size: clamp(1.375rem, 1.25rem + 0.4vw, 1.625rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.card[data-variant="strip"] .label {
+  margin-top: 0.75rem;
+}
+
+.group {
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--group-width) / 2);
+  width: var(--group-width);
+  height: 100%;
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Linked (a confirmed website): the label darkens and its arrow moves; nothing that reads as a booking button. */
+.arrow {
+  display: inline-block;
+  transition: translate 160ms ease;
+}
+
+a.card:hover .label {
+  color: #8f6036;
+}
+
+a.card:hover .arrow {
+  translate: 2px -2px;
+}
+
+a.card:focus-visible {
+  outline: 2.5px solid #37412f;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+/* ── Bare Boutique Stays: editorial paper, a dotted route with two stops to the wordmark ── */
+
+.card[data-brand="bare"] .art {
+  background: #f4efe7;
+}
+
+.group[data-art="bare"] {
+  --group-width: 150cqh;
+}
+
+.route {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 0.85;
+  stroke-linecap: round;
+  stroke-dasharray: 0.01 2.5;
+}
+
+.dot {
+  fill: var(--copper);
+}
+
+.ring {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 0.45;
+}
+
+.bareMark {
+  position: absolute;
+  right: 10cqh;
+  top: 62cqh;
+  width: auto;
+  height: 28cqh;
+}
+
+/* ── Pepper House: the brand's map of broken grid lines, the symbol centred on a cleared block ── */
+
+.card[data-brand="pepper-house"] .art {
+  background: #eeebe6;
+}
+
+.group[data-art="pepper-house"] {
+  --group-width: 340cqh;
+}
+
+.mapLine {
+  fill: none;
+  stroke: #9d978d;
+  stroke-width: 0.32;
+  opacity: 0.6;
+}
+
+/* Site-plan corner marks around the cleared block. */
+.blockMarks {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 0.5;
+  stroke-linecap: square;
+}
+
+/* 37.7 units square at (152.65, 26.65): its bars land on the map lines x = 164.5 / 178.5, y = 38.5 / 52.5. */
+.pepperMark {
+  position: absolute;
+  left: 152.65cqh;
+  top: 26.65cqh;
+  width: 37.7cqh;
+  height: 37.7cqh;
+}
+
+/* ── The Nắng Suites: warm light on one centre line: sun, arcs, mark, reflection ── */
+
+.card[data-brand="the-nang"] .art {
+  background: linear-gradient(180deg, #fdf9f2 0%, #fbf3e3 68%, #f8eedb 100%);
+}
+
+.group[data-art="the-nang"] {
+  --group-width: 120cqh;
+}
+
+.horizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 68cqh;
+  height: 1px;
+  background: linear-gradient(90deg, rgb(168 116 68 / 0.15), rgb(168 116 68 / 0.6) 30%, rgb(168 116 68 / 0.6) 70%, rgb(168 116 68 / 0.15));
+}
+
+.arc {
+  fill: none;
+  stroke: #c9a15a;
+  stroke-width: 0.35;
+  opacity: 0.7;
+}
+
+.arcOuter {
+  fill: none;
+  stroke-width: 0.34;
+}
+
+.reflection line {
+  stroke-width: 0.6;
+  stroke-linecap: round;
+}
+
+.reflection line:nth-child(2) {
+  opacity: 0.7;
+}
+
+.reflection line:nth-child(3) {
+  opacity: 0.45;
+}
+
+/* Mark 364 × 512, 28 units tall (19.9 wide), centred on x = 60, its base (98.6 % of the file) on the horizon. */
+.nangMark {
+  position: absolute;
+  left: 50.05cqh;
+  top: 40.39cqh;
+  width: auto;
+  height: 28cqh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow {
+    transition: none;
+  }
+}
